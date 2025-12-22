@@ -190,33 +190,45 @@
       background: #574a7a;
     }
 
+    .cta-note {
+      font-size: 0.8125rem;
+      color: #5c5470;
+      margin-top: 0.75rem;
+    }
+
     .benefits {
-      padding: 1.5rem 0;
+      padding: 2rem 0;
       border-top: 1px solid #d8cee8;
       border-bottom: 1px solid #d8cee8;
+      text-align: center;
+    }
+
+    .benefits h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #1a1625;
+      margin-bottom: 1rem;
     }
 
     .benefits ul {
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 0.5rem;
-      max-width: 280px;
+      gap: 0.75rem;
+      max-width: 320px;
       margin: 0 auto;
     }
 
     .benefits li {
-      padding-left: 1.5rem;
-      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
       color: #3d3654;
       font-size: 0.9375rem;
     }
 
-    .benefits li::before {
-      content: "✦";
-      position: absolute;
-      left: 0;
-      color: #9b8fc2;
+    .benefit-icon {
+      font-size: 1.125rem;
     }
 
     .waitlist {
@@ -367,10 +379,6 @@
         max-width: none;
       }
 
-      .benefits li {
-        padding-left: 1.25rem;
-      }
-
       .waitlist-form {
         flex-direction: row;
         max-width: 440px;
@@ -412,16 +420,18 @@
       </div>
       <div class="hero-content">
         <h1 itemprop="name">Every night, a story where your child is the hero.</h1>
-        <p class="subtitle" itemprop="description">Personalized bedtime stories made just for them — ready in seconds.</p>
-        <a href="#waitlist" class="cta-button" role="button">Create tonight's story</a>
+        <p class="subtitle" itemprop="description">Personalized bedtime stories, ready in seconds — no prompts, no thinking.</p>
+        <a href="#waitlist" class="cta-button" role="button">Get it free on launch</a>
+        <p class="cta-note">Enter your email to get early access and exclusive perks.</p>
       </div>
     </article>
 
-    <section class="benefits" aria-label="Key benefits">
+    <section class="benefits" aria-label="Why parents love this">
+      <h2>Why parents love this</h2>
       <ul role="list">
-        <li>Your child is the hero</li>
-        <li>Saves 15+ minutes of your evening</li>
-        <li>Designed for calm bedtime moments</li>
+        <li><span class="benefit-icon">⭐</span> Effortless bedtime every night</li>
+        <li><span class="benefit-icon">📚</span> Stories made for your child</li>
+        <li><span class="benefit-icon">❤️</span> Calm, simple, no screen overstimulation</li>
       </ul>
     </section>
 
