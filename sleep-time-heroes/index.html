@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sleep Time Heroes — Personalized bedtime stories for your child</title>
+  <meta name="description" content="Every night, a story where your child is the hero. Personalized bedtime stories made just for them — ready in seconds.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌙</text></svg>">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 18px;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #2d2a3e;
+      background: linear-gradient(180deg, #f8f6ff 0%, #efe8f8 50%, #e8dff0 100%);
+      min-height: 100vh;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    .hero {
+      display: grid;
+      gap: 2rem;
+      align-items: center;
+      padding-bottom: 2rem;
+    }
+
+    .hero-content {
+      text-align: center;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 640px;
+      height: auto;
+      border-radius: 1rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+      color: #1a1625;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: #5c5470;
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: #6b5b95;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 0.875rem 1.75rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+
+    .cta-button:hover {
+      background: #574a7a;
+    }
+
+    .benefits {
+      padding: 1.5rem 0;
+      border-top: 1px solid #d8cee8;
+      border-bottom: 1px solid #d8cee8;
+    }
+
+    .benefits ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      max-width: 280px;
+      margin: 0 auto;
+    }
+
+    .benefits li {
+      padding-left: 1.5rem;
+      position: relative;
+      color: #3d3654;
+      font-size: 0.9375rem;
+    }
+
+    .benefits li::before {
+      content: "✦";
+      position: absolute;
+      left: 0;
+      color: #9b8fc2;
+    }
+
+    .waitlist {
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    .waitlist h2 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #1a1625;
+    }
+
+    .waitlist-form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+
+    .waitlist-form input[type="email"] {
+      width: 100%;
+      padding: 0.875rem 1rem;
+      font-size: 1rem;
+      border: 2px solid #d8cee8;
+      border-radius: 0.5rem;
+      background: #fff;
+      color: #2d2a3e;
+      transition: border-color 0.2s ease;
+    }
+
+    .waitlist-form input[type="email"]:focus {
+      outline: none;
+      border-color: #9b8fc2;
+    }
+
+    .waitlist-form input[type="email"]::placeholder {
+      color: #a9a0bc;
+    }
+
+    .waitlist-form button {
+      width: 100%;
+      padding: 0.875rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 500;
+      background: #6b5b95;
+      color: #fff;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .waitlist-form button:hover {
+      background: #574a7a;
+    }
+
+    .waitlist-note {
+      font-size: 0.8125rem;
+      color: #7a7189;
+      margin-top: 0.75rem;
+    }
+
+    .trust {
+      text-align: center;
+      padding: 1.5rem 0;
+      font-size: 0.875rem;
+      color: #5c5470;
+      max-width: 400px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      border-top: 1px solid #d8cee8;
+    }
+
+    footer p {
+      font-size: 0.8125rem;
+      color: #7a7189;
+      margin-bottom: 0.25rem;
+    }
+
+    footer a {
+      color: #6b5b95;
+      text-decoration: none;
+      font-size: 0.8125rem;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (min-width: 768px) {
+      main {
+        padding: 3rem 2rem;
+      }
+
+      .hero {
+        grid-template-columns: 1.3fr 1fr;
+        gap: 3rem;
+        padding-bottom: 2.5rem;
+      }
+
+      .hero-image {
+        order: 1;
+      }
+
+      .hero-image img {
+        max-width: 100%;
+      }
+
+      .hero-content {
+        order: 2;
+        text-align: left;
+      }
+
+      h1 {
+        font-size: 2.25rem;
+      }
+
+      .subtitle {
+        font-size: 1.125rem;
+      }
+
+      .benefits ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        max-width: none;
+      }
+
+      .benefits li {
+        padding-left: 1.25rem;
+      }
+
+      .waitlist-form {
+        flex-direction: row;
+        max-width: 440px;
+      }
+
+      .waitlist-form input[type="email"] {
+        flex: 1;
+      }
+
+      .waitlist-form button {
+        width: auto;
+        white-space: nowrap;
+      }
+    }
+
+    @media (min-width: 900px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero {
+        gap: 4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="hero-image">
+        <img src="hero.png" alt="Child reading a magical bedtime story">
+      </div>
+      <div class="hero-content">
+        <h1>Every night, a story where your child is the hero.</h1>
+        <p class="subtitle">Personalized bedtime stories made just for them — ready in seconds.</p>
+        <a href="#waitlist" class="cta-button">Create tonight's story</a>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <ul>
+        <li>Your child is the hero</li>
+        <li>Saves 15+ minutes of your evening</li>
+        <li>Designed for calm bedtime moments</li>
+      </ul>
+    </section>
+
+    <section class="waitlist" id="waitlist">
+      <h2>Get early access</h2>
+      <form class="waitlist-form" action="https://formspree.io/f/mykgnedq" method="POST">
+        <input type="email" name="email" placeholder="you@example.com" required aria-label="Email address">
+        <button type="submit">Get early access</button>
+      </form>
+      <p class="waitlist-note">Launching early 2025. Early access will be paid. No ads. No noise.</p>
+    </section>
+
+    <p class="trust">Built by a parent and iOS developer. Stories reviewed for age-appropriateness. No ads. No tracking.</p>
+  </main>
+
+  <footer>
+    <a href="/privacy">Privacy</a>
+  </footer>
+</body>
+</html>
