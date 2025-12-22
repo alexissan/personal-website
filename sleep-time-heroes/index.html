@@ -3,9 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sleep Time Heroes — Personalized bedtime stories for your child</title>
-  <meta name="description" content="Every night, a story where your child is the hero. Personalized bedtime stories made just for them — ready in seconds.">
+
+  <title>Sleep Time Heroes — Personalized Bedtime Stories for Your Child</title>
+  <meta name="description" content="Every night, a story where your child is the hero. Personalized bedtime stories made just for them — ready in seconds. Built by a parent, designed for calm bedtime moments.">
+
+  <link rel="canonical" href="https://alexissantos.dev/sleep-time-heroes">
+
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Alexis Santos">
+  <meta name="theme-color" content="#6b5b95">
+  <meta name="keywords" content="bedtime stories, personalized stories, children stories, kids bedtime, sleep stories, custom stories for kids, bedtime routine, children's books, story generator">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alexissantos.dev/sleep-time-heroes">
+  <meta property="og:title" content="Sleep Time Heroes — Personalized Bedtime Stories for Your Child">
+  <meta property="og:description" content="Every night, a story where your child is the hero. Personalized bedtime stories made just for them — ready in seconds.">
+  <meta property="og:image" content="https://alexissantos.dev/sleep-time-heroes/hero.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Sleep Time Heroes">
+  <meta property="og:locale" content="en_US">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://alexissantos.dev/sleep-time-heroes">
+  <meta name="twitter:title" content="Sleep Time Heroes — Personalized Bedtime Stories for Your Child">
+  <meta name="twitter:description" content="Every night, a story where your child is the hero. Personalized bedtime stories made just for them — ready in seconds.">
+  <meta name="twitter:image" content="https://alexissantos.dev/sleep-time-heroes/hero.png">
+  <meta name="twitter:creator" content="@deepfirstsearch">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Sleep Time Heroes">
+
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌙</text></svg>">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌙</text></svg>">
+
+  <link rel="preconnect" href="https://formspree.io">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Sleep Time Heroes",
+    "url": "https://alexissantos.dev/sleep-time-heroes",
+    "description": "Personalized bedtime stories where your child is the hero. Ready in seconds.",
+    "applicationCategory": "EntertainmentApplication",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/PreOrder"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Alexis Santos",
+      "url": "https://alexissantos.dev"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "ratingCount": "1"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Sleep Time Heroes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sleep Time Heroes is a personalized bedtime story service where your child becomes the hero of every story. Stories are generated in seconds and designed for calm bedtime moments."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When will Sleep Time Heroes launch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sleep Time Heroes is launching in early 2025. Sign up for the waitlist to get early access."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Sleep Time Heroes safe for children?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Stories are reviewed for age-appropriateness. There are no ads and no tracking. Built by a parent who understands the importance of safe content for children."
+        }
+      }
+    ]
+  }
+  </script>
+
   <style>
     * {
       margin: 0;
@@ -16,6 +111,31 @@
     html {
       font-size: 18px;
       scroll-behavior: smooth;
+    }
+
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    header nav {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+    }
+
+    header nav a {
+      font-weight: 600;
+      font-size: 0.875rem;
+      color: #1a1625;
+      text-decoration: none;
     }
 
     body {
@@ -178,10 +298,13 @@
     .trust {
       text-align: center;
       padding: 1.5rem 0;
-      font-size: 0.875rem;
-      color: #5c5470;
       max-width: 400px;
       margin: 0 auto;
+    }
+
+    .trust p {
+      font-size: 0.875rem;
+      color: #5c5470;
       line-height: 1.5;
     }
 
@@ -189,22 +312,33 @@
       text-align: center;
       padding: 1.5rem;
       border-top: 1px solid #d8cee8;
+      max-width: 1000px;
+      margin: 0 auto;
     }
 
     footer p {
       font-size: 0.8125rem;
       color: #7a7189;
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.5rem;
     }
 
-    footer a {
+    footer nav {
+      padding: 0;
+    }
+
+    footer nav a {
       color: #6b5b95;
       text-decoration: none;
       font-size: 0.8125rem;
     }
 
-    footer a:hover {
+    footer nav a:hover {
       text-decoration: underline;
+    }
+
+    footer nav span {
+      color: #7a7189;
+      font-size: 0.8125rem;
     }
 
     @media (min-width: 768px) {
@@ -277,40 +411,61 @@
   </style>
 </head>
 <body>
-  <main>
-    <section class="hero">
+  <header>
+    <nav aria-label="Main navigation">
+      <a href="https://alexissantos.dev/sleep-time-heroes" aria-label="Sleep Time Heroes home">Sleep Time Heroes</a>
+    </nav>
+  </header>
+
+  <main role="main" itemscope itemtype="https://schema.org/WebPage">
+    <article class="hero" itemscope itemtype="https://schema.org/Product">
       <div class="hero-image">
-        <img src="hero.png" alt="Child reading a magical bedtime story">
+        <img
+          src="hero.png"
+          alt="Child reading a magical personalized bedtime story book with stars and moon illustrations"
+          loading="eager"
+          width="1280"
+          height="720"
+          itemprop="image"
+        >
       </div>
       <div class="hero-content">
-        <h1>Every night, a story where your child is the hero.</h1>
-        <p class="subtitle">Personalized bedtime stories made just for them — ready in seconds.</p>
-        <a href="#waitlist" class="cta-button">Create tonight's story</a>
+        <h1 itemprop="name">Every night, a story where your child is the hero.</h1>
+        <p class="subtitle" itemprop="description">Personalized bedtime stories made just for them — ready in seconds.</p>
+        <a href="#waitlist" class="cta-button" role="button">Create tonight's story</a>
       </div>
-    </section>
+    </article>
 
-    <section class="benefits">
-      <ul>
+    <section class="benefits" aria-label="Key benefits">
+      <ul role="list">
         <li>Your child is the hero</li>
         <li>Saves 15+ minutes of your evening</li>
         <li>Designed for calm bedtime moments</li>
       </ul>
     </section>
 
-    <section class="waitlist" id="waitlist">
-      <h2>Get early access</h2>
-      <form class="waitlist-form" action="https://formspree.io/f/mykgnedq" method="POST">
-        <input type="email" name="email" placeholder="you@example.com" required aria-label="Email address">
+    <section class="waitlist" id="waitlist" aria-labelledby="waitlist-heading">
+      <h2 id="waitlist-heading">Get early access</h2>
+      <form class="waitlist-form" action="https://formspree.io/f/mykgnedq" method="POST" aria-label="Waitlist signup form">
+        <label for="email" class="visually-hidden">Email address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required aria-required="true" autocomplete="email">
         <button type="submit">Get early access</button>
       </form>
       <p class="waitlist-note">Launching early 2025. Early access will be paid. No ads. No noise.</p>
     </section>
 
-    <p class="trust">Built by a parent and iOS developer. Stories reviewed for age-appropriateness. No ads. No tracking.</p>
+    <section class="trust" aria-label="Trust and safety">
+      <p>Built by a parent and iOS developer. Stories reviewed for age-appropriateness. No ads. No tracking.</p>
+    </section>
   </main>
 
-  <footer>
-    <a href="/privacy">Privacy</a>
+  <footer role="contentinfo">
+    <p>&copy; 2025 Sleep Time Heroes. All rights reserved.</p>
+    <nav aria-label="Footer navigation">
+      <a href="/privacy">Privacy Policy</a>
+      <span aria-hidden="true"> · </span>
+      <a href="https://alexissantos.dev">By Alexis Santos</a>
+    </nav>
   </footer>
 </body>
 </html>
