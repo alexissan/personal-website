@@ -20,6 +20,7 @@ function calculateCleaningWindows(events) {
       if (currentCheckout <= nextCheckin) {
         const days = Math.round((nextCheckin - currentCheckout) / (1000 * 60 * 60 * 24));
         const isSameDay = days === 0;
+        const urgencyLevel = isSameDay ? 'urgent' : days === 1 ? 'warning' : 'normal';
         windows.push({
           propertyId: property.id,
           propertyName: property.name,
@@ -29,7 +30,7 @@ function calculateCleaningWindows(events) {
           days: days,
           isSameDay: isSameDay,
           isUrgent: isSameDay,
-          urgencyLevel: isSameDay ? 'urgent' : 'normal',
+          urgencyLevel: urgencyLevel,
         });
       }
     }
