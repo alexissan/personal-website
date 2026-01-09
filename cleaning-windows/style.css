@@ -75,8 +75,8 @@ h1 {
 .add-btn {
   width: 36px;
   height: 36px;
-  border: 1px solid #d97706;
-  background: #d97706;
+  border: 1px solid #22c55e;
+  background: #22c55e;
   color: white;
   border-radius: 8px;
   cursor: pointer;
@@ -88,7 +88,7 @@ h1 {
 }
 
 .add-btn:hover {
-  background: #b45309;
+  background: #16a34a;
 }
 
 .modal-overlay {
@@ -159,12 +159,12 @@ h1 {
 }
 
 .btn-primary {
-  background: #d97706;
+  background: #22c55e;
   color: white;
 }
 
 .btn-primary:hover {
-  background: #b45309;
+  background: #16a34a;
 }
 
 .btn-secondary {
@@ -291,11 +291,11 @@ h1 {
 }
 
 .window-item.warning {
-  background: #fff7ed;
+  background: #fefce8;
 }
 
 .window-item.normal {
-  background: #fefce8;
+  background: #f0fdf4;
 }
 
 .urgency-badge {
@@ -313,12 +313,12 @@ h1 {
 }
 
 .urgency-badge.warning {
-  background: #f97316;
+  background: #eab308;
   color: white;
 }
 
 .urgency-badge.normal {
-  background: #d97706;
+  background: #22c55e;
   color: white;
 }
 
@@ -410,11 +410,11 @@ h1 {
 }
 
 .calendar-cell.warning .cell-label {
-  color: #9a3412;
+  color: #854d0e;
 }
 
 .calendar-cell.normal .cell-label {
-  color: #92400e;
+  color: #166534;
 }
 
 .calendar-cell.empty {
@@ -426,7 +426,7 @@ h1 {
 }
 
 .calendar-cell.cleaning {
-  background: #fef3c7;
+  background: #bbf7d0;
 }
 
 .calendar-cell.cleaning.urgent {
@@ -434,7 +434,7 @@ h1 {
 }
 
 .calendar-cell.cleaning.warning {
-  background: #fed7aa;
+  background: #fef08a;
 }
 
 .day-number {
@@ -448,7 +448,7 @@ h1 {
 }
 
 .calendar-cell.cleaning .day-number {
-  color: #92400e;
+  color: #166534;
   font-weight: 600;
 }
 
@@ -458,7 +458,7 @@ h1 {
 }
 
 .calendar-cell.cleaning.warning .day-number {
-  color: #9a3412;
+  color: #854d0e;
   font-weight: 600;
 }
 
@@ -505,7 +505,7 @@ h1 {
   display: inline-block;
   width: 12px;
   height: 12px;
-  background: #fed7aa;
+  background: #fef08a;
   border-radius: 3px;
   margin-right: 4px;
   vertical-align: middle;
@@ -516,7 +516,7 @@ h1 {
   display: inline-block;
   width: 12px;
   height: 12px;
-  background: #fef3c7;
+  background: #bbf7d0;
   border-radius: 3px;
   margin-right: 4px;
   vertical-align: middle;
@@ -607,5 +607,60 @@ h1 {
   .calendar-mini-legend {
     gap: 12px;
     font-size: 0.7rem;
+  }
+
+  .modal-overlay {
+    padding: 12px;
+  }
+
+  .modal {
+    padding: 16px;
+    max-height: 85vh;
+  }
+
+  .modal h2 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+
+  .modal label {
+    margin-bottom: 10px;
+    font-size: 0.85rem;
+  }
+
+  .modal input,
+  .modal select {
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .modal-buttons {
+    margin-top: 16px;
+    gap: 6px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  #custom-bookings-list {
+    margin-top: 16px;
+    padding-top: 12px;
+  }
+
+  #custom-bookings-list h3 {
+    font-size: 0.85rem;
+  }
+
+  .custom-booking-item {
+    padding: 6px;
+    font-size: 0.8rem;
+  }
+
+  .custom-booking-item .property-tag {
+    font-size: 0.65rem;
+    padding: 2px 4px;
   }
 }
