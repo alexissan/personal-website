@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.view-toggle {
+  display: flex;
+  gap: 4px;
+  background: #e0e0e0;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.view-btn {
+  padding: 8px 16px;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.view-btn.active {
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.loading {
+  text-align: center;
+  padding: 48px;
+  color: #666;
+}
+
+.property-section {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.property-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  padding-left: 12px;
+  border-left: 4px solid #3b82f6;
+}
+
+.no-windows {
+  color: #888;
+  font-style: italic;
+}
+
+.windows-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.window-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.window-item.urgent {
+  background: #fef2f2;
+}
+
+.window-item.warning {
+  background: #fffbeb;
+}
+
+.window-item.normal {
+  background: #f0fdf4;
+}
+
+.urgency-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.urgency-badge.urgent {
+  background: #ef4444;
+  color: white;
+}
+
+.urgency-badge.warning {
+  background: #f59e0b;
+  color: white;
+}
+
+.urgency-badge.normal {
+  background: #22c55e;
+  color: white;
+}
+
+.window-dates {
+  font-size: 0.95rem;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.calendar-header h2 {
+  font-size: 1.2rem;
+}
+
+.nav-btn {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.nav-btn:hover {
+  background: #f5f5f5;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  background: white;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.calendar-day-header {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #666;
+  padding: 8px 4px;
+}
+
+.calendar-cell {
+  min-height: 60px;
+  padding: 4px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  position: relative;
+}
+
+.calendar-cell.empty {
+  background: #fafafa;
+  border-color: transparent;
+}
+
+.day-number {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.day-number.today {
+  background: #3b82f6;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.calendar-marker {
+  height: 4px;
+  margin-top: 2px;
+  border-radius: 2px;
+}
+
+.calendar-booking {
+  height: 4px;
+  margin-top: 2px;
+  border-radius: 2px;
+  opacity: 0.7;
+}
+
+.calendar-legend {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 12px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .calendar-cell {
+    min-height: 50px;
+  }
+
+  .calendar-day-header {
+    font-size: 0.65rem;
+  }
+}
