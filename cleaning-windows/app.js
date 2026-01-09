@@ -18,18 +18,25 @@ function calculateCleaningWindows(events) {
       const nextCheckin = propertyEvents[i + 1].start;
 
       if (currentCheckout <= nextCheckin) {
-        const days = Math.round((nextCheckin - currentCheckout) / (1000 * 60 * 60 * 24));
-        const isSameDay = days === 0;
-        const urgencyLevel = isSameDay ? 'urgent' : days === 1 ? 'warning' : 'normal';
+        const daysDiff = Math.round((nextCheckin - currentCheckout) / (1000 * 60 * 60 * 24));
+        // daysDiff = 1: checkout today, check-in tomorrow (urgent)
+        // daysDiff = 2: one free day between (warning)
+        // daysDiff >= 3: two or more free days (normal)
+        let urgencyLevel;
+        if (daysDiff <= 1) {
+          urgencyLevel = 'urgent';
+        } else if (daysDiff === 2) {
+          urgencyLevel = 'warning';
+        } else {
+          urgencyLevel = 'normal';
+        }
         windows.push({
           propertyId: property.id,
           propertyName: property.name,
           propertyColor: property.color,
           start: currentCheckout,
           end: nextCheckin,
-          days: days,
-          isSameDay: isSameDay,
-          isUrgent: isSameDay,
+          daysDiff: daysDiff,
           urgencyLevel: urgencyLevel,
         });
       }
@@ -69,10 +76,14 @@ function renderListView(windowsByProperty) {
       html += `<div class="windows-list">`;
       for (const window of futureWindows) {
         const urgencyClass = window.urgencyLevel;
-        const badgeText = window.isSameDay ? 'SAME DAY' : window.days + ' day' + (window.days > 1 ? 's' : '');
-        const dateText = window.isSameDay
-          ? formatDate(window.start)
-          : `${formatDate(window.start)} &rarr; ${formatDate(window.end)}`;
+        let badgeText;
+        if (window.daysDiff <= 1) {
+          badgeText = 'URGENT';
+        } else {
+          const freeDays = window.daysDiff - 1;
+          badgeText = freeDays + ' free day' + (freeDays > 1 ? 's' : '');
+        }
+        const dateText = `${formatDate(window.start)} &rarr; ${formatDate(window.end)}`;
         html += `
           <div class="window-item ${urgencyClass}">
             <span class="urgency-badge ${urgencyClass}">${badgeText}</span>
@@ -144,29 +155,22 @@ function renderPropertyCalendar(property, windows, year, month) {
     let status = '';
     let label = '';
 
-    // Check same-day turnovers FIRST (they take priority)
+    // Check cleaning windows first (they take priority over bookings on overlap days)
     for (const window of windows) {
-      if (window.isSameDay && isSameDay(date, window.start)) {
-        cellClass += ' cleaning urgent';
+      if (isDateInRangeInclusive(date, window.start, window.end)) {
+        cellClass += ` cleaning ${window.urgencyLevel}`;
         status = 'cleaning';
-        label = 'SD';
+        if (window.daysDiff <= 1) {
+          label = '!';
+        } else {
+          const freeDays = window.daysDiff - 1;
+          label = freeDays + 'd';
+        }
         break;
       }
     }
 
-    // Then check multi-day cleaning windows (include end date - can clean until 15:00)
-    if (!status) {
-      for (const window of windows) {
-        if (!window.isSameDay && isDateInRangeInclusive(date, window.start, window.end)) {
-          cellClass += ` cleaning ${window.urgencyLevel}`;
-          status = 'cleaning';
-          label = window.days + 'd';
-          break;
-        }
-      }
-    }
-
-    // Finally check bookings
+    // Then check bookings
     if (!status) {
       for (const event of propertyEvents) {
         if (isDateInRange(date, event.start, event.end)) {
@@ -186,9 +190,9 @@ function renderPropertyCalendar(property, windows, year, month) {
       </div>
       <div class="calendar-mini-legend">
         <span class="legend-booked">Booked</span>
-        <span class="legend-urgent">SD = Same day</span>
-        <span class="legend-warning">1d = 1 day</span>
-        <span class="legend-normal">2d+ = 2+ days</span>
+        <span class="legend-urgent">! Urgent</span>
+        <span class="legend-warning">1d = 1 free day</span>
+        <span class="legend-normal">2d+ = 2+ free days</span>
       </div>
     </div>
   `;
