@@ -154,10 +154,10 @@ function renderPropertyCalendar(property, windows, year, month) {
       }
     }
 
-    // Then check multi-day cleaning windows
+    // Then check multi-day cleaning windows (include end date - can clean until 15:00)
     if (!status) {
       for (const window of windows) {
-        if (!window.isSameDay && isDateInRange(date, window.start, window.end)) {
+        if (!window.isSameDay && isDateInRangeInclusive(date, window.start, window.end)) {
           cellClass += ` cleaning ${window.urgencyLevel}`;
           status = 'cleaning';
           label = window.days + 'd';
@@ -204,6 +204,16 @@ function isDateInRange(date, start, end) {
   const e = new Date(end);
   e.setHours(0, 0, 0, 0);
   return d >= s && d < e;
+}
+
+function isDateInRangeInclusive(date, start, end) {
+  const d = new Date(date);
+  d.setHours(0, 0, 0, 0);
+  const s = new Date(start);
+  s.setHours(0, 0, 0, 0);
+  const e = new Date(end);
+  e.setHours(0, 0, 0, 0);
+  return d >= s && d <= e;
 }
 
 function isSameDay(d1, d2) {
