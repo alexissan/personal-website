@@ -144,27 +144,34 @@ function renderPropertyCalendar(property, windows, year, month) {
     let status = '';
     let label = '';
 
-    for (const event of propertyEvents) {
-      if (isDateInRange(date, event.start, event.end)) {
-        cellClass += ' booked';
-        status = 'booked';
+    // Check same-day turnovers FIRST (they take priority)
+    for (const window of windows) {
+      if (window.isSameDay && isSameDay(date, window.start)) {
+        cellClass += ' cleaning urgent';
+        status = 'cleaning';
+        label = 'SD';
         break;
       }
     }
 
+    // Then check multi-day cleaning windows
     if (!status) {
       for (const window of windows) {
-        const inRange = window.isSameDay
-          ? isSameDay(date, window.start)
-          : isDateInRange(date, window.start, window.end);
-        if (inRange) {
+        if (!window.isSameDay && isDateInRange(date, window.start, window.end)) {
           cellClass += ` cleaning ${window.urgencyLevel}`;
           status = 'cleaning';
-          if (window.isSameDay) {
-            label = 'SD';
-          } else {
-            label = window.days + 'd';
-          }
+          label = window.days + 'd';
+          break;
+        }
+      }
+    }
+
+    // Finally check bookings
+    if (!status) {
+      for (const event of propertyEvents) {
+        if (isDateInRange(date, event.start, event.end)) {
+          cellClass += ' booked';
+          status = 'booked';
           break;
         }
       }
