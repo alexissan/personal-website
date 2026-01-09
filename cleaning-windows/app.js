@@ -263,6 +263,9 @@ async function loadAllData() {
     }
   }
 
+  const customBookings = getCustomBookings();
+  allEvents.push(...customBookings);
+
   cleaningWindows = calculateCleaningWindows(allEvents);
 
   if (currentView === 'list') {
@@ -278,6 +281,118 @@ function refreshData() {
   loadAllData().finally(() => {
     btn.classList.remove('spinning');
   });
+}
+
+function getCustomBookings() {
+  const stored = localStorage.getItem('customBookings');
+  const bookings = stored ? JSON.parse(stored) : [];
+
+  return bookings.map(b => {
+    const property = CONFIG.properties.find(p => p.id === b.propertyId);
+    return {
+      start: new Date(b.start),
+      end: new Date(b.end),
+      summary: b.note || 'Custom booking',
+      source: 'Custom',
+      propertyId: b.propertyId,
+      propertyName: property ? property.name : 'Unknown',
+      propertyColor: property ? property.color : '#888',
+      isCustom: true,
+      id: b.id,
+    };
+  });
+}
+
+function saveCustomBookingsToStorage(bookings) {
+  localStorage.setItem('customBookings', JSON.stringify(bookings));
+}
+
+function openAddModal() {
+  const select = document.getElementById('booking-property');
+  select.innerHTML = CONFIG.properties.map(p =>
+    `<option value="${p.id}">${p.name}</option>`
+  ).join('');
+
+  document.getElementById('booking-start').value = '';
+  document.getElementById('booking-end').value = '';
+  document.getElementById('booking-note').value = '';
+
+  renderCustomBookingsList();
+  document.getElementById('modal-overlay').classList.add('active');
+}
+
+function closeAddModal() {
+  document.getElementById('modal-overlay').classList.remove('active');
+}
+
+function saveCustomBooking(event) {
+  event.preventDefault();
+
+  const propertyId = document.getElementById('booking-property').value;
+  const start = document.getElementById('booking-start').value;
+  const end = document.getElementById('booking-end').value;
+  const note = document.getElementById('booking-note').value;
+
+  if (new Date(end) <= new Date(start)) {
+    alert('Check-out date must be after check-in date');
+    return;
+  }
+
+  const stored = localStorage.getItem('customBookings');
+  const bookings = stored ? JSON.parse(stored) : [];
+
+  bookings.push({
+    id: Date.now().toString(),
+    propertyId,
+    start,
+    end,
+    note,
+  });
+
+  saveCustomBookingsToStorage(bookings);
+  closeAddModal();
+  refreshData();
+}
+
+function deleteCustomBooking(id) {
+  const stored = localStorage.getItem('customBookings');
+  let bookings = stored ? JSON.parse(stored) : [];
+  bookings = bookings.filter(b => b.id !== id);
+  saveCustomBookingsToStorage(bookings);
+  renderCustomBookingsList();
+  refreshData();
+}
+
+function renderCustomBookingsList() {
+  const container = document.getElementById('custom-bookings-list');
+  const stored = localStorage.getItem('customBookings');
+  const bookings = stored ? JSON.parse(stored) : [];
+
+  if (bookings.length === 0) {
+    container.innerHTML = '';
+    return;
+  }
+
+  let html = '<h3>Custom Bookings</h3>';
+  for (const booking of bookings) {
+    const property = CONFIG.properties.find(p => p.id === booking.propertyId);
+    const propertyName = property ? property.name : 'Unknown';
+    const startDate = new Date(booking.start).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+    const endDate = new Date(booking.end).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+
+    html += `
+      <div class="custom-booking-item">
+        <div class="info">
+          <span class="property-tag">${propertyName}</span>
+          ${startDate} → ${endDate}
+          ${booking.note ? `<span style="color:#888"> · ${booking.note}</span>` : ''}
+        </div>
+        <button class="delete-btn" onclick="deleteCustomBooking('${booking.id}')" title="Delete">×</button>
+      </div>
+    `;
+  }
+
+  container.innerHTML = html;
 }
 
 document.addEventListener('DOMContentLoaded', () => {

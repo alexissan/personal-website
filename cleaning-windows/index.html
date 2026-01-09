@@ -15,12 +15,42 @@
           <button class="view-btn active" data-view="list">List</button>
           <button class="view-btn" data-view="calendar">Calendar</button>
         </div>
+        <button class="add-btn" onclick="openAddModal()" title="Add custom booking">+</button>
         <button class="refresh-btn" onclick="refreshData()" title="Refresh">↻</button>
       </div>
     </header>
     <main id="content">
       <div class="loading">Loading...</div>
     </main>
+  </div>
+
+  <div id="modal-overlay" class="modal-overlay" onclick="closeAddModal()">
+    <div class="modal" onclick="event.stopPropagation()">
+      <h2>Add Custom Booking</h2>
+      <form id="add-booking-form" onsubmit="saveCustomBooking(event)">
+        <label>
+          Property
+          <select id="booking-property" required></select>
+        </label>
+        <label>
+          Check-in date
+          <input type="date" id="booking-start" required>
+        </label>
+        <label>
+          Check-out date
+          <input type="date" id="booking-end" required>
+        </label>
+        <label>
+          Note (optional)
+          <input type="text" id="booking-note" placeholder="e.g. Direct booking">
+        </label>
+        <div class="modal-buttons">
+          <button type="button" class="btn-secondary" onclick="closeAddModal()">Cancel</button>
+          <button type="submit" class="btn-primary">Add Booking</button>
+        </div>
+      </form>
+      <div id="custom-bookings-list"></div>
+    </div>
   </div>
 
   <script src="config.js"></script>
