@@ -19,13 +19,13 @@ function calculateCleaningWindows(events) {
 
       if (currentCheckout <= nextCheckin) {
         const daysDiff = Math.round((nextCheckin - currentCheckout) / (1000 * 60 * 60 * 24));
-        // daysDiff = 1: checkout today, check-in tomorrow (urgent)
-        // daysDiff = 2: one free day between (warning)
-        // daysDiff >= 3: two or more free days (normal)
+        // daysDiff = 0: same day checkout & check-in (urgent)
+        // daysDiff = 1: checkout today, check-in tomorrow (warning)
+        // daysDiff >= 2: two or more days (normal)
         let urgencyLevel;
-        if (daysDiff <= 1) {
+        if (daysDiff <= 0) {
           urgencyLevel = 'urgent';
-        } else if (daysDiff === 2) {
+        } else if (daysDiff === 1) {
           urgencyLevel = 'warning';
         } else {
           urgencyLevel = 'normal';
@@ -77,11 +77,12 @@ function renderListView(windowsByProperty) {
       for (const window of futureWindows) {
         const urgencyClass = window.urgencyLevel;
         let badgeText;
-        if (window.daysDiff <= 1) {
-          badgeText = 'URGENT';
+        if (window.daysDiff <= 0) {
+          badgeText = 'SAME DAY';
+        } else if (window.daysDiff === 1) {
+          badgeText = 'NEXT DAY';
         } else {
-          const freeDays = window.daysDiff - 1;
-          badgeText = freeDays + ' free day' + (freeDays > 1 ? 's' : '');
+          badgeText = window.daysDiff + ' days';
         }
         const dateText = `${formatDate(window.start)} &rarr; ${formatDate(window.end)}`;
         html += `
@@ -160,11 +161,10 @@ function renderPropertyCalendar(property, windows, year, month) {
       if (isDateInRangeInclusive(date, window.start, window.end)) {
         cellClass += ` cleaning ${window.urgencyLevel}`;
         status = 'cleaning';
-        if (window.daysDiff <= 1) {
-          label = '!';
+        if (window.daysDiff <= 0) {
+          label = 'SD';
         } else {
-          const freeDays = window.daysDiff - 1;
-          label = freeDays + 'd';
+          label = window.daysDiff + 'd';
         }
         break;
       }
@@ -190,9 +190,9 @@ function renderPropertyCalendar(property, windows, year, month) {
       </div>
       <div class="calendar-mini-legend">
         <span class="legend-booked">Booked</span>
-        <span class="legend-urgent">! Urgent</span>
-        <span class="legend-warning">1d = 1 free day</span>
-        <span class="legend-normal">2d+ = 2+ free days</span>
+        <span class="legend-urgent">SD = Same day</span>
+        <span class="legend-warning">1d = Next day</span>
+        <span class="legend-normal">2d+ = 2+ days</span>
       </div>
     </div>
   `;
