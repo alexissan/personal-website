@@ -142,6 +142,7 @@ function renderPropertyCalendar(property, windows, year, month) {
 
     let cellClass = 'calendar-cell';
     let status = '';
+    let label = '';
 
     for (const event of propertyEvents) {
       if (isDateInRange(date, event.start, event.end)) {
@@ -159,22 +160,28 @@ function renderPropertyCalendar(property, windows, year, month) {
         if (inRange) {
           cellClass += ` cleaning ${window.urgencyLevel}`;
           status = 'cleaning';
+          if (window.isSameDay) {
+            label = 'SD';
+          } else {
+            label = window.days + 'd';
+          }
           break;
         }
       }
     }
 
     const dayClass = isToday ? 'day-number today' : 'day-number';
-    html += `<div class="${cellClass}"><span class="${dayClass}">${day}</span></div>`;
+    const labelHtml = label ? `<span class="cell-label">${label}</span>` : '';
+    html += `<div class="${cellClass}"><span class="${dayClass}">${day}</span>${labelHtml}</div>`;
   }
 
   html += `
       </div>
       <div class="calendar-mini-legend">
         <span class="legend-booked">Booked</span>
-        <span class="legend-urgent">Same day</span>
-        <span class="legend-warning">1 day</span>
-        <span class="legend-normal">2+ days</span>
+        <span class="legend-urgent">SD = Same day</span>
+        <span class="legend-warning">1d = 1 day</span>
+        <span class="legend-normal">2d+ = 2+ days</span>
       </div>
     </div>
   `;
