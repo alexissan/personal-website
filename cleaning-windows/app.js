@@ -263,7 +263,7 @@ async function loadAllData() {
     }
   }
 
-  const customBookings = getCustomBookings();
+  const customBookings = await getCustomBookings();
   allEvents.push(...customBookings);
 
   cleaningWindows = calculateCleaningWindows(allEvents);
@@ -283,28 +283,29 @@ function refreshData() {
   });
 }
 
-function getCustomBookings() {
-  const stored = localStorage.getItem('customBookings');
-  const bookings = stored ? JSON.parse(stored) : [];
+async function getCustomBookings() {
+  try {
+    const response = await fetch('/api/bookings');
+    const bookings = await response.json();
 
-  return bookings.map(b => {
-    const property = CONFIG.properties.find(p => p.id === b.propertyId);
-    return {
-      start: new Date(b.start),
-      end: new Date(b.end),
-      summary: b.note || 'Custom booking',
-      source: 'Custom',
-      propertyId: b.propertyId,
-      propertyName: property ? property.name : 'Unknown',
-      propertyColor: property ? property.color : '#888',
-      isCustom: true,
-      id: b.id,
-    };
-  });
-}
-
-function saveCustomBookingsToStorage(bookings) {
-  localStorage.setItem('customBookings', JSON.stringify(bookings));
+    return bookings.map(b => {
+      const property = CONFIG.properties.find(p => p.id === b.propertyId);
+      return {
+        start: new Date(b.start),
+        end: new Date(b.end),
+        summary: b.note || 'Custom booking',
+        source: 'Custom',
+        propertyId: b.propertyId,
+        propertyName: property ? property.name : 'Unknown',
+        propertyColor: property ? property.color : '#888',
+        isCustom: true,
+        id: b.id,
+      };
+    });
+  } catch (error) {
+    console.error('Failed to load custom bookings:', error);
+    return [];
+  }
 }
 
 function openAddModal() {
@@ -325,7 +326,7 @@ function closeAddModal() {
   document.getElementById('modal-overlay').classList.remove('active');
 }
 
-function saveCustomBooking(event) {
+async function saveCustomBooking(event) {
   event.preventDefault();
 
   const propertyId = document.getElementById('booking-property').value;
@@ -338,61 +339,66 @@ function saveCustomBooking(event) {
     return;
   }
 
-  const stored = localStorage.getItem('customBookings');
-  const bookings = stored ? JSON.parse(stored) : [];
-
-  bookings.push({
-    id: Date.now().toString(),
-    propertyId,
-    start,
-    end,
-    note,
-  });
-
-  saveCustomBookingsToStorage(bookings);
-  closeAddModal();
-  refreshData();
+  try {
+    await fetch('/api/bookings', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ propertyId, start, end, note }),
+    });
+    closeAddModal();
+    refreshData();
+  } catch (error) {
+    alert('Failed to save booking');
+    console.error(error);
+  }
 }
 
-function deleteCustomBooking(id) {
-  const stored = localStorage.getItem('customBookings');
-  let bookings = stored ? JSON.parse(stored) : [];
-  bookings = bookings.filter(b => b.id !== id);
-  saveCustomBookingsToStorage(bookings);
-  renderCustomBookingsList();
-  refreshData();
+async function deleteCustomBooking(id) {
+  try {
+    await fetch(`/api/bookings/${id}`, { method: 'DELETE' });
+    renderCustomBookingsList();
+    refreshData();
+  } catch (error) {
+    alert('Failed to delete booking');
+    console.error(error);
+  }
 }
 
-function renderCustomBookingsList() {
+async function renderCustomBookingsList() {
   const container = document.getElementById('custom-bookings-list');
-  const stored = localStorage.getItem('customBookings');
-  const bookings = stored ? JSON.parse(stored) : [];
 
-  if (bookings.length === 0) {
-    container.innerHTML = '';
-    return;
-  }
+  try {
+    const response = await fetch('/api/bookings');
+    const bookings = await response.json();
 
-  let html = '<h3>Custom Bookings</h3>';
-  for (const booking of bookings) {
-    const property = CONFIG.properties.find(p => p.id === booking.propertyId);
-    const propertyName = property ? property.name : 'Unknown';
-    const startDate = new Date(booking.start).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
-    const endDate = new Date(booking.end).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+    if (bookings.length === 0) {
+      container.innerHTML = '';
+      return;
+    }
 
-    html += `
-      <div class="custom-booking-item">
-        <div class="info">
-          <span class="property-tag">${propertyName}</span>
-          ${startDate} → ${endDate}
-          ${booking.note ? `<span style="color:#888"> · ${booking.note}</span>` : ''}
+    let html = '<h3>Custom Bookings</h3>';
+    for (const booking of bookings) {
+      const property = CONFIG.properties.find(p => p.id === booking.propertyId);
+      const propertyName = property ? property.name : 'Unknown';
+      const startDate = new Date(booking.start).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+      const endDate = new Date(booking.end).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+
+      html += `
+        <div class="custom-booking-item">
+          <div class="info">
+            <span class="property-tag">${propertyName}</span>
+            ${startDate} → ${endDate}
+            ${booking.note ? `<span style="color:#888"> · ${booking.note}</span>` : ''}
+          </div>
+          <button class="delete-btn" onclick="deleteCustomBooking('${booking.id}')" title="Delete">×</button>
         </div>
-        <button class="delete-btn" onclick="deleteCustomBooking('${booking.id}')" title="Delete">×</button>
-      </div>
-    `;
-  }
+      `;
+    }
 
-  container.innerHTML = html;
+    container.innerHTML = html;
+  } catch (error) {
+    console.error('Failed to load custom bookings:', error);
+  }
 }
 
 document.addEventListener('DOMContentLoaded', () => {

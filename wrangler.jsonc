@@ -4,5 +4,11 @@
   "compatibility_date": "2025-12-20",
   "assets": {
     "directory": "./"
-  }
+  },
+  "kv_namespaces": [
+    {
+      "binding": "BOOKINGS_KV",
+      "id": "YOUR_KV_NAMESPACE_ID"
+    }
+  ]
 }
