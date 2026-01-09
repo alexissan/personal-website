@@ -91,12 +91,6 @@ function renderCalendarView(windowsByProperty) {
 
   const year = currentMonth.getFullYear();
   const month = currentMonth.getMonth();
-
-  const firstDay = new Date(year, month, 1);
-  const lastDay = new Date(year, month + 1, 0);
-  const startDay = firstDay.getDay();
-  const daysInMonth = lastDay.getDate();
-
   const monthName = currentMonth.toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
 
   let html = `
@@ -105,14 +99,34 @@ function renderCalendarView(windowsByProperty) {
       <h2>${monthName}</h2>
       <button class="nav-btn" onclick="nextMonth()">&rarr;</button>
     </div>
-    <div class="calendar-grid">
-      <div class="calendar-day-header">Sun</div>
-      <div class="calendar-day-header">Mon</div>
-      <div class="calendar-day-header">Tue</div>
-      <div class="calendar-day-header">Wed</div>
-      <div class="calendar-day-header">Thu</div>
-      <div class="calendar-day-header">Fri</div>
-      <div class="calendar-day-header">Sat</div>
+  `;
+
+  for (const property of CONFIG.properties) {
+    html += renderPropertyCalendar(property, windowsByProperty[property.id] || [], year, month);
+  }
+
+  container.innerHTML = html;
+}
+
+function renderPropertyCalendar(property, windows, year, month) {
+  const firstDay = new Date(year, month, 1);
+  const lastDay = new Date(year, month + 1, 0);
+  const startDay = firstDay.getDay();
+  const daysInMonth = lastDay.getDate();
+
+  const propertyEvents = allEvents.filter(e => e.propertyId === property.id);
+
+  let html = `
+    <div class="property-calendar">
+      <h3 class="property-calendar-title" style="border-left-color: ${property.color}">${property.name}</h3>
+      <div class="calendar-grid">
+        <div class="calendar-day-header">S</div>
+        <div class="calendar-day-header">M</div>
+        <div class="calendar-day-header">T</div>
+        <div class="calendar-day-header">W</div>
+        <div class="calendar-day-header">T</div>
+        <div class="calendar-day-header">F</div>
+        <div class="calendar-day-header">S</div>
   `;
 
   for (let i = 0; i < startDay; i++) {
@@ -123,39 +137,41 @@ function renderCalendarView(windowsByProperty) {
     const date = new Date(year, month, day);
     const isToday = isSameDay(date, new Date());
 
-    let cellContent = `<span class="day-number ${isToday ? 'today' : ''}">${day}</span>`;
+    let cellClass = 'calendar-cell';
+    let status = '';
 
-    for (const property of CONFIG.properties) {
-      const windows = windowsByProperty[property.id] || [];
+    for (const event of propertyEvents) {
+      if (isDateInRange(date, event.start, event.end)) {
+        cellClass += ' booked';
+        status = 'booked';
+        break;
+      }
+    }
 
+    if (!status) {
       for (const window of windows) {
         if (isDateInRange(date, window.start, window.end)) {
-          cellContent += `<div class="calendar-marker ${window.urgencyLevel}" style="background-color: ${property.color}20; border-left: 3px solid ${property.color};" title="${property.name}: Cleaning window"></div>`;
-          break;
-        }
-      }
-
-      const propertyEvents = allEvents.filter(e => e.propertyId === property.id);
-      for (const event of propertyEvents) {
-        if (isDateInRange(date, event.start, event.end)) {
-          cellContent += `<div class="calendar-booking" style="background-color: ${property.color};" title="${property.name}: ${event.summary || 'Booked'}"></div>`;
+          cellClass += ` cleaning ${window.urgencyLevel}`;
+          status = 'cleaning';
           break;
         }
       }
     }
 
-    html += `<div class="calendar-cell">${cellContent}</div>`;
+    const dayClass = isToday ? 'day-number today' : 'day-number';
+    html += `<div class="${cellClass}"><span class="${dayClass}">${day}</span></div>`;
   }
 
-  html += `</div>`;
+  html += `
+      </div>
+      <div class="calendar-mini-legend">
+        <span class="legend-booked">Booked</span>
+        <span class="legend-cleaning">Cleaning</span>
+      </div>
+    </div>
+  `;
 
-  html += `<div class="calendar-legend">`;
-  for (const property of CONFIG.properties) {
-    html += `<div class="legend-item"><span class="legend-color" style="background-color: ${property.color}"></span>${property.name}</div>`;
-  }
-  html += `</div>`;
-
-  container.innerHTML = html;
+  return html;
 }
 
 function isDateInRange(date, start, end) {
