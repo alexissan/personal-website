@@ -236,6 +236,14 @@ async function loadAllData() {
   }
 }
 
+function refreshData() {
+  const btn = document.querySelector('.refresh-btn');
+  btn.classList.add('spinning');
+  loadAllData().finally(() => {
+    btn.classList.remove('spinning');
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.view-btn').forEach(btn => {
     btn.addEventListener('click', () => switchView(btn.dataset.view));

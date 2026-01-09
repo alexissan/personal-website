@@ -10,9 +10,12 @@
   <div class="container">
     <header>
       <h1>Cleaning Windows</h1>
-      <div class="view-toggle">
-        <button class="view-btn active" data-view="list">List</button>
-        <button class="view-btn" data-view="calendar">Calendar</button>
+      <div class="header-controls">
+        <div class="view-toggle">
+          <button class="view-btn active" data-view="list">List</button>
+          <button class="view-btn" data-view="calendar">Calendar</button>
+        </div>
+        <button class="refresh-btn" onclick="refreshData()" title="Refresh">↻</button>
       </div>
     </header>
     <main id="content">
