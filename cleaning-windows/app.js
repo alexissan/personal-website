@@ -17,8 +17,9 @@ function calculateCleaningWindows(events) {
       const currentCheckout = propertyEvents[i].end;
       const nextCheckin = propertyEvents[i + 1].start;
 
-      if (currentCheckout < nextCheckin) {
-        const days = Math.ceil((nextCheckin - currentCheckout) / (1000 * 60 * 60 * 24));
+      if (currentCheckout <= nextCheckin) {
+        const days = Math.round((nextCheckin - currentCheckout) / (1000 * 60 * 60 * 24));
+        const isSameDay = days === 0;
         windows.push({
           propertyId: property.id,
           propertyName: property.name,
@@ -26,8 +27,9 @@ function calculateCleaningWindows(events) {
           start: currentCheckout,
           end: nextCheckin,
           days: days,
-          isUrgent: days === 1,
-          urgencyLevel: days === 1 ? 'urgent' : days === 2 ? 'warning' : 'normal',
+          isSameDay: isSameDay,
+          isUrgent: isSameDay,
+          urgencyLevel: isSameDay ? 'urgent' : 'normal',
         });
       }
     }
@@ -66,14 +68,14 @@ function renderListView(windowsByProperty) {
       html += `<div class="windows-list">`;
       for (const window of futureWindows) {
         const urgencyClass = window.urgencyLevel;
+        const badgeText = window.isSameDay ? 'SAME DAY' : window.days + ' day' + (window.days > 1 ? 's' : '');
+        const dateText = window.isSameDay
+          ? formatDate(window.start)
+          : `${formatDate(window.start)} &rarr; ${formatDate(window.end)}`;
         html += `
           <div class="window-item ${urgencyClass}">
-            <span class="urgency-badge ${urgencyClass}">
-              ${window.isUrgent ? 'URGENT' : window.days + ' days'}
-            </span>
-            <span class="window-dates">
-              ${formatDate(window.start)} &rarr; ${formatDate(window.end)}
-            </span>
+            <span class="urgency-badge ${urgencyClass}">${badgeText}</span>
+            <span class="window-dates">${dateText}</span>
           </div>
         `;
       }
