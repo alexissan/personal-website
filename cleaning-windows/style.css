@@ -312,7 +312,29 @@ h1 {
   vertical-align: middle;
 }
 
-.legend-cleaning::before {
+.legend-urgent::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #fecaca;
+  border-radius: 3px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.legend-warning::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #fef08a;
+  border-radius: 3px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.legend-normal::before {
   content: '';
   display: inline-block;
   width: 12px;

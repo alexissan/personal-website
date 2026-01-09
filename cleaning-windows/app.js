@@ -153,7 +153,10 @@ function renderPropertyCalendar(property, windows, year, month) {
 
     if (!status) {
       for (const window of windows) {
-        if (isDateInRange(date, window.start, window.end)) {
+        const inRange = window.isSameDay
+          ? isSameDay(date, window.start)
+          : isDateInRange(date, window.start, window.end);
+        if (inRange) {
           cellClass += ` cleaning ${window.urgencyLevel}`;
           status = 'cleaning';
           break;
@@ -169,7 +172,9 @@ function renderPropertyCalendar(property, windows, year, month) {
       </div>
       <div class="calendar-mini-legend">
         <span class="legend-booked">Booked</span>
-        <span class="legend-cleaning">Cleaning</span>
+        <span class="legend-urgent">Same day</span>
+        <span class="legend-warning">1 day</span>
+        <span class="legend-normal">2+ days</span>
       </div>
     </div>
   `;
