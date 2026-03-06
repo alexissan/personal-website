@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="MCP tool orchestration illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e7f4ff"/>
+      <stop offset="100%" stop-color="#e9fff3"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fbff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1320" cy="160" r="170" fill="#ccf1de" opacity="0.7"/>
+  <circle cx="220" cy="760" r="190" fill="#cde8ff" opacity="0.65"/>
+  <rect x="600" y="280" width="400" height="340" rx="32" fill="url(#card)" stroke="#bfd6eb" stroke-width="3"/>
+  <text x="800" y="355" text-anchor="middle" font-family="Avenir Next, Helvetica, Arial" font-size="46" fill="#13344f">Agent</text>
+  <text x="800" y="412" text-anchor="middle" font-family="Avenir Next, Helvetica, Arial" font-size="30" fill="#456079">MCP client</text>
+
+  <rect x="180" y="180" width="300" height="180" rx="24" fill="#ffffff" stroke="#b7d3ea" stroke-width="3"/>
+  <text x="330" y="258" text-anchor="middle" font-family="Avenir Next, Helvetica, Arial" font-size="42" fill="#1f4f78">Figma</text>
+
+  <rect x="1120" y="180" width="300" height="180" rx="24" fill="#ffffff" stroke="#b7d3ea" stroke-width="3"/>
+  <text x="1270" y="258" text-anchor="middle" font-family="Avenir Next, Helvetica, Arial" font-size="42" fill="#1f4f78">Jira</text>
+  <text x="1270" y="307" text-anchor="middle" font-family="Avenir Next, Helvetica, Arial" font-size="28" fill="#5b7894">Atlassian</text>
+
+  <line x1="480" y1="270" x2="600" y2="360" stroke="#2b9c78" stroke-width="8" stroke-linecap="round"/>
+  <line x1="1120" y1="270" x2="1000" y2="360" stroke="#2b9c78" stroke-width="8" stroke-linecap="round"/>
+  <line x1="330" y1="360" x2="330" y2="650" stroke="#6fa7d5" stroke-width="6" stroke-dasharray="16 14"/>
+  <line x1="1270" y1="360" x2="1270" y2="650" stroke="#6fa7d5" stroke-width="6" stroke-dasharray="16 14"/>
+
+  <rect x="180" y="650" width="1240" height="150" rx="24" fill="#ffffff" stroke="#bfd6eb" stroke-width="3"/>
+  <text x="800" y="723" text-anchor="middle" font-family="Avenir Next, Helvetica, Arial" font-size="36" fill="#1f3f5d">Shared context, faster implementation decisions</text>
+</svg>

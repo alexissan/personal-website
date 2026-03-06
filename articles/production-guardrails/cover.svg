@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Production guardrails illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e9f5ff"/>
+      <stop offset="100%" stop-color="#fff1e8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <rect x="180" y="130" width="1240" height="640" rx="30" fill="#ffffff" stroke="#dce6ef" stroke-width="3"/>
+  <path d="M800 260l220 90v120c0 130-90 230-220 280-130-50-220-150-220-280V350l220-90z" fill="#f3f9ff" stroke="#aac8e0" stroke-width="8"/>
+  <path d="M800 370v220" stroke="#2c6d9f" stroke-width="12" stroke-linecap="round"/>
+  <path d="M700 470h200" stroke="#2c6d9f" stroke-width="12" stroke-linecap="round"/>
+
+  <rect x="300" y="220" width="210" height="92" rx="16" fill="#f7fff8" stroke="#cde8d2"/>
+  <text x="405" y="275" text-anchor="middle" font-family="Avenir Next, Helvetica, Arial" font-size="28" fill="#2f6d45">Read-only</text>
+
+  <rect x="1090" y="220" width="210" height="92" rx="16" fill="#fffaf2" stroke="#ecd9bf"/>
+  <text x="1195" y="275" text-anchor="middle" font-family="Avenir Next, Helvetica, Arial" font-size="28" fill="#7d5a2a">Approval</text>
+
+  <rect x="300" y="590" width="210" height="92" rx="16" fill="#f4f6ff" stroke="#d4daf5"/>
+  <text x="405" y="645" text-anchor="middle" font-family="Avenir Next, Helvetica, Arial" font-size="28" fill="#4b568c">Telemetry</text>
+
+  <rect x="1090" y="590" width="210" height="92" rx="16" fill="#fff4f4" stroke="#f0cfcf"/>
+  <text x="1195" y="645" text-anchor="middle" font-family="Avenir Next, Helvetica, Arial" font-size="28" fill="#8b4a4a">Kill switch</text>
+
+  <text x="800" y="820" text-anchor="middle" font-family="Avenir Next, Helvetica, Arial" font-size="32" fill="#4d6173">Ship fast, but keep control</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Agent evaluation dashboard illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff3e9"/>
+      <stop offset="100%" stop-color="#edf4ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="140" y="120" width="1320" height="660" rx="28" fill="#ffffff" stroke="#e3e7ef" stroke-width="3"/>
+  <text x="240" y="205" font-family="Avenir Next, Helvetica, Arial" font-size="42" fill="#2a3950">Agent Eval Dashboard</text>
+
+  <rect x="230" y="260" width="310" height="170" rx="20" fill="#f5fbff" stroke="#cfe1f3"/>
+  <text x="260" y="325" font-family="Avenir Next, Helvetica, Arial" font-size="32" fill="#274663">92%</text>
+  <text x="260" y="370" font-family="Avenir Next, Helvetica, Arial" font-size="24" fill="#5a708b">Task success</text>
+
+  <rect x="645" y="260" width="310" height="170" rx="20" fill="#f6fff8" stroke="#d5ecd7"/>
+  <text x="675" y="325" font-family="Avenir Next, Helvetica, Arial" font-size="32" fill="#20563d">0</text>
+  <text x="675" y="370" font-family="Avenir Next, Helvetica, Arial" font-size="24" fill="#5d7a68">Critical policy violations</text>
+
+  <rect x="1060" y="260" width="310" height="170" rx="20" fill="#fff8f2" stroke="#ecdcc8"/>
+  <text x="1090" y="325" font-family="Avenir Next, Helvetica, Arial" font-size="32" fill="#6c4a1f">8.4s</text>
+  <text x="1090" y="370" font-family="Avenir Next, Helvetica, Arial" font-size="24" fill="#84684a">P95 latency</text>
+
+  <polyline points="230,620 390,560 560,590 740,490 900,530 1080,450 1260,480" fill="none" stroke="#2f83d8" stroke-width="8" stroke-linecap="round"/>
+  <polyline points="230,670 390,640 560,650 740,620 900,625 1080,610 1260,595" fill="none" stroke="#2fa874" stroke-width="8" stroke-linecap="round"/>
+  <text x="230" y="730" font-family="Avenir Next, Helvetica, Arial" font-size="24" fill="#5f6f82">Regression trend (weekly)</text>
+</svg>
