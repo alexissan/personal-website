@@ -186,6 +186,39 @@
       outline-offset: 3px;
     }
 
+    .featured-grid {
+      display: grid;
+      gap: .65rem;
+      margin-bottom: .9rem;
+    }
+
+    .featured-card {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: linear-gradient(135deg, #f8fffb, #f2f8ff);
+      padding: .6rem .7rem;
+    }
+
+    .featured-card a {
+      border-bottom: none;
+      display: block;
+      font-weight: 600;
+      margin-bottom: .2rem;
+    }
+
+    .featured-card p {
+      color: var(--muted);
+      font-size: .84rem;
+      line-height: 1.35;
+    }
+
+    .all-articles-link {
+      display: inline-block;
+      margin-bottom: .75rem;
+      font-size: .86rem;
+      font-weight: 600;
+    }
+
     @keyframes floatIn {
       from {
         opacity: 0;
@@ -221,8 +254,22 @@
         grid-template-columns: 1fr 1fr;
       }
 
-      section:last-child {
-        grid-column: span 2;
+      .featured-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .section-work { order: 1; }
+
+      .section-projects { order: 2; }
+
+      .section-articles {
+        order: 3;
+        grid-column: 1 / -1;
+      }
+
+      .section-elsewhere {
+        order: 4;
+        grid-column: 1 / -1;
       }
     }
   </style>
@@ -245,7 +292,7 @@
     </header>
 
     <div class="sections">
-      <section>
+      <section class="section-work">
         <h2>
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7h8m-8 5h8m-8 5h5"/><path d="M4 4h16v16H4z"/></svg>
           Work with me
@@ -256,11 +303,30 @@
         </ul>
       </section>
 
-      <section>
+      <section class="section-articles">
         <h2>
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14v14H5z"/><path d="M9 9h6m-6 4h6m-6 4h4"/></svg>
           Articles
         </h2>
+        <div class="featured-grid" aria-label="Featured AI articles">
+          <article class="featured-card">
+            <a href="/articles/mcp-at-work">Using MCP to Your Advantage at Work</a>
+            <p>Figma + Atlassian workflows that reduce context switching.</p>
+          </article>
+          <article class="featured-card">
+            <a href="/articles/evals-for-agents">Why Agentic Teams Need Eval Pipelines</a>
+            <p>A practical framework for reliability, regressions, and release gates.</p>
+          </article>
+          <article class="featured-card">
+            <a href="/articles/multi-agent-orchestration">Multi-Agent Orchestration Without Chaos</a>
+            <p>How to split planner, executor, and critic roles with strict contracts.</p>
+          </article>
+          <article class="featured-card">
+            <a href="/articles/production-guardrails">Shipping Agentic AI Without Waking Up On-Call</a>
+            <p>Permission tiers, kill switches, and incident-ready telemetry.</p>
+          </article>
+        </div>
+        <a href="/articles" class="all-articles-link">Browse all articles</a>
         <ul>
           <li><a href="/articles/mcp-at-work">Using MCP to Your Advantage at Work</a></li>
           <li><a href="/articles/evals-for-agents">Why Agentic Teams Need Eval Pipelines Before More Prompts</a></li>
@@ -270,7 +336,7 @@
         </ul>
       </section>
 
-      <section>
+      <section class="section-projects">
         <h2>
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 4v10l-8 4-8-4V7z"/><path d="M12 7v10"/><path d="M4 7l8 4 8-4"/></svg>
           Projects
@@ -280,7 +346,7 @@
         </ul>
       </section>
 
-      <section>
+      <section class="section-elsewhere">
         <h2>
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m7-7H5"/><circle cx="12" cy="12" r="9"/></svg>
           Elsewhere

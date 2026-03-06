@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articles — Alexis Santos</title>
+  <meta name="description" content="Technical articles by Alexis Santos on agentic AI engineering, software delivery, and system design.">
+  <link rel="canonical" href="https://alexissantos.com/articles">
+  <meta property="og:title" content="Articles — Alexis Santos">
+  <meta property="og:description" content="Technical articles on agentic AI engineering, software delivery, and system design.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alexissantos.com/articles">
+  <meta property="og:image" content="https://alexissantos.com/articles/mcp-at-work/cover.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Articles — Alexis Santos">
+  <meta name="twitter:description" content="Technical articles on agentic AI engineering, software delivery, and system design.">
+  <meta name="twitter:image" content="https://alexissantos.com/articles/mcp-at-work/cover.svg">
+  <style>
+    :root {
+      --bg: #f3f7f5;
+      --paper: #ffffff;
+      --ink: #0f1f1b;
+      --muted: #516760;
+      --line: #d5e1dc;
+      --accent: #1f8f72;
+      --radius-lg: 18px;
+      --radius-sm: 12px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      background:
+        radial-gradient(circle at 90% 5%, #e6f9ef 0%, transparent 34%),
+        radial-gradient(circle at 7% 88%, #e6efff 0%, transparent 32%),
+        var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+      padding: 1.25rem;
+    }
+
+    .wrap {
+      max-width: 1020px;
+      margin: 0 auto;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .top {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: var(--paper);
+      padding: 1.2rem;
+    }
+
+    .top a {
+      color: var(--muted);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      font-size: .9rem;
+    }
+
+    .top a:hover,
+    .top a:focus {
+      color: var(--ink);
+      border-color: var(--ink);
+    }
+
+    h1 {
+      margin-top: .5rem;
+      font-size: clamp(1.7rem, 4vw, 2.3rem);
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      max-width: 65ch;
+      margin-top: .35rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: .9rem;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: var(--paper);
+      overflow: hidden;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      min-height: 100%;
+    }
+
+    .card img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .card-body {
+      padding: .9rem;
+      display: grid;
+      gap: .5rem;
+    }
+
+    .meta {
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--accent);
+      font-size: .72rem;
+      font-weight: 700;
+    }
+
+    .card h2 {
+      font-size: 1.1rem;
+      line-height: 1.35;
+      letter-spacing: -0.01em;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .card a {
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px solid #c0d2cb;
+      width: fit-content;
+      font-weight: 600;
+    }
+
+    .card a:hover,
+    .card a:focus {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    @media (min-width: 760px) {
+      body { padding: 2rem; }
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <a href="/">← Alexis Santos</a>
+      <h1>Articles</h1>
+      <p class="subtitle">Technical writing for engineers focused on agentic AI systems, software delivery, and production reliability.</p>
+    </header>
+
+    <section class="grid" aria-label="Article list">
+      <article class="card">
+        <img src="/articles/mcp-at-work/cover.svg" alt="MCP orchestration cover">
+        <div class="card-body">
+          <p class="meta">Agentic AI</p>
+          <h2>Using MCP to Your Advantage at Work</h2>
+          <p>A practical approach to connecting agents with Figma and Atlassian for faster, traceable implementation workflows.</p>
+          <a href="/articles/mcp-at-work">Read article</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="/articles/evals-for-agents/cover.svg" alt="Agent eval dashboard cover">
+        <div class="card-body">
+          <p class="meta">Reliability</p>
+          <h2>Why Agentic Teams Need Eval Pipelines Before More Prompts</h2>
+          <p>How to build measurable quality gates that prevent regressions in tools, prompts, and policy compliance.</p>
+          <a href="/articles/evals-for-agents">Read article</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="/articles/multi-agent-orchestration/cover.svg" alt="Multi-agent orchestration cover">
+        <div class="card-body">
+          <p class="meta">Architecture</p>
+          <h2>Multi-Agent Orchestration Without Chaos</h2>
+          <p>A clear control-flow model for planner, executor, and critic agents with typed handoffs and failure policies.</p>
+          <a href="/articles/multi-agent-orchestration">Read article</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="/articles/production-guardrails/cover.svg" alt="Production guardrails cover">
+        <div class="card-body">
+          <p class="meta">Production</p>
+          <h2>Shipping Agentic AI Without Waking Up On-Call</h2>
+          <p>A deployment checklist covering permission tiers, observability, kill switches, and incident drills.</p>
+          <a href="/articles/production-guardrails">Read article</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="/articles/remote-work/cover.jpg" alt="Remote work article cover">
+        <div class="card-body">
+          <p class="meta">Personal</p>
+          <h2>My Honest Take on Remote Work</h2>
+          <p>A personal perspective on remote work and how it changed family life, health, and long-term career choices.</p>
+          <a href="/articles/remote-work">Read article</a>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
