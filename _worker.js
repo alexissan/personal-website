@@ -12,6 +12,21 @@ export default {
       });
     }
 
+    // Proxy /dashboard to Vercel (OpenClaw)
+    if (url.pathname === '/dashboard' || url.pathname.startsWith('/dashboard/')) {
+      const vercelUrl = new URL(url.pathname + url.search, 'https://openclaw-dashboard-mauve.vercel.app');
+
+      const headers = new Headers(request.headers);
+      headers.set('x-forwarded-host', url.hostname);
+      headers.set('x-forwarded-proto', 'https');
+
+      return fetch(vercelUrl.toString(), {
+        method: request.method,
+        headers,
+        body: request.method !== 'GET' && request.method !== 'HEAD' ? request.body : undefined,
+      });
+    }
+
     if (url.pathname === '/api/ical-proxy') {
       return handleIcalProxy(request);
     }
