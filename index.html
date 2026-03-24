@@ -3,364 +3,367 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alexis Santos</title>
-  <meta name="description" content="Personal website of Alexis Santos">
+  <title>Alexis Santos — Engineer, Builder, Writer</title>
+  <meta name="description" content="Senior engineer building indie software. Writing about AI engineering, shipping products solo, and the messy reality of growth.">
+  <meta property="og:title" content="Alexis Santos — Engineer, Builder, Writer">
+  <meta property="og:description" content="Senior engineer building indie software. Writing about AI, shipping solo, and growth.">
+  <meta property="og:image" content="https://alexissantos.dev/articles/building-is-the-easy-part/cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@deepfirstsearch">
   <style>
     :root {
-      --bg: #f5f7f6;
+      --bg: #fafbfc;
       --paper: #ffffff;
-      --ink: #10201c;
-      --muted: #465b54;
-      --line: #d6e2dd;
-      --accent: #1f8f72;
-      --accent-soft: #d9f3ea;
-      --radius-xl: 28px;
-      --radius-lg: 18px;
-      --shadow-soft: 0 20px 50px rgba(20, 41, 36, 0.08);
+      --ink: #111;
+      --muted: #666;
+      --light: #999;
+      --line: #e8e8e8;
+      --accent: #1a8f6e;
+      --accent-bg: #edf8f3;
+      --radius: 16px;
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      font-size: 18px;
-      scroll-behavior: smooth;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { font-size: 17px; scroll-behavior: smooth; }
 
     body {
-      font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.6;
       color: var(--ink);
-      background:
-        radial-gradient(circle at 85% 15%, #e6f7ef 0%, transparent 38%),
-        radial-gradient(circle at 8% 80%, #e8f0fb 0%, transparent 34%),
-        var(--bg);
-      padding: 1.25rem;
+      background: var(--bg);
+      min-height: 100vh;
     }
 
     .page {
-      max-width: 860px;
+      max-width: 640px;
       margin: 0 auto;
-      display: grid;
-      gap: 1.1rem;
-      padding-bottom: 2rem;
+      padding: 4rem 1.5rem 3rem;
     }
 
+    /* Hero */
     .hero {
-      position: relative;
-      overflow: hidden;
-      border: 1px solid var(--line);
-      border-radius: var(--radius-xl);
-      background: linear-gradient(130deg, #f7fbf9 10%, #eef8ff 95%);
-      box-shadow: var(--shadow-soft);
-      padding: 1.5rem;
-      animation: floatIn .8s ease-out both;
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      width: 240px;
-      height: 240px;
-      right: -60px;
-      top: -60px;
-      background: radial-gradient(circle, rgba(31, 143, 114, .22) 0%, rgba(31, 143, 114, 0) 70%);
-      pointer-events: none;
-    }
-
-    .hero-top {
       display: flex;
       align-items: center;
-      gap: 1rem;
-      margin-bottom: 1rem;
-    }
-
-    .photo-wrap {
-      width: 86px;
-      height: 86px;
-      border-radius: 24px;
-      overflow: hidden;
-      border: 3px solid #fff;
-      box-shadow: 0 10px 26px rgba(16, 32, 28, .18);
-      flex-shrink: 0;
+      gap: 1.2rem;
+      margin-bottom: 1.5rem;
+      animation: fadeUp .6s ease-out both;
     }
 
     .photo {
-      width: 100%;
-      height: 100%;
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
       object-fit: cover;
-      filter: saturate(.92) contrast(1.04);
+      border: 3px solid var(--paper);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      flex-shrink: 0;
     }
 
-    h1 {
-      font-size: clamp(1.8rem, 5vw, 2.6rem);
-      letter-spacing: -0.03em;
-      line-height: 1.1;
-      margin-bottom: .3rem;
+    .hero-text h1 {
+      font-size: 1.6rem;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: .15rem;
     }
 
-    .tag {
-      display: inline-block;
-      font-size: .74rem;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      color: var(--accent);
-      background: var(--accent-soft);
-      border-radius: 999px;
-      padding: .26rem .58rem;
-      font-weight: 700;
+    .hero-text .role {
+      font-size: .85rem;
+      color: var(--muted);
+      font-weight: 400;
     }
 
     .bio {
       color: var(--muted);
-      max-width: 62ch;
+      font-size: .95rem;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+      max-width: 52ch;
+      animation: fadeUp .6s ease-out .1s both;
     }
 
-    .sections {
-      display: grid;
-      gap: 1rem;
-    }
-
-    section {
-      border: 1px solid var(--line);
-      border-radius: var(--radius-lg);
-      background: var(--paper);
-      padding: 1rem 1.1rem;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, .04);
-      animation: rise .55s ease-out both;
-    }
-
-    section:nth-child(2) { animation-delay: .08s; }
-    section:nth-child(3) { animation-delay: .14s; }
-    section:nth-child(4) { animation-delay: .2s; }
-
-    h2 {
+    .social-links {
       display: flex;
-      align-items: center;
-      gap: .5rem;
-      font-size: .88rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: .07em;
-      color: #4a5e57;
-      margin-bottom: .7rem;
+      gap: .6rem;
+      margin-bottom: 3rem;
+      animation: fadeUp .6s ease-out .15s both;
     }
 
-    .icon {
-      width: 18px;
-      height: 18px;
-      stroke: var(--accent);
-      stroke-width: 1.8;
-      fill: none;
+    .social-links a {
+      font-size: .8rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-decoration: none;
+      padding: .35rem .75rem;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      transition: all .2s;
+    }
+
+    .social-links a:hover {
+      color: var(--ink);
+      border-color: var(--ink);
+      background: var(--paper);
+    }
+
+    /* Sections */
+    .section-label {
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--light);
+      margin-bottom: 1rem;
+    }
+
+    /* Featured article */
+    .featured {
+      display: block;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      margin-bottom: 1rem;
+      transition: border-color .2s, box-shadow .2s;
+      animation: fadeUp .6s ease-out .2s both;
+    }
+
+    .featured:hover {
+      border-color: var(--accent);
+      box-shadow: 0 8px 30px rgba(26, 143, 110, 0.08);
+    }
+
+    .featured img {
+      width: 100%;
+      aspect-ratio: 2.2 / 1;
+      object-fit: cover;
+      display: block;
+    }
+
+    .featured-body {
+      padding: 1.2rem 1.3rem;
+    }
+
+    .featured-label {
+      font-size: .65rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: .4rem;
+    }
+
+    .featured-body h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.3;
+      margin-bottom: .4rem;
+    }
+
+    .featured-body p {
+      font-size: .88rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* Article list */
+    .article-list {
+      list-style: none;
+      margin-bottom: 3rem;
+    }
+
+    .article-list li {
+      animation: fadeUp .5s ease-out both;
+    }
+
+    .article-list li:nth-child(1) { animation-delay: .25s; }
+    .article-list li:nth-child(2) { animation-delay: .3s; }
+    .article-list li:nth-child(3) { animation-delay: .35s; }
+    .article-list li:nth-child(4) { animation-delay: .4s; }
+    .article-list li:nth-child(5) { animation-delay: .45s; }
+    .article-list li:nth-child(6) { animation-delay: .5s; }
+    .article-list li:nth-child(7) { animation-delay: .55s; }
+
+    .article-list a {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      padding: .75rem 0;
+      border-bottom: 1px solid var(--line);
+      text-decoration: none;
+      color: inherit;
+      transition: color .2s;
+    }
+
+    .article-list li:first-child a {
+      border-top: 1px solid var(--line);
+    }
+
+    .article-list a:hover {
+      color: var(--accent);
+    }
+
+    .article-list .title {
+      font-weight: 600;
+      font-size: .92rem;
+    }
+
+    .article-list .date {
+      font-size: .78rem;
+      color: var(--light);
+      white-space: nowrap;
       flex-shrink: 0;
     }
 
-    ul {
-      list-style: none;
+    /* Projects */
+    .projects {
+      margin-bottom: 3rem;
+    }
+
+    .project-grid {
       display: grid;
-      gap: .44rem;
+      gap: .7rem;
+      grid-template-columns: 1fr 1fr;
     }
 
-    li {
-      color: var(--muted);
-    }
-
-    a {
-      color: var(--ink);
-      text-decoration: none;
-      border-bottom: 1px solid #b8cdc5;
-      transition: border-color .2s, color .2s;
-    }
-
-    a:hover,
-    a:focus {
-      color: #0f7f63;
-      border-color: #0f7f63;
-    }
-
-    a:focus {
-      outline: 2px solid #0f7f63;
-      outline-offset: 3px;
-    }
-
-    .featured-grid {
-      display: grid;
-      gap: .65rem;
-      margin-bottom: .9rem;
-    }
-
-    .featured-card {
+    .project-card {
       border: 1px solid var(--line);
       border-radius: 12px;
-      background: linear-gradient(135deg, #f8fffb, #f2f8ff);
-      padding: .6rem .7rem;
+      padding: 1rem;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color .2s, box-shadow .2s;
+      display: block;
     }
 
-    .featured-card a {
-      border-bottom: none;
-      display: block;
-      font-weight: 600;
+    .project-card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 4px 16px rgba(26, 143, 110, 0.06);
+    }
+
+    .project-card h3 {
+      font-size: .9rem;
+      font-weight: 700;
       margin-bottom: .2rem;
     }
 
-    .featured-card p {
+    .project-card p {
+      font-size: .8rem;
       color: var(--muted);
-      font-size: .84rem;
-      line-height: 1.35;
+      line-height: 1.5;
     }
 
-    .all-articles-link {
+    .project-card .tag {
       display: inline-block;
-      margin-bottom: .75rem;
-      font-size: .86rem;
+      font-size: .65rem;
       font-weight: 600;
+      letter-spacing: .04em;
+      color: var(--accent);
+      background: var(--accent-bg);
+      padding: .15rem .5rem;
+      border-radius: 4px;
+      margin-top: .5rem;
     }
 
-    @keyframes floatIn {
-      from {
-        opacity: 0;
-        transform: translateY(14px) scale(.985);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-      }
+    /* Footer */
+    footer {
+      padding-top: 2rem;
+      border-top: 1px solid var(--line);
+      text-align: center;
+      color: var(--light);
+      font-size: .8rem;
     }
 
-    @keyframes rise {
-      from {
-        opacity: 0;
-        transform: translateY(12px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+      border-bottom: none;
+    }
+
+    footer a:hover {
+      color: var(--ink);
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 500px) {
+      .project-grid { grid-template-columns: 1fr; }
+      .article-list .date { display: none; }
     }
 
     @media (min-width: 760px) {
-      body {
-        padding: 2rem;
-      }
-
-      .hero {
-        padding: 2rem;
-      }
-
-      .sections {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .featured-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .section-work { order: 1; }
-
-      .section-projects { order: 2; }
-
-      .section-articles {
-        order: 3;
-        grid-column: 1 / -1;
-      }
-
-      .section-elsewhere {
-        order: 4;
-        grid-column: 1 / -1;
-      }
+      .page { padding: 6rem 2rem 4rem; }
     }
   </style>
 </head>
 <body>
   <main class="page">
-    <header class="hero">
-      <div class="hero-top">
-        <div class="photo-wrap">
-          <img src="photo.jpg" alt="Alexis Santos" class="photo">
-        </div>
-        <div>
-          <h1>Alexis Santos</h1>
-          <p class="tag">Agentic Senior Engineer</p>
-        </div>
+
+    <div class="hero">
+      <img src="photo.jpg" alt="Alexis Santos" class="photo">
+      <div class="hero-text">
+        <h1>Alexis Santos</h1>
+        <p class="role">Senior Engineer &middot; Tenerife, Spain</p>
       </div>
-      <p class="bio">
-        Agentic senior engineer based in Tenerife, Spain. Previously Staff iOS Engineer and Engineering Manager at Bumble. Building tools that stay out of the way.
-      </p>
-    </header>
-
-    <div class="sections">
-      <section class="section-work">
-        <h2>
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7h8m-8 5h8m-8 5h5"/><path d="M4 4h16v16H4z"/></svg>
-          Work with me
-        </h2>
-        <p class="bio">Interview prep, career advice, and mentorship for engineers.</p>
-        <ul>
-          <li><a href="https://topmate.io/asantosp/">Book a session</a></li>
-        </ul>
-      </section>
-
-      <section class="section-articles">
-        <h2>
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14v14H5z"/><path d="M9 9h6m-6 4h6m-6 4h4"/></svg>
-          Articles
-        </h2>
-        <div class="featured-grid" aria-label="Featured articles">
-          <article class="featured-card">
-            <a href="/articles/building-is-the-easy-part">Building Is the Easy Part Now</a>
-            <p>AI made shipping trivial. Growth is the real problem. An honest take.</p>
-          </article>
-          <article class="featured-card">
-            <a href="/articles/6-apps-3-months-solo-dev">I Built 6 Apps in 3 Months</a>
-            <p>Most went nowhere. One has real users. Here's the honest breakdown.</p>
-          </article>
-          <article class="featured-card">
-            <a href="/articles/claude-code-changed-how-i-ship">Claude Code Changed How I Ship</a>
-            <p>After 3 months of daily use, here's what actually changed.</p>
-          </article>
-          <article class="featured-card">
-            <a href="/articles/mcp-at-work">Using MCP to Your Advantage at Work</a>
-            <p>Figma + Atlassian workflows that reduce context switching.</p>
-          </article>
-        </div>
-        <a href="/articles" class="all-articles-link">Browse all articles</a>
-        <ul>
-          <li><a href="/articles/building-is-the-easy-part">Building Is the Easy Part Now</a></li>
-          <li><a href="/articles/6-apps-3-months-solo-dev">I Built 6 Apps in 3 Months as a Solo Dev</a></li>
-          <li><a href="/articles/claude-code-changed-how-i-ship">Claude Code Changed How I Ship Software</a></li>
-          <li><a href="/articles/mcp-at-work">Using MCP to Your Advantage at Work</a></li>
-          <li><a href="/articles/evals-for-agents">Why Agentic Teams Need Eval Pipelines</a></li>
-          <li><a href="/articles/multi-agent-orchestration">Multi-Agent Orchestration Without Chaos</a></li>
-          <li><a href="/articles/production-guardrails">Shipping Agentic AI Without Waking Up On-Call</a></li>
-          <li><a href="/articles/remote-work">My Honest Take on Remote Work</a></li>
-        </ul>
-      </section>
-
-      <section class="section-projects">
-        <h2>
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 4v10l-8 4-8-4V7z"/><path d="M12 7v10"/><path d="M4 7l8 4 8-4"/></svg>
-          Projects
-        </h2>
-        <ul>
-          <li><a href="https://apps.apple.com/us/app/lean-cam/id6755633580">Lean Cam</a></li>
-        </ul>
-      </section>
-
-      <section class="section-elsewhere">
-        <h2>
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m7-7H5"/><circle cx="12" cy="12" r="9"/></svg>
-          Elsewhere
-        </h2>
-        <ul>
-          <li><a href="https://www.linkedin.com/in/asantosp/">LinkedIn</a></li>
-          <li><a href="https://github.com/alexissan">GitHub</a></li>
-          <li><a href="https://x.com/deepfirstsearch">X</a></li>
-        </ul>
-      </section>
     </div>
+
+    <p class="bio">Building indie software and writing about it. Previously Staff iOS Engineer and Engineering Manager at a top dating app. Now shipping solo — tools, apps, and the occasional essay on what actually works.</p>
+
+    <div class="social-links">
+      <a href="https://x.com/deepfirstsearch">X</a>
+      <a href="https://www.linkedin.com/in/asantosp/">LinkedIn</a>
+      <a href="https://github.com/alexissan">GitHub</a>
+    </div>
+
+    <!-- Writing -->
+    <p class="section-label">Writing</p>
+
+    <a href="/articles/building-is-the-easy-part" class="featured">
+      <img src="/articles/building-is-the-easy-part/cover.png" alt="Building Is the Easy Part Now">
+      <div class="featured-body">
+        <p class="featured-label">Latest</p>
+        <h2>Building Is the Easy Part Now</h2>
+        <p>AI made shipping software trivial. The hard part is getting anyone to care. An honest take on growth, algorithms, and starting from scratch.</p>
+      </div>
+    </a>
+
+    <ul class="article-list">
+      <li><a href="/articles/6-apps-3-months-solo-dev"><span class="title">I Built 6 Apps in 3 Months as a Solo Dev</span><span class="date">Mar 2026</span></a></li>
+      <li><a href="/articles/claude-code-changed-how-i-ship"><span class="title">Claude Code Changed How I Ship Software</span><span class="date">Mar 2026</span></a></li>
+      <li><a href="/articles/mcp-at-work"><span class="title">Using MCP to Your Advantage at Work</span><span class="date">Mar 2026</span></a></li>
+      <li><a href="/articles/evals-for-agents"><span class="title">Why Agentic Teams Need Eval Pipelines</span><span class="date">Mar 2026</span></a></li>
+      <li><a href="/articles/multi-agent-orchestration"><span class="title">Multi-Agent Orchestration Without Chaos</span><span class="date">Mar 2026</span></a></li>
+      <li><a href="/articles/production-guardrails"><span class="title">Shipping Agentic AI Without Waking Up On-Call</span><span class="date">Mar 2026</span></a></li>
+      <li><a href="/articles/remote-work"><span class="title">My Honest Take on Remote Work</span><span class="date">Feb 2026</span></a></li>
+    </ul>
+
+    <!-- Projects -->
+    <p class="section-label">Projects</p>
+
+    <div class="projects">
+      <div class="project-grid">
+        <a href="https://macwisper.com" class="project-card">
+          <h3>Mac Wisper</h3>
+          <p>AI voice-to-text for macOS. On-device transcription with AI cleanup.</p>
+          <span class="tag">macOS</span>
+        </a>
+        <a href="https://apps.apple.com/us/app/lean-cam/id6755633580" class="project-card">
+          <h3>Lean Cam</h3>
+          <p>Minimal camera app. No clutter, just shoot.</p>
+          <span class="tag">iOS</span>
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <p>Alexis Santos &middot; <a href="mailto:alexis.santos.perez@gmail.com">Email</a> &middot; <a href="/articles">All articles</a></p>
+    </footer>
+
   </main>
 </body>
 </html>
