@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude Code Changed How I Ship Software — Alexis Santos</title>
+  <meta name="description" content="After 3 months using Claude Code daily, my workflow looks nothing like before. Here's what changed, what didn't, and what surprised me.">
+  <meta property="og:title" content="Claude Code Changed How I Ship Software">
+  <meta property="og:description" content="After 3 months using Claude Code daily, my workflow looks nothing like before. Here's what actually changed.">
+  <meta property="og:type" content="article">
+  <meta name="author" content="Alexis Santos">
+  <link rel="canonical" href="https://alexissantos.dev/articles/claude-code-changed-how-i-ship">
+  <meta property="og:url" content="https://alexissantos.dev/articles/claude-code-changed-how-i-ship">
+  <meta property="article:published_time" content="2026-03-24">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Claude Code Changed How I Ship Software">
+  <meta name="twitter:description" content="After 3 months of daily use, here's what actually changed.">
+  <meta name="twitter:creator" content="@deepfirstsearch">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { font-size: 18px; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      color: #1d1d1f;
+      background: #fafafa;
+      padding: 3rem 1.5rem;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    nav { margin-bottom: 2.5rem; }
+    nav a { color: #86868b; text-decoration: none; border-bottom: 1px solid transparent; }
+    nav a:hover, nav a:focus { color: #1d1d1f; border-color: #1d1d1f; }
+    h1 { font-size: 1.85rem; line-height: 1.25; letter-spacing: -0.02em; margin-bottom: .6rem; }
+    .meta { color: #86868b; font-size: .9rem; margin-bottom: 2rem; }
+    .content p { margin-bottom: 1rem; color: #333336; }
+    .content h2 { font-size: 1.1rem; margin: 1.8rem 0 .7rem; letter-spacing: -0.01em; }
+    .content ul, .content ol { margin: 0 0 1rem 1.2rem; }
+    .content li { margin-bottom: .45rem; }
+    .content code { background: #f0f1f2; padding: 0 .3rem; border-radius: 4px; font-size: .9em; }
+    .content strong { color: #1d1d1f; }
+    .content blockquote { border-left: 3px solid #1f8f72; padding-left: 1rem; margin: 1.2rem 0; color: #516760; font-style: italic; }
+    footer { margin-top: 2.6rem; padding-top: 1.5rem; border-top: 1px solid #e5e5e7; color: #86868b; font-size: .9rem; }
+    footer a { color: #86868b; text-decoration: none; }
+    footer a:hover { color: #1d1d1f; }
+    @media (min-width: 640px) { body { padding: 5rem 2rem; } h1 { font-size: 2.1rem; } }
+  </style>
+</head>
+<body>
+  <nav aria-label="Back to home"><a href="/">← Alexis Santos</a></nav>
+  <article>
+    <header>
+      <h1>Claude Code Changed How I Ship Software</h1>
+      <p class="meta"><time datetime="2026-03-24">March 2026</time> · AI-assisted development, honest review</p>
+    </header>
+
+    <div class="content">
+      <p>I've been using Claude Code daily for about three months now. Not as an experiment — as my primary development tool, alongside Xcode and the terminal. I've shipped a full macOS app, a Cloudflare Worker backend, a marketing site, and a blog using it.</p>
+
+      <p>Here's what I've learned. No hype, no "10x developer" claims. Just what actually changed.</p>
+
+      <h2>What changed: I ship faster, but not how I expected</h2>
+
+      <p>The speed gain isn't in writing code faster. I was already a fast coder. The speed gain is in <strong>all the things I used to procrastinate on</strong>.</p>
+
+      <ul>
+        <li>Build scripts I would have put off for a week — done in 20 minutes</li>
+        <li>Signing, notarization, distribution pipeline — sorted in one session</li>
+        <li>Blog posts and marketing pages — written and deployed same day</li>
+        <li>Bug investigation that used to take hours of reading docs — narrowed down in minutes</li>
+      </ul>
+
+      <p>The pattern is clear: Claude Code is most valuable for <strong>tasks outside your core expertise</strong>. I'm a Swift/iOS developer. Writing Cloudflare Workers in TypeScript, configuring DNS, debugging codesign entitlements — that's not my wheelhouse. But with Claude Code, I don't need it to be.</p>
+
+      <h2>What didn't change: I still make all the decisions</h2>
+
+      <p>Claude Code doesn't architect my app. It doesn't decide what to build. It doesn't make product decisions. I still design the data model, choose the tech stack, decide the UX flow, and review every line of code.</p>
+
+      <p>The tool is most useful when I know <strong>what</strong> I want and need help with <strong>how</strong>. "Fix the mic permission issue on macOS" is a good prompt. "Make my app successful" is not.</p>
+
+      <h2>The biggest surprise: it's a debugging partner</h2>
+
+      <p>I expected code generation. What surprised me was how good it is at <strong>diagnosis</strong>.</p>
+
+      <p>Last week, my app's microphone permission stopped working after a Mac restart. Users couldn't get past the onboarding screen. I'd been staring at the code for an hour, convinced it was an API issue.</p>
+
+      <p>Claude Code read the build script, found that <code>codesign --force</code> was stripping the audio-input entitlement from the binary, and explained why macOS was silently blocking the permission dialog. A bug I might have spent days on was diagnosed in minutes.</p>
+
+      <blockquote>The best use of AI in development isn't generating code — it's having a second pair of eyes that has read all the documentation you haven't.</blockquote>
+
+      <h2>Where it falls short</h2>
+
+      <p>It's not all upside. Some honest limitations:</p>
+
+      <ul>
+        <li><strong>SwiftUI edge cases</strong> — it sometimes suggests patterns that don't work with AppKit interop (NSHostingView quirks, NSPanel sizing). I've had to correct it multiple times.</li>
+        <li><strong>Context drift</strong> — in long sessions, it can lose track of earlier decisions. I've learned to keep sessions focused.</li>
+        <li><strong>Over-engineering</strong> — left unchecked, it adds error handling, abstractions, and comments that aren't needed. You have to actively push back toward simplicity.</li>
+        <li><strong>Confidence without correctness</strong> — it sometimes states things confidently that are wrong. Trust but verify, always.</li>
+      </ul>
+
+      <h2>My actual workflow now</h2>
+
+      <p>Here's how a typical day looks:</p>
+
+      <ol>
+        <li>I decide what to build/fix (product decision — mine)</li>
+        <li>I describe the task to Claude Code with context</li>
+        <li>It explores the codebase, proposes an approach</li>
+        <li>I review, adjust, approve</li>
+        <li>It implements, I test</li>
+        <li>Repeat</li>
+      </ol>
+
+      <p>The key word is <strong>review</strong>. I read every diff. I understand every change. The tool does the typing; I do the thinking. That's the healthy relationship.</p>
+
+      <h2>The meta-lesson</h2>
+
+      <p>The biggest shift isn't technical. It's psychological. When the cost of implementation drops, <strong>you stop filtering ideas by effort</strong>. You just build them.</p>
+
+      <p>"Should I add a blog to the marketing site?" Used to be a weekend project. Now it's a 30-minute task. "Should I fix this edge case?" Used to be "I'll get to it." Now it's done before lunch.</p>
+
+      <p>The compound effect of removing all those small friction points is massive. You ship more, learn faster, and iterate tighter. That's the real change.</p>
+
+      <p>The tool didn't make me a better developer. It made me a more prolific one.</p>
+
+    </div>
+  </article>
+
+  <footer>
+    <a href="/articles">← All articles</a>
+  </footer>
+</body>
+</html>
