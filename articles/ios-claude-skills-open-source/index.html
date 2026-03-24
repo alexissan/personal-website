@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I Open-Sourced the Skills I Use to Ship iOS Apps at Lightning Speed — Alexis Santos</title>
+  <meta name="description" content="12 Claude Code skills for iOS developers. Code review, Figma-to-SwiftUI, build fixes, performance audits — the exact toolkit I use to ship apps in days, not months.">
+  <meta property="og:title" content="I Open-Sourced the Skills I Use to Ship iOS Apps at Lightning Speed">
+  <meta property="og:description" content="12 Claude Code skills for iOS developers. The exact toolkit I use to ship apps in days.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://alexissantos.dev/articles/ios-claude-skills-open-source">
+  <meta property="og:image" content="https://alexissantos.dev/articles/building-is-the-easy-part/cover.png">
+  <meta name="author" content="Alexis Santos">
+  <link rel="canonical" href="https://alexissantos.dev/articles/ios-claude-skills-open-source">
+  <meta property="article:published_time" content="2026-03-24">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="I Open-Sourced the Skills I Use to Ship iOS Apps at Lightning Speed">
+  <meta name="twitter:description" content="12 Claude Code skills for iOS developers. The exact toolkit behind my shipping speed.">
+  <meta name="twitter:image" content="https://alexissantos.dev/articles/building-is-the-easy-part/cover.png">
+  <meta name="twitter:creator" content="@deepfirstsearch">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { font-size: 18px; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      color: #1d1d1f;
+      background: #fafafa;
+      padding: 3rem 1.5rem;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    nav { margin-bottom: 2.5rem; }
+    nav a { color: #86868b; text-decoration: none; border-bottom: 1px solid transparent; }
+    nav a:hover, nav a:focus { color: #1d1d1f; border-color: #1d1d1f; }
+    h1 { font-size: 1.85rem; line-height: 1.25; letter-spacing: -0.02em; margin-bottom: .6rem; }
+    .meta { color: #86868b; font-size: .9rem; margin-bottom: 2rem; }
+    .content p { margin-bottom: 1rem; color: #333336; }
+    .content h2 { font-size: 1.1rem; margin: 1.8rem 0 .7rem; letter-spacing: -0.01em; }
+    .content ul, .content ol { margin: 0 0 1rem 1.2rem; }
+    .content li { margin-bottom: .45rem; }
+    .content code { background: #f0f1f2; padding: 0 .3rem; border-radius: 4px; font-size: .9em; }
+    .content strong { color: #1d1d1f; }
+    .content a { color: #1a8f6e; }
+    .content blockquote { border-left: 3px solid #1f8f72; padding-left: 1rem; margin: 1.2rem 0; color: #516760; font-style: italic; }
+    .skill-table { width: 100%; border-collapse: collapse; margin: 1.2rem 0; font-size: .88rem; }
+    .skill-table th { text-align: left; padding: .6rem .8rem; border-bottom: 2px solid #e5e5e7; font-size: .78rem; text-transform: uppercase; letter-spacing: .04em; color: #86868b; }
+    .skill-table td { padding: .6rem .8rem; border-bottom: 1px solid #f0f0f0; }
+    .skill-table tr:hover td { background: #f8f8f8; }
+    .skill-table code { background: #f0f1f2; padding: .1rem .4rem; border-radius: 4px; font-size: .85em; }
+    footer { margin-top: 2.6rem; padding-top: 1.5rem; border-top: 1px solid #e5e5e7; color: #86868b; font-size: .9rem; }
+    footer a { color: #86868b; text-decoration: none; }
+    footer a:hover { color: #1d1d1f; }
+    @media (min-width: 640px) { body { padding: 5rem 2rem; } h1 { font-size: 2.1rem; } }
+  </style>
+</head>
+<body>
+  <nav aria-label="Back to home"><a href="/">← Alexis Santos</a></nav>
+  <article>
+    <header>
+      <h1>I Open-Sourced the Skills I Use to Ship iOS Apps at Lightning Speed</h1>
+      <p class="meta"><time datetime="2026-03-24">March 2026</time> · Open source, iOS, Claude Code</p>
+    </header>
+
+    <div class="content">
+
+      <p>I shipped 6 apps in 3 months. A macOS app with a backend, a marketing site, a blog, and 5 iOS apps. Solo. While working a full-time job.</p>
+
+      <p>People ask how. The answer isn't talent or hustle — it's tooling. Specifically, <strong>Claude Code skills</strong> that automate the repetitive parts of iOS development so I can focus on the product decisions that actually matter.</p>
+
+      <p>Today I'm open-sourcing all of them: <a href="https://github.com/alexissan/ios-claude-skills"><strong>ios-claude-skills</strong></a></p>
+
+      <h2>What are Claude Code skills?</h2>
+
+      <p>Skills are markdown files that teach Claude Code how to handle specific tasks. Instead of explaining your patterns every time ("use async/await, not completion handlers", "check for retain cycles", "follow our naming convention"), you encode them once in a skill file and Claude follows them automatically.</p>
+
+      <p>Think of them as reusable prompts, but structured and context-aware. They live in your project's <code>.claude/skills/</code> directory and activate based on what you're doing.</p>
+
+      <h2>The 12 skills</h2>
+
+      <table class="skill-table">
+        <tr><th>Skill</th><th>What it does</th></tr>
+        <tr><td><code>swiftui-from-figma</code></td><td>Converts Figma designs to production SwiftUI that matches your design system</td></tr>
+        <tr><td><code>ios-code-review</code></td><td>Full review: retain cycles, threading, SwiftUI pitfalls, security</td></tr>
+        <tr><td><code>unit-tests</code></td><td>Generates tests with proper mocking, naming, and edge cases</td></tr>
+        <tr><td><code>app-store-metadata</code></td><td>ASO-optimized title, subtitle, description, keywords</td></tr>
+        <tr><td><code>accessibility-audit</code></td><td>VoiceOver, Dynamic Type, contrast — finds issues before users do</td></tr>
+        <tr><td><code>localization</code></td><td>String extraction, coverage audit, best practices</td></tr>
+        <tr><td><code>networking-layer</code></td><td>Clean async/await networking with proper error handling</td></tr>
+        <tr><td><code>xcode-build-fix</code></td><td>Diagnoses SPM, signing, linking, and derived data issues</td></tr>
+        <tr><td><code>performance-audit</code></td><td>Main thread violations, retain cycles, missing caching</td></tr>
+        <tr><td><code>privacy-manifest</code></td><td>Generates and validates PrivacyInfo.xcprivacy</td></tr>
+        <tr><td><code>crash-log-analysis</code></td><td>Analyzes crash logs, symbolicates traces, finds root causes</td></tr>
+        <tr><td><code>push-notifications</code></td><td>Full push setup: registration, handling, testing</td></tr>
+      </table>
+
+      <h2>Why I built these</h2>
+
+      <p>When I started building indie apps, I noticed I was repeating the same instructions to Claude Code over and over. "Check for retain cycles." "Use the project's color system, don't hardcode hex values." "Follow the naming convention." "Don't forget the privacy manifest."</p>
+
+      <p>Each instruction is small. But across a full development cycle — building features, reviewing code, writing tests, preparing for the App Store — they add up to hours of repeated context-setting.</p>
+
+      <p>Skills eliminate that. I set the pattern once, and every future interaction follows it. The compound effect is massive: <strong>I stopped explaining how I work and started just working.</strong></p>
+
+      <h2>How I use them in practice</h2>
+
+      <p>Here's a real example from last week. I was building a new feature for Mac Wisper and needed to:</p>
+
+      <ol>
+        <li>Implement a design from Figma → <code>swiftui-from-figma</code> generated the view using my existing design system components</li>
+        <li>Add API calls → <code>networking-layer</code> followed my async/await patterns</li>
+        <li>Write tests → <code>unit-tests</code> created meaningful tests, not coverage-padding</li>
+        <li>Review before merging → <code>ios-code-review</code> caught a retain cycle I missed</li>
+        <li>Prepare for release → <code>privacy-manifest</code> flagged a missing API declaration</li>
+      </ol>
+
+      <p>That's an entire feature cycle — design to release — with AI following my exact patterns at every step. The speed isn't from cutting corners. It's from never having to explain the same thing twice.</p>
+
+      <h2>Installation</h2>
+
+      <p>Drop them into your project:</p>
+
+      <ol>
+        <li>Clone the repo: <code>git clone https://github.com/alexissan/ios-claude-skills</code></li>
+        <li>Copy skills to your project: <code>cp -r ios-claude-skills/skills/* .claude/skills/</code></li>
+        <li>Start using Claude Code — it picks them up automatically</li>
+      </ol>
+
+      <p>Or copy them to <code>~/.claude/skills/</code> for global access across all projects.</p>
+
+      <blockquote>These skills reflect how I build iOS apps. They're opinionated. Fork them, edit them, make them yours. The point isn't to follow my patterns — it's to encode yours.</blockquote>
+
+      <p>Repo: <a href="https://github.com/alexissan/ios-claude-skills">github.com/alexissan/ios-claude-skills</a></p>
+
+    </div>
+  </article>
+
+  <footer>
+    <a href="/articles">← All articles</a>
+  </footer>
+</body>
+</html>
