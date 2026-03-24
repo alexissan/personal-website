@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Articles — Alexis Santos</title>
-  <meta name="description" content="Technical articles by Alexis Santos on agentic AI engineering, software delivery, and system design.">
-  <link rel="canonical" href="https://alexissantos.com/articles">
+  <meta name="description" content="Writing on AI engineering, indie dev, building in public, and lessons from shipping software solo.">
+  <link rel="canonical" href="https://alexissantos.dev/articles">
   <meta property="og:title" content="Articles — Alexis Santos">
-  <meta property="og:description" content="Technical articles on agentic AI engineering, software delivery, and system design.">
+  <meta property="og:description" content="Writing on AI engineering, indie dev, building in public, and lessons from shipping software solo.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://alexissantos.com/articles">
-  <meta property="og:image" content="https://alexissantos.com/articles/mcp-at-work/cover.svg">
+  <meta property="og:url" content="https://alexissantos.dev/articles">
+  <meta property="og:image" content="https://alexissantos.dev/articles/building-is-the-easy-part/cover.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Articles — Alexis Santos">
-  <meta name="twitter:description" content="Technical articles on agentic AI engineering, software delivery, and system design.">
-  <meta name="twitter:image" content="https://alexissantos.com/articles/mcp-at-work/cover.svg">
+  <meta name="twitter:description" content="Writing on AI engineering, indie dev, and lessons from shipping software solo.">
+  <meta name="twitter:image" content="https://alexissantos.dev/articles/building-is-the-easy-part/cover.png">
   <style>
     :root {
       --bg: #f3f7f5;
@@ -79,6 +79,67 @@
       margin-top: .35rem;
     }
 
+    /* Featured (latest) article */
+    .featured {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: var(--paper);
+      overflow: hidden;
+      display: grid;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .featured:hover {
+      border-color: var(--accent);
+      box-shadow: 0 4px 24px rgba(31, 143, 114, 0.08);
+    }
+
+    .featured img {
+      width: 100%;
+      aspect-ratio: 2.4 / 1;
+      object-fit: cover;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .featured .card-body {
+      padding: 1.4rem;
+      display: grid;
+      gap: .5rem;
+    }
+
+    .featured h2 {
+      font-size: clamp(1.2rem, 3vw, 1.6rem);
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    .featured p {
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 60ch;
+    }
+
+    .featured .label {
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: rgba(31, 143, 114, 0.08);
+      padding: 2px 8px;
+      border-radius: 4px;
+      width: fit-content;
+    }
+
+    .featured .read {
+      color: var(--accent);
+      font-weight: 600;
+      font-size: .95rem;
+    }
+
+    /* Grid */
     .grid {
       display: grid;
       gap: .9rem;
@@ -143,6 +204,8 @@
     @media (min-width: 760px) {
       body { padding: 2rem; }
       .grid { grid-template-columns: 1fr 1fr; }
+      .featured { grid-template-columns: 1fr 1fr; }
+      .featured img { aspect-ratio: auto; height: 100%; }
     }
   </style>
 </head>
@@ -151,20 +214,22 @@
     <header class="top">
       <a href="/">← Alexis Santos</a>
       <h1>Articles</h1>
-      <p class="subtitle">Technical writing for engineers focused on agentic AI systems, software delivery, and production reliability.</p>
+      <p class="subtitle">Writing on AI engineering, indie dev, building in public, and lessons from shipping software solo.</p>
     </header>
 
-    <section class="grid" aria-label="Article list">
-      <article class="card">
-        <img src="/articles/building-is-the-easy-part/cover.png" alt="Building Is the Easy Part Now cover">
-        <div class="card-body">
-          <p class="meta">Essay</p>
-          <h2>Building Is the Easy Part Now</h2>
-          <p>AI made shipping software trivial. The hard part is getting anyone to care. An honest take on growth, algorithms, and starting from scratch.</p>
-          <a href="/articles/building-is-the-easy-part">Read article</a>
-        </div>
-      </article>
+    <!-- Featured: latest article -->
+    <a href="/articles/building-is-the-easy-part" class="featured">
+      <img src="/articles/building-is-the-easy-part/cover.png" alt="Building Is the Easy Part Now cover">
+      <div class="card-body">
+        <span class="label">Latest</span>
+        <h2>Building Is the Easy Part Now</h2>
+        <p>AI made shipping software trivial. The hard part is getting anyone to care. An honest take on growth, algorithms, and starting from scratch after building products millions used.</p>
+        <span class="read">Read article →</span>
+      </div>
+    </a>
 
+    <!-- Rest of articles, newest first -->
+    <section class="grid" aria-label="Article list">
       <article class="card">
         <img src="/articles/6-apps-3-months-solo-dev/cover.png" alt="6 apps solo dev cover">
         <div class="card-body">
