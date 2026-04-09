@@ -135,7 +135,8 @@
     /* ─── Layout ─── */
     .book-layout {
       display: flex;
-      max-width: calc(var(--max-w) + var(--toc-w) + 4rem);
+      gap: 2.5rem;
+      max-width: calc(var(--max-w) + var(--toc-w) + 6rem);
       margin: 0 auto;
       padding: 0 1.5rem;
     }
@@ -149,7 +150,7 @@
       align-self: flex-start;
       max-height: calc(100vh - 4rem);
       overflow-y: auto;
-      padding: 3rem 1.5rem 3rem 0;
+      padding: 3rem 0 3rem 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       display: none;
     }
@@ -732,7 +733,7 @@
 
     <h3>The Bumble Years</h3>
 
-    <p>I joined Bumble as a Senior iOS Engineer in 2019. If you have never worked at a company preparing for an IPO, it is a specific kind of pressure. Every feature matters. Every crash rate matters. Every percentage point of user retention is scrutinized by people whose job titles you have never heard of. I thrived in that pressure.</p>
+    <p>I joined Bumble as a Senior iOS Engineer in 2017. If you have never worked at a company preparing for an IPO, it is a specific kind of pressure. Every feature matters. Every crash rate matters. Every percentage point of user retention is scrutinized by people whose job titles you have never heard of. I thrived in that pressure.</p>
 
     <p>By 2021, I had been promoted to Staff iOS Engineer. At Bumble, Staff was not a vanity title. It meant you were the person the VP of Engineering called when something critical was broken at 2am. It meant you were architecting systems that needed to work flawlessly for 40 million monthly active users across dozens of countries. It meant you were in the room when product strategy was being decided, not because you asked to be, but because they needed someone who could say "that will take six months" or "we can do that in two weeks if we cut this scope."</p>
 
@@ -758,7 +759,7 @@
 
     <h3>The Leap</h3>
 
-    <p>In mid-2023, I left Bumble. I left London. I moved to Tenerife, Spain — a volcanic island in the Atlantic that most people only know as a holiday destination. The cost of living was a fraction of London. The weather was perpetual spring. And the solitude was exactly what I needed to go deep on something new.</p>
+    <p>In early 2025, I left Bumble. I left London. I moved to Tenerife, Spain — a volcanic island in the Atlantic that most people only know as a holiday destination. The cost of living was a fraction of London. The weather was perpetual spring. And the solitude was exactly what I needed to go deep on something new.</p>
 
     <p>I did not have a business plan. I did not have an audience. I had zero followers on X (Twitter). I had no newsletter, no blog, no YouTube channel. What I had was a decade of engineering experience, savings from the Bumble IPO, and a conviction that the way software gets built was about to fundamentally change.</p>
 
@@ -789,9 +790,9 @@
       <!-- Main horizontal line -->
       <line x1="60" y1="80" x2="740" y2="80" class="tl-line" />
       <line x1="60" y1="80" x2="740" y2="80" class="tl-line-active" stroke-dasharray="0,0" />
-      <!-- 2019: Joined Bumble -->
+      <!-- 2017: Joined Bumble -->
       <circle cx="100" cy="80" r="7" class="tl-dot" />
-      <text x="100" y="60" text-anchor="middle" class="tl-year">2019</text>
+      <text x="100" y="60" text-anchor="middle" class="tl-year">2017</text>
       <text x="100" y="108" text-anchor="middle" class="tl-label">Joined Bumble</text>
       <text x="100" y="124" text-anchor="middle" class="tl-sublabel">Senior iOS Engineer</text>
       <!-- 2021: Staff + IPO -->
@@ -804,16 +805,16 @@
       <text x="390" y="60" text-anchor="middle" class="tl-year">2022</text>
       <text x="390" y="108" text-anchor="middle" class="tl-label">Engineering Manager</text>
       <text x="390" y="124" text-anchor="middle" class="tl-sublabel">First AI experiments</text>
-      <!-- 2023: Left, moved, Mac Wisper -->
+      <!-- 2025: Left, moved, Mac Wisper -->
       <circle cx="540" cy="80" r="7" class="tl-dot" />
-      <text x="540" y="60" text-anchor="middle" class="tl-year">2023</text>
+      <text x="540" y="60" text-anchor="middle" class="tl-year">2025</text>
       <text x="540" y="108" text-anchor="middle" class="tl-label">Left Bumble</text>
       <text x="540" y="124" text-anchor="middle" class="tl-sublabel">Moved to Tenerife</text>
       <text x="540" y="140" text-anchor="middle" class="tl-sublabel">Shipped Mac Wisper</text>
-      <!-- 2024: 6+ apps -->
+      <!-- 2025+: 6+ apps -->
       <circle cx="680" cy="80" r="9" class="tl-dot" />
       <circle cx="680" cy="80" r="5" class="tl-dot-outline" />
-      <text x="680" y="60" text-anchor="middle" class="tl-year">2024</text>
+      <text x="680" y="60" text-anchor="middle" class="tl-year">2025+</text>
       <text x="680" y="108" text-anchor="middle" class="tl-label">6+ Apps Shipped</text>
       <text x="680" y="124" text-anchor="middle" class="tl-sublabel">Solo, AI-assisted</text>
       <text x="680" y="140" text-anchor="middle" class="tl-sublabel">Writing this guide</text>
@@ -2709,7 +2710,7 @@ var animation: Animation? {
 <div class="chapter-content">
 <h2><span class="ch-num">Chapter 11</span> ASO: The Real Game</h2>
 
-<p>I spent six years at Bumble watching our ASO team obsess over every character in our App Store listing. We had dedicated keyword researchers, localization teams covering 30+ languages, and dashboards tracking ranking movements hourly. When I went solo and launched Mac Whisper, I had none of that. Just me, a spreadsheet, and the same App Store Connect dashboard everyone else gets.</p>
+<p>I spent eight years at Bumble watching our ASO team obsess over every character in our App Store listing. We had dedicated keyword researchers, localization teams covering 30+ languages, and dashboards tracking ranking movements hourly. When I went solo and launched Mac Whisper, I had none of that. Just me, a spreadsheet, and the same App Store Connect dashboard everyone else gets.</p>
 
 <p>Here's what I learned: the fundamentals of App Store Optimization haven't changed since 2015. What's changed is that most developers still ignore them. They ship an app, write a lazy description, take three screenshots, and wonder why nobody downloads it. Then they blame the algorithm.</p>
 
