@@ -4,4 +4,5 @@ functions
 .github
 .next
 .claude
+.wrangler
 .DS_Store
