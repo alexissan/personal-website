@@ -99,6 +99,26 @@ img{display:block;width:100%;height:100%;object-fit:cover}
 .doc--sm .doc__mount img{max-width:230px}
 .doc--md .doc__mount img{max-width:430px}
 
+/* generated plates: original compositions, not photographs */
+.gen .plate__frame{background:#08090B}
+.gen .plate__frame svg{display:block;width:100%;height:100%}
+
+/* list of plates — back matter */
+.plates{padding:clamp(2.5rem,7vh,5rem) var(--pad) 0;max-width:64rem}
+.plates__list{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.plates__list li{border-bottom:1px solid var(--rule)}
+.plates__row{display:grid;grid-template-columns:7.5rem 1fr auto;gap:1rem 1.6rem;align-items:baseline;padding:1.05rem 0;text-decoration:none;color:inherit;transition:color .2s ease}
+a.plates__row:hover{color:var(--accent)}
+.plates__yr{font-family:"IBM Plex Mono",monospace;font-size:.66rem;letter-spacing:.16em;color:var(--muted);white-space:nowrap}
+.plates__ttl{font-family:"Bodoni Moda",serif;font-weight:700;font-size:clamp(1.05rem,2.1vw,1.5rem);letter-spacing:-.01em;line-height:1.15}
+.plates__note{display:block;font-family:"Spectral",serif;font-weight:200;font-style:italic;font-size:.88rem;color:var(--muted);margin-top:.2rem;letter-spacing:0}
+.plates__ext{font-family:"IBM Plex Mono",monospace;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+a.plates__row:hover .plates__ext{color:var(--accent)}
+@media (max-width:700px){
+  .plates__row{grid-template-columns:1fr;gap:.15rem}
+  .plates__ext{margin-top:.35rem}
+}
+
 .panel--flat{background:var(--accent)}
 .opener--flat{height:min(62vh,34rem);background:var(--ink)}
 .opener--flat .opener__scrim{background:linear-gradient(180deg,transparent 0%,transparent 55%,var(--paper) 100%)}
@@ -237,9 +257,61 @@ img{display:block;width:100%;height:100%;object-fit:cover}
     </button>
   </div>
 
+  <section class="plates">
+    <h2 class="hd">List of plates — the work described in this monograph</h2>
+    <p class="plates__intro" style="font-style:italic;font-weight:200;color:var(--muted);max-width:52ch;margin:0 0 1.8rem">The series themselves are under copyright and are not reproduced here. This is the catalogue: what exists, when, and with whom. Each entry links out to where the work can actually be seen.</p>
+    <ul class="plates__list">
+      <li><a class="plates__row" href="https://camerawork.de/en/artists/bettina-rheims/" target="_blank" rel="noopener noreferrer">
+        <span class="plates__yr">1982</span>
+        <span><span class="plates__ttl">Animal</span><span class="plates__note">Taxidermy. Things posed to look alive by someone else's hand.</span></span>
+        <span class="plates__ext">Gallery ↗</span></a></li>
+      <li><a class="plates__row" href="https://camerawork.de/en/artists/bettina-rheims/" target="_blank" rel="noopener noreferrer">
+        <span class="plates__yr">1989</span>
+        <span><span class="plates__ttl">Female Trouble</span><span class="plates__note">Portraits of women.</span></span>
+        <span class="plates__ext">Gallery ↗</span></a></li>
+      <li><a class="plates__row" href="https://camerawork.de/en/artists/bettina-rheims/" target="_blank" rel="noopener noreferrer">
+        <span class="plates__yr">1989–90</span>
+        <span><span class="plates__ttl">Modern Lovers</span><span class="plates__note">Gender and androgyny. The provocation was the eye contact.</span></span>
+        <span class="plates__ext">Gallery ↗</span></a></li>
+      <li><a class="plates__row" href="https://camerawork.de/en/artists/bettina-rheims/" target="_blank" rel="noopener noreferrer">
+        <span class="plates__yr">1990–92</span>
+        <span><span class="plates__ttl">Chambre Close</span><span class="plates__note">With Serge Bramly. The first major work in colour.</span></span>
+        <span class="plates__ext">Gallery ↗</span></a></li>
+      <li><a class="plates__row" href="https://commons.wikimedia.org/wiki/File:Portrait_officiel_de_Jacques_Chirac.jpg" target="_blank" rel="noopener noreferrer">
+        <span class="plates__yr">1995</span>
+        <span><span class="plates__ttl">Jacques Chirac</span><span class="plates__note">Official presidential portrait, commissioned by the Élysée. Released CC0 — the one image here shown in full.</span></span>
+        <span class="plates__ext">Commons ↗</span></a></li>
+      <li><a class="plates__row" href="https://camerawork.de/en/artists/bettina-rheims/" target="_blank" rel="noopener noreferrer">
+        <span class="plates__yr">1999</span>
+        <span><span class="plates__ttl">I.N.R.I.</span><span class="plates__note">With Serge Bramly. The life of Christ, restaged.</span></span>
+        <span class="plates__ext">Gallery ↗</span></a></li>
+      <li><a class="plates__row" href="https://camerawork.de/en/artists/bettina-rheims/" target="_blank" rel="noopener noreferrer">
+        <span class="plates__yr">2002</span>
+        <span><span class="plates__ttl">Shanghai</span><span class="plates__note">Made across two extended stays in the city.</span></span>
+        <span class="plates__ext">Gallery ↗</span></a></li>
+      <li><a class="plates__row" href="https://camerawork.de/en/artists/bettina-rheims/" target="_blank" rel="noopener noreferrer">
+        <span class="plates__yr">2005</span>
+        <span><span class="plates__ttl">Héroïnes</span><span class="plates__note">With Jean Colonna, whose garments turned the sitters into sculpture.</span></span>
+        <span class="plates__ext">Gallery ↗</span></a></li>
+      <li><a class="plates__row" href="https://www.mep-fr.org" target="_blank" rel="noopener noreferrer">
+        <span class="plates__yr">2010</span>
+        <span><span class="plates__ttl">Rose, c'est Paris</span><span class="plates__note">With Serge Bramly. A fiction shot in and around the Bibliothèque nationale de France.</span></span>
+        <span class="plates__ext">MEP ↗</span></a></li>
+      <li><a class="plates__row" href="https://camerawork.de/en/artists/bettina-rheims/" target="_blank" rel="noopener noreferrer">
+        <span class="plates__yr">2012</span>
+        <span><span class="plates__ttl">Gender Studies</span><span class="plates__note">With the composer Frédéric Sanchez. Sound formed part of the record.</span></span>
+        <span class="plates__ext">Gallery ↗</span></a></li>
+      <li><a class="plates__row" href="https://en.wikipedia.org/wiki/Bettina_Rheims" target="_blank" rel="noopener noreferrer">
+        <span class="plates__yr">2016</span>
+        <span><span class="plates__ttl">I'll Be Your Mirror</span><span class="plates__note">Retrospective, Fotografiska Stockholm. The installation views on this page are from this hang.</span></span>
+        <span class="plates__ext">Reference ↗</span></a></li>
+    </ul>
+  </section>
+
   <div class="colophon">
     <strong>An independent editorial exercise. Not a Taschen publication and not affiliated with the photographer.</strong><br>
-    Plates are limited to freely-licensed images: the 1995 Chirac official portrait by Bettina Rheims (CC0, Élysée); a self-portrait by Bettina Rheims (CC BY 3.0); a portrait of her by Istvan Vass (CC BY-SA 2.0); and installation views of <em>I'll Be Your Mirror</em>, Fotografiska Stockholm, by Susanne Nilsson (CC BY-SA 2.0). Her series work is under copyright and is described here, not reproduced.<br>
+    Plates are limited to freely-licensed images: the 1995 Chirac official portrait by Bettina Rheims (CC0, Élysée); a self-portrait by Bettina Rheims (CC BY 3.0); a portrait of her by Istvan Vass (CC BY-SA 2.0); and installation views of <em>I'll Be Your Mirror</em>, Fotografiska Stockholm, by Susanne Nilsson (CC BY-SA 2.0). Her series work is under copyright and is described here, not reproduced — see the list of plates above for where to see it.<br>
+    Plates 2.03, 3.02 and 4.05 are original compositions made for this page. They are drawings, not photographs, and not by Rheims.<br>
     Set in Bodoni Moda, Spectral and IBM Plex Mono. Use ← → to turn between chapters.
   </div>
 </main>
@@ -330,6 +402,42 @@ img{display:block;width:100%;height:100%;object-fit:cover}
     </figure>
   </div>
 
+  <figure class="plate plate--bleed gen rv">
+    <div class="plate__frame">
+      <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Original abstract composition: a dark teal field lit by a pool of warm red light, with three empty hanging frames">
+        <defs>
+          <linearGradient id="c2bg" x1="0" y1="0" x2="0.2" y2="1">
+            <stop offset="0" stop-color="#0B3238"/><stop offset="1" stop-color="#031215"/>
+          </linearGradient>
+          <radialGradient id="c2glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#E0472F" stop-opacity=".95"/>
+            <stop offset="42%" stop-color="#9B2A22" stop-opacity=".42"/>
+            <stop offset="100%" stop-color="#7A1F1A" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="c2shaft" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#F6E9D8" stop-opacity=".30"/>
+            <stop offset="1" stop-color="#F6E9D8" stop-opacity="0"/>
+          </linearGradient>
+          <filter id="c2grain" x="0" y="0" width="100%" height="100%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="11"/>
+            <feColorMatrix type="saturate" values="0"/>
+          </filter>
+        </defs>
+        <rect width="1600" height="900" fill="url(#c2bg)"/>
+        <ellipse cx="1010" cy="455" rx="640" ry="450" fill="url(#c2glow)"/>
+        <path d="M300 0 L420 0 L360 900 L180 900 Z" fill="url(#c2shaft)"/>
+        <g fill="none" stroke="#F6E9D8" stroke-opacity=".26">
+          <rect x="150" y="250" width="196" height="270" stroke-width="3"/>
+          <rect x="700" y="212" width="232" height="318" stroke-width="3"/>
+          <rect x="1230" y="268" width="180" height="248" stroke-width="3"/>
+        </g>
+        <rect y="686" width="1600" height="214" fill="#020A0C" opacity=".72"/>
+        <rect width="1600" height="900" filter="url(#c2grain)" opacity=".5" style="mix-blend-mode:overlay"/>
+      </svg>
+    </div>
+    <figcaption class="cap"><b>Plate 2.03</b><span>Original composition for this monograph — the palette of the 2016 hang, with the works left out. Not a photograph and not by Rheims.</span></figcaption>
+  </figure>
+
   <div class="text rv">
     <h2 class="hd">§ 1 — The collaborations</h2>
     <p>Bramly became a recurring co-author. In 1999 the two made <em>I.N.R.I.</em>, a restaging of the life of Christ that was received exactly as you would expect a restaging of the life of Christ by this photographer to be received. In 2010 they made <em>Rose, c'est Paris</em>, a fictional narrative shot in and around the Bibliothèque nationale de France.</p>
@@ -388,6 +496,39 @@ img{display:block;width:100%;height:100%;object-fit:cover}
     <p>Which is why the commission is a genuine test rather than a curiosity. Everything Rheims normally uses — the room, the light she found there, the slow arrival at a pose — is unavailable. What is left is the negotiation itself.</p>
   </div>
 
+  <figure class="plate plate--bleed gen rv">
+    <div class="plate__frame">
+      <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Original abstract composition: a navy field ruled like a document, with the empty portrait format at its centre">
+        <defs>
+          <linearGradient id="c3bg2" x1="0" y1="0" x2="0.35" y2="1">
+            <stop offset="0" stop-color="#1E3A5C"/><stop offset="1" stop-color="#091524"/>
+          </linearGradient>
+          <linearGradient id="c3mat" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#2A4E76"/><stop offset="1" stop-color="#16304F"/>
+          </linearGradient>
+          <filter id="c3grain" x="0" y="0" width="100%" height="100%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="23"/>
+            <feColorMatrix type="saturate" values="0"/>
+          </filter>
+        </defs>
+        <rect width="1600" height="900" fill="url(#c3bg2)"/>
+        <g stroke="#8FB2D9" stroke-opacity=".12" stroke-width="1">
+          <path d="M0 150H1600M0 300H1600M0 450H1600M0 600H1600M0 750H1600"/>
+          <path d="M200 0V900M400 0V900M600 0V900M1000 0V900M1200 0V900M1400 0V900"/>
+        </g>
+        <rect x="646" y="132" width="308" height="380" fill="url(#c3mat)" stroke="#A9C6E6" stroke-opacity=".5" stroke-width="2"/>
+        <rect x="676" y="162" width="248" height="290" fill="#0B1B2E" stroke="#A9C6E6" stroke-opacity=".28" stroke-width="1"/>
+        <g fill="#A9C6E6" fill-opacity=".5">
+          <rect x="646" y="576" width="308" height="7"/>
+          <rect x="646" y="606" width="214" height="5"/>
+          <rect x="646" y="630" width="256" height="5"/>
+        </g>
+        <rect width="1600" height="900" filter="url(#c3grain)" opacity=".42" style="mix-blend-mode:overlay"/>
+      </svg>
+    </div>
+    <figcaption class="cap"><b>Plate 3.02</b><span>Original composition for this monograph: the official-portrait format at actual proportion, ruled and captioned, with the sitter absent.</span></figcaption>
+  </figure>
+
   <div class="text rv">
     <h2 class="hd">§ 2 — The decorations, in order</h2>
     <p>The state kept asking. She was made an Officer of the Legion of Honour in 2006, promoted to Commander on 14 July 2013, and appointed Grand Officier de l'Ordre national du Mérite in 2018. Alongside that ran the commercial work — campaigns for Chanel and Lancôme, magazine portraiture — and the long list of sitters that gets quoted whenever her name appears: Kate Moss, Madonna, Monica Bellucci, Claudia Schiffer, Naomi Campbell.</p>
@@ -431,6 +572,39 @@ img{display:block;width:100%;height:100%;object-fit:cover}
   <figure class="plate plate--bleed rv">
     <div class="plate__frame"><img alt="Gallery interior with framed colour photographs on dark teal walls" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/At_Fotografiska_%2826908043693%29.jpg?width=1800"></div>
     <figcaption class="cap"><b>Plate 4.01</b><span><em>I'll Be Your Mirror</em>, Fotografiska Stockholm, 28 May 2016. Photograph by Susanne Nilsson, CC BY-SA 2.0.</span></figcaption>
+  </figure>
+
+  <figure class="plate plate--bleed gen rv">
+    <div class="plate__frame">
+      <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Original abstract composition: two mirrored fields, warm and cool, meeting at a bright vertical seam">
+        <defs>
+          <linearGradient id="c4l" x1="0" y1="0" x2="1" y2="0.2">
+            <stop offset="0" stop-color="#0B0A09"/><stop offset="1" stop-color="#7A3316"/>
+          </linearGradient>
+          <linearGradient id="c4r" x1="1" y1="0" x2="0" y2="0.2">
+            <stop offset="0" stop-color="#0B0A09"/><stop offset="1" stop-color="#14424A"/>
+          </linearGradient>
+          <linearGradient id="c4seam" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#F6E9D8" stop-opacity="0"/>
+            <stop offset="45%" stop-color="#F6E9D8" stop-opacity=".85"/>
+            <stop offset="100%" stop-color="#F6E9D8" stop-opacity="0"/>
+          </linearGradient>
+          <filter id="c4grain" x="0" y="0" width="100%" height="100%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" seed="41"/>
+            <feColorMatrix type="saturate" values="0"/>
+          </filter>
+        </defs>
+        <rect width="800" height="900" fill="url(#c4l)"/>
+        <rect x="800" width="800" height="900" fill="url(#c4r)"/>
+        <g fill="none" stroke="#F6E9D8" stroke-opacity=".22" stroke-width="3">
+          <rect x="250" y="270" width="210" height="290"/>
+          <rect x="1140" y="270" width="210" height="290"/>
+        </g>
+        <rect x="796" width="8" height="900" fill="url(#c4seam)"/>
+        <rect width="1600" height="900" filter="url(#c4grain)" opacity=".46" style="mix-blend-mode:overlay"/>
+      </svg>
+    </div>
+    <figcaption class="cap"><b>Plate 4.05</b><span>Original composition for this monograph: the same frame twice, warm and cool, meeting at the seam. Not a photograph.</span></figcaption>
   </figure>
 
   <div class="text rv">

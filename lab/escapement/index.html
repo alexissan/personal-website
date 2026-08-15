@@ -1,0 +1,1113 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>ESCAPEMENT — Ten watches and the century they measured</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,700;0,6..96,900;1,6..96,400&family=Spectral:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --paper:#0A0A0B; --ink:#EFEDE6; --muted:#8B8780; --accent:#C9A227;
+  --rule:rgba(239,237,230,.20);
+  --measure:34rem;
+  --pad:clamp(1.25rem,5vw,5rem);
+}
+/* per-plate palettes */
+body[data-w="1"]{ --paper:#E8E1D3; --ink:#1B1712; --muted:#6A5F4E; --accent:#8A6A2F; --rule:rgba(27,23,18,.26); }
+body[data-w="2"]{ --paper:#121110; --ink:#EFE7D6; --muted:#948875; --accent:#C9A227; --rule:rgba(239,231,214,.20); }
+body[data-w="3"]{ --paper:#0C0F0E; --ink:#E6EDE9; --muted:#7E8D86; --accent:#9FBCAE; --rule:rgba(230,237,233,.20); }
+body[data-w="4"]{ --paper:#04101A; --ink:#DCE9F1; --muted:#6E8595; --accent:#3FD2C7; --rule:rgba(220,233,241,.20); }
+body[data-w="5"]{ --paper:#0D0E11; --ink:#E7E8EC; --muted:#82868F; --accent:#4C77C4; --rule:rgba(231,232,236,.20); }
+body[data-w="6"]{ --paper:#EDEEF0; --ink:#15181C; --muted:#5D646C; --accent:#9A7B2E; --rule:rgba(21,24,28,.24); }
+body[data-w="7"]{ --paper:#08080A; --ink:#EDEDEF; --muted:#83858C; --accent:#E4572E; --rule:rgba(237,237,239,.20); }
+body[data-w="8"]{ --paper:#0E1319; --ink:#DEE4EA; --muted:#78838E; --accent:#7E9DBF; --rule:rgba(222,228,234,.20); }
+body[data-w="9"]{ --paper:#07131C; --ink:#DCE6ED; --muted:#6F8492; --accent:#2E6E8E; --rule:rgba(220,230,237,.20); }
+body[data-w="10"]{ --paper:#14161A; --ink:#DDE3DC; --muted:#7E867F; --accent:#8FBF6F; --rule:rgba(221,227,220,.20); }
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"Spectral",Georgia,serif; font-weight:300;
+  font-size:clamp(1rem,.55rem + .55vw,1.16rem); line-height:1.75;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  transition:background .7s ease,color .7s ease;
+}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit}
+::selection{background:var(--accent);color:var(--paper)}
+
+/* ---------- masthead ---------- */
+.mast{
+  position:fixed; inset:0 0 auto 0; z-index:50;
+  display:flex; align-items:center; justify-content:space-between;
+  gap:1rem; padding:.85rem var(--pad);
+  background:color-mix(in srgb,var(--paper) 88%,transparent);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--rule);
+}
+.mast__name{
+  font-family:"IBM Plex Mono",monospace; font-size:.66rem;
+  letter-spacing:.42em; text-transform:uppercase; background:none;
+  border:0; padding:0; color:inherit; cursor:pointer;
+}
+.mast__nav{display:flex; gap:.1rem; flex-wrap:wrap; justify-content:flex-end}
+.mast__btn{
+  font-family:"IBM Plex Mono",monospace; font-size:.6rem; letter-spacing:.14em;
+  background:none; border:0; cursor:pointer;
+  color:var(--muted); padding:.35rem .42rem; border-radius:2px;
+  transition:color .25s ease, background .25s ease;
+}
+.mast__btn:hover{color:var(--ink)}
+.mast__btn[aria-current="true"]{color:var(--paper); background:var(--ink)}
+.mast__btn:focus-visible,.mast__name:focus-visible,.plate:focus-visible,.pager__btn:focus-visible{
+  outline:2px solid var(--accent); outline-offset:3px;
+}
+.progress{position:fixed;top:0;left:0;height:2px;width:0;background:var(--accent);z-index:60;transition:width .1s linear}
+
+/* ---------- view switching ---------- */
+.view{display:none; padding-top:3.4rem}
+.view.is-on{display:block; animation:rise .6s cubic-bezier(.2,.7,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+/* ---------- cover ---------- */
+.cover__head{padding:clamp(3rem,9vh,7rem) var(--pad) 2.4rem; max-width:74rem}
+.eyebrow{
+  font-family:"IBM Plex Mono",monospace; font-size:.62rem; letter-spacing:.34em;
+  text-transform:uppercase; color:var(--muted); margin:0 0 1.6rem;
+}
+.cover__title{
+  font-family:"Bodoni Moda",serif; font-weight:900; margin:0;
+  font-size:clamp(3rem,9.5vw,9.5rem); line-height:.86; letter-spacing:-.035em;
+}
+.cover__sub{
+  font-size:clamp(1.15rem,2.4vw,1.85rem); font-weight:200; font-style:italic;
+  max-width:30ch; margin:1.7rem 0 0; line-height:1.35;
+}
+.cover__meta{
+  display:flex; flex-wrap:wrap; gap:.55rem 2.6rem; margin-top:2.6rem;
+  font-family:"IBM Plex Mono",monospace; font-size:.62rem;
+  letter-spacing:.18em; text-transform:uppercase; color:var(--muted);
+}
+.cover__note{
+  max-width:var(--measure); margin:2.8rem 0 0; color:var(--muted);
+  font-size:.98rem; font-style:italic; font-weight:200;
+}
+
+/* ---------- the shelf ---------- */
+.shelf{display:grid; grid-template-columns:repeat(5,1fr); border-top:1px solid var(--rule)}
+.plate{
+  position:relative; display:flex; width:100%; text-align:left;
+  min-height:min(46vh,26rem); padding:1.15rem 1rem;
+  border:0; border-right:1px solid var(--rule); border-bottom:1px solid var(--rule);
+  background:#000; color:#EFEDE6; cursor:pointer; overflow:hidden; font:inherit;
+}
+.plate:nth-child(5n){border-right:0}
+.plate__img{position:absolute; inset:0; opacity:.46; filter:grayscale(.55) contrast(1.05);
+  transition:opacity .8s ease, transform 1.2s cubic-bezier(.2,.7,.2,1), filter .8s ease}
+.plate:hover .plate__img,.plate:focus-visible .plate__img{opacity:.86; transform:scale(1.07); filter:grayscale(0) contrast(1.1)}
+.plate__scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.6) 0%,rgba(0,0,0,.12) 42%,rgba(0,0,0,.88) 100%)}
+.plate__body{position:relative; flex:1; display:flex; flex-direction:column; justify-content:space-between}
+.plate__num{font-family:"IBM Plex Mono",monospace;font-size:.6rem;letter-spacing:.3em}
+.plate__name{font-family:"Bodoni Moda",serif;font-weight:900;font-size:clamp(1.35rem,2.1vw,2rem);line-height:.95;margin:0 0 .35rem;letter-spacing:-.02em}
+.plate__line{font-size:.82rem;font-weight:200;font-style:italic;opacity:.85;margin:0 0 .8rem;max-width:22ch;line-height:1.45}
+.plate__go{font-family:"IBM Plex Mono",monospace;font-size:.58rem;letter-spacing:.24em;text-transform:uppercase;border-top:1px solid rgba(239,237,230,.35);padding-top:.6rem;display:block}
+
+.colophon{
+  padding:3.4rem var(--pad) 5rem; border-top:1px solid var(--rule);
+  font-family:"IBM Plex Mono",monospace; font-size:.66rem; line-height:2;
+  letter-spacing:.05em; color:var(--muted); max-width:66rem;
+}
+.colophon h3{font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;color:var(--ink);margin:0 0 .9rem;font-weight:500;font-family:"IBM Plex Mono",monospace}
+.colophon ul{margin:0 0 2rem;padding:0;list-style:none}
+.colophon li{border-bottom:1px solid var(--rule);padding:.42rem 0;line-height:1.6}
+.colophon a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--rule)}
+.colophon a:hover{color:var(--ink)}
+
+/* ---------- chapter ---------- */
+.opener{position:relative; height:min(86vh,52rem); overflow:hidden; background:#000}
+.opener__img{position:absolute;inset:0;opacity:.66;filter:grayscale(.2) contrast(1.06)}
+.opener__scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.5) 0%,rgba(0,0,0,.05) 40%,var(--paper) 99%)}
+.opener__body{position:absolute;inset:auto 0 0 0;padding:0 var(--pad) clamp(2rem,6vh,4.5rem);max-width:60rem}
+.opener__num{font-family:"IBM Plex Mono",monospace;font-size:.62rem;letter-spacing:.34em;color:var(--muted);margin:0 0 1rem}
+.opener__title{font-family:"Bodoni Moda",serif;font-weight:900;font-size:clamp(2.6rem,8.2vw,6.6rem);line-height:.86;letter-spacing:-.03em;margin:0}
+.opener__maker{font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);margin:1rem 0 0}
+
+.chap{padding:clamp(2.4rem,6vh,4.5rem) var(--pad) 0}
+.lede{
+  font-size:clamp(1.25rem,2.6vw,1.9rem); font-weight:200; font-style:italic;
+  line-height:1.4; max-width:24ch; margin:0 0 clamp(2.4rem,6vh,4rem);
+  color:var(--ink);
+}
+.prose{max-width:var(--measure)}
+.prose p{margin:0 0 1.5rem}
+.prose p.drop::first-letter{
+  font-family:"Bodoni Moda",serif; font-weight:900; float:left;
+  font-size:4.4em; line-height:.78; padding:.06em .1em 0 0; color:var(--accent);
+}
+.prose em{font-style:italic}
+.prose strong{font-weight:600;color:var(--ink)}
+
+.pull{
+  margin:clamp(2.6rem,7vh,4.5rem) 0; padding:0 0 0 1.4rem;
+  border-left:2px solid var(--accent); max-width:38rem;
+  font-family:"Bodoni Moda",serif; font-weight:400; font-style:italic;
+  font-size:clamp(1.35rem,3.2vw,2.15rem); line-height:1.28; letter-spacing:-.015em;
+}
+.pull cite{display:block;margin-top:.9rem;font-family:"IBM Plex Mono",monospace;font-style:normal;
+  font-size:.6rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+
+figure{margin:clamp(2.6rem,7vh,4.5rem) 0}
+figure img{aspect-ratio:16/10;filter:grayscale(.15) contrast(1.04)}
+figcaption{
+  font-family:"IBM Plex Mono",monospace;font-size:.62rem;line-height:1.9;
+  letter-spacing:.06em;color:var(--muted);margin-top:.8rem;max-width:46rem;
+}
+.figure--wide{margin-left:calc(var(--pad) * -1);margin-right:calc(var(--pad) * -1)}
+.figure--wide figcaption{padding:0 var(--pad)}
+
+/* ---------- the dial ---------- */
+.dialwrap{
+  margin:clamp(3rem,8vh,5.5rem) 0; padding:clamp(2rem,5vh,3.4rem) 0;
+  border-top:1px solid var(--rule); border-bottom:1px solid var(--rule);
+  display:flex; flex-direction:column; align-items:center; gap:1.4rem;
+}
+.dial{width:min(78vw,340px);height:auto;overflow:visible}
+.dial__cap{
+  font-family:"IBM Plex Mono",monospace;font-size:.6rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--muted);text-align:center;line-height:2;max-width:34rem;
+}
+.dial__cap b{color:var(--accent);font-weight:500}
+
+/* ---------- specs ---------- */
+.specs{
+  margin:clamp(2.6rem,7vh,4.2rem) 0; max-width:44rem;
+  font-family:"IBM Plex Mono",monospace; font-size:.66rem; letter-spacing:.05em;
+  border-top:1px solid var(--rule);
+}
+.specs div{display:flex; gap:1.4rem; padding:.6rem 0; border-bottom:1px solid var(--rule); line-height:1.6}
+.specs dt{flex:0 0 9.5rem; color:var(--muted); text-transform:uppercase; letter-spacing:.16em; font-size:.58rem; padding-top:.12em}
+.specs dd{margin:0; flex:1; color:var(--ink)}
+
+/* ---------- pager ---------- */
+.pager{
+  display:flex; justify-content:space-between; gap:1rem;
+  margin:clamp(3rem,8vh,5rem) 0 0; padding:1.6rem 0 clamp(3rem,9vh,6rem);
+  border-top:1px solid var(--rule);
+}
+.pager__btn{
+  font-family:"IBM Plex Mono",monospace; font-size:.62rem; letter-spacing:.2em;
+  text-transform:uppercase; background:none; border:0; color:var(--muted);
+  cursor:pointer; padding:.5rem 0; text-align:left; max-width:16rem; line-height:1.7;
+  transition:color .25s ease;
+}
+.pager__btn:hover{color:var(--ink)}
+.pager__btn:last-child{text-align:right}
+.pager__btn b{display:block;font-family:"Bodoni Moda",serif;font-style:italic;font-weight:400;
+  font-size:1.05rem;letter-spacing:0;text-transform:none;color:var(--ink);margin-top:.25rem}
+.pager__btn[disabled]{opacity:.3;cursor:default}
+
+@media (max-width:1000px){ .shelf{grid-template-columns:repeat(2,1fr)} .plate:nth-child(5n){border-right:1px solid var(--rule)} .plate:nth-child(2n){border-right:0} }
+@media (max-width:560px){
+  .shelf{grid-template-columns:1fr}
+  .plate{min-height:20rem} .plate:nth-child(n){border-right:0}
+  .mast__nav{display:none}
+  .specs div{flex-direction:column;gap:.2rem} .specs dt{flex:none}
+}
+@media (prefers-reduced-motion:reduce){ *{animation:none!important;transition:none!important} }
+</style>
+
+<div class="progress" id="progress"></div>
+
+<header class="mast">
+  <button class="mast__name" id="home">ESCAPEMENT</button>
+  <nav class="mast__nav" id="nav"></nav>
+</header>
+
+<main>
+  <!-- ================= COVER ================= -->
+  <section class="view is-on" id="v-cover">
+    <div class="cover__head">
+      <p class="eyebrow">A monograph in ten plates</p>
+      <h1 class="cover__title">ESCAPE&shy;MENT</h1>
+      <p class="cover__sub">Ten watches, and the century they measured.</p>
+      <div class="cover__meta">
+        <span>Edition of one · 01/01</span>
+        <span>Ten plates · 1904–1989</span>
+        <span>Drawn &amp; set in the browser</span>
+        <span>Alexis Santos</span>
+      </div>
+      <p class="cover__note">The escapement is the part that refuses. Every second, it stops the
+        train of wheels dead, lets exactly one beat through, and locks again. All the elegance of a
+        mechanical watch is downstream of that small, stubborn act of holding back. What follows is
+        ten of them — each dial below is drawn, not photographed, and each is running now, at its
+        own true beat.</p>
+    </div>
+
+    <div class="shelf" id="shelf"></div>
+
+    <div class="colophon">
+      <h3>On this edition</h3>
+      <p style="margin:0 0 2rem;max-width:52rem">Text written for this edition. Photographs are
+        reproduced from Wikimedia Commons under the licences named below; the ten dials are original
+        SVG, drawn by hand and animated at each movement's documented frequency. Nothing here is for
+        sale, which is the one respect in which it differs from its inspiration.</p>
+      <h3>Plates</h3>
+      <ul id="credits"></ul>
+      <p style="margin:0"><a href="/lab/">← Lab</a> &nbsp;·&nbsp; <a href="/">alexissantos.dev</a></p>
+    </div>
+  </section>
+
+  <!-- chapters injected here -->
+  <div id="chapters"></div>
+</main>
+
+<script>
+/* ============================================================
+   THE BOOK
+   ============================================================ */
+const IMG = f => `https://commons.wikimedia.org/wiki/Special:FilePath/${f}?width=1600`;
+
+const BOOK = [
+{
+  n:1, key:'santos', year:'1904', name:'Santos', maker:'Cartier',
+  line:'The first watch built to be worn by a man with his hands full.',
+  hero:IMG('Cartier_Santos_wristwatch.jpg'),
+  lede:'It began as a favour between friends, and ended the pocket watch.',
+  beat:6, vph:'21,600',
+  prose:[
+  ['drop',`Alberto Santos-Dumont was the most famous man in Paris and he could not tell the time. In
+  1901 he had flown a dirigible around the Eiffel Tower to win the Deutsch Prize, and somewhere over
+  the Bois de Boulogne he had discovered the obvious problem: a pocket watch requires a free hand,
+  and a man steering an airship has no free hands. He complained about it, as one does, over dinner.
+  He complained to Louis Cartier.`],
+  ['',`Cartier's answer, in 1904, was not a pocket watch on a strap. That already existed — women had
+  worn small watches on bracelets for decades, and the army had strapped them to wrists in the Boer
+  War. Cartier's answer was a watch <em>designed from nothing</em> for the wrist: a flat squared case
+  that sat still on the arm instead of rolling, a leather strap rather than a chain, and a bezel
+  fixed by eight exposed screws — industrial hardware promoted to jewellery, thirty years before
+  anyone called that a style.`],
+  ['',`That last detail is the one that matters. Every wristwatch before it apologised for being a
+  wristwatch. The Santos did not. It looked like a bracket from an airframe because the man wearing
+  it built airframes, and Cartier had the nerve to leave the screws where you could see them.`],
+  ['',`It went on sale to the public in 1911, by which point Santos-Dumont had done the thing that
+  makes him a tragic figure rather than merely a famous one: he had watched aviation become a weapon,
+  grown ill and despairing over it, and withdrawn. His name stayed on the watch. It is still on it
+  today, which is a strange sort of afterlife — the century's first wristwatch named for a man who
+  came to regret the century.`]],
+  pull:['The screws were never hidden, because there was nothing to hide.', 'Plate one'],
+  fig:{src:IMG('Santos-Dumont_and_the_wristwatch.jpg'),
+       cap:'Santos-Dumont, aviator and client. Photograph by Lorenzo Tlacaelel, CC BY 2.0, via Wikimedia Commons.'},
+  specs:[['Introduced','1904, privately · 1911, to the public'],['Maker','Louis Cartier, Paris'],
+         ['Made for','Alberto Santos-Dumont'],['Case','Squared, flat, exposed bezel screws'],
+         ['Movement','Hand-wound; later Cartier calibre 430 MC'],['Frequency','21,600 vph — six beats per second'],
+         ['Why it matters','The first wristwatch designed as a wristwatch']]
+},
+{
+  n:2, key:'tank', year:'1917', name:'Tank', maker:'Cartier',
+  line:'A battlefield seen from above, worn on the wrist.',
+  hero:IMG('Cartier_Tank.jpg'),
+  lede:'The most copied shape in watchmaking is a drawing of a tank, seen from the sky.',
+  beat:6, vph:'21,600',
+  prose:[
+  ['drop',`Look at a Tank from directly above and you are looking at a Renault FT. The two vertical
+  bars flanking the dial — Cartier called them <em>brancards</em> — are the tracks. The rectangle
+  between them, holding the dial, is the crew compartment. Louis Cartier designed it in 1917, while
+  the machine it describes was still being driven across northern France.`],
+  ['',`It is a strange act, and it is worth sitting with rather than skipping past. This is not a
+  watch that commemorates a war; it is a watch that borrows the silhouette of the war's newest
+  machine and turns it into a flat, calm, almost domestic rectangle of gold. Cartier gave one of the
+  first to General Pershing. It went on sale in 1919, into a Europe that had just spent four years
+  learning what those tracks did.`],
+  ['',`What survives is the geometry. The Tank has no bezel, no lugs in the usual sense, no visible
+  join — the case and the strap attachment are one continuous form, so the watch reads as a single
+  drawn object rather than an assembly. Roman numerals, a rail-track minute chapter, blued steel
+  hands, a sapphire cabochon in the crown. Nothing since has improved on it, which is why nothing
+  since has really tried.`],
+  ['',`Jackie Kennedy wore one. Andy Warhol wore one and said the famous thing about it — that he
+  did not wind it, did not wear it to tell the time, wore it because it was the watch to wear. He
+  meant it as a joke about status. He also, accidentally, described exactly what Cartier had built:
+  an object whose function was never really the point.`]],
+  pull:['Andy Warhol did not wind his. That was, more or less, the design brief.', 'Plate two'],
+  specs:[['Designed','1917'],['On sale','1919'],['Maker','Louis Cartier, Paris'],
+         ['Source','Renault FT light tank, plan view'],
+         ['Case','Rectangular, integrated brancards, no lugs'],
+         ['Dial','Roman numerals, railway minute track, blued hands'],
+         ['Frequency','21,600 vph'],['Descendants','Louis, Américaine, Française, Must, Cintrée']]
+},
+{
+  n:3, key:'reverso', year:'1931', name:'Reverso', maker:'Jaeger-LeCoultre',
+  line:'Built to survive a polo mallet by turning its own face away.',
+  hero:IMG('Jaeger-LeCoultre-Reverso.jpg'),
+  lede:'The only watch whose defining feature is the ability to hide.',
+  beat:6, vph:'21,600',
+  prose:[
+  ['drop',`British officers in India played polo, and polo destroyed their watches. A mallet, a ball,
+  another rider's elbow — the crystal went, then the hands, then the movement. The officers wanted a
+  watch they could wear while playing. Watchmakers offered them thicker glass, which is the answer of
+  someone who has not understood the question.`],
+  ['',`César de Trey understood the question. His solution, patented in March 1931 by the engineer
+  René-Alfred Chauvot, was to stop defending the crystal and remove it from the fight entirely. The
+  case sits in a carrier. You push it sideways, it swivels a hundred and eighty degrees, and it drops
+  back into the carrier face-down. What now faces the world is a slab of solid steel. There is
+  nothing to break because there is nothing exposed.`],
+  ['',`The engineering is elegant. The consequence is more interesting. Turning the watch over gives
+  you a blank metal rectangle roughly the proportion of a calling card, and people did what people
+  do with a blank rectangle: they engraved it. Initials, regimental crests, dates, declarations.
+  A watch designed to survive a sport became the watch you gave someone to mark something, and the
+  back — the armour — became the sentimental face.`],
+  ['',`The Art Deco proportions were not a stylistic add-on but a structural one: the three
+  <em>gadroons</em> ridged across the top and bottom of the case are there to guide the case in its
+  cradle. It is the rare object where the decade's taste and the object's mechanism arrived at the
+  same shape independently, and agreed.`]],
+  pull:['They stopped trying to make the glass stronger and simply turned it around.','Plate three'],
+  specs:[['Patented','4 March 1931'],['Patent','René-Alfred Chauvot'],['Commissioned','César de Trey'],
+         ['Made for','British Army polo players, India'],
+         ['Mechanism','Case swivels 180° within a fixed carrier'],
+         ['Case detail','Three gadroons, top and bottom — guides, not ornament'],
+         ['Frequency','21,600 vph'],['Second life','The engraved caseback as a gift object']]
+},
+{
+  n:4, key:'sub', year:'1953', name:'Submariner', maker:'Rolex',
+  line:'Every dive watch made since is a comment on this one.',
+  hero:IMG('Rolex_Submariner_ref._14060M%2C_met%C3%A0_anni_2000.jpg'),
+  lede:'The archetype. Not the first of its kind — the one that decided what the kind would look like.',
+  beat:8, vph:'28,800',
+  prose:[
+  ['drop',`Two Rolex inventions had to happen before this watch could. In 1926 came the Oyster case:
+  a screw-down crown, screw-down caseback, hermetically sealed middle. In 1931 came the Perpetual
+  rotor, a weight that swung freely on the wrist and wound the mainspring. Together they solved the
+  same problem from both ends — the case kept water out, and the automatic winding meant you almost
+  never had to unscrew the crown and let it back in.`],
+  ['',`The Submariner arrived in 1953 and was shown at Basel in 1954. It added the one thing missing:
+  a bezel that rotates, marked out in sixty minutes, that you set against the minute hand when you
+  descend. It is not a timer. It is a subtraction machine. You never read it as a number, only as an
+  amount of gap, and the gap is how much air you have left. There is no watch complication more
+  honest about its stakes.`],
+  ['',`Everything else is legibility under conditions where legibility is survival. Enormous
+  luminous markers. Hands sized so the minute hand can never be mistaken for the hour — which is why
+  the hour hand carries that circle, the Mercedes, splitting the lume into three so the eye separates
+  the hands instantly in black water. Matte black dial, no decoration, no date at first. The design
+  reads as tough. It is actually just extremely clear.`],
+  ['',`It became the most imitated watch on earth, and the imitation is the proof. When a designer
+  today draws a dive watch, they do not go back to first principles about underwater legibility. They
+  draw a Submariner and then change something, so the audience knows which conversation they are in.`]],
+  pull:['The bezel does not tell you the time. It tells you how much you have left.','Plate four'],
+  specs:[['Introduced','1953 · shown at Basel, 1954'],['First reference','6204'],
+         ['Ancestors','Oyster case, 1926 · Perpetual rotor, 1931'],
+         ['Original rating','100 m'],['Bezel','60-minute rotating, unidirectional'],
+         ['Hands','Mercedes hour hand — for instant separation at depth'],
+         ['Frequency','28,800 vph — eight beats per second'],
+         ['Legacy','The template for essentially every dive watch since']]
+},
+{
+  n:5, key:'elprimero', year:'1969', name:'El Primero', maker:'Zenith',
+  line:'Ten beats a second, and a man who hid the tooling in an attic.',
+  hero:IMG('Zenith_El_Primero_Automatic_Chronograph_Movement_%2818659840408%29.jpg'),
+  lede:'The finest movement of its generation was saved by one employee ignoring an order.',
+  beat:10, vph:'36,000',
+  prose:[
+  ['drop',`Three groups were racing in 1969 to build the first self-winding chronograph, and all three
+  arrived within months of each other. A consortium of Heuer, Breitling and Hamilton-Büren had the
+  Calibre 11. Seiko had the 6139. Zenith announced first, in January, and named the movement
+  accordingly: <em>El Primero</em>. The first.`],
+  ['',`It was also, by some distance, the best. The others ran at the standard 19,800 or 21,600 beats
+  per hour. Zenith built theirs to run at <strong>36,000</strong> — ten beats every second — which
+  meant it could resolve and display a tenth of a second, and meant the sweep hand did not tick so
+  much as glide. It was an integrated design rather than a chronograph module stacked onto a base
+  movement, and it was harder to make in exactly the ways that a beautiful thing is harder to make.`],
+  ['',`Then quartz arrived, and the story turns. By 1975 Zenith was owned by an American company,
+  Zenith Radio, which read the market correctly and concluded that mechanical movements were finished.
+  The order came down: scrap the El Primero. Destroy the presses, the cams, the cutting tools, the
+  plans. Sell it all for metal.`],
+  ['',`The factory foreman at Le Locle, <strong>Charles Vermot</strong>, did not do it. He spent
+  weeks quietly carrying the tooling upstairs — presses, more than a hundred and fifty cams, the
+  complete technical documentation — into a room in the attic, and then he walled it up. He kept a
+  record. He told almost no one. He was, in the plainest terms, disobeying his employer over a matter
+  of taste.`],
+  ['',`In 1984, mechanical watches came back, and Ebel wanted an automatic chronograph. Zenith had
+  none — no movement, no machines, no drawings. Vermot, by then an old man, took them upstairs and
+  opened the room. Production resumed with the original tooling. Within a few years the El Primero
+  was also beating inside the Rolex Daytona, which is roughly the highest compliment the industry
+  is capable of paying.`]],
+  pull:['He was ordered to destroy it. He carried it upstairs instead, and bricked up the door.','Charles Vermot, foreman, Le Locle'],
+  fig:{src:IMG('Zenith_El_Primero_36000.jpg'),
+       cap:'El Primero 36000. Photograph by Enerexex, CC BY-SA 4.0, via Wikimedia Commons.'},
+  specs:[['Announced','10 January 1969'],['Frequency','36,000 vph — ten beats per second'],
+         ['Resolution','1/10th of a second'],['Architecture','Integrated automatic chronograph, column wheel'],
+         ['Ordered destroyed','1975, by Zenith Radio Corporation'],
+         ['Saved by','Charles Vermot, who hid the tooling in the factory attic'],
+         ['Reopened','1984'],['Later home','Rolex Daytona, 1988–2000']]
+},
+{
+  n:6, key:'astron', year:'1969', name:'Astron', maker:'Seiko',
+  line:'Christmas Day, 1969. The end of the mechanical monopoly.',
+  hero:IMG('Seiko_Astron.jpg'),
+  lede:'It cost as much as a car, and within a decade it had cost Switzerland most of its industry.',
+  beat:1, vph:'quartz',
+  prose:[
+  ['drop',`On 25 December 1969, Seiko put a hundred watches on sale in Tokyo. Eighteen-carat gold,
+  450,000 yen — the price of a Toyota Corolla — and inside, no balance wheel at all. A sliver of
+  quartz, cut and tuned to vibrate 8,192 times a second under a small current, and a circuit counting
+  those vibrations down into one clean pulse per second.`],
+  ['',`The number that killed the industry is this. A good mechanical watch, properly regulated, kept
+  time to within about five seconds a day. The Astron kept it to five seconds <em>a month</em>. Not
+  an improvement. A different category of object, arriving overnight at the top of the market and
+  then falling in price every single year, the way electronics do and mechanisms do not.`],
+  ['',`Switzerland's response is the part that still gets argued about. Swiss makers had quartz
+  research of their own — the CEH consortium in Neuchâtel had the Beta 21 — but the industry as a
+  whole treated quartz as a curiosity at the wrong end of its own value system: accurate, yes, but
+  not <em>watchmaking</em>. By the early 1980s, Swiss watch employment had fallen from around ninety
+  thousand people to under thirty thousand. Whole towns in the Jura emptied. It has been called a
+  crisis ever since, which is a polite word for it.`],
+  ['',`Seiko, notably, did not lock the technology down. Key patents were opened rather than
+  defended, quartz spread everywhere, and the eventual outcome was that accurate timekeeping stopped
+  being a luxury and became a rounding error — free, in the corner of every screen you own. Look at
+  the dial and note what it does <em>not</em> do: no sweep. One step per second, dead and exact.
+  That single ticking hand is the sound of an industry ending.`]],
+  pull:['Five seconds a month, against five seconds a day. That gap emptied the Jura.','Plate six'],
+  specs:[['On sale','25 December 1969, Tokyo'],['Made','100 pieces, 18ct gold'],
+         ['Price','¥450,000 — a Toyota Corolla'],['Reference','35SQ Astron'],
+         ['Oscillator','Quartz crystal, 8,192 Hz'],['Accuracy','±5 seconds per month'],
+         ['Seconds hand','One step per second — no sweep'],
+         ['Consequence','Swiss watch employment: ~90,000 → under 30,000 by the early 1980s']]
+},
+{
+  n:7, key:'speedy', year:'1969', name:'Speedmaster', maker:'Omega',
+  line:'Bought anonymously from a Houston jeweller. Tested until the others broke.',
+  hero:IMG('OMEGA-Speedmaster-Professional-Front.jpg'),
+  lede:'NASA did not choose it for its heritage. NASA chose it because it was the only one left working.',
+  beat:6, vph:'21,600',
+  prose:[
+  ['drop',`The Speedmaster was launched in 1957 as a motorsport chronograph — its innovation was
+  moving the tachymeter scale off the dial and onto the bezel, which made it readable at a glance and
+  gave it the face it still has. For its first seven years it had nothing whatsoever to do with
+  spaceflight.`],
+  ['',`In 1964 NASA needed a wristwatch for crewed missions and did not want the manufacturers
+  performing for them. A staff engineer walked into a jeweller's in Houston and bought several
+  chronographs off the shelf, over the counter, like a customer. Then the agency tried to destroy
+  them: 71°C for two days then 93°C, down to −18°C, near-vacuum, 40 g of shock in six directions,
+  vibration, humidity, pure oxygen, corrosion, acoustic noise at 130 decibels.`],
+  ['',`One watch finished still running and still accurate. On 1 March 1965 the Speedmaster was
+  qualified for all crewed space missions, a certification it has never lost. On 20 July 1969 Buzz
+  Aldrin wore his onto the surface of the Moon. Neil Armstrong left his inside the lunar module,
+  because the module's own electronic timer had failed and the crew wanted a working clock aboard —
+  which is why the first watch on the Moon was the second man's.`],
+  ['',`Nine months later the Speedmaster stopped being ceremonial. Apollo 13 was crippled, the
+  guidance computer was shut down to save power, and the crew had to fire the engine manually for a
+  burn that had to last <strong>fourteen seconds</strong>. Jack Swigert timed it on his wrist. They
+  came home. Omega received NASA's Silver Snoopy Award, which is given by the astronauts themselves,
+  and no marketing department has ever needed to embellish the story since.`]],
+  pull:['The first watch on the Moon belonged to the second man out of the door.','Plate seven'],
+  fig:{src:IMG('Aldrin_Apollo_11.jpg'),
+       cap:'Buzz Aldrin on the Sea of Tranquility, 20 July 1969. Photograph by Neil A. Armstrong, NASA — public domain, via Wikimedia Commons.'},
+  specs:[['Introduced','1957, as a motorsport chronograph'],['First reference','CK2915'],
+         ['Innovation','Tachymeter moved from dial to bezel'],
+         ['Procured','1964, over the counter, Houston'],
+         ['Qualified','1 March 1965, for all crewed missions'],
+         ['On the Moon','20 July 1969, worn by Buzz Aldrin'],
+         ['Apollo 13','Timed the 14-second manual course-correction burn'],
+         ['Frequency','21,600 vph']]
+},
+{
+  n:8, key:'royaloak', year:'1972', name:'Royal Oak', maker:'Audemars Piguet',
+  line:'Drawn overnight. Priced above gold. Laughed at, then copied by everyone.',
+  hero:IMG('Audemars_Piguet_Royal_Oak_ref._15202.jpg'),
+  lede:'A steel watch that cost ten times a steel watch, from a company with nothing left to lose.',
+  beat:5.5, vph:'19,800',
+  prose:[
+  ['drop',`Audemars Piguet needed something for Basel 1972 and had almost run out of time and money.
+  The brief went to Gérald Genta, who was told about it the evening before the deadline and delivered
+  the drawing the following morning. He said later that he had been thinking about a diver's helmet —
+  the old brass kind, bolted down at the rim.`],
+  ['',`That is the Royal Oak: an octagonal bezel, held by eight visible hexagonal screws, on a case
+  and bracelet that flow into one another with no lugs and no break. The dial carries a stamped
+  <em>petite tapisserie</em> grid, a texture borrowed from a technique the Swiss had mostly stopped
+  bothering with. The bracelet tapers through dozens of individually finished links. Genta's real
+  move was refusing the join: there is no point at which the watch stops and the strap begins.`],
+  ['',`Then the price. It was steel, and it was 3,300 Swiss francs — roughly ten times a steel Rolex,
+  and more than most gold watches in the room. This was received as an error, then as an insult. The
+  first ones sold slowly and the trade thought AP had lost its judgement along with its market.`],
+  ['',`They had not. The argument the Royal Oak made — that value could live in design, finishing and
+  nerve rather than in the material — turned out to be the argument the industry needed exactly as
+  quartz was making accuracy worthless. It is the reason the "luxury sports watch" exists as a
+  category. Every integrated-bracelet steel watch now on sale is descended from a sketch someone
+  produced overnight because the deadline was the next morning.`]],
+  pull:['Steel, at ten times the price of steel. The trade called it a mistake for about a decade.','Plate eight'],
+  specs:[['Introduced','Basel, 1972'],['Designer','Gérald Genta — reportedly overnight'],
+         ['First reference','5402ST, "Jumbo", 39 mm'],['Source','A traditional diver\'s helmet'],
+         ['Bezel','Octagonal, eight hexagonal screws'],['Dial','Stamped petite tapisserie'],
+         ['Launch price','CHF 3,300 — roughly 10× a steel Rolex'],
+         ['Frequency','19,800 vph'],['Created','The luxury steel sports watch']]
+},
+{
+  n:9, key:'nautilus', year:'1976', name:'Nautilus', maker:'Patek Philippe',
+  line:'Sketched at dinner, while watching the client eat.',
+  hero:IMG('Patek-Philippe-Nautilus-3700-1A.jpg'),
+  lede:'“One of the world\'s costliest watches is made of steel.” They put that in the advertisement.',
+  beat:5.5, vph:'19,800',
+  prose:[
+  ['drop',`Four years after the Royal Oak, Genta did it again, for the one house even more
+  conservative than Audemars Piguet. The story he told is that he was at Basel, in a restaurant,
+  and asked for paper when he spotted a table of Patek Philippe executives across the room. He drew
+  while watching them eat, and had a finished design before they had finished dinner.`],
+  ['',`He drew a porthole. Not the round kind — the shape of a ship's hatch, a rounded rectangle
+  clamped shut by hinges at nine and three. Those two "ears" on the side of a Nautilus are the whole
+  concept: the case is built like a marine instrument, sealed from the front and locked at the sides,
+  which is also why it manages 120 metres of water resistance in a case that thin. The dial is ribbed
+  with horizontal grooves, the bracelet integrates without lugs. It was 42 mm, which in 1976 was
+  enormous, and it was immediately nicknamed the Jumbo.`],
+  ['',`Patek's problem was the same as AP's, only worse, because Patek's entire identity was gold
+  dress watches for people who inherit things. Selling a steel sports watch at a gold price required
+  the company to say the quiet part out loud, and to its credit it did, in the advertising:
+  <em>one of the world's costliest watches is made of steel</em>. Not an apology. A boast.`],
+  ['',`The ref. 3700/1A sold modestly for years. It is now, by a wide margin, the most feverishly
+  chased steel watch in existence — waiting lists measured in years, secondary prices several times
+  retail, the discontinuation of its successor treated as news. There is a joke in there about
+  patience being the only complication that ever really pays.`]],
+  pull:['He drew a hatch, not a window. The ears at three and nine are hinges.','Plate nine'],
+  specs:[['Introduced','1976'],['Designer','Gérald Genta'],['First reference','3700/1A, "Jumbo"'],
+         ['Diameter','42 mm — outsized for its day'],
+         ['Case','Porthole form; hinged "ears" at 3 and 9, sealed from the front'],
+         ['Water resistance','120 m'],['Dial','Horizontal embossed grooves'],
+         ['Advertising line','"One of the world\'s costliest watches is made of steel."'],
+         ['Frequency','19,800 vph']]
+},
+{
+  n:10, key:'f91w', year:'1989', name:'F-91W', maker:'Casio',
+  line:'Ten dollars. Three million a year. The most worn watch ever made.',
+  hero:IMG('Casio_F-91W_watch_%282023%29_%28front_closeup_-_time%29_%28minor_retouch%29.jpg'),
+  lede:'The century opened with a watch made for one man. It closes with one made for everybody.',
+  beat:1, vph:'digital',
+  prose:[
+  ['drop',`It is resin. It weighs about twenty grams. It costs roughly the same as lunch, it has been
+  in continuous production since 1989, it sells somewhere around three million units a year, and the
+  battery lasts about seven years — which means that for most owners the watch is simply on, the way
+  a wall is on, until one day it isn't.`],
+  ['',`Everything the previous nine plates spent a century arguing about is settled here, quietly and
+  without ceremony. Accuracy: solved, and given away free. Water resistance: adequate. Legibility: a
+  black-on-grey LCD you can read in any light that exists. Complications: alarm, stopwatch to a
+  hundredth, calendar, a small green backlight. A Patek Philippe perpetual calendar is a mechanical
+  marvel that knows the date until 2100. So does this, for ten dollars, and it also has a stopwatch.`],
+  ['',`Then there is the other history, which any honest account has to include. Because it is
+  cheap, ubiquitous and has a reliable timer, the F-91W turns up repeatedly in the record of
+  improvised explosive devices, and US assessments of Guantánamo detainees cited possession of one as
+  an indicator of bomb-making training. It is a genuinely grim distinction, and it is an artefact of
+  the same properties that make it beloved: it is everywhere, it is anonymous, and it keeps time
+  without being asked.`],
+  ['',`Put it next to the Santos and the century closes cleanly. In 1904 a wristwatch was a bespoke
+  solution to one famous man's specific inconvenience, made by hand, in Paris, as a favour. By 1989 a
+  wristwatch was a commodity so cheap and so accurate that the only remaining reason to buy an
+  expensive one was that you wanted to — which is, in the end, what the other nine plates in this
+  book are really about. The escapement had stopped being necessary. That is precisely when it
+  became interesting.`]],
+  pull:['Once accuracy was free, everything above it had to justify itself on other grounds. It still does.','Plate ten — the last'],
+  specs:[['Introduced','1989'],['In production','Continuously, ever since'],
+         ['Output','~3 million units per year'],['Case','Resin, ~20 g'],
+         ['Battery','CR2016 — around seven years'],
+         ['Functions','Time, calendar to 2100, alarm, 1/100 s stopwatch, backlight'],
+         ['Accuracy','Quartz — better than any watch above it on this shelf'],
+         ['Price','Roughly the cost of lunch'],
+         ['Distinction','Probably the most-worn wristwatch in human history']]
+}
+];
+
+const CREDITS = [
+ ['Cartier Santos wristwatch','Pittigrilli','CC BY-SA 4.0','Cartier_Santos_wristwatch.jpg'],
+ ['Santos-Dumont and the wristwatch','Lorenzo Tlacaelel','CC BY 2.0','Santos-Dumont_and_the_wristwatch.jpg'],
+ ['Cartier Tank','Guy Sie','CC BY-SA 2.0','Cartier_Tank.jpg'],
+ ['Jaeger-LeCoultre Reverso','Tiberido','CC BY-SA 4.0','Jaeger-LeCoultre-Reverso.jpg'],
+ ['Rolex Submariner ref. 14060M','Clyde94','CC BY-SA 4.0','Rolex_Submariner_ref._14060M%2C_met%C3%A0_anni_2000.jpg'],
+ ['Zenith El Primero movement','Eric Kilby','CC BY-SA 2.0','Zenith_El_Primero_Automatic_Chronograph_Movement_%2818659840408%29.jpg'],
+ ['Zenith El Primero 36000','Enerexex','CC BY-SA 4.0','Zenith_El_Primero_36000.jpg'],
+ ['Seiko Astron','Deutsches Uhrenmuseum','CC BY-SA 4.0','Seiko_Astron.jpg'],
+ ['Omega Speedmaster Professional','Torsten Bolten','Public domain','OMEGA-Speedmaster-Professional-Front.jpg'],
+ ['Buzz Aldrin, Apollo 11','Neil A. Armstrong / NASA','Public domain','Aldrin_Apollo_11.jpg'],
+ ['Audemars Piguet Royal Oak ref. 15202','OpaleHorse','CC BY-SA 4.0','Audemars_Piguet_Royal_Oak_ref._15202.jpg'],
+ ['Patek Philippe Nautilus 3700/1A','Patek Philippe SA','CC BY-SA 4.0','Patek-Philippe-Nautilus-3700-1A.jpg'],
+ ['Casio F-91W','Multicherry','CC BY-SA 4.0','Casio_F-91W_watch_%282023%29_%28front_closeup_-_time%29_%28minor_retouch%29.jpg']
+];
+
+/* ============================================================
+   DIALS — original SVG, one per plate, running live
+   ============================================================ */
+const NS='http://www.w3.org/2000/svg';
+const R = d => d*Math.PI/180;
+const pt = (cx,cy,r,deg) => [cx + r*Math.sin(R(deg)), cy - r*Math.cos(R(deg))];
+
+function el(t,a={}){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);return e;}
+function line(x1,y1,x2,y2,stroke,w,cap='butt'){return el('line',{x1,y1,x2,y2,stroke,'stroke-width':w,'stroke-linecap':cap});}
+function txt(x,y,s,o={}){const t=el('text',{x,y,'text-anchor':'middle','dominant-baseline':'central',...o});t.textContent=s;return t;}
+
+/* radial ticks */
+function ticks(g,cx,cy,{r,len,every=6,w=.9,col,majorEvery=30,majorLen,majorW}){
+  for(let a=0;a<360;a+=every){
+    const maj = majorEvery && a%majorEvery===0;
+    const L = maj?(majorLen||len*1.7):len, W = maj?(majorW||w*2.2):w;
+    const [x1,y1]=pt(cx,cy,r,a), [x2,y2]=pt(cx,cy,r-L,a);
+    g.appendChild(line(x1,y1,x2,y2,col,W,'round'));
+  }
+}
+const ROMAN=['XII','I','II','III','IIII','V','VI','VII','VIII','IX','X','XI'];
+
+/* ---- hand builders ---- */
+function handSword(g,cx,cy,len,w,col,id){
+  const p=el('path',{d:`M${cx-w/2} ${cy+len*0.16} L${cx-w/2} ${cy-len+w} L${cx} ${cy-len} L${cx+w/2} ${cy-len+w} L${cx+w/2} ${cy+len*0.16} Z`,fill:col});
+  p.dataset.hand=id; g.appendChild(p); return p;
+}
+function handBaton(g,cx,cy,len,w,col,id,tail=0.16){
+  const p=el('rect',{x:cx-w/2,y:cy-len,width:w,height:len+len*tail,fill:col,rx:w*0.35});
+  p.dataset.hand=id; g.appendChild(p); return p;
+}
+function handMercedes(g,cx,cy,len,col,lume,id){
+  const grp=el('g'); grp.dataset.hand=id;
+  grp.appendChild(el('rect',{x:cx-2.6,y:cy-len,width:5.2,height:len+9,fill:col,rx:1.4}));
+  grp.appendChild(el('rect',{x:cx-1.7,y:cy-len+4,width:3.4,height:len*0.42,fill:lume,rx:1}));
+  grp.appendChild(el('circle',{cx,cy:cy-len+len*0.62,r:5.6,fill:col}));
+  grp.appendChild(el('circle',{cx,cy:cy-len+len*0.62,r:3.8,fill:lume}));
+  g.appendChild(grp); return grp;
+}
+function handStick(g,cx,cy,len,w,col,id,tail=0.2){
+  const p=el('rect',{x:cx-w/2,y:cy-len,width:w,height:len+len*tail,fill:col});
+  p.dataset.hand=id; g.appendChild(p); return p;
+}
+
+/* seven-segment for the Casio */
+const SEG={0:'abcdef',1:'bc',2:'abged',3:'abgcd',4:'fgbc',5:'afgcd',6:'afgecd',7:'abc',8:'abcdefg',9:'abfgcd'};
+function digit(g,x,y,w,h,on,off,val){
+  const t=Math.max(1.6,w*0.17), s=w, k=h/2;
+  const P={ a:[[x,y],[x+s,y]], b:[[x+s,y],[x+s,y+k]], c:[[x+s,y+k],[x+s,y+h]],
+            d:[[x,y+h],[x+s,y+h]], e:[[x,y+k],[x,y+h]], f:[[x,y],[x,y+k]], g:[[x,y+k],[x+s,y+k]] };
+  const lit = val==='' ? '' : (SEG[val]||'');
+  const out=[];
+  for(const seg in P){
+    const [[x1,y1],[x2,y2]]=P[seg];
+    const L=line(x1,y1,x2,y2, lit.includes(seg)?on:off, t,'round');
+    g.appendChild(L); out.push([seg,L]);
+  }
+  return out;
+}
+
+/* ---- the ten dials ---- */
+function buildDial(w, host){
+  const S=300, cx=150, cy=150;
+  const svg=el('svg',{viewBox:`0 0 ${S} ${S}`,class:'dial',role:'img','aria-label':`${w.maker} ${w.name}, drawn dial, running live`});
+  const K=w.key;
+  const hands={};
+
+  /* --------------- CASE + DIAL FIELD --------------- */
+  if(K==='santos'){
+    const dialC='#F3EFE4', ink='#1C1815', gold='#8A6A2F';
+    svg.appendChild(el('rect',{x:36,y:36,width:228,height:228,rx:34,fill:'#C7A96B'}));
+    svg.appendChild(el('rect',{x:48,y:48,width:204,height:204,rx:26,fill:'none',stroke:'#8A6A2F','stroke-width':2}));
+    for(const [sx,sy] of [[62,62],[238,62],[62,238],[238,238],[150,52],[150,248],[52,150],[248,150]]){
+      svg.appendChild(el('circle',{cx:sx,cy:sy,r:5.2,fill:'#7A5C28'}));
+      svg.appendChild(line(sx-3.4,sy,sx+3.4,sy,'#EBDCB8',1.5,'round'));
+    }
+    svg.appendChild(el('rect',{x:66,y:66,width:168,height:168,rx:16,fill:dialC}));
+    const g=el('g'); ticks(g,cx,cy,{r:80,len:4,every:6,w:.7,col:'#8C8172',majorEvery:0}); svg.appendChild(g);
+    ROMAN.forEach((r,i)=>{const [x,y]=pt(cx,cy,66,i*30);
+      svg.appendChild(txt(x,y,r,{fill:ink,'font-family':'Bodoni Moda, serif','font-size':13,'font-weight':700}));});
+    svg.appendChild(txt(cx,cy+34,'CARTIER',{fill:'#6A5F4E','font-family':'IBM Plex Mono, monospace','font-size':7,'letter-spacing':'2'}));
+    hands.h=handSword(svg,cx,cy,44,6,ink,'h'); hands.m=handSword(svg,cx,cy,62,4.6,ink,'m');
+    hands.s=handStick(svg,cx,cy,64,1.4,gold,'s');
+    svg.appendChild(el('circle',{cx,cy,r:4,fill:ink}));
+  }
+
+  else if(K==='tank'){
+    const dialC='#F5F1E6', ink='#1A1712';
+    svg.appendChild(el('rect',{x:60,y:34,width:180,height:232,rx:10,fill:'#C9A227'}));
+    svg.appendChild(el('rect',{x:60,y:34,width:26,height:232,rx:8,fill:'#B08F1E'}));
+    svg.appendChild(el('rect',{x:214,y:34,width:26,height:232,rx:8,fill:'#B08F1E'}));
+    svg.appendChild(el('rect',{x:92,y:62,width:116,height:176,rx:4,fill:dialC}));
+    svg.appendChild(el('rect',{x:97,y:67,width:106,height:166,rx:3,fill:'none',stroke:'#B9AE96','stroke-width':.8}));
+    /* railway minute track, rectangular */
+    for(let i=0;i<60;i++){
+      const a=i*6, [x,y]=pt(cx,cy,74,a);
+      const X=Math.max(101,Math.min(199,x)), Y=Math.max(71,Math.min(229,y));
+      svg.appendChild(el('circle',{cx:X,cy:Y,r:i%5===0?1.5:.7,fill:'#8A8071'}));
+    }
+    [[0,'XII'],[3,'III'],[6,'VI'],[9,'IX']].forEach(([h,r])=>{
+      const [x,y]=pt(cx,cy,h%6===0?62:44,h*30);
+      svg.appendChild(txt(x,y,r,{fill:ink,'font-family':'Bodoni Moda, serif','font-size':15,'font-weight':700}));});
+    [1,2,4,5,7,8,10,11].forEach(h=>{const [x,y]=pt(cx,cy,h===1||h===11||h===5||h===7?58:42,h*30);
+      svg.appendChild(txt(x,y,ROMAN[h],{fill:ink,'font-family':'Bodoni Moda, serif','font-size':11,'font-weight':400}));});
+    svg.appendChild(txt(cx,cy+30,'CARTIER',{fill:'#7A7060','font-family':'IBM Plex Mono, monospace','font-size':6.5,'letter-spacing':'2'}));
+    hands.h=handSword(svg,cx,cy,40,5,'#1B3A6B','h'); hands.m=handSword(svg,cx,cy,58,4,'#1B3A6B','m');
+    hands.s=handStick(svg,cx,cy,50,1.1,'#1B3A6B','s');
+    svg.appendChild(el('circle',{cx,cy,r:3.2,fill:'#1B3A6B'}));
+    svg.appendChild(el('circle',{cx:246,cy:112,r:8,fill:'#C9A227'}));
+    svg.appendChild(el('circle',{cx:246,cy:112,r:4,fill:'#3D6FA8'}));
+  }
+
+  else if(K==='reverso'){
+    const dialC='#20211F', ink='#E8EDE9';
+    svg.appendChild(el('rect',{x:78,y:32,width:144,height:236,rx:8,fill:'#B9BCB6'}));
+    /* gadroons */
+    [42,50,58,242,250,258].forEach(y=>svg.appendChild(el('rect',{x:82,y,width:136,height:3.4,rx:1.7,fill:'#8E938C'})));
+    svg.appendChild(el('rect',{x:88,y:70,width:124,height:160,rx:3,fill:dialC}));
+    svg.appendChild(el('rect',{x:93,y:75,width:114,height:150,rx:2,fill:'none',stroke:'#4A4C48','stroke-width':.9}));
+    /* art deco numerals */
+    const AR={12:'12',2:'2',4:'4',6:'6',8:'8',10:'10'};
+    for(const h in AR){const [x,y]=pt(cx,cy,(h==6||h==12)?66:52,(h%12)*30);
+      svg.appendChild(txt(x,y,AR[h],{fill:ink,'font-family':'Bodoni Moda, serif','font-size':13,'font-weight':400}));}
+    for(let i=0;i<60;i++){const a=i*6,[x,y]=pt(cx,cy,72,a);
+      const X=Math.max(97,Math.min(203,x)),Y=Math.max(79,Math.min(221,y));
+      svg.appendChild(el('circle',{cx:X,cy:Y,r:i%5===0?1.3:.6,fill:'#6E726C'}));}
+    /* small seconds at 6 */
+    svg.appendChild(el('circle',{cx,cy:cy+44,r:19,fill:'none',stroke:'#5A5E58','stroke-width':.9}));
+    ticks(svg,cx,cy+44,{r:19,len:2.4,every:30,w:.8,col:'#8B908A',majorEvery:0});
+    svg.appendChild(txt(cx,cy-40,'REVERSO',{fill:'#9AA39C','font-family':'IBM Plex Mono, monospace','font-size':6,'letter-spacing':'2.4'}));
+    hands.h=handBaton(svg,cx,cy,38,4.4,ink,'h'); hands.m=handBaton(svg,cx,cy,56,3.4,ink,'m');
+    hands.s=handStick(svg,cx,cy+44,15,1,'#9FBCAE','s',0.25);
+    svg.appendChild(el('circle',{cx,cy,r:3,fill:ink}));
+    svg.appendChild(el('circle',{cx,cy:cy+44,r:1.6,fill:'#9FBCAE'}));
+  }
+
+  else if(K==='sub'){
+    const lume='#D8E6C8';
+    svg.appendChild(el('circle',{cx,cy,r:132,fill:'#9AA3A8'}));
+    svg.appendChild(el('circle',{cx,cy,r:126,fill:'#0A1A24'}));
+    /* bezel 60-min scale */
+    for(let i=0;i<60;i++){const a=i*6,[x1,y1]=pt(cx,cy,124,a),[x2,y2]=pt(cx,cy,i%5===0?114:119,a);
+      svg.appendChild(line(x1,y1,x2,y2,i<15?lume:'#7E8C93',i%5===0?2:1,'round'));}
+    for(let n=10;n<=50;n+=10){const [x,y]=pt(cx,cy,104,n*6);
+      svg.appendChild(txt(x,y,String(n),{fill:'#C6D2D6','font-family':'IBM Plex Mono, monospace','font-size':11}));}
+    const [px,py]=pt(cx,cy,110,0);
+    svg.appendChild(el('circle',{cx:px,cy:py,r:6,fill:lume}));
+    svg.appendChild(el('circle',{cx,cy,r:96,fill:'#050A0E'}));
+    /* lume markers */
+    for(let h=0;h<12;h++){
+      const a=h*30;
+      if(h===0){const [x,y]=pt(cx,cy,80,a);
+        svg.appendChild(el('rect',{x:x-11,y:y-7,width:22,height:14,fill:lume,rx:1.5}));continue;}
+      if(h===3||h===6||h===9){const [x,y]=pt(cx,cy,80,a);
+        svg.appendChild(el('rect',{x:x-5.5,y:y-11,width:11,height:22,fill:lume,rx:2,transform:`rotate(${a} ${x} ${y})`}));continue;}
+      const [x,y]=pt(cx,cy,80,a);
+      svg.appendChild(el('circle',{cx:x,cy:y,r:7,fill:lume}));
+    }
+    ticks(svg,cx,cy,{r:94,len:3,every:6,w:.7,col:'#3A4A52',majorEvery:0});
+    svg.appendChild(txt(cx,cy-44,'ROLEX',{fill:'#DCE9F1','font-family':'Bodoni Moda, serif','font-size':11,'letter-spacing':'2','font-weight':700}));
+    svg.appendChild(txt(cx,cy+40,'SUBMARINER',{fill:'#3FD2C7','font-family':'IBM Plex Mono, monospace','font-size':6.6,'letter-spacing':'2.2'}));
+    svg.appendChild(txt(cx,cy+52,'300m = 1000ft',{fill:'#7E9099','font-family':'IBM Plex Mono, monospace','font-size':5.4,'letter-spacing':'1.4'}));
+    hands.m=handMercedes(svg,cx,cy,84,'#E6EEF2',lume,'m');
+    hands.h=handMercedes(svg,cx,cy,56,'#E6EEF2',lume,'h');
+    hands.s=(()=>{const g2=el('g');g2.dataset.hand='s';
+      g2.appendChild(el('rect',{x:cx-1.1,y:cy-90,width:2.2,height:110,fill:'#E6EEF2'}));
+      g2.appendChild(el('circle',{cx,cy:cy-70,r:5.2,fill:lume}));
+      svg.appendChild(g2);return g2;})();
+    svg.appendChild(el('circle',{cx,cy,r:4.2,fill:'#E6EEF2'}));
+  }
+
+  else if(K==='elprimero'){
+    const dialC='#E9E9EC', ink='#17181B';
+    svg.appendChild(el('circle',{cx,cy,r:132,fill:'#B7BBC2'}));
+    svg.appendChild(el('circle',{cx,cy,r:120,fill:dialC}));
+    ticks(svg,cx,cy,{r:116,len:4,every:6,w:.8,col:'#8B8E95',majorEvery:0});
+    /* tenth-of-second track */
+    for(let i=0;i<50;i++){const a=i*7.2,[x1,y1]=pt(cx,cy,116,a),[x2,y2]=pt(cx,cy,110,a);
+      svg.appendChild(line(x1,y1,x2,y2,'#B4262A',.6));}
+    /* tri-compax: 3 anthracite/blue/grey subdials */
+    const SUB=[[cx-52,cy,'#4C77C4'],[cx+52,cy,'#8B9099'],[cx,cy+52,'#3B3E45']];
+    SUB.forEach(([sx,sy,c])=>{
+      svg.appendChild(el('circle',{cx:sx,cy:sy,r:30,fill:c}));
+      ticks(svg,sx,sy,{r:28,len:3,every:30,w:1,col:'rgba(255,255,255,.65)',majorEvery:0});
+      svg.appendChild(el('circle',{cx:sx,cy:sy,r:1.8,fill:'#EDEDEF'}));
+    });
+    for(let h=0;h<12;h++){ if(h===3||h===6||h===9) continue;
+      const [x,y]=pt(cx,cy,98,h*30);
+      svg.appendChild(el('rect',{x:x-2,y:y-9,width:4,height:18,fill:ink,rx:1,transform:`rotate(${h*30} ${x} ${y})`}));}
+    svg.appendChild(txt(cx,cy-72,'ZENITH',{fill:ink,'font-family':'Bodoni Moda, serif','font-size':10,'letter-spacing':'2.4','font-weight':700}));
+    svg.appendChild(txt(cx,cy-58,'EL PRIMERO',{fill:'#4C77C4','font-family':'IBM Plex Mono, monospace','font-size':5.8,'letter-spacing':'2.4'}));
+    svg.appendChild(txt(cx,cy+88,'36,000 A/h',{fill:'#6E7278','font-family':'IBM Plex Mono, monospace','font-size':5.4,'letter-spacing':'1.6'}));
+    hands.h=handBaton(svg,cx,cy,58,5,ink,'h'); hands.m=handBaton(svg,cx,cy,86,4,ink,'m');
+    hands.s=handStick(svg,cx,cy,108,1.6,'#B4262A','s',0.22);
+    hands.sub=(()=>{const p=el('rect',{x:cx+52-.9,y:cy-30,width:1.8,height:32,fill:'#EDEDEF'});p.dataset.hand='sub';svg.appendChild(p);return p;})();
+    svg.appendChild(el('circle',{cx,cy,r:4,fill:ink}));
+  }
+
+  else if(K==='astron'){
+    svg.appendChild(el('circle',{cx,cy,r:130,fill:'#C9A227'}));
+    svg.appendChild(el('circle',{cx,cy,r:118,fill:'#D8B84A'}));
+    svg.appendChild(el('circle',{cx,cy,r:106,fill:'#F0EEE7'}));
+    ticks(svg,cx,cy,{r:100,len:4,every:6,w:.9,col:'#9A9488',majorEvery:0});
+    for(let h=0;h<12;h++){
+      const [x,y]=pt(cx,cy,84,h*30);
+      svg.appendChild(el('rect',{x:x-2.4,y:y-11,width:4.8,height:22,fill:'#B08F1E',rx:1,transform:`rotate(${h*30} ${x} ${y})`}));
+    }
+    /* date window at 3 */
+    svg.appendChild(el('rect',{x:cx+56,y:cy-11,width:30,height:22,fill:'#fff',stroke:'#B08F1E','stroke-width':1,rx:2}));
+    const dnum=txt(cx+71,cy+1,String(new Date().getDate()),{fill:'#17181B','font-family':'IBM Plex Mono, monospace','font-size':13});
+    svg.appendChild(dnum);
+    svg.appendChild(txt(cx,cy-52,'SEIKO',{fill:'#17181B','font-family':'Bodoni Moda, serif','font-size':11,'letter-spacing':'3','font-weight':700}));
+    svg.appendChild(txt(cx,cy-38,'QUARTZ ASTRON 35SQ',{fill:'#9A7B2E','font-family':'IBM Plex Mono, monospace','font-size':5.2,'letter-spacing':'1.8'}));
+    svg.appendChild(txt(cx,cy+62,'± 5 SEC / MONTH',{fill:'#8A8377','font-family':'IBM Plex Mono, monospace','font-size':5.4,'letter-spacing':'1.8'}));
+    hands.h=handBaton(svg,cx,cy,54,5.4,'#17181B','h'); hands.m=handBaton(svg,cx,cy,84,4.2,'#17181B','m');
+    hands.s=handStick(svg,cx,cy,92,1.5,'#9A7B2E','s',0.2);
+    svg.appendChild(el('circle',{cx,cy,r:4,fill:'#17181B'}));
+  }
+
+  else if(K==='speedy'){
+    svg.appendChild(el('circle',{cx,cy,r:134,fill:'#8F959B'}));
+    svg.appendChild(el('circle',{cx,cy,r:128,fill:'#0C0D0F'}));
+    /* tachymeter bezel */
+    ['500','400','300','225','175','140','120','105','95','85','80','75','70','65','60'].forEach((v,i)=>{
+      const a=(i===0?12:12+i*22.4);
+      const [x,y]=pt(cx,cy,113,a);
+      svg.appendChild(txt(x,y,v,{fill:'#D6D8DB','font-family':'IBM Plex Mono, monospace','font-size':7.4,transform:`rotate(${a} ${x} ${y})`}));
+    });
+    svg.appendChild(txt(cx,cy-118,'TACHYMÈTRE',{fill:'#9DA2A8','font-family':'IBM Plex Mono, monospace','font-size':5.6,'letter-spacing':'1.8'}));
+    svg.appendChild(el('circle',{cx,cy,r:100,fill:'#050506'}));
+    ticks(svg,cx,cy,{r:97,len:4,every:6,w:.8,col:'#4A4D52',majorEvery:0});
+    /* three subdials */
+    [[cx-50,cy],[cx+50,cy],[cx,cy+50]].forEach(([sx,sy])=>{
+      svg.appendChild(el('circle',{cx:sx,cy:sy,r:29,fill:'#0B0C0E',stroke:'#33363B','stroke-width':.9}));
+      ticks(svg,sx,sy,{r:27,len:3,every:18,w:.7,col:'#5C6066',majorEvery:90,majorLen:5.5,majorW:1.4});
+      svg.appendChild(el('circle',{cx:sx,cy:sy,r:1.7,fill:'#E8EAEC'}));
+    });
+    for(let h=0;h<12;h++){ if(h===3||h===6||h===9) continue;
+      const [x,y]=pt(cx,cy,86,h*30);
+      svg.appendChild(el('rect',{x:x-2.2,y:y-10,width:4.4,height:20,fill:'#E8EAEC',rx:.8,transform:`rotate(${h*30} ${x} ${y})`}));}
+    svg.appendChild(txt(cx,cy-70,'OMEGA',{fill:'#E8EAEC','font-family':'Bodoni Moda, serif','font-size':10.5,'letter-spacing':'2.6','font-weight':700}));
+    svg.appendChild(txt(cx,cy-24,'SPEEDMASTER',{fill:'#E8EAEC','font-family':'IBM Plex Mono, monospace','font-size':6,'letter-spacing':'2'}));
+    svg.appendChild(txt(cx,cy-14,'PROFESSIONAL',{fill:'#9DA2A8','font-family':'IBM Plex Mono, monospace','font-size':5,'letter-spacing':'1.8'}));
+    hands.h=handBaton(svg,cx,cy,54,5.2,'#E8EAEC','h'); hands.m=handBaton(svg,cx,cy,84,4,'#E8EAEC','m');
+    hands.s=(()=>{const p=el('rect',{x:cx-.85,y:cy-92,width:1.7,height:112,fill:'#E4572E'});p.dataset.hand='s';svg.appendChild(p);return p;})();
+    hands.sub=(()=>{const p=el('rect',{x:cx-50-.8,y:cy-29,width:1.6,height:31,fill:'#E8EAEC'});p.dataset.hand='sub';svg.appendChild(p);return p;})();
+    svg.appendChild(el('circle',{cx,cy,r:4,fill:'#E8EAEC'}));
+  }
+
+  else if(K==='royaloak'){
+    /* octagonal bezel */
+    const oct=(r,rot=22.5)=>Array.from({length:8},(_,i)=>pt(cx,cy,r,rot+i*45).join(',')).join(' ');
+    svg.appendChild(el('polygon',{points:oct(136),fill:'#A9B2BB'}));
+    svg.appendChild(el('polygon',{points:oct(126),fill:'#8F98A2'}));
+    for(let i=0;i<8;i++){
+      const [x,y]=pt(cx,cy,120,22.5+i*45);
+      svg.appendChild(el('polygon',{points:Array.from({length:6},(_,k)=>pt(x,y,7.5,k*60).join(',')).join(' '),fill:'#C2CAD2',stroke:'#6E7781','stroke-width':.9}));
+    }
+    svg.appendChild(el('circle',{cx,cy,r:100,fill:'#1B2A38'}));
+    /* petite tapisserie */
+    const dg=el('defs'), pat=el('pattern',{id:'tap',width:9,height:9,patternUnits:'userSpaceOnUse'});
+    pat.appendChild(el('rect',{width:9,height:9,fill:'#1B2A38'}));
+    pat.appendChild(el('rect',{x:1,y:1,width:7,height:7,fill:'none',stroke:'#2B3F52','stroke-width':1}));
+    pat.appendChild(el('circle',{cx:4.5,cy:4.5,r:1.1,fill:'#33495E'}));
+    dg.appendChild(pat); svg.appendChild(dg);
+    svg.appendChild(el('circle',{cx,cy,r:99,fill:'url(#tap)'}));
+    for(let h=0;h<12;h++){
+      if(h===3) continue;
+      const [x,y]=pt(cx,cy,80,h*30);
+      svg.appendChild(el('rect',{x:x-3.2,y:y-8,width:6.4,height:16,fill:'#D7DEE5',rx:1.2,transform:`rotate(${h*30} ${x} ${y})`}));
+      svg.appendChild(el('rect',{x:x-1.6,y:y-6,width:3.2,height:12,fill:'#EDF2F6',rx:.8,transform:`rotate(${h*30} ${x} ${y})`}));
+    }
+    svg.appendChild(el('rect',{x:cx+60,y:cy-11,width:30,height:22,fill:'#DFE6EC',rx:2}));
+    svg.appendChild(txt(cx+75,cy+1,String(new Date().getDate()),{fill:'#17181B','font-family':'IBM Plex Mono, monospace','font-size':12}));
+    svg.appendChild(txt(cx,cy-56,'AUDEMARS PIGUET',{fill:'#DEE4EA','font-family':'Bodoni Moda, serif','font-size':8,'letter-spacing':'1.4','font-weight':700}));
+    svg.appendChild(txt(cx,cy+56,'AUTOMATIC',{fill:'#9BA9B6','font-family':'IBM Plex Mono, monospace','font-size':5.4,'letter-spacing':'2.2'}));
+    hands.h=handBaton(svg,cx,cy,52,6,'#E6ECF1','h'); hands.m=handBaton(svg,cx,cy,80,4.6,'#E6ECF1','m');
+    hands.s=handStick(svg,cx,cy,88,1.3,'#7E9DBF','s',0.2);
+    svg.appendChild(el('circle',{cx,cy,r:4,fill:'#E6ECF1'}));
+  }
+
+  else if(K==='nautilus'){
+    /* porthole: rounded rect + ears */
+    svg.appendChild(el('rect',{x:52,y:66,width:196,height:168,rx:52,fill:'#A7B0B8'}));
+    svg.appendChild(el('path',{d:'M52 108 L34 118 L34 182 L52 192 Z',fill:'#8D969E'}));
+    svg.appendChild(el('path',{d:'M248 108 L266 118 L266 182 L248 192 Z',fill:'#8D969E'}));
+    svg.appendChild(el('rect',{x:62,y:76,width:176,height:148,rx:44,fill:'#7E888F'}));
+    svg.appendChild(el('rect',{x:70,y:84,width:160,height:132,rx:38,fill:'#08283C'}));
+    /* horizontal grooves */
+    const dg2=el('defs'), p2=el('pattern',{id:'groove',width:8,height:8,patternUnits:'userSpaceOnUse'});
+    p2.appendChild(el('rect',{width:8,height:8,fill:'#08283C'}));
+    p2.appendChild(el('rect',{y:3.4,width:8,height:1.4,fill:'#0E4262'}));
+    dg2.appendChild(p2); svg.appendChild(dg2);
+    svg.appendChild(el('rect',{x:70,y:84,width:160,height:132,rx:38,fill:'url(#groove)'}));
+    for(let h=0;h<12;h++){
+      if(h===3) continue;
+      const [x,y]=pt(cx,cy,h%3===0?62:58,h*30);
+      const X=Math.max(84,Math.min(216,x)), Y=Math.max(96,Math.min(204,y));
+      svg.appendChild(el('rect',{x:X-2.6,y:Y-7,width:5.2,height:14,fill:'#DDE7EE',rx:1.2,transform:`rotate(${h*30} ${X} ${Y})`}));
+    }
+    svg.appendChild(el('rect',{x:cx+42,y:cy-10,width:28,height:20,fill:'#D6E2EA',rx:2}));
+    svg.appendChild(txt(cx+56,cy+1,String(new Date().getDate()),{fill:'#0B1E2A','font-family':'IBM Plex Mono, monospace','font-size':11}));
+    svg.appendChild(txt(cx-6,cy-40,'PATEK PHILIPPE',{fill:'#DCE6ED','font-family':'Bodoni Moda, serif','font-size':7.6,'letter-spacing':'1.2','font-weight':700}));
+    svg.appendChild(txt(cx,cy+42,'NAUTILUS',{fill:'#7FA8BF','font-family':'IBM Plex Mono, monospace','font-size':5.6,'letter-spacing':'2.4'}));
+    hands.h=handBaton(svg,cx,cy,40,5.4,'#E4EDF3','h'); hands.m=handBaton(svg,cx,cy,58,4.2,'#E4EDF3','m');
+    hands.s=handStick(svg,cx,cy,56,1.2,'#2E6E8E','s',0.2);
+    svg.appendChild(el('circle',{cx,cy,r:3.6,fill:'#E4EDF3'}));
+  }
+
+  else if(K==='f91w'){
+    const on='#1D2620', off='#8FA08C', lcd='#A8BCA0';
+    svg.appendChild(el('rect',{x:54,y:52,width:192,height:196,rx:22,fill:'#17181A'}));
+    svg.appendChild(el('rect',{x:64,y:62,width:172,height:176,rx:16,fill:'#232527'}));
+    svg.appendChild(txt(cx,cy-74,'CASIO',{fill:'#C9CDC7','font-family':'IBM Plex Mono, monospace','font-size':9,'letter-spacing':'1.4','font-weight':500}));
+    svg.appendChild(txt(cx-48,cy-58,'QUARTZ',{fill:'#8B8F89','font-family':'IBM Plex Mono, monospace','font-size':5,'letter-spacing':'1'}));
+    svg.appendChild(txt(cx+52,cy-58,'ALARM',{fill:'#8B8F89','font-family':'IBM Plex Mono, monospace','font-size':5,'letter-spacing':'1'}));
+    svg.appendChild(el('rect',{x:78,y:100,width:144,height:96,rx:4,fill:lcd,stroke:'#4A4E48','stroke-width':1.4}));
+    const lg=el('g'); lg.dataset.lcd='1'; svg.appendChild(lg);
+    hands.lcd={g:lg,on,off,lcd};
+    svg.appendChild(el('rect',{x:96,y:212,width:36,height:12,rx:3,fill:'#3A3D3F'}));
+    svg.appendChild(el('rect',{x:168,y:212,width:36,height:12,rx:3,fill:'#3A3D3F'}));
+    svg.appendChild(txt(cx,cy+68,'F-91W',{fill:'#8B8F89','font-family':'IBM Plex Mono, monospace','font-size':6,'letter-spacing':'1.6'}));
+  }
+
+  host.appendChild(svg);
+  return {svg,hands,w};
+}
+
+/* ---- animation ---- */
+const DAYS=['SU','MO','TU','WE','TH','FR','SA'];
+function tickDial(d){
+  const {hands,w}=d, now=new Date();
+  const ms=now.getMilliseconds(), s=now.getSeconds(), m=now.getMinutes(), h=now.getHours()%12;
+  const beat=w.beat;
+  const sSmooth = beat>=100 ? s+ms/1000 : s + Math.floor((ms/1000)*beat)/beat;
+  const aS = sSmooth*6, aM = (m + sSmooth/60)*6, aH = (h + m/60)*30;
+  const rot=(node,ang)=>{ if(node) node.setAttribute('transform',`rotate(${ang} 150 150)`); };
+  rot(hands.h,aH); rot(hands.m,aM);
+  if(hands.s){
+    if(w.key==='reverso'){ hands.s.setAttribute('transform',`rotate(${aS} 150 194)`); }
+    else rot(hands.s,aS);
+  }
+  if(hands.sub){
+    const cxs = w.key==='elprimero'?202:100;
+    hands.sub.setAttribute('transform',`rotate(${(now.getMinutes()%30)*12 + sSmooth*0.2} ${cxs} 150)`);
+  }
+  if(hands.lcd){
+    const {g,on,off}=hands.lcd;
+    if(g.dataset.t !== `${h}${m}${s}`){
+      g.dataset.t=`${h}${m}${s}`;
+      while(g.firstChild) g.removeChild(g.firstChild);
+      const H=String(now.getHours()).padStart(2,'0'), M=String(m).padStart(2,'0'), SS=String(s).padStart(2,'0');
+      const dw=20, dh=36, dy=124;
+      [[84,H[0]],[107,H[1]],[140,M[0]],[163,M[1]]].forEach(([x,v])=>digit(g,x,dy,dw,dh,on,off,Number(v)));
+      /* blinking colon */
+      g.appendChild(el('circle',{cx:131,cy:dy+11,r:2.2,fill:s%2?on:off}));
+      g.appendChild(el('circle',{cx:131,cy:dy+26,r:2.2,fill:s%2?on:off}));
+      /* seconds, smaller, to the right — as on the real thing */
+      [[190,SS[0]],[204,SS[1]]].forEach(([x,v])=>digit(g,x,dy+18,11,18,on,off,Number(v)));
+      g.appendChild(txt(150,110,`${DAYS[now.getDay()]}  ${String(now.getDate()).padStart(2,'0')}-${String(now.getMonth()+1).padStart(2,'0')}`,
+        {fill:on,'font-family':'IBM Plex Mono, monospace','font-size':10,'letter-spacing':'1'}));
+    }
+  }
+}
+
+/* ============================================================
+   RENDER
+   ============================================================ */
+const chapters=document.getElementById('chapters');
+const shelf=document.getElementById('shelf');
+const nav=document.getElementById('nav');
+const dials=[];
+
+BOOK.forEach(w=>{
+  /* shelf plate */
+  const b=document.createElement('button');
+  b.className='plate'; b.type='button'; b.dataset.go=w.n;
+  b.innerHTML=`<img class="plate__img" loading="lazy" alt="" src="${w.hero}">
+    <span class="plate__scrim"></span>
+    <span class="plate__body">
+      <span class="plate__num">${String(w.n).padStart(2,'0')} · ${w.year}</span>
+      <span>
+        <span class="plate__name">${w.name}</span>
+        <span class="plate__line">${w.line}</span>
+        <span class="plate__go">${w.maker}</span>
+      </span>
+    </span>`;
+  shelf.appendChild(b);
+
+  /* nav */
+  const nb=document.createElement('button');
+  nb.className='mast__btn'; nb.type='button'; nb.dataset.go=w.n;
+  nb.textContent=String(w.n).padStart(2,'0'); nb.title=`${w.maker} ${w.name}`;
+  nav.appendChild(nb);
+
+  /* chapter */
+  const sec=document.createElement('section');
+  sec.className='view'; sec.id='v-'+w.n;
+  const prev=BOOK[w.n-2], next=BOOK[w.n];
+  sec.innerHTML=`
+    <div class="opener">
+      <img class="opener__img" loading="lazy" alt="" src="${w.hero}">
+      <span class="opener__scrim"></span>
+      <div class="opener__body">
+        <p class="opener__num">Plate ${String(w.n).padStart(2,'0')} of 10 &nbsp;·&nbsp; ${w.year}</p>
+        <h2 class="opener__title">${w.name}</h2>
+        <p class="opener__maker">${w.maker}</p>
+      </div>
+    </div>
+    <div class="chap">
+      <p class="lede">${w.lede}</p>
+      <div class="prose">${w.prose.map(([c,t])=>`<p class="${c}">${t}</p>`).join('')}</div>
+      <blockquote class="pull">${w.pull[0]}<cite>${w.pull[1]}</cite></blockquote>
+      ${w.fig?`<figure class="figure--wide"><img loading="lazy" alt="" src="${w.fig.src}"><figcaption>${w.fig.cap}</figcaption></figure>`:''}
+      <div class="dialwrap"><div class="dialhost" data-dial="${w.n}"></div>
+        <p class="dial__cap">Plate ${String(w.n).padStart(2,'0')} — <b>${w.maker} ${w.name}</b>, drawn in vector for this edition.<br>
+        Running live at <b>${w.vph}${w.vph.match(/^\d/)?' vph':''}</b>${w.beat>1?` — ${w.beat} beats per second`:w.key==='f91w'?' — one step per second':' — one step per second, no sweep'}.</p>
+      </div>
+      <dl class="specs">${w.specs.map(([k,v])=>`<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl>
+      <nav class="pager">
+        <button class="pager__btn" type="button" ${prev?`data-go="${prev.n}"`:'disabled'}>${prev?`← Plate ${String(prev.n).padStart(2,'0')}<b>${prev.name}</b>`:'← Beginning'}</button>
+        <button class="pager__btn" type="button" ${next?`data-go="${next.n}"`:'data-go="cover"'}>${next?`Plate ${String(next.n).padStart(2,'0')} →<b>${next.name}</b>`:'Back to the shelf →<b>Ten plates</b>'}</button>
+      </nav>
+    </div>`;
+  chapters.appendChild(sec);
+  dials.push(buildDial(w, sec.querySelector('.dialhost')));
+});
+
+/* credits */
+document.getElementById('credits').innerHTML = CREDITS.map(([t,a,l,f])=>
+  `<li>${t} — ${a}, ${l}, via <a href="https://commons.wikimedia.org/wiki/File:${f}" target="_blank" rel="noopener">Wikimedia Commons</a></li>`).join('');
+
+/* ---- navigation ---- */
+let current='cover';
+function go(id){
+  document.querySelectorAll('.view').forEach(v=>v.classList.remove('is-on'));
+  const target=document.getElementById(id==='cover'?'v-cover':'v-'+id);
+  if(!target) return;
+  target.classList.add('is-on');
+  current=id;
+  document.body.dataset.w = id==='cover' ? '' : id;
+  nav.querySelectorAll('.mast__btn').forEach(b=>b.setAttribute('aria-current', String(b.dataset.go)===String(id)));
+  window.scrollTo({top:0,behavior:'instant'});
+  const w = BOOK.find(x=>String(x.n)===String(id));
+  document.title = w ? `${String(w.n).padStart(2,'0')} ${w.maker} ${w.name} — ESCAPEMENT` : 'ESCAPEMENT — Ten watches and the century they measured';
+  history.replaceState(null,'', id==='cover'?'#':'#'+id);
+}
+document.addEventListener('click',e=>{
+  const t=e.target.closest('[data-go]'); if(!t||t.hasAttribute('disabled')) return;
+  go(t.dataset.go);
+});
+document.getElementById('home').addEventListener('click',()=>go('cover'));
+document.addEventListener('keydown',e=>{
+  if(e.metaKey||e.ctrlKey||e.altKey) return;
+  const n=Number(current);
+  if(e.key==='Escape') go('cover');
+  else if(e.key==='ArrowRight' && current!=='cover' && n<10) go(n+1);
+  else if(e.key==='ArrowRight' && current==='cover') go(1);
+  else if(e.key==='ArrowLeft' && n>1) go(n-1);
+  else if(e.key==='ArrowLeft' && n===1) go('cover');
+});
+
+/* progress bar */
+const bar=document.getElementById('progress');
+addEventListener('scroll',()=>{
+  const h=document.documentElement.scrollHeight-innerHeight;
+  bar.style.width = (h>0 ? (scrollY/h)*100 : 0) + '%';
+},{passive:true});
+
+/* run only the dial you can actually see */
+(function loop(){
+  if(!document.hidden){
+    const d = dials[Number(current)-1];
+    if(d) tickDial(d);
+  }
+  requestAnimationFrame(loop);
+})();
+
+/* deep link */
+const hash=location.hash.replace('#','');
+if(hash && BOOK.some(w=>String(w.n)===hash)) go(hash); else go('cover');
+</script>
