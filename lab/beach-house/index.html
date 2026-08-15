@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Beach House — Five Houses on the Water</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --limestone:#DDDFD8;
+    --limestone-deep:#C6CAC2;
+    --ink:#22262A;
+    --ink-soft:#5C6367;
+    --accent:#9E3B29;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
+  body{
+    margin:0;background:var(--limestone);color:var(--ink);
+    font-family:"Newsreader",Georgia,serif;font-weight:300;
+    font-size:1.0625rem;line-height:1.7;
+  }
+  img{display:block;width:100%;height:auto;background:var(--limestone-deep);}
+  a{color:inherit;}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 clamp(1.25rem,5vw,4rem);}
+
+  .label{
+    font-family:"Jost",system-ui,sans-serif;font-weight:400;
+    font-size:.625rem;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-soft);
+  }
+
+  /* cover */
+  .masthead{
+    display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+    padding:1.75rem 0 1.25rem;border-bottom:1px solid var(--limestone-deep);
+  }
+  .cover{padding:clamp(3rem,10vw,7rem) 0 clamp(2rem,6vw,4rem);}
+  .cover h1{
+    font-family:"Jost",sans-serif;font-weight:300;text-transform:uppercase;
+    letter-spacing:.24em;line-height:1;font-size:clamp(2.4rem,10vw,6rem);margin:0;
+  }
+  .cover h1 em{display:block;font-style:normal;color:var(--accent);}
+  .cover p{max-width:32rem;font-style:italic;font-size:clamp(1.1rem,2.2vw,1.35rem);color:var(--ink-soft);margin:1.5rem 0 0;}
+
+  /* contents */
+  .contents{border-top:1px solid var(--limestone-deep);}
+  .contents a{
+    display:grid;grid-template-columns:2.5rem 1fr auto;gap:1rem;align-items:baseline;
+    padding:1rem 0;border-bottom:1px solid var(--limestone-deep);text-decoration:none;
+  }
+  .contents a:hover .t{color:var(--accent);}
+  .contents .n{font-family:"Jost",sans-serif;font-size:.7rem;letter-spacing:.2em;color:var(--ink-soft);}
+  .contents .t{font-size:1.15rem;}
+  .contents .m{font-family:"Jost",sans-serif;font-size:.65rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);text-align:right;}
+
+  /* property */
+  .property{padding:clamp(3.5rem,9vw,7rem) 0 0;}
+  .property + .property{border-top:1px solid var(--limestone-deep);}
+  .hero figure{margin:0;}
+  .hero img{aspect-ratio:16/9;object-fit:cover;}
+  .hero-title{
+    font-family:"Jost",sans-serif;font-weight:300;text-transform:uppercase;
+    letter-spacing:.2em;line-height:1.08;font-size:clamp(1.8rem,6vw,3.8rem);margin:1.5rem 0 0;
+  }
+  .hero-title span{display:block;}
+  .hero-title .red{color:var(--accent);}
+  .standfirst{font-size:clamp(1.1rem,2.1vw,1.4rem);font-style:italic;max-width:34rem;margin:1rem 0 0;color:var(--ink-soft);}
+
+  .specs{
+    margin:clamp(2rem,5vw,3rem) 0;
+    border-top:1px solid var(--limestone-deep);border-bottom:1px solid var(--limestone-deep);
+    padding:1.4rem 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1.3rem 2rem;
+  }
+  .specs dt{font-family:"Jost",sans-serif;font-size:.625rem;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:.3rem;}
+  .specs dd{margin:0;font-size:.98rem;line-height:1.45;}
+
+  .chapter{margin:clamp(2.5rem,6vw,4rem) 0 1.4rem;}
+  .chapter h3{font-family:"Jost",sans-serif;font-weight:300;text-transform:uppercase;letter-spacing:.2em;font-size:clamp(1rem,2.4vw,1.4rem);margin:.4rem 0 0;}
+
+  .article{columns:2;column-gap:3.25rem;}
+  .article p{margin:0 0 1.15rem;break-inside:avoid-column;}
+  .article.lead p:first-of-type::first-letter{
+    float:left;font-family:"Jost",sans-serif;font-weight:300;font-size:3.4rem;
+    line-height:.82;padding:.12em .12em 0 0;color:var(--accent);
+  }
+  @media (max-width:720px){ .article{columns:1;} }
+
+  .plates{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:clamp(1.25rem,3vw,2.25rem);margin:clamp(2rem,5vw,3.5rem) 0;}
+  figure.plate{margin:0;}
+  figure.plate img{aspect-ratio:3/2;object-fit:cover;}
+  figcaption.cap{font-family:"Jost",sans-serif;font-size:.6875rem;letter-spacing:.1em;color:var(--ink-soft);margin-top:.65rem;line-height:1.55;}
+  figcaption.cap b{display:block;font-weight:500;color:var(--ink);letter-spacing:.22em;text-transform:uppercase;font-size:.625rem;margin-bottom:.2rem;}
+  .full{margin:clamp(2rem,5vw,3.5rem) 0;}
+  .full img{aspect-ratio:2/1;object-fit:cover;}
+
+  .pull{text-align:center;margin:clamp(2.5rem,6vw,4rem) auto;max-width:30rem;}
+  .pull blockquote{margin:0;font-size:clamp(1.5rem,3.6vw,2.2rem);font-style:italic;line-height:1.25;}
+  .pull cite{display:block;margin-top:.9rem;font-style:normal;font-family:"Jost",sans-serif;font-size:.625rem;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-soft);}
+
+  .drawing{margin:clamp(2.5rem,6vw,4rem) auto;max-width:640px;}
+  .drawing svg,.plan svg{width:100%;height:auto;display:block;}
+  .plan{margin:clamp(2rem,5vw,3.5rem) auto;max-width:760px;}
+  .draw{fill:none;stroke:var(--accent);stroke-width:1.1;}
+  .draw-ink{fill:none;stroke:var(--ink);stroke-width:1;}
+  .plan text{font-family:"Jost",sans-serif;font-size:9px;letter-spacing:.14em;text-transform:uppercase;fill:var(--ink-soft);}
+  figcaption.tech{font-family:"Jost",sans-serif;font-size:.625rem;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-soft);text-align:center;margin-top:1rem;}
+
+  .rooms{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.6rem 2.5rem;margin:2rem 0;}
+  .rooms h4{font-family:"Jost",sans-serif;font-weight:400;font-size:.6875rem;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);margin:0 0 .35rem;}
+  .rooms p{margin:0;font-size:.95rem;line-height:1.6;}
+
+  .timeline{border-top:1px solid var(--limestone-deep);margin-top:2rem;}
+  .timeline div{display:grid;grid-template-columns:5.5rem 1fr;gap:1.5rem;padding:.85rem 0;border-bottom:1px solid var(--limestone-deep);}
+  .timeline dt{font-family:"Jost",sans-serif;font-size:.75rem;letter-spacing:.14em;color:var(--accent);padding-top:.2rem;}
+  .timeline dd{margin:0;font-size:.96rem;}
+
+  .colophon{border-top:1px solid var(--limestone-deep);margin-top:clamp(2.5rem,6vw,4rem);padding:1.5rem 0 4rem;font-family:"Jost",sans-serif;font-size:.75rem;line-height:1.8;color:var(--ink-soft);}
+  .colophon a{text-decoration:underline;text-underline-offset:2px;}
+  .colophon a:hover{color:var(--accent);}
+  .backlink{font-family:"Jost",sans-serif;font-size:.625rem;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-soft);text-decoration:none;}
+  .backlink:hover{color:var(--accent);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="label">Beach House</div>
+    <div class="label">Five houses on the water</div>
+  </header>
+
+  <section class="cover">
+    <h1>Beach<em>House</em></h1>
+    <p>Five houses built where the land runs out &mdash; a rock in Capri, a shelf above the Mediterranean, a Greek villa on the Riviera, a timber barn on the Pacific, and a Renaissance palace in a Florida bay.</p>
+  </section>
+
+  <nav class="contents" aria-label="Contents">
+    <a href="#malaparte"><span class="n">I</span><span class="t">Casa Malaparte</span><span class="m">Capri &middot; 1942</span></a>
+    <a href="#e1027"><span class="n">II</span><span class="t">E&#8209;1027</span><span class="m">Cap-Martin &middot; 1929</span></a>
+    <a href="#kerylos"><span class="n">III</span><span class="t">Villa K&eacute;rylos</span><span class="m">Beaulieu-sur-Mer &middot; 1908</span></a>
+    <a href="#searanch"><span class="n">IV</span><span class="t">Condominium One</span><span class="m">Sea Ranch &middot; 1965</span></a>
+    <a href="#vizcaya"><span class="n">V</span><span class="t">Vizcaya</span><span class="m">Miami &middot; 1916</span></a>
+  </nav>
+
+  <!-- ============ I. MALAPARTE ============ -->
+  <article class="property" id="malaparte" style="--accent:#9E3B29">
+    <div class="label">One &mdash; Capri, Italy &middot; 40.5469&deg;N</div>
+    <div class="hero">
+      <figure><img data-file="Villa Malaparte, Capri, Italia (51485274396).jpg" alt="Casa Malaparte seen from the sea: a long red house on a rocky promontory."></figure>
+      <h2 class="hero-title"><span>Casa</span><span class="red">Malaparte</span></h2>
+      <p class="standfirst">A red block set on bare rock at Punta Massullo, thirty-two metres above the water &mdash; part house, part landing stage for the sea.</p>
+    </div>
+
+    <dl class="specs">
+      <div><dt>Location</dt><dd>Punta Massullo, east coast of Capri</dd></div>
+      <div><dt>Built</dt><dd>1938&ndash;1942</dd></div>
+      <div><dt>Attributed to</dt><dd>Adalberto Libera, with Curzio Malaparte</dd></div>
+      <div><dt>Builder</dt><dd>Adolfo Amitrano, local stonemason</dd></div>
+      <div><dt>Levels</dt><dd>Three, plus roof terrace</dd></div>
+      <div><dt>Access</dt><dd>On foot from Capri town, or by boat and a cut cliff stair</dd></div>
+    </dl>
+
+    <div class="article lead">
+      <p>Most houses on a coast try to disappear into it. This one does the opposite. Curzio Malaparte, the Italian writer who commissioned it, wanted a building that would read as a piece of himself, and what stands on the promontory is a long masonry box painted a deep Pompeian red, sitting on grey rock with almost nothing between it and the water.</p>
+      <p>The commission began conventionally. Malaparte approached the rationalist architect Adalberto Libera in 1938 and used his drawings to obtain a permit in an area where building was otherwise forbidden. What was actually built bears little resemblance to those drawings. Libera withdrew early; Malaparte worked the rest out on site with a stonemason from the island. Authorship has been argued over ever since.</p>
+      <p>Its defining move is the roof. A broad flight of steps rises from the ground and widens as it climbs, an inverted pyramid, delivering you not to a terrace but to a flat empty platform with a single curved white wall standing free on it. There is no railing. The wall shelters nothing and frames nothing except the horizon behind whoever stands beside it &mdash; though it does double as a windbreak and a screen for the chimney.</p>
+      <p>Getting there is part of the design. From Capri town it is a long walk on the Pizzolungo path; from the water, a steep stair cut into the cliff. Either way you arrive on foot, slightly out of breath, which is the state the house seems to expect you in.</p>
+    </div>
+
+    <figure class="drawing" aria-labelledby="stair-cap">
+      <svg viewBox="0 0 620 190" role="img" aria-label="Diagram of the roof stair: treads that grow wider as they rise, ending at a free-standing curved wall.">
+        <g class="draw">
+          <path d="M292 178 H328"/><path d="M280 165 H340"/><path d="M268 152 H352"/>
+          <path d="M256 139 H364"/><path d="M244 126 H376"/><path d="M232 113 H388"/>
+          <path d="M220 100 H400"/><path d="M208 87 H412"/><path d="M196 74 H424"/>
+          <path d="M184 61 H436"/><path d="M172 48 H448"/><path d="M160 35 H460"/>
+          <path d="M160 22 H460"/>
+          <path d="M362 22 C398 22 418 14 424 2" stroke-width="1.8"/>
+        </g>
+      </svg>
+      <figcaption class="tech" id="stair-cap">The roof stair, widening as it rises &middot; free-standing wall at the top</figcaption>
+    </figure>
+
+    <div class="plates">
+      <figure class="plate"><a href="https://commons.wikimedia.org/wiki/File:Villa_Malaparte_view_from_above.jpg"><img data-file="Villa Malaparte view from above.jpg" alt="The house seen from the cliff path above."></a><figcaption class="cap"><b>Plate I</b>From the path above: the roof reads as a stage cut into the rock.</figcaption></figure>
+      <figure class="plate"><a href="https://commons.wikimedia.org/wiki/File:Casa-Malaparte-Capri-Italy_1991-May_05.jpg"><img data-file="Casa-Malaparte-Capri-Italy 1991-May 05.jpg" alt="The house on its promontory, 1991."></a><figcaption class="cap"><b>Plate II</b>Punta Massullo, May 1991. Photograph: Eoghanacht (CC0).</figcaption></figure>
+      <figure class="plate"><a href="https://commons.wikimedia.org/wiki/File:Casa-Malaparte-Capri-Italy_1991-May_08.jpg"><img data-file="Casa-Malaparte-Capri-Italy 1991-May 08.jpg" alt="The red volume and the roof stair, 1991."></a><figcaption class="cap"><b>Plate III</b>The red volume and its stair. Photograph: Eoghanacht.</figcaption></figure>
+    </div>
+
+    <figure class="plate full"><a href="https://commons.wikimedia.org/wiki/File:Villa_Malaparte_(Capri)_01_(js).jpg"><img data-file="Villa Malaparte (Capri) 01 (js).jpg" alt="Wide view of Casa Malaparte on its cliff."></a><figcaption class="cap"><b>Plate IV</b>The house and the Tyrrhenian. Via Wikimedia Commons.</figcaption></figure>
+
+    <div class="pull"><blockquote>&ldquo;A house like me.&rdquo;</blockquote><cite>Curzio Malaparte, on the house he built</cite></div>
+
+    <div class="chapter"><span class="label">Inside</span><h3>Five windows and a fire</h3></div>
+    <div class="article">
+      <p>The interior reverses the drama of the exterior. Three levels: services below, guest rooms in the middle, and the private life of the house on the upper floor, reached by internal stairs and one long corridor.</p>
+      <p>Half of that upper floor is a single room &mdash; the salone. The floor is rough stone laid in irregular pieces, the walls are plain, and the furniture was minimal and largely of Malaparte's own devising, including a bench of two fluted marble columns carrying a walnut plank.</p>
+      <p>The windows are the decoration. Each opening is framed in dark wood, sized and hung like a picture, so the room works as a gallery in which the only pictures are the sea, the cliffs and the Faraglioni stacks.</p>
+      <p>The fireplace is the room's other event. Its back wall is a panel of heat-resistant glass ordered from Zeiss at Jena, so the fire burns against an opening onto the water. On an adjacent wall is a relief by the sculptor Pericle Fazzini.</p>
+      <p>Beyond the salone the plan turns almost monastic: a T-shaped corridor with curved bookcases, two identical doors to two bedrooms, each with a single sea window and a bathroom in black and white marble. Off his bedroom is the smallest and most closed room in the house &mdash; the study, its floor tiled with a lyre motif designed by Alberto Savinio.</p>
+      <p>Malaparte died in 1957 and the house declined for decades. Godard filmed <em>Le M&eacute;pris</em> here in 1963. Restoration came in the 1980s and 90s, led by his great-nephew Niccol&ograve; Rositani. It remains private.</p>
+    </div>
+
+    <div class="plates">
+      <figure class="plate"><a href="https://commons.wikimedia.org/wiki/File:Villa_malaparte_interior.jpg"><img data-file="Villa malaparte interior.jpg" alt="Interior of Casa Malaparte."></a><figcaption class="cap"><b>Plate V</b>Interior. Via Wikimedia Commons.</figcaption></figure>
+      <figure class="plate"><a href="https://commons.wikimedia.org/wiki/File:Villa_Malaparte_1.jpg"><img data-file="Villa Malaparte 1.jpg" alt="Casa Malaparte from the water."></a><figcaption class="cap"><b>Plate VI</b>From the water. Via Wikimedia Commons.</figcaption></figure>
+    </div>
+
+    <figure class="plan" aria-labelledby="plan-cap">
+      <svg viewBox="0 0 760 250" role="img" aria-label="Schematic plan of the upper floor: salone with fireplace, corridor, two bedrooms with bathrooms, and a corner study.">
+        <g class="draw-ink">
+          <rect x="40" y="40" width="680" height="170"/>
+          <line x1="330" y1="40" x2="330" y2="210"/>
+          <line x1="520" y1="40" x2="520" y2="125"/>
+          <line x1="520" y1="125" x2="720" y2="125"/>
+          <line x1="630" y1="125" x2="630" y2="210"/>
+          <line x1="330" y1="125" x2="520" y2="125"/>
+        </g>
+        <g class="draw">
+          <path d="M46 78 v34" stroke-width="3"/><path d="M46 130 v34" stroke-width="3"/>
+          <path d="M120 210 h70" stroke-width="3"/><path d="M400 40 h50" stroke-width="3"/>
+          <path d="M560 210 h40" stroke-width="3"/><path d="M660 40 h40" stroke-width="3"/>
+        </g>
+        <text x="150" y="120">Salone</text>
+        <text x="120" y="200">Fireplace &mdash; glass back</text>
+        <text x="352" y="100">Corridor</text>
+        <text x="352" y="165">Bedroom</text>
+        <text x="542" y="100">Bedroom</text>
+        <text x="542" y="165">Bath</text>
+        <text x="650" y="100">Bath</text>
+        <text x="648" y="180">Study</text>
+        <text x="40" y="235">Sea</text>
+        <text x="690" y="235">Rock</text>
+      </svg>
+      <figcaption class="tech" id="plan-cap">Upper floor, schematic &middot; drawn for this page, not to scale</figcaption>
+    </figure>
+
+    <p><a class="backlink" href="#top">&uarr; Contents</a></p>
+  </article>
+
+  <!-- ============ II. E-1027 ============ -->
+  <article class="property" id="e1027" style="--accent:#2F5D6E">
+    <div class="label">Two &mdash; Roquebrune-Cap-Martin, France &middot; 43.7599&deg;N</div>
+    <div class="hero">
+      <figure><img data-file="E1027 2013 01.jpg" alt="E-1027, a white modernist villa on the rocks at Cap-Martin."></figure>
+      <h2 class="hero-title"><span>E&#8209;1027</span><span class="red">Eileen Gray</span></h2>
+      <p class="standfirst">A white house on a shelf of rock above the Mediterranean, built by a designer who had never built a house before &mdash; and named in code after two lovers.</p>
+    </div>
+
+    <dl class="specs">
+      <div><dt>Location</dt><dd>Roquebrune-Cap-Martin, C&ocirc;te d'Azur</dd></div>
+      <div><dt>Built</dt><dd>1926&ndash;1929</dd></div>
+      <div><dt>Design</dt><dd>Eileen Gray, with Jean Badovici</dd></div>
+      <div><dt>The name</dt><dd>E for Eileen; 10, 2, 7 for J, B, G</dd></div>
+      <div><dt>Plan</dt><dd>L-shaped, flat roof, raised on pilotis</dd></div>
+      <div><dt>Today</dt><dd>Restored; guided tours by booking</dd></div>
+    </dl>
+
+    <div class="article lead">
+      <p>Eileen Gray was fifty-one and known for lacquer screens and furniture when she bought a steep plot above the sea between Monaco and Menton and designed her first building on it. She studied the site before drawing: the sun's path, the wind, the awkward slope, the fact that the only approach was a footpath from the railway line.</p>
+      <p>What she built is small, white, flat-roofed and raised on slender columns, with a long band of windows facing the water. Seen from below it sits on the rocks like a boat pulled up above the tide line. It follows the modernist rulebook of the moment &mdash; open plan, roof terrace, ribbon windows &mdash; but it was designed against the coldness that rulebook usually produced. Gray wanted a house that worked like clothing rather than a machine.</p>
+      <p>The house is named in code: E for Eileen, 10 for J, 2 for B, 7 for G &mdash; Jean Badovici, the architect and editor she built it with and for. They separated soon after it was finished.</p>
+      <p>Then came the strangest chapter in modern architectural history. Le Corbusier, a friend of Badovici's, stayed here in 1938 and 1939 and painted large murals across Gray's plain white walls. She regarded it as vandalism and never returned. He later bought the plot next door and built himself a tiny timber cabin, the Cabanon; he died swimming in the water below the house in 1965.</p>
+    </div>
+
+    <div class="chapter"><span class="label">Inside</span><h3>Furniture that folds into the walls</h3></div>
+    <div class="article">
+      <p>The interior is where Gray's real subject shows. Almost everything is built in or designed for the room it stands in: pivoting cupboards, a drinks cabinet that swings open, a bedside table with a drawer that opens either way, and the tubular steel table with an adjustable top &mdash; made so her sister could eat breakfast in bed without crumbs on the sheets &mdash; that is now the most copied piece of furniture in the house.</p>
+      <p>A spiral stair reaches the guest room. The main room is a single space that can be divided by screens rather than doors, so a guest can be sociable or alone without negotiating. Gray stencilled words directly onto walls and cupboards &mdash; instructions, invitations, a joke or two &mdash; treating the house as something to be read as well as occupied.</p>
+      <p>The original furniture was sold at auction in the early 1990s; the restored house is fitted with replicas. E-1027 reopened to visitors in 2021 after a long and much-argued-over restoration, and now forms part of the Cap Moderne site with Le Corbusier's cabin.</p>
+    </div>
+
+    <div class="plates">
+      <figure class="plate"><a href="https://commons.wikimedia.org/wiki/File:E1027_2013_02.jpg"><img data-file="E1027 2013 02.jpg" alt="E-1027 during restoration works."></a><figcaption class="cap"><b>Plate I</b>The villa, 2013. Via Wikimedia Commons.</figcaption></figure>
+      <figure class="plate"><a href="https://commons.wikimedia.org/wiki/File:Sea_shore_at_Roquebrune.jpg"><img data-file="Sea shore at Roquebrune.jpg" alt="The rocky shore at Roquebrune below the villa."></a><figcaption class="cap"><b>Plate II</b>The shore below. Via Wikimedia Commons.</figcaption></figure>
+      <figure class="plate"><a href="https://commons.wikimedia.org/wiki/File:Buildings_in_Cap-Martin.jpg"><img data-file="Buildings in Cap-Martin.jpg" alt="Buildings on the coast at Cap-Martin."></a><figcaption class="cap"><b>Plate III</b>Cap-Martin. Via Wikimedia Commons.</figcaption></figure>
+    </div>
+
+    <dl class="timeline">
+      <div><dt>1926</dt><dd>Gray buys the plot in Badovici's name and begins work on models and plans.</dd></div>
+      <div><dt>1929</dt><dd>House completed and published in Badovici's journal.</dd></div>
+      <div><dt>1938&ndash;39</dt><dd>Le Corbusier paints murals on the walls; Gray calls it vandalism.</dd></div>
+      <div><dt>1965</dt><dd>Le Corbusier drowns swimming below the house.</dd></div>
+      <div><dt>2021</dt><dd>Reopens to the public after restoration.</dd></div>
+    </dl>
+
+    <p><a class="backlink" href="#top">&uarr; Contents</a></p>
+  </article>
+
+  <!-- ============ III. KERYLOS ============ -->
+  <article class="property" id="kerylos" style="--accent:#B07A32">
+    <div class="label">Three &mdash; Beaulieu-sur-Mer, France &middot; 43.7053&deg;N</div>
+    <div class="hero">
+      <figure><img data-file="01 Villa Kérylos, Beaulieu-sur-Mer.JPG" alt="Villa Kérylos, a Greek-revival villa on the sea at Beaulieu-sur-Mer."></figure>
+      <h2 class="hero-title"><span>Villa</span><span class="red">K&eacute;rylos</span></h2>
+      <p class="standfirst">An archaeologist's fantasy: a Greek house of the second century BC, built new in 1908 on a rock surrounded by sea on three sides.</p>
+    </div>
+
+    <dl class="specs">
+      <div><dt>Location</dt><dd>Baie des Fourmis, Beaulieu-sur-Mer</dd></div>
+      <div><dt>Built</dt><dd>1902&ndash;1908</dd></div>
+      <div><dt>Architect</dt><dd>Emmanuel Pontremoli</dd></div>
+      <div><dt>For</dt><dd>Th&eacute;odore Reinach, archaeologist</dd></div>
+      <div><dt>Model</dt><dd>The noble houses of Delos</dd></div>
+      <div><dt>Name</dt><dd>K&eacute;rylos &mdash; the halcyon, a bird of good omen</dd></div>
+    </dl>
+
+    <div class="article lead">
+      <p>Th&eacute;odore Reinach was a scholar of ancient Greece with the means to live inside his subject. He bought a promontory at Beaulieu-sur-Mer because the setting reminded him of the sites of Greek coastal temples, and asked Emmanuel Pontremoli &mdash; fresh from excavations in Asia Minor &mdash; to build him a house as a wealthy Greek of the second century BC might have built it.</p>
+      <p>The result is not a folly and not quite a museum. Rooms are arranged around an open peristyle courtyard of Carrara marble columns, exactly as at Delos, and the whole plan turns inward before opening east to a view straight down the coast. The building took six years, and almost nothing in it was bought ready-made: furniture was copied from pieces in the museum at Naples, mosaics and frescoes were designed for their rooms, even the door handles and cutlery were drawn specially.</p>
+      <p>What makes it more than pastiche is the cheating. Reinach wanted antiquity <em>and</em> plumbing. Electricity, running water and a hot-air heating system are all present and all hidden &mdash; switches concealed in panelling, ducts behind stone &mdash; so the house performs the ancient world while quietly running on 1908.</p>
+    </div>
+
+    <div class="chapter"><span class="label">Inside</span><h3>Rooms with Greek names</h3></div>
+    <div class="article">
+      <p>The rooms are named as they would have been: the <em>thyr&ocirc;reion</em> at the entrance, painted with figures of peace and war; the <em>andron</em>, the grandest room, lined in Italian marble with a mosaic floor; the <em>balaneion</em>, a marble bath suite; a library rising two storeys under a coffered ceiling, with the family's Greek texts on the shelves.</p>
+      <p>Couches replace sofas, low tables replace dining tables, and the family genuinely used them &mdash; Reinach's household ate reclining and gave the rooms their Greek names in daily conversation. Upstairs the bedrooms look out over the water; the eastern facade gives the long view along the Riviera that the whole plan was arranged to deliver.</p>
+      <p>Reinach left the villa to the Institut de France. It has been a listed monument since 1966 and is open to visitors year-round.</p>
+    </div>
+
+    <div class="plates">
+      <figure class="plate"><a href="https://commons.wikimedia.org/wiki/File:02_Villa_K%C3%A9rylos,_Beaulieu-sur-Mer.JPG"><img data-file="02 Villa Kérylos, Beaulieu-sur-Mer.JPG" alt="Villa Kérylos, view."></a><figcaption class="cap"><b>Plate I</b>Villa K&eacute;rylos. Via Wikimedia Commons.</figcaption></figure>
+      <figure class="plate"><a href="https://commons.wikimedia.org/wiki/File:03_Villa_K%C3%A9rylos,_Beaulieu-sur-Mer.JPG"><img data-file="03 Villa Kérylos, Beaulieu-sur-Mer.JPG" alt="Villa Kérylos, view."></a><figcaption class="cap"><b>Plate II</b>Villa K&eacute;rylos. Via Wikimedia Commons.</figcaption></figure>
+      <figure class="plate"><a href="https://commons.wikimedia.org/wiki/File:05_Villa_K%C3%A9rylos,_Beaulieu-sur-Mer.JPG"><img data-file="05 Villa Kérylos, Beaulieu-sur-Mer.JPG" alt="Villa Kérylos, view."></a><figcaption class="cap"><b>Plate III</b>Villa K&eacute;rylos. Via Wikimedia Commons.</figcaption></figure>
+      <figure class="plate"><a href="https://commons.wikimedia.org/wiki/File:07_Villa_K%C3%A9rylos,_Beaulieu-sur-Mer.JPG"><img data-file="07 Villa Kérylos, Beaulieu-sur-Mer.JPG" alt="Villa Kérylos, view."></a><figcaption class="cap"><b>Plate IV</b>Villa K&eacute;rylos. Via Wikimedia Commons.</figcaption></figure>
+      <figure class="plate"><a href="https://commons.wikimedia.org/wiki/File:09_Villa_K%C3%A9rylos,_Beaulieu-sur-Mer.JPG"><img data-file="09 Villa Kérylos, Beaulieu-sur-Mer.JPG" alt="Villa Kérylos, view."></a><figcaption class="cap"><b>Plate V</b>Villa K&eacute;rylos. Via Wikimedia Commons.</figcaption></figure>
+    </div>
+
+    <div class="rooms">
+      <div><h4>Peristyle</h4><p>Twelve Carrara marble columns around an open court &mdash; the hinge of the whole plan.</p></div>
+      <div><h4>Andron</h4><p>The most opulent room: marble walls, mosaic floor, reserved for men in the ancient scheme.</p></div>
+      <div><h4>Balaneion</h4><p>A bath suite in veined marble, with a sunken basin.</p></div>
+      <div><h4>Library</h4><p>Two storeys of Greek texts under a painted coffered ceiling.</p></div>
+    </div>
+
+    <p><a class="backlink" href="#top">&uarr; Contents</a></p>
+  </article>
+
+  <!-- ============ IV. SEA RANCH ============ -->
+  <article class="property" id="searanch" style="--accent:#7B4A2D">
+    <div class="label">Four &mdash; Sonoma County, California &middot; 38.6792&deg;N</div>
+    <div class="hero">
+      <figure><img data-file="Condominium One, Sea Ranch Condominiums, Sea Ranch, CA.JPG" alt="Condominium One at Sea Ranch: unpainted redwood volumes with shed roofs on a coastal meadow."></figure>
+      <h2 class="hero-title"><span>Condominium</span><span class="red">One</span></h2>
+      <p class="standfirst">Ten houses under one weathered timber roof on a windy Pacific meadow &mdash; the building that taught America how to build on a coastline.</p>
+    </div>
+
+    <dl class="specs">
+      <div><dt>Location</dt><dd>Sea Walk Drive, The Sea Ranch, California</dd></div>
+      <div><dt>Built</dt><dd>1965</dd></div>
+      <div><dt>Architects</dt><dd>Moore, Turnbull, Lyndon, Whitaker (MLTW)</dd></div>
+      <div><dt>Landscape</dt><dd>Lawrence Halprin</dd></div>
+      <div><dt>Units</dt><dd>Ten, around a shared court</dd></div>
+      <div><dt>Listed</dt><dd>National Register of Historic Places, 2005</dd></div>
+    </dl>
+
+    <div class="article lead">
+      <p>The brief was a ten-mile stretch of sheep meadow on the Sonoma coast: bare grass, hedgerows of wind-bent cypress, cliffs, fog and a constant wind off the Pacific. Lawrence Halprin's site study argued that the meadow itself was the asset and that anything built there should hold the edges and leave the grass alone. The instruction that came out of it &mdash; live lightly on the land &mdash; became the phrase the whole development is remembered by.</p>
+      <p>MLTW's answer was to build one thing rather than ten. Condominium One reads as a single barn-like mass of unpainted redwood, its shed roofs sloping the way the wind pushes, with no eaves or gutters to catch and no paint to peel. It is weathered silver now, which was the point: the building was designed to age into the colour of the driftwood around it.</p>
+      <p>Inside that shell are ten separate houses arranged around a court, each shaped differently and each turned toward a different piece of the view. The variety is hidden behind the plainness of the outside &mdash; the opposite of the usual arrangement.</p>
+    </div>
+
+    <div class="chapter"><span class="label">Inside</span><h3>A little house inside the big one</h3></div>
+    <div class="article">
+      <p>The units are essentially one tall timber room each, roughly a cube of raw fir and redwood, with the structure left exposed. Within that volume Charles Moore set what he called an aedicule &mdash; four posts carrying a small roof, a house within the house &mdash; to hold the bed, the bath, or a sitting platform. Rooms are made by these little canopies and by level changes rather than by walls, so the big room stays whole.</p>
+      <p>Windows are cut where the view earns them: not a glass wall, but deep openings and window seats you climb into, with the wind audible on the other side of the timber. Furniture is largely built in. Some units were finished with bold painted supergraphics, a period touch that has aged better than it should have.</p>
+      <p>The building was listed on the National Register in 2005, and the arguments it started about who owns access to a coastline fed directly into the creation of the California Coastal Commission.</p>
+    </div>
+
+    <div class="plates">
+      <figure class="plate"><a href="https://commons.wikimedia.org/wiki/File:Sea_Ranch._Veduta_delle_colline_con_abitazioni.jpg"><img data-file="Sea Ranch. Veduta delle colline con abitazioni.jpg" alt="Timber houses on the hills at Sea Ranch."></a><figcaption class="cap"><b>Plate I</b>Houses in the meadow. Via Wikimedia Commons.</figcaption></figure>
+      <figure class="plate"><a href="https://commons.wikimedia.org/wiki/File:Condominium_One,_Sea_Ranch_Condominiums,_Sea_Ranch,_CA.JPG"><img data-file="Condominium One, Sea Ranch Condominiums, Sea Ranch, CA.JPG" alt="Condominium One, Sea Ranch."></a><figcaption class="cap"><b>Plate II</b>Condominium One. Via Wikimedia Commons (CC BY-SA 3.0).</figcaption></figure>
+    </div>
+
+    <figure class="drawing" aria-labelledby="shed-cap">
+      <svg viewBox="0 0 620 200" role="img" aria-label="Section diagram: a shed roof sloping down toward the sea, with a small four-post aedicule inside the tall room.">
+        <g class="draw-ink">
+          <path d="M60 180 H560"/>
+          <path d="M60 180 V70 L560 120 V180"/>
+        </g>
+        <g class="draw">
+          <path d="M180 180 V120 H300 V180"/>
+          <path d="M170 122 H310"/>
+          <path d="M240 180 V150"/>
+        </g>
+        <g class="plan"><text x="60" y="196">Sea</text><text x="500" y="196">Meadow</text></g>
+      </svg>
+      <figcaption class="tech" id="shed-cap">Section, schematic &middot; the aedicule inside the tall room</figcaption>
+    </figure>
+
+    <p><a class="backlink" href="#top">&uarr; Contents</a></p>
+  </article>
+
+  <!-- ============ V. VIZCAYA ============ -->
+  <article class="property" id="vizcaya" style="--accent:#6E7B5B">
+    <div class="label">Five &mdash; Miami, Florida &middot; 25.7444&deg;N</div>
+    <div class="hero">
+      <figure><img data-file="Villa Vizcaya.jpg" alt="Vizcaya: an Italianate villa on Biscayne Bay, Miami."></figure>
+      <h2 class="hero-title"><span>Villa</span><span class="red">Vizcaya</span></h2>
+      <p class="standfirst">A Venetian villa dropped into a Florida mangrove swamp, with a carved stone barge moored in the bay to break the waves.</p>
+    </div>
+
+    <dl class="specs">
+      <div><dt>Location</dt><dd>Biscayne Bay, Coconut Grove, Miami</dd></div>
+      <div><dt>Built</dt><dd>House 1914&ndash;1916; gardens to 1922</dd></div>
+      <div><dt>Architect</dt><dd>F. Burrall Hoffman</dd></div>
+      <div><dt>Design director</dt><dd>Paul Chalfin</dd></div>
+      <div><dt>Gardens</dt><dd>Diego Suarez</dd></div>
+      <div><dt>For</dt><dd>James Deering, of International Harvester</dd></div>
+    </dl>
+
+    <div class="article lead">
+      <p>James Deering wanted a winter house on Biscayne Bay that would look as though it had stood there for three hundred years and been altered by successive owners. What he got was a large Italianate villa built in under three years by a workforce said to have numbered a significant share of Miami's population at the time, facing the water across a terrace, with a hammock of native forest deliberately left wild behind it.</p>
+      <p>The conceit is carried out to the last detail. Rooms were built around European interiors bought whole &mdash; ceilings, panelling, doorways, mantels shipped from Italy and France and fitted into a new steel-and-concrete frame. The bay facade opens onto a landing where a guest arriving by boat would step ashore, and out in the water sits the strangest object on the property: a barge of carved stone, decorated with figures and obelisks, built as a breakwater and pure theatre.</p>
+      <p>Behind the house the gardens are Italian in structure but planted for the subtropics, with a mount, a casino pavilion and long clipped alleys of jasmine and live oak standing in for the cypress that would not survive.</p>
+    </div>
+
+    <div class="chapter"><span class="label">Inside</span><h3>Thirty-four rooms of borrowed Europe</h3></div>
+    <div class="article">
+      <p>The plan turns around an inner courtyard, originally open to the Florida sky and only glazed in the 1980s to protect the collection. From it the main rooms run in sequence: an entrance hall, a music room with a set of Italian instruments, a tea room, a banqueting hall, a library, and the reception room hung in pale green silk.</p>
+      <p>Each is furnished in a different European period, and the assembly is deliberate rather than accidental &mdash; the house is meant to read as a family's accumulation over centuries. Behind that surface Deering installed everything modern the year 1916 could supply: elevators, a central vacuum system, a telephone exchange, refrigeration and a water filtration plant, all concealed in the service wing.</p>
+      <p>Deering enjoyed the house for less than a decade. It is now a museum, has survived several hurricanes and a good deal of flooding, and remains the most improbable beach house in this book &mdash; a Renaissance villa that has been standing in a mangrove swamp for over a century.</p>
+    </div>
+
+    <div class="plates">
+      <figure class="plate"><a href="https://commons.wikimedia.org/wiki/File:I_Villa_Vizcaya,_Miami,_FL,_USA_(2).jpg"><img data-file="I Villa Vizcaya, Miami, FL, USA (2).jpg" alt="Vizcaya seen from the gardens."></a><figcaption class="cap"><b>Plate I</b>The villa. Via Wikimedia Commons.</figcaption></figure>
+      <figure class="plate"><a href="https://commons.wikimedia.org/wiki/File:Interior,_Vizcaya_IMG_20190918_144931456.jpg"><img data-file="Interior, Vizcaya IMG 20190918 144931456.jpg" alt="Interior at Vizcaya."></a><figcaption class="cap"><b>Plate II</b>Interior. Via Wikimedia Commons.</figcaption></figure>
+      <figure class="plate"><a href="https://commons.wikimedia.org/wiki/File:Instruments,_music_room,_Vizcaya_IMG_20190918_151510892.jpg"><img data-file="Instruments, music room, Vizcaya IMG 20190918 151510892.jpg" alt="Instruments in the music room at Vizcaya."></a><figcaption class="cap"><b>Plate III</b>The music room. Via Wikimedia Commons.</figcaption></figure>
+      <figure class="plate"><a href="https://commons.wikimedia.org/wiki/File:Casino_-_Vizcaya_Museum_and_Gardens_-_Miami,_Florida_-_DSC08671.jpg"><img data-file="Casino - Vizcaya Museum and Gardens - Miami, Florida - DSC08671.jpg" alt="The casino pavilion in the gardens at Vizcaya."></a><figcaption class="cap"><b>Plate IV</b>The casino pavilion. Via Wikimedia Commons.</figcaption></figure>
+      <figure class="plate"><a href="https://commons.wikimedia.org/wiki/File:Gardens,_Vizcaya_IMG_20190918_153925727_HDR.jpg"><img data-file="Gardens, Vizcaya IMG 20190918 153925727 HDR.jpg" alt="The formal gardens at Vizcaya."></a><figcaption class="cap"><b>Plate V</b>The gardens. Via Wikimedia Commons.</figcaption></figure>
+    </div>
+
+    <div class="pull"><blockquote>A house pretending to be three hundred years older than it is &mdash; and doing it well enough to be believed.</blockquote><cite>On Vizcaya</cite></div>
+
+    <p><a class="backlink" href="#top">&uarr; Contents</a></p>
+  </article>
+
+  <footer class="colophon">
+    All photographs from Wikimedia Commons under free licences; each plate links to its file page, where the photographer and licence are listed. Named credits: Herv&eacute; Simon (<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>) and Eoghanacht (CC0) for Casa Malaparte; Sea Ranch Condominium One <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>. Drawings made for this page.<br>
+    Sources include <a href="https://en.wikipedia.org/wiki/Casa_Malaparte">Wikipedia</a>, <a href="https://www.archdaily.com/777627/architecture-classics-villa-malaparte-adalberto-libera">ArchDaily</a>, <a href="https://en.wikiarquitectura.com/building/malaparte-house/">WikiArquitectura</a>, <a href="https://www.domusweb.it/en/coffee-break/2021/03/08/curzio-malaparte-the-story-and-behind-the-scenes-of-the-villa-malaparte-design.html">Domus</a>, <a href="https://capmoderne.com/en/lieu/la-villa-e-1027/">Cap Moderne</a> and <a href="https://en.wikipedia.org/wiki/Villa_Kerylos">Villa K&eacute;rylos</a>. Text written for this page.
+  </footer>
+
+</div>
+
+<script>
+  // Build Commons image URLs from filenames; hide any figure whose image can't load.
+  document.querySelectorAll('img[data-file]').forEach(function (img) {
+    img.loading = 'lazy';
+    img.addEventListener('error', function () {
+      var fig = img.closest('figure');
+      if (fig) { fig.style.display = 'none'; }
+    });
+    img.src = 'https://commons.wikimedia.org/wiki/Special:FilePath/' +
+              encodeURIComponent(img.dataset.file) + '?width=1400';
+  });
+</script>
+</body>
+</html>
