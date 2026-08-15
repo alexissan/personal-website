@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>Lab — Alexis Santos</title>
+  <style>
+    :root {
+      --bg: #fafbfc;
+      --paper: #ffffff;
+      --ink: #111;
+      --muted: #666;
+      --light: #999;
+      --line: #e8e8e8;
+      --accent: #1a8f6e;
+      --draft: #c89b3c;
+      --radius: 16px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { font-size: 17px; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: var(--ink);
+      background: var(--bg);
+      min-height: 100vh;
+    }
+
+    .page {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 3rem;
+    }
+
+    header {
+      margin-bottom: 2.5rem;
+      animation: fadeUp .6s ease-out both;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: .3rem;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: .95rem;
+      max-width: 52ch;
+    }
+
+    .section-label {
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--light);
+      margin-bottom: 1rem;
+      animation: fadeUp .6s ease-out .1s both;
+    }
+
+    .rows {
+      margin-bottom: 3rem;
+    }
+
+    .row {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      padding: 1rem 1.1rem;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--paper);
+      text-decoration: none;
+      color: inherit;
+      margin-bottom: .7rem;
+      transition: border-color .2s, box-shadow .2s;
+      animation: fadeUp .5s ease-out both;
+    }
+
+    .row:nth-child(1) { animation-delay: .15s; }
+    .row:nth-child(2) { animation-delay: .2s; }
+    .row:nth-child(3) { animation-delay: .25s; }
+    .row:nth-child(4) { animation-delay: .3s; }
+    .row:nth-child(5) { animation-delay: .35s; }
+
+    a.row:hover {
+      border-color: var(--accent);
+      box-shadow: 0 4px 16px rgba(26, 143, 110, 0.06);
+    }
+
+    .pip {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      position: relative;
+      top: -.15rem;
+    }
+
+    .pip--live { background: var(--accent); }
+    .pip--draft { background: var(--draft); }
+
+    .row__body { flex: 1; min-width: 0; }
+
+    .row__title {
+      display: block;
+      font-weight: 700;
+      font-size: .95rem;
+      letter-spacing: -0.01em;
+      margin-bottom: .15rem;
+    }
+
+    .row__desc {
+      display: block;
+      font-size: .85rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .row__date {
+      font-size: .78rem;
+      color: var(--light);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .row--empty {
+      border-style: dashed;
+      background: transparent;
+      cursor: default;
+    }
+
+    .row--empty .pip {
+      background: transparent;
+      border: 1px solid var(--line);
+      width: 7px;
+      height: 7px;
+    }
+
+    .row--empty .row__title {
+      color: var(--light);
+      font-weight: 600;
+    }
+
+    .row--empty .row__desc { color: var(--light); }
+
+    footer {
+      padding-top: 2rem;
+      border-top: 1px solid var(--line);
+      color: var(--light);
+      font-size: .8rem;
+    }
+
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    footer a:hover { color: var(--ink); }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 500px) {
+      .row__date { display: none; }
+    }
+
+    @media (min-width: 760px) {
+      .page { padding: 6rem 2rem 4rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+
+    <header>
+      <h1>Lab</h1>
+      <p>Things being built, half-built, or parked. Not linked from anywhere and not indexed.</p>
+    </header>
+
+    <p class="section-label">Projects</p>
+
+    <div class="rows">
+
+      <a href="/lab/folio/" class="row">
+        <span class="pip pip--live"></span>
+        <span class="row__body">
+          <span class="row__title">Folio</span>
+          <span class="row__desc">Seven volumes on things too large to hold. Concrete, fire, void, sand, ice, mineral, nerve.</span>
+        </span>
+        <span class="row__date">Aug 2026</span>
+      </a>
+
+      <a href="/lab/nerve/" class="row">
+        <span class="pip pip--live"></span>
+        <span class="row__body">
+          <span class="row__title">Nerve</span>
+          <span class="row__desc">Women who went first. A monograph in four chapters, 1898–1997.</span>
+        </span>
+        <span class="row__date">Aug 2026</span>
+      </a>
+
+      <div class="row row--empty">
+        <span class="pip"></span>
+        <span class="row__body">
+          <span class="row__title">Next thing</span>
+          <span class="row__desc">Drop a folder in <code>/lab/</code> and copy a row.</span>
+        </span>
+      </div>
+
+    </div>
+
+    <footer>
+      <p><a href="/">← alexissantos.dev</a></p>
+    </footer>
+
+  </main>
+</body>
+</html>
