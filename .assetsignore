@@ -1,4 +1,5 @@
 _worker.js
+wrangler.jsonc
 functions
 .git
 .github

@@ -2,9 +2,19 @@
   "name": "personal-website",
   "main": "_worker.js",
   "compatibility_date": "2025-12-20",
+  "workers_dev": true,
+  "preview_urls": false,
   "assets": {
-    "directory": "./"
+    "directory": "./",
+    "binding": "ASSETS",
+    "run_worker_first": true
   },
+  "routes": [
+    {
+      "pattern": "alexissantos.dev",
+      "custom_domain": true
+    }
+  ],
   "kv_namespaces": [
     {
       "binding": "BOOKINGS_KV",
