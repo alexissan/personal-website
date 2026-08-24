@@ -12,304 +12,310 @@
   <meta property="og:url" content="https://alexissantos.dev/articles">
   <meta property="og:image" content="https://alexissantos.dev/articles/building-is-the-easy-part/cover.png">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@deepfirstsearch">
   <meta name="twitter:title" content="Articles — Alexis Santos">
   <meta name="twitter:description" content="Writing on AI engineering, indie dev, and lessons from shipping software solo.">
   <meta name="twitter:image" content="https://alexissantos.dev/articles/building-is-the-easy-part/cover.png">
   <style>
     :root {
-      --bg: #f3f7f5;
+      --bg: #fafbfc;
       --paper: #ffffff;
-      --ink: #0f1f1b;
-      --muted: #516760;
-      --line: #d5e1dc;
-      --accent: #1f8f72;
-      --radius-lg: 18px;
-      --radius-sm: 12px;
+      --ink: #111;
+      --muted: #666;
+      --light: #999;
+      --line: #e8e8e8;
+      --accent: #1a8f6e;
+      --accent-bg: #edf8f3;
+      --radius: 16px;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { font-size: 17px; scroll-behavior: smooth; }
 
     body {
-      font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-      background:
-        radial-gradient(circle at 90% 5%, #e6f9ef 0%, transparent 34%),
-        radial-gradient(circle at 7% 88%, #e6efff 0%, transparent 32%),
-        var(--bg);
-      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       line-height: 1.6;
-      padding: 1.25rem;
+      color: var(--ink);
+      background: var(--bg);
+      min-height: 100vh;
     }
 
-    .wrap {
-      max-width: 1020px;
+    .page {
+      max-width: 640px;
       margin: 0 auto;
-      display: grid;
-      gap: 1rem;
+      padding: 4rem 1.5rem 3rem;
     }
 
-    .top {
-      border: 1px solid var(--line);
-      border-radius: var(--radius-lg);
-      background: var(--paper);
-      padding: 1.2rem;
-    }
-
-    .top a {
+    /* Header */
+    .back {
+      display: inline-block;
+      font-size: .85rem;
+      font-weight: 600;
       color: var(--muted);
       text-decoration: none;
-      border-bottom: 1px solid transparent;
-      font-size: .9rem;
+      margin-bottom: 2rem;
+      transition: color .2s;
     }
 
-    .top a:hover,
-    .top a:focus {
-      color: var(--ink);
-      border-color: var(--ink);
+    .back:hover { color: var(--ink); }
+
+    .masthead {
+      margin-bottom: 2.5rem;
+      animation: fadeUp .6s ease-out both;
     }
 
-    h1 {
-      margin-top: .5rem;
-      font-size: clamp(1.7rem, 4vw, 2.3rem);
+    .masthead h1 {
+      font-size: 1.6rem;
       letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: .35rem;
     }
 
-    .subtitle {
+    .masthead p {
       color: var(--muted);
-      max-width: 65ch;
-      margin-top: .35rem;
+      font-size: .95rem;
+      line-height: 1.7;
+      max-width: 52ch;
     }
 
-    /* Featured (latest) article */
+    .section-label {
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--light);
+      margin-bottom: 1rem;
+    }
+
+    /* Featured (latest) */
     .featured {
+      display: block;
       border: 1px solid var(--line);
-      border-radius: var(--radius-lg);
-      background: var(--paper);
+      border-radius: var(--radius);
       overflow: hidden;
-      display: grid;
       text-decoration: none;
       color: inherit;
-      transition: border-color 0.2s, box-shadow 0.2s;
+      margin-bottom: 3rem;
+      transition: border-color .2s, box-shadow .2s;
+      animation: fadeUp .6s ease-out .1s both;
     }
 
     .featured:hover {
       border-color: var(--accent);
-      box-shadow: 0 4px 24px rgba(31, 143, 114, 0.08);
+      box-shadow: 0 8px 30px rgba(26, 143, 110, 0.08);
     }
 
     .featured img {
       width: 100%;
-      aspect-ratio: 2.4 / 1;
+      aspect-ratio: 2.2 / 1;
       object-fit: cover;
-      border-bottom: 1px solid var(--line);
+      display: block;
     }
 
-    .featured .card-body {
-      padding: 1.4rem;
-      display: grid;
-      gap: .5rem;
-    }
+    .featured-body { padding: 1.2rem 1.3rem; }
 
-    .featured h2 {
-      font-size: clamp(1.2rem, 3vw, 1.6rem);
-      line-height: 1.3;
-      letter-spacing: -0.02em;
-    }
-
-    .featured p {
-      color: var(--muted);
-      font-size: 1rem;
-      max-width: 60ch;
-    }
-
-    .featured .label {
-      font-size: .7rem;
+    .featured-label {
+      font-size: .65rem;
       font-weight: 700;
       letter-spacing: .08em;
       text-transform: uppercase;
       color: var(--accent);
-      background: rgba(31, 143, 114, 0.08);
-      padding: 2px 8px;
-      border-radius: 4px;
-      width: fit-content;
+      margin-bottom: .4rem;
     }
 
-    .featured .read {
-      color: var(--accent);
-      font-weight: 600;
-      font-size: .95rem;
-    }
-
-    /* Grid */
-    .grid {
-      display: grid;
-      gap: .9rem;
-    }
-
-    .card {
-      border: 1px solid var(--line);
-      border-radius: var(--radius-lg);
-      background: var(--paper);
-      overflow: hidden;
-      display: grid;
-      grid-template-rows: auto 1fr;
-      min-height: 100%;
-    }
-
-    .card img {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      object-fit: cover;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .card-body {
-      padding: .9rem;
-      display: grid;
-      gap: .5rem;
-    }
-
-    .meta {
-      text-transform: uppercase;
-      letter-spacing: .06em;
-      color: var(--accent);
-      font-size: .72rem;
+    .featured-body h2 {
+      font-size: 1.2rem;
       font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.3;
+      margin-bottom: .4rem;
     }
 
-    .card h2 {
-      font-size: 1.1rem;
-      line-height: 1.35;
-      letter-spacing: -0.01em;
-    }
-
-    .card p {
+    .featured-body p {
+      font-size: .88rem;
       color: var(--muted);
-      font-size: .95rem;
+      line-height: 1.6;
     }
 
-    .card a {
-      color: var(--ink);
+    /* Archive */
+    .archive { list-style: none; }
+
+    .archive li { animation: fadeUp .5s ease-out both; }
+    .archive li:nth-child(1) { animation-delay: .15s; }
+    .archive li:nth-child(2) { animation-delay: .2s; }
+    .archive li:nth-child(3) { animation-delay: .25s; }
+    .archive li:nth-child(4) { animation-delay: .3s; }
+    .archive li:nth-child(5) { animation-delay: .35s; }
+    .archive li:nth-child(6) { animation-delay: .4s; }
+    .archive li:nth-child(7) { animation-delay: .45s; }
+    .archive li:nth-child(8) { animation-delay: .5s; }
+
+    .archive a {
+      display: block;
+      padding: 1.1rem 0;
+      border-bottom: 1px solid var(--line);
       text-decoration: none;
-      border-bottom: 1px solid #c0d2cb;
-      width: fit-content;
-      font-weight: 600;
+      color: inherit;
     }
 
-    .card a:hover,
-    .card a:focus {
-      color: var(--accent);
-      border-color: var(--accent);
+    .archive li:first-child a { border-top: 1px solid var(--line); }
+
+    .entry-meta {
+      display: flex;
+      align-items: baseline;
+      gap: .5rem;
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: .3rem;
+    }
+
+    .entry-topic { color: var(--accent); }
+    .entry-date { color: var(--light); font-weight: 600; }
+
+    .entry-title {
+      font-size: 1.02rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      line-height: 1.35;
+      margin-bottom: .25rem;
+      transition: color .2s;
+    }
+
+    .archive a:hover .entry-title { color: var(--accent); }
+
+    .entry-summary {
+      font-size: .87rem;
+      color: var(--muted);
+      line-height: 1.55;
+      max-width: 58ch;
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--line);
+      text-align: center;
+      color: var(--light);
+      font-size: .8rem;
+    }
+
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    footer a:hover { color: var(--ink); }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .masthead, .featured, .archive li { animation: none; }
     }
 
     @media (min-width: 760px) {
-      body { padding: 2rem; }
-      .grid { grid-template-columns: 1fr 1fr; }
-      .featured { grid-template-columns: 1fr 1fr; }
-      .featured img { aspect-ratio: auto; height: 100%; }
+      .page { padding: 6rem 2rem 4rem; }
     }
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <header class="top">
-      <a href="/">← Alexis Santos</a>
-      <h1>Articles</h1>
-      <p class="subtitle">Writing on AI engineering, indie dev, building in public, and lessons from shipping software solo.</p>
-    </header>
+  <main class="page">
 
-    <!-- Featured: latest article -->
+    <a href="/" class="back">← Alexis Santos</a>
+
+    <div class="masthead">
+      <h1>Articles</h1>
+      <p>Writing on AI engineering, indie dev, building in public, and lessons from shipping software solo.</p>
+    </div>
+
+    <p class="section-label">Latest</p>
+
     <a href="/articles/ios-claude-skills-open-source" class="featured">
       <img src="/articles/ios-claude-skills-open-source/cover.png" alt="12 iOS Claude Code skills">
-      <div class="card-body">
-        <span class="label">Latest</span>
+      <div class="featured-body">
+        <p class="featured-label">Developer Tools &middot; Mar 2026</p>
         <h2>I Open-Sourced the Skills I Use to Ship iOS Apps at Lightning Speed</h2>
         <p>12 Claude Code skills for iOS developers. Code review, Figma-to-SwiftUI, build fixes, performance audits — the exact toolkit behind my shipping speed.</p>
-        <span class="read">Read article →</span>
       </div>
     </a>
 
-    <!-- Rest of articles, newest first -->
-    <section class="grid" aria-label="Article list">
-      <article class="card">
-        <img src="/articles/building-is-the-easy-part/cover.png" alt="Building Is the Easy Part Now cover">
-        <div class="card-body">
-          <p class="meta">Essay</p>
-          <h2>Building Is the Easy Part Now</h2>
-          <p>AI made shipping software trivial. The hard part is getting anyone to care.</p>
-          <a href="/articles/building-is-the-easy-part">Read article</a>
-        </div>
-      </article>
+    <p class="section-label">All articles</p>
 
-      <article class="card">
-        <img src="/articles/6-apps-3-months-solo-dev/cover.png" alt="6 apps solo dev cover">
-        <div class="card-body">
-          <p class="meta">Build in Public</p>
-          <h2>I Built 6 Apps in 3 Months as a Solo Dev — Here's What Actually Worked</h2>
-          <p>I shipped 6 apps in one quarter. Most went nowhere. One has real users. Here's the honest breakdown.</p>
-          <a href="/articles/6-apps-3-months-solo-dev">Read article</a>
-        </div>
-      </article>
+    <ul class="archive">
+      <li>
+        <a href="/articles/building-is-the-easy-part">
+          <p class="entry-meta"><span class="entry-topic">Essay</span><time class="entry-date" datetime="2026-03-24">Mar 2026</time></p>
+          <p class="entry-title">Building Is the Easy Part Now</p>
+          <p class="entry-summary">AI made shipping software trivial. The hard part is getting anyone to care.</p>
+        </a>
+      </li>
+      <li>
+        <a href="/articles/6-apps-3-months-solo-dev">
+          <p class="entry-meta"><span class="entry-topic">Build in Public</span><time class="entry-date" datetime="2026-03-24">Mar 2026</time></p>
+          <p class="entry-title">I Built 6 Apps in 3 Months as a Solo Dev</p>
+          <p class="entry-summary">Six apps in one quarter. Most went nowhere, one found real users. The honest breakdown.</p>
+        </a>
+      </li>
+      <li>
+        <a href="/articles/claude-code-changed-how-i-ship">
+          <p class="entry-meta"><span class="entry-topic">Developer Tools</span><time class="entry-date" datetime="2026-03-24">Mar 2026</time></p>
+          <p class="entry-title">Claude Code Changed How I Ship Software</p>
+          <p class="entry-summary">After three months using it daily, my workflow looks nothing like before. What changed, what didn't, and what surprised me.</p>
+        </a>
+      </li>
+      <li>
+        <a href="/articles/mcp-at-work">
+          <p class="entry-meta"><span class="entry-topic">Agentic AI</span><time class="entry-date" datetime="2026-03-06">Mar 2026</time></p>
+          <p class="entry-title">Using MCP to Your Advantage at Work</p>
+          <p class="entry-summary">Connecting agents to Figma and Atlassian for faster, traceable implementation workflows.</p>
+        </a>
+      </li>
+      <li>
+        <a href="/articles/evals-for-agents">
+          <p class="entry-meta"><span class="entry-topic">Reliability</span><time class="entry-date" datetime="2026-03-06">Mar 2026</time></p>
+          <p class="entry-title">Why Agentic Teams Need Eval Pipelines Before More Prompts</p>
+          <p class="entry-summary">Building measurable quality gates that catch regressions in tools, prompts, and policy compliance.</p>
+        </a>
+      </li>
+      <li>
+        <a href="/articles/multi-agent-orchestration">
+          <p class="entry-meta"><span class="entry-topic">Architecture</span><time class="entry-date" datetime="2026-03-06">Mar 2026</time></p>
+          <p class="entry-title">Multi-Agent Orchestration Without Chaos</p>
+          <p class="entry-summary">A control-flow model for planner, executor, and critic agents with typed handoffs and failure policies.</p>
+        </a>
+      </li>
+      <li>
+        <a href="/articles/production-guardrails">
+          <p class="entry-meta"><span class="entry-topic">Production</span><time class="entry-date" datetime="2026-03-06">Mar 2026</time></p>
+          <p class="entry-title">Shipping Agentic AI Without Waking Up On-Call</p>
+          <p class="entry-summary">A deployment checklist covering permission tiers, observability, kill switches, and incident drills.</p>
+        </a>
+      </li>
+      <li>
+        <a href="/articles/remote-work">
+          <p class="entry-meta"><span class="entry-topic">Personal</span><time class="entry-date" datetime="2025-10-06">Oct 2025</time></p>
+          <p class="entry-title">My Honest Take on Remote Work</p>
+          <p class="entry-summary">How remote work changed family life, health, and long-term career choices.</p>
+        </a>
+      </li>
+    </ul>
 
-      <article class="card">
-        <img src="/articles/claude-code-changed-how-i-ship/cover.png" alt="Claude Code cover">
-        <div class="card-body">
-          <p class="meta">Developer Tools</p>
-          <h2>Claude Code Changed How I Ship Software</h2>
-          <p>After 3 months using Claude Code daily, my workflow looks nothing like before. Here's what changed, what didn't, and what surprised me.</p>
-          <a href="/articles/claude-code-changed-how-i-ship">Read article</a>
-        </div>
-      </article>
+    <footer>
+      <p>Alexis Santos &middot; <a href="mailto:alexis.santos.perez@gmail.com">Email</a> &middot; <a href="/">Home</a></p>
+    </footer>
 
-      <article class="card">
-        <img src="/articles/mcp-at-work/cover.svg" alt="MCP orchestration cover">
-        <div class="card-body">
-          <p class="meta">Agentic AI</p>
-          <h2>Using MCP to Your Advantage at Work</h2>
-          <p>A practical approach to connecting agents with Figma and Atlassian for faster, traceable implementation workflows.</p>
-          <a href="/articles/mcp-at-work">Read article</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="/articles/evals-for-agents/cover.svg" alt="Agent eval dashboard cover">
-        <div class="card-body">
-          <p class="meta">Reliability</p>
-          <h2>Why Agentic Teams Need Eval Pipelines Before More Prompts</h2>
-          <p>How to build measurable quality gates that prevent regressions in tools, prompts, and policy compliance.</p>
-          <a href="/articles/evals-for-agents">Read article</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="/articles/multi-agent-orchestration/cover.svg" alt="Multi-agent orchestration cover">
-        <div class="card-body">
-          <p class="meta">Architecture</p>
-          <h2>Multi-Agent Orchestration Without Chaos</h2>
-          <p>A clear control-flow model for planner, executor, and critic agents with typed handoffs and failure policies.</p>
-          <a href="/articles/multi-agent-orchestration">Read article</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="/articles/production-guardrails/cover.svg" alt="Production guardrails cover">
-        <div class="card-body">
-          <p class="meta">Production</p>
-          <h2>Shipping Agentic AI Without Waking Up On-Call</h2>
-          <p>A deployment checklist covering permission tiers, observability, kill switches, and incident drills.</p>
-          <a href="/articles/production-guardrails">Read article</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="/articles/remote-work/cover.jpg" alt="Remote work article cover">
-        <div class="card-body">
-          <p class="meta">Personal</p>
-          <h2>My Honest Take on Remote Work</h2>
-          <p>A personal perspective on remote work and how it changed family life, health, and long-term career choices.</p>
-          <a href="/articles/remote-work">Read article</a>
-        </div>
-      </article>
-    </section>
   </main>
 </body>
 </html>
