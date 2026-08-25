@@ -3,7 +3,14 @@
   "main": "_worker.js",
   "compatibility_date": "2025-12-20",
   "assets": {
-    "directory": "./"
+    "directory": "./",
+    "run_worker_first": [
+      "/lab",
+      "/lab/*",
+      "/cleaning-windows",
+      "/cleaning-windows/*",
+      "/api/*"
+    ]
   },
   "kv_namespaces": [
     {
