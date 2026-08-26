@@ -3,7 +3,6 @@ const SESSION_COOKIE = 'as_session';
 const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30;
 const ALLOWED_ORIGIN = 'https://alexissantos.dev';
 const BOOKINGS_KEY = 'custom_bookings';
-
 const CORS_HEADERS = {
   'Access-Control-Allow-Origin': ALLOWED_ORIGIN,
   'Access-Control-Allow-Credentials': 'true',
@@ -19,20 +18,18 @@ export default {
           ...CORS_HEADERS,
           'Access-Control-Allow-Methods': 'GET, POST, DELETE, OPTIONS',
           'Access-Control-Allow-Headers': 'Content-Type',
-          'Vary': 'Origin',
+          Vary: 'Origin',
         },
       });
     }
 
     if (isProtected(url.pathname)) {
       const session = await authorize(request, env);
-
       if (!session.ok) {
         return unauthorized();
       }
 
       const response = await route(request, url, env);
-
       if (session.setCookie) {
         const headers = new Headers(response.headers);
         headers.append('Set-Cookie', session.setCookie);
@@ -52,36 +49,36 @@ export default {
 
 function isProtected(pathname) {
   return PROTECTED_PREFIXES.some(
-    prefix => pathname === prefix || pathname.startsWith(`${prefix}/`)
+    prefix => pathname === prefix || pathname.startsWith(`${prefix}/`),
   );
 }
 
 async function authorize(request, env) {
   const secret = env.LAB_PASSWORD;
-
   if (!secret) {
     return { ok: false };
   }
 
   const cookie = readCookie(request, SESSION_COOKIE);
-
-  if (cookie && (await isValidSession(cookie, secret))) {
+  if (cookie && await isValidSession(cookie, secret)) {
     return { ok: true };
   }
 
   const header = request.headers.get('Authorization') || '';
-
   if (header.startsWith('Basic ')) {
     let decoded;
-
     try {
       decoded = atob(header.slice(6));
     } catch {
       return { ok: false };
     }
 
-    const password = decoded.slice(decoded.indexOf(':') + 1);
+    const separator = decoded.indexOf(':');
+    if (separator === -1) {
+      return { ok: false };
+    }
 
+    const password = decoded.slice(separator + 1);
     if (constantTimeEquals(password, secret)) {
       return { ok: true, setCookie: await mintSession(secret) };
     }
@@ -110,84 +107,79 @@ async function mintSession(secret) {
 
 async function isValidSession(value, secret) {
   const separator = value.lastIndexOf('.');
-
   if (separator === -1) {
     return false;
   }
 
   const expires = value.slice(0, separator);
   const signature = value.slice(separator + 1);
-
-  if (!/^\d+$/.test(expires) || Number(expires) < Math.floor(Date.now() / 1000)) {
+  if (!/^\d+$/.test(expires) || Number(expires) <= Math.floor(Date.now() / 1000)) {
     return false;
   }
 
-  return constantTimeEquals(signature, await sign(expires, secret));
+  const expected = await sign(expires, secret);
+  return constantTimeEquals(signature, expected);
 }
 
-async function sign(message, secret) {
+async function sign(value, secret) {
   const encoder = new TextEncoder();
   const key = await crypto.subtle.importKey(
     'raw',
     encoder.encode(secret),
     { name: 'HMAC', hash: 'SHA-256' },
     false,
-    ['sign']
+    ['sign'],
   );
-  const signature = await crypto.subtle.sign('HMAC', key, encoder.encode(message));
-
-  let binary = '';
-  for (const byte of new Uint8Array(signature)) {
-    binary += String.fromCharCode(byte);
-  }
-
-  return btoa(binary).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+  const signature = await crypto.subtle.sign('HMAC', key, encoder.encode(value));
+  return [...new Uint8Array(signature)]
+    .map(byte => byte.toString(16).padStart(2, '0'))
+    .join('');
 }
 
-function constantTimeEquals(a, b) {
-  if (a.length !== b.length) {
-    return false;
-  }
+function constantTimeEquals(left, right) {
+  const leftBytes = new TextEncoder().encode(left);
+  const rightBytes = new TextEncoder().encode(right);
+  const length = Math.max(leftBytes.length, rightBytes.length);
+  let difference = leftBytes.length ^ rightBytes.length;
 
-  let difference = 0;
-  for (let i = 0; i < a.length; i++) {
-    difference |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  for (let index = 0; index < length; index += 1) {
+    difference |= (leftBytes[index] || 0) ^ (rightBytes[index] || 0);
   }
 
   return difference === 0;
 }
 
 function readCookie(request, name) {
-  const header = request.headers.get('Cookie');
+  const cookieHeader = request.headers.get('Cookie') || '';
+  for (const cookie of cookieHeader.split(';')) {
+    const separator = cookie.indexOf('=');
+    if (separator === -1) {
+      continue;
+    }
 
-  if (!header) {
-    return null;
-  }
-
-  for (const part of header.split(';')) {
-    const [key, ...rest] = part.trim().split('=');
+    const key = cookie.slice(0, separator).trim();
     if (key === name) {
-      return rest.join('=');
+      return cookie.slice(separator + 1).trim();
     }
   }
 
   return null;
 }
 
-function route(request, url, env) {
-  if (url.pathname === '/api/ical-proxy') {
-    return handleIcalProxy(request);
-  }
+async function route(request, url, env) {
+    if (url.pathname === '/api/ical-proxy') {
+      return handleIcalProxy(request);
+    }
 
-  if (url.pathname === '/api/bookings') {
-    return handleBookings(request, env);
-  }
+    if (url.pathname === '/api/bookings') {
+      return handleBookings(request, env);
+    }
 
-  if (url.pathname.startsWith('/api/bookings/')) {
-    return handleBookingDelete(request, url, env);
-  }
+    if (url.pathname.startsWith('/api/bookings/')) {
+      return handleBookingDelete(request, url, env);
+    }
 
-  return env.ASSETS.fetch(request);
+    return env.ASSETS.fetch(request);
 }
 
 async function handleBookings(request, env) {
@@ -264,36 +256,8 @@ async function handleIcalProxy(request) {
     });
   }
 
-  let target;
-
   try {
-    target = new URL(icalUrl);
-  } catch {
-    return new Response(JSON.stringify({ error: 'Invalid url parameter' }), {
-      status: 400,
-      headers: {
-        'Content-Type': 'application/json',
-        ...CORS_HEADERS,
-      },
-    });
-  }
-
-  if (target.protocol !== 'https:' && target.protocol !== 'webcal:') {
-    return new Response(JSON.stringify({ error: 'Unsupported protocol' }), {
-      status: 400,
-      headers: {
-        'Content-Type': 'application/json',
-        ...CORS_HEADERS,
-      },
-    });
-  }
-
-  if (target.protocol === 'webcal:') {
-    target.protocol = 'https:';
-  }
-
-  try {
-    const response = await fetch(target.toString(), {
+    const response = await fetch(icalUrl, {
       headers: {
         'User-Agent': 'CleaningWindows/1.0',
       },
@@ -315,7 +279,7 @@ async function handleIcalProxy(request) {
       headers: {
         'Content-Type': 'text/calendar',
         ...CORS_HEADERS,
-        'Cache-Control': 'private, max-age=300',
+        'Cache-Control': 'public, max-age=300',
       },
     });
   } catch (error) {
