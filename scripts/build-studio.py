@@ -125,6 +125,61 @@ SHOWCASE = {
     },
 }
 
+RESTAURANT = {
+    'es': {
+        'label': 'Caso ficticio',
+        'name': 'Mesa Clara',
+        'eyebrow': 'IA para reservas y sala',
+        'title': 'De un mensaje a una mesa preparada.',
+        'intro': 'Una solución conectada que entiende la petición del cliente, consulta disponibilidad, protege las decisiones delicadas y prepara al equipo antes del servicio.',
+        'short': 'Reservas atendidas al momento, preferencias bien registradas y un servicio de sala que empieza con contexto.',
+        'explore': 'Explorar el caso',
+        'how': 'Cada reserva,<br>lista para recibir.',
+        'how_intro': 'La IA resuelve lo repetitivo y mantiene las excepciones visibles. El equipo controla la sala, los cambios importantes y cualquier necesidad especial.',
+        'product_title': 'La reserva y la sala,<br>en la misma vista.',
+        'product_intro': 'Un panel para recepción y una experiencia móvil para confirmar los detalles con el cliente.',
+        'before': 'Antes',
+        'before_text': 'Llamadas perdidas, mensajes pendientes, notas en distintos sitios y alergias que llegan tarde al equipo.',
+        'after': 'Con Mesa Clara',
+        'after_text': 'Disponibilidad actualizada, confirmaciones automáticas y un briefing claro antes de cada servicio.',
+        'result_items': ['Más solicitudes atendidas sin interrumpir el servicio', 'Preferencias y alergias llegan al equipo adecuado', 'Las excepciones se revisan antes de confirmar'],
+        'stages': [
+            ('request', '01', 'Petición recibida', 'Un mensaje pide mesa para cuatro el sábado.'),
+            ('understood', '02', 'Detalles entendidos', 'La IA identifica fecha, hora, personas y preferencias.'),
+            ('availability', '03', 'Disponibilidad consultada', 'La sala ofrece dos horarios que encajan.'),
+            ('review', '04', 'Excepción revisada', 'Una alergia queda visible antes de confirmar.'),
+            ('confirmed', '05', 'Reserva confirmada', 'El cliente recibe los detalles y puede modificarlos.'),
+            ('briefing', '06', 'Sala preparada', 'El equipo recibe el briefing antes del servicio.'),
+        ],
+    },
+    'en': {
+        'label': 'Fictional case',
+        'name': 'Mesa Clara',
+        'eyebrow': 'AI for bookings and service',
+        'title': 'From a message to a table ready for guests.',
+        'intro': 'A connected solution that understands the guest’s request, checks availability, protects sensitive decisions and prepares the team before service.',
+        'short': 'Booking requests handled immediately, preferences recorded properly and a front-of-house team that starts with context.',
+        'explore': 'Explore the case',
+        'how': 'Every booking,<br>ready to welcome.',
+        'how_intro': 'AI handles repetitive work and keeps exceptions visible. The team controls the room, important changes and every special requirement.',
+        'product_title': 'Bookings and service,<br>in the same view.',
+        'product_intro': 'A front-of-house dashboard and a mobile experience that confirms every detail with the guest.',
+        'before': 'Before',
+        'before_text': 'Missed calls, pending messages, notes in different places and allergy information reaching the team too late.',
+        'after': 'With Mesa Clara',
+        'after_text': 'Live availability, automatic confirmations and a clear briefing before every service.',
+        'result_items': ['More requests handled without interrupting service', 'Preferences and allergies reach the right team', 'Exceptions are reviewed before confirmation'],
+        'stages': [
+            ('request', '01', 'Request received', 'A message asks for a table for four on Saturday.'),
+            ('understood', '02', 'Details understood', 'AI identifies the date, time, party and preferences.'),
+            ('availability', '03', 'Availability checked', 'The room offers two suitable times.'),
+            ('review', '04', 'Exception reviewed', 'An allergy stays visible before confirmation.'),
+            ('confirmed', '05', 'Booking confirmed', 'The guest receives the details and can amend them.'),
+            ('briefing', '06', 'Team prepared', 'The team receives the briefing before service.'),
+        ],
+    },
+}
+
 
 def shared_head(lang, title, description, canonical, alternate, image='/assets/showcase/nexo/field-service.webp'):
     return f'''<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{escape(title)} — AlexisSantos.dev</title><meta name="description" content="{escape(description, quote=True)}"><link rel="canonical" href="https://alexissantos.dev{canonical}"><link rel="alternate" hreflang="es" href="https://alexissantos.dev{canonical if lang == 'es' else alternate}"><link rel="alternate" hreflang="en" href="https://alexissantos.dev{alternate if lang == 'es' else canonical}"><link rel="alternate" hreflang="x-default" href="https://alexissantos.dev{canonical if lang == 'es' else alternate}"><meta property="og:title" content="{escape(title, quote=True)}"><meta property="og:description" content="{escape(description, quote=True)}"><meta property="og:type" content="website"><meta property="og:url" content="https://alexissantos.dev{canonical}"><meta property="og:image" content="https://alexissantos.dev{image}"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#f5f6f8"><link rel="icon" href="/assets/studio/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/studio/studio.css"><link rel="stylesheet" href="/assets/showcase/showcase.css"><script src="/assets/studio/studio.js" defer></script><script src="/assets/showcase/showcase.js" defer></script></head>'''
@@ -155,6 +210,29 @@ def product_mockup(lang):
     return f'''<section class="product-showcase"><div class="wrap product-showcase-intro"><div><span class="showcase-kicker">{'PRODUCTO' if es else 'PRODUCT'}</span><h2>{s['product_title']}</h2></div><p>{s['product_intro']}</p></div><div class="wrap device-stage"><div class="desktop-device"><div class="desktop-bar"><span></span><span></span><span></span><b>NEXO / {s['desktop_label']}</b></div><div class="desktop-screen"><aside><strong>NEXO</strong><nav><span class="active">{'Resumen' if es else 'Overview'}</span><span>{'Trabajos' if es else 'Jobs'} <i>12</i></span><span>{'Calendario' if es else 'Schedule'}</span><span>{'Clientes' if es else 'Customers'}</span><span>{'Informes' if es else 'Reports'}</span></nav><small>Alexis · Admin</small></aside><main><header><div><small>{'MIÉRCOLES, 18 SEP' if es else 'WEDNESDAY, 18 SEP'}</small><h3>{'Buenos días, Alexis' if es else 'Good morning, Alexis'}</h3></div><button>{'Crear trabajo' if es else 'Create job'} ＋</button></header><div class="dashboard-stats"><article><span>{'ABIERTOS' if es else 'OPEN'}</span><b>12</b><small>↑ 3 {'esta semana' if es else 'this week'}</small></article><article><span>{'HOY' if es else 'TODAY'}</span><b>5</b><small>4 {'en curso' if es else 'in progress'}</small></article><article><span>{'POR REVISAR' if es else 'TO REVIEW'}</span><b>2</b><small>{'IA preparada' if es else 'AI prepared'}</small></article></div><section class="jobs-board"><div class="jobs-heading"><h4>{'Trabajos de hoy' if es else 'Today’s jobs'}</h4><span>{'Ver agenda' if es else 'View schedule'} →</span></div><div class="job-row featured"><span class="job-time">10:30</span><div><b>#NX-2048 · Costa Azul</b><small>{'Fuga bajo lavabo · Daniel R.' if es else 'Leak under sink · Daniel R.'}</small></div><em>{'EN CURSO' if es else 'IN PROGRESS'}</em></div><div class="job-row"><span class="job-time">12:00</span><div><b>#NX-2049 · La Brisa</b><small>{'Revisión de climatización' if es else 'Air conditioning check'}</small></div><em>{'PROGRAMADO' if es else 'SCHEDULED'}</em></div><div class="job-row"><span class="job-time">15:30</span><div><b>#NX-2050 · Cumbre</b><small>{'Persiana bloqueada' if es else 'Blocked shutter'}</small></div><em>{'PROGRAMADO' if es else 'SCHEDULED'}</em></div></section><section class="ai-brief"><span class="ai-mark">✦</span><div><b>{'Resumen preparado por IA' if es else 'AI-prepared brief'}</b><p>{'Dos trabajos necesitan revisión. La factura de Costa Azul estará lista cuando Daniel complete la prueba final.' if es else 'Two jobs need review. The Costa Azul invoice will be ready when Daniel completes the final check.'}</p></div><button>{'Revisar' if es else 'Review'} →</button></section></main></div></div><div class="phone-device"><div class="phone-speaker"></div><div class="phone-screen"><header><span>9:41</span><b>NEXO</b><span>•••</span></header><div class="phone-job-head"><small>#NX-2048 · {'EN CURSO' if es else 'IN PROGRESS'}</small><h3>{'Fuga bajo lavabo' if es else 'Leak under sink'}</h3><p>Costa Azul · Local 04</p></div><div class="phone-client"><span>MC</span><div><b>Marta C.</b><small>{'Cliente · 09:42' if es else 'Customer · 09:42'}</small></div><button>↗</button></div><div class="phone-evidence"><div><img src="/assets/showcase/nexo/evidence-before.webp" alt="" width="1020" height="765"><small>{'ANTES' if es else 'BEFORE'}</small></div><div><img src="/assets/showcase/nexo/evidence-after.webp" alt="" width="1020" height="765"><small>{'DESPUÉS' if es else 'AFTER'}</small></div></div><ul><li><span>✓</span>{'Conexión sustituida' if es else 'Connector replaced'}</li><li><span>✓</span>{'Prueba sin fugas' if es else 'Leak test passed'}</li><li><span>✓</span>{'Fotos añadidas' if es else 'Photos added'}</li></ul><button class="phone-complete">{'Completar trabajo' if es else 'Complete job'} →</button></div></div><div class="device-caption desktop-caption"><span>01</span><b>{s['desktop_label']}</b></div><div class="device-caption phone-caption"><span>02</span><b>{s['mobile_label']}</b></div></div></section>'''
 
 
+def restaurant_layers(lang):
+    es = lang == 'es'
+    return f'''
+    <div class="stage-layer" data-stage-panel="request"><div class="message-card restaurant-message"><span class="avatar">LR</span><div><b>Lucía R.</b><p>{'Hola, ¿tenéis mesa para 4 este sábado sobre las 21:00? Una persona es alérgica a los frutos secos.' if es else 'Hi, do you have a table for 4 this Saturday around 9pm? One guest has a nut allergy.'}</p><span class="message-meta">18:16 · {'MENSAJE' if es else 'MESSAGE'}</span></div></div></div>
+    <div class="stage-layer" data-stage-panel="understood"><div class="extract-card restaurant-extract"><span class="ui-kicker">{'IA · PETICIÓN ENTENDIDA' if es else 'AI · REQUEST UNDERSTOOD'}</span><dl><div><dt>{'Fecha' if es else 'Date'}</dt><dd>21 SEP</dd></div><div><dt>{'Personas' if es else 'Guests'}</dt><dd>4</dd></div><div><dt>{'Hora ideal' if es else 'Preferred time'}</dt><dd>21:00</dd></div><div><dt>{'Atención' if es else 'Attention'}</dt><dd class="restaurant-alert">{'Alergia' if es else 'Allergy'}</dd></div></dl></div></div>
+    <div class="stage-layer" data-stage-panel="availability"><div class="availability-card"><span class="ui-kicker">{'DISPONIBILIDAD EN SALA' if es else 'ROOM AVAILABILITY'}</span><h3>{'Sábado, 21 septiembre' if es else 'Saturday, 21 September'}</h3><div><span>20:30</span><span class="suggested">21:00</span><span>21:30</span></div><p>4 {'personas · Interior' if es else 'guests · Inside'}</p></div></div>
+    <div class="stage-layer" data-stage-panel="review"><div class="allergy-card"><span class="allergy-icon">!</span><span class="ui-kicker">{'REVISIÓN NECESARIA' if es else 'REVIEW REQUIRED'}</span><h3>{'Alergia a frutos secos' if es else 'Nut allergy'}</h3><p>{'Confirmar protocolo de cocina antes de aceptar la reserva.' if es else 'Confirm the kitchen protocol before accepting the booking.'}</p><button type="button">{'Revisar con cocina' if es else 'Review with kitchen'} →</button></div></div>
+    <div class="stage-layer" data-stage-panel="confirmed"><div class="booking-confirmed"><span class="confirmation-mark">✓</span><span class="ui-kicker">{'RESERVA CONFIRMADA' if es else 'BOOKING CONFIRMED'}</span><h3>Lucía · 4 {'personas' if es else 'guests'}</h3><b>21 SEP · 21:00</b><p>{'Mesa 08 · Interior' if es else 'Table 08 · Inside'}</p></div></div>
+    <div class="stage-layer" data-stage-panel="briefing"><div class="service-brief"><span class="ui-kicker">{'BRIEFING DE SERVICIO' if es else 'SERVICE BRIEFING'}</span><div><b>21:00</b><span>{'Mesa 08 · 4 personas' if es else 'Table 08 · 4 guests'}</span></div><ul><li>● {'Alergia señalada' if es else 'Allergy flagged'}</li><li>● {'Cumpleaños' if es else 'Birthday'}</li><li>● {'Trona no necesaria' if es else 'No high chair needed'}</li></ul><small>{'Compartido con sala y cocina' if es else 'Shared with front of house and kitchen'}</small></div></div>'''
+
+
+def restaurant_mosaic(lang, context='case'):
+    s = RESTAURANT[lang]
+    controls = ''.join(f'''<button class="stage-control" type="button" data-stage="{stage}" data-status="{escape(title, quote=True)} — {escape(description, quote=True)}"><span class="stage-number">{number}</span><span><b>{title}</b><small>{description}</small></span><span class="stage-arrow" aria-hidden="true">↗</span></button>''' for stage, number, title, description in s['stages'])
+    return f'''<div class="showcase-mosaic restaurant-mosaic" data-showcase data-active-stage="request"><div class="showcase-panel"><img src="/assets/showcase/mesa-clara/restaurant.webp" alt="" width="1536" height="1024" loading="{'eager' if context == 'case' else 'lazy'}"><div class="panel-shade"></div>{restaurant_layers(lang)}<p class="showcase-status" aria-live="polite">{s['stages'][0][2]} — {s['stages'][0][3]}</p></div><div class="showcase-stage-list">{controls}</div></div>'''
+
+
+def restaurant_product_mockup(lang):
+    s = RESTAURANT[lang]
+    es = lang == 'es'
+    return f'''<section class="product-showcase restaurant-product"><div class="wrap product-showcase-intro"><div><span class="showcase-kicker">{'PRODUCTO' if es else 'PRODUCT'}</span><h2>{s['product_title']}</h2></div><p>{s['product_intro']}</p></div><div class="wrap restaurant-devices"><div class="restaurant-desktop"><div class="desktop-bar"><span></span><span></span><span></span><b>MESA CLARA / {'SALA' if es else 'FLOOR'}</b></div><div class="host-screen"><aside><strong>MESA<br>CLARA</strong><nav><span class="active">{'Sala' if es else 'Floor'}</span><span>{'Reservas' if es else 'Bookings'} <i>34</i></span><span>{'Lista de espera' if es else 'Waitlist'} <i>3</i></span><span>{'Clientes' if es else 'Guests'}</span></nav><small>{'Servicio de cena' if es else 'Dinner service'} · 68%</small></aside><main><header><div><small>{'SÁBADO, 21 SEP' if es else 'SATURDAY, 21 SEP'}</small><h3>{'Servicio de cena' if es else 'Dinner service'}</h3></div><div class="service-switch"><span>19:00</span><b>21:00</b><span>22:30</span></div></header><div class="floor-layout"><div class="table t1"><b>01</b><span>2</span></div><div class="table t2 occupied"><b>04</b><span>4</span></div><div class="table t3"><b>06</b><span>2</span></div><div class="table t4 reserved"><b>08</b><span>4</span><i>21:00</i></div><div class="table t5 occupied"><b>10</b><span>6</span></div><div class="table t6"><b>12</b><span>4</span></div><div class="room-label">{'TERRAZA' if es else 'TERRACE'}</div></div><aside class="booking-rail"><header><b>21:00</b><span>12 {'reservas' if es else 'bookings'}</span></header><article class="highlight"><div><b>Lucía R.</b><small>4 · Mesa 08</small></div><em>!</em><p>{'Alergia · Cumpleaños' if es else 'Allergy · Birthday'}</p></article><article><div><b>Mario D.</b><small>2 · Mesa 06</small></div><p>{'Confirmada' if es else 'Confirmed'}</p></article><article><div><b>Sara P.</b><small>6 · Mesa 10</small></div><p>{'Confirmada' if es else 'Confirmed'}</p></article><button>{'Nueva reserva' if es else 'New booking'} ＋</button></aside></main></div></div><div class="booking-phone"><div class="phone-speaker"></div><div class="booking-phone-screen"><header><span>9:41</span><b>MESA CLARA</b><span>•••</span></header><div class="booking-success"><span>✓</span><small>{'RESERVA CONFIRMADA' if es else 'BOOKING CONFIRMED'}</small><h3>{'Nos vemos el sábado' if es else 'See you on Saturday'}</h3></div><dl><div><dt>{'FECHA' if es else 'DATE'}</dt><dd>21 SEP</dd></div><div><dt>{'HORA' if es else 'TIME'}</dt><dd>21:00</dd></div><div><dt>{'PERSONAS' if es else 'GUESTS'}</dt><dd>4</dd></div><div><dt>{'MESA' if es else 'TABLE'}</dt><dd>08</dd></div></dl><div class="booking-note"><b>{'Hemos anotado tu alergia' if es else 'We’ve noted your allergy'}</b><p>{'El equipo de cocina la revisará antes del servicio.' if es else 'The kitchen team will review it before service.'}</p></div><button>{'Modificar reserva' if es else 'Manage booking'} →</button><small class="booking-address">Mesa Clara · {'Costa de Tenerife' if es else 'Tenerife coast'}</small></div></div></div></section>'''
+
+
 def showcase_shell_parts(lang, es_href, en_href):
     home_path = 'index.html' if lang == 'es' else 'en/index.html'
     home_url = '/' if lang == 'es' else '/en/'
@@ -172,9 +250,11 @@ def build_showcase_page(lang):
     canonical = '/showcase/' if es else '/en/showcase/'
     alternate = '/en/showcase/' if es else '/showcase/'
     case_url = '/showcase/nexo-mantenimiento/' if es else '/en/showcase/nexo-maintenance/'
+    restaurant_url = '/showcase/mesa-clara/' if es else '/en/showcase/mesa-clara/'
+    restaurant = RESTAURANT[lang]
     header, footer = showcase_shell_parts(lang, '/showcase/', '/en/showcase/')
     head = shared_head(lang, s['index_title'], s['index_intro'], canonical, alternate)
-    return f'''{head}<body id="top"><a class="skip" href="#main">{COPY[lang]['skip']}</a>{header}<main id="main" class="showcase-page"><section class="showcase-index-hero wrap"><span class="showcase-kicker">AlexisSantos.dev / {s['nav']}</span><h1>{s['index_title']}.</h1><div><p>{s['index_intro']}</p><small>{s['index_note']}</small></div></section><section class="wrap showcase-feature"><div class="showcase-feature-head"><div><span class="fictional-label">{s['label']}</span><span>{s['eyebrow']}</span></div><h2>{s['case_name']}</h2><p>{s['case_short']}</p><a class="text-link" href="{case_url}">{s['explore']} {ARROW}</a></div>{showcase_mosaic(lang, 'index')}</section><section class="showcase-future wrap"><span>{'Próximamente' if es else 'Coming next'}</span><p>{'Reservas de restaurantes · Facturas · Gestión de propiedades · Servicios profesionales' if es else 'Restaurant bookings · Invoice processing · Property management · Professional services'}</p></section></main>{footer}</body></html>'''
+    return f'''{head}<body id="top"><a class="skip" href="#main">{COPY[lang]['skip']}</a>{header}<main id="main" class="showcase-page"><section class="showcase-index-hero wrap"><span class="showcase-kicker">AlexisSantos.dev / {s['nav']}</span><h1>{s['index_title']}.</h1><div><p>{s['index_intro']}</p><small>{s['index_note']}</small></div></section><section class="wrap showcase-feature"><div class="showcase-feature-head"><div><span class="fictional-label">{s['label']}</span><span>{s['eyebrow']}</span></div><h2>{s['case_name']}</h2><p>{s['case_short']}</p><a class="text-link" href="{case_url}">{s['explore']} {ARROW}</a></div>{showcase_mosaic(lang, 'index')}</section><section class="wrap showcase-feature restaurant-feature"><div class="showcase-feature-head"><div><span class="fictional-label">{restaurant['label']}</span><span>{restaurant['eyebrow']}</span></div><h2>{restaurant['name']}</h2><p>{restaurant['short']}</p><a class="text-link" href="{restaurant_url}">{restaurant['explore']} {ARROW}</a></div>{restaurant_mosaic(lang, 'index')}</section><section class="showcase-future wrap"><span>{'Próximamente' if es else 'Coming next'}</span><p>{'Procesado de facturas · Gestión de propiedades · Servicios profesionales' if es else 'Invoice processing · Property management · Professional services'}</p></section></main>{footer}</body></html>'''
 
 
 def build_nexo_page(lang):
@@ -188,10 +268,23 @@ def build_nexo_page(lang):
     head = shared_head(lang, s['case_name'], s['case_intro'], canonical, alternate)
     results = ''.join(f'<li><span>0{i}</span>{item}</li>' for i, item in enumerate(s['result_items'], 1))
     return f'''{head}<body id="top"><a class="skip" href="#main">{COPY[lang]['skip']}</a>{header}<main id="main" class="showcase-page"><section class="case-hero wrap"><a class="case-back" href="{index_url}">← {s['back']}</a><div class="case-heading"><div><span class="fictional-label">{s['label']}</span><span>{s['eyebrow']}</span></div><h1>{s['case_name']}</h1><p>{s['case_title']} {s['case_intro']}</p></div></section><section class="wrap case-demo">{showcase_mosaic(lang, 'case')}</section><section class="case-explainer wrap"><div><span class="showcase-kicker">{'EL FLUJO' if es else 'THE WORKFLOW'}</span><h2>{s['how']}</h2></div><p>{s['how_intro']}</p></section>{product_mockup(lang)}<section class="before-after wrap"><article><span>01 / {s['before'].upper()}</span><h3>{s['before']}</h3><p>{s['before_text']}</p></article><article><span>02 / {s['after'].upper()}</span><h3>{s['after']}</h3><p>{s['after_text']}</p></article></section><section class="case-results"><div class="wrap"><div><span class="showcase-kicker">{'RESULTADO' if es else 'OUTCOME'}</span><h2>{s['result']}.</h2></div><ol>{results}</ol></div></section><section class="case-cta wrap"><h2>{s['cta_title']}</h2><div><p>{s['cta_text']}</p><a class="button" href="{contact_url}">{s['cta']} {ARROW}</a></div></section></main>{footer}</body></html>'''
+
+
+def build_restaurant_page(lang):
+    s = RESTAURANT[lang]
+    es = lang == 'es'
+    canonical = '/showcase/mesa-clara/' if es else '/en/showcase/mesa-clara/'
+    alternate = '/en/showcase/mesa-clara/' if es else '/showcase/mesa-clara/'
+    index_url = '/showcase/' if es else '/en/showcase/'
+    contact_url = '/#contact' if es else '/en/#contact'
+    header, footer = showcase_shell_parts(lang, '/showcase/mesa-clara/', '/en/showcase/mesa-clara/')
+    head = shared_head(lang, s['name'], s['intro'], canonical, alternate, '/assets/showcase/mesa-clara/restaurant.webp')
+    results = ''.join(f'<li><span>0{i}</span>{item}</li>' for i, item in enumerate(s['result_items'], 1))
+    return f'''{head}<body id="top"><a class="skip" href="#main">{COPY[lang]['skip']}</a>{header}<main id="main" class="showcase-page restaurant-case"><section class="case-hero wrap"><a class="case-back" href="{index_url}">← {'Todas las demostraciones' if es else 'All showcase cases'}</a><div class="case-heading"><div><span class="fictional-label">{s['label']}</span><span>{s['eyebrow']}</span></div><h1>{s['name']}</h1><p>{s['title']} {s['intro']}</p></div></section><section class="wrap case-demo">{restaurant_mosaic(lang, 'case')}</section><section class="case-explainer wrap"><div><span class="showcase-kicker">{'EL FLUJO' if es else 'THE WORKFLOW'}</span><h2>{s['how']}</h2></div><p>{s['how_intro']}</p></section>{restaurant_product_mockup(lang)}<section class="before-after wrap"><article><span>01 / {s['before'].upper()}</span><h3>{s['before']}</h3><p>{s['before_text']}</p></article><article><span>02 / {s['after'].upper()}</span><h3>{s['after']}</h3><p>{s['after_text']}</p></article></section><section class="case-results"><div class="wrap"><div><span class="showcase-kicker">{'RESULTADO' if es else 'OUTCOME'}</span><h2>{'Lo que cambia' if es else 'What changes'}.</h2></div><ol>{results}</ol></div></section><section class="case-cta wrap"><h2>{'¿Tu equipo pierde tiempo gestionando reservas?' if es else 'Does your team lose time managing bookings?'}</h2><div><p>{'Diseño el flujo alrededor de tu sala, horarios y forma de atender al cliente.' if es else 'I design the workflow around your room, opening hours and the way you serve guests.'}</p><a class="button" href="{contact_url}">{'Cuéntame cómo trabajas' if es else 'Tell me how you work'} {ARROW}</a></div></section></main>{footer}</body></html>'''
 for lang,t in COPY.items():
  url='/' if lang=='es' else '/en/'
- nav=''.join(f'<a href="#{anchor}">{text}</a>' for anchor,text in zip(['solutions','projects','studio'],t['nav'][:3]))
- nav+=f'<a href="{'/showcase/' if lang=='es' else '/en/showcase/'}">{SHOWCASE[lang]['nav']}</a>'
+ nav=f'<a href="#solutions">{t["nav"][0]}</a><a href="{'/showcase/' if lang=='es' else '/en/showcase/'}">{SHOWCASE[lang]['nav']}</a>'
+ nav+=f'<a href="#projects">{t["nav"][1]}</a><a href="#studio">{t["nav"][2]}</a>'
  nav+=f'<a href="{'/articles/' if lang=='es' else '/en/articles/'}">{'Artículos' if lang=='es' else 'Articles'}</a>'
  services=''.join(f'<article><svg viewBox="0 0 24 24" aria-hidden="true">{ICONS[i]}</svg><h3>{name}</h3><p>{desc}</p><small>{tags}</small></article>' for i,(name,desc,tags) in enumerate(t['serviceitems']))
  steps=''.join(f'<li><span class="step-number">0{i+1}</span><h3>{name}</h3><p>{desc}</p></li>' for i,(name,desc) in enumerate(t['steps']))
@@ -211,7 +304,7 @@ for lang,t in COPY.items():
 <section id="solutions" class="section wrap services"><div class="section-head"><h2>{t['services']}</h2><p>{t['serviceintro']}</p></div><div class="service-grid">{services}</div></section>
 <section class="demo-section"><div class="wrap demo-inner"><div><span class="status-pill"><span></span>{t['soon']}</span><h2>{t['demo']}</h2><p>{t['demointro']}</p></div><div class="demo-note"><ol class="integration-flow">{flow}</ol><p>{t['democopy']}</p><a class="text-link" href="#contact">{t['cta']} {ARROW}</a></div></div></section>
 <section class="section wrap process"><h2>{t['process']}</h2><ol>{steps}</ol></section>
-<section id="showcase" class="section wrap home-showcase"><div class="section-head showcase-home-head"><div><span class="fictional-label">{SHOWCASE[lang]['label']}</span><h2>{SHOWCASE[lang]['home_title']}</h2></div><div><p>{SHOWCASE[lang]['home_intro']}</p><a class="text-link" href="{'/showcase/nexo-mantenimiento/' if lang=='es' else '/en/showcase/nexo-maintenance/'}">{SHOWCASE[lang]['explore']} {ARROW}</a></div></div>{showcase_mosaic(lang, 'home')}</section>
+<section id="showcase" class="section wrap home-showcase"><div class="section-head showcase-home-head"><div><span class="fictional-label">{SHOWCASE[lang]['label']}</span><h2>{SHOWCASE[lang]['home_title']}</h2></div><div><p>{SHOWCASE[lang]['home_intro']}</p><a class="text-link" href="{'/showcase/' if lang=='es' else '/en/showcase/'}">{'Ver todas las demos' if lang=='es' else 'View all cases'} {ARROW}</a></div></div>{showcase_mosaic(lang, 'home')}<a class="home-case-teaser" href="{'/showcase/mesa-clara/' if lang=='es' else '/en/showcase/mesa-clara/'}"><img src="/assets/showcase/mesa-clara/restaurant.webp" alt="" width="1536" height="1024" loading="lazy"><span class="fictional-label">{RESTAURANT[lang]['label']}</span><div><small>{RESTAURANT[lang]['eyebrow']}</small><h3>Mesa Clara</h3><p>{RESTAURANT[lang]['short']}</p><b>{RESTAURANT[lang]['explore']} {ARROW}</b></div></a></section>
 <section id="projects" class="section wrap product-proof"><div class="section-head"><h2>{t['work']}</h2><p>{t['workintro']}</p></div><div class="projects"><article class="project breathe"><img class="product-scene" src="/assets/studio/breathe-scene.jpg" alt="" loading="lazy" width="1448" height="1086"><div class="product-copy"><small>{t['bcat']}</small><h3>Breathe Now</h3><p>{t['bdesc']}</p><button class="project-open" aria-label="{t['view']}: Breathe Now" data-dialog="breathe-detail">{t['view']} {ARROW}</button></div><span class="product-bottom">{'Respira. Para. Vuelve.' if lang=='es' else 'Breathe. Reset. Begin again.'}</span></article><article class="project camera"><img class="product-scene" src="/assets/studio/camera-scene.jpg" alt="" loading="lazy" width="1448" height="1086"><div class="product-copy"><small>{t['lcat']}</small><h3>Lean Cam</h3><p>{t['ldesc']}</p><button class="project-open" aria-label="{t['view']}: Lean Cam" data-dialog="camera-detail">{t['view']} {ARROW}</button></div><span class="product-bottom">{'Mira más. Decide menos.' if lang=='es' else 'See more. Do less.'}</span></article></div></section>
 <section id="studio" class="section wrap about"><div class="portrait"><img src="/photo.jpg" alt="Alexis Santos" loading="lazy" width="600" height="700"><span>{t['abouttag']}</span></div><div class="about-copy"><h2>{t['about']}</h2><p>{t['abouttext']}</p><p>{t['abouttext2']}</p><div class="social"><a href="https://www.linkedin.com/in/asantosp/">LinkedIn {ARROW}</a><a href="https://github.com/alexissan">GitHub {ARROW}</a><a href="https://x.com/deepfirstsearch">X {ARROW}</a></div></div></section>
 <section id="contact" class="contact-section"><div class="wrap contact-grid"><div><h2>{t['contact']}</h2><p class="contact-intro">{t['contactintro']}</p><div class="direct-email"><span>{t['direct']}</span><a href="mailto:alexis.santos.perez@gmail.com">alexis.santos.perez@gmail.com {ARROW}</a></div></div><form id="brief-form"><div class="form-row"><label>{t['name']}<input name="name" autocomplete="name" required maxlength="100"></label><label>{t['business']}<input name="business" autocomplete="organization" maxlength="150"></label></div><label>{t['need']}<textarea name="message" rows="4" required maxlength="3000" placeholder="{t['placeholder']}"></textarea></label><button class="button" type="submit">{t['send']} {ARROW}</button><p class="form-note">{t['emailnote']}</p><p class="privacy-note">{t['privacy']}</p><p id="form-status" role="status"></p><noscript><p>{t['direct']}: <a href="mailto:alexis.santos.perez@gmail.com">alexis.santos.perez@gmail.com</a></p></noscript></form></div></section>
@@ -227,10 +320,13 @@ for lang,t in COPY.items():
 for lang in ['es', 'en']:
     showcase_path = ROOT / ('showcase/index.html' if lang == 'es' else 'en/showcase/index.html')
     case_path = ROOT / ('showcase/nexo-mantenimiento/index.html' if lang == 'es' else 'en/showcase/nexo-maintenance/index.html')
+    restaurant_path = ROOT / ('showcase/mesa-clara/index.html' if lang == 'es' else 'en/showcase/mesa-clara/index.html')
     showcase_path.parent.mkdir(parents=True, exist_ok=True)
     case_path.parent.mkdir(parents=True, exist_ok=True)
+    restaurant_path.parent.mkdir(parents=True, exist_ok=True)
     showcase_path.write_text(build_showcase_page(lang))
     case_path.write_text(build_nexo_page(lang))
+    restaurant_path.write_text(build_restaurant_page(lang))
 
 import re
 from html import unescape
@@ -276,6 +372,6 @@ for lang in ['es', 'en']:
     archive = f'''<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title} — AlexisSantos.dev</title><meta name="description" content="{intro}"><link rel="canonical" href="https://alexissantos.dev{archive_url}"><link rel="alternate" hreflang="es" href="https://alexissantos.dev/articles/"><link rel="alternate" hreflang="en" href="https://alexissantos.dev/en/articles/"><link rel="icon" href="/assets/studio/favicon.svg"><link rel="stylesheet" href="/assets/studio/studio.css"><script src="/assets/studio/studio.js" defer></script></head><body id="top"><a class="skip" href="#main">{COPY[lang]['skip']}</a>{header}<main id="main" class="wrap archive-page"><div class="archive-intro"><a class="text-link" href="{home_url}">← {back}</a><h1>{title}.</h1><p>{intro}</p></div><div class="article-grid">{cards}</div></main>{footer}</body></html>'''
     (ROOT / archive_url.strip('/') / 'index.html').write_text(archive)
 
-public_paths = ["/", "/en/", "/showcase/", "/en/showcase/", "/showcase/nexo-mantenimiento/", "/en/showcase/nexo-maintenance/", "/articles/", "/en/articles/"] + [f"/articles/{entry[0]}/" for entry in entries]
+public_paths = ["/", "/en/", "/showcase/", "/en/showcase/", "/showcase/nexo-mantenimiento/", "/en/showcase/nexo-maintenance/", "/showcase/mesa-clara/", "/en/showcase/mesa-clara/", "/articles/", "/en/articles/"] + [f"/articles/{entry[0]}/" for entry in entries]
 sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(f"  <url><loc>https://alexissantos.dev{path}</loc></url>" for path in public_paths) + "\n</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sitemap)
