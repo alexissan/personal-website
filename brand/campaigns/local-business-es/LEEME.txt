@@ -1,13 +1,13 @@
 Folleto en español, en blanco y negro, centrado en integración de IA.
 
-Para imprimir: ../../../output/pdf/imprimir-a4-dos-flyers-ia.pdf
+Para imprimir: imprimir-a4-dos-flyers.pdf
 Papel A4, orientación horizontal, tamaño real / escala 100 %, una cara.
 Selecciona blanco y negro / escala de grises en la impresora.
 Selecciona 1 página por hoja: el PDF ya incluye los dos folletos.
 Corta por la línea central de puntos. Cada folleto mide 148,5 × 210 mm.
 No requiere impresión sin bordes; el contenido deja márgenes.
 
-Versión individual: ../../../output/pdf/flyer-a5-ia-es.pdf
+Versión individual: flyer-a5-es-blanco-negro.pdf
 Un QR por folleto: https://wa.me/34681159057
 Teléfono: +34 681 159 057
 Web: https://alexissantos.dev/

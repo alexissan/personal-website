@@ -8,8 +8,6 @@ import qrcode
 ROOT = Path(__file__).resolve().parents[2]
 BRAND = ROOT / 'brand'
 CAMPAIGN = BRAND / 'campaigns/local-business-es'
-OUT = ROOT / 'output/pdf'
-OUT.mkdir(parents=True, exist_ok=True)
 
 for name, file in [('Display', 'Manrope-800.ttf'), ('Body', 'DMSans-400.ttf'), ('Medium', 'DMSans-600.ttf')]:
     pdfmetrics.registerFont(TTFont(name, str(BRAND / 'fonts' / file)))
@@ -106,9 +104,9 @@ def flyer(c):
     c.restoreState()
 
 
-for name, two_up in [('flyer-a5-ia-es.pdf', False), ('imprimir-a4-dos-flyers-ia.pdf', True)]:
+for name, two_up in [('flyer-a5-es-blanco-negro.pdf', False), ('imprimir-a4-dos-flyers.pdf', True)]:
     size = (297 * mm, H) if two_up else (W, H)
-    c = canvas.Canvas(str(OUT / name), pagesize=size)
+    c = canvas.Canvas(str(CAMPAIGN / name), pagesize=size)
     c.setTitle('Integración de IA para negocios | AlexisSantos.dev')
     c.setAuthor('Alexis Santos')
     flyer(c)
@@ -124,4 +122,4 @@ for name, two_up in [('flyer-a5-ia-es.pdf', False), ('imprimir-a4-dos-flyers-ia.
     c.showPage()
     c.save()
 
-print(OUT)
+print(CAMPAIGN)
