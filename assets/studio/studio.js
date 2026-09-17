@@ -16,16 +16,6 @@ document.addEventListener('keydown', event => {
     menuButton.focus();
   }
 });
-document.querySelectorAll('[data-dialog]').forEach(button => {
-  button.addEventListener('click', () => document.getElementById(button.dataset.dialog).showModal());
-});
-document.querySelectorAll('dialog').forEach(dialog => {
-  dialog.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
-  dialog.addEventListener('click', event => {
-    const bounds = dialog.getBoundingClientRect();
-    if (event.target === dialog && (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom)) dialog.close();
-  });
-});
 const form = document.getElementById('brief-form');
 if (form) {
 const copy = JSON.parse(document.getElementById('contact-copy').textContent);

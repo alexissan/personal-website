@@ -240,110 +240,6 @@ h1 {
   font-size:16px;
   line-height:1.55
 }
-.projects {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:20px
-}
-.project {
-  height:auto;
-  aspect-ratio:1.28;
-  position:relative;
-  overflow:hidden;
-  isolation:isolate
-}
-.product-copy {
-  position:relative;
-  z-index:3;
-  padding:42px;
-  height:100%;
-  display:flex;
-  align-items:flex-start;
-  flex-direction:column
-}
-.product-copy small {
-  font-size:12px;
-  opacity:.85
-}
-.product-copy {
-  justify-content:center;
-}
-.product-copy small {
-  position:absolute;
-  top:30px;
-}
-.product-copy h3 {
-  font-family:Georgia,serif;
-  font-weight:400;
-  font-size:52px;
-  letter-spacing:-.055em;
-  margin-top:0
-}
-.product-copy p {
-  font-size:20px;
-  line-height:1.35;
-  margin-top:10px;
-  color:inherit
-}
-.project-open {
-  background:none;
-  color:inherit;
-  border:0;
-  border-bottom:1px solid currentColor;
-  padding:0 0 5px;
-  margin-top:25px;
-  font-size:14px;
-  display:flex;
-  gap:30px;
-  align-items:center
-}
-.project-open:after {
-  content:'';
-  position:absolute;
-  inset:0;
-  z-index:5
-}
-.project-open:hover {
-  opacity:.75
-}
-.product-bottom {
-  position:absolute;
-  bottom:27px;
-  left:42px;
-  right:auto;
-  font-size:11px;
-  opacity:.6;
-  z-index:3
-}
-.breathe {
-  background:radial-gradient(ellipse at 80% 30%,#31586c 0%,#173644 40%,#0c202c 80%);
-  color:#f8faff
-}
-.breathe:after {
-  content:'';
-  position:absolute;
-  inset:0;
-  background:linear-gradient(90deg,#07192366,transparent 57%);
-  z-index:1
-}
-.camera {
-  background:#e9e0d0;
-  color:#20242b
-}
-.project>.product-scene {
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  object-fit:cover
-}
-.camera:after {
-  content:'';
-  position:absolute;
-  inset:0;
-  background:linear-gradient(90deg,#f4ebda99,transparent 57%);
-  z-index:1
-}
 .services {
   padding-top:88px
 }
@@ -443,9 +339,6 @@ h1 {
   font-size:16px;
   font-weight:400;
   margin:0 11px
-}
-.product-proof {
-  border-top:1px solid var(--line)
 }
 .process ol {
   display:grid;
@@ -642,53 +535,6 @@ textarea::placeholder {
   font-size:12px;
   color:var(--muted)
 }
-dialog {
-  border:1px solid var(--line);
-  border-radius:20px;
-  padding:45px;
-  width:min(540px,calc(100% - 32px));
-  color:var(--ink);
-  background:var(--paper);
-  box-shadow:0 30px 100px #1114
-}
-dialog::backdrop {
-  background:#18243088;
-  backdrop-filter:blur(6px)
-}
-dialog h2 {
-  font-size:45px;
-  margin:12px 0 20px
-}
-dialog p {
-  margin-bottom:25px
-}
-dialog small {
-  color:var(--muted)
-}
-.dialog-close {
-  position:absolute;
-  top:12px;
-  right:15px;
-  width:38px;
-  height:38px;
-  border:0;
-  background:transparent;
-  font-size:30px
-}
-.app-icon {
-  border-radius:20px;
-  margin-bottom:20px
-}
-.dialog-photo {
-  height:180px;
-  width:100%;
-  object-fit:cover;
-  margin-bottom:25px;
-  border-radius:8px
-}
-body:has(dialog[open]) {
-  overflow:hidden
-}
 .hero-copy {
   animation:arrive .7s ease-out both
 }
@@ -746,22 +592,6 @@ body:has(dialog[open]) {
   }
   .section-head>p,.section-head>div {
     width:290px
-  }
-  .product-copy {
-    padding:30px
-  }
-  .product-copy {
-  justify-content:center;
-}
-.product-copy small {
-  position:absolute;
-  top:30px;
-}
-.product-copy h3 {
-    font-size:45px
-  }
-  .project {
-    height:470px
   }
   .service-grid article {
     padding-inline:23px
@@ -857,32 +687,6 @@ body:has(dialog[open]) {
   }
   .section-head h2 {
     font-size:37px
-  }
-  .project {
-    height:420px
-  }
-  .product-copy {
-    padding:24px
-  }
-  .product-copy {
-  justify-content:center;
-}
-.product-copy small {
-  position:absolute;
-  top:30px;
-}
-.product-copy h3 {
-    font-size:38px
-  }
-  .product-copy p {
-    font-size:17px
-  }
-  .product-bottom {
-    display:none
-  }
-  .project-open {
-    font-size:12px;
-    gap:15px
   }
   .service-grid {
     margin-top:35px
@@ -1015,32 +819,6 @@ body:has(dialog[open]) {
     margin-top:22px;
     max-width:350px
   }
-  .projects {
-    grid-template-columns:1fr;
-    gap:18px
-  }
-  .project {
-    height:440px
-  }
-  .product-copy {
-    padding:30px
-  }
-  .product-copy {
-  justify-content:center;
-}
-.product-copy small {
-  position:absolute;
-  top:30px;
-}
-.product-copy h3 {
-    font-size:48px
-  }
-  .product-copy p {
-    font-size:20px
-  }
-  .project-open {
-    font-size:14px
-  }
   .service-grid {
     grid-template-columns:1fr;
     gap:30px
@@ -1153,12 +931,6 @@ body:has(dialog[open]) {
     display:block;
     margin-top:20px
   }
-  dialog {
-    padding:35px 25px
-  }
-  dialog h2 {
-    font-size:38px
-  }
 }
 @media(prefers-reduced-motion:reduce) {
   html {
@@ -1170,45 +942,6 @@ body:has(dialog[open]) {
   }
 }
 
-.project>.product-scene {
-  transition:transform .65s cubic-bezier(.2,.65,.3,1);
-}
-.project:hover>.product-scene {
-  transform:scale(1.035);
-}
-.product-copy p {
-  max-width:46%;
-}
-@media(min-width:561px) and (max-width:1000px) {
-  .product-copy {padding:22px;}
-  .product-copy h3 {font-size:34px;}
-  .product-copy p {font-size:15px;}
-  .product-copy small {top:20px;font-size:11px;}
-  .project-open {font-size:12px;gap:12px;}
-  .product-bottom {display:none;}
-}
-@media(max-width:560px) {
-  .product-copy {padding:24px;}
-  .product-copy h3 {font-size:36px;}
-  .product-copy small {top:22px;}
-  .product-copy p {font-size:16px;max-width:45%;}
-  .project-open {font-size:12px;gap:15px;margin-top:20px;}
-}
-@media(prefers-reduced-motion:reduce) {
-  .project:hover>.product-scene {transform:none;}
-}
-.project {
-  min-width:0;
-  width:100%;
-  height:auto;
-  aspect-ratio:1.28;
-}
-@media(max-width:560px) {
-  .project {aspect-ratio:1.05;}
-  .product-copy h3 {font-size:32px;}
-  .project>.product-scene {object-position:58% center;}
-  .product-copy p {font-size:14px;max-width:47%;}
-}
 .archive-page {padding-block:55px 95px;}
 .archive-intro {max-width:780px;margin-bottom:65px;}
 .archive-intro h1 {margin:35px 0 25px;font-size:clamp(52px,7vw,96px);}

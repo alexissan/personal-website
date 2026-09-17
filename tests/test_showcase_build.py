@@ -68,9 +68,9 @@ class ShowcaseBuildTests(unittest.TestCase):
         spanish = (ROOT / "index.html").read_text()
         english = (ROOT / "en/index.html").read_text()
         self.assertLess(spanish.index('href="#solutions"'), spanish.index('href="/showcase/"'))
-        self.assertLess(spanish.index('href="/showcase/"'), spanish.index('href="#projects"'))
+        self.assertLess(spanish.index('href="/showcase/"'), spanish.index('href="#studio"'))
         self.assertLess(english.index('href="#solutions"'), english.index('href="/en/showcase/"'))
-        self.assertLess(english.index('href="/en/showcase/"'), english.index('href="#projects"'))
+        self.assertLess(english.index('href="/en/showcase/"'), english.index('href="#studio"'))
 
     def test_showcase_assets_and_language_alternates_exist(self):
         for relative in [
