@@ -7,3 +7,16 @@ functions
 .claude
 .wrangler
 .DS_Store
+
+docs
+scripts
+grow
+
+brand
+
+.gitignore
+.assetsignore
+.env*
+.dev.vars*
+
+.gitattributes

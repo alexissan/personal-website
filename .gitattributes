@@ -1,0 +1,8 @@
+*.pdf binary
+*.png binary
+*.jpg binary
+*.JPG binary
+*.ttf binary
+*.woff2 binary
+*.zip binary
+brand/fonts/*-OFL.txt -whitespace

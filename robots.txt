@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /lab/
+Disallow: /cleaning-windows/
+Disallow: /api/
+Disallow: /brand/
+Disallow: /grow/
+
+Sitemap: https://alexissantos.dev/sitemap.xml
