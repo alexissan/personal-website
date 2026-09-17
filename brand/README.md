@@ -13,6 +13,8 @@ Open `index.html` for the visual overview, or `brand-guide.pdf` for the six-page
 - `print/business-cards-es-en.pdf`: Spanish front/back followed by English front/back. Finished size 85 × 55 mm, 3 mm bleed on each edge, 91 × 61 mm page size.
 - `print/flyers-a5-es-en.pdf`: Spanish then English. Finished size 148 × 210 mm, 3 mm bleed, 154 × 216 mm page size.
 - `source/build-brand.py`: generates the vector artwork, tokens, fonts and PDFs. Dependencies: fonttools, brotli, reportlab, svglib, pypdf and qrcode. It also publishes the website's logo, favicon and self-hosted fonts to `assets/studio/`.
+- `source/build-og-card.py`: renders the 1200 × 630 share cards that WhatsApp, iMessage and social networks show for the Spanish and English home pages, into `assets/studio/og-es.jpg` and `og-en.jpg`. Dependency: Pillow. `OG_VARIANT=light` renders the pearl version.
+- `campaigns/local-business-es/`: the black-and-white A5 flyer for local businesses, with its print-ready PDFs, preview and `LEEME.txt`. `source/build-local-flyer.py` regenerates it.
 
 ## Rules to keep it recognisable
 
