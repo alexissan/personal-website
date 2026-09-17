@@ -19,6 +19,8 @@ class ShowcaseBuildTests(unittest.TestCase):
             ("en/showcase/nexo-maintenance/index.html", "Nexo Maintenance", "Fictional case"),
             ("showcase/mesa-clara/index.html", "Mesa Clara", "Caso ficticio"),
             ("en/showcase/mesa-clara/index.html", "Mesa Clara", "Fictional case"),
+            ("showcase/ladera-norte/index.html", "Ladera Norte", "Caso ficticio"),
+            ("en/showcase/ladera-norte/index.html", "Ladera Norte", "Fictional case"),
         ]
         for relative, heading, label in cases:
             html = (ROOT / relative).read_text()
@@ -30,6 +32,8 @@ class ShowcaseBuildTests(unittest.TestCase):
             "en/showcase/nexo-maintenance/index.html",
             "showcase/mesa-clara/index.html",
             "en/showcase/mesa-clara/index.html",
+            "showcase/ladera-norte/index.html",
+            "en/showcase/ladera-norte/index.html",
         ]:
             html = (ROOT / relative).read_text()
             self.assertEqual(html.count('class="stage-control"'), 6)
@@ -43,10 +47,14 @@ class ShowcaseBuildTests(unittest.TestCase):
         self.assertIn('href="/en/showcase/"', english_home)
         self.assertIn('href="/showcase/mesa-clara/"', spanish_home)
         self.assertIn('href="/en/showcase/mesa-clara/"', english_home)
+        self.assertIn('href="/showcase/ladera-norte/"', spanish_home)
+        self.assertIn('href="/en/showcase/ladera-norte/"', english_home)
         self.assertIn('href="/showcase/nexo-mantenimiento/"', spanish_showcase)
         self.assertIn('href="/en/showcase/nexo-maintenance/"', english_showcase)
         self.assertIn('href="/showcase/mesa-clara/"', spanish_showcase)
         self.assertIn('href="/en/showcase/mesa-clara/"', english_showcase)
+        self.assertIn('href="/showcase/ladera-norte/"', spanish_showcase)
+        self.assertIn('href="/en/showcase/ladera-norte/"', english_showcase)
 
     def test_showcase_is_second_in_navigation(self):
         spanish = (ROOT / "index.html").read_text()
@@ -64,6 +72,7 @@ class ShowcaseBuildTests(unittest.TestCase):
             "assets/showcase/nexo/evidence-before.webp",
             "assets/showcase/nexo/evidence-after.webp",
             "assets/showcase/mesa-clara/restaurant.webp",
+            "assets/showcase/ladera-norte/finance-desk.webp",
         ]:
             self.assertTrue((ROOT / relative).is_file(), relative)
         spanish = (ROOT / "showcase/nexo-mantenimiento/index.html").read_text()
@@ -87,6 +96,16 @@ class ShowcaseBuildTests(unittest.TestCase):
             self.assertIn('/assets/showcase/mesa-clara/restaurant.webp', html)
             self.assertIn('class="restaurant-desktop"', html)
             self.assertIn('class="booking-phone"', html)
+
+        spanish_invoice = (ROOT / "showcase/ladera-norte/index.html").read_text()
+        english_invoice = (ROOT / "en/showcase/ladera-norte/index.html").read_text()
+        self.assertIn('hreflang="en" href="https://alexissantos.dev/en/showcase/ladera-norte/"', spanish_invoice)
+        self.assertIn('hreflang="es" href="https://alexissantos.dev/showcase/ladera-norte/"', english_invoice)
+        for html, review_label in [(spanish_invoice, 'REVISIÓN HUMANA'), (english_invoice, 'HUMAN REVIEW')]:
+            self.assertIn('/assets/showcase/ladera-norte/finance-desk.webp', html)
+            self.assertIn('class="invoice-desktop"', html)
+            self.assertIn('class="approval-phone"', html)
+            self.assertIn(review_label, html)
 
 
 if __name__ == "__main__":

@@ -46,9 +46,9 @@ SHOWCASE = {
         'nav': 'Demos',
         'index_title': 'Demostraciones',
         'index_intro': 'Así puede funcionar una solución de IA cuando se diseña alrededor del trabajo real de un negocio.',
-        'index_note': 'Un primer caso en detalle. Después vendrán reservas, facturas, gestión de propiedades y servicios profesionales.',
+        'index_note': 'Tres casos detallados para mantenimiento, reservas y administración. Después vendrán propiedades y servicios profesionales.',
         'home_title': 'Mira cómo funcionaría.',
-        'home_intro': 'Un caso visual, paso a paso, de IA integrada en un negocio de mantenimiento.',
+        'home_intro': 'Casos visuales, paso a paso, de IA integrada en operaciones reales.',
         'case_name': 'Nexo Mantenimiento',
         'case_title': 'Del primer mensaje al trabajo facturado.',
         'case_intro': 'Una solución integrada para recibir una incidencia, entenderla, organizar la visita y preparar toda la documentación sin perder el control humano.',
@@ -87,9 +87,9 @@ SHOWCASE = {
         'nav': 'Showcase',
         'index_title': 'Showcase',
         'index_intro': 'See how an AI solution can work when it is designed around the real operations of a business.',
-        'index_note': 'One detailed case to begin with. Restaurant bookings, invoice processing, property management and professional services come next.',
+        'index_note': 'Three detailed cases across maintenance, bookings and administration. Property management and professional services come next.',
         'home_title': 'See how it could work.',
-        'home_intro': 'A visual, step-by-step case of AI integrated into a maintenance business.',
+        'home_intro': 'Visual, step-by-step cases of AI integrated into real operations.',
         'case_name': 'Nexo Maintenance',
         'case_title': 'From the first message to an invoiced job.',
         'case_intro': 'An integrated solution that receives a fault report, understands it, organises the visit and prepares the paperwork while people retain control.',
@@ -180,6 +180,61 @@ RESTAURANT = {
     },
 }
 
+INVOICES = {
+    'es': {
+        'label': 'Caso ficticio',
+        'name': 'Ladera Norte',
+        'eyebrow': 'IA para facturas y compras',
+        'title': 'De una factura adjunta a un registro preparado.',
+        'intro': 'Una solución que recibe documentos, extrae los datos, cruza cada factura con pedidos y proveedores y deja las diferencias en manos del equipo.',
+        'short': 'Facturas organizadas al llegar, datos comprobados y excepciones claras antes de registrar nada.',
+        'explore': 'Explorar el caso',
+        'how': 'Cada factura,<br>con contexto y control.',
+        'how_intro': 'La IA lee y organiza. Las reglas comparan importes, pedidos y proveedores. Cuando algo no encaja, una persona decide antes de que el dato llegue a contabilidad.',
+        'product_title': 'El documento y sus datos,<br>lado a lado.',
+        'product_intro': 'Una bandeja para el equipo financiero, revisión visual del documento y aprobaciones rápidas cuando aparece una diferencia.',
+        'before': 'Antes',
+        'before_text': 'Adjuntos repartidos entre correos, datos copiados a mano y diferencias descubiertas cuando el cierre ya está encima.',
+        'after': 'Con Ladera Norte',
+        'after_text': 'Cada factura entra en una cola, conserva su documento original y muestra exactamente qué necesita revisión.',
+        'result_items': ['La información se captura una sola vez', 'Cada excepción explica qué regla no encaja', 'El registro final sigue necesitando aprobación humana'],
+        'stages': [
+            ('received', '01', 'Factura recibida', 'El adjunto entra en una bandeja única.'),
+            ('extracted', '02', 'Datos extraídos', 'La IA identifica proveedor, fechas, impuestos e importe.'),
+            ('matched', '03', 'Proveedor encontrado', 'La factura se vincula con su ficha y pedido.'),
+            ('checked', '04', 'Reglas comprobadas', 'NIF, duplicados y totales se revisan automáticamente.'),
+            ('exception', '05', 'Diferencia revisada', 'Un importe distinto queda pendiente de una persona.'),
+            ('ready', '06', 'Registro preparado', 'La entrada queda lista para aprobar y sincronizar.'),
+        ],
+    },
+    'en': {
+        'label': 'Fictional case',
+        'name': 'Ladera Norte',
+        'eyebrow': 'AI for invoices and purchasing',
+        'title': 'From an invoice attachment to a prepared entry.',
+        'intro': 'A solution that receives documents, extracts the data, matches every invoice with suppliers and purchase orders, and leaves discrepancies with the team.',
+        'short': 'Invoices organised on arrival, data checked and clear exceptions before anything is recorded.',
+        'explore': 'Explore the case',
+        'how': 'Every invoice,<br>with context and control.',
+        'how_intro': 'AI reads and organises. Rules compare amounts, orders and suppliers. When something does not match, a person decides before the data reaches the accounting system.',
+        'product_title': 'The document and its data,<br>side by side.',
+        'product_intro': 'An inbox for the finance team, visual document review and quick approvals when a discrepancy appears.',
+        'before': 'Before',
+        'before_text': 'Attachments spread across inboxes, fields copied by hand and discrepancies discovered when the month-end deadline is already close.',
+        'after': 'With Ladera Norte',
+        'after_text': 'Every invoice enters one queue, keeps its original document and shows exactly what needs attention.',
+        'result_items': ['Information is captured once', 'Every exception explains which rule failed', 'The final entry still requires human approval'],
+        'stages': [
+            ('received', '01', 'Invoice received', 'The attachment enters one shared inbox.'),
+            ('extracted', '02', 'Data extracted', 'AI identifies the supplier, dates, tax and amount.'),
+            ('matched', '03', 'Supplier matched', 'The invoice connects to its supplier and purchase order.'),
+            ('checked', '04', 'Rules checked', 'Tax ID, duplicates and totals are checked automatically.'),
+            ('exception', '05', 'Difference reviewed', 'A mismatched amount waits for a person.'),
+            ('ready', '06', 'Entry prepared', 'The entry is ready to approve and sync.'),
+        ],
+    },
+}
+
 
 def shared_head(lang, title, description, canonical, alternate, image='/assets/showcase/nexo/field-service.webp'):
     return f'''<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{escape(title)} — AlexisSantos.dev</title><meta name="description" content="{escape(description, quote=True)}"><link rel="canonical" href="https://alexissantos.dev{canonical}"><link rel="alternate" hreflang="es" href="https://alexissantos.dev{canonical if lang == 'es' else alternate}"><link rel="alternate" hreflang="en" href="https://alexissantos.dev{alternate if lang == 'es' else canonical}"><link rel="alternate" hreflang="x-default" href="https://alexissantos.dev{canonical if lang == 'es' else alternate}"><meta property="og:title" content="{escape(title, quote=True)}"><meta property="og:description" content="{escape(description, quote=True)}"><meta property="og:type" content="website"><meta property="og:url" content="https://alexissantos.dev{canonical}"><meta property="og:image" content="https://alexissantos.dev{image}"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#f5f6f8"><link rel="icon" href="/assets/studio/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/studio/studio.css"><link rel="stylesheet" href="/assets/showcase/showcase.css"><script src="/assets/studio/studio.js" defer></script><script src="/assets/showcase/showcase.js" defer></script></head>'''
@@ -233,6 +288,29 @@ def restaurant_product_mockup(lang):
     return f'''<section class="product-showcase restaurant-product"><div class="wrap product-showcase-intro"><div><span class="showcase-kicker">{'PRODUCTO' if es else 'PRODUCT'}</span><h2>{s['product_title']}</h2></div><p>{s['product_intro']}</p></div><div class="wrap restaurant-devices"><div class="restaurant-desktop"><div class="desktop-bar"><span></span><span></span><span></span><b>MESA CLARA / {'SALA' if es else 'FLOOR'}</b></div><div class="host-screen"><aside><strong>MESA<br>CLARA</strong><nav><span class="active">{'Sala' if es else 'Floor'}</span><span>{'Reservas' if es else 'Bookings'} <i>34</i></span><span>{'Lista de espera' if es else 'Waitlist'} <i>3</i></span><span>{'Clientes' if es else 'Guests'}</span></nav><small>{'Servicio de cena' if es else 'Dinner service'} · 68%</small></aside><main><header><div><small>{'SÁBADO, 21 SEP' if es else 'SATURDAY, 21 SEP'}</small><h3>{'Servicio de cena' if es else 'Dinner service'}</h3></div><div class="service-switch"><span>19:00</span><b>21:00</b><span>22:30</span></div></header><div class="floor-layout"><div class="table t1"><b>01</b><span>2</span></div><div class="table t2 occupied"><b>04</b><span>4</span></div><div class="table t3"><b>06</b><span>2</span></div><div class="table t4 reserved"><b>08</b><span>4</span><i>21:00</i></div><div class="table t5 occupied"><b>10</b><span>6</span></div><div class="table t6"><b>12</b><span>4</span></div><div class="room-label">{'TERRAZA' if es else 'TERRACE'}</div></div><aside class="booking-rail"><header><b>21:00</b><span>12 {'reservas' if es else 'bookings'}</span></header><article class="highlight"><div><b>Lucía R.</b><small>4 · Mesa 08</small></div><em>!</em><p>{'Alergia · Cumpleaños' if es else 'Allergy · Birthday'}</p></article><article><div><b>Mario D.</b><small>2 · Mesa 06</small></div><p>{'Confirmada' if es else 'Confirmed'}</p></article><article><div><b>Sara P.</b><small>6 · Mesa 10</small></div><p>{'Confirmada' if es else 'Confirmed'}</p></article><button>{'Nueva reserva' if es else 'New booking'} ＋</button></aside></main></div></div><div class="booking-phone"><div class="phone-speaker"></div><div class="booking-phone-screen"><header><span>9:41</span><b>MESA CLARA</b><span>•••</span></header><div class="booking-success"><span>✓</span><small>{'RESERVA CONFIRMADA' if es else 'BOOKING CONFIRMED'}</small><h3>{'Nos vemos el sábado' if es else 'See you on Saturday'}</h3></div><dl><div><dt>{'FECHA' if es else 'DATE'}</dt><dd>21 SEP</dd></div><div><dt>{'HORA' if es else 'TIME'}</dt><dd>21:00</dd></div><div><dt>{'PERSONAS' if es else 'GUESTS'}</dt><dd>4</dd></div><div><dt>{'MESA' if es else 'TABLE'}</dt><dd>08</dd></div></dl><div class="booking-note"><b>{'Hemos anotado tu alergia' if es else 'We’ve noted your allergy'}</b><p>{'El equipo de cocina la revisará antes del servicio.' if es else 'The kitchen team will review it before service.'}</p></div><button>{'Modificar reserva' if es else 'Manage booking'} →</button><small class="booking-address">Mesa Clara · {'Costa de Tenerife' if es else 'Tenerife coast'}</small></div></div></div></section>'''
 
 
+def invoice_layers(lang):
+    es = lang == 'es'
+    return f'''
+    <div class="stage-layer" data-stage-panel="received"><div class="invoice-mail"><span class="invoice-file">PDF</span><div><span class="ui-kicker">{'FACTURA RECIBIDA' if es else 'INVOICE RECEIVED'}</span><h3>factura_AE-1842.pdf</h3><p>Atlántico Envases · 09:18</p></div><b>1.384,20 €</b></div></div>
+    <div class="stage-layer" data-stage-panel="extracted"><div class="invoice-extract"><span class="ui-kicker">{'IA · DATOS EXTRAÍDOS' if es else 'AI · DATA EXTRACTED'}</span><div><label>{'Proveedor' if es else 'Supplier'}<b>Atlántico Envases</b></label><label>{'Factura' if es else 'Invoice'}<b>AE-1842</b></label><label>{'Fecha' if es else 'Date'}<b>17 SEP 2026</b></label><label>{'Total' if es else 'Total'}<b>1.384,20 €</b></label></div><small>12 {'campos detectados · listos para revisar' if es else 'fields detected · ready to review'}</small></div></div>
+    <div class="stage-layer" data-stage-panel="matched"><div class="supplier-match"><span class="match-mark">✓</span><span class="ui-kicker">{'PROVEEDOR ENCONTRADO' if es else 'SUPPLIER MATCHED'}</span><h3>Atlántico Envases S.L.</h3><p>ES B76340128 · {'Activo' if es else 'Active'}</p><dl><div><dt>{'Pedido' if es else 'Purchase order'}</dt><dd>PO-0931</dd></div><div><dt>{'Centro' if es else 'Cost centre'}</dt><dd>{'Almacén Norte' if es else 'North warehouse'}</dd></div></dl></div></div>
+    <div class="stage-layer" data-stage-panel="checked"><div class="rule-checks"><span class="ui-kicker">{'COMPROBACIONES' if es else 'CHECKS'}</span><ul><li><span>✓</span>{'NIF del proveedor' if es else 'Supplier tax ID'}<b>{'Válido' if es else 'Valid'}</b></li><li><span>✓</span>{'Factura duplicada' if es else 'Duplicate invoice'}<b>{'No encontrada' if es else 'Not found'}</b></li><li><span>✓</span>{'Cálculo de impuestos' if es else 'Tax calculation'}<b>{'Correcto' if es else 'Correct'}</b></li><li class="warning"><span>!</span>{'Importe del pedido' if es else 'Purchase order amount'}<b>{'Diferencia' if es else 'Mismatch'}</b></li></ul></div></div>
+    <div class="stage-layer" data-stage-panel="exception"><div class="invoice-exception"><span class="ui-kicker">{'REVISIÓN HUMANA' if es else 'HUMAN REVIEW'}</span><h3>{'El total no coincide' if es else 'The total does not match'}</h3><div><span>PO-0931<b>1.284,20 €</b></span><i>+100,00 €</i><span>AE-1842<b>1.384,20 €</b></span></div><p>{'Posible cargo de transporte no incluido en el pedido.' if es else 'Possible delivery charge not included in the order.'}</p><button type="button">{'Revisar factura' if es else 'Review invoice'} →</button></div></div>
+    <div class="stage-layer" data-stage-panel="ready"><div class="entry-ready"><span class="entry-mark">✓</span><span class="ui-kicker">{'REGISTRO PREPARADO' if es else 'ENTRY PREPARED'}</span><h3>AE-1842 · 1.384,20 €</h3><p>{'Aprobado por Laura M. · 10:04' if es else 'Approved by Laura M. · 10:04'}</p><div><span>{'Cuenta' if es else 'Account'}<b>600200</b></span><span>{'Vencimiento' if es else 'Due date'}<b>17 OCT</b></span></div><button type="button">{'Sincronizar con contabilidad' if es else 'Sync to accounting'} →</button></div></div>'''
+
+
+def invoice_mosaic(lang, context='case'):
+    s = INVOICES[lang]
+    controls = ''.join(f'''<button class="stage-control" type="button" data-stage="{stage}" data-status="{escape(title, quote=True)} — {escape(description, quote=True)}"><span class="stage-number">{number}</span><span><b>{title}</b><small>{description}</small></span><span class="stage-arrow" aria-hidden="true">↗</span></button>''' for stage, number, title, description in s['stages'])
+    return f'''<div class="showcase-mosaic invoice-mosaic" data-showcase data-active-stage="received"><div class="showcase-panel"><img src="/assets/showcase/ladera-norte/finance-desk.webp" alt="" width="1536" height="1024" loading="{'eager' if context == 'case' else 'lazy'}"><div class="panel-shade"></div>{invoice_layers(lang)}<p class="showcase-status" aria-live="polite">{s['stages'][0][2]} — {s['stages'][0][3]}</p></div><div class="showcase-stage-list">{controls}</div></div>'''
+
+
+def invoice_product_mockup(lang):
+    s = INVOICES[lang]
+    es = lang == 'es'
+    return f'''<section class="product-showcase invoice-product"><div class="wrap product-showcase-intro"><div><span class="showcase-kicker">{'PRODUCTO' if es else 'PRODUCT'}</span><h2>{s['product_title']}</h2></div><p>{s['product_intro']}</p></div><div class="wrap invoice-devices"><div class="invoice-desktop"><div class="desktop-bar"><span></span><span></span><span></span><b>LADERA NORTE / {'FACTURAS' if es else 'INVOICES'}</b></div><div class="finance-screen"><aside><strong>LADERA<br>NORTE</strong><nav><span class="active">{'Bandeja' if es else 'Inbox'} <i>18</i></span><span>{'Por revisar' if es else 'To review'} <i>3</i></span><span>{'Preparadas' if es else 'Prepared'} <i>12</i></span><span>{'Proveedores' if es else 'Suppliers'}</span></nav><small>{'Cierre de septiembre' if es else 'September close'}</small></aside><main><header><div><small>AE-1842 · {'RECIBIDA HOY' if es else 'RECEIVED TODAY'}</small><h3>Atlántico Envases</h3></div><span class="review-pill">{'REVISIÓN' if es else 'REVIEW'}</span></header><div class="invoice-workspace"><section class="document-preview"><div class="paper-brand"><span>AE</span><div><b>ATLÁNTICO</b><small>ENVASES</small></div></div><p>FACTURA · AE-1842</p><dl><div><dt>{'FECHA' if es else 'DATE'}</dt><dd>17.09.2026</dd></div><div><dt>{'PEDIDO' if es else 'ORDER'}</dt><dd>PO-0931</dd></div></dl><div class="invoice-lines"><i></i><i></i><i></i><i></i></div><div class="paper-total"><span>TOTAL</span><b>1.384,20 €</b></div></section><section class="field-review"><div class="field-review-head"><span>✦</span><div><b>{'Datos preparados por IA' if es else 'AI-prepared data'}</b><small>12 {'campos · revisa la diferencia' if es else 'fields · review the discrepancy'}</small></div></div><dl><div><dt>{'Proveedor' if es else 'Supplier'}</dt><dd>Atlántico Envases S.L. <span>✓</span></dd></div><div><dt>{'N.º factura' if es else 'Invoice no.'}</dt><dd>AE-1842 <span>✓</span></dd></div><div><dt>{'Pedido' if es else 'Purchase order'}</dt><dd>PO-0931 <span>✓</span></dd></div><div class="field-warning"><dt>{'Total' if es else 'Total'}</dt><dd>1.384,20 € <span>!</span></dd><small>100,00 € {'sobre el pedido' if es else 'above order'}</small></div><div><dt>{'Vencimiento' if es else 'Due date'}</dt><dd>17 OCT 2026 <span>✓</span></dd></div></dl><footer><button>{'Enviar al proveedor' if es else 'Ask supplier'}</button><button class="approve-invoice">{'Aprobar diferencia' if es else 'Approve difference'} →</button></footer></section></div></main></div></div><div class="approval-phone"><div class="phone-speaker"></div><div class="approval-screen"><header><span>9:41</span><b>LADERA</b><span>•••</span></header><div class="approval-head"><small>{'REQUIERE TU REVISIÓN' if es else 'NEEDS YOUR REVIEW'}</small><h3>Atlántico Envases</h3><p>AE-1842 · 1.384,20 €</p></div><div class="approval-difference"><span>{'DIFERENCIA' if es else 'DIFFERENCE'}</span><b>+100,00 €</b><p>{'Cargo de transporte detectado' if es else 'Delivery charge detected'}</p></div><dl><div><dt>{'Pedido' if es else 'Order'}</dt><dd>1.284,20 €</dd></div><div><dt>{'Factura' if es else 'Invoice'}</dt><dd>1.384,20 €</dd></div></dl><button>{'Aprobar' if es else 'Approve'} →</button><a>{'Ver documento' if es else 'View document'}</a></div></div></div></section>'''
+
+
 def showcase_shell_parts(lang, es_href, en_href):
     home_path = 'index.html' if lang == 'es' else 'en/index.html'
     home_url = '/' if lang == 'es' else '/en/'
@@ -251,10 +329,12 @@ def build_showcase_page(lang):
     alternate = '/en/showcase/' if es else '/showcase/'
     case_url = '/showcase/nexo-mantenimiento/' if es else '/en/showcase/nexo-maintenance/'
     restaurant_url = '/showcase/mesa-clara/' if es else '/en/showcase/mesa-clara/'
+    invoice_url = '/showcase/ladera-norte/' if es else '/en/showcase/ladera-norte/'
     restaurant = RESTAURANT[lang]
+    invoice = INVOICES[lang]
     header, footer = showcase_shell_parts(lang, '/showcase/', '/en/showcase/')
     head = shared_head(lang, s['index_title'], s['index_intro'], canonical, alternate)
-    return f'''{head}<body id="top"><a class="skip" href="#main">{COPY[lang]['skip']}</a>{header}<main id="main" class="showcase-page"><section class="showcase-index-hero wrap"><span class="showcase-kicker">AlexisSantos.dev / {s['nav']}</span><h1>{s['index_title']}.</h1><div><p>{s['index_intro']}</p><small>{s['index_note']}</small></div></section><section class="wrap showcase-feature"><div class="showcase-feature-head"><div><span class="fictional-label">{s['label']}</span><span>{s['eyebrow']}</span></div><h2>{s['case_name']}</h2><p>{s['case_short']}</p><a class="text-link" href="{case_url}">{s['explore']} {ARROW}</a></div>{showcase_mosaic(lang, 'index')}</section><section class="wrap showcase-feature restaurant-feature"><div class="showcase-feature-head"><div><span class="fictional-label">{restaurant['label']}</span><span>{restaurant['eyebrow']}</span></div><h2>{restaurant['name']}</h2><p>{restaurant['short']}</p><a class="text-link" href="{restaurant_url}">{restaurant['explore']} {ARROW}</a></div>{restaurant_mosaic(lang, 'index')}</section><section class="showcase-future wrap"><span>{'Próximamente' if es else 'Coming next'}</span><p>{'Procesado de facturas · Gestión de propiedades · Servicios profesionales' if es else 'Invoice processing · Property management · Professional services'}</p></section></main>{footer}</body></html>'''
+    return f'''{head}<body id="top"><a class="skip" href="#main">{COPY[lang]['skip']}</a>{header}<main id="main" class="showcase-page"><section class="showcase-index-hero wrap"><span class="showcase-kicker">AlexisSantos.dev / {s['nav']}</span><h1>{s['index_title']}.</h1><div><p>{s['index_intro']}</p><small>{s['index_note']}</small></div></section><section class="wrap showcase-feature"><div class="showcase-feature-head"><div><span class="fictional-label">{s['label']}</span><span>{s['eyebrow']}</span></div><h2>{s['case_name']}</h2><p>{s['case_short']}</p><a class="text-link" href="{case_url}">{s['explore']} {ARROW}</a></div>{showcase_mosaic(lang, 'index')}</section><section class="wrap showcase-feature restaurant-feature"><div class="showcase-feature-head"><div><span class="fictional-label">{restaurant['label']}</span><span>{restaurant['eyebrow']}</span></div><h2>{restaurant['name']}</h2><p>{restaurant['short']}</p><a class="text-link" href="{restaurant_url}">{restaurant['explore']} {ARROW}</a></div>{restaurant_mosaic(lang, 'index')}</section><section class="wrap showcase-feature invoice-feature"><div class="showcase-feature-head"><div><span class="fictional-label">{invoice['label']}</span><span>{invoice['eyebrow']}</span></div><h2>{invoice['name']}</h2><p>{invoice['short']}</p><a class="text-link" href="{invoice_url}">{invoice['explore']} {ARROW}</a></div>{invoice_mosaic(lang, 'index')}</section><section class="showcase-future wrap"><span>{'Próximamente' if es else 'Coming next'}</span><p>{'Gestión de propiedades · Servicios profesionales' if es else 'Property management · Professional services'}</p></section></main>{footer}</body></html>'''
 
 
 def build_nexo_page(lang):
@@ -281,6 +361,19 @@ def build_restaurant_page(lang):
     head = shared_head(lang, s['name'], s['intro'], canonical, alternate, '/assets/showcase/mesa-clara/restaurant.webp')
     results = ''.join(f'<li><span>0{i}</span>{item}</li>' for i, item in enumerate(s['result_items'], 1))
     return f'''{head}<body id="top"><a class="skip" href="#main">{COPY[lang]['skip']}</a>{header}<main id="main" class="showcase-page restaurant-case"><section class="case-hero wrap"><a class="case-back" href="{index_url}">← {'Todas las demostraciones' if es else 'All showcase cases'}</a><div class="case-heading"><div><span class="fictional-label">{s['label']}</span><span>{s['eyebrow']}</span></div><h1>{s['name']}</h1><p>{s['title']} {s['intro']}</p></div></section><section class="wrap case-demo">{restaurant_mosaic(lang, 'case')}</section><section class="case-explainer wrap"><div><span class="showcase-kicker">{'EL FLUJO' if es else 'THE WORKFLOW'}</span><h2>{s['how']}</h2></div><p>{s['how_intro']}</p></section>{restaurant_product_mockup(lang)}<section class="before-after wrap"><article><span>01 / {s['before'].upper()}</span><h3>{s['before']}</h3><p>{s['before_text']}</p></article><article><span>02 / {s['after'].upper()}</span><h3>{s['after']}</h3><p>{s['after_text']}</p></article></section><section class="case-results"><div class="wrap"><div><span class="showcase-kicker">{'RESULTADO' if es else 'OUTCOME'}</span><h2>{'Lo que cambia' if es else 'What changes'}.</h2></div><ol>{results}</ol></div></section><section class="case-cta wrap"><h2>{'¿Tu equipo pierde tiempo gestionando reservas?' if es else 'Does your team lose time managing bookings?'}</h2><div><p>{'Diseño el flujo alrededor de tu sala, horarios y forma de atender al cliente.' if es else 'I design the workflow around your room, opening hours and the way you serve guests.'}</p><a class="button" href="{contact_url}">{'Cuéntame cómo trabajas' if es else 'Tell me how you work'} {ARROW}</a></div></section></main>{footer}</body></html>'''
+
+
+def build_invoice_page(lang):
+    s = INVOICES[lang]
+    es = lang == 'es'
+    canonical = '/showcase/ladera-norte/' if es else '/en/showcase/ladera-norte/'
+    alternate = '/en/showcase/ladera-norte/' if es else '/showcase/ladera-norte/'
+    index_url = '/showcase/' if es else '/en/showcase/'
+    contact_url = '/#contact' if es else '/en/#contact'
+    header, footer = showcase_shell_parts(lang, '/showcase/ladera-norte/', '/en/showcase/ladera-norte/')
+    head = shared_head(lang, s['name'], s['intro'], canonical, alternate, '/assets/showcase/ladera-norte/finance-desk.webp')
+    results = ''.join(f'<li><span>0{i}</span>{item}</li>' for i, item in enumerate(s['result_items'], 1))
+    return f'''{head}<body id="top"><a class="skip" href="#main">{COPY[lang]['skip']}</a>{header}<main id="main" class="showcase-page invoice-case"><section class="case-hero wrap"><a class="case-back" href="{index_url}">← {'Todas las demostraciones' if es else 'All showcase cases'}</a><div class="case-heading"><div><span class="fictional-label">{s['label']}</span><span>{s['eyebrow']}</span></div><h1>{s['name']}</h1><p>{s['title']} {s['intro']}</p></div></section><section class="wrap case-demo">{invoice_mosaic(lang, 'case')}</section><section class="case-explainer wrap"><div><span class="showcase-kicker">{'EL FLUJO' if es else 'THE WORKFLOW'}</span><h2>{s['how']}</h2></div><p>{s['how_intro']}</p></section>{invoice_product_mockup(lang)}<section class="before-after wrap"><article><span>01 / {s['before'].upper()}</span><h3>{s['before']}</h3><p>{s['before_text']}</p></article><article><span>02 / {s['after'].upper()}</span><h3>{s['after']}</h3><p>{s['after_text']}</p></article></section><section class="case-results"><div class="wrap"><div><span class="showcase-kicker">{'RESULTADO' if es else 'OUTCOME'}</span><h2>{'Lo que cambia' if es else 'What changes'}.</h2></div><ol>{results}</ol></div></section><section class="case-cta wrap"><h2>{'¿Las facturas todavía pasan por demasiadas manos?' if es else 'Do invoices still pass through too many hands?'}</h2><div><p>{'Adapto el flujo a tus proveedores, reglas, aprobaciones y programa de contabilidad.' if es else 'I adapt the workflow to your suppliers, rules, approvals and accounting software.'}</p><a class="button" href="{contact_url}">{'Cuéntame cómo las gestionas' if es else 'Tell me how you handle them'} {ARROW}</a></div></section></main>{footer}</body></html>'''
 for lang,t in COPY.items():
  url='/' if lang=='es' else '/en/'
  nav=f'<a href="#solutions">{t["nav"][0]}</a><a href="{'/showcase/' if lang=='es' else '/en/showcase/'}">{SHOWCASE[lang]['nav']}</a>'
@@ -304,7 +397,7 @@ for lang,t in COPY.items():
 <section id="solutions" class="section wrap services"><div class="section-head"><h2>{t['services']}</h2><p>{t['serviceintro']}</p></div><div class="service-grid">{services}</div></section>
 <section class="demo-section"><div class="wrap demo-inner"><div><span class="status-pill"><span></span>{t['soon']}</span><h2>{t['demo']}</h2><p>{t['demointro']}</p></div><div class="demo-note"><ol class="integration-flow">{flow}</ol><p>{t['democopy']}</p><a class="text-link" href="#contact">{t['cta']} {ARROW}</a></div></div></section>
 <section class="section wrap process"><h2>{t['process']}</h2><ol>{steps}</ol></section>
-<section id="showcase" class="section wrap home-showcase"><div class="section-head showcase-home-head"><div><span class="fictional-label">{SHOWCASE[lang]['label']}</span><h2>{SHOWCASE[lang]['home_title']}</h2></div><div><p>{SHOWCASE[lang]['home_intro']}</p><a class="text-link" href="{'/showcase/' if lang=='es' else '/en/showcase/'}">{'Ver todas las demos' if lang=='es' else 'View all cases'} {ARROW}</a></div></div>{showcase_mosaic(lang, 'home')}<a class="home-case-teaser" href="{'/showcase/mesa-clara/' if lang=='es' else '/en/showcase/mesa-clara/'}"><img src="/assets/showcase/mesa-clara/restaurant.webp" alt="" width="1536" height="1024" loading="lazy"><span class="fictional-label">{RESTAURANT[lang]['label']}</span><div><small>{RESTAURANT[lang]['eyebrow']}</small><h3>Mesa Clara</h3><p>{RESTAURANT[lang]['short']}</p><b>{RESTAURANT[lang]['explore']} {ARROW}</b></div></a></section>
+<section id="showcase" class="section wrap home-showcase"><div class="section-head showcase-home-head"><div><span class="fictional-label">{SHOWCASE[lang]['label']}</span><h2>{SHOWCASE[lang]['home_title']}</h2></div><div><p>{SHOWCASE[lang]['home_intro']}</p><a class="text-link" href="{'/showcase/' if lang=='es' else '/en/showcase/'}">{'Ver todas las demos' if lang=='es' else 'View all cases'} {ARROW}</a></div></div>{showcase_mosaic(lang, 'home')}<a class="home-case-teaser" href="{'/showcase/mesa-clara/' if lang=='es' else '/en/showcase/mesa-clara/'}"><img src="/assets/showcase/mesa-clara/restaurant.webp" alt="" width="1536" height="1024" loading="lazy"><span class="fictional-label">{RESTAURANT[lang]['label']}</span><div><small>{RESTAURANT[lang]['eyebrow']}</small><h3>Mesa Clara</h3><p>{RESTAURANT[lang]['short']}</p><b>{RESTAURANT[lang]['explore']} {ARROW}</b></div></a><a class="home-case-teaser invoice-teaser" href="{'/showcase/ladera-norte/' if lang=='es' else '/en/showcase/ladera-norte/'}"><img src="/assets/showcase/ladera-norte/finance-desk.webp" alt="" width="1536" height="1024" loading="lazy"><span class="fictional-label">{INVOICES[lang]['label']}</span><div><small>{INVOICES[lang]['eyebrow']}</small><h3>Ladera Norte</h3><p>{INVOICES[lang]['short']}</p><b>{INVOICES[lang]['explore']} {ARROW}</b></div></a></section>
 <section id="projects" class="section wrap product-proof"><div class="section-head"><h2>{t['work']}</h2><p>{t['workintro']}</p></div><div class="projects"><article class="project breathe"><img class="product-scene" src="/assets/studio/breathe-scene.jpg" alt="" loading="lazy" width="1448" height="1086"><div class="product-copy"><small>{t['bcat']}</small><h3>Breathe Now</h3><p>{t['bdesc']}</p><button class="project-open" aria-label="{t['view']}: Breathe Now" data-dialog="breathe-detail">{t['view']} {ARROW}</button></div><span class="product-bottom">{'Respira. Para. Vuelve.' if lang=='es' else 'Breathe. Reset. Begin again.'}</span></article><article class="project camera"><img class="product-scene" src="/assets/studio/camera-scene.jpg" alt="" loading="lazy" width="1448" height="1086"><div class="product-copy"><small>{t['lcat']}</small><h3>Lean Cam</h3><p>{t['ldesc']}</p><button class="project-open" aria-label="{t['view']}: Lean Cam" data-dialog="camera-detail">{t['view']} {ARROW}</button></div><span class="product-bottom">{'Mira más. Decide menos.' if lang=='es' else 'See more. Do less.'}</span></article></div></section>
 <section id="studio" class="section wrap about"><div class="portrait"><img src="/photo.jpg" alt="Alexis Santos" loading="lazy" width="600" height="700"><span>{t['abouttag']}</span></div><div class="about-copy"><h2>{t['about']}</h2><p>{t['abouttext']}</p><p>{t['abouttext2']}</p><div class="social"><a href="https://www.linkedin.com/in/asantosp/">LinkedIn {ARROW}</a><a href="https://github.com/alexissan">GitHub {ARROW}</a><a href="https://x.com/deepfirstsearch">X {ARROW}</a></div></div></section>
 <section id="contact" class="contact-section"><div class="wrap contact-grid"><div><h2>{t['contact']}</h2><p class="contact-intro">{t['contactintro']}</p><div class="direct-email"><span>{t['direct']}</span><a href="mailto:alexis.santos.perez@gmail.com">alexis.santos.perez@gmail.com {ARROW}</a></div></div><form id="brief-form"><div class="form-row"><label>{t['name']}<input name="name" autocomplete="name" required maxlength="100"></label><label>{t['business']}<input name="business" autocomplete="organization" maxlength="150"></label></div><label>{t['need']}<textarea name="message" rows="4" required maxlength="3000" placeholder="{t['placeholder']}"></textarea></label><button class="button" type="submit">{t['send']} {ARROW}</button><p class="form-note">{t['emailnote']}</p><p class="privacy-note">{t['privacy']}</p><p id="form-status" role="status"></p><noscript><p>{t['direct']}: <a href="mailto:alexis.santos.perez@gmail.com">alexis.santos.perez@gmail.com</a></p></noscript></form></div></section>
@@ -321,12 +414,15 @@ for lang in ['es', 'en']:
     showcase_path = ROOT / ('showcase/index.html' if lang == 'es' else 'en/showcase/index.html')
     case_path = ROOT / ('showcase/nexo-mantenimiento/index.html' if lang == 'es' else 'en/showcase/nexo-maintenance/index.html')
     restaurant_path = ROOT / ('showcase/mesa-clara/index.html' if lang == 'es' else 'en/showcase/mesa-clara/index.html')
+    invoice_path = ROOT / ('showcase/ladera-norte/index.html' if lang == 'es' else 'en/showcase/ladera-norte/index.html')
     showcase_path.parent.mkdir(parents=True, exist_ok=True)
     case_path.parent.mkdir(parents=True, exist_ok=True)
     restaurant_path.parent.mkdir(parents=True, exist_ok=True)
+    invoice_path.parent.mkdir(parents=True, exist_ok=True)
     showcase_path.write_text(build_showcase_page(lang))
     case_path.write_text(build_nexo_page(lang))
     restaurant_path.write_text(build_restaurant_page(lang))
+    invoice_path.write_text(build_invoice_page(lang))
 
 import re
 from html import unescape
@@ -372,6 +468,6 @@ for lang in ['es', 'en']:
     archive = f'''<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title} — AlexisSantos.dev</title><meta name="description" content="{intro}"><link rel="canonical" href="https://alexissantos.dev{archive_url}"><link rel="alternate" hreflang="es" href="https://alexissantos.dev/articles/"><link rel="alternate" hreflang="en" href="https://alexissantos.dev/en/articles/"><link rel="icon" href="/assets/studio/favicon.svg"><link rel="stylesheet" href="/assets/studio/studio.css"><script src="/assets/studio/studio.js" defer></script></head><body id="top"><a class="skip" href="#main">{COPY[lang]['skip']}</a>{header}<main id="main" class="wrap archive-page"><div class="archive-intro"><a class="text-link" href="{home_url}">← {back}</a><h1>{title}.</h1><p>{intro}</p></div><div class="article-grid">{cards}</div></main>{footer}</body></html>'''
     (ROOT / archive_url.strip('/') / 'index.html').write_text(archive)
 
-public_paths = ["/", "/en/", "/showcase/", "/en/showcase/", "/showcase/nexo-mantenimiento/", "/en/showcase/nexo-maintenance/", "/showcase/mesa-clara/", "/en/showcase/mesa-clara/", "/articles/", "/en/articles/"] + [f"/articles/{entry[0]}/" for entry in entries]
+public_paths = ["/", "/en/", "/showcase/", "/en/showcase/", "/showcase/nexo-mantenimiento/", "/en/showcase/nexo-maintenance/", "/showcase/mesa-clara/", "/en/showcase/mesa-clara/", "/showcase/ladera-norte/", "/en/showcase/ladera-norte/", "/articles/", "/en/articles/"] + [f"/articles/{entry[0]}/" for entry in entries]
 sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(f"  <url><loc>https://alexissantos.dev{path}</loc></url>" for path in public_paths) + "\n</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sitemap)
