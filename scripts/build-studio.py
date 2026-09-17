@@ -41,6 +41,7 @@ ICONS=['<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c5 5 5 13 0 18-5-5-
 for lang,t in COPY.items():
  url='/' if lang=='es' else '/en/'
  nav=''.join(f'<a href="#{anchor}">{text}</a>' for anchor,text in zip(['projects','services','studio'],t['nav'][:3]))
+ nav+=f'<a href="{'/articles/' if lang=='es' else '/en/articles/'}">{'Artículos' if lang=='es' else 'Articles'}</a>'
  services=''.join(f'<article><svg viewBox="0 0 24 24" aria-hidden="true">{ICONS[i]}</svg><h3>{name}</h3><p>{desc}</p><small>{tags}</small></article>' for i,(name,desc,tags) in enumerate(t['serviceitems']))
  steps=''.join(f'<li><span class="step-number">0{i+1}</span><h3>{name}</h3><p>{desc}</p></li>' for i,(name,desc) in enumerate(t['steps']))
  html=f'''<!doctype html>
