@@ -147,7 +147,13 @@
 .showcase-mosaic[data-active-stage="matched"] [data-stage-panel="matched"],
 .showcase-mosaic[data-active-stage="checked"] [data-stage-panel="checked"],
 .showcase-mosaic[data-active-stage="exception"] [data-stage-panel="exception"],
-.showcase-mosaic[data-active-stage="ready"] [data-stage-panel="ready"] {
+.showcase-mosaic[data-active-stage="ready"] [data-stage-panel="ready"],
+.showcase-mosaic[data-active-stage="visit"] [data-stage-panel="visit"],
+.showcase-mosaic[data-active-stage="assessed"] [data-stage-panel="assessed"],
+.showcase-mosaic[data-active-stage="catalog"] [data-stage-panel="catalog"],
+.showcase-mosaic[data-active-stage="labour"] [data-stage-panel="labour"],
+.showcase-mosaic[data-active-stage="reviewed"] [data-stage-panel="reviewed"],
+.showcase-mosaic[data-active-stage="quoted"] [data-stage-panel="quoted"] {
   opacity:1;
   visibility:visible;
   transform:none
@@ -669,6 +675,13 @@
   color:var(--ink);
   font-size:11px
 }
+.contractor-mosaic .panel-shade {background:linear-gradient(100deg,rgba(36,28,22,.18),transparent 55%),linear-gradient(0deg,rgba(34,27,22,.58),transparent 48%)}
+.contractor-mosaic .stage-control[aria-current="step"] {background:#4a372b}
+.quote-card {width:min(445px,76%);margin:0 0 26px 5%;padding:25px;background:rgba(255,253,249,.96);color:var(--ink);box-shadow:0 24px 70px rgba(36,28,22,.25);backdrop-filter:blur(16px)}
+.quote-card h3 {margin-top:16px;font-size:24px}.quote-card p {margin-top:8px;font-size:11px}.quote-card ul {display:grid;gap:8px;margin:18px 0 0;padding:0;list-style:none;font-size:10px}
+.catalog-picks>div {display:grid;gap:8px;margin-top:17px}.catalog-picks>div span {display:grid;grid-template-columns:55px 1fr auto;gap:9px;padding:12px;border:1px solid #e2ddd7;font-size:9px}.catalog-picks i {font-style:normal;font-weight:700}
+.quote-review {margin-left:auto;margin-right:5%;border-top:4px solid #9b6630}.quote-review button,.quote-total button {width:100%;margin-top:18px;padding:11px;border:0;background:#4a372b;color:white;font-size:9px}
+.quote-total {margin-left:auto;margin-right:5%}.quote-total dl {margin:16px 0 0}.quote-total dl div {display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #e2ddd7;font-size:10px}.quote-total dl div:last-child {font-family:var(--display);font-size:19px;font-weight:700}
 .report-sheet,.invoice-sheet {
   position:absolute;
   width:70%;
@@ -786,6 +799,8 @@
 .invoice-teaser>img {
   object-position:center 58%
 }
+.contractor-teaser:after {background:linear-gradient(90deg,rgba(40,29,23,.08),rgba(40,29,23,.9))}
+.contractor-teaser>img {object-position:center 52%}
 .showcase-index-hero {
   min-height:430px;
   display:grid;
@@ -1997,6 +2012,10 @@
   font-size:7px;
   text-align:center
 }
+.contractor-product {background:#e8e1d9}.quote-devices {position:relative;min-height:760px}.quote-desktop {position:absolute;left:0;top:0;width:91%;overflow:hidden;border:8px solid #30251f;border-radius:20px;background:#30251f;box-shadow:0 40px 90px rgba(48,37,31,.23)}
+.quote-screen {height:610px;display:grid;grid-template-columns:150px 1fr;background:#f8f5f0}.quote-screen>aside {padding:26px 17px;background:#49372d;color:white}.quote-screen>aside strong {font-family:var(--display);font-size:24px}.quote-screen>aside nav {display:grid;gap:7px;margin-top:38px}.quote-screen>aside nav span {padding:10px;color:#c4b6ae;font-size:9px}.quote-screen>aside nav .active {background:#665044;color:white}.quote-screen>main {padding:28px}.quote-screen>main header small {color:#887b73;font-size:8px}.quote-screen>main header h3 {margin-top:5px;font-size:28px}
+.quote-builder {display:grid;grid-template-columns:1.3fr .7fr;gap:14px;margin-top:25px}.quote-builder>section,.quote-builder>aside {padding:20px;background:white}.quote-builder h4 {margin:0 0 12px;font-family:var(--display);font-size:17px}.quote-builder>section>div {display:flex;justify-content:space-between;padding:17px 0;border-top:1px solid #ece7e2;font-size:9px}.quote-builder>aside>span {color:#887b73;font-size:7px}.quote-builder dl {margin:20px 0}.quote-builder dl div {display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #e8e2dd;font-size:9px}.quote-builder dl div:last-child {font-family:var(--display);font-size:19px;font-weight:700}.quote-builder button {width:100%;padding:12px;border:0;background:#49372d;color:white;font-size:8px}
+.quote-phone {position:absolute;z-index:3;right:0;top:115px;width:268px;padding:9px;border-radius:42px;background:#221b17;box-shadow:0 35px 80px rgba(48,37,31,.34)}.quote-phone-screen {min-height:520px;padding:0 18px;overflow:hidden;border-radius:34px;background:#fbf8f3}.quote-phone-screen header {height:52px;display:flex;justify-content:space-between;align-items:center;font-size:8px}.quote-phone-screen>small {display:block;margin-top:28px;color:#8a6a55;font-size:6px;letter-spacing:.09em}.quote-phone-screen h3 {margin-top:10px;font-size:22px}.quote-phone-screen p {margin-top:4px;font-size:9px}.quote-phone-screen>b {display:block;margin-top:38px;font-family:var(--display);font-size:38px}.quote-phone-screen dl {margin:24px 0}.quote-phone-screen dl div {display:flex;justify-content:space-between;padding:12px 0;border-top:1px solid #e5ddd6;font-size:8px}.quote-phone-screen dd {margin:0;font-weight:700}.quote-phone-screen>button {width:100%;padding:13px;border:0;background:#49372d;color:white;font-size:8px}
 .before-after {
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -2084,6 +2103,8 @@
   .booking-phone {right:0}
   .invoice-desktop {width:93%}
   .approval-phone {right:0}
+  .quote-desktop {width:93%}
+  .quote-phone {right:0}
 }
 @media (max-width:760px) {
   .home-showcase {padding-top:76px}
@@ -2127,6 +2148,9 @@
   .invoice-devices {min-height:1010px}
   .invoice-desktop {width:680px}
   .approval-phone {top:590px;right:50%;transform:translateX(50%)}
+  .quote-devices {min-height:990px}
+  .quote-desktop {width:680px}
+  .quote-phone {top:570px;right:50%;transform:translateX(50%)}
   .desktop-caption {bottom:20px}
   .phone-caption {right:0;bottom:20px}
   .before-after {grid-template-columns:1fr;padding-bottom:80px}
@@ -2156,6 +2180,10 @@
   .invoice-desktop {width:720px;transform:scale(.48);transform-origin:top left}
   .approval-phone {top:370px;width:250px}
   .invoice-mail,.invoice-extract,.supplier-match,.rule-checks,.invoice-exception,.entry-ready {width:92%;margin-left:0;margin-right:auto}
+  .quote-devices {min-height:890px}
+  .quote-desktop {width:720px;transform:scale(.48);transform-origin:top left}
+  .quote-phone {top:350px;width:250px}
+  .quote-card {width:92%;margin-left:0;margin-right:auto}
   .device-caption {bottom:10px}
 }
 @media (max-width:330px) {
@@ -2177,6 +2205,9 @@
   .invoice-devices {min-height:840px}
   .invoice-desktop {transform:scale(.39)}
   .approval-phone {top:315px;width:238px}
+  .quote-devices {min-height:820px}
+  .quote-desktop {transform:scale(.39)}
+  .quote-phone {top:295px;width:238px}
 }
 @media (prefers-reduced-motion:reduce) {
   .showcase-panel>img,.stage-control,.stage-layer {transition:none!important;transform:none!important}

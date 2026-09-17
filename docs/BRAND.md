@@ -10,6 +10,6 @@ Verification covers Spanish and English navigation and metadata, desktop and mob
 
 ## Showcase system
 
-`scripts/build-studio.py` contains the bilingual showcase content models and generates the showcase alongside the homepages. The public routes are `/showcase/`, `/en/showcase/`, `/showcase/nexo-mantenimiento/`, `/en/showcase/nexo-maintenance/`, `/showcase/mesa-clara/`, `/en/showcase/mesa-clara/`, `/showcase/ladera-norte/`, and `/en/showcase/ladera-norte/`. Showcase-specific layout, interaction, product mockups, and images live in `assets/showcase/`.
+`scripts/build-studio.py` contains the bilingual showcase content models and generates the showcase alongside the homepages. The public routes are `/showcase/`, `/en/showcase/`, plus the bilingual Nexo Mantenimiento, Mesa Clara, Ladera Norte, and Cerrajería Faro case routes. Showcase-specific layout, interaction, product mockups, and images live in `assets/showcase/`.
 
 Every concept without a real client engagement must be visibly labelled `Caso ficticio` or `Fictional case`. Do not add invented results, testimonials, deployment claims, or performance figures. Show human review whenever the proposed workflow affects scheduling, reporting, or invoicing.
