@@ -1240,3 +1240,7 @@ body:has(dialog[open]) {
 @media(max-width:1100px) {.header .wordmark img {width:220px;}}
 @media(max-width:560px) {.header .wordmark img {width:180px;}}
 @media(max-width:360px) {.header .wordmark img {width:155px;}}
+
+.footer-links {display:flex;gap:24px;font-size:13px;align-items:center;}
+.footer-links a {text-underline-offset:5px;}
+@media(max-width:560px) {.footer-links {margin-top:20px;}}

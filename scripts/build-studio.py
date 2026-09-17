@@ -38,13 +38,11 @@ COPY = {
 }}
 ARROW='<span aria-hidden="true">↗</span>'
 ICONS=['<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c5 5 5 13 0 18-5-5-5-13 0-18Z"/>','<rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 18h4"/>','<path d="m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3Z"/>']
-ARTICLES=[('building-is-the-easy-part','Building Is the Easy Part Now','cover.png'),('6-apps-3-months-solo-dev','I Built 6 Apps in 3 Months as a Solo Dev','cover.png'),('claude-code-changed-how-i-ship','Claude Code Changed How I Ship Software','cover.png')]
 for lang,t in COPY.items():
  url='/' if lang=='es' else '/en/'
  nav=''.join(f'<a href="#{anchor}">{text}</a>' for anchor,text in zip(['projects','services','studio'],t['nav'][:3]))
  services=''.join(f'<article><svg viewBox="0 0 24 24" aria-hidden="true">{ICONS[i]}</svg><h3>{name}</h3><p>{desc}</p><small>{tags}</small></article>' for i,(name,desc,tags) in enumerate(t['serviceitems']))
  steps=''.join(f'<li><span class="step-number">0{i+1}</span><h3>{name}</h3><p>{desc}</p></li>' for i,(name,desc) in enumerate(t['steps']))
- articles=''.join(f'<a class="article" href="/articles/{slug}/"><img src="/articles/{slug}/{cover}" alt="" loading="lazy" width="600" height="338"><small>{t["english"]}</small><h3>{title} {ARROW}</h3></a>' for slug,title,cover in ARTICLES)
  html=f'''<!doctype html>
 <html lang="{lang}">
 <head>
@@ -62,9 +60,8 @@ for lang,t in COPY.items():
 <section class="demo-section"><div class="wrap demo-inner"><div><span class="status-pill"><span></span>{t['soon']}</span><h2>{t['demo']}</h2><p>{t['demointro']}</p></div><div class="demo-note"><div class="demo-shape" aria-hidden="true"><span></span><span></span><span></span></div><p>{t['democopy']}</p><a class="text-link" href="#contact">{t['cta']} {ARROW}</a></div></div></section>
 <section class="section wrap process"><h2>{t['process']}</h2><ol>{steps}</ol></section>
 <section id="studio" class="section wrap about"><div class="portrait"><img src="/photo.jpg" alt="Alexis Santos" loading="lazy" width="600" height="700"><span>{t['abouttag']}</span></div><div class="about-copy"><h2>{t['about']}</h2><p>{t['abouttext']}</p><p>{t['abouttext2']}</p><div class="social"><a href="https://www.linkedin.com/in/asantosp/">LinkedIn {ARROW}</a><a href="https://github.com/alexissan">GitHub {ARROW}</a><a href="https://x.com/deepfirstsearch">X {ARROW}</a></div></div></section>
-<section class="section wrap articles"><div class="section-head"><h2>{t['articles']}</h2><div><p>{t['articleintro']}</p><a class="text-link" href="/articles/">{t['allarticles']} {ARROW}</a></div></div><div class="article-grid">{articles}</div></section>
 <section id="contact" class="contact-section"><div class="wrap contact-grid"><div><h2>{t['contact']}</h2><p class="contact-intro">{t['contactintro']}</p><div class="direct-email"><span>{t['direct']}</span><a href="mailto:alexis.santos.perez@gmail.com">alexis.santos.perez@gmail.com {ARROW}</a></div></div><form id="brief-form"><div class="form-row"><label>{t['name']}<input name="name" autocomplete="name" required maxlength="100"></label><label>{t['business']}<input name="business" autocomplete="organization" maxlength="150"></label></div><label>{t['need']}<textarea name="message" rows="4" required maxlength="3000" placeholder="{t['placeholder']}"></textarea></label><button class="button" type="submit">{t['send']} {ARROW}</button><p class="form-note">{t['emailnote']}</p><p class="privacy-note">{t['privacy']}</p><p id="form-status" role="status"></p><noscript><p>{t['direct']}: <a href="mailto:alexis.santos.perez@gmail.com">alexis.santos.perez@gmail.com</a></p></noscript></form></div></section>
-</main><footer class="wrap footer"><div><a class="wordmark" href="{url}"><img src="/assets/studio/logo.svg" alt="AlexisSantos.dev" width="645" height="82"></a><p>{t['footer']}</p></div><span>© 2026 Alexis Santos</span><a class="text-link" href="#top">{t['back']} ↑</a></footer>
+</main><footer class="wrap footer"><div><a class="wordmark" href="{url}"><img src="/assets/studio/logo.svg" alt="AlexisSantos.dev" width="645" height="82"></a><p>{t['footer']}</p></div><span>© 2026 Alexis Santos</span><nav class="footer-links" aria-label="{'Más información' if lang=='es' else 'More information'}"><a href="{'/articles/' if lang=='es' else '/en/articles/'}">{'Artículos' if lang=='es' else 'Articles'}</a><a href="#top">{t['back']} ↑</a></nav></footer>
 <dialog id="breathe-detail" aria-labelledby="breathe-title"><button class="dialog-close" aria-label="{t['close']}">×</button><img class="app-icon" src="/breathe-now/icon.png" alt="" width="80" height="80"><small>{t['bcat']}</small><h2 id="breathe-title">Breathe Now</h2><p>{t['bdetail']}</p><a class="button" href="https://apps.apple.com/app/id6757527807">{t['store']} {ARROW}</a></dialog>
 <dialog id="camera-detail" aria-labelledby="camera-title"><button class="dialog-close" aria-label="{t['close']}">×</button><small>{t['lcat']}</small><h2 id="camera-title">Lean Cam</h2><p>{t['ldetail']}</p><img class="dialog-photo" src="/lean-cam/photo-1.JPG" alt="{'Fotografía tomada con Lean Cam' if lang=='es' else 'Photography from Lean Cam'}" loading="lazy"><a class="button" href="https://apps.apple.com/app/id6755633580">{t['store']} {ARROW}</a></dialog>
 <script type="application/json" id="contact-copy">{json.dumps({k:t[k] for k in ['subject','emailbody','status']},ensure_ascii=False)}</script>
@@ -102,12 +99,21 @@ for source in sorted((ROOT / 'articles').glob('*/index.html')):
 
 order = ['ios-claude-skills-open-source', 'building-is-the-easy-part', '6-apps-3-months-solo-dev', 'claude-code-changed-how-i-ship', 'mcp-at-work', 'evals-for-agents', 'multi-agent-orchestration', 'production-guardrails', 'remote-work']
 entries.sort(key=lambda item: order.index(item[0]))
-cards = ''.join(f'<a class="article archive-card" href="/en/articles/{slug}/"><img src="{cover}" alt="" loading="lazy" width="600" height="338"><h2>{escape(title)} ↗</h2><p>{escape(description)}</p></a>' for slug,title,description,cover in entries)
-archive = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Notes from the studio — AlexisSantos.dev</title><meta name="description" content="Articles on building products, practical AI and the work behind an independent software studio."><link rel="canonical" href="https://alexissantos.dev/en/articles/"><link rel="icon" href="/assets/studio/favicon.svg"><link rel="stylesheet" href="/assets/studio/studio.css"><script src="/assets/studio/studio.js" defer></script></head><body id="top"><a class="skip" href="#main">Skip to content</a>{english_header}<main id="main" class="wrap archive-page"><div class="archive-intro"><a class="text-link" href="/en/">← Back to the studio</a><h1>Notes from<br>the studio.</h1><p>What I learn building products, working with AI and turning ideas into something real.</p></div><div class="article-grid">{cards}</div></main>{english_footer}</body></html>'''
-(ROOT / 'en/articles/index.html').write_text(archive)
-english_home = re.sub(r'href="/articles/', 'href="/en/articles/', english_home)
-(ROOT / 'en/index.html').write_text(english_home)
+for lang in ['es', 'en']:
+    is_es = lang == 'es'
+    home_url = '/' if is_es else '/en/'
+    archive_url = '/articles/' if is_es else '/en/articles/'
+    home = (ROOT / ('index.html' if is_es else 'en/index.html')).read_text()
+    header = re.search(r'<header class="header wrap">.*?</header>', home, re.S).group(0).replace('href="#', f'href="{home_url}#')
+    header = header.replace('href="/" lang="es"', 'href="/articles/" lang="es"').replace('href="/en/" lang="en"', 'href="/en/articles/" lang="en"')
+    footer = re.search(r'<footer class="wrap footer">.*?</footer>', home, re.S).group(0)
+    cards = ''.join(f'<a class="article archive-card" href="{archive_url}{slug}/"><img src="{cover}" alt="" loading="lazy" width="600" height="338"><small>{"Artículo en inglés" if is_es else "Article"}</small><h2 lang="en">{escape(title)} ↗</h2></a>' for slug,title,description,cover in entries)
+    title = 'Ideas desde el taller' if is_es else 'Notes from the studio'
+    intro = COPY[lang]['articleintro']
+    back = 'Volver al estudio' if is_es else 'Back to the studio'
+    archive = f'''<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title} — AlexisSantos.dev</title><meta name="description" content="{intro}"><link rel="canonical" href="https://alexissantos.dev{archive_url}"><link rel="alternate" hreflang="es" href="https://alexissantos.dev/articles/"><link rel="alternate" hreflang="en" href="https://alexissantos.dev/en/articles/"><link rel="icon" href="/assets/studio/favicon.svg"><link rel="stylesheet" href="/assets/studio/studio.css"><script src="/assets/studio/studio.js" defer></script></head><body id="top"><a class="skip" href="#main">{COPY[lang]['skip']}</a>{header}<main id="main" class="wrap archive-page"><div class="archive-intro"><a class="text-link" href="{home_url}">← {back}</a><h1>{title}.</h1><p>{intro}</p></div><div class="article-grid">{cards}</div></main>{footer}</body></html>'''
+    (ROOT / archive_url.strip('/') / 'index.html').write_text(archive)
 
-public_paths = ["/", "/en/", "/en/articles/"] + [f"/articles/{entry[0]}/" for entry in entries]
+public_paths = ["/", "/en/", "/articles/", "/en/articles/"] + [f"/articles/{entry[0]}/" for entry in entries]
 sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(f"  <url><loc>https://alexissantos.dev{path}</loc></url>" for path in public_paths) + "\n</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sitemap)
