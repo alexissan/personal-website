@@ -39,6 +39,8 @@ class ShowcaseBuildTests(unittest.TestCase):
             "assets/showcase/showcase.css",
             "assets/showcase/showcase.js",
             "assets/showcase/nexo/field-service.webp",
+            "assets/showcase/nexo/evidence-before.webp",
+            "assets/showcase/nexo/evidence-after.webp",
         ]:
             self.assertTrue((ROOT / relative).is_file(), relative)
         spanish = (ROOT / "showcase/nexo-mantenimiento/index.html").read_text()
@@ -49,6 +51,8 @@ class ShowcaseBuildTests(unittest.TestCase):
             self.assertIn('/assets/showcase/showcase.css', html)
             self.assertIn('/assets/showcase/showcase.js', html)
             self.assertIn('/assets/showcase/nexo/field-service.webp', html)
+            self.assertIn('/assets/showcase/nexo/evidence-before.webp', html)
+            self.assertIn('/assets/showcase/nexo/evidence-after.webp', html)
 
 
 if __name__ == "__main__":
