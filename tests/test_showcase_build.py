@@ -53,6 +53,8 @@ class ShowcaseBuildTests(unittest.TestCase):
             self.assertIn('/assets/showcase/nexo/field-service.webp', html)
             self.assertIn('/assets/showcase/nexo/evidence-before.webp', html)
             self.assertIn('/assets/showcase/nexo/evidence-after.webp', html)
+            self.assertIn('class="desktop-device"', html)
+            self.assertIn('class="phone-device"', html)
 
 
 if __name__ == "__main__":
