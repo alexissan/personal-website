@@ -4,6 +4,6 @@ The reusable brand kit now lives in `brand/`. Start with `brand/README.md`, `bra
 
 ## Website implementation notes
 
-Build: python3 scripts/build-studio.py regenerates the two studio pages. Styles and behaviour live in assets/studio/. The contact form opens a mail draft; it does not send or store submissions. Existing articles and standalone app pages retain their original language and URLs.
+Build: python3 scripts/build-studio.py regenerates the Spanish and English consultancy pages. The website leads with AI integration and process automation; websites and apps are supporting delivery capabilities. Styles and behaviour live in assets/studio/. The contact form opens a mail draft; it does not send or store submissions. Existing articles and standalone app pages retain their original language and URLs.
 
-Verification completed: Spanish/English navigation and metadata; desktop and 390px/320px widths with no horizontal overflow; native dialog focus return and Escape dismissal; mobile menu closure; required contact fields; email recipient and subject plus accented characters and multiline content; all 43 local references in each document; JavaScript syntax; whitespace checks. No browser console errors observed. No messages sent and no production deployment performed.
+Verification covers Spanish and English navigation and metadata, desktop and mobile layouts, product dialogs, mobile menu behaviour, contact validation, local routes and assets, JavaScript syntax, and whitespace checks.

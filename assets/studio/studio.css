@@ -345,7 +345,7 @@ h1 {
   z-index:1
 }
 .services {
-  padding-top:35px
+  padding-top:88px
 }
 .service-grid {
   display:grid;
@@ -417,33 +417,35 @@ h1 {
   background:var(--blue)
 }
 .demo-note {
-  position:relative;
-  padding-top:80px
+  position:relative
 }
 .demo-note .text-link {
   margin-top:22px
 }
-.demo-shape {
-  position:absolute;
-  top:0;
-  left:0;
+.integration-flow {
   display:flex;
-  gap:8px;
-  height:48px;
-  align-items:flex-end
+  align-items:center;
+  list-style:none;
+  padding:0;
+  margin:0 0 34px;
+  color:var(--ink)
 }
-.demo-shape span {
-  height:45px;
-  width:24px;
-  border:1px solid #8b9cae;
-  border-radius:20px 20px 0 0;
-  background:linear-gradient(110deg,#fff9,#bac7d64d)
+.integration-flow li {
+  display:flex;
+  align-items:center;
+  font-size:12px;
+  font-weight:600;
+  white-space:nowrap
 }
-.demo-shape span:nth-child(2) {
-  height:65px
+.integration-flow li:not(:last-child):after {
+  content:'→';
+  color:var(--blue);
+  font-size:16px;
+  font-weight:400;
+  margin:0 11px
 }
-.demo-shape span:nth-child(3) {
-  height:32px
+.product-proof {
+  border-top:1px solid var(--line)
 }
 .process ol {
   display:grid;
@@ -1072,8 +1074,13 @@ body:has(dialog[open]) {
   .demo-note {
     padding-top:0
   }
-  .demo-shape {
-    display:none
+  .integration-flow {
+    flex-wrap:wrap;
+    gap:9px 0;
+    margin-bottom:26px
+  }
+  .integration-flow li:not(:last-child):after {
+    margin-inline:8px
   }
   .process ol {
     grid-template-columns:1fr;
