@@ -72,6 +72,23 @@ class ShowcaseBuildTests(unittest.TestCase):
         self.assertLess(english.index('href="#solutions"'), english.index('href="/en/showcase/"'))
         self.assertLess(english.index('href="/en/showcase/"'), english.index('href="#studio"'))
 
+    def test_grow_book_is_published_and_linked(self):
+        spanish = (ROOT / "index.html").read_text()
+        english = (ROOT / "en/index.html").read_text()
+        book = (ROOT / "grow/index.html").read_text()
+        ignored_assets = (ROOT / ".assetsignore").read_text().splitlines()
+        sitemap = (ROOT / "sitemap.xml").read_text()
+
+        self.assertGreaterEqual(spanish.count('href="/grow/"'), 2)
+        self.assertGreaterEqual(english.count('href="/grow/"'), 2)
+        self.assertNotIn("grow", ignored_assets)
+        self.assertIn("Build It. Then Grow It.", book)
+        self.assertEqual(book.count('class="part-divider"'), 6)
+        self.assertEqual(book.count('class="chapter"'), 28)
+        self.assertIn("Chapter 1", book)
+        self.assertIn("Chapter 28", book)
+        self.assertIn("https://alexissantos.dev/grow/", sitemap)
+
     def test_showcase_assets_and_language_alternates_exist(self):
         for relative in [
             "assets/showcase/showcase.css",

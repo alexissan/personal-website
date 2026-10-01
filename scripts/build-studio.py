@@ -441,6 +441,7 @@ for lang,t in COPY.items():
  nav=f'<a href="#solutions">{t["nav"][0]}</a><a href="{'/showcase/' if lang=='es' else '/en/showcase/'}">{SHOWCASE[lang]['nav']}</a>'
  nav+=f'<a href="#studio">{t["nav"][1]}</a>'
  nav+=f'<a href="{'/articles/' if lang=='es' else '/en/articles/'}">{'Artículos' if lang=='es' else 'Articles'}</a>'
+ nav+=f'<a href="/grow/">{'Libro' if lang=='es' else 'Book'}</a>'
  services=''.join(f'<article><svg viewBox="0 0 24 24" aria-hidden="true">{ICONS[i]}</svg><h3>{name}</h3><p>{desc}</p><small>{tags}</small></article>' for i,(name,desc,tags) in enumerate(t['serviceitems']))
  steps=''.join(f'<li><span class="step-number">0{i+1}</span><h3>{name}</h3><p>{desc}</p></li>' for i,(name,desc) in enumerate(t['steps']))
  flow=''.join(f'<li>{item}</li>' for item in t['flow'])
@@ -530,6 +531,6 @@ for lang in ['es', 'en']:
     archive = f'''<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title} — AlexisSantos.dev</title><meta name="description" content="{intro}"><link rel="canonical" href="https://alexissantos.dev{archive_url}"><link rel="alternate" hreflang="es" href="https://alexissantos.dev/articles/"><link rel="alternate" hreflang="en" href="https://alexissantos.dev/en/articles/"><link rel="icon" href="/assets/studio/favicon.svg"><link rel="stylesheet" href="/assets/studio/studio.css"><script src="/assets/studio/studio.js" defer></script></head><body id="top"><a class="skip" href="#main">{COPY[lang]['skip']}</a>{header}<main id="main" class="wrap archive-page"><div class="archive-intro"><a class="text-link" href="{home_url}">← {back}</a><h1>{title}.</h1><p>{intro}</p></div><div class="article-grid">{cards}</div></main>{footer}</body></html>'''
     (ROOT / archive_url.strip('/') / 'index.html').write_text(archive)
 
-public_paths = ["/", "/en/", "/showcase/", "/en/showcase/", "/showcase/nexo-mantenimiento/", "/en/showcase/nexo-maintenance/", "/showcase/mesa-clara/", "/en/showcase/mesa-clara/", "/showcase/ladera-norte/", "/en/showcase/ladera-norte/", "/showcase/cerrajeria-faro/", "/en/showcase/cerrajeria-faro/", "/articles/", "/en/articles/"] + [f"/articles/{entry[0]}/" for entry in entries]
+public_paths = ["/", "/en/", "/grow/", "/showcase/", "/en/showcase/", "/showcase/nexo-mantenimiento/", "/en/showcase/nexo-maintenance/", "/showcase/mesa-clara/", "/en/showcase/mesa-clara/", "/showcase/ladera-norte/", "/en/showcase/ladera-norte/", "/showcase/cerrajeria-faro/", "/en/showcase/cerrajeria-faro/", "/articles/", "/en/articles/"] + [f"/articles/{entry[0]}/" for entry in entries]
 sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(f"  <url><loc>https://alexissantos.dev{path}</loc></url>" for path in public_paths) + "\n</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sitemap)
