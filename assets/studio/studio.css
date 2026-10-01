@@ -399,6 +399,46 @@ h1 {
   font-size:17px;
   margin:18px 0
 }
+.about-book {
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:8px 28px;
+  max-width:600px;
+  margin-top:28px;
+  padding:24px 26px;
+  background:var(--ink);
+  color:white;
+  transition:background .2s,transform .2s
+}
+.about-book:hover {
+  background:#3d4856;
+  transform:translateY(-2px)
+}
+.about-book small {
+  grid-column:1/-1;
+  color:#9eb8d2;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase
+}
+.about-book strong {
+  grid-column:1/-1;
+  font-family:var(--display);
+  font-size:25px;
+  letter-spacing:-.035em
+}
+.about-book>span {
+  max-width:430px;
+  color:#d8dde3;
+  font-size:14px;
+  line-height:1.5
+}
+.about-book b {
+  align-self:end;
+  white-space:nowrap;
+  font-size:13px
+}
 .social {
   display:flex;
   gap:28px;
@@ -890,6 +930,13 @@ textarea::placeholder {
   }
   .about-copy p {
     font-size:17px
+  }
+  .about-book {
+    grid-template-columns:1fr;
+    padding:22px
+  }
+  .about-book b {
+    margin-top:6px
   }
   .article-grid {
     grid-template-columns:1fr;

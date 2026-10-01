@@ -79,8 +79,10 @@ class ShowcaseBuildTests(unittest.TestCase):
         ignored_assets = (ROOT / ".assetsignore").read_text().splitlines()
         sitemap = (ROOT / "sitemap.xml").read_text()
 
-        self.assertGreaterEqual(spanish.count('href="/grow/"'), 2)
-        self.assertGreaterEqual(english.count('href="/grow/"'), 2)
+        self.assertGreaterEqual(spanish.count('href="/grow/"'), 3)
+        self.assertGreaterEqual(english.count('href="/grow/"'), 3)
+        self.assertIn('class="about-book" href="/grow/"', spanish)
+        self.assertIn('class="about-book" href="/grow/"', english)
         self.assertNotIn("grow", ignored_assets)
         self.assertIn("Build It. Then Grow It.", book)
         self.assertEqual(book.count('class="part-divider"'), 6)
