@@ -512,7 +512,7 @@ for source in sorted((ROOT / 'articles').glob('*/source.html')):
     destination.parent.mkdir(parents=True, exist_ok=True)
     destination.write_text(page)
 
-order = ['ios-claude-skills-open-source', 'building-is-the-easy-part', '6-apps-3-months-solo-dev', 'claude-code-changed-how-i-ship', 'mcp-at-work', 'evals-for-agents', 'multi-agent-orchestration', 'production-guardrails', 'remote-work']
+order = ['one-prompt-ai-dev-tools-guide', 'ios-claude-skills-open-source', 'building-is-the-easy-part', '6-apps-3-months-solo-dev', 'claude-code-changed-how-i-ship', 'mcp-at-work', 'evals-for-agents', 'multi-agent-orchestration', 'production-guardrails', 'remote-work']
 entries.sort(key=lambda item: order.index(item[0]))
 for lang in ['es', 'en']:
     is_es = lang == 'es'
