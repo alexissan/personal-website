@@ -1,0 +1,2249 @@
+[
+ {
+  "name": "Cursor",
+  "url": "https://cursor.com",
+  "score": 99.6,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Cursor IDE support hallucinates lockout policy, causes user cancellations",
+   "points": 1511,
+   "id": "43683012",
+   "url": "https://old.reddit.com/r/cursor/comments/1jyy5am/psa_cursor_now_restricts_logins_to_a_single/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50367037,
+    "author": "thefourthchime",
+    "text": "It used to be more interesting and elaborate, switching between different models. I used to use Cursor, then Codex, but since Opus 5.5 came out, I just use the Claude IDE. I got rid of all my skills and just set it to medium. Then I vaguely talk to it about very high-end things that I want, and it comes back with magic. Rinse and repeat. I'd say the biggest tr"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50384905,
+    "author": "fishtoaster",
+    "text": "g something. I'm pretty pilled on cloud agents these days. If I've got 5 agents going at once, each is in their own dedicated, isolated cloud environment. There are a bazillion services for this now ampcode, hoplite.sh, cursor's cloud agents, devin.ai cloud, and more. I haven't had an agent do anything from my laptop in a month or two."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50375552,
+    "author": "bluerooibos",
+    "text": "> Claude IDE Claude Desktop's UI seems pretty similar to Cursor now, almost. I'm still on Cursor but if I use it daily I often hit usage limits before the end of the month. Would you say using Claude directly is better bang for buck?"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50378013,
+    "author": "senordevnyc",
+    "text": "I switched from Cursor to Claude Code (via T3.codes) because I was running out of usage on Grok 4.7. I regret not making the switch sooner, Opus 5.5 is much better than Grok, and Grok is decent!"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50393062,
+    "author": "bluerooibos",
+    "text": "Yeah, I agree, but Opus 5.5 burns through a ton of usage in Cursor so I rarely use it. Just wondering if cost wise it's better to use Claude Code than Cursor w/ Grok - sounds like you think it is?"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50395313,
+    "author": "senordevnyc",
+    "text": "My $200 Anthropic subscription is giving me way more value than my $200 Cursor subscription was."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50367523,
+    "author": "brightball",
+    "text": "Tried just about everything over the last couple of years. Settled on the unified Cursor, Grok, Grok Bot plan for about $200 / month. Doing everything within herdr for programming and Grok Bot for all non-programming related AI life stuff. It's a solid groove. Grok Bot helped me get so much stuff off of my plate."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373357,
+    "author": "guhcampos",
+    "text": "1.a) At work: I can choose between Cursor and Claude on a meter. Been using Cursor for a long time and happy with it until they started to force Grok down our throats. I was happy with Composer 2. Recently switched to Claude Code. The company also runs some open weight models in-house and I have been"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373432,
+    "author": "2001zhaozhao",
+    "text": "1) 3x Claude Ultra subscriptions and $20 tiers of Codex/Cursor/Gemini, the latter three mostly for multi-provider testing and Google's bundled cloud storage. I basically only use Opus xhigh, but never touch Ultracode. 2) No. The subscriptions are too much value compared to API. If i were to start using any model on API, "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373433,
+    "author": "foopod",
+    "text": "1) the cheapest Claude sub, $20usd I think. 2) pretty much just opus 3) claude code - but with Orca + app (being able to dev remotely via the app has been great for personal projects) Work has me stuck with Cursor, which I don't find as good, even when using claude models."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373740,
+    "author": "shepherdjerred",
+    "text": "1. Claude Ultra, ChatGPT Pro 200, SuperGrok, Kimi Pro, Cursor Pro, Google AI Pro, Muse Code High Usage. It comes out to ~$500/mo, mostly from Claude+ChatGPT 2. I use OpenAI/Anthropic APIs for various workloads (app features, automations, etc.), but not for personal inference/coding. Recently both of these providers star"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50374417,
+    "author": "easterncalculus",
+    "text": "1. Claude $20/month and Cursor $20/month (I've been meaning to close it) I mostly use Opus 5.5 on Medium. I've been experimenting with High effort, mainly at work. 2. I have an OpenRouter $50 pay as you go API key that I use for Mercury 3 at this point, primarily for tokens per second. I a"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50374491,
+    "author": "ghempton",
+    "text": "1) claude, claude again, codex, antigravity, cursor 2) no 3) using a variety of different harnesses managed by codealong 4) built https://github.com/codealong/codealong 5) openclaw not used very much anymore in favor of native harnesses"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50374816,
+    "author": "hodder",
+    "text": "Muse and cursor. It beats every custom setup I had by far on ease of use. The cost is trivial."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50406047",
+    "author": "pcj-github",
+    "date": "2026-11-07",
+    "text": "document model, using contentEditable, and I can relate to the pain you refer to. Getting the semantics right in cases where you split or join text that has varying types of nested context was hard. I like what you did here in terms of the cursor that points one way or the other: it tells you if you're in \"normal\" mode, or for example, in a bold region. I don't think I've seen that before so, if you made it up, that itself is a cool invention."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50405972",
+    "author": "phoronixrly",
+    "date": "2026-11-07",
+    "text": "No, now you are running an IDE that is badly pretending not to be a browser, while an entire second application has to work in the background eating even more RAM to provide you with access to documentation for each function at the cursor..."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50405610",
+    "author": "mbreese",
+    "date": "2026-11-07",
+    "text": "There\u2019s no better way to get a lot of testers than to have a Show HN. I\u2019ll confirm - there are cursor bugs on iOS. Both on newlines and autocorrect. I\u2019m personally more forgiving of an LLM \u201chelped\u201d site, if it looks like there was a human in the loop for the process. An LLM has more context about the design goals and architecture than the reader, so if it\u2019s an informative page, "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50403377",
+    "author": "dwm",
+    "date": "2026-11-07",
+    "text": "This looks a lot like Cursor's Continuity, though Github are reporting an order of magnitude greater write throughput. https://cursor.com/blog/git-at-any-scale "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50402850",
+    "author": "fy20",
+    "date": "2026-11-07",
+    "text": "We recently switched from paying API prices via Cursor to a Claude subscription. Before we'd be averaging $100-$300 per day, now we have the \u20ac90/mo subscription and I haven't even reached the 5h limit yet. My guess is a mixture of both... There's a reason why enterprise customers have to use API based billing. (We also had a stint o"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50402481",
+    "author": "aasharck",
+    "date": "2026-11-07",
+    "text": "SEEKING WORK | Remote (Dubai, UTC+4) | Next.js, Supabase, AI agents/RAG I fix and finish apps built with Lovable, Bolt or Cursor (auth, Supabase RLS, Stripe, deploys) and build AI features (support chatbots on your own docs, Claude/OpenAI agents). 5+ years full-stack; built SitesGen solo with 8 Claude agents in production. Small fixes from $50 fixed, or $29/h. Portfolio: https://aashar.dev \u00b7 Email: aashar"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50401419",
+    "author": "VadimPR",
+    "date": "2026-11-07",
+    "text": "Tried libghostty-vt 1.0 as Mudlet's ANSI decoder - no measurable speed gain in tests and its terminal grid doesn't suit a MUD client (UTF-8 only, scrollback can't be edited), but I reckon it'd make a great terminal pane for cursor-addressed game screens."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50401251",
+    "author": "pmarreck",
+    "date": "2026-11-07",
+    "text": "The only thing I miss from WezTerm is the super configurable cursor (because of course I need a pulsating one)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50400549",
+    "author": "iLemming",
+    "date": "2026-11-07",
+    "text": "typing a Slack message, a code comment, function name, git commit, pdf annotation, shell command in the terminal, etc. I control video playback directly from it. I can read through the transcript and play it \"karaoke style\"; I can move the cursor and it forwards and rewinds to that exact point in the video. I can take a snapshot of an area of my screen and it can OCR the text out of it. I can point to a piece of text that looks like rfc3560 and immediately browse the damn document, right there. I can do the same with Jir"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50399014",
+    "author": "cpcdoy",
+    "date": "2026-11-06",
+    "text": "I have Claude Ultra, Codex Pro, Cursor, Gemini and Mistral subs. Currently at ~1B tokens/day. I started with Claude Code and Codex in terminal like most people. I'd have lots of terminal tabs open which quickly became annoying and inefficient to keep track of. I was also waiting for these tools to ship features that "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50398466",
+    "author": "criscros",
+    "date": "2026-11-06",
+    "text": "3ive | Senior/Staff Software Engineer | REMOTE (Europe) | Full-time | Python, TypeScript, React, AI Agents We\u2019re building Cursor for mechanical engineering. Imagine an AI that doesn\u2019t just answer questions about a mechanical design, but can actually understand CAD models, work with geometry, and help engineers create and modify real designs. That\u2019s what we\u2019re building. It\u2019s a hard engineering problem. We\u2019"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50397943",
+    "author": "ryanSrich",
+    "date": "2026-11-06",
+    "text": "Have you tried Codex? My journey so far - 2023 using Cursor - 2024 using Cursor with Agent mode - 2025 using Claude Code - 2026 using Codex with Astra 6 I've try every new model when it comes out from both OpenAI and Anthropic. I cannot justify leaving Codex and Astra 6. The token burn on Anthropic is always astronomical for me. Codex ju"
+   }
+  ]
+ },
+ {
+  "name": "VS Code + Copilot",
+  "url": "https://code.visualstudio.com/docs/copilot/overview",
+  "score": 89.2,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "GitHub Copilot is moving to usage-based billing",
+   "points": 767,
+   "id": "47923357",
+   "url": "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50367589,
+    "author": "peepee1982",
+    "text": "m and Sol 6.1 medium for everything. But lately I have been using DeepSeek 4.1 Flash a lot and find it very capable. At work I use T3 Code as well, but it isn't connected to my personal machines or subscriptions and use Github Copilot in T3 Code via ACP. Model choice is similar, but for more involved tasks for architecture analysis or design, big features that touch a lot of interconnected subsystems, etc. I'll turn up reasoning effort to high or use Opus 5.5 on medium or high. But when ac"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50375873,
+    "author": "peepee1982",
+    "text": "leasant to use - Many more little things that remove a lot of friction and just feel right for me. It's just baffling to me how it is better in every regard than every other harness that I've ever tried (Claude Desktop, Github Copilot App, OpenCode Desktop, all the CLIs, Integrated Agents in VSCode and Zed, etc.) I will still start up a pi on the cli if I just have a quick question because T3 Code needs a bit to start up and connect to all providers/environments. This is my only point of f"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50368526,
+    "author": "grep_name",
+    "text": "1. I've been using the $100 github copilot tier but am looking for something cheaper, as my usage is waning somewhat. I like to hop between models for comparison, but openrouter always seems to end up being way more expensive for the flagship models. I also keep a GPT Plus subscription for voice, unti"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50371770,
+    "author": "gwbas1c",
+    "text": "1) What AI subscriptions are you personally paying for? My employer pays for copilot, business plan. It also pays for Gemini. 2) Are you using models outside (or instead) of those subscriptions? Gemini, company-wide. I mostly use it for general research, making clip art, and occasional programming questions / technical questions. I don't use "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373248,
+    "author": "Quibblingeek",
+    "text": "verything else goes to Openrouter. I use few models but GPT-6 Luna is my go-to, sometimes I switch it up. Really depends on the task I need to perform. 3) What coding harnesses and interfaces are you using?  [question]  Github Copilot for work. It's meh. Personal projects and general personal use? I started with OpenCode and have since migrated to Pi (omp specifically). 4) Are you using any agent orchestration or swarm tools? I thought about it. I haven't really felt like I would derive va"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373865,
+    "author": "bob1029",
+    "text": "Copilot in VS2026 + GPT5.5 configured as a custom model (API Tokens). Same as it was 6 months ago. I really want to use 6.1 Terra, but the way copilot is set up in visual studio proper, they don't handle reasoning models correctly (or maybe my install is screwed up)."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373956,
+    "author": "paustint",
+    "text": " a pr\" I create artifacts all the time to share findings with team or as a checklist of manual testing I need to do. I find that gh copilit does pretty good review on PRs, and I have a claude skill to go address all the copilot feedback (review, validate, reply, resolve, push changes if any were made). I was on the 200/mo Claude plan but had to switch to the Team plan, so I pay 120/mo for two users and I swap to the 20 plan when I hit my 5hr limit on my 100/mo plan. [1]: https://lex"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50374090,
+    "author": "thefunnyman",
+    "text": "$DAY_JOB gives me GitHub Copilot with generous limits so I use GitHub Copilot CLI. We're a Microsoft shop so that dictates some choices too. My workflow is a windows terminal app with multiple sessions running under wsl2 in each pane since LLMs seem to do better with bash than PowerShell. I "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50380727,
+    "author": "teekert",
+    "text": "rom a pool of \"approved\" problems. That'd take about 30 min to make. \"No I can't do that every time, 30 minutes!\" No, I mean then it's there, forever, for all your colleagues to use, I mean. Ok how? Well... I don't know copilot in MS365 and stay away from it, but I can imagine it can do with Word and Excel what I do with Markdown and websites? I'm starting to see MS' \"problem\" now :)"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50376352,
+    "author": "brabel",
+    "text": "At work we have both Anthropic and Copilot subscriptions, plus Google AI as it\u2019s included in our business plan anyway. I have personally been using the Claude Code Desktop App and was happy with it until they made it harder to pick a branch for each worktree! Which is why I tried JetBrains experimenta"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50376720,
+    "author": "Animats",
+    "text": "Embarrassingly, I don't have one yet. I'm mostly still writing code one keystroke at a time. I've used Github Copilot to translate between languages and look things up, but haven't trusted it to write new code or fix anything. Claude Fable is now good enough that I should be using it. The latest Claude version is said to be comparable to a mid-career graphics programmer, whi"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50377091,
+    "author": "starkgoose",
+    "text": "Current setup is pi with github-copilot sub at work - limiting self to luna-6 model. I have custom tmux + nvim + lazygit setup that allows me to quickly toggle modals and jump in and out of code / markdown files for quick review. Im limiting myself like this to get a feel for agent limitations and "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50377290,
+    "author": "tgel0",
+    "text": "me since I'm deep into the Google ecosystem), OpenCode Go and this month I'm trying out X Premium (mainly because of Grok Bot, which I surprisingly like more than I thought I would). At my day job, I also have access to GitHub Copilot. 2) No, but I might try out DeepSeek's own API in the near future 3) My main setup is a Herdr instance hosted on a cheap GCP VM that I access via Tailscale. There I'm running Pi, Antigravity and Cursor via their default CLIs. 4) Nothing apart from Herdr 5) He"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50377453,
+    "author": "castwide",
+    "text": "> 1) What AI subscriptions are you personally paying for?  [question]  None. I've used Claude and GitHub Copilot in the past. > 2) Are you using models outside (or instead) of those subscriptions? For example,  [question]  I'm currently using Qwen3.8-Flash-Next on local hardware. > 3) What coding harnesses and interfaces are you using?  [question]  I occasionally use Cl"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50402364",
+    "author": "teejaypeeps",
+    "date": "2026-11-07",
+    "text": "bedding, classification, email summaries to myself etc. https://git.thomaspeoples.com/user/login?redirect_to=%2Fthom... 3) I started off with aider and still mildly use it, but CC just hooks you in, like crack. Its addictive and fun. I use Github CoPilot at work, which is drier than Ghandi's sandal and not as nice of an experience as Claude. 4) Yes. Just a mini-orchestration skill, as part of a plug-in, which fits mine (and colleagues') use cases nicely: https://github.com/wraith-proxy/wraith-skills 5) Nope! Tried ClawdBot and d"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50398673",
+    "author": "strangepleasure",
+    "date": "2026-11-06",
+    "text": "Implant is a VS Code extension that allows GitHub Copilot to create and execute small scripts accessing all VS Code APIs - a universal tool for complex code analysis and bespoke refactorings. What's new in 0.4.0: - Code parsing, structural search and AST transforms using ast-grep - Diagrams - Better integration with the chat and simpli"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50385108",
+    "author": "JheisonMB",
+    "date": "2026-11-05",
+    "text": "otal, I spend 40 USD. I also take advantage of all the available free tiers: OpenCode, Kiro, Codex, Antigravity, Kilo, Vibe, Cursor, CodeBuddy, Devin, and FreeBuff. That\u2019s for my personal use; for work, I\u2019m provided with 10K AI credits for GitHub Copilot and Codex Pro."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50380946",
+    "author": "FacelessJim",
+    "date": "2026-11-05",
+    "text": "1) 10$ opencode go for personal work and a GitHub copilot at work 2) tried some llama stuff but otherwise nope. Don\u2019t have the bandwidth to make it usable. 3) pi + herdr 4) no 5) no Can\u2019t say I need much more than this."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50380169",
+    "author": "SkyBelow",
+    "date": "2026-11-05",
+    "text": "uction. The more examples of safely trusting the LLM at run time to solve the problem than trying to preempt anything that could go wrong, the better the AI will be at it. One issue that I think is related is calling subagents. At least in GitHub Copilot, when the AI is left to its own devices to call a sub agent for a simpler task, it loves to give it to Haiku 4.5, despite Luna 6 being better and cheaper. I'm not sure how much of this is the model vs the harness, but I do know when I add a subagent instruction which tells it wh"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50378415",
+    "author": "totalhack",
+    "date": "2026-11-05",
+    "text": "I use the Local harness in vs code with a GitHub copilot max plan. Gives access to the best models from OpenAI and Anthropic (I use 6.1 sol, Astra, and opus 5.5 for most things). The Local harness has granular keep/undo and nice interface in general for reviewing changes, which is important for mission critical code. Unfortunately the"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50378086",
+    "author": "moezd",
+    "date": "2026-11-05",
+    "text": "I rotated over many LLM providers and tried out different harnesses, but I always come back to an honest Claude Pro subscription, plus the work account that gives me a GitHub Copilot Enterprise seat. I make sure to always have access to the agent, so it never runs on my laptop. I literally can't stand how GPT sounds confident and gets a crucial piece wrong every time. If I could afford the hardware, I would've probably set up a local LLM rig, but good ones t"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50378067",
+    "author": "eamonnsullivan",
+    "date": "2026-11-05",
+    "text": "I'm (somewhat unexpectedly) retiring [1] soon and need to come up with an affordable setup for when I no longer have an organisation paying for my tokens. I use Github Copilot through work, which is actually not bad, but the affordable personal subscription doesn't include many of the models I like to use. I tried Claude, Codex, DeepSeek, and a few others. I think I'm settling on the following: 1. OpenCode Console (I think this used to be called Zen)."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50377453",
+    "author": "castwide",
+    "date": "2026-11-05",
+    "text": "> 1) What AI subscriptions are you personally paying for? (Claude, ChatGPT/Codex, Cursor, etc) None. I've used Claude and GitHub Copilot in the past. > 2) Are you using models outside (or instead) of those subscriptions? For example, pay-as-you-go APIs, OpenRouter, or locally hosted models. I'm currently using Qwen3.8-Flash-Next on local hardware. > 3) What coding harnesses and interfaces are you using? Are you s"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50377290",
+    "author": "tgel0",
+    "date": "2026-11-05",
+    "text": "Pro (no-brainer for me since I'm deep into the Google ecosystem), OpenCode Go and this month I'm trying out X Premium (mainly because of Grok Bot, which I surprisingly like more than I thought I would). At my day job, I also have access to GitHub Copilot. 2) No, but I might try out DeepSeek's own API in the near future 3) My main setup is a Herdr instance hosted on a cheap GCP VM that I access via Tailscale. There I'm running Pi, Antigravity and Cursor via their default CLIs. 4) Nothing apart from Herdr 5) Hermes + Grok Bot main"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50377091",
+    "author": "starkgoose",
+    "date": "2026-11-05",
+    "text": "Current setup is pi with github-copilot sub at work - limiting self to luna-6 model. I have custom tmux + nvim + lazygit setup that allows me to quickly toggle modals and jump in and out of code / markdown files for quick review. Im limiting myself like this to get a feel for agent limitations and develop a better sen"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50376720",
+    "author": "Animats",
+    "date": "2026-11-05",
+    "text": "Embarrassingly, I don't have one yet. I'm mostly still writing code one keystroke at a time. I've used Github Copilot to translate between languages and look things up, but haven't trusted it to write new code or fix anything. Claude Fable is now good enough that I should be using it. The latest Claude version is said to be comparable to a mid-career graphics programmer, which is about what I n"
+   }
+  ]
+ },
+ {
+  "name": "Zed",
+  "url": "https://zed.dev",
+  "score": 81.8,
+  "github_stars": 94166,
+  "top_hn_story": {
+   "title": "Zed 1.0",
+   "points": 2153,
+   "id": "47949027",
+   "url": "https://zed.dev/blog/zed-1-0"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50375873,
+    "author": "peepee1982",
+    "text": " right for me. It's just baffling to me how it is better in every regard than every other harness that I've ever tried (Claude Desktop, Github Copilot App, OpenCode Desktop, all the CLIs, Integrated Agents in VSCode and Zed, etc.) I will still start up a pi on the cli if I just have a quick question because T3 Code needs a bit to start up and connect to all providers/environments. This is my only point of friction: It's a bit heavy on resources (because it does a lot, not becaus"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50380102,
+    "author": "flaburgan",
+    "text": "Curious, as I am using Zed myself, when was the last time you used it?"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50368526,
+    "author": "grep_name",
+    "text": "etup for that. Sometimes I throw some money at openrouter to check out the mega-cheap options. 3. At home I really like goose (TUI), but have been messing with opencode (TUI mode)lately which is also nice. At work I use Zed with a corporate claude subscription and it's a good setup. 4) Not really. I tried some of the opencode swarm plugins awhile back but they didn't seem to work right. In general I don't really have the energy for messsing with a new plugin ecosystem. I also li"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373357,
+    "author": "guhcampos",
+    "text": "f-hosted and closed models in the same harness - this limitation is on our side. 3.b) For my personal stuff I've been using mostly Hermes. Some actual coding goes into Opencode, often piloted by Hermes itself. I'm using Zed as my code editor, but with the AI features disabled. My opencode subscription is actually configured in Zed, but I prefer the UI without them. 4) No. I don't really need them. I run 5-6 parallel sessions at most, otherwise I can't keep track of what's being "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373624,
+    "author": "Macha",
+    "text": "ccasionally, primarily GLM and Deepseek models. I\u2019ve experimented with Qwen locally but the models that run on my hardware are too dumb for extended use cases and too slow for quick questions. 3) Personal use: Primarily Zed. I use employer paid Claude Code in the day job but it eats tokens at a rate I\u2019m not willing to pay for for personal use. I\u2019ve tried OpenCode but their security track record is uninspiring and I\u2019m way more defensive about my personal hardware than my employer"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50375705,
+    "author": "ruduhudi",
+    "text": "My biggest improvement lately was a cloud vm. I start it when I start working and shut it down when nothing is running which makes it fairly cheap. On there i run claude code and codex via ssh and zed\u2018s ssh connection feature to take a look at the code where necessary. I map a range of ports so I can take a look at previews. Agents just continue running when I close the lid."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50377512,
+    "author": "geonic",
+    "text": "Went from using Codex and Claude via ACP in zed to Codex app, then harness aggregators like Paseo, Orca and Superset to Claude Projects. Claude Projects is pretty nice and integrates with Claude Artifacts for design tasks. Projects remembers context, repositories and working directories so I can always pic"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50377715,
+    "author": "thibsrn",
+    "text": "seful in a lot of industries. For the frontend, I either use the web-based version of ChatGPT for quick questions and analytical work (the desktop version is unnecessarily heavy), or Open WebUI. For coding, I mostly use Zed. I like the traditional development environment and tooling, I tried several agent-first environments, but in the end I prefer an IDE on top of which agents were added. OpenCode Web has evolved a lot, I have been using it for quick scripting as well. I never "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50377888,
+    "author": "quard8",
+    "text": " it in a few months 2. I use both OpenAI and Anthropic models via api, openrouter for MAI Translate 2 (super cheap) and a small qwen model on a second laptop for hermes (mostly searching and summarization tasks) 3. used Zed with threads, but week ago moved to herdr-app + zed as code editor. oh-my-pi is my choice for harness 4. no 5. hermes: can't find a lot of use cases right now, instinct: super simple tasks like finding where to buy a product, tennis match schedule checks."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50378106,
+    "author": "flaburgan",
+    "text": "I use the Zed IDE with Opus 5.5 pro subscription. I use to have access to Fable with the max plan and I miss it, despite what everyone is saying I still find that Opus does weird things. Just yesterday I pointed it to a queue suddenly being twice slower to be processed in "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50378273,
+    "author": "ccapndave",
+    "text": "100 plan). Like many people here, I used AI to build my own orchestrator so I can work on multiple tasks across multiple projects without going insane. For reviewing code and (god forbid) writing something by hand I use zed."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50378907,
+    "author": "rbehrends",
+    "text": "nt with local models, and then only out of curiosity, not for any actual work, just to see what they can do within the limitations of my Mac Studio with 32GB of memory. I do not use any API offerings. 3. I primarily use Zed and JetBrains IDEs (Zed has overall better agent support, JetBrains still has by far the better IDEs). I only rarely use terminal clients; IDE integration is something I consider essential for most of my work, even if both Zed and JetBrains have their limitat"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50380092,
+    "author": "joddystreet",
+    "text": "1. AI subscriptions- Codex (Pro), Ollama (Max), Copilot (for Zed autocompletes) 2. N/A 3. Coding harnesses - Codex, Pi. (Switched from claude code) 4. Just codex, no agent swarms. When starting a new module - focused work, one issue, one agent, one project. For smaller tasks/minor issues - multiple parallel sessions, withi"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50381382,
+    "author": "catketch",
+    "text": "1 year ago: Claude & openai subs, cli/tui only 6 mo ago: same subs, mostly Zed as baseline thread / worktree manager using ACP to drive cluade/codex. Some use of the cluade/codex desktop apps directly as their dx has gottne better today: still zed as a base rather than relying too much on anthropic or openai tooling, but rapidly increas"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50405242",
+    "author": "thunky",
+    "date": "2026-11-07",
+    "text": "Based on the hype I tried zed thinking it would feel amazing compared to vscode, and it just didn't."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50405206",
+    "author": "jenadine",
+    "date": "2026-11-07",
+    "text": "GPUI works well for Zed, but it's built for Zed's needs only. There is no official crates.io udates. Breaking changes land as Zed needs them, and outside PRs often get declined causing a mess of several forks."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50404634",
+    "author": "codazoda",
+    "date": "2026-11-07",
+    "text": "Probably at the edge of being a good example. I recently switched to zed because of how bloated VS Code is becoming. I think it gained it\u2019s momentum by being small, but enshitification seems to come for all software."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50404492",
+    "author": "robin_reala",
+    "date": "2026-11-07",
+    "text": "der work, based on the maturity of the web stack in this area. My assumptions have definitely been proven wrong before though\u2026 Anyone from Discord working on accessibility want to chime in? [1] https://accesskit.dev/ [2] https://github.com/zed-industries/zed/blob/main/crates/gpui/... "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50404176",
+    "author": "fg137",
+    "date": "2026-11-07",
+    "text": "Meanwhile Zed isn't really usable on machines without a GPU e.g. VDIs https://github.com/zed-industries/zed/discussions/17212 I don't know if we have a winner here."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50404086",
+    "author": "grub5000",
+    "date": "2026-11-07",
+    "text": "Has GPUI development even picked up since the Zed team gave up on it? The GPUI website still links directly to the Zed repo's subfolder. I can't tell if there's even one coherent GPUI project any more"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50402161",
+    "author": "visarga",
+    "date": "2026-11-07",
+    "text": "I forked Zed to pass a ZED_TERMINAL_ID which is tied to the individual shell pane, using it to restore whatever agent session I had running in that pane. I keep 10+ Zed windows open with 1 to 4 agent panes, a reboot used to be a disaster."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50401174",
+    "author": "marcosdumay",
+    "date": "2026-11-07",
+    "text": "Actually, yes. Zed looking like it works great, but failing lots of really basic things made me so angry I actually fixed my emacs config."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50399740",
+    "author": "conartist6",
+    "date": "2026-11-06",
+    "text": "Zed is the other IDE company based out of Boulder ; )"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50399296",
+    "author": "brink",
+    "date": "2026-11-06",
+    "text": "AI is dramatically accelerating my return to Emacs from Zed."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50396813",
+    "author": "nicoburns",
+    "date": "2026-11-06",
+    "text": "It's definitely possible to do sharp fonts in the Rust GUI ecosystem (although you certainly won't get it out of the box). With the native text libraries if you want to (both Servo, Zed/GPUI, and anything using Skia do this), or emulated with Skrifa + Vello. But I agree with the reset"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50392677",
+    "author": "speedstyle",
+    "date": "2026-11-06",
+    "text": "At the moment I just use Zed, or I imagine I'd be fine with Sublime. When I used Jetbrains/VSCode, I would grab Notepad/Notepad++ when I didn't want to wait for them to open, set up a project, etc. But if something 'heavyweight' is quicker than notepad, and the features don't get in my way, I don't need any"
+   }
+  ]
+ },
+ {
+  "name": "Antigravity",
+  "url": "https://antigravity.google",
+  "score": 67.6,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Google Antigravity",
+   "points": 1088,
+   "id": "45967814",
+   "url": "https://antigravity.google/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50373135,
+    "author": "mv4",
+    "text": "For building, I started with Kiro and later switched to Antigravity (Opus 5.5 for planning, Gemini 3.8 for implementation - but now using Argon for everything and quite happy). Claude for design. Had a Hermes set up with a dual NVIDIA DGX Spark and Deepseek v4 Flash, but then built my own harness (getcinnamon.ai) and pretty m"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50374261,
+    "author": "seanmcdirmid",
+    "text": "- Antigravity (AGY - Google Ultra $100/month), mostly gemeni flash but I benchmark Gemini Astra sometimes. My main driver because it\u2019s pretty good at search compared to setting something up with DSH. - DeepSeekHarness (DSH) Desktop using: \u2014- with pay as you go DeepSeek tok"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50374491,
+    "author": "ghempton",
+    "text": "1) claude, claude again, codex, antigravity, cursor 2) no 3) using a variety of different harnesses managed by codealong 4) built https://github.com/codealong/codealong 5) openclaw not used very much anymore in favor of native harnesses"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50375606,
+    "author": "glennfiedler",
+    "text": "I'm juggling multiple claude ultra subs, multiple codex $500 a month subs, antigravity for argon, plus API rate deepseek 4.1 flash, mercury 3, and abliterated large v2 for red teaming. I work across multiple models and harnesses using a really simple redis-backed message bus called \"nova-bus\": https://github.com/mas-bandwidth/nova-tools (open s"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50376538,
+    "author": "voodooEntity",
+    "text": "For me the answer is twofold. Regarding commercial solutions: - Subscription: Google AI Ultra (testing for 1 month rn to see what i can get out of argon, after that probably going back to Pro package) - Harness: Antigravity IDE : from what i have tested on commercial harnesses this one i liked the most so far Regarding selfhosted solutions: - Inference host: Im owning a 5090 and im running the models locally - mostly use qwen 3.8 27b q5 atm, its a bit \"slower\" even on a 5090 but"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50377290,
+    "author": "tgel0",
+    "text": "ob, I also have access to GitHub Copilot. 2) No, but I might try out DeepSeek's own API in the near future 3) My main setup is a Herdr instance hosted on a cheap GCP VM that I access via Tailscale. There I'm running Pi, Antigravity and Cursor via their default CLIs. 4) Nothing apart from Herdr 5) Hermes + Grok Bot mainly for non/light-coding stuff like digest-style monitors for different websites (such as HN), social media etc."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50378376,
+    "author": "tegeek",
+    "text": "I've Kiro and Antigravity installed both are vs code but forked by Amazon and Google and brought their multi agentic coding environments. Then I installed Claude extention on both. I follow spec-driven approach ( https://kiro.dev/docs/specs/ ) all agents are instructed to follow it st"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50379482,
+    "author": "Outermeasure_A",
+    "text": "1) No subscriptions 2) I self host a Q4 quant of GLM 5.3 flash, at work using Antigravity and Gemini Argon 3) Vanilla Pi cli and running in a VM. I customized it to work around common LLMism, like intercepting and modifying requests or tool calls. 4) Pi is my agent orchestration, it can run in headless mode recursively. Also most of the things the"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50385108,
+    "author": "JheisonMB",
+    "text": "ving adversarial validation. I\u2019ve compiled the agentic patterns I use here: https://graphs.univerlab.org/patterns . In total, I spend 40 USD. I also take advantage of all the available free tiers: OpenCode, Kiro, Codex, Antigravity, Kilo, Vibe, Cursor, CodeBuddy, Devin, and FreeBuff. That\u2019s for my personal use; for work, I\u2019m provided with 10K AI credits for GitHub Copilot and Codex Pro."
+   },
+   {
+    "src": "ask_hn",
+    "id": 48416030,
+    "author": "blfr",
+    "text": "I banged out a simple FastAPI endpoint/tool (along with dockerization and deployment) and a media-heavy Astro website (along with Cloudflare Pages publishing) in Google's Antigravity2. https://antigravity.google/product/antigravity-2 Not really a recommendation since I don't have a good benchmark of these tools but Antigravity's /grill-me feature where it asks you a bunch of questions like a system/business analyst and gives you an implem"
+   },
+   {
+    "src": "ask_hn",
+    "id": 47393215,
+    "author": "seudxs",
+    "text": "ernet and some other technical docs that refines them. You can simply instruct it to change snippet of codes by mentioning them with their actions inside the chat that feeds the agent, this is done in tools like cursor, antigravity, llmanywhere. an instruction could be limited to CRUD instructions, CRUD standing for Create, Read, Update, and Delete. an update instruction looks like \"change the code that does this to do that\" or more precise one \"change the timeout of the request to ycom"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46255998,
+    "author": "Alan01252",
+    "text": " the AI first the feature you want to build. In codex using vscode I always switch to chat mode, talk through what I am trying to achieve and then once myself and the AI are in \"agreement\" switch to agent mode. Google's antigravity sort of does this by default and I think it's probably the correct paradigm to use. 2. Get the basics right first. It's easy for the AI to produce a load of slop, but using my experience of development I feel I am (sort of) able to guide the AI in advance in "
+   },
+   {
+    "src": "ask_hn",
+    "id": 46262566,
+    "author": "evrenesat",
+    "text": "I think Gemini 3 pro (high) in Antigravity does something like that because I can keep asking for different changes in the same chat without needing to create a new session."
+   },
+   {
+    "src": "ask_hn",
+    "id": 46264180,
+    "author": "radio879",
+    "text": "Right now Google Antigravity has free Claude Opus 4.5, with pretty decent allowances. I also use Github Copilot which is just $10/mo. I have to use the official copilot though, if I try to 'hack it' to work in Claude Code it burns thru all the credits too fast. I am having a LOT of great"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50403084",
+    "author": "deno",
+    "date": "2026-11-07",
+    "text": "This is how it looks on the marketing pages not in real world. For example: what is \"Antigravity Entitlement\"? You can buy whatever subscription (even Ultra or higher) you like and not have access to Antigravity at all. You will have to then go through some nebulous verification process which half the time is just broken. E.g. people in EU were for months blocked from verif"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50401882",
+    "author": "ved_a",
+    "date": "2026-11-07",
+    "text": "100% this. I have genuinely tried to use Gemini models - tried to pay for them, but its practically impossible to navigate Google Cloud (vertex, antigravity, etc)console to even find where to pay - after great meat proxy efforts, I fix billing issues (or I think I fix them) the model stops working suddenly. Its shocking how bad Google AI has been"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50398701",
+    "author": "ghshephard",
+    "date": "2026-11-06",
+    "text": "ues me. Other than Paul Graham talking it up a lot on Twitter - I've never once heard of anyone using it, seen any chatter about it in any or our internal slack forums. Every other AI company I get barraged with- no matter where I go, even antigravity/gemini carbon/argon/models/etc... - which nobody I know uses either - but at least I hear about them a lot. I wonder what ecosystem replit exists in that seems to completely not overlap with any of the other AI technologies and companies...."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50397610",
+    "author": "snailmailman",
+    "date": "2026-11-06",
+    "text": "I can\u2019t get that one to load either, here\u2019s the non-old Reddit link, which won\u2019t force login at least: https://reddit.com/r/google_antigravity/comments/1xpbc54/ant... "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50397489",
+    "author": "sarjann",
+    "date": "2026-11-06",
+    "text": "I mentioned to an Antigravity dev at an event that I am not likely to try their models if I am forced to use their harness as Antigravity isn't a super great harness so even if they release a good model I'm forced to (if I want to use subscription) to also use their bad harness."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50397294",
+    "author": "jiggawatts",
+    "date": "2026-11-06",
+    "text": "k features. I can\u2019t purchase any Google consumer products now, because this \u201cfamily\u201d account is now an \u201centerprise\u201d and\u2026 there\u2019s just no way. It can\u2019t be done. No. Just\u2026 go away. Shoo\u2026 I can\u2019t get a YouTube \u201cfamily\u201d account. I can\u2019t get an Antigravity personal account. Nothing works. Google insists that I upgrade the entire organisation, or nothing. I can\u2019t get an AI plan for just one \u201cemployee\u201d! It\u2019s doubly stupid because like millions of people, I initially subscribed as a non-business and was forced to convert by Google!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50396467",
+    "author": "abirch",
+    "date": "2026-11-06",
+    "text": "Is this a gemini vs Antigravity-cli thing? I use agy as my cli at home and it's as good as Opus/Sonnet for me -- but I haven't tried very taxing tasks. I use Aragon/Flash. I'm not modifying large code bases, more like vibe coding throwaway projects at home."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50396094",
+    "author": "qlte",
+    "date": "2026-11-06",
+    "text": "lly just included in their normal range of Google One subscriptions that bundle Drive/etc which have been around for years. You pick a plan and pay for it, and sign in to whichever app you're using like Gemini chat (ChatGPT/Claude Chat) or Antigravity (Codex/Claude Code). https://one.google.com/about/ AI Studio is the developer console (OpenAI Platform/Claude Platform). Vertex AI is the Google Cloud enterprise platform (using GPT or Claude models via AWS Bedrock/Azure AI Foundry). Pretty much every product is a 1:1 equivalent"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50394860",
+    "author": "drivebyhooting",
+    "date": "2026-11-06",
+    "text": "Maybe I\u2019m using antigravity wrong, so I\u2019d love to be corrected here: * For scientific computing it constantly cuts corners and writes awful buggy code. Bugs that will flip signs, or clamp values. Then when the model (or harness..?) discovers it, rather than fixing the underlying hacks it just adds more cod"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50394196",
+    "author": "vohk",
+    "date": "2026-11-06",
+    "text": "n Pro feel worse than Sol/Astra/Opus on competing plans. But where Luna and Haiku have gotten to point of being 'good enough' for grunt work, I don't feel like 3.8 Flash is there. That view somewhat biased by Flash getting stuck looping in Antigravity's CLI when I asked if it could add plan usage % to the status line. Instead of \"no\", it first pretended agy was Claude Code and gave me a wrong answer, then resorted to trying to analyse the binary. Their harness situation is just awful ."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50393979",
+    "author": "browningstreet",
+    "date": "2026-11-06",
+    "text": "ex, Claude, and Gemini plans. They obv don't care about that mindshare but they're a big enough organization that they could carve off a marketing and dev outreach team. On X the only Google person I follow is Richard Seroter, and he hypes Antigravity sometimes, but not the plans you need for it. No one ever talks about it. They should be the 3rd or 4th, certainly jockeying for position with Grok/Cursor. I would never sign up for an Elon AI plan under any circumstances, and there's enough distaste for Anthropic and OpenAI to "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50393021",
+    "author": "esseph",
+    "date": "2026-11-06",
+    "text": "It's right here: https://gemini.google/subscriptions/ Have used them both for work with google workspace accts, and personally, with antigravity in linux."
+   }
+  ]
+ },
+ {
+  "name": "Windsurf",
+  "url": "https://windsurf.com",
+  "score": 64.8,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "OpenAI\u2019s Windsurf deal is off, and Windsurf\u2019s CEO is going to Google",
+   "points": 1055,
+   "id": "44536988",
+   "url": "https://www.theverge.com/openai/705999/google-windsurf-ceo-openai"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 46266283,
+    "author": "gcbirzan",
+    "text": "> I see it as a competent software developer but one that doesn't know the code base. I know what you mean, but the thing I find windsurf (which we moved to from copilot) most useful (except writing opeanapi spec files) is asking it questions about the codebase. Just random minutiae that I could find by grepping or following the code, but would take me more than the 30s-1m it takes it. For refe"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46259998,
+    "author": "thyb23",
+    "text": "creates confusion and worse output. One observation on Gemini 3 vs Claude 4.5 Opus: Gemini is great for one-shot on fresh projects and UIs, but struggles more on large codebases and can get easily confused (might be the Windsurf agent though). Just experiment a lot. Like coding itself, you build intuition over time on what works and what doesn't."
+   },
+   {
+    "src": "ask_hn",
+    "id": 46260605,
+    "author": "devdp430",
+    "text": "I use AI at work. We have a huge codebase in Golang. 1000s of files. I had tried cursor, claude code, gemini cli, openai codex and all sorts of vscode based idea (like windsurf, antigravity etc). All of them get overwhelmed when there is something to implement or change in the codebase primarily due to the amount of code. But I like aider. I had better capabilities and is controllable, you can try. And if you use it with latest clau"
+   },
+   {
+    "src": "ask_hn",
+    "id": 43960348,
+    "author": "mirekrusin",
+    "text": "e sitter, building their own gpu based cross platform ui etc.) and velocity it seems that they're positioned to outpace competition. Personally I'd say that their tech is maybe two orders of magnitude more valuable than windsurf?"
+   },
+   {
+    "src": "ask_hn",
+    "id": 43960820,
+    "author": "drcongo",
+    "text": "Cursor and Windsurf are both forks of VS Code, an editor."
+   },
+   {
+    "src": "ask_hn",
+    "id": 43960299,
+    "author": "eadz",
+    "text": "It would be great if there was an easy way to run their open model ( https://huggingface.co/zed-industries/zeta ) locally ( for latency reasons ). I don't think Zeta is quite up to windsurf's completion quality/speed. I get that this would go against their business model, but maybe people would pay for this - it could in theory be the fastest completion since it would run locally."
+   },
+   {
+    "src": "ask_hn",
+    "id": 43959909,
+    "author": "SafeDusk",
+    "text": "king next action by just disabling the `ask` tool. I won't say it is better than any of the VSCode forks, but it works for 70% of my tasks in an understandable manner. As for the remaining stuff, I can always use Cursor/Windsurf in a complementary manner. It is open, have a look at https://github.com/aperoc/toolkami if it interests you."
+   },
+   {
+    "src": "ask_hn",
+    "id": 43969635,
+    "author": "fragmede",
+    "text": "t that system prompts are quite powerful in influencing how an LLM behaves. ChatGPT with a blank user entered system prompt behaves differently (read: poorer at coding) than one with a tuned system prompt. Aider/Copilot/Windsurf/etc all have custom system prompts that make them more powerful rather than less, compared to using a raw web browser, and also don't involve the overhead of copy pasting."
+   },
+   {
+    "src": "ask_hn",
+    "id": 43960980,
+    "author": "anotheryou",
+    "text": "To be honest I'm using windsurf with openAI/google right now and used deepseek with aider when it was still less crowded. My only problem was deepseek occasionally not answering at all, but generally it was fast (non thinking that was)."
+   },
+   {
+    "src": "ask_hn",
+    "id": 43959987,
+    "author": "anonymoushn",
+    "text": "I evaluated Windsurf at a friend's recommendation around half a year ago and found that it could not produce any useful behaviors on files above a thousand lines or so. I understand this is mostly a property of the model, but certainly also a property of the approach used by the "
+   },
+   {
+    "src": "ask_hn",
+    "id": 43961261,
+    "author": "sumedh",
+    "text": "Windsurf has improved a lot in the last few months."
+   },
+   {
+    "src": "ask_hn",
+    "id": 43959991,
+    "author": "eisfresser",
+    "text": "Windsurf at the moment. It now can run multiple \"flows\" in parallel, so I can set one cascade off to look into a bug somewhere while another cascade implements a feature elswhere in the code base. The LLMs spit out their tokens in the background, I drop in eventually "
+   },
+   {
+    "src": "ask_hn",
+    "id": 43960047,
+    "author": "pbowyer",
+    "text": "I've had trials for both running and tested both on the same codebases. Cursor works roughly how I've expected. It reads files and either gets it right or wrong in agent mode. Windsurf seems restricted to reading files 50 lines at a time, and often will stop after 200 lines [0]. When dealing with existing code I've been getting poorer results than Cursor. As to autocomplete: perhaps I haven't set up either properly (for PHP) but the autocom"
+   },
+   {
+    "src": "ask_hn",
+    "id": 43960292,
+    "author": "retinaros",
+    "text": "It is currently at top3 in swe bench verified. It went through multiple stages of upgrades and I would say at this stage it is better than copilot. Fundamentally it is as good as cursor or windsurf but lacks some features and cannot match their speed of release. If you re on aws tho its a compelling offering."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50394899",
+    "author": "anon84873628",
+    "date": "2026-11-06",
+    "text": "No, it's exactly because of the copious resources. Vertex AI existed as an ML platform before the GenAI era. DeepMind was doing it's thing in another silo. Then Gemini products came along. Then they acquired the Windsurf folks. A smaller company would have no choice but to focus on one team and one product. Google has a Darwinian ecosystem and someone has to come along and smash teams together, clumsily refactoring the technology and user journeys. Their employees read HN though and their VPs he"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50385528",
+    "author": "darkamaul",
+    "date": "2026-11-05",
+    "text": "> > No. This includes (but is not limited to) all generative AI tools like Claude, Codex, ChatGPT, Cursor, Gemini, and Windsurf Based on the tool listed here, you can probably know when this policy was first written. For instance, Windsurf is long gone and Cursor is not tier 1 anymore. Crazy to think how much the space of AI coding agent has evolved in less than 2 years."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50385066",
+    "author": "btown",
+    "date": "2026-11-05",
+    "text": "oted, is due to: https://book.servo.org/policy/ai-usage.html > Can I submit a PR that includes code generated by AI tools? > No. This includes (but is not limited to) all generative AI tools like Claude, Codex, ChatGPT, Cursor, Gemini, and Windsurf. For something like a browser, this de facto limits the set of people who can contribute to something that touches the layout engine (e.g. the ineffable but brilliant https://github.com/servo/servo/blob/main/components/layout/f... ) to just those already familiar with the code. "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50351749",
+    "author": "diogenes_l402",
+    "date": "2026-11-03",
+    "text": "i-protocol microservice gateway and Model Context Protocol (MCP) server running on Cloudflare's global edge. ### Why We Built This When building autonomous agents or configuring tools in coding environments like Cursor, Claude Desktop, and Windsurf, we ran into two recurring bottlenecks: 1. *The Account / Credit Card Friction*: Autonomous agents cannot complete KYC, enter SMS verification codes, or manage monthly SaaS subscriptions. We wanted a clean, pay-per-request protocol where agents can settle calls atomically via Bi"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50335987",
+    "author": "mrkeen",
+    "date": "2026-11-02",
+    "text": "nswers. At some point I bought a 24GB card which was basically dead on arrival. I kept my 16GB card in a server and maintained my VPN infra so I could access it from wherever. I was still using this setup even when my workplace was pushing windsurf/copilot harder and harder. For me they were just broken. I'd ask for trivial tasks like \"copy this unit test into a second unit test which tests something slightly different\" and it would just get confused and delete shit, or leave random UUID strings throughout the codebase. Ev"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50269895",
+    "author": "thereitgoes456",
+    "date": "2026-10-28",
+    "text": "should be, knocking ~3 points off its AA score. All open-source models are also inexplicably run using Devin, damaging their scores as well. This may even be intentional, if Cognition has beef with Google, since Antigravity was built using Windsurf's technology. But aside from that, it is to their advantage to make Anthropic/OAI look like leaders in the AI market. They are a company known to lie and exaggerate again and again, so I have trouble giving them benefit of the doubt."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50158146",
+    "author": "tchadev",
+    "date": "2026-10-19",
+    "text": "deterministically at the transport and STDIO proxy layer, rather than relying on probabilistic LLM system prompts. ### What it does: Tcha sits as a transparent, sub-millisecond reverse proxy between your host agent (Claude Desktop, Cursor, Windsurf, custom agents) and MCP tool servers: 1. In-Line MCP Reverse Proxy: Intercepts tools/call JSON-RPC streams in flight with ). 4. Cryptographic Merkle Audit Ledger: Every tool execution, parameter hash, and intercept decision is written to an append-only SQLite WAL ledger with con"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50071306",
+    "author": "nova22033",
+    "date": "2026-10-13",
+    "text": "Same thing they did with windsurf"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50061390",
+    "author": "eesmith",
+    "date": "2026-10-12",
+    "text": "o the Pizza Bowl in a fictional portrayal of 1960 Milwaukee. A large watermelon? Really? How many times has that happened to you? Do you leave the watermelon in your hot car while you work the rest of the day? You also can't easily carry a windsurfer on a bicycle, so might mention that too. But in answer to your question, if you are going to be carrying things on your bicycle, put some baskets on, like https://waldbicyclebaskets.com/products/582-rear-basket-blac... or https://www.femmecyclist.com/how-to-carry-groceries-on-"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50045665",
+    "author": "thereitgoes456",
+    "date": "2026-10-11",
+    "text": "aking their billions liquid, despite no moat or profitability, just because they have so much money and need to spend it on something .) No matter how much \u201cgrit\u201d you have, you\u2019re still at the mercy of such people, as e.g. the engineers at Windsurf were, who worked super hard but their founders sold to Google, walked away with hundreds of millions, and gave the employees nothing. Of course, it depends on your meaning of \u201csubstantial\u201d. Successful engineers have great wealth too, enough that they can be very happy and buy an"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49978262",
+    "author": "chris_st",
+    "date": "2026-10-06",
+    "text": "I had personal subscriptions to WebStorm and GoLand and cancelled them not long after getting Windsurf. Just don't need the IDE abilities like I used to... Still use 'go to definition' but that's pretty much it."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49944155",
+    "author": "spedhead",
+    "date": "2026-10-03",
+    "text": "ow it works: - Free API: http://167.233.135.161:9999/api/convert?url= ... (10/day, no signup). Strips nav, ads, boilerplate. - MCP server (stdio + streamable HTTP): one tool, web2md_convert. Works with Claude Desktop, Cursor, Continue.dev, Windsurf. Published in the official MCP registry (io.github.astra-intelligence/web2md). - CLI + Dockerfile in the repo. Honest scope: single-page conversion today (no site crawls, no PDFs yet). Feedback welcome \u2014 especially on output quality vs. readability, and whether people want batch"
+   }
+  ]
+ },
+ {
+  "name": "Cline",
+  "url": "https://cline.bot",
+  "score": 63.2,
+  "github_stars": 71447,
+  "top_hn_story": {
+   "title": "Using AI for Coding: My Journey with Cline and LLMs",
+   "points": 198,
+   "id": "42829034",
+   "url": "https://pgaleone.eu/ai/coding/2025/01/26/using-ai-for-coding-my-experience/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50373936,
+    "author": "alexfromapex",
+    "text": "I like using Cline the VS Code extension. It can use local models and local inference with Ollama and tons of external inference providers like AWS Bedrock, Vertex, etc. It asks for permission to read webpages or run commands. You can give it whitelisted permission to just read"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50388891,
+    "author": "hosteur",
+    "text": "I haven't tried a whole lot. I tried Cline which I found hugely unstable and slow. I also tried the Google and Anthropic CLI ones very early on. They were a bit unstable at the time. So I guess I just stopped looking around much after trying Kilo Code because it gets the job done. I am curious, when d"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50374679,
+    "author": "semireg",
+    "text": "I'm a solo developer. I'd hit walls with openrouter (sonnet/opus/sol) + cline Now I'm running qwen 3.8 FN + omp + https://github.com/mattpocock/skills This combination has pretty much \"solved\" node/react coding for me, running locally on dual RTX 6000, 200-800 tps depending on concurrency. An incredible time to be alive."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50374774,
+    "author": "SftwareRenderer",
+    "text": "h as baseten and novita, but wasn't satisfied with inconsistency in performance and pricing. For software dev, I primarily use my own harness/orchestrator (that I shared recently), and sometimes Pi. I switched away from Cline + VS Code primarily because code is being generated so fast that I needed to optimize for review. My harness is modeled similar to my day job: dev team works on stories, tracked on a kanban, and I'm a code-review gate. For example I scrutinize control surface"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50376016,
+    "author": "user2722",
+    "text": "Deepseek Flash or GLM flash, paid upfront using Openrouter, via Cline on Visual Studio Code."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50377417,
+    "author": "hosteur",
+    "text": " lets me watch the progress of each agent and open the chat with each to provide input, instructions, etc. as well as review code changes, perform tests, etc. I did switch harness at some point because I previously used Cline which was dog slow and unstable. I do not use OpenRouter or anything like that. I have dabbled a bit with local models on my MBP M3 but with 24 GB RAM, the models I were able to run were both too slow and poor quality. My setup is probably hopelessly suboptim"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50377453,
+    "author": "castwide",
+    "text": "s outside (or instead) of those subscriptions? For example,  [question]  I'm currently using Qwen3.8-Flash-Next on local hardware. > 3) What coding harnesses and interfaces are you using?  [question]  I occasionally use Cline in VS Code, but it's rare. > 4) Are you using any agent orchestration or swarm tools? No. > 5) Are you using  [question]  I built custom agents on top of RubyLLM. I primarily communicate with them via email. One of them has access to a Redmine project board w"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46256069,
+    "author": "listic",
+    "text": "For the one disinclined to get into closed source, proprietary tools, what is the next best thing to try? I heard of Cline and Aider, but didn't try anything."
+   },
+   {
+    "src": "ask_hn",
+    "id": 46704093,
+    "author": "loh",
+    "text": "ode (Sonnet), and only tried Opus 4.5 for more complex things. I've also tried Codex which didn't seem very good by comparison, plus a handful of other local models (Qwen3, GLM, Minimax, etc.) through OpenCode, Roo, and Cline that I'm able to run on my 128 GB M4 Max. The local ones can work for very simple agentic tasks, albeit quite slow."
+   },
+   {
+    "src": "ask_hn",
+    "id": 43959880,
+    "author": "snthpy",
+    "text": "Cline?"
+   },
+   {
+    "src": "ask_hn",
+    "id": 43959933,
+    "author": "triptych",
+    "text": "I love Cline and use it every day. It works the way I think and makes smart decisions about features."
+   },
+   {
+    "src": "ask_hn",
+    "id": 43960013,
+    "author": "vladstudio",
+    "text": "Cline!"
+   },
+   {
+    "src": "ask_hn",
+    "id": 43960743,
+    "author": "m3adow",
+    "text": "I'm using Gemini 2.5 Pro with Aider and Cline for work. I'd say when working for 8 full hours without any meetings or other interruptions, I'd hit around $2. In practice, I average at $0.50 and hit $1 once in the last weeks."
+   },
+   {
+    "src": "ask_hn",
+    "id": 43960136,
+    "author": "fastball",
+    "text": "For the agentic stuff I think every solution can be hit or miss. I've tried claude code, aider, cline, cursor, zed, roo, windsurf, etc. To me it is more about using the right models for the job, which is also constantly in flux because the big players are constantly updating their models and sometimes that is good and sometimes that is bad. But I daily drive "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50388891",
+    "author": "hosteur",
+    "date": "2026-11-06",
+    "text": "I haven't tried a whole lot. I tried Cline which I found hugely unstable and slow. I also tried the Google and Anthropic CLI ones very early on. They were a bit unstable at the time. So I guess I just stopped looking around much after trying Kilo Code because it gets the job done. I am curious, when do you typically run "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50377453",
+    "author": "castwide",
+    "date": "2026-11-05",
+    "text": "n local hardware. > 3) What coding harnesses and interfaces are you using? Are you sticking with the default CLIs or IDE integrations, or using alternatives like OpenCode, Pi, Aider, Muse Code, or custom-built harnesses? I occasionally use Cline in VS Code, but it's rare. > 4) Are you using any agent orchestration or swarm tools? No. > 5) Are you using broader agent platforms like OpenClaw / Hermes Agent / Grok bot / Dots / Muse? I built custom agents on top of RubyLLM. I primarily communicate with them via email. One o"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50377417",
+    "author": "hosteur",
+    "date": "2026-11-05",
+    "text": " IDE and KILO plugin lets me watch the progress of each agent and open the chat with each to provide input, instructions, etc. as well as review code changes, perform tests, etc. I did switch harness at some point because I previously used Cline which was dog slow and unstable. I do not use OpenRouter or anything like that. I have dabbled a bit with local models on my MBP M3 but with 24 GB RAM, the models I were able to run were both too slow and poor quality. My setup is probably hopelessly suboptimal. I would love to "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50376016",
+    "author": "user2722",
+    "date": "2026-11-05",
+    "text": "Deepseek Flash or GLM flash, paid upfront using Openrouter, via Cline on Visual Studio Code."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50374774",
+    "author": "SftwareRenderer",
+    "date": "2026-11-05",
+    "text": "ference services such as baseten and novita, but wasn't satisfied with inconsistency in performance and pricing. For software dev, I primarily use my own harness/orchestrator (that I shared recently), and sometimes Pi. I switched away from Cline + VS Code primarily because code is being generated so fast that I needed to optimize for review. My harness is modeled similar to my day job: dev team works on stories, tracked on a kanban, and I'm a code-review gate. For example I scrutinize control surfaces, but instead of re"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50374679",
+    "author": "semireg",
+    "date": "2026-11-05",
+    "text": "I'm a solo developer. I'd hit walls with openrouter (sonnet/opus/sol) + cline Now I'm running qwen 3.8 FN + omp + https://github.com/mattpocock/skills This combination has pretty much \"solved\" node/react coding for me, running locally on dual RTX 6000, 200-800 tps depending on concurrency. An incredible time to be alive."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50373936",
+    "author": "alexfromapex",
+    "date": "2026-11-05",
+    "text": "I like using Cline the VS Code extension. It can use local models and local inference with Ollama and tons of external inference providers like AWS Bedrock, Vertex, etc. It asks for permission to read webpages or run commands. You can give it whitelisted permission to just read your files which is"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50335987",
+    "author": "mrkeen",
+    "date": "2026-11-02",
+    "text": " ask for trivial tasks like \"copy this unit test into a second unit test which tests something slightly different\" and it would just get confused and delete shit, or leave random UUID strings throughout the codebase. Eventually I tried out cline/openrouter/deepseekv4flash, and that was actually useful enough for me to tell it to do something to my code base, and as long as I supervised carefully enough it was useful, and priced OK. At some point in the process I tried Claude Code because of all the hype, but I couldn't "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50321868",
+    "author": "Beached",
+    "date": "2026-11-01",
+    "text": "Unfortunately, their harness is sooooo good. I haven't found one equivalent yet. I do play around with cline.bot's harness, and it is probably the closest alternative I have found. But their harness is so good, and their model is so good. Using them together is just unbeatable at the moment, even with all the restrictions and annoyances they have in place. Im excited for qwen4 release "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50252211",
+    "author": "anigbrowl",
+    "date": "2026-10-26",
+    "text": "I'm inclined to agree. Jetbrains' own agent host 'Junie' was such a paim to set up and get working with other providers that I switched to Cline. I had moderately good results with using that as a coding agent, but eventually I switched to Deepseek Harness for generative tasks and am now using my IDEs more for review."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50220196",
+    "author": "rbehrends",
+    "date": "2026-10-24",
+    "text": "laude Code), and there are actually a ton that you can add with just a few mouse clicks. Example: https://gist.github.com/rbehrends/4d9febe5c5c008961b309dd4a6... The \"Install From ACP Registry ...\" allow you to use pi, OpenCode, Kilo Code, Cline, Cursor, Copilot (and a ton of other agents that I've never heard of) if you want."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50213970",
+    "author": "rglover",
+    "date": "2026-10-23",
+    "text": "Using it now via API (3.1 Pro on Open Router) in a HITL setup (Cline in VSCode). Off-hand it's quite good. I've been using K3 for the past few months almost exclusively for coding work and have been stunned by how good it is. Excited to see how far 3.1 Pro can be pushed."
+   }
+  ]
+ },
+ {
+  "name": "Kiro",
+  "url": "https://kiro.dev",
+  "score": 55.7,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Kiro:\u00a0A new agentic IDE",
+   "points": 1063,
+   "id": "44560662",
+   "url": "https://kiro.dev/blog/introducing-kiro/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50367930,
+    "author": "sksksk",
+    "text": "At work, we're using Kiro. I've got no complaints. In my personal life, I'm extensively using Hermes. If you look at some previous comments you can see what I use it for. I genuinely think personal AI agents are the future, the way I feel when I use it is how I felt when I tried out t"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50370716,
+    "author": "slipwalker",
+    "text": "1) GPT plus, z.ai GLM Coding Lite-Monthly Plan ( legacy ), Opencode Go 2) personally, no. At work there is a Gemini Enterprise and Kiro Pro+ subscriptions 3) pi.dev inside herdr; both at home and work. I just pile the APIkeys and stick to same harness. 4) mostly, pi-subagents has an orchestration mode 5) no."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373135,
+    "author": "mv4",
+    "text": "For building, I started with Kiro and later switched to Antigravity (Opus 5.5 for planning, Gemini 3.8 for implementation - but now using Argon for everything and quite happy). Claude for design. Had a Hermes set up with a dual NVIDIA DGX Spark and Deepseek v4 Flash, but then built my own har"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373366,
+    "author": "pglevy",
+    "text": "Claude Pro for personal. (Kiro at work.) Moving towards long-running, asynchronous delegation where I use a locally running instance of Fizzy kanban board to manage and track all work. When I think of something I might want an agent to do, I create a card. When I want to delegate I assign "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50393280,
+    "author": "lp92",
+    "text": "ain platform as well. Flash 3.8 is great for general code gen. > which is basically a specification driven code development agent system So basically kind of like how Amazon has implemented their spec driven workflow in Kiro IDE?"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50378376,
+    "author": "tegeek",
+    "text": "I've Kiro and Antigravity installed both are vs code but forked by Amazon and Google and brought their multi agentic coding environments. Then I installed Claude extention on both. I follow spec-driven approach ( https://kiro.dev/docs/specs/ ) all agents are instructed"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50385108,
+    "author": "JheisonMB",
+    "text": "atterns involving adversarial validation. I\u2019ve compiled the agentic patterns I use here: https://graphs.univerlab.org/patterns . In total, I spend 40 USD. I also take advantage of all the available free tiers: OpenCode, Kiro, Codex, Antigravity, Kilo, Vibe, Cursor, CodeBuddy, Devin, and FreeBuff. That\u2019s for my personal use; for work, I\u2019m provided with 10K AI credits for GitHub Copilot and Codex Pro."
+   },
+   {
+    "src": "ask_hn",
+    "id": 48422565,
+    "author": "sermakarevich",
+    "text": "I looked at most of those, including kiro and tessl. Was early user of GSD when it was suitable for mid+ size projects. Over time GSD grown into beast which is suitable for huge + size projects only producing gigantic specs and burning too many tokens for most of the tasks. So I decided to created my"
+   },
+   {
+    "src": "ask_hn",
+    "id": 47391478,
+    "author": "konaraddi",
+    "text": "I work at aws and generally use Claude Opus 4.6 1M with Kiro (aws\u2019s public competitor to Claude Code). My experience is positive. Kiro writes most of my code. My complaints: 1. Degraded quality over longer context window usage. I have to think about managing context and agents instead of focusing solely on the task. 2."
+   },
+   {
+    "src": "ask_hn",
+    "id": 47392420,
+    "author": "humbleharbinger",
+    "text": "I'm an engineer at Amazon - we use Kiro (our own harness) with Opus 4.6 underneath. Most of my gripes are with the harness, CC is way better. In terms of productivity I'm def 2-4X more productive at work, >10x more productive on my side business. I used to work overtime to deliver my features. Now "
+   },
+   {
+    "src": "ask_hn",
+    "id": 47394273,
+    "author": "erklik",
+    "text": "liability for customers. This is something that's a part of every FAANG afaik. I know for a fact that there's no prohibition on pushing AI-assisted code. How would that even technically work? It'd basically mean banning Kiro/CC from the company. > Only one of the incidents involved AI-assisted tooling, which related to an engineer following inaccurate advice that an AI tool inferred from an outdated internal wiki, and none involved AI-written code. and this doesn't seem as \"AI ca"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46699510,
+    "author": "8note",
+    "text": "dote, at amazon last summer things swapped from nobody using llms to almost everyone using them in ~2months after a fantastic tech talk and a bunch of agent scripts being put together said scripts are kinda available in kiro now, see https://github.com/ghuntley/amazon-kiro.kiro-agent-source-co... - specifically the specs, requirements, design, and exec tasks scripts that plus serena mcp to replace all of gemini cli's agent tools actually gets it to work pretty well. maybe google'"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48450776,
+    "author": "mlaretallack",
+    "text": "ameraSpeaker ---- Added ONVIF to an oss rtsp android app. https://github.com/mretallack/cams ---- Added Home Assistant to Dicio Assistant. https://github.com/mretallack/dicio-android ---- Added telegram bot interface to kiro, with group support. https://github.com/mretallack/kiro-remote "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50393280",
+    "author": "lp92",
+    "date": "2026-11-06",
+    "text": "n. I use AGY as my main platform as well. Flash 3.8 is great for general code gen. > which is basically a specification driven code development agent system So basically kind of like how Amazon has implemented their spec driven workflow in Kiro IDE?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50385108",
+    "author": "JheisonMB",
+    "date": "2026-11-05",
+    "text": "useful for agentic patterns involving adversarial validation. I\u2019ve compiled the agentic patterns I use here: https://graphs.univerlab.org/patterns . In total, I spend 40 USD. I also take advantage of all the available free tiers: OpenCode, Kiro, Codex, Antigravity, Kilo, Vibe, Cursor, CodeBuddy, Devin, and FreeBuff. That\u2019s for my personal use; for work, I\u2019m provided with 10K AI credits for GitHub Copilot and Codex Pro."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50383282",
+    "author": "ioshaan",
+    "date": "2026-11-05",
+    "text": "How fraudulent AWS accounts feed a Claude distillation market: reverse-engineering Kiro-account-manager In Chinese Telegram channels, Claude access is being sold at a 94% discount off the official price. These discounted APIs are advertised for model distillation. Behind those low prices is a supply chain of fraudulently created accounts. The author found one of th"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50378376",
+    "author": "tegeek",
+    "date": "2026-11-05",
+    "text": "I've Kiro and Antigravity installed both are vs code but forked by Amazon and Google and brought their multi agentic coding environments. Then I installed Claude extention on both. I follow spec-driven approach ( https://kiro.dev/docs/specs/ ) all agents are instructed to follow it strict"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50373366",
+    "author": "pglevy",
+    "date": "2026-11-05",
+    "text": "Claude Pro for personal. (Kiro at work.) Moving towards long-running, asynchronous delegation where I use a locally running instance of Fizzy kanban board to manage and track all work. When I think of something I might want an agent to do, I create a card. When I want to delegate I assign to agent and move to"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50373135",
+    "author": "mv4",
+    "date": "2026-11-05",
+    "text": "For building, I started with Kiro and later switched to Antigravity (Opus 5.5 for planning, Gemini 3.8 for implementation - but now using Argon for everything and quite happy). Claude for design. Had a Hermes set up with a dual NVIDIA DGX Spark and Deepseek v4 Flash, but then built my own harness (getcinnamon.ai"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50370716",
+    "author": "slipwalker",
+    "date": "2026-11-04",
+    "text": "1) GPT plus, z.ai GLM Coding Lite-Monthly Plan ( legacy ), Opencode Go 2) personally, no. At work there is a Gemini Enterprise and Kiro Pro+ subscriptions 3) pi.dev inside herdr; both at home and work. I just pile the APIkeys and stick to same harness. 4) mostly, pi-subagents has an orchestration mode 5) no."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50367930",
+    "author": "sksksk",
+    "date": "2026-11-04",
+    "text": "At work, we're using Kiro. I've got no complaints. In my personal life, I'm extensively using Hermes. If you look at some previous comments you can see what I use it for. I genuinely think personal AI agents are the future, the way I feel when I use it is how I felt when I tried out the first iPhone. In "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50302595",
+    "author": "tyingq",
+    "date": "2026-10-30",
+    "text": "Sort of hoping it's Anthropic and their specific OpenVSX account credentials. As opposed to the worse case of an OpenVSX flaw that's broader. A ton of AI-enabled IDEs are VsCodium forks pointed at OpenVSX...Cursor, Anti Gravity, Kiro, Trae, Devin, etc."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50032157",
+    "author": "Bishonen88",
+    "date": "2026-10-10",
+    "text": "Kiro came out after both Claude and codex, so not sure that any enterprise stuck to kiro unless you mean that they stick to aws in general. I'd love to hear about usage of kiro even in vague terms compared to the competitors. Naively thinking, I'd guess it's 1% or less of Claude code"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50028199",
+    "author": "wordpad",
+    "date": "2026-10-10",
+    "text": "Enterprises are very sticky and they arent even chosing between claude and codex, many are looking at something like Kiro."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50013573",
+    "author": "meoleo",
+    "date": "2026-10-08",
+    "text": "I am not sure if I understand clearly why Kiro's approach would not find the issue."
+   }
+  ]
+ },
+ {
+  "name": "Neovim (CodeCompanion / avante)",
+  "url": "https://github.com/olimorris/codecompanion.nvim",
+  "score": 53.8,
+  "github_stars": 6927,
+  "top_hn_story": {
+   "title": "CodeCompanion: AI-powered coding, seamlessly in Neovim",
+   "points": 1,
+   "id": "44358783",
+   "url": "https://github.com/olimorris/codecompanion.nvim"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50391245,
+    "author": "skwee357",
+    "text": "onsole, sentry). Claude helped me to configure `tmux` to show alert popups when one of the clauds finished its work or needs my input. I utilize worktrees as much as possible to work on stuff in parallel. I have a fancy neovim setup that I no longer use, unfortunately. When I feel like reviewing the code, I use `tuicr`[2]. So basically, I live inside my terminal and firefox. [1] https://github.com/infisical/agent-vault [2] https://tuicr.dev/ "
+   },
+   {
+    "src": "ask_hn",
+    "id": 48413993,
+    "author": "michaelmior",
+    "text": "MacOS, Ghostty, Neovim, Pi (with a fair bit of customization to each). I'm relatively new to Pi after using Codex pretty heavily, but it's nice to be able to customize things to how I want."
+   },
+   {
+    "src": "ask_hn",
+    "id": 48414086,
+    "author": "Galanwe",
+    "text": "I have a vibe coded script which creates a git worktree + zellij pane with a specific layout + a virtualenv per feature. \"tmuxinator\" style. The zellij layout includes panes for OpenCode, a shell, a neovim, inotify tests, etc. I cycle through the zellij sessions during agent prefills."
+   },
+   {
+    "src": "ask_hn",
+    "id": 48414882,
+    "author": "mococa",
+    "text": "MacOS, Ghostty, Tmux, Neovim, Workmux[1], OpenCode/Claude Code, and lots of markdowns. 1 - https://github.com/raine/workmux "
+   },
+   {
+    "src": "ask_hn",
+    "id": 47393995,
+    "author": "christophilus",
+    "text": "This is one of its best use cases. Boilerplate and research, too. It\u2019s also super handy for tweaking my Neovim config."
+   },
+   {
+    "src": "ask_hn",
+    "id": 43960384,
+    "author": "movq",
+    "text": "The (relative) simplicity is what sells aider for me (it also helps that I use neovim in tmux). It was easy to figure out exactly what it's sending to the LLM, and I like that it does one thing at a time. I want to babysit my LLMs and those \"agentic\" tools that go off and do dozens of things in a loop make me feel out of control."
+   },
+   {
+    "src": "ask_hn",
+    "id": 43960481,
+    "author": "tacker2000",
+    "text": "hijacking this thread: Whats the best AI tool for NeoVim ?"
+   },
+   {
+    "src": "ask_hn",
+    "id": 43963964,
+    "author": "w4",
+    "text": "I\u2019ve really been enjoying the combination of CodeCompanion with Gemini 2.5 for chat, Copilot for completion, and Claude Code/OpenAI Codex for agentic workflows. I had always wanted to get comfortable with Vim, but it never seemed worth the time commitment, especially with how much I\u2019ve been using AI tools since 2021 "
+   },
+   {
+    "src": "ask_hn",
+    "id": 43962164,
+    "author": "zaphar",
+    "text": "There are several neovim mcp providers that expose bash and neovim as a tool so you can already do that."
+   },
+   {
+    "src": "ask_hn",
+    "id": 43961133,
+    "author": "aldanor",
+    "text": "We have an internal ban policy on copilot for IP reasons and while I was... missing it initially, now just using neovim without any AI feels fine. Maybe I'll add an avante.nvim for a built-in chat box though."
+   },
+   {
+    "src": "ask_hn",
+    "id": 43961068,
+    "author": "deafpolygon",
+    "text": "I use neovim now, after getting tired of the feature creep and the constant chasing of shiny new features. AI is not useful when it does the thinking for you. It's just advanced snippets at that point. I only use LLMs to explain things or to clarify a topic that doesn't m"
+   },
+   {
+    "src": "ask_hn",
+    "id": 43964427,
+    "author": "jzacharia",
+    "text": "Neither! Neovim for most of my work and vscode w/ appropriate plugins when it's needed. If I need any LLM assistance I just run Claude Code in the terminal."
+   },
+   {
+    "src": "ask_hn",
+    "id": 43968286,
+    "author": "aiaiaiaiaiaiai",
+    "text": "I love vim and but I am playing with this stuff too... There are a couple of neovim projects that allow this ... Advante come to mind right now. I will say this: it is a different thought process to get an llm to write code for you. And right now, the biggest issue for me is the interface. It is wrong some how, my attention not being directe"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45773885,
+    "author": "hacker_homie",
+    "text": "an load larger ones. I find local models (gpt oss 20B) are good quick references but if you want to refactor or something like that you need a bigger model. I\u2019m running llama.cpp directly and using the api it offers for neovim\u2019s avante plugin, or a cli tool like aichat, it comes with a basic web interface as well."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48889018",
+    "author": "rafaelnexus",
+    "date": "2026-07-13",
+    "text": "I use only Neovim, and paired with CodeCompanion it is really powerful and ergonomic, way more them combining external harnesses. At least for me."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48860532",
+    "author": "c-hendricks",
+    "date": "2026-07-10",
+    "text": "copilot.lua, CodeCompanion when I want in-editor agents (hooked up to OpenCode), OpenCode web for most everything else. Neovim works fine in OpenCode web's terminal too."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48816857",
+    "author": "pixlmint",
+    "date": "2026-07-07",
+    "text": "d telemetry (which is partly why I went with them) and it'd be pretty easy to notice when someone other than myself uses my keys. For the little agentic coding I do I like to use OpenCode, and if I need to ask a question in my editor I use CodeCompanion (neovim AI chat plugin). I quickly went to check what OpenCode does with the API key, and it doesn't seem to store it in the user config, so that's at least something. But yeah, really recommend OpenWebui as a ChatGPT replacement (though there are a lot more alternatives out the"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47966323",
+    "author": "regexorcist",
+    "date": "2026-04-30",
+    "text": "I suggest to have opencode drive the model. I also use neovim and these days I mostly just have a tmux pane side by side. But opencode does support ACP mode which you can use with codecompanion and the like."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47965944",
+    "author": "tjpnz",
+    "date": "2026-04-30",
+    "text": "Spent the better part of a week trying to integrate local models into my LazyVim workflow. I've tried both Avante and CodeCompanion and have yet to find any configuration which remotely works. Either it goes into an endless loop, the project directory gets filled with garbage or it can't find the file to apply changes to despite it just being read from. Not sure if it's a Qwen problem, plug"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47569195",
+    "author": "kashnote",
+    "date": "2026-03-30",
+    "text": "The elephant in the room is that there's nothing quite like Cursor Tab. Copilot, Supermaven, Codecompanion, etc. don't even come close. As much as I want to use Neovim full time, I just can't walk away from Cursor Tab. I can live without Cursor Agent since I can just use Claude Code when I need an agent. Until something comparable for Neovim comes out, I just don't see how I can swit"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47567719",
+    "author": "mathieudombrock",
+    "date": "2026-03-29",
+    "text": "CodeCompanion.nvim is a pretty nice plugin. I use that for quick stuff and opencode in the embedded terminal for larger tasks."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47567173",
+    "author": "Zizizizz",
+    "date": "2026-03-29",
+    "text": "Yes tab split, neovim on the left, companion on the right, or different tabs. The plugin codecompanion.nvim is also great. I use it for common tasks. Like: vaf (visual around function) ad (leader key add docstring). And it documents the functions with my system prompt instructions for what good docst"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47565812",
+    "author": "c-hendricks",
+    "date": "2026-03-29",
+    "text": "I unintentionally ran the main branch when testing some changes and a lot of my config broke (mostly around LSPs, CodeCompanion was much slower streaming its responses) so might wait a bit before upgrading."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47380341",
+    "author": "perrygeo",
+    "date": "2026-03-14",
+    "text": "Try CodeCompanion if you're using neovim. I have a keybind set up and takes the highlighted region, prepends some context which says roughly \"if you see a TODO comment, do it, if you see a WTF comment, try to explain it\", and presents you an inline diff to accept/reject edits. It's great for tact"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47021313",
+    "author": "jauntywundrkind",
+    "date": "2026-02-15",
+    "text": "I used mcp-neovim-server to let my LLM control my vim session. that way it can debug and test and poke around. It's crazy good at debugging plugins. It's absurd how little these things need to look-up docs; half these models are just out the box wildly good at vim. \"Open these files on these line"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46970493",
+    "author": "jauntywundrkind",
+    "date": "2026-02-11",
+    "text": "writing code, I think LLM's are exceptional at reading code. They can review huge amounts of code incredibly fast, to understand very complex systems. And then you can just ask it questions! Don't understand? Ask more questions! I have mcp-neovim-server open, so I just ask it to open the relevant pieces of code at those lines, and it can then show me. CodeCompanion makes it easy to ask questions about a line. It's amazing how Reading code was one of the extremely hard parts of programming, and the machine is far far bett"
+   }
+  ]
+ },
+ {
+  "name": "Roo Code",
+  "url": "https://roocode.com",
+  "score": 46.0,
+  "github_stars": 24240,
+  "top_hn_story": {
+   "title": "Roo code shuts down, Team will focus on roomote agent",
+   "points": 28,
+   "id": "47851734",
+   "url": "https://twitter.com/mattrubens/status/2046636598859559114"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 48414646,
+    "author": "KronisLV",
+    "text": "code.ai/ (they also have a subscription, but this in particular also makes it really easy to connect to OpenRouter) 4) KiloCode is essentially the above, but for VSC derived editors: https://kilo.ai/ (I personally liked RooCode more, but that got retired) More niche tooling options: 1) Zed is pretty good, though I saw some issues with their LSP Edits and found that connecting them to OpenCode through ACP worked better, still a cool editor: https://zed.dev/ 2) If you have to pay for "
+   },
+   {
+    "src": "ask_hn",
+    "id": 46704093,
+    "author": "loh",
+    "text": " Claude Code (Sonnet), and only tried Opus 4.5 for more complex things. I've also tried Codex which didn't seem very good by comparison, plus a handful of other local models (Qwen3, GLM, Minimax, etc.) through OpenCode, Roo, and Cline that I'm able to run on my 128 GB M4 Max. The local ones can work for very simple agentic tasks, albeit quite slow."
+   },
+   {
+    "src": "ask_hn",
+    "id": 43960110,
+    "author": "mbanerjeepalmer",
+    "text": "minal and VS Code, and adding and dropping from the context myself, have worn down my appetite to use it. The `--watch` mode is a neat solution but harms performance. The LLM gets distracted by deleting its own comment. Roo is less solid but better-integrated. Hopefully I'll switch back soon."
+   },
+   {
+    "src": "ask_hn",
+    "id": 43960136,
+    "author": "fastball",
+    "text": "For the agentic stuff I think every solution can be hit or miss. I've tried claude code, aider, cline, cursor, zed, roo, windsurf, etc. To me it is more about using the right models for the job, which is also constantly in flux because the big players are constantly updating their models and sometimes that is good and sometimes that is bad. But I daily drive Cursor because the"
+   },
+   {
+    "src": "ask_hn",
+    "id": 43960707,
+    "author": "rvnx",
+    "text": " because for the price it's unbeatable. Free, unlimited requests are great. But by itself, Cursor is not anything special. It's only interesting because they pay Claude or Gemini from their pockets. Ideally, things like RooCode + Claude are much better, but you need infinite money glitch."
+   },
+   {
+    "src": "ask_hn",
+    "id": 43961400,
+    "author": "heymax054",
+    "text": "90% of their features could fit inside a VS Code extension. There are already a few popular open-source extension doing 90%+ of what Cursor is doing - Cline, Roo Code (a fork of Cline), Kilo Code (a fork of Roo Code and something I help maintain)."
+   },
+   {
+    "src": "ask_hn",
+    "id": 45772938,
+    "author": "lreeves",
+    "text": " for coding usage since the prompts become very large and take exponentially longer but gpt-oss is a sparse model so maybe it won't be that bad. Also just to point it out, if you use OpenRouter with things like Aider or roocode or whatever you can also flag your account to only use providers with a zero-data retention policy if you are truly concerned about anyone training on your source code. GPT5 and Claude are infinitely better, faster and cheaper than anything I can do locally a"
+   },
+   {
+    "src": "ask_hn",
+    "id": 44374539,
+    "author": "chime",
+    "text": "Augment Code ( https://www.augmentcode.com/ ) extension in VSCode. The remote agent feature is fantastic and the local agent is worth buying credits for. I've tried almost every AI editor (Cursor, Windsurf, Roo/Cline etc.), tried CLI-based coders (Claude Code, Aider, Codex etc.), and have used them all with ton of useful MCPs and in the end, I've had the best results with Augment."
+   },
+   {
+    "src": "ask_hn",
+    "id": 43923493,
+    "author": "jemmyw",
+    "text": "I've been using cline and RooCode with vscode. It's significantly better than copy pasting. I work in a quite large codebase that has several different areas, and these AI tools are really good when I get a task in an area I'm not very familiar with, they'll perform searches and write a plan "
+   },
+   {
+    "src": "ask_hn",
+    "id": 43923565,
+    "author": "bad_username",
+    "text": "Try Roo code. It has the least \"magic\" compared to other solutions, down to having no subscription (you plug your own API key and go). It provides full control and visibity of what it does, you see the context window size and the cost of the conversation at all times. Thi"
+   },
+   {
+    "src": "ask_hn",
+    "id": 43926795,
+    "author": "PeterStuer",
+    "text": "Been experimenting with Roo-Code in VSCode on Sonnet 3.7, but my daily driver is ChatGTP. I guess it's mostly because of my usage type, more 'explain these few lines of code' or 'write a short funcion for X' in Python or JS, not the 'create this complete app' I see people using the agen"
+   },
+   {
+    "src": "ask_hn",
+    "id": 44096214,
+    "author": "therealmarv",
+    "text": "s and OpenAI Codex are so brand new and have a totally different aim than Cursor. Don't use them (yet). Maybe they will get good enough in future. I would focus on established tools like aider (steepest learning curve), roo code (easier) to be paired with Openrouter and if you want to have it really easy claude code (only useful with a 100-200 USD Anthropic subscription IMHO). On average you will get better results with Aider, roo, claude code than with Cursor or Windsurf. Btw. I thi"
+   },
+   {
+    "src": "ask_hn",
+    "id": 44097843,
+    "author": "therealmarv",
+    "text": " is sent to the main solving AI. E.g. in aider I specify manually which files will be sent along the prompt and they are not truncated or ignored, something which can happen easily in tools like Copilot, Cursor, even in roo code behind the scenes. This leads to the result that the main AI does not see the whole picture of the project and makes wrong guesses and maybe assumptions. More details in prompts in every tool help find the AI to understand the bigger picture and the important"
+   },
+   {
+    "src": "ask_hn",
+    "id": 44101414,
+    "author": "shio_desu",
+    "text": "erate a comprehensive, phased implementation document. I then review the document, iterate with it to make sure the plan works well, then send it off to do the work. I'm not yet a fan of Windsurf or Cursor, but honestly Roo Codes out of the box personas for architect, and orchestration to spin up focused subtasks works well for me. I am kinda treating it how I would a junior, to guide it there, give it enough information to do the work, and check it afterwards, ensuring it didn't do "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49877208",
+    "author": "selectodude",
+    "date": "2026-09-28",
+    "text": "It\u2019s a fork of Roo Code due to Roo no longer being developed."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49493411",
+    "author": "conception",
+    "date": "2026-08-29",
+    "text": "Interesting that people aren\u2019t suggesting smaller projects here - roo code, traycer are two worth checking out for this."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49277302",
+    "author": "qlte",
+    "date": "2026-08-12",
+    "text": " after reading HN comments constantly advertising the free Grok credits they were giving out each month for developers with data sharing enabled, I eventually set aside my personal distaste figuring I might as well take advantage for Cline/Roo Code. I opened a developer API account, loaded 5 dollars and got the free $100s of credits for the month. Like two weeks later, xAI announced they were shutting down the subsidized credits entirely lol. Didn\u2019t even get a full month out of it, and closed my account entirely since I su"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48232860",
+    "author": "raxxorraxor",
+    "date": "2026-05-22",
+    "text": "Agreed. If you want a local solution and memory is limited, Qwen 3.5:9b is quite good as long as problems/context remains smaller. If using vs code Zoo-Code (new Roo-code) still offers the best results for me. Just be aware which extension you install..."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47935529",
+    "author": "NitpickLawyer",
+    "date": "2026-04-28",
+    "text": " & stuff) and are ok for containing the agents for most cases. If you want to work on docker projects I also tried vagrant for vm with docker inside, and you instantiate the agent from vagrant. For local models I used mainly cline and then roo code extensions. Roo was a bit better because it offered more customisation (prompts, tool choice, etc). I found that local models need shorter prompts and less tools to be effective. Unfortunately roo seems to be discontinued, no idea what I'll use after it stops working. Cline work"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47846962",
+    "author": "ihowlatthemoon",
+    "date": "2026-04-21",
+    "text": "worked for me. llama-server -ngl 99 -c 262144 -fa on --cache-type-k q4_0 --cache-type-v q4_0 --host 0.0.0.0 --sleep-idle-seconds 300 -m Qwen3.5-35B-A3B-UD-Q4_K_XL.gguf For the harness, I use pi ( https://pi.dev/ ). And sometimes, I use the Roo Code plugin for VS Code. ( https://roocode.com/ ) I prefer simplicity in my tooling, so I can understand them easier. But you might have better luck with other harnesses."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47663582",
+    "author": "jp57",
+    "date": "2026-04-06",
+    "text": "I can't tell from the issue if they're asserting a problem with the Claude model, or Claude Code, i.e. in how Claude Code specifically calls the model. I've been using Roo Code with Claude 4.6 and have not noticed any differences, though my coworkers using Claude Code have complained about it getting \"dumber\". Roo Code has its own settings controlling thinking token use. (I'm sure it benefits Anthropic to blur the lines between the tool and the model, "
+   },
+   {
+    "src": "hn_comment",
+    "id": "47662617",
+    "author": "wise0wl",
+    "date": "2026-04-06",
+    "text": "I've tried a few models and some are decent, including Qwens models. I've tried a few harnesses like Roo Code in VSCode to put things together that in theory emulate the experience I get from VSCode + Claude or Copilot, but I generally find the experience extremely limited and frustrating. How have you set things up to have a good experience?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47493416",
+    "author": "avereveard",
+    "date": "2026-03-23",
+    "text": "in the tool the sub agent calls to notify completion the message to return and a good documentation about how to return things, so the orchesrtator can orchestrate. the harness that don't have that mechanism can have it augmented by prompt roo code has a good harness for that (but terrible default prompts for the agents), kiro does that well too, gemini has a few misses as it just send off things without really caring of returns by default (albeit very model dependent), meanwhile jules using the same models has a good harn"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47462243",
+    "author": "shaneofalltrad",
+    "date": "2026-03-20",
+    "text": "What would be the advantage using this over say VSCode with Copilot or Roo Code? I need to make some time to compare, but just curious if others have a good insight on things."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47437795",
+    "author": "raxxorraxor",
+    "date": "2026-03-19",
+    "text": "I use Cursor for Claude mostly, I just like it better than the claude console version for some reason. For Ollama I switch to VSCode and use roo code/cline mostly. I have some a Gitea/Playwright mcp/webservice setup, which works well with both. But for that latter, I tend to restrict it to local models."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47373485",
+    "author": "avereveard",
+    "date": "2026-03-14",
+    "text": "I prefer in IDE tools because I can review changes and pull in context faster. At home I use roo code, at work kiro. Tbh as long as it has task delegation I'm happy with it."
+   }
+  ]
+ },
+ {
+  "name": "Kilo Code",
+  "url": "https://kilocode.ai",
+  "score": 44.2,
+  "github_stars": 27898,
+  "top_hn_story": {
+   "title": "Kilo Code: Speedrunning open source coding AI",
+   "points": 98,
+   "id": "43483802",
+   "url": "https://blog.kilocode.ai/p/kilo-code-speedrunning-open-source-coding-ai"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50374637,
+    "author": "alok-g",
+    "text": "For software development, I am using Kilo Code ( https://kilo.ai ) extension on VSCodium, with Kilo credits that gives access to hundreds of models at API pricing. For day-to-day tasks, I am using Goose ( https://goose-docs.ai ) with OpenRouter."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50377903,
+    "author": "hosteur",
+    "text": "I use Kilo Code as well (with jetbrains IDEs though). I bring my own API credits. I am curious why you use Kilo credits? What benefits does that give you over buying the credits directly? To me it seems like an obvious unnecessary middleman..."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50388891,
+    "author": "hosteur",
+    "text": "e lot. I tried Cline which I found hugely unstable and slow. I also tried the Google and Anthropic CLI ones very early on. They were a bit unstable at the time. So I guess I just stopped looking around much after trying Kilo Code because it gets the job done. I am curious, when do you typically run different models? Do you put the same tasks to multiple models in parallel and compare the results? Or do you have a heuristic that model A is best for certain types of tasks and model B fo"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48414646,
+    "author": "KronisLV",
+    "text": "subscription preferred instead of paying per token) 3) OpenCode for a variety of models: https://opencode.ai/ (they also have a subscription, but this in particular also makes it really easy to connect to OpenRouter) 4) KiloCode is essentially the above, but for VSC derived editors: https://kilo.ai/ (I personally liked RooCode more, but that got retired) More niche tooling options: 1) Zed is pretty good, though I saw some issues with their LSP Edits and found that connecting them to "
+   },
+   {
+    "src": "ask_hn",
+    "id": 48416832,
+    "author": "scotty79",
+    "text": "th tabs going back months. Language, whatever. I bounce around between Python, Rust, C#, TypeScript. Maybe I should try something exotic. Gpt-5.5 xtra high, Glm-5.1 (not recently because it's not as good, I used to like Kilocode with it, in previous major version 5(?), most recent Kilocode is streamlined into mediocrity, although you can still intall old version). Gemma4 on local ollama for specific non-coding tasks. Openai api proxy connected to my Codex sub, for cases where Gemma4 "
+   },
+   {
+    "src": "ask_hn",
+    "id": 46262736,
+    "author": "owendarko",
+    "text": "tially interacting with AI models. The quality of output you get really depends on the model at the end of the day. Claude Code is optimized for models from Anthropic. You also have model-agnostic agents like Cursor and Kilo Code (disclaimer: I work at Kilo) where you can easily switch up models and see which one works the best for you converting an old jQuery + Django project into SvelteKit. This area is moving at a crazy rate. Just the last 2 weeks alone, there were 3 main AI model "
+   },
+   {
+    "src": "ask_hn",
+    "id": 43961559,
+    "author": "owendarko",
+    "text": "You could also use these AI coding features on a plug-and-play basis with an IDE extension. For example, VS Code has Cline & Kilo Code (disclaimer: I help maintain Kilo). Jetbrains has Junie, Zencoder, etc."
+   },
+   {
+    "src": "ask_hn",
+    "id": 43961400,
+    "author": "heymax054",
+    "text": "90% of their features could fit inside a VS Code extension. There are already a few popular open-source extension doing 90%+ of what Cursor is doing - Cline, Roo Code (a fork of Cline), Kilo Code (a fork of Roo Code and something I help maintain)."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50388891",
+    "author": "hosteur",
+    "date": "2026-11-06",
+    "text": "haven't tried a whole lot. I tried Cline which I found hugely unstable and slow. I also tried the Google and Anthropic CLI ones very early on. They were a bit unstable at the time. So I guess I just stopped looking around much after trying Kilo Code because it gets the job done. I am curious, when do you typically run different models? Do you put the same tasks to multiple models in parallel and compare the results? Or do you have a heuristic that model A is best for certain types of tasks and model B for others, etc? I hav"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50377903",
+    "author": "hosteur",
+    "date": "2026-11-05",
+    "text": "I use Kilo Code as well (with jetbrains IDEs though). I bring my own API credits. I am curious why you use Kilo credits? What benefits does that give you over buying the credits directly? To me it seems like an obvious unnecessary middleman..."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50374637",
+    "author": "alok-g",
+    "date": "2026-11-05",
+    "text": "For software development, I am using Kilo Code ( https://kilo.ai ) extension on VSCodium, with Kilo credits that gives access to hundreds of models at API pricing. For day-to-day tasks, I am using Goose ( https://goose-docs.ai ) with OpenRouter."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50220196",
+    "author": "rbehrends",
+    "date": "2026-10-24",
+    "text": " Codex or Claude Code), and there are actually a ton that you can add with just a few mouse clicks. Example: https://gist.github.com/rbehrends/4d9febe5c5c008961b309dd4a6... The \"Install From ACP Registry ...\" allow you to use pi, OpenCode, Kilo Code, Cline, Cursor, Copilot (and a ton of other agents that I've never heard of) if you want."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50191836",
+    "author": "piterrro",
+    "date": "2026-10-22",
+    "text": "My setup is Hermes on a beefy machine with running a swarm of pi.devs - connects to GH issues via bot app so I can call it @xxxx in the issue. It can create PR, run actions and all. If I want to see the code I just run kilo code in VS locally. This setup is so plain and simple that it just works, and it works wonders. I feel like I\u2019ve been running a dev team who actually communicates through issuess and keeps it up to date!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50060948",
+    "author": "joshheitzman",
+    "date": "2026-10-12",
+    "text": " much work to see it through as solo dev. There were no issues created anywhere, no calendar events, and there is very little github activity (I primarily used Mercurial on a private server; git is just for distribution). I started it with Kilo Code and after a couple of months it was purely self-modified and has been since then. I was a bit worried that it wouldn't work on Linux and I'd either have to use another agent or use it running on my Windows box to modify the code on my Linux box to get it working, but it just wor"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49981025",
+    "author": "Tade0",
+    "date": "2026-10-06",
+    "text": " quantisation, e.g. 3bits or even ternary. With additional techniques like TurboQuant, you can feasibly run these models on consumer hardware - even if at 1/4th the speed you'd get from rented infrastructure. VS Code has extensions such as Kilo Code or llama-vscode which let you work with local models much like you would with cloud based solutions."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49735621",
+    "author": "joshheitzman",
+    "date": "2026-09-17",
+    "text": "The provider's middleware also plays a role. I just completed some benchmarks on my bespoke harness and Kilo Code. There's a chart on my LI post here: https://www.linkedin.com/posts/joshheitzman_i-ran-a-fuller-r... In the case of DeepSeek-V4-Flash-0731 on deepinfra.com there was little difference when both used high reasoning. In the case of that same model on together.ai there was a substa"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49552089",
+    "author": "zdc1",
+    "date": "2026-09-03",
+    "text": "Update: I've setup VSCode + Kilo Code + Open Router. It works but it's rough. Amazing how much value a good coding UI brings to the table. Update 2: Swapped Continue for Kilo Code. It's less rough."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49487233",
+    "author": "mmastrac",
+    "date": "2026-08-29",
+    "text": "If you can explain how to make compaction not suck in opencode or Kilo Code, I would love to know how. I am really trying to make use of other harnesses but that's a major sticking point."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49447198",
+    "author": "jeffybefffy519",
+    "date": "2026-08-26",
+    "text": "my Codex subscription because I cannot stand 5.6-sol/terra/luna. On top of that, Codex the harness is just so dammed buggy in VS Code. I just discovered https://tinfoil.sh , which is fully private and attestable AI which works amazing with Kilo Code. Its costing me at API prices but for cheaper to run models which so far feel more consistent then what I get from frontier models."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49239456",
+    "author": "Fe2O3",
+    "date": "2026-08-10",
+    "text": "I've been using Kilo Code (with MiniMax M3) with auto approve (similar to dangerously skip permissions) and I haven't had a single incident. However, I don't give it long running tasks unsupervised, and I do interrupt it from time to time to give suggestions."
+   }
+  ]
+ },
+ {
+  "name": "JetBrains Junie",
+  "url": "https://www.jetbrains.com/junie/",
+  "score": 41.9,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "JetBrains Junie Local: An agent you own, not one you rent",
+   "points": 24,
+   "id": "50132963",
+   "url": "https://junie.jetbrains.com/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 47397114,
+    "author": "KronisLV",
+    "text": "e.dev (kind of broken regardless of models) - Aider (unpleasant for me to use, too much busywork) - GitHub Copilot (tbh nice plugins and generous quotas + the only working autocomplete that's actually good I've tried) - JetBrains AI and Junie (since I already pay for their IDEs, that came bundled), also nice but quotas are quite limiting - local models with Ollama or llama.cpp - cool conceptually but always really limited - OpenRouter for cloud models - ended up being kind of expensive a"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46258266,
+    "author": "PaulHoule",
+    "text": "I use Junie to get tasks done all the time. For instance I had two navigation bars in an application which had different styling and I told it make the second one look like the first and... it made a really nice patch. Also if I don't understand how to use some open sour"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46258582,
+    "author": "PaulHoule",
+    "text": "ve a pager but they have other things, like one has some drop downs and the other has a text input. Styled \"the same\" means the line around the search box looks the same as the lines around the numbers in the pager, and Junie got that immediately. In the end the patch touched css classes in three lines of one file and added a css rule -- it had the caveat that one of the css classes involved will probably go away when the board finally agrees to make a visual change we've been tal"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46702093,
+    "author": "Kerrick",
+    "text": "Yes. Over the last month, I've made heavy use of agentic coding (a bit of Junie and Amp, but mostly Antigravity) to ship https://www.ratatui-ruby.dev from scratch. Not just the website... the entire thing. The main library (rubygem) has 3,662 code lines and 9,199 comment lines of production Ruby and 4,933 code lines and 710 comment lines"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46703057,
+    "author": "atraac",
+    "text": "In my case, I use JetBrains Junie(it uses various models underneath) and it mostly works fine, but I don't vibe code entire products with it, I just give it easy, neatly defined tasks. Improve readme, re-implement something using the same approach as X, create a script that does Y etc. It's f"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46721215,
+    "author": "cmpalmer52",
+    "text": "I used the Junie AI coding agent by JetBrains with Claude and ChatGPT engines to create a utility web page and service to track PRs by devs across multiple repos and tied to our ticketing system. I did it as an experiment with my constraint being that I refused to edit code, "
+   },
+   {
+    "src": "ask_hn",
+    "id": 43960284,
+    "author": "Artgor",
+    "text": "Claude Code. And... Junie in Jetbrains IDE. It appeared recently and I'm really impressed by its quality. I think it is on the level of Claude Code."
+   },
+   {
+    "src": "ask_hn",
+    "id": 43961094,
+    "author": "cdrx",
+    "text": "Junie in Ask mode: > Which LLM are you? > I am Claude, an AI assistant created by Anthropic. In this interface, I'm operating as \"Junie,\" a helpful assistant designed to explore codebases and answer questions about projects. I'm built on Anthropic's large language "
+   },
+   {
+    "src": "ask_hn",
+    "id": 43961559,
+    "author": "owendarko",
+    "text": "You could also use these AI coding features on a plug-and-play basis with an IDE extension. For example, VS Code has Cline & Kilo Code (disclaimer: I help maintain Kilo). Jetbrains has Junie, Zencoder, etc."
+   },
+   {
+    "src": "ask_hn",
+    "id": 43961947,
+    "author": "Larrikin",
+    "text": "I'm glad there are finally multiple options for agentic for JetBrains so I no longer have to sometimes switch over to VSCode and its various versions. Copilot at work and Junie at home. I found nothing about my VSCode excursions to be better than Sublime or IntelliJ."
+   },
+   {
+    "src": "ask_hn",
+    "id": 43962288,
+    "author": "mattew",
+    "text": "I\u2019ve only played with Junie and Aider so far and like the approach the Junie agent takes of reading the code to understand it vs the Aider approach of using the repo map to understand the codebase."
+   },
+   {
+    "src": "ask_hn",
+    "id": 48462980,
+    "author": "toyetic",
+    "text": "I wanted to use worktree's the same way that cursor/windsurf/jetbrains air etc. do, i.e. but in intellij idea using claude code. It's a bit rudimentary and I wouldn't release it on the marketplace but I made a really good plugin that allows me to work on multiple tasks at once using worktree's and has all the great functionality in"
+   },
+   {
+    "src": "ask_hn",
+    "id": 44098305,
+    "author": "harrall",
+    "text": "I find Junie (from JetBrains / IntelliJ) great compared to other offerings. I have 10+ years experience as well. It writes JUnit tests with mocks, chooses to run them, and fixes the test or sometimes my (actually broken) code. It\u2019s not helpful for 90% of my work, but like"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50136675",
+    "author": "jt2190",
+    "date": "2026-10-18",
+    "text": "The GitHub page for the Junie [1] script explicitly says \"MacOS/Linux\": It's the same curl command for the CLI curl -fsSL https://junie.jetbrains.com/install.sh | bash To automatically install the local model after the CLI is installed, you run with th --local-model flag: curl -fsSL https://junie.jetbrains.c"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49834822",
+    "author": "lowercased",
+    "date": "2026-09-24",
+    "text": "It IS confusing. I'm not even using Air. Junie is their agent(?) that can connect to multiple providers. AFAIK you can bring-your-own-key or buy a subscription from them that lets you use your credits across multiple vendors (openai, anthropic, google) across a handful of models from each vendor. So yeah, you can use your op"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49831453",
+    "author": "lowercased",
+    "date": "2026-09-24",
+    "text": "I do. For local dev work, I'm mostly using jetbrains' Junie, I can swap between a collection of models from google, openai, anthrophic. I've had more than a few people tell me \"oh, it's so much cheaper to use a $20 claude account\" or \"i've never hit a limit ever using my openai\". Inevitably.. I end up reading/hearing \"oh, I need to give "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49551690",
+    "author": "chuckadams",
+    "date": "2026-09-03",
+    "text": "I remember Jetbrains Junie which read like that all the time. Never used first-person either. I've not used Jetbrains AI for a while though, not sure if it still reads that way."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48787947",
+    "author": "FpUser",
+    "date": "2026-07-04",
+    "text": " aren\u2019t able to do the reinforcement learning post-training steps\" Not yet. If there is a need someone will come and fulfill. Personally for me now I do not even want to use top models. Professionally I use AI to help with the coding using Junie agent that comes with IDEs from JetBrains. Junie is told to use Gemini Flash and works fine for what I (\"I\" being an emphasis here) ask it to do. I tried more advanced models and different vendors only to discover credits going down the toilet without any extra benefit."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48057234",
+    "author": "dzhiurgis",
+    "date": "2026-05-08",
+    "text": "Not a Googler, but I use gemini in JetBrains Junie and have no issues with it. It's cheap, very fast and most importantly actually listens to you."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47886793",
+    "author": "npodbielski",
+    "date": "2026-04-24",
+    "text": "Never used Claude myself but there are agents that can use local model. I.e. - Jetbrains Junie - Mistral Vibe"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47865734",
+    "author": "delbronski",
+    "date": "2026-04-22",
+    "text": "I\u2019ve been using Gemini with Junie (jetbrains attempt at Claude code). While Junie is nowhere near as good as Claude Code, it is way ahead of the current Google tooling. I get quite good consistent results for pretty cheap with this combo."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47857808",
+    "author": "dzhiurgis",
+    "date": "2026-04-22",
+    "text": "> They are so good that they actually made Gemini usable I think Gemini is best model out there, and it's not Cursor who you should praise. I use it with jetbrains junie. Vastly cheaper than claude, faster, produces better quality code, actually listens to your instructions, more accurate. I'm sure claude code cli has some cli magic that I'm missing out on, but having everything just work in a nice IDE (and llm to actually understand your symbol"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46748252",
+    "author": "Kerrick",
+    "date": "2026-01-24",
+    "text": "Any chance you'll add Antigravity and Jetbrains Junie? I've been using almost nothing but those for the last month. Antigravity at home, Junie at work."
+   },
+   {
+    "src": "hn_comment",
+    "id": "46703057",
+    "author": "atraac",
+    "date": "2026-01-21",
+    "text": "In my case, I use JetBrains Junie(it uses various models underneath) and it mostly works fine, but I don't vibe code entire products with it, I just give it easy, neatly defined tasks. Improve readme, re-implement something using the same approach as X, create a script that does Y etc. It's fairly good at making"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50219944",
+    "author": "pqb",
+    "date": "2026-10-24",
+    "text": "> They now have both Air and ThinkRail in a feature-incomplete state, while the existing AI Assistant [...] The have also the Junie [0] alongside their \"AI Chat\" within the Jebrains IDEs. [0]: https://junie.jetbrains.com/ "
+   }
+  ]
+ },
+ {
+  "name": "Continue",
+  "url": "https://continue.dev",
+  "score": 38.5,
+  "github_stars": 36427,
+  "top_hn_story": null,
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 47397114,
+    "author": "KronisLV",
+    "text": "Previously, both tools and providers: - Continue.dev (kind of broken regardless of models) - Aider (unpleasant for me to use, too much busywork) - GitHub Copilot (tbh nice plugins and generous quotas + the only working autocomplete that's actually good I've tried) - JetBrains AI and Junie (since I already pay f"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45773267,
+    "author": "reactordev",
+    "text": "I use LM Studio with GGUF models running on either my Apple MacBook Air M1 (it\u2019s, ok\u2026) or my Alienware x17 R2 with an RTX 3080 on a Core i9 (runs like autocomplete) in VS Code using Continue.dev My only complaint is agent mode needs good token gen so I only go agent mode on the RTX machine. I grew up on 9600baud so I\u2019m cool with watching the text crawl."
+   },
+   {
+    "src": "ask_hn",
+    "id": 45773720,
+    "author": "wongarsu",
+    "text": "$work has a GPU server running Ollama, I connect to it using the continue.dev VsCode extension. Just ignore the login prompts and set up models via the config.yaml. In terms of models, qwen2.5-coder:3b is a good compromise for autocomplete, as agent choose pretty much just the biggest sota model you can run"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45773793,
+    "author": "dust42",
+    "text": "On a Macbook pro 64GB I use Qwen3-Coder-30B-A3B Q4 quant with llama.cpp. For VSCode I use continue.dev as it allows to set my own (short) system prompt. I get around 50token/sec generation and prompt processing 550t/s. When giving well defined small tasks, it is as good as any frontier model. I like the speed and low latency and the availability while on the p"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45777164,
+    "author": "Xenograph",
+    "text": "Have you tried continue.dev's new open completion model [1]? How does it compare to llama.vscode FIM with qwen? [1] https://blog.continue.dev/instinct/ "
+   },
+   {
+    "src": "ask_hn",
+    "id": 45774663,
+    "author": "dethos",
+    "text": "Ollama, Continue.dev extension for editor/IDE, and Open-WebUI. My hardware is a bit dated, so I only use this setup for some smaller open models. On the laptop, I don't use any local models. Not powerful enough."
+   },
+   {
+    "src": "ask_hn",
+    "id": 45777371,
+    "author": "dennemark",
+    "text": "I have AMD Strix Halo (395) on my work laptop (HP Ultrabook G1A) as well as at home with Framework Desktop. On both i have setup lemonade-server on system start. At work i use Qwen3 Coder 30B-3A with continue.dev. It serves me well in 90% of cases. At home i have 128GB RAM. I try a bit GPT120B. I host Open WebUI on it and connect via https and wireguard to it, so i can use it as PWA on my phone. I love not needing to think about where my data goes. But i would like to"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45781786,
+    "author": "Balinares",
+    "text": "Does Qwen3 Coder do a good job invoking its tools as appropriate for you? Under continue.dev at least, I've found I need to remind it constantly."
+   },
+   {
+    "src": "ask_hn",
+    "id": 48801622,
+    "author": "kpatucha",
+    "text": "n fits into my workflow - what are the benefits compared to IntelliSense. So far I've used LLMs as glorified search engines or to better understand some concepts. In order to get a feel for tab completion I've installed continue.dev VS Code extension and connected it to local model. I don't know if there are better free alternatives (I hope so, since continue.dev project was killed recently and will not be ... continued)"
+   },
+   {
+    "src": "ask_hn",
+    "id": 43955848,
+    "author": "Traveler42",
+    "text": "I'm curious if anyone has experience with continue.dev using agent mode and how it performs relative to copilot or cline."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49944155",
+    "author": "spedhead",
+    "date": "2026-10-03",
+    "text": " whole page. How it works: - Free API: http://167.233.135.161:9999/api/convert?url= ... (10/day, no signup). Strips nav, ads, boilerplate. - MCP server (stdio + streamable HTTP): one tool, web2md_convert. Works with Claude Desktop, Cursor, Continue.dev, Windsurf. Published in the official MCP registry (io.github.astra-intelligence/web2md). - CLI + Dockerfile in the repo. Honest scope: single-page conversion today (no site crawls, no PDFs yet). Feedback welcome \u2014 especially on output quality vs. readability, and whether people "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48801622",
+    "author": "kpatucha",
+    "date": "2026-07-06",
+    "text": "ze how tab completion fits into my workflow - what are the benefits compared to IntelliSense. So far I've used LLMs as glorified search engines or to better understand some concepts. In order to get a feel for tab completion I've installed continue.dev VS Code extension and connected it to local model. I don't know if there are better free alternatives (I hope so, since continue.dev project was killed recently and will not be ... continued)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48580219",
+    "author": "guy4261",
+    "date": "2026-06-18",
+    "text": "Woke up to an email saying continue.dev has been acquired by Cursor. I was notified since I had some projects there and probably a few leftover credits. How were they acquired by Cursor, if Cursor itself was acquired by SpaceX only 2 days ago? Beats me."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48558530",
+    "author": "cornhole",
+    "date": "2026-06-16",
+    "text": "continue is eol after being acquired by cursor/spacex https://www.continue.dev/ "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48459380",
+    "author": "ffaerber",
+    "date": "2026-06-09",
+    "text": "imit. It looks like this: Run the provider container against your local Ollama/vLLM, stake xBZZ, publish per-million-token prices. Earn xBZZ as jobs come in. Run the gateway container, point any OpenAI-compatible app (OpenWebUI, LibreChat, Continue.dev, your own SDK) at localhost:3000/v1. Pay per token to whichever provider the market picks for you. repo: https://github.com/ffaerber/t4t i also created a hosted gateway: https://t4t-gateway.com For all those who don't want to run their own gateway."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48245723",
+    "author": "GeorgeWoff25",
+    "date": "2026-05-23",
+    "text": "Joernchen found it. I reproduced it and checked if Cursor and Continue.dev have the same startsWith parsing issue. They do."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47397114",
+    "author": "KronisLV",
+    "date": "2026-03-16",
+    "text": "Previously, both tools and providers: - Continue.dev (kind of broken regardless of models) - Aider (unpleasant for me to use, too much busywork) - GitHub Copilot (tbh nice plugins and generous quotas + the only working autocomplete that's actually good I've tried) - JetBrains AI and Junie (since I already pay for their IDEs, that "
+   },
+   {
+    "src": "hn_comment",
+    "id": "47302347",
+    "author": "esafak",
+    "date": "2026-03-08",
+    "text": "If you have CI hooked up to AI you could you just use a SLM to do that in a periodic job with https://github.github.com/gh-aw/ or https://www.continue.dev/ . You could also have it detect architectural drift."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47050777",
+    "author": "esafak",
+    "date": "2026-02-17",
+    "text": "This looks likes a more configurable version of the code review tools out there, for running arbitrary AI-powered tasks. Do you support exporting metrics to something standard like CSV? https://docs.continue.dev/mission-control/metrics A brief demo would be nice too."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47050676",
+    "author": "sestinj",
+    "date": "2026-02-17",
+    "text": "That's us! I figure others will wonder the same, so we wrote about what exactly we're doing here: https://blog.continue.dev/from-extension-to-mission-control tl;dr - a _lot_ of people still use the VS Code extension and so we're still putting energy toward keeping it polished (this becomes easier with checks : )) - our checks product is powered by an open-source CLI (we think this is important), whic"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47030861",
+    "author": "SOLAR_FIELDS",
+    "date": "2026-02-16",
+    "text": "I\u2019m currently experimenting with something similar on a smaller scale using continue.dev\u2019s code indexing implementation to expose a context mcp server for both semantic and code search. Tricky part is of course context management."
+   },
+   {
+    "src": "hn_comment",
+    "id": "46894294",
+    "author": "eek2121",
+    "date": "2026-02-05",
+    "text": "Ms. 1) Yes, they are absolutely useless in a consumer setting. 2) If you want to be a software developer, you absolutely need to know how to understand/interact with one, and you more than likely will need to understand things like https://continue.dev . I am no longer in software development due to my body slowly (quickly) dying, however I see it all from the sidelines: 1) New tech was rushed to the front lines way too quickly by big tech. 2) Big (and small tech) rushed layoffs way too fast rather than let we devs explore the"
+   }
+  ]
+ },
+ {
+  "name": "Emacs gptel",
+  "url": "https://github.com/karthink/gptel",
+  "score": 37.7,
+  "github_stars": 3563,
+  "top_hn_story": {
+   "title": "Gptel-autocomplete: Inline code completion in Emacs using gptel",
+   "points": 6,
+   "id": "44146781",
+   "url": "https://github.com/JDNdeveloper/gptel-autocomplete"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50373503,
+    "author": "mc_",
+    "text": "gptel + gptel-agent in emacs, hooked up to a Claude API token and ChatGPT oauth provided by work, plus some custom gptel additions (tools and tool invocation inspection mainly)."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50377307,
+    "author": "internet_points",
+    "text": "nstead) of those subscriptions? For example,  [question]  I have a few ChatGPT API credits. I think I've payed at most $40 in one year, using 5.4. 3) What coding harnesses and interfaces are you using?  [question]  Just gptel in a firejailed Emacs. I don't do tool calling. Mostly just code review (have personal scripts set up to get diffs and automatically redact stuff). 4) Are you using any agent orchestration or swarm tools? No. 5) Are you using  [question]  No. I'd like to try "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50377633,
+    "author": "internet_points",
+    "text": " my stats, it seems I used it less than every other day). gpt5.4 pricing per million tokens is Input: $2.50 Cached input: $0.25 Output: $15.00 I tried re-running a rather long code review request I had lying around, and gptel says it spent 2.2k tokens; I don't know if that's input or output or what, but if we say it's output since that's the most expensive, then that single review cost me just $0.033."
+   },
+   {
+    "src": "ask_hn",
+    "id": 43960839,
+    "author": "imiric",
+    "text": "This is the way. All this IDE churn makes me glad to have settled on Emacs a decade ago. I have adopted LLMs into my workflow via the excellent gptel, which stays out of my way but is there when I need it. I couldn't imagine switching to another editor because of some fancy LLM integration I have no control over. I have tried Cursor and VS Codium with extensions, and wasn't impressed. I'd rather use an \"in"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48493382,
+    "author": "anon291",
+    "text": "I code by hand asking AI specific questions via emacs gptel and claude-code-ide. The ai works in the background as I write. When the answer is complete I context switch back"
+   },
+   {
+    "src": "ask_hn",
+    "id": 43923488,
+    "author": "fhd2",
+    "text": "I settled on gptel, which is an LLM package for Emacs. It's kind of a mix of both approaches: 1. You have chats right there in the editor, easy to copy/paste and manage context/history without switching to a browser. You can also quickly add files or portions of files to the co"
+   },
+   {
+    "src": "ask_hn",
+    "id": 43925044,
+    "author": "binary132",
+    "text": "FWIW I have been using gptel with local inference by a deepcoder 14b q6 and llama.cpp and it\u2019s not too bad. But it can\u2019t handle big asks. 24GB of VRAM is not enough to make local inference smart enough to be really useful. It\u2019s okayish at things like writing commit messages or reformatti"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49720806",
+    "author": "greentfrapp",
+    "date": "2026-09-16",
+    "text": "Thanks for sharing emacs + gptel! I'll find some time to try it out"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49717228",
+    "author": "ellg",
+    "date": "2026-09-15",
+    "text": "this is very easy (and fun) to do in emacs with gptel as well you can do a lot of very neat stuff when your llm has full access to a lisp repl that can self modify itself / the ui its running in"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48870083",
+    "author": "noosphr",
+    "date": "2026-07-11",
+    "text": "If I may suggest people move away from harasses and start using Emacs. Gptel is amazing and the rest of Emacs plays incredibly well with llm development. Since the human is always in the loop token costs are also tiny compared to anything else."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48493382",
+    "author": "anon291",
+    "date": "2026-06-11",
+    "text": "I code by hand asking AI specific questions via emacs gptel and claude-code-ide. The ai works in the background as I write. When the answer is complete I context switch back"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47538266",
+    "author": "karthink",
+    "date": "2026-03-27",
+    "text": "> Once you hook up elisp evaluating MCP to your Emacs gptel-agent ships with an elisp-eval tool out of the box, BTW."
+   },
+   {
+    "src": "hn_comment",
+    "id": "46990575",
+    "author": "clx75",
+    "date": "2026-02-12",
+    "text": "During my first LLM experiments in Emacs using gptel, I also found that the LLM has considerable difficulties changing source code files with the Unix patch tool. As Emacs has a built-in tree-sitter package, I implemented this same idea. I created gptel tools like tree_sitter_list_nodes, tree_sitter_get_nodes, tree_sitter_update_n"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46355046",
+    "author": "neutronicus",
+    "date": "2025-12-22",
+    "text": "Emacs gptel just produces md or org files. Of course the agentic capabilities are very much on a roll-your-own-in-elisp basis."
+   },
+   {
+    "src": "hn_comment",
+    "id": "46066224",
+    "author": "ssivark",
+    "date": "2025-11-27",
+    "text": "bit. Opencode also has/hosts a couple of \"free\" models options right now, which are quite decent IMO. https://github.com/sst/opencode There are many many similar alternatives, so here's a random sampling: Crush, Aider, Amp Code, Emacs with gptel/acp-shell, Editor Code Assistant (which aims for an editor-agnostic backend that plugs into different editors) Finally... there is quite a lot of scope for co-designing the affordances / primitives supported by the coding agent and the LLM backing it (especially in LLM post-trai"
+   },
+   {
+    "src": "hn_comment",
+    "id": "45956787",
+    "author": "iLemming",
+    "date": "2025-11-17",
+    "text": "surface of the calm water of a lake. Except for an ocasional splash, it may seem lifeless to you, yet you don't have the faintest idea of its depths or what lies beneath. There's currently an implosion of different LLM packages for Emacs - gptel, gptel-agent, ECA, agent-shell, claude-code, claude-code-ide, monet, claude-repl - and numerous others I haven't even heard of, these are just off the top of my head. Emacs community may not be big enough and may lack incentives to constantly innovate, but they have no problem b"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50284479",
+    "author": "vjust",
+    "date": "2026-10-29",
+    "text": "how do you use claude from within emacs - is it gptel? just curious. what you describe is worth trying"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49494572",
+    "author": "iLemming",
+    "date": "2026-08-30",
+    "text": "No, ECA doesn't work like ACP, it's provider-independent and operates similar to an lsp-server. It is in fact, written by the maintainer of lsp-mode and author of clojure-lsp. I've tried many different tools for AI tasks in Emacs, eca and gptel remain the bread-and-butter of my workflows."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48588333",
+    "author": "neutronicus",
+    "date": "2026-06-18",
+    "text": "> I always have a Copilot session open in my emacs config Using gptel? Or something else?"
+   }
+  ]
+ }
+]

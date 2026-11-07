@@ -1,0 +1,1632 @@
+[
+ {
+  "name": "AGENTS.md",
+  "url": "https://agents.md",
+  "score": 91.6,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "AGENTS.md \u2013 Open format for guiding coding agents",
+   "points": 837,
+   "id": "44957443",
+   "url": "https://agents.md/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50395599,
+    "author": "darklinear",
+    "text": "I find I am able to get rid of most of the skills just by listing out the style guides the bot should follow in AGENTs.md"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50372070,
+    "author": "chris1993",
+    "text": "ing claude with a pro subscription. Claude Code extension in VSCode devcontainers and Claude CLI in a restricted Windows account in powershell terminal for android development. No orchestration other than a directive in CLAUDE.md to allocate coding tasks to sub-agents. I've moved all my ssh keys into a key-agent which prompts for key use as I got alarmed by claude attempting to login to remote systems to verify things as it worked through problems."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50375084,
+    "author": "martincsweiss",
+    "text": "I use Codex and Claude Code with piles of project-specific skills and AGENTS.md files. For my main work at my startup, we're very careful with how these are setup. Everywhere else, I simmer in chaos. I also have strong boundaries around generated prose. I don't like making other people read AI slop, but I don't mind having AIs read it."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50375278,
+    "author": "coeneedell",
+    "text": "I usually have a \u201cclose out\u201d routine that\u2019s something like telling it to record hints to the project\u2019s agents.md. It\u2019s usually pretty good at figuring out what to save, and I usually set up the prompt to point the thing\u2019s attention at the part of the process that made me most frustrated."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50389676,
+    "author": "946789987649",
+    "text": "g to not even try it. I'm still on the more manual end of AI use. My prompts are very small, targeted changes. I still review every line as though a human wrote it. I know exactly what I want and I've got my prompts and claude.MD at a point where it gives me that most of the time. I probably only write 5% of the code now."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50376902,
+    "author": "mickyngub",
+    "text": "I use both Claude Code and Codex with a bunch of project-specific skills and AGENTS.md files. Worktrees have been really useful when running multiple sessions on the same repo, otherwise they can step on each others changes. Still figuring out how much should go in AGENTS.md though. Mine keeps growing lol."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50380005,
+    "author": "GoodFriday",
+    "text": "m the sheer amount of words in the output. All of it works to keep answers short, to the point, sticking to technical details and absolutely no linguistic decoration or polite stuff. The most effective line I have in my Agents.md is to answer me like a Vulcan rather than a human."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50380407,
+    "author": "leofree",
+    "text": "Less is more with these new models and harnesses, IMO. Claude code CLI on MAX plan with a few well-selected skills and craft claude.md, does the trick for 99% of the use cases I encounter. Stopped OpenClaw and fancy setups after a few weeks each time. Simplicity is the ultimate sophistication."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50380633,
+    "author": "cpobuda",
+    "text": "iews (multiple models), process works extremely well. Enables fast iteration cycles since most issues are diagnosed in design and specification and we don't start coding until the specification is unambiguous. From it's agents.md - Helyn Implement 3.1 defines a seven-phase software implementation protocol (project setup; research & design; design philosophy with a Subtractive Genesis Gate; performance analysis; test planning; implementation with a bug-hunter panel; security review; pe"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50382792,
+    "author": "drltaidev",
+    "text": "ccount when implementing the next). For organising myself, I let Claude write a lot of Markdown files (so I'm not completely locked in into Claude Code, in case I do decide to use something else). And of course a proper Claude.md. I also made myself a kind of Vision.md > Features.md > Tasks.md workflow, where I make sure Claude is aware of my bigger vision for a project, and uses that to distill features that should be implemented from that, which then leads to very specific tasks to "
+   },
+   {
+    "src": "ask_hn",
+    "id": 48414189,
+    "author": "mkw5053",
+    "text": "omething, a test that re-asserts the same guarantee is duplication: extra source to maintain, drifts from reality, adds CI latency. 5. Compound engineering. When you teach me a rule, build the prevention into artifacts (AGENTS.md, lint, hooks, reviewer prompts) so it applies automatically going forward. Don't rely on memory. 6. Prefer functional, pure, immutable. Mutation is a smell unless inside a contained scope with a clear reason. Arrow functions plus reduce/map/filter over for-lo"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48414646,
+    "author": "KronisLV",
+    "text": "much tooling as possible at the project, like Oxlint, Oxfmt etc., for Python it might be Ruff and ty or Pyright or whatever - throw as much testing as possible at the project, maybe require certain coverage or just have CLAUDE.md that nudges the models to write and run tests - throw as many additional scripts at the project as you want, e.g. how you want the architecture to be laid out, max file length limits etc., whatever common tools don't cover - some tools also support LSP, use t"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48416056,
+    "author": "moezd",
+    "text": "t that doesn't require a custom llama.cpp implementation. I also don't have the heart to let the swarm do it end to end, because LLM generated code with less capable models really does smell, no amount of spec driven or Claude.md filled style guidelines seem to fix it."
+   },
+   {
+    "src": "ask_hn",
+    "id": 48416641,
+    "author": "0xbadcafebee",
+    "text": "it MCP servers for other systems you use, like AWS Docs MCP, Atlassian MCP, Linear MCP, SearXNG MCP, Playwright MCP, etc, which basically multiplies the AI's usefulness. Tune config to block all use of /tmp/ because the AGENTS.md instructions to not use that dir are always ignored. Set API tokens in env vars for most services and modern AI models will figure out how to use them (cli, api, etc). 2) OpenCode Go subscription, backstopped by Chutes Plus subscription, OpenRouter with $10 i"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50403051",
+    "author": "prtmnth",
+    "date": "2026-11-07",
+    "text": "I have a skill called memory-prune whose sole purpose is to take an automatically created memory, assess whether it deserves to live, get stored in code comments, a rule, an AGENTS.md file in the project, the global AGENTS.md/CLAUDE.md file, or (and this is the most often picked option) not at all and deleted."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50398323",
+    "author": "ninininino",
+    "date": "2026-11-06",
+    "text": "that the weaker model will automatically call when it thinks something warrants it: https://code.claude.com/docs/en/advisor It allegedly will automatically judge when to call the stronger model, not sure how much instructions in prompts or AGENTS.md can steer it."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50398028",
+    "author": "Fordec",
+    "date": "2026-11-06",
+    "text": "This sort of stuff has me believing that decision model controlled/prioritized context is the future of context management beyond the raw AGENTS.md file. Why give all the context to an agent, when the context can also be curated, updated and made concise automatically for each new problem."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50395599",
+    "author": "darklinear",
+    "date": "2026-11-06",
+    "text": "I find I am able to get rid of most of the skills just by listing out the style guides the bot should follow in AGENTs.md"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50385605",
+    "author": "Seattle3503",
+    "date": "2026-11-05",
+    "text": "Do you think this was a human choice, or one of those subtle Claude choices you don't notice until it bites you? I'm sure the answer will be to update AGENTS.md to not do this particular thing, expose email in this way, which isn't the same as having sense."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50382063",
+    "author": "morkalork",
+    "date": "2026-11-05",
+    "text": "If you've ever been in a meeting that's devolved into coding standards you'll believe me when I say I'd choose writing an agents.md every time"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50380633",
+    "author": "cpobuda",
+    "date": "2026-11-05",
+    "text": "ted testing, and reviews (multiple models), process works extremely well. Enables fast iteration cycles since most issues are diagnosed in design and specification and we don't start coding until the specification is unambiguous. From it's agents.md - Helyn Implement 3.1 defines a seven-phase software implementation protocol (project setup; research & design; design philosophy with a Subtractive Genesis Gate; performance analysis; test planning; implementation with a bug-hunter panel; security review; performance verificati"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50380005",
+    "author": "GoodFriday",
+    "date": "2026-11-05",
+    "text": "tone and burnout from the sheer amount of words in the output. All of it works to keep answers short, to the point, sticking to technical details and absolutely no linguistic decoration or polite stuff. The most effective line I have in my Agents.md is to answer me like a Vulcan rather than a human."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50379408",
+    "author": "verdverm",
+    "date": "2026-11-05",
+    "text": "> just prompt \"its wrong please fix\". Even though they can do more, the context engineering (in-repo markdown) is important. Think of it like BigO, where having good agents.md removes the need to re-deduce how code works, explains invariants, and the like. My #1 fundamental right now is staying in the loop. Leaving the agents to their own devices is a recipe for bad things. Be skeptical of fads, these are typically the people who've stopped looking an"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50377309",
+    "author": "jbloggs777",
+    "date": "2026-11-05",
+    "text": "e, that uses up 10% of the limit raises an eyebrow .. methinks he exaggerates. I don't think my \u20ac20 business plan gets more than the plus plan. A minor README change with basic verification steps is cheap, or you have totally overdone your AGENTS.md / skills / other steering and have it running around in circles. In general, if the AI needs to dig through a mammoth codebase to make a simple change, it's likely a codebase / design problem. If you are making a cross-cutting change that needs that, then you plan up front, then"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50376902",
+    "author": "mickyngub",
+    "date": "2026-11-05",
+    "text": "I use both Claude Code and Codex with a bunch of project-specific skills and AGENTS.md files. Worktrees have been really useful when running multiple sessions on the same repo, otherwise they can step on each others changes. Still figuring out how much should go in AGENTS.md though. Mine keeps growing lol."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50375278",
+    "author": "coeneedell",
+    "date": "2026-11-05",
+    "text": "I usually have a \u201cclose out\u201d routine that\u2019s something like telling it to record hints to the project\u2019s agents.md. It\u2019s usually pretty good at figuring out what to save, and I usually set up the prompt to point the thing\u2019s attention at the part of the process that made me most frustrated."
+   }
+  ]
+ },
+ {
+  "name": "Agent Skills",
+  "url": "https://agentskills.io",
+  "score": 81.2,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Show HN: Agent-skills-eval \u2013 Test whether Agent Skills improve outputs",
+   "points": 79,
+   "id": "48046023",
+   "url": "https://github.com/darkrishabh/agent-skills-eval"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50375041,
+    "author": "Dibes",
+    "text": "uly phenomenal remote sessions. All while having a singular UI/UX experience which I actually really appreciate. It is probably weakest at customizability and making sure you have parity in all your agent harnesses with skills/etc, granted I just set an agent to ensure that so the point is a bit moot. Overall I have really been enjoying the inbox style workflow and it has been a joy to work with. It jives with how I like to work across streams."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50367866,
+    "author": "x3haloed",
+    "text": "d to, and I avoided adding more than a single agent until I had to. My preferred way to use AI for coding has been to work closely with a single coding agent with the code open. That changed wth 5.6-Sol and a handful of skill files. I stopped needing to watch closely to keep it from fucking up the codebase. With the right request, that combination will get the job done 9/10 times. That unlocked a new workflow: as soon as a change is requested, a coding agent reads it and gives me "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50375084,
+    "author": "martincsweiss",
+    "text": "I use Codex and Claude Code with piles of project-specific skills and AGENTS.md files. For my main work at my startup, we're very careful with how these are setup. Everywhere else, I simmer in chaos. I also have strong boundaries around generated prose. I don't like making other people read AI slop, but I don't mind having "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50375609,
+    "author": "chilicuil",
+    "text": "two max Claude suscriptions, active dev in vscode to share screenshots, GitHub tickets for memory, basic skills, superpowers,subagentic coding with opus and the main in fable, daily Cron tasks for answering email/linkedin/etc. Desktop Claude for video/music editing . No API usage, expensive for my needs."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50376902,
+    "author": "mickyngub",
+    "text": "I use both Claude Code and Codex with a bunch of project-specific skills and AGENTS.md files. Worktrees have been really useful when running multiple sessions on the same repo, otherwise they can step on each others changes. Still figuring out how much should go in AGENTS.md though. Mine keeps growing lol."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50378856,
+    "author": "gregwebs",
+    "text": "1-2) Claude $20/mo (planner) Codex $20/mo (reviewer) Deepseek $1-3/day workhorse. 4) A standard /implement skill creates separate agents for different parts of the workflow. It uses Claude for planning, codex for reviewing, and deepseek for doing and orchestrating. https://github.com/gregwebs/skills-sdlc . I also have a plugin for switching between providers when quota "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50380310,
+    "author": "Bayart",
+    "text": "- Wrapper : Orca - Harness : oh-my-pie - Models : OpenAI $20 sub (mostly using Sol/Luna) + Deepseek + JEV - Skills : Mostly Osmani's agent skills, ub-mode, agency skills for personas + custom stuff I'm kinda reworking everything as the moment, I'm having issues with other people's workflows (whether it is Pokock, Osmani or Uncle Bob) even though there are bit I like and I"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50380407,
+    "author": "leofree",
+    "text": "Less is more with these new models and harnesses, IMO. Claude code CLI on MAX plan with a few well-selected skills and craft claude.md, does the trick for 99% of the use cases I encounter. Stopped OpenClaw and fancy setups after a few weeks each time. Simplicity is the ultimate sophistication."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50380583,
+    "author": "RamblingCTO",
+    "text": "Claude desktop, chatgpt desktop, pi, claude code, also coop vm + pi setup for more juicy stuff. Also just setup paseo via tailscale to have something like amp. imho all the fancy setup and the skills make the agents more retarded. they access tools and skills way too broadly and it poisons the context. also killed my hermes web setup (also via talescale) for security reasons. not interested in having something online like that with all the vulns popping u"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50381009,
+    "author": "wombat-man",
+    "text": "or the phone app. I don't know how much it matters but I use fable for big picture planning discussion. This costs some added money, but I switch back to Opus to use quota for coding. No swarm tools... I sometimes add a skill or an MD file to the repo to keep context through compaction. Haven't tried OpenClaw, not really sure what the value add there. The bottleneck is me understanding what code is going in and I don't think I want a ton of code I don't understand being added whil"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50385812,
+    "author": "monch1962",
+    "text": "Hermes, both at home and for work. Most of what I do with it is research, identifying pros and cons of different approaches to problems, product comparisons, proofreading my own docs before they get sent out. I've built skills that have different subagents debate the pros and cons of various options or ideas before coming to a consensus view, but with all those pros and cons spelled out - that's really handy when I have to present some complex concept to a bunch of stakeholders wit"
+   },
+   {
+    "src": "ask_hn",
+    "id": 47390466,
+    "author": "eranation",
+    "text": "cel my Cursor account. Or... I'll just use my own with OpenClaw, but I'm not going to give it any work / personal access, only access to stuff that is publicly available (e.g. run sanity as a regular user). Playing with skills, subagents, agent teams, etc... it's all just markdowns and json files all the way down... About our professional future: I'm not going to start learning to be a plumber / electrician / A/C repair etc, and I am not going to recommend my children to do so eith"
+   },
+   {
+    "src": "ask_hn",
+    "id": 47390679,
+    "author": "eranation",
+    "text": "Opus 4.5 max (1m tokens) and above were the tipping point for me, before that, I agree with 100% of what you said. But even with Opus 4.6 max / GPT 5.4 high it takes time, you need to provide the right context, add skills / subagents, include tribal knowledge, have a clear workflow, just like you onboard a new developer. But once you get there, you can definitely get it to do larger and larger tasks, and you definitely get (at least the illusion) that it \"understands\" that it'"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46257391,
+    "author": "kxrm",
+    "text": "eally nice way to keep your rules file from exploding. I have slash commands for code review, and git commit management. I have skills for complex tool interactions. Our company has it's own deployment CLI tool so using skills to make Claude Code an expert at using this tool has done wonders to improve Claude Codes performance when working on CI/CD problems. I am currently working on a new slash command /investigate that runs triage for an active or past incident. I've had Claude w"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50401914",
+    "author": "biztos",
+    "date": "2026-11-07",
+    "text": "to avoid for the stated reasons and others. That said, I get your point: maybe \"the thing writing the code\" will be as abstract as \"the thing moving the electricity through transistors\" at some point. And maybe I will be wrong about coding skill translating to good agent-herding skill. But I don't think I'm wrong now. "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50380310",
+    "author": "Bayart",
+    "date": "2026-11-05",
+    "text": "- Wrapper : Orca - Harness : oh-my-pie - Models : OpenAI $20 sub (mostly using Sol/Luna) + Deepseek + JEV - Skills : Mostly Osmani's agent skills, ub-mode, agency skills for personas + custom stuff I'm kinda reworking everything as the moment, I'm having issues with other people's workflows (whether it is Pokock, Osmani or Uncle Bob) even though there are bit I like and I'm still looking at "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50378945",
+    "author": "danosz",
+    "date": "2026-11-05",
+    "text": "er on your codebase) and it flags out most vulnerabilities; not bulletproof - working on that. Made it open-source if you'd like to use it: https://github.com/danoszz/penthera - you can use it through your CLI or Cursor, Claude Code as MCP/skill/agent or via NPM: https://www.npmjs.com/package/penthera - we even have a 24/7 watch dashboard locally (first prototype)- read more about the project here: https://penthera.org ; I aim to make security more accessible for beginning/pro developers building their product with AI t"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50364637",
+    "author": "poelzi",
+    "date": "2026-11-04",
+    "text": "nything in computer history before. I remember boot sector viruses and stuff. My approach is https://tix.im/ - not launched yet. But from expedience: modeling everything as workflows of composeable nix flakes (expert systems from programs, skills, agents, workflows and their snippets, DBs blobs, service descriptions, ...) and then run everything in highly isolated environments. It is not only so much more efficient, reduces errors, increases quality, reduces unnecessary cognitive load, ... I start to move more and more d"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50353835",
+    "author": "oleks_dev",
+    "date": "2026-11-03",
+    "text": "ation: Europe (UTC+2) Remote: Yes Willing to relocate: Yes, for the right offer Technologies: PHP/Laravel, Node.js/NestJS/TypeScript, MySQL, PostgreSQL, ClickHouse, Redis, AWS, Docker \u00b7 Solidity, ethers/viem, Aave, Chainlink \u00b7 Claude Code (skills, agents, MCP, spec-driven development) R\u00e9sum\u00e9/CV: https://drive.google.com/file/d/1sY-PfOdFmiHQqmNl6d1uussKcPb... Linkedin: https://linkedin.com/in/oleksandr-shubin Email: oleksandr.shubin [at] gmail.com Senior backend / product engineer and Team Lead, 10+ years. Recent work: - "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50338809",
+    "author": "Dean52x52",
+    "date": "2026-11-02",
+    "text": ", bootstrapped, profitable AI consulting firm. We embed with small and mid-size businesses (wealth management, real estate, construction, higher ed, nonprofits), learn how the work actually gets done, build what makes sense (mostly Claude: skills, agents, connectors, MCP) and train every person until they don't need us. We went from 1 client in February to about 20. You'd own client relationships end to end: discovery, the build, the training. Strong builders who can also explain things to a 60-year-old business owner do"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50297492",
+    "author": "grey-area",
+    "date": "2026-10-29",
+    "text": "small doses it does make sense, it's only when you ask for long form writing/work that it becomes apparent there is no coordinating intelligence there. Interesting just how much of this advice applies to programming as well as to maths: -- Skills, agent.md and harnesses are probably a dead-end that will die off as the tools become more capable. LLMs are not good at reducing complexity, however they're very good at adding it, and sometimes it is just unnecessary and he can find ways to cut it by interrogating the LLM. Som"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50297052",
+    "author": "berkes",
+    "date": "2026-10-29",
+    "text": "Occasionally ran the same prompt through openrouter to check if it's \"my context\" or \"the model\" when I get a poor result. Mistrals models aren't the best. They certainly are measurably worse when I run them \"blank slate\". That is: without skills, AGENTS.md, MCPs and so on. But who does that anyway? Aside from these harnesses, I run many one-off agent threads. They run at most half an hour and fill the context window not even 20% before I stop and \"handover\". And I tend to be annoyingly demanding and nitpicky in my skill"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50292047",
+    "author": "robbiemckinstry",
+    "date": "2026-10-29",
+    "text": "t the slice instead of the whole spec, eliminating superfluous text unrelated to the requirement at hand. People still get the full picture, because the CLI renders the whole spec to deterministic, read-only Markdown. There's also an agent skill that teaches agents to use the CLI and write valid SLCR. This tool is for engineers and tech leads on long-lived codebases who are giving agents real implementation work and want a check beyond reading the diff. If you're writing one-off scripts or throwaway prototypes, you prob"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50120796",
+    "author": "hn_explorer121",
+    "date": "2026-10-16",
+    "text": "n skills became available, people started to use it and created sophisticated systems having numerous skills. But as models become better and better there are some sayings that the skills can actually produce worse results than not using a skill and just asking agent to do it."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50064197",
+    "author": "whatever1",
+    "date": "2026-10-12",
+    "text": " prompt in a standard workspace. I literally just ask a frontier model : \"Pull the latest log and root cause the issue.\". That's it, 10' later it comes back with a correct answer. Sometimes I might have to prompt a second time to steer. No skills, agent interconnections, graphs, vector search or whatever else. The progress is very scary."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50057511",
+    "author": "TeMPOraL",
+    "date": "2026-10-12",
+    "text": "the times I'd just skim and throw away and reprompt, because I couldn't even begin to guess which part is correct, which isn't, so in the end, it was just a fast way to waste lots of tokens. I see many people have complex systems involving skills, agent swarms with roles, agent factories, 20 termux panes and whatnot. Maybe that's the way, I don't know. Nobody knows. But it's not necessary to start getting value from LLMs. I therefore recommend my \"lazy person's basic approach\": - Throw a task at LLM - Check result, see w"
+   }
+  ]
+ },
+ {
+  "name": "Superpowers",
+  "url": "https://github.com/obra/superpowers",
+  "score": 76.3,
+  "github_stars": 313991,
+  "top_hn_story": {
+   "title": "Superpowers: How I'm using coding agents in October 2025",
+   "points": 435,
+   "id": "45547344",
+   "url": "https://blog.fsck.com/2025/10/09/superpowers/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50375609,
+    "author": "chilicuil",
+    "text": "two max Claude suscriptions, active dev in vscode to share screenshots, GitHub tickets for memory, basic skills, superpowers,subagentic coding with opus and the main in fable, daily Cron tasks for answering email/linkedin/etc. Desktop Claude for video/music editing . No API usage, expensive for my needs."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50377528,
+    "author": "jvidalv",
+    "text": "I agree, kinda funny seeing all people trying to optimize it with Superpowers/Grill and any new shinny toy. I just run Claude/Codex raw, always did, before I was always forcing plan mode before any task, but they are so good right now that not even that is needed anymore 90% of the times. Also before I was at least using terminals, now"
+   },
+   {
+    "src": "ask_hn",
+    "id": 47389661,
+    "author": "mc-0",
+    "text": " monorepo of services glued together. The manager & a senior dev on my first day told me to \"Don't try to write code yourself, you should be using AI\". I got encouraged to use spec-driven development and frameworks like superpowers, gsd, etc. I'm definitely moving faster using AI in this way, but I legitimately have no idea what the fuck I am doing. I'm making PRs I don't know shit about, I don't understand how it works because there is an emphasis on speed, so instead of ramping up in "
+   },
+   {
+    "src": "ask_hn",
+    "id": 47397401,
+    "author": "jcmontx",
+    "text": "le here can get when their livelihood depends on it. It's a game changer guys. I've been working professionally for 12 years. Big companies, small companies, freelance, startup CTO nowadays. It's multiplier. It gives me superpowers. If you don't feel the superpowers, you're either missing out or in denial. Embrace agentic coding."
+   },
+   {
+    "src": "ask_hn",
+    "id": 46258057,
+    "author": "jdelsman",
+    "text": "My favorite set of tools to use with Claude Code right now: https://github.com/obra/superpowers 1. Start with the \u2018brainstorm\u2019 session where you explain your feature or the task that you're trying to complete. 2. Allow it to write up a design doc, then an implementation plan - both saved to disk - by asking you multiple clarifying questions. Feel free t"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46264154,
+    "author": "radio879",
+    "text": "Lately, I\u2019ve been using Claude Code skills/plugins. One is called Superpowers (you should be able to find it by typing \u201cclaude code superpowers github\u201d), and there are many other skills installed for all sorts of things. Gotta give props to whoever came up with the skills idea at Anthropic. It\u2019s a smart way of handling context \u2014 instea"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48781033,
+    "author": "gessha",
+    "text": "Based on your comment, I assume you use Matt Pocock\u2019s skills, is that correct? If so, have you compared it to obra\u2019s superpowers?"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48782774,
+    "author": "othmanosx",
+    "text": "YES! and I already love them. haven't heard of obra\u2019s superpowers, will check them out. Thanks."
+   },
+   {
+    "src": "ask_hn",
+    "id": 49578596,
+    "author": "latchkey",
+    "text": "I'm addicted. This is the most fun I've had coding in decades. I feel like I've got superpowers and the limit is just how quickly I can prompt out my ideas. Those 500m are for coding. Started with $20 and now I'm on the $200/mo codex plan. Resets are crazy... free tokens, why not take advantage of all that VC money? Using omp helps a lot too, the fact t"
+   },
+   {
+    "src": "ask_hn",
+    "id": 44098080,
+    "author": "TimPC",
+    "text": "LLMs give you superpowers if you work on a wide range of tasks and aren't a deep expert on all of them. They aren't that great if you know the area you are working in inside and out and never stray from it. For example, using an LLM to help you write a Dockerfile when you write Docker"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50398786",
+    "author": "ThePhysicist",
+    "date": "2026-11-06",
+    "text": "that. I use AI for building games and a virtual LAN party OS and everything is super polished and looks great (to me), because I spend a ton of time on it and obsess over details, AI is a big accelerator in that venture for me and gives me superpowers. But yeah sometimes when I just need to deliver some asset to a customer I use AI to create it and lightly edit it, the result is ok but it's not great. I share the disdain for AI built presentations, especially Claude has a signature look that is so tiring. I remember this phas"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50377528",
+    "author": "jvidalv",
+    "date": "2026-11-05",
+    "text": "I agree, kinda funny seeing all people trying to optimize it with Superpowers/Grill and any new shinny toy. I just run Claude/Codex raw, always did, before I was always forcing plan mode before any task, but they are so good right now that not even that is needed anymore 90% of the times. Also before I was at least using terminals, now? Not even that, Cla"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50375609",
+    "author": "chilicuil",
+    "date": "2026-11-05",
+    "text": "two max Claude suscriptions, active dev in vscode to share screenshots, GitHub tickets for memory, basic skills, superpowers,subagentic coding with opus and the main in fable, daily Cron tasks for answering email/linkedin/etc. Desktop Claude for video/music editing . No API usage, expensive for my needs."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50372317",
+    "author": "andrewdong",
+    "date": "2026-11-04",
+    "text": "TIL about Superpowers!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50368523",
+    "author": "haswell",
+    "date": "2026-11-04",
+    "text": "'s hard for me to understand how the parallels wouldn't be abundantly clear. The nuclear stabilization that occurred was the result of a collective understanding of the existential risk it posed leading to anti-proliferation agreements and superpowers going to great lengths to prevent nations deemed as unstable from obtaining such technology. Some portion of the global community may collectively discover/decide that the risk AI presents is worthy of anti-proliferation treaties and wars may be fought over it. The main gap in t"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50368122",
+    "author": "goatlover",
+    "date": "2026-11-04",
+    "text": "The development lead to it being dropped on two cities followed by an arms race that put global civilization at permanent risk, with several incidents already that could have launched a nuclear war between superpowers. How is any of that good?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50337402",
+    "author": "max_k",
+    "date": "2026-11-02",
+    "text": "Quite possible. Ours were good, they just didn't benefit from LLM superpowers back then. After my Mythos experience, I was wondering if there is really still a market for human code audits. I guess yes, but the work will be different, just like coding (and marketing and so on...) is different now. You still need to have an expert to wield the new powerful"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50315335",
+    "author": "skew-aberration",
+    "date": "2026-10-31",
+    "text": " in motion for years now and I don't expect the student movement to care - the upsides are broadly popular with younger people globally. Personally, I think it is deeply ironic that in the age of tariffs and huge government spending by the superpowers, small countries like Serbia are still signing up to be bound by the 'free market' consensus which is rapidly disintegrating globally."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50304504",
+    "author": "vrganj",
+    "date": "2026-10-30",
+    "text": "My point is that there is ways other than military force to impose costs, especially for economic superpowers like the EU or the US."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50291708",
+    "author": "gnabgib",
+    "date": "2026-10-29",
+    "text": "Title: Dive Apps: Superpowers for AI Builders "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50283166",
+    "author": "mopsi",
+    "date": "2026-10-29",
+    "text": " frameworks. So contrary to your claim, Ukraine did not make a commitment of neutrality to anyone. > You had to carefully choose your words to write that sentence, didn't you? Otherwise NATO invasions post 1975 shows how little the Western superpowers have cared about international law or sovereignty ... The words of the Helsinki Final Act were very carefully chosen by Russians, who initiated the security conference with their Budapest Appeal of 1969. \"Inviolability of frontiers\" (borders) was their central focus. The Helsink"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50278484",
+    "author": "thisislife2",
+    "date": "2026-10-28",
+    "text": "nian SSR solemnly declares its intention of becoming a permanently neutral state that does not participate in any military bloc ... - The statement alone would've been a severe violation of Ukraine's sovereignty. That is one of my points - Superpowers have never cared about the sovereignty of other countries when their own political self-interest was involved. There are umpteen examples of this in history and modern times. You can see it with the Ukraine war too - Russia invaded it to protect its self-interest, and the West n"
+   }
+  ]
+ },
+ {
+  "name": "Semble",
+  "url": "https://github.com/MinishLab/semble",
+  "score": 54.9,
+  "github_stars": 6377,
+  "top_hn_story": {
+   "title": "Show HN: Semble \u2013 Code search for agents that uses 98% fewer tokens than grep",
+   "points": 445,
+   "id": "48169874",
+   "url": "https://github.com/MinishLab/semble"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 47392187,
+    "author": "gooseyard",
+    "text": "things out if stuff goes sideways. Ultimately that's what this is all about- writing code is a big part of my career but the thing that has kept me employed is being able to figure out what to do when some code that I assembled (through some combination of experimentation, documentation, or duplication) is not behaving the way I had hoped. If I don't understand my own code chances are I'll have zero intuition about why it's not working correctly, and so the idea of introducing a bu"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48456449,
+    "author": "meowokIknewit",
+    "text": ". Vibecoded anki and tinder-like character game for mandarin which allows new vocab to be added on the fly. Also accurate text to speech for tones. - What did I learn? Tweet summarize that takes all favored tweets and assembles into weekly categories and allows deep research on certain topics."
+   },
+   {
+    "src": "ask_hn",
+    "id": 48456957,
+    "author": "pdyc",
+    "text": " for testing html/react snippets token speed calculator - for estimating tg/s of ai based on ram speed and model size/params this helps in comparing different hw, estimating likely speeds i will get on hardware prompt assembler - to create prompt and context once and reuse it in different ai's, picking and choosing context in a prompt, creating agent.md etc. dashboard builder - for viewing gsc, ga, stripe data in one place"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48459566,
+    "author": "mzl",
+    "text": "y into modules, and does per module reviews and global reviews for different aspects, and then summarizing that into a report. Can be used with multiple different harnesses. Written as a Python project, but build-time assembled into a single-file Python script with uv run --script shbang line."
+   },
+   {
+    "src": "ask_hn",
+    "id": 48469526,
+    "author": "zoratu",
+    "text": "1. I improved my calendar management app, which while simple had some edge cases. AI helped me test them all. https://block-it-out.com/ 2. Ported my own personal disassembler to Rust, and added a ton of functionality with AI. https://github.com/zoratu/hexray 3. Ported a TLA+ model checker to Rust, improving performance for most models over Java by a huge margin. https://github.com/zoratu/tlaplusplus 4. Created a scheduler in Erla"
+   },
+   {
+    "src": "ask_hn",
+    "id": 44095282,
+    "author": "chewz",
+    "text": "I use this analogy. In the early 90's I had been programming in assembler and sometimes in pure hex codes. I had been very good at that, creating really effective code, tight, using as little resources as possible. But then resources became cheap and it stoped matter. Yeah, the tight well designed machine code is still some sort o"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50160160,
+    "author": "rgoulter",
+    "text": "the most coverage of the system it reasonably can) the cases we care about. The name of the test should indicate what it's doing. For unit tests, these should check only one thing, and the test can be structured into \"assemble, act, assert\" style tests. On the implementation side: code which touches state is tricky. -- So, minimize the amount of code which touches state (or rather, shift as much code as you can to stateless code, which is easier to bring under test)."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50157437,
+    "author": "g-b-r",
+    "text": "ns). That's not a big problem when a honest human has written or reviewed the code, because unintended code is usually easy to spot. But an LLM might have dropped any whatsoever code: maybe some of your project's code resembles the one of a trojan in its training, so it completes it with the trojan. Or maybe it found that if your server is unreachable, it can upload the client's data to a public Github repo; or that if there's no space left on the device, it can delete some of the "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50166564,
+    "author": "jasonjayr",
+    "text": "I suspect that's a problem both with human read/written code, and LLM written code -- larger features should be chunked up into more manageable to understand and reason about functions, and assembled at higher levels. Guiding the LLM (or humans structuring/guiding juniors) to shape the abstractions help make the overall feature and reliability of the code much better."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50357087",
+    "author": "tkdb",
+    "date": "2026-11-03",
+    "text": "side google made search perform worse to increase ad revenue (if users search more, they see more ads). There wasn't a better alternative, until LLMs came along. It will be some time until the wild west of LLM-SEO hacking settles into some semblence of a stable ecosystem, but even with misinformation and hallucinations today chatgpt far outperforms search engines for virtually everything we want search engines to do. So google is under existential threat for the first time ever. And they appear to be playing \"all search "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49977627",
+    "author": "bm3719",
+    "date": "2026-10-06",
+    "text": "t this mechanism is so powerful, it kinda can't be ignored. It's not just that the internet discussion is rotten, but the discursive rot has definitely made the leap into the real world too. It's almost inescapable. What was once normal, a semblence of interpersonal decency you could expect as the default, has become the exception."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49722168",
+    "author": "unscaled",
+    "date": "2026-09-16",
+    "text": "ses makes life harder for agents, you should go with a less verbose language. I'm not sure what \"manual optimization\" means (isn't it a bit of an oxymoron when the agent does it?), but if your agent has the proper tools (e.g. ast-grep, rg, semble) it can deal with large codebases. Would the agent create slop? Yes. But it wouldn't be worse on the slop that humans created on every moderately-sized Java project I've worked on. > in fact, agent-written code in a low-level language gets pretty slow well below that size I've n"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49661447",
+    "author": "gslepak",
+    "date": "2026-09-11",
+    "text": "How does lumen compare to semble? https://github.com/MinishLab/semble "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49573837",
+    "author": "sognetic",
+    "date": "2026-09-05",
+    "text": "There are a bunch of approaches that do this kind of thing to reduce token usage (\"semble\" came to mind, technically different but functionally similar) but their performance is usually mixed because the models haven't been RL tuned to use them as they have the default tool suite. Combine that with the incentive by Anthropic et al. to make you actually burn through a"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49434019",
+    "author": "idoubtit",
+    "date": "2026-08-25",
+    "text": "f Facebook Connect was hacked\". That's strange, I think it should be \"as the trust in Facebook Connect would be eroded when Facebook is hacked\". Anyway, I think most people won't care. - Some sentences make no sense: \"Le piratage de Ficoba semble en \u00eatre l'exemple type\"... But \"Ficoba\" is not mentioned anywhere, and, though I know what the word means, I can't guess what the sentence points to. The OP should have mentioned another important hack of French national structures that happened in december 2025 and which is wel"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49397300",
+    "author": "sanix-darker",
+    "date": "2026-08-22",
+    "text": "It generate a tree of knowledge units based on Google Open Knowledge Format and it's faster, accurate than TokenSave, Semble and code-review-graph... I built a skill that lets your AI agent install and use radar, my token reduction tool for code search/navigation. Just prompt your agent: \"Install http://skills .sh /sanix-darker /radar-skills\" While using it daily on my personal projects, i start to no"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49395278",
+    "author": "bitexploder",
+    "date": "2026-08-22",
+    "text": "ead it in a rewritten tone because it's probably bad as it stands and your colleague did not put enough effort in it. It is /not/ good and you should not accept it as a default. We have to hold the line on stuff like this and maintain some semblence of normal human engineering standards that existed before AI. They are not making us better. They are making is lazy and dumber. Opus 5 and other agents in the latest rounds of tuning have gotten ridiculously bad in terms of how they feel to interact with with all the invente"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49073501",
+    "author": "udbhavs",
+    "date": "2026-07-27",
+    "text": "manize the technology and make it more palatable to people. Anthropic is the biggest example of this language with its ads and promotions. Edit: I'm enjoying seeing all the other examples linked in the responses. I decided to make a public Semble collection ( https://semble.so/profile/vadhub.bsky.social/collections/3mr... ) to track more, feel free to add to this!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48767249",
+    "author": "port11",
+    "date": "2026-07-02",
+    "text": " and shows the beauty of a multi-provider harness. I should also add that I run GLM in Pi with a lot of cool little things such as hashline edits, some plugins for general smartness, etc. Opus runs in CC with the native tooling (except for Semble and Serena)."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48606088",
+    "author": "EnglishMobster",
+    "date": "2026-06-20",
+    "text": "elf-host your PDS to truly own your data up and down the stack. There's also oodles of different applications, of which Bluesky is just one. There's: * Germ (encrypted DMs, Signal competitor) * Leaflet (blogs, Substack/Medium competitor) * Semble (link collection/sharing) * BeaconBits (location-based social media, like FourSquare) * SkyReader (Google Reader) * Keytrace (cryptographic identity proofs) * Smoke Signal (social events) * Teal.fm (Last.fm) * Goals.garden (goal/habit tracking/accountability) * Tangled (GitHub) "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48594801",
+    "author": "stephantul",
+    "date": "2026-06-19",
+    "text": "We\u2019ve been on the receiving end of this complaint with Semble. I think it is a valid complaint, but constructing a benchmark for this kind of thing is just very difficult and expensive because of the (harness) x (model) x (mcp/cli) combination. With traditional ml/tooling, not showing benchmarks was usually a red flag. But for llm tooling,"
+   }
+  ]
+ },
+ {
+  "name": "Spec Kit",
+  "url": "https://github.com/github/spec-kit",
+  "score": 52.8,
+  "github_stars": 148358,
+  "top_hn_story": {
+   "title": "Understanding Spec-Driven-Development: Kiro, Spec-Kit, and Tessl",
+   "points": 128,
+   "id": "45610996",
+   "url": "https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 48421309,
+    "author": "vladgur",
+    "text": "Imm overwhelmed with a variety of SDD tools out there. Github spec kit, spec-kitty, symphony, GSD, this. How do people decide on the framework other than try them all. p.s. found this mind-boggling list of them all https://github.com/cameronsjo/spec-compare "
+   },
+   {
+    "src": "ask_hn",
+    "id": 48415083,
+    "author": "itake",
+    "text": "virgin project: 1/ spec driven dev ( https://github.com/github/spec-kit ) 2/ then degrade to multiple sessions (no worktrees) debugging various problems until its done On UI Design (MacOS, Web): 1/ AI does a first pass. Try to give it style guidance on my own (colors, style, etc). 2/ Prompt ChatGPT.com with screenshots and ask fo"
+   },
+   {
+    "src": "ask_hn",
+    "id": 47392053,
+    "author": "throwatdem12311",
+    "text": "I am forced to use it. They want us to only have code written by Claude. We are forced to use spec-kit for everything so every PR has hundreds, if not thousands, of lines of markdown comitted to the repo per ticket. I basically only review code now. It changes so fast it is impossible to have a stable mental model of the application. My job is now to goto meet"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46257559,
+    "author": "bulletsvshumans",
+    "text": "tating a process around gathering requirements, doing research, planning, breaking into tasks, and finally implementing. Much better than having a coding agent just go straight to coding. [0] - https://github.com/github/spec-kit "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50266195",
+    "author": "hleichsenring",
+    "date": "2026-10-27",
+    "text": "Fair question. Spec Kit and BMAD are both broader than this. Spec Kit has dozens of agent integrations and an extension ecosystem, BMAD has personas for product, architecture, UX, dev and test. This is narrower and stricter about a few things: Checking the spec before building. Spec Kit's converge comp"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50265479",
+    "author": "systima",
+    "date": "2026-10-27",
+    "text": "How does this differ to Spec Kit / BMAD / etc?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50262485",
+    "author": "yipinwong",
+    "date": "2026-10-27",
+    "text": "The prompts build impressive clips. I am more interested in how to make consistent \"participants\" and \"environment\" with multiple clips so they look like one longer clip. Will that require same dev/coding harness and spec-kit-like engineering flow? Like create a spec on how a movie will look like, feed contexts, create tasks so that multiple clips look congruent?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49951507",
+    "author": "locknitpicker",
+    "date": "2026-10-04",
+    "text": "g. People talked about MCPs AGENTS.md and README.md and agent skills and even comments, descriptive tests, and naming conventions. Supposedly the theory was that if you provide context, agents wouldn't misbehave so much. Then plan mode and spec-kit approaches stepped in with approaches aimed at providing that context when starting sessions, because users never bothered with docs or MCPs or AGENTS.md or anything. But then plan mode and spec-kit approaches were considered too laborious and requiring too much from users. Then"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49802221",
+    "author": "thatguy89",
+    "date": "2026-09-22",
+    "text": "So 1. he's describing a manual version of Spec-Kit / OpenSpec / BMAD? 2. Thinks Markdown is... somehow different from normal text or other markup languages? 3. Doesn't seem to understand that LLMs are not deterministic?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49593998",
+    "author": "coopernusbaum",
+    "date": "2026-09-07",
+    "text": "I'm not using Spec Kit specifically, my approach is pretty simple. Everything should have separation of concerns and clear ownership to help prevent nasty subtle bugs and can help point to a single entity when things go wrong. Also, it is specifically designed to avoid only following happy paths, it e"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49381943",
+    "author": "kurtis_reed",
+    "date": "2026-08-21",
+    "text": "How is it different from https://github.com/github/spec-kit ?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49381436",
+    "author": "ramigb",
+    "date": "2026-08-20",
+    "text": " knows! I had my own attempts to improve working with AI but to my fault I rarely commit to a project no matter if I wrote it or AI wrote it for me! I tried this over a year ago https://github.com/ramigb/promachos (before I found out about spec kit and similar solutions) Then I tried this https://github.com/ramigb/groundcheck recently which is to actually help me in the review process specially if there is intent documentation like ADRs or similar. Your post inspired me to try from a different angle. Thank you."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49371543",
+    "author": "anetrebskii",
+    "date": "2026-08-20",
+    "text": "use a Git repository by providing them with a tool that allows them to work with MD files as they would with Google Docs: sharing a link for easy opening (like Zoom), comments, and a nice editor, and completely hiding Git. I personally use Spec Kit for writing specifications for future AI coding, and many people (not only engineers) are doing the same and generating different documents in MD using AI. However, the biggest issue is that people are trying to find an editor to work with generated MD files or push them to anot"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49035841",
+    "author": "trjordan",
+    "date": "2026-07-24",
+    "text": " I have no original thoughts. I've been pulling on this thought this morning, complete with checking in on how CodeSpeak and Tessl are doing. I'll add this link to the pile: https://martinfowler.com/articles/exploring-gen-ai/sdd-3-too... > spec-kit created a LOT of markdown files for me to review. They were repetitive, both with each other, and with the code that already existed. Some contained code already. Overall they were just very verbose and tedious to review. [...] To be honest, I\u2019d rather review code than all these"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49025527",
+    "author": "prabhanjana_c",
+    "date": "2026-07-23",
+    "text": "Interesting. Still wondering how this is different from a structured app building with let us say https://github.com/github/spec-kit , or using some skills from https://github.com/obra/superpowers . Will try it out."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48995090",
+    "author": "kloud",
+    "date": "2026-07-21",
+    "text": "I agree, another issue I have with existing SDD frameworks I've seen like spec-kit or openspec, is they seem to miss the mark by coupling specification (what the software should be) and execution (how to get there). If the description of execution is needed, it means the spec is weak. As a rule of thumb if a framework defines execution concepts like tasks or t"
+   }
+  ]
+ },
+ {
+  "name": "Context7",
+  "url": "https://context7.com",
+  "score": 48.0,
+  "github_stars": 64316,
+  "top_hn_story": {
+   "title": "Show HN: Context7 \u2013 LLM Code Snippets from Docs in Minutes",
+   "points": 4,
+   "id": "43507993",
+   "url": "https://context7.com/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 46260242,
+    "author": "brikym",
+    "text": "7.sh/sv There are a number of ways to get examples into the LLM. I use shadcn-svelte and bitsui and try to copy the examples (copy button at the top of the docs) or tell the LLM to fetch docs from the github repo or use context7's MCP for docs."
+   },
+   {
+    "src": "ask_hn",
+    "id": 46699656,
+    "author": "lostsock",
+    "text": "ever write code anymore, but I am constantly making architectural calls. Second, tooling and context quality matter enormously. I\u2019m using Claude Code. The MCP tools I have installed make a huge different: laravel-boost, context7, and figma (which in particular feels borderline magical at converting designs into code!). I often have to tell the agent to visit GitHub READMEs and official docs instead of letting it hallucinate \u201cbest practices\u201d, the agent will oftentimes guess and get st"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46704081,
+    "author": "fmdv",
+    "text": "ction. - Add additional error handling to the function if necessary. - Add additional validation to the function if necessary. It was also essential for me to enable the \"essential\" MCP servers like sequential thinking, context7, fetch, filesystem, etc. Powershell coding isn't particularly complex, so this might not work out exactly how you want if you're dealing with a larger codebase with very advanced logic. Another tangent: Figma Make is actually extremely impressive. I tried it "
+   },
+   {
+    "src": "ask_hn",
+    "id": 46705817,
+    "author": "tomjuggler",
+    "text": " mode\" in Cecli for almost everything - I don't know about other AI coding agents but you can easily set up tests to run and validate the output. Since MCP came out the quality of code has improved since there is always context7 and fetch to look up syntax. But yes at some point you need to look at the code yourself just to be sure"
+   },
+   {
+    "src": "ask_hn",
+    "id": 43932157,
+    "author": "trees101",
+    "text": " https://github.com/hotovo/aider-desk is a gui, takes 5 mins to install, has MCP support (try context7). Definitely worth a look and is an \"easy\" way in to aider."
+   },
+   {
+    "src": "ask_hn",
+    "id": 44110249,
+    "author": "cwsx",
+    "text": "MCPs: - `server-sequential-thinking` (MVP) - `memory` (2nd MVP, needs custom rules for config) - `context7` - `filesystem` - `fetch` - `postgres` - `git` - `time` Example rules file for ticketing system: ``` # Ticket Management Guidelines This document outlines the standardized approach to ticket management in the project. All team members should follow these guid"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49972089",
+    "author": "JohnBooty",
+    "date": "2026-10-05",
+    "text": "A lot of APIs we use return JSON - Github, Semaphore, Context7, Docker, etc. We're parsing JSON dozens of times per session. I think 5-6 tokens telling it to use `jq` in AGENTS.md was the right call for us. I eagerly await your misunderstanding!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49522752",
+    "author": "flavienbwk",
+    "date": "2026-09-01",
+    "text": " - Link your own knowledge bases (your best practices on how to code \"well\") - Creates or connects one or multiple repos (deploy keys) - Isolated autonomous long-running agentic dev a strong harness (compose or K8s) - Link custom MCPs like Context7 + any tool - Routines that run custom prompts periodically - Leak scanner and secrets/keys for knowledge bases and code - Yourself MCP: customers can integrate your Openvisor to their own AI tools (and are billed) - I've looked through the litterature to find the best harness im"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49509931",
+    "author": "xienze",
+    "date": "2026-08-31",
+    "text": "M than just the weights themselves. You need a good search provider (also self-hostable, but sounds easier than it really is). You need (well, it's debatable) a memory system. You need a good system for up-to-date library references like a Context7 (also self-hostable but the options are surprisingly not that good). You need a good set of specialized subagents that can perform various tasks well -- for the sake of \"doing things well\" but also managing context efficiently. When you've got all that, local models can be _extr"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49333690",
+    "author": "yoeven",
+    "date": "2026-08-17",
+    "text": "reat in some for example people search but is pretty bad at getting the latest content of the page, Parallel is better there. Apify is great for getting google ranked pages. Perplexity is great at financial data which Exa is pretty bad at. Context7 (coming soon) great at code, way better than exa for code. Depending on the use case, different indexes do better. we're also seeing companies with access to prosperity data like Valyu."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49105004",
+    "author": "mpdpsycho",
+    "date": "2026-07-30",
+    "text": "ools. To be fair I mess with \u201chow\u201d I use or orchestrate the harness myself, I still can\u2019t say anything I do that benefits me is more than placebo. At least from my projects. I think it matters easily for the things that can be patched like Context7 helping with API knowledge, and less for those that can\u2019t like whatever \u201cprompting style\u201d attempts to address. Maybe for those, you can say it matters in making agent use more subjectively ergonomic? So less of a correctness thing and more of reducing fatigue."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49098271",
+    "author": "someshutkar",
+    "date": "2026-07-29",
+    "text": "Nice to see the focus on production rather than just prototyping. I'm particularly interested in the Context7/MCP integration\u2014did you evaluate other approaches before settling on this architecture?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48925287",
+    "author": "port11",
+    "date": "2026-07-15",
+    "text": "Strange, I use M3 and Sonnet a lot, they never hallucinated. Gemini used to make up some function names, but it was in long context windows. My AGENTS.md does specific they should use context7 when unsure about a library, but still\u2026"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48879816",
+    "author": "rurban",
+    "date": "2026-07-12",
+    "text": "Quite the opposite is true. The agent and the harness is more important than the model on normal tasks. Just for extremely deep problems Fable 5/... are needed. I'm using oh-my-pi with gortex MCP, context7 and LSP servers. Plus tons of skills. Without that enhancements it's almost useless, missing all the file edits, git amend or fixup strategies, or github api calls."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48784257",
+    "author": "aka-rider",
+    "date": "2026-07-04",
+    "text": "he session among multiple calls I made https://github.com/aka-rider/orqestra but it's possible to do the same in almost any modern harness directly. The main idea is: - separate session that burns context on reading code and calling tools (context7, etc) -> markdown report \"here are relevant patrts of code, docs\" \"with evidence\" to prevent hallucinations - separate session for planning (architect) - (critic architect) 1-3 times because small model skip over details - worker validator, again, the same reason Qwen3.6 can run"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48730628",
+    "author": "abdush",
+    "date": "2026-06-30",
+    "text": "This is a script tag that library maintainers can enable from their Context7 library settings and add to their own docs site. The idea is that if you maintain a library on Context7, you can give your docs an AI chat widget without building a custom chat UI or backend. The widget uses the Context7 data for that library, loads asynchronously, and shows up "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48729549",
+    "author": "grokkedit",
+    "date": "2026-06-30",
+    "text": "I've been using it with a couple of tools (like context7) as a documentation/helper, without giving it direct access to writing code, in marimo. it works great, albeit a little slow on my server (m1 max 64gb ram), at 8bit with omlx"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48606290",
+    "author": "sgc",
+    "date": "2026-06-20",
+    "text": " that you don't have the relevant information or that the task is impossible is extremely useful to me and a valid answer\", and see how much that changes the scoring - as well as the usefulness of the answers. There are so many skills like context7 that can be tweaked to improve these results as well. In other words, you shouldn't choose the model that hallucinates the least without detailed prompting, since a well-crafted agents.md clause should go a long way to improving output, and almost certainly the top scoring order"
+   }
+  ]
+ },
+ {
+  "name": "Impeccable",
+  "url": "https://github.com/pbakaus/impeccable",
+  "score": 46.5,
+  "github_stars": 105331,
+  "top_hn_story": {
+   "title": "Tim Cook's Impeccable Timing",
+   "points": 350,
+   "id": "47847324",
+   "url": "https://stratechery.com/2026/tim-cooks-impeccable-timing/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50381456,
+    "author": "siliconc0w",
+    "text": "tivity porn' territory where it's just creating reams of reports, plans, or 'evidence packs' and nothing real gets implemented. I used to use a lot more sophistication in my workflow and skills and I still do use a few (impeccable is great for de-sloping design) but they've gotten a lot better at breaking down a plan and building without that."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50400496",
+    "author": "ilumanty",
+    "date": "2026-11-07",
+    "text": "[narrator] it was, in fact, neither flawless nor impeccable"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50397728",
+    "author": "jjcm",
+    "date": "2026-11-06",
+    "text": "gs, my thoughts are that one-shot/deslop skills should get you to a starting point quicker where you can iterate. Trying to go from 0->100 is usually a losing battle, as all of them will have elements that just don't quite work. I do think impeccable steers away from slop / ai indicators the most. It aggressively removes standard AI thinks like eyebrows (present in the diffui render) or circle indicators (present in the flawless build). That doesn't mean the output is the best starting point however. It's a unique landing pa"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50397632",
+    "author": "jjcm",
+    "date": "2026-11-06",
+    "text": "Examples comparing two similar de-slop skills. Flawless vs Impeccable vs Diffui (my own) for the same prompt[1]. Note that I did not prompt for mobile variants of these, so no clue how they'll show up on mobile. Flawless (4.4M tokens): https://html.non.io/skill-compare-flawless/ Impeccable (6.5M tokens): https://html.non.io/skill-compare-impeccabl"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50381456",
+    "author": "siliconc0w",
+    "date": "2026-11-05",
+    "text": " wander into 'productivity porn' territory where it's just creating reams of reports, plans, or 'evidence packs' and nothing real gets implemented. I used to use a lot more sophistication in my workflow and skills and I still do use a few (impeccable is great for de-sloping design) but they've gotten a lot better at breaking down a plan and building without that."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50369390",
+    "author": "shagie",
+    "date": "2026-11-04",
+    "text": "torists that would otherwise be just as confused as he was. And an update from 2023: > In 2001, artist Richard Ankrom posted a \"5 North\" sign on the 110 N. in DTLA to alert drivers to get in the left lane for the 5 turnoff. His work was so impeccable (and helpful), Caltrans at first didn't notice, then allowed it to stay. \"5 North\" is now part of permanent signage."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50331623",
+    "author": "pseudo0",
+    "date": "2026-11-02",
+    "text": " low-mileage cars. It's not much of a premium over similar cars with typical mileage. You can't really blame insurance companies when the valuations are determined by what people are actually paying for used vehicles. Sure, you might do an impeccable job of maintaining your car, but a future buyer has to go off of a mechanic's assessment, plus they won't have a manufacturer warranty to fall back on. There's also the issue that newer models generally have better fuel economy, more safety features, etc. Cars have actually gott"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50327434",
+    "author": "mattfrommars",
+    "date": "2026-11-01",
+    "text": "I need to understand how do you guys build such slick or decent UI for websites. I get the backend but the front end, I have yet to crack. I know there is impeccable repo but I'm unsure how to go from here"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50303196",
+    "author": "elgertam",
+    "date": "2026-10-30",
+    "text": "Well-written fiction, even utopian fiction, can help us understand the human condition. Picard did not always make the best decisions, but he made decisions with impeccable moral foundations. Every now and then, we see the limits of those foundations. In \"Tapestry,\" we learn that if Picard hadn't been an aggressive, obnoxious, even womanizing young f cadet and junior officer, he'd never have taken the risks necessary to take command. In \"Chain of C"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50301220",
+    "author": "motionlessveloc",
+    "date": "2026-10-30",
+    "text": "Mt Gox was widely reckoned to be a clown show long before they got hacked (it was originally a Magic the Gathering trading site for chrissake). Binance's reputation is hardly impeccable, but by crypto standards they're kinda sorta the adults in the room. Then again, so was FTX."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50300363",
+    "author": "bigstrat2003",
+    "date": "2026-10-30",
+    "text": "My wife and I met through OKCupid, and one of the things that most caught my eye on her profile was that she had a crush on Picard as a teenager. I knew then that she was a woman of impeccable taste."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50235698",
+    "author": "cm2187",
+    "date": "2026-10-25",
+    "text": "When I was at university, a student caught cheating was cause for being expelled. I am recruiting college kids right now, impeccable pedigrees, elite universities. Our recruitment process involves the kids recording videos where they answer questions as a pre-screening. They are explicitly told not to use AI for the exercise. I have the Claude and ChatGPT answer to those questions on my screen while I review "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50220348",
+    "author": "boltzmann64",
+    "date": "2026-10-24",
+    "text": "ysis, you can do quantum mechanics. If you make the error of believing that quantum mechanics is ontological god's honest truth of nature, you will end up with blunders like using it to explain consciousness like Prof Penrose. His math was impeccable, but he was making a category error."
+   }
+  ]
+ },
+ {
+  "name": "GitHub MCP server",
+  "url": "https://github.com/github/github-mcp-server",
+  "score": 45.2,
+  "github_stars": 34301,
+  "top_hn_story": {
+   "title": "Using GitHub MCP server with Claude code",
+   "points": 10,
+   "id": "45082623",
+   "url": "https://www.mcpstack.org/use/github/mcp-server/with/claude-code"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 49560202,
+    "author": "insin",
+    "text": "ately doesn't have any tools for hitting arbitrary URLs and it can't access the network via its iframe-sandboxed code execution tool, so we use MCP in the harness to let it do third-party things, with e.g. Atlassian and GitHub MCP servers pre-configured and support for BYO MCP if there are compatible third-party servers you want to use, or are running your own locally to provide tools to let it do things on your machine (it can already be given R/W access to your local filesystem via s"
+   },
+   {
+    "src": "ask_hn",
+    "id": 49562869,
+    "author": "sammorrowdrums",
+    "text": "s trivially - the old training data on CLIs is good but actually for new features the fact MCP advertises them is also a bonus, but that takes longer to see, MCP isn\u2019t that old There are many more aspects, but even with GitHub MCP, where the agent has a huge amount of pre-training on the CLI, there are still reasons why people use it extensively - you don\u2019t hear it a lot here but suffice to say usage never stopped growing to this day. I think if CLIs are working for you then good, I al"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48493782,
+    "author": "exidex",
+    "text": "mething would seem like a fun task, do it yourself. I use LLMs for bug hunting, to trace the flow, to build quick visualizatios (paste csv, ask to generate visualization), to search in the code of the dependencies using github mcp, to write 100 line scripts (deno + ts + zx was a game changer for me). Even \"dumber\" opensource models are good for this kind workflow, more tokens per second is generally more benefitial than plain intelligence. I would use LLMs more or less, sometimes even "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50128580",
+    "author": "mindcrime",
+    "date": "2026-10-17",
+    "text": "rts of weird questions about various things that pop into my mind, and after it explains a bunch of stuff to me, I ask it \"write up a summary of all of that and put it in a file in $APPROPRIATE_GIT_REPO\". I do have it configured to use the Github MCP server and have given it access to 3 or 4 of my repos. Along with that, I put an AGENTS.md file in each repo and gave ChatGPT in general a custom instruction that says \"at the beginning of each session, or when prompted by the user, consult the appropriate AGENTS.md file and fol"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50070195",
+    "author": "helvio88",
+    "date": "2026-10-13",
+    "text": "LLM-assisted MCP hub, aims to be compatible with all clients and all servers by supporting all authentication methods. MCP upstreams can be set up with LLM help, and they start on demand and stop when idle to save resources. Paste a GitHub MCP server URL and skgate does the rest: it builds the server, puts it behind OAuth, and serves it. skgate also doubles as an LLM key proxy, with model aliasing, usage tracking, rate limits and expiration."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49923236",
+    "author": "Emanuele06",
+    "date": "2026-10-01",
+    "text": "ic/pydantic. It drafts replies to new issues using ~1,500 issues that were actually solved. It uses pgvector plus Postgres full-text search, fused and reranked, and a LangGraph flow (intake \u2192 research \u2192 draft) whose research step calls the GitHub MCP server through a read-only allow-list. The part I'd talk about: the drafts were fluent but cited the wrong issues. The prompt wasn't the problem. I was storing closed tickets instead of solutions. Now it stores the actual fix (closing-PR body, a filtered last comment, or nothing"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49578576",
+    "author": "emanuelecz",
+    "date": "2026-09-05",
+    "text": "ed issues ingested as a hybrid RAG corpus via GitHub GraphQL fetchers and Celery pollers, hybrid keyword + vector retrieval with reranking and score merging, three of five agent phases live (intake \u2192 research \u2192 draft), research calling the GitHub MCP server as a client. The judge gate, escalation, cost metering and injection defence are designed and not yet built. https://github.com/emanuelecz/Docent Looking for a small team doing agents, devtools, or AI support tooling. EU citizen, Spain-based, EOR or contractor."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49560202",
+    "author": "insin",
+    "date": "2026-09-04",
+    "text": "as the agent deliberately doesn't have any tools for hitting arbitrary URLs and it can't access the network via its iframe-sandboxed code execution tool, so we use MCP in the harness to let it do third-party things, with e.g. Atlassian and GitHub MCP servers pre-configured and support for BYO MCP if there are compatible third-party servers you want to use, or are running your own locally to provide tools to let it do things on your machine (it can already be given R/W access to your local filesystem via showDirectoryPicker()"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47643455",
+    "author": "shireboy",
+    "date": "2026-04-04",
+    "text": "ropic, you pay Github. You _might_ want another subscription directly with Anthropic if, say, you want to use Claude Code instead. \"VSCode Copilot\" isn't a thing. Some people might call Github Copilot extension for VSCode \"VSCode Copilot\". Github MCP server lets AI tools like GitHub Copilot extension for VSCode, Claude Code, or any tool that supports MCP use your Github account to do things like pull requests, read issues, etc. Just using it from Claude Code would not use Github Copilot tokens, UNLESS you used it to work aga"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47643167",
+    "author": "chatmasta",
+    "date": "2026-04-04",
+    "text": "same product? The documentation isn\u2019t even clear, and it\u2019s important because it affects billing. How do these two products interact and where do they NOT overlap? This confusion even bleeds into other coding harnesses. I have no idea which GitHub MCP server I setup in Claude Code, but the domain has \u201cgithubcopilot\u201d in it. Am I burning copilot tokens (or \u201crequests\u201d or whatever is their billing unit) when I use this from Claude?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47384773",
+    "author": "ravi_rupareliya",
+    "date": "2026-03-15",
+    "text": "the MCP integration actually looks like in a real project workflow. Connected two MCP servers GitHub and Stitch to build and ship a productivity app landing page entirely from within the IDE. A few things worth noting for anyone curious: - GitHub MCP handled repo creation, branching and PR with description from natural language prompts. Zero context switching. - Stitch MCP pulled design tokens directly into code. Still early but promising for design-to-code workflows. The MCP layer is what makes this genuinely useful beyond "
+   }
+  ]
+ },
+ {
+  "name": "rtk",
+  "url": "https://github.com/rtk-ai/rtk",
+  "score": 36.5,
+  "github_stars": 85816,
+  "top_hn_story": {
+   "title": "RTK reports token savings, but our cost benchmarks disagree",
+   "points": 170,
+   "id": "49656471",
+   "url": "https://quesma.com/blog/does-rtk-make-ai-coding-cheaper/"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "49014525",
+    "author": "opwizardx",
+    "date": "2026-07-22",
+    "text": "how does it compare to rtk? token truncators are simple by their nature, while their core value is more in the snowballed combined knowledge of different bugs and quirks community had to resolve along the way, and adding such tools is a pretty unsafe action, wonder how szr guarantees that its actions won\u2019"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48592149",
+    "author": "chatmasta",
+    "date": "2026-06-18",
+    "text": "d. Yes, Anthropic et. al want you to have efficient token usage (because you\u2019ll use it more, and because of some competitive pressure). But it\u2019s not their first priority especially when they make more money with more tokens. If a tool like rtk improves token efficiency, but has some negative impact on quality, should Anthropic integrate it immediately? Where is the line? This kind of decision is arguably better left to the user. What they should maybe do, is have a parameter similar to effort level, that allows the us"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48153079",
+    "author": "giancarlostoro",
+    "date": "2026-05-15",
+    "text": "ld this help to facilitate helping people install those? I have seen tools coded in Rust and Go distributed by npm install and it always bothers me, especially with npm repeatedly being a hotbed of hacked accounts. Tools that come to mind: RTK (Rust Token Killer since googling the acronym yields terrible results, asking an LLM without spelling it out too) Beads (what GuardRails was inspired by) ... and an endless list of tools people have made in place of making an MCP. I too thought about having a \"AI Package manager"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47871725",
+    "author": "sea-gold",
+    "date": "2026-04-23",
+    "text": "sqz vs rtk \u2014 Token Savings Benchmark: https://github.com/ojuschugh1/sqz/blob/main/docs/benchmark-v... "
+   },
+   {
+    "src": "hn_comment",
+    "id": "47771476",
+    "author": "giancarlostoro",
+    "date": "2026-04-14",
+    "text": "es to a new project, so Claude did smoosh over by making a blanket gate, I have otherwise never had an issue when I defined what the gate is, Claude usually honors it. I havent worked on big updates recently, but I noticed other tools like rtk (Rust Token Killer) will add their own instructions to your claude's instructions.md file, so I think I need to craft one to tack on with sane instructions, including never closing tasks without having the user create gates for them first. In a nutshell, a gate is a entry in the"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47650943",
+    "author": "sergioramosv",
+    "date": "2026-04-05",
+    "text": "t with every message. Every command result the AI has run, every file it read, every search it performed \u2014 all of it is in the history, resent again and again. Why existing tools don't fix this There's a very popular tool for this problem: RTK (Rust Token Killer), with over 16,000 GitHub stars. It does exactly what it promises: it works as a shell wrapper that intercepts the stdout of each command before it enters the context. When the AI runs git diff, RTK filters the output before the result is stored in the history"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47151128",
+    "author": "bearjaws",
+    "date": "2026-02-25",
+    "text": "This is basically what RTK \"Rust Token Killer\" does. Removes all the fluff around commands that agents use frequently. https://github.com/rtk-ai/rtk "
+   },
+   {
+    "src": "hn_comment",
+    "id": "46976200",
+    "author": "LivioGama",
+    "date": "2026-02-11",
+    "text": "RTK Token Savings \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550 Total commands: 637 Input tokens: 6.3M Output tokens: 1.3M Tokens saved: 5.0M (79.3%) Total exec time: 30m33s (avg 2.9s) In 1 week. Numbers speak for themselves."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49659631",
+    "author": "oefrha",
+    "date": "2026-09-11",
+    "text": "It's pretty damn obvious to anyone who ever bothered to look at rtk gain output, no benchmark needed at all. Agent runs rtk command-that-prints-100k-tokens | tail -5 costs 5 lines, maybe 100 tokens without rtk, but rtk will report 100k savings. Of course it doesn't know about that tail -5. Worse, since rtk defaults to persisting that savings sta"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49657411",
+    "author": "ProjectBarks",
+    "date": "2026-09-11",
+    "text": "It seems like most of these tools are mostly vaporware. Benchmarks done on Headroom and RTK show that neither result in real savings. If it were possible to have such a simple pre-process step why wouldn\u2019t the AI Labs upstream the optimizations themselves? My guess is they mostly don\u2019t work or make the behavior much more confusing for the model. I really think there ne"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49592165",
+    "author": "Syntaf",
+    "date": "2026-09-06",
+    "text": "ally_ perform? I'm personally skeptical of optimizing for minimal token consumption, the closer to a vanilla setup I am the more confident I feel I'm always getting the best performance out of my models. Just look at how JetBrains measured rtk and found that while an individual call saves tokens, agents on average perform *more* turns and use *more* tokens to accomplish one task[1] [1] https://blog.jetbrains.com/ai/2026/07/rtk-claude-code-token-... "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48607043",
+    "author": "bonigv",
+    "date": "2026-06-20",
+    "text": "Clarifying - I am not suggesting headroom and lean-ctx are only doing the tool compression. It runs elaborate subsystems towards a noble objective of saving tokens. RTK on the otherhand is focused purely on the compression. At the sametime, platforms - the providers - especially Anthropic and and Open AI have transparently absorbed many of the big ticket token saving items these tools are cleverly managing. That is a different discussion."
+   }
+  ]
+ },
+ {
+  "name": "Graphify",
+  "url": "https://github.com/Graphify-Labs/graphify",
+  "score": 34.7,
+  "github_stars": 143885,
+  "top_hn_story": {
+   "title": "Show HN: Graphicle, a Rust port of Graphify with memory for coding agents",
+   "points": 48,
+   "id": "50088713",
+   "url": "https://github.com/graphicle-ai/graphicle"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50399216",
+    "author": "lenerdenator",
+    "date": "2026-11-06",
+    "text": "I don't think it'll continue on linearly, but it will likely continue. We're getting the Claude efficiency talks at work. We're looking at all sort of optimizations, including local models and graphify, to reduce spend. There are people dedicating their nights and weekends to dropping token consumption and cache rebuilding. A few of these will likely catch on and be brought into common use. That will relieve at least a bit of the pressure, and enable some of the scaling to con"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50347298",
+    "author": "mrpmohibur",
+    "date": "2026-11-03",
+    "text": "ings I'm proud of: - I added autocompletion layer to Google's Gemini CLI (107k stars). I've also had PRs merged into LiveKit's SDK (3.2M weekly downloads) and mobx (3.4M). Plus Stream's chat SDK and release-it (815k). - I built graflet for Graphify (YC S26): a Next.js app that turns library docs into queryable knowledge graphs. I also built rnui.dev, a React Native animation catalog with ~350 stars. - On mobile, I've shipped App Store and Google Play apps for four startups. I go down to Objective-C++ and Gradle when React "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50109659",
+    "author": "chaostheory",
+    "date": "2026-10-15",
+    "text": "Does this have the same number of nodes limit as graphify?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50092211",
+    "author": "NewJazz",
+    "date": "2026-10-14",
+    "text": "I read through the skill file of graphify and ran some of the commands it was telling the agent to run. The vibe I got is there was a lot of structured information returned that the model (and harness) isn't set up to work with effectively. It seems like a really interesting tool and maybe future models will know how to"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50092069",
+    "author": "HaoleiZ",
+    "date": "2026-10-14",
+    "text": ", or string-based search for code structure analysis. What we do here is using formal methods through data-log rules instead of lean. This fundamental different approach achieve 94.9% accuracy as result on Defects4J Benchmark, compare with Graphify 48.7%"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50091585",
+    "author": "KarLexAI",
+    "date": "2026-10-14",
+    "text": "Hey HN, I'm Vikram, I run KarLex AI. Right now if you want your coding agent to understand your code and remember things, you end up stitching tools together. Graphify for the code graph. Mem0 or Hindsight for memory. Each one runs separately, stores its own data, and you wire them all into your agent yourself. Graphicle puts both in one tool. It maps your code, remembers your docs, decisions and past agent sessions, and gives your agent the r"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49992201",
+    "author": "aly33",
+    "date": "2026-10-07",
+    "text": "Hi Everyone! I'm the Co-Founder of DaiDocs (daidocs.com). The claim that daidocs beats graph DB (technically graphify) by x218 less tokens is very bold and I'm sure you would like to test this out yourself. We have put the full details and the recreateable files for our claims on our github repo here: github.com/kerneta/daidocs. Let us know about your honest feedback, we'd appreciate it!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49970303",
+    "author": "mring33621",
+    "date": "2026-10-05",
+    "text": "i'd guess 25% of their time https://github.com/Graphify-Labs/graphify is supposed to help with that, but I haven't tried it yet"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49958641",
+    "author": "mrpmohibur",
+    "date": "2026-10-04",
+    "text": "ve-C++), react-native-device-info (in native Gradle), release-it, and mobx. - I built a design-token studio that runs inside an Expo app, and graflet, which turns any library's docs into a knowledge graph you can query. graflet is built on Graphify's (YC S26) CLI. Every link, PR, and demo is on the r\u00e9sum\u00e9."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49811507",
+    "author": "rg1992",
+    "date": "2026-09-23",
+    "text": "Hey I tried this. With traditional graphify, it took 15-20 min to map out my 15 repos, here i was able to map in approx 5 min. Still will have to use with agents to see the results for a full comparison."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49671064",
+    "author": "zachsaw",
+    "date": "2026-09-12",
+    "text": "Very good point! the graphify the tool and using graphify AS A tool have definitely beed mixed up! I'll fix this up. Thanks again and appreciate you looking into it!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49670283",
+    "author": "exceptione",
+    "date": "2026-09-12",
+    "text": "The tool recommends you to use this skill https://github.com/zachsaw/graphify-csharp/blob/main/.agents... >, but I wonder if this is the right approach if one just want to use this as a consumer in a .net project. It seems very wordy, but wording like these \"Read the relevant design documents under docs/ before changing architecture.\" makes me think that "
+   }
+  ]
+ },
+ {
+  "name": "Figma MCP",
+  "url": "https://www.figma.com/developers/mcp",
+  "score": 33.2,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Figma Dev Mode MCP server public beta",
+   "points": 14,
+   "id": "44185794",
+   "url": "https://www.figma.com/blog/introducing-figmas-dev-mode-mcp-server/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 47392370,
+    "author": "eleventhborn",
+    "text": "shing for the PR because by this point it is easy for me to fix the code than asking the model to fix it for me. The work: Fairly straightward UI + backend work on a website. We have designers producing Figma and we use Figma MCP to convert that to web pages. POCC reduces the time taken to complete the work by at least 50%. The last mile problem exist. Its not a one-shot story to PR prompt. There are a few back & forths with the model, some direct IDE edits, offline tests, etc. I can "
+   },
+   {
+    "src": "ask_hn",
+    "id": 49564526,
+    "author": "ssenssei",
+    "text": "s and not really coherent in some ways, and the management want the web pages to be the exact same as the figma designs. Knowing the hell that awaits me in trying to be pixel perfect between about 40 pages, I set up the Figma MCP with my codex, and low and behold... it actually did what I needed, so that's one thing I'm grateful for. For reference, feeding screenshots to the AI didn't do that well of a job at first."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50358878",
+    "author": "amiantos",
+    "date": "2026-11-03",
+    "text": "agent. I'm also a bit salty about Figma ratcheting down hard on API calls, which creates customer service issues for any product that integrates with the Figma API. So maybe I am biased, but based on comments in here it also seems like the Figma MCP isn't very good either. Is Figma's long-term strategy to go full walled garden?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50358503",
+    "author": "redanddead",
+    "date": "2026-11-03",
+    "text": "it's been literally years and the best figma has to show is an announcement of an upcoming announcement meanwhile, another commenter was right, the figma mcp is dogshit"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50357661",
+    "author": "sebazzz",
+    "date": "2026-11-03",
+    "text": "The Figma MCP is so bad, it is almost unusable. Letting the calling AI write some javascript to implement a design?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50099724",
+    "author": "esperent",
+    "date": "2026-10-15",
+    "text": "> The Figma MCP Server documents usage with Claude (Code), Codex, Cursor, Grok and Antigravity [], but notably not OpenCode In other words, big industry supporting bigger industry. I don't think that's surprising or says much about the real landscape."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50099290",
+    "author": "ghrl",
+    "date": "2026-10-15",
+    "text": "I would state the same, but looking at commercial offerings for agents, such as MCP servers or skill instructions in the vender's own docs, opencode is often not mentioned at all. Here is an example I encountered recently: The Figma MCP Server documents usage with Claude (Code), Codex, Cursor, Grok and Antigravity [], but notably not OpenCode. More so, their oauth registration seems to use some kind of whitelist, meaning just adding the MCP by url does not work either. To make it work, my agent edited the confi"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49941216",
+    "author": "nmekala35",
+    "date": "2026-10-03",
+    "text": "could not agree more. Model capabilities matter a lot more than having a dedicated Figma MCP"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49923900",
+    "author": "ig0r0",
+    "date": "2026-10-01",
+    "text": "I like how Pi released an updated with a new oauth client name field for mcp where I just wrote Codex and Figma mcp works now."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49923547",
+    "author": "JimDabell",
+    "date": "2026-10-01",
+    "text": "OpenCode seems to have been given the run-around as well: > on the figma mcp, we've had an email thread going on for 8 months trying to get it setup in opencode > they seem very concerned with the labs competing with them > finally got unblocked after i sent this email and it'll be rolled out in a week or so The email: > looking through the legal stuff t"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49923465",
+    "author": "rirze",
+    "date": "2026-10-01",
+    "text": "Funny enough, I saw some tweet earlier today about their company trying to get past the legal hurdles with getting figma mcp to work and ended up bluntly giving up. Wonder if this is related."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49564526",
+    "author": "ssenssei",
+    "date": "2026-09-04",
+    "text": " different components and not really coherent in some ways, and the management want the web pages to be the exact same as the figma designs. Knowing the hell that awaits me in trying to be pixel perfect between about 40 pages, I set up the Figma MCP with my codex, and low and behold... it actually did what I needed, so that's one thing I'm grateful for. For reference, feeding screenshots to the AI didn't do that well of a job at first."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49540420",
+    "author": "abhinav_4",
+    "date": "2026-09-02",
+    "text": "Location: Houston, TX Remote: Yes Willing to relocate: Yes, anywhere in the US Technologies: Figma, Framer, Axure, Adobe Creative Suite, Maze, Hotjar, Optimizely, HTML, CSS, JavaScript, React, GitHub, Claude Code, Figma MCP, Miro, FigJam, Jira, Notion, Storybook R\u00e9sum\u00e9/CV: www.abhikrish.us Email: abhinavdesignerux@gmail.com Product Designer with 4+ years of experience taking products from ambiguous ideas to production-ready experiences. I work across the full product design process, from understand"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49310320",
+    "author": "phoghed",
+    "date": "2026-08-15",
+    "text": "I\u2019ve tried it on simple UI tasks. Give it screenshot to work towards (or figma MCP), let it get screenshots from chrome to check its work. The existing models are surprisingly bad at it."
+   }
+  ]
+ },
+ {
+  "name": "context-mode",
+  "url": "https://github.com/mksglu/context-mode",
+  "score": 32.8,
+  "github_stars": 33644,
+  "top_hn_story": {
+   "title": "Show HN: Context Mode \u2013 315 KB of MCP output becomes 5.4 KB in Claude Code",
+   "points": 84,
+   "id": "47148025",
+   "url": "https://github.com/mksglu/claude-context-mode"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50332360",
+    "author": "cyanydeez",
+    "date": "2026-11-02",
+    "text": " window before something shits the bed. Still working on it. Subagents have some place still, but I think you're right in that they're papering over a tool use problem. For larger labs, they're primarily a resource reduction, where smaller context models can be tied to equipment with a reverse proxy load balancer. For large context agents, you can't use a load balancer, your context must live on a single hardware device. So while I agree you can optimize a single agent, what's forcing subagents at the cloud providers is the re"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50261215",
+    "author": "alxsm",
+    "date": "2026-10-27",
+    "text": "What worries me is what was actually in those leaked prompts. This is a million-token context model, and people use that context to paste whole repos and configs, .env files included. So the realistic worst case isn't someone's chat text, it's someone's API keys. The write-up explains the root cause well, but doesn't say whether the customers whose prompts ended up in other p"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50196089",
+    "author": "Reubachi",
+    "date": "2026-10-22",
+    "text": "onstantly going back into context memory. Another example is OpenAI/GPT. The \"free\" tier forces context memory using the \"highest available model\" per your subscription (or lack thereof), and upon hitting its limit, drops you down to a low context model, and then ultimatley blocking that chat entirely. (I appreciate this discussion and am not trying to inform you, I'm sure you already know, but typing these things out helps me understand my holes in understanding.)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49816913",
+    "author": "slipwalker",
+    "date": "2026-09-23",
+    "text": "pi.dev with \"packages\": [ \"npm:context-mode\", \"npm:pi-subagents\", \"npm:pi-web-access\", \"npm:pi-bar\", \"npm:pi-opencode-bridge\", \"npm:@ssweens/pi-leash\", \"npm:pi-caveman\", \"npm:@ff-labs/pi-fff\", \"npm:pi-ui-hephaestus\", \"npm:@alexanderfortin/pi-zai-usage\", \"npm:pi-cache-optimizer\", \"npm:@hypabolic/pi-hypa\" ]"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49762137",
+    "author": "userbinator",
+    "date": "2026-09-19",
+    "text": "Mentally autocorrected the title to \"paypal cipher\" and got enticed to click... More seriously, this looks like the context modeling that advanced compression algorithms do, but in reverse. Recovering the key does not settle the text. That said, the Claudish in this article is only slightly annoying."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49574056",
+    "author": "3371",
+    "date": "2026-09-05",
+    "text": "codegraph + context mode are all I need."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49567816",
+    "author": "lrvick",
+    "date": "2026-09-04",
+    "text": "cially when dealing with code or data that is under NDA and not mine to sell in exchange for cheaper tokens. Also, when I want 1M context I have 118GB of usable vram on my Strix Halo, or I can combine 4 r9700s and have 128gb and can run 1M context models like laguna or deepseek, but in practice lots of smaller sessions is better for my workflow in most cases. Qwen 3.8 27b is smart enough that all I want is to speed-max and paralell-max on that."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49562493",
+    "author": "imtringued",
+    "date": "2026-09-04",
+    "text": "I have done the vast majority of my agentic coding work under 128k on a 256k context model and when I cross 128k, all I do is just ask for a handoff prompt to feed back into the next session. I do this because I was told the quality degrades as the context fills up and I fundamentally dislike random compaction, I don't even know what compaction does, it is completely"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49382536",
+    "author": "jmward01",
+    "date": "2026-08-21",
+    "text": "d my claim degrade the more titles I fed it? Is it a percentage of work question? What is the core concept here that defines 'human-centric'? What is the cut-off here? Let's go even further. I don't prompt. I live in a world with unlimited context models. I have a conversation about the book I want it to write. During that process I reject some ideas and accept others. I didn't give it a 'system prompt' but essentially all I did was prompt it and select versions I liked. Is that not human centric? How about if I asked it for a"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49298897",
+    "author": "kaicianflone",
+    "date": "2026-08-14",
+    "text": "Fantastic tq I feel stupid because I\u2019ve seen that for a while now. Do you know more about the autocompaction process? I could use some help there too with ghcp. I don\u2019t see my context going up while abusing smaller context models with long inputs nor do I see a compaction indicator after turns."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49179553",
+    "author": "Leftium",
+    "date": "2026-08-05",
+    "text": "I settled on JSONL for an LLM-optimized output format. Rationale: https://github.com/Leftium/gg/blob/main/specs/completed/gg-a... Combine that with context mode: https://hw.leftium.com/i/47193064 "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49103381",
+    "author": "InsideOutSanta",
+    "date": "2026-07-29",
+    "text": "I don't think so. This is a separate model, so I assume that if you just use this and switch to the 1 million context model when you reach 256k, your cache will be invalidated, so you'll re-pay the 256k tokens on the 1 million context model pricing. Edit: I was wrong, thanks to longwave for pointing this out. It's absolutely possible to start out on the 256k model and then switch to the 1 million mo"
+   }
+  ]
+ },
+ {
+  "name": "Serena",
+  "url": "https://github.com/oraios/serena",
+  "score": 31.7,
+  "github_stars": 31180,
+  "top_hn_story": {
+   "title": "Serena Williams Fit-Dex",
+   "points": 4,
+   "id": "48906339",
+   "url": "https://serena-williams-fitdex.netlify.app/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 46699510,
+    "author": "8note",
+    "text": "ripts being put together said scripts are kinda available in kiro now, see https://github.com/ghuntley/amazon-kiro.kiro-agent-source-co... - specifically the specs, requirements, design, and exec tasks scripts that plus serena mcp to replace all of gemini cli's agent tools actually gets it to work pretty well. maybe google's choice of a super monorepo is worse for agentic dev than amazon's billions of tiny highly patterned packages?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50350003",
+    "author": "injidup",
+    "date": "2026-11-03",
+    "text": "I'm completely serious. John: Alright, speed round. I'm gonna rattle off some names, and when I hit it, you fuckin' buzz it, okay? You got me? Ted: You do it. I will tell you. Yeah. John: Alright: Brandy, Heather, Channing, Brianna, Amber, Serena, Melody, Dakota, Sierra, Bambi, Crystal, Samantha, Autumn, Ruby, Taylor, Tara, Tammy, Lauren, Charlene, Chantelle, Courtney, Misty, Jenny, Krista, Mindy, Noel, Shelby, Trina, Reba, Cassandra, Nikki, Kelsey, Shawna, Jolene, Urleen, Claudia, Savannah, Casey, Dolly, Kendra, Kylie, "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50166136",
+    "author": "chrisjj",
+    "date": "2026-10-20",
+    "text": "> What if nobody wants to talk to your AI assistant? Then you stop calling it \"AI\" and palm it off as a human ... as I find increasingly in the UK. Witness the bank chatbots saying \"Agent is typing....\". (Where's Serena Butler when you need her?)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50005289",
+    "author": "ChrisMarshallNY",
+    "date": "2026-10-08",
+    "text": "Just FYI: I found this[0], by an artist named Shawnee Kish (Indigenous Canadian). It's the same song, and I think that Serena Ryder worked with Shawnee Kish, so I'll bet there's a rights issue, which is why Ryder's version isn't out there. [0] https://www.youtube.com/watch?v=Q0NFTw7zMf0 "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50003966",
+    "author": "ChrisMarshallNY",
+    "date": "2026-10-08",
+    "text": " I had a similar thing. A while back, I watched the first episode of Second Chance ; a rather forgettable show, that I decided not to continue, but it did have a great song, in the early part of the episode: No Evil , by a Canadian singer; Serena Ryder. Good luck finding it. If you do, let me know. [0] https://www.imdb.com/title/tt4378456/ "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49626535",
+    "author": "uwagar",
+    "date": "2026-09-09",
+    "text": "i recall mcenroe said serena couldnt be considered greatest of all time in tennis regardless of sex because she wouldnt even beat a man ranked inside the top 100. he said she'd herself be ranked somewhere at 700. we arent even talking about women only asked to play 3 sets vs men playing 5 sets (at least in "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49563290",
+    "author": "ghthor",
+    "date": "2026-09-04",
+    "text": "I use serena as an MCP for all LSPs and it works great. She does installs hooks into Claude reminding to use LSP tools."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49488426",
+    "author": "KoftaBob",
+    "date": "2026-08-29",
+    "text": "OpenCode IDE + Serena MCP (for the indexing part) [1] https://opencode.ai/ [2] https://github.com/oraios/serena "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49407580",
+    "author": "killingtime74",
+    "date": "2026-08-23",
+    "text": "So just like a language server? https://en.wikipedia.org/wiki/Language_Server_Protocol . It's a good idea which is why it's already been invented. There's even wrappers for it like https://github.com/oraios/serena "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49248262",
+    "author": "ipsod",
+    "date": "2026-08-10",
+    "text": "I'm using Serena-MCP with the IDEA plugin. It opens up more features than the standard IDEA MCP. Now, you can use a standard Codex (and maybe Claude) subscription inside of a sidebar, and get a lot of the features you mentioned. It's nice, if you're trying to be more involved with the code, but "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49094128",
+    "author": "senand",
+    "date": "2026-07-29",
+    "text": "> Like why isn't there a 'move this function from this file to this file' tool (copy/paste char range) There Is: https://github.com/oraios/serena "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48928000",
+    "author": "litenova",
+    "date": "2026-07-15",
+    "text": "ontent, fuse_check uses compiler state captured from the real build when available. It falls back to a scoped build and abstains if neither path can run. This is not a claim that repository indexes or code graphs are new. CodeGraphContext, Serena, Sourcegraph, and coding-client indexes cover related parts of the category. Fuse is narrower: local .NET analysis through MSBuild and Roslyn, including framework-specific wiring and captured-compiler checks. On the recorded NodaTime semantic index with 14,760 symbols, exact loo"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48843879",
+    "author": "superultra",
+    "date": "2026-07-09",
+    "text": "cious act of gender equality. And tennis? Goodness surely you\u2019re aware of the modern political ramifications of tennis that happen almost constantly. There are so many modern examples but let\u2019s pick Wimbledon\u2019s recent banning of Russia. Or Serena Williams; who for her part would rather prefer that there isn\u2019t a political earthquake every time she steps on the court. Perhaps a better, more honest, and certainly more realistic course of action is to acknowledge that anything involving human beings is intrinsically politica"
+   }
+  ]
+ }
+]

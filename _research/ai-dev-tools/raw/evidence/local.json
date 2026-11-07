@@ -1,0 +1,1768 @@
+[
+ {
+  "name": "Ollama",
+  "url": "https://ollama.com",
+  "score": 97.2,
+  "github_stars": 186256,
+  "top_hn_story": {
+   "title": "Ollama is now powered by MLX on Apple Silicon in preview",
+   "points": 648,
+   "id": "47582482",
+   "url": "https://ollama.com/blog/mlx"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50368106,
+    "author": "gaoshan",
+    "text": "art of its runs and that costs money... but not much) . Professionally I use an unlimited Claude via AWS Bedrock. 2. I use both qwen 3.6 35b-a3b and qwen 3.8 27b on my Macbook Pro (M5 Pro, 48GB, 18/20). I use those with ollama and hermes (and Obsidian, to an extent) 3. Hermes Agent, Claude CLI and Claude in VS Code 4. No 5. Hermes Agent I use a carefully curated selection of agents for my professional work. Agents to handle adversarial code review, planning, questioning, dev work, "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373936,
+    "author": "alexfromapex",
+    "text": "I like using Cline the VS Code extension. It can use local models and local inference with Ollama and tons of external inference providers like AWS Bedrock, Vertex, etc. It asks for permission to read webpages or run commands. You can give it whitelisted permission to just read your files which is what I do. If you want, you can put it into ACT mode and g"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50375578,
+    "author": "imagetic",
+    "text": "pi, a few custom extensions for pi, rex, gpt + ollama-cloud for a little ds4.1f"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50376262,
+    "author": "tritondev",
+    "text": "very easy for an LLM to integrate new features or optimize existing ones. I typically use Claude Sonnet for document-related tasks, and currently DeepSeek 4.1 Flash is my current go to for coding (it's insanely cheap on ollama.com) and I find it's still fast and reliable at very large context lengths. Previously I used GLM 5.2 a lot and before that was Sonnet for most things. Humbug lets one AI delegate tasks to another and it can choose different models/providers when it does, so "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50376733,
+    "author": "bantex01",
+    "text": "1. claude pro, ollama pro and opencode go 2. Openrouter for testing 3. I use VScode and claude code 4. I've actually built my own for agentic workflows - https://vectorstep.io 5. I use openclaw for my personal stuff, VectorStep for proper trusted workflows (and production workflow"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50376782,
+    "author": "rglullis",
+    "text": "Personally: I have a XTX7900 card which can run some decent models, eg, Qwen 27B and Gemma. For bigger stuff I have the Ollama Cloud subscription to access (mostly) GLM. I have a server with OpenWebUI, and for harnesses I use OpenCode, but I have been experimenting with pi.dev to create a workflow that takes the ideas from the Rational Unified Process (RUP) so that everything gets pr"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50380057,
+    "author": "aykay76",
+    "text": "1. I don't pay for any subscriptions personally. 2. I use locally hosted models, Qwen 3.8 Coder 3. I use VSCode, I used Opencode for a while but VSCode then supported OpenAI compatible so I use that with ollama.cpp and Qwen locally. 4. Custom build orchestrator that I built as part of my learning with AI. 5. Nope."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50380092,
+    "author": "joddystreet",
+    "text": "1. AI subscriptions- Codex (Pro), Ollama (Max), Copilot (for Zed autocompletes) 2. N/A 3. Coding harnesses - Codex, Pi. (Switched from claude code) 4. Just codex, no agent swarms. When starting a new module - focused work, one issue, one agent, one project. For smaller tasks/minor issues - multiple "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50380213,
+    "author": "quiet_workbench",
+    "text": "1. I use claude/ codex and have used cursor and ollama in the past 2. I don't usually use any models outside of the subscription as the subscription seems to be a better value. 3. I use cli, claude desktop and codex desktop 4. Not rusing any orchestration or swarm tools. I'm curious how people are using these and"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50380371,
+    "author": "JoeMattie",
+    "text": "m generally working on about 2 projects at a time, sometimes more on the weekends. Claude code CLI, rotated with codex CLI (monkey patched to be able to message with Claude sessions over the Unix socket thingies). Local ollama server running qwen and a bunch of other models. I'm having an absolute blast! My projects accumulate here: joemattie.com"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50380609,
+    "author": "samuell",
+    "text": "1) Ollama, Pro, Single account. Will not trust my serious work to Big Tech. 2) Tried some local models. Need bigger GPU for that though. On Ollama, I'm super happy with (cloud-hosted) DeepSeek 4.1 Flash and GLM 4.3 Flash , which almost don't burn any tokens at all(!), "
+   },
+   {
+    "src": "ask_hn",
+    "id": 48416832,
+    "author": "scotty79",
+    "text": "1 (not recently because it's not as good, I used to like Kilocode with it, in previous major version 5(?), most recent Kilocode is streamlined into mediocrity, although you can still intall old version). Gemma4 on local ollama for specific non-coding tasks. Openai api proxy connected to my Codex sub, for cases where Gemma4 doesn't do that well. I'm having immense fun by making programs for ad hoc tasks like transcribing a conversation I had this morning in a language I barely know."
+   },
+   {
+    "src": "ask_hn",
+    "id": 48416957,
+    "author": "Greenpants",
+    "text": "I've dabbled a bit in GitHub Copilot using Claude Opus and Sonnet models via work, but I couldn't shake the thought that we weren't allowed to use this on any of our clients' codebases. Having been a fan of Ollama, I wanted to try something truly local. First I tried OpenCode but they unexpectedly make external requests (!) even when using Ollama (I noticed when Ollama wasn't properly connected and I still got a title generated). So I settled for Pi, but I strongly dis"
+   },
+   {
+    "src": "ask_hn",
+    "id": 47397114,
+    "author": "KronisLV",
+    "text": "erous quotas + the only working autocomplete that's actually good I've tried) - JetBrains AI and Junie (since I already pay for their IDEs, that came bundled), also nice but quotas are quite limiting - local models with Ollama or llama.cpp - cool conceptually but always really limited - OpenRouter for cloud models - ended up being kind of expensive and I didn't need those various models that much in the end - Cerebras Code - really generous token limits and amazing speed, but recen"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50400815",
+    "author": "ohcamel",
+    "date": "2026-11-07",
+    "text": "First off, I like the name. I'm a big fan of his. Why is it named Goethe, is it a reference to some of his work or just a cool name? It seems like a lighter weight non SAAS version of Ollama so I'll have to install it and play around!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50400573",
+    "author": "giantg2",
+    "date": "2026-11-07",
+    "text": "Interesting, but my system ram isn't that much. I think I've decided to go with Ollama Gemma4:12B. I just need to decide if I want to hook it into local Open Code or local Claude Code. I'm leaning towards Claude if it doesn't send any usage data back to Anthropic."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50399156",
+    "author": "kcartlidge",
+    "date": "2026-11-06",
+    "text": "For the easy path: - Serve the model with either Ollama or LM Studio (the latter 'hides' their traditional Studio on the download page for the agentic one they are preferring you use). - For the model, Gemma 4 E4B is a nice combination of performance and speed with a decent context size. Not good enough for complex coding needs, but "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50396855",
+    "author": "CharlieDigital",
+    "date": "2026-11-06",
+    "text": "I used Ollama with Qwen 3.8 27b on my MBP for a flight to try some experimentation and found that it was shockingly good at one of the more complex PDF processing tasks. Like seat-of-the-pants good as Opus 5.5 but a bit slower and required just a bit more prompting to get what I wanted (which"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50394110",
+    "author": "me551ah",
+    "date": "2026-11-06",
+    "text": "I just use their models via openrouter. I have an account with OpenAI, Ollama , even deepseek platform. But for all google ai stuff, I just use openrouter. Not only is it easy to pay but I also don\u2019t risk getting my account banned."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50388550",
+    "author": "hatefulmoron",
+    "date": "2026-11-06",
+    "text": "There are open model subscriptions with discounts as well (opencode go, commandcode, ollama cloud, synthetic, ..) edit: and of course from first party labs as well, like xiaomi, z.ai, kimi etc"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50380609",
+    "author": "samuell",
+    "date": "2026-11-05",
+    "text": "1) Ollama, Pro, Single account. Will not trust my serious work to Big Tech. 2) Tried some local models. Need bigger GPU for that though. On Ollama, I'm super happy with (cloud-hosted) DeepSeek 4.1 Flash and GLM 4.3 Flash , which almost don't burn any tokens at all(!), until I can buy a be"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50380371",
+    "author": "JoeMattie",
+    "date": "2026-11-05",
+    "text": "0s and 128gb ram. I'm generally working on about 2 projects at a time, sometimes more on the weekends. Claude code CLI, rotated with codex CLI (monkey patched to be able to message with Claude sessions over the Unix socket thingies). Local ollama server running qwen and a bunch of other models. I'm having an absolute blast! My projects accumulate here: joemattie.com"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50380213",
+    "author": "quiet_workbench",
+    "date": "2026-11-05",
+    "text": "1. I use claude/ codex and have used cursor and ollama in the past 2. I don't usually use any models outside of the subscription as the subscription seems to be a better value. 3. I use cli, claude desktop and codex desktop 4. Not rusing any orchestration or swarm tools. I'm curious how people are using these and for what? 5. Played"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50380092",
+    "author": "joddystreet",
+    "date": "2026-11-05",
+    "text": "1. AI subscriptions- Codex (Pro), Ollama (Max), Copilot (for Zed autocompletes) 2. N/A 3. Coding harnesses - Codex, Pi. (Switched from claude code) 4. Just codex, no agent swarms. When starting a new module - focused work, one issue, one agent, one project. For smaller tasks/minor issues - multiple parallel sessions, w"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50380057",
+    "author": "aykay76",
+    "date": "2026-11-05",
+    "text": "1. I don't pay for any subscriptions personally. 2. I use locally hosted models, Qwen 3.8 Coder 3. I use VSCode, I used Opencode for a while but VSCode then supported OpenAI compatible so I use that with ollama.cpp and Qwen locally. 4. Custom build orchestrator that I built as part of my learning with AI. 5. Nope."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50376782",
+    "author": "rglullis",
+    "date": "2026-11-05",
+    "text": "Personally: I have a XTX7900 card which can run some decent models, eg, Qwen 27B and Gemma. For bigger stuff I have the Ollama Cloud subscription to access (mostly) GLM. I have a server with OpenWebUI, and for harnesses I use OpenCode, but I have been experimenting with pi.dev to create a workflow that takes the ideas from the Rational Unified Process (RUP) so that everything gets properly documented an"
+   }
+  ]
+ },
+ {
+  "name": "llama.cpp",
+  "url": "https://github.com/ggml-org/llama.cpp",
+  "score": 86.2,
+  "github_stars": 133652,
+  "top_hn_story": {
+   "title": "Vision Now Available in Llama.cpp",
+   "points": 550,
+   "id": "43943047",
+   "url": "https://github.com/ggml-org/llama.cpp/blob/master/docs/multimodal.md"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50374298,
+    "author": "dofm",
+    "text": "1) none 2) Local LLMs on an M1 Max (Unsloth, LM Studio, occasionally direct llama.cpp). Muse Glimmer (because it is good at what it is optimised for: interactive coding sessions). Qwen 3.8 27B occasionally and a couple of other things for fun (an LFM MoE, experimenting with Nemotron Bolt 74B-9B, enjoying the really super Gemma 4 12B QAT when w"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50374705,
+    "author": "ontouchstart",
+    "text": "I use a nix one-liner to run llama.cpp on M5. ``` nix run nixpkgs#llama-cpp -- server --models-dir models -m models/gemma-4-12B-it-Q8_0.gguf --port 8080 ``` open http://localhost:8080. I also run pi in a docker container to do some vibe agentic coding. But I prefer `cat flake.nix | pbcopy` and pas"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50376993,
+    "author": "walrus01",
+    "text": "our current level of \"trust\" in these things (justifiably very low, I use zero openai or anthropic products myself) that you look into self hosting locally something reasonably capable and smart on your own hardware, on llama-server or something functionally equivalent to it. And running it in something like the opencode harness, using zero of the opencode API or online services. Qwen 3.8-flash-next will run on a lot of different hardware setups that are within the reach of normal people"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50377715,
+    "author": "thibsrn",
+    "text": "Open WebUI has Open Terminal, which I have been meaning to explore, for there to be less friction between any analytical work and a document that would be needed to be produced out of it. I also run small models through llama.app from time to time, when I want to be reminded how weak my computer is. I don't use any orchestration tool. I don't have any work that involves so much volume that it would require that kind of setup. It's more important to me to maintain the right mental mode"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50378847,
+    "author": "kikdij",
+    "text": "nts. 3) I'm using Codex and my own harness. I made my harness in the time of GPT-3.5, initially to talk with it through API (because it was way less costly than a sub - how fast things change), then adapted it to handle llama-server from llama.cpp, then added agentic loop features in it, then just a few days ago added support for OpenAI Oauth in it\u2026 My goal is to replace Codex in the long run. Way too many dependencies and supply chain attack opportunities to my taste. 4) Nothing to go p"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50380057,
+    "author": "aykay76",
+    "text": "1. I don't pay for any subscriptions personally. 2. I use locally hosted models, Qwen 3.8 Coder 3. I use VSCode, I used Opencode for a while but VSCode then supported OpenAI compatible so I use that with ollama.cpp and Qwen locally. 4. Custom build orchestrator that I built as part of my learning with AI. 5. Nope."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50385840,
+    "author": "degrees57",
+    "text": ". And for what I've needed it to help me with, it has been fantastic. I had installed ROCm (the AMD local LLM toolkit), and it turns out one of the tasks I wanted to do wouldn't work with my (somewhat older) video card. Llama.cpp had a dependency on HIP 6.1, but my hardware can only do HIP 5.7. PP talked me through downloading the code from Github and running a command to remove everything newer than HIP 5.7 from the source code and then recompiling the whole thing. It worked! I am no"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48416056,
+    "author": "moezd",
+    "text": "tern across a million files again and again\" loop and burn your entire weekly budget by Monday at noon. I'm also curious if anyone has done something cool with memory and context management that doesn't require a custom llama.cpp implementation. I also don't have the heart to let the swarm do it end to end, because LLM generated code with less capable models really does smell, no amount of spec driven or Claude.md filled style guidelines seem to fix it."
+   },
+   {
+    "src": "ask_hn",
+    "id": 47397114,
+    "author": "KronisLV",
+    "text": "as + the only working autocomplete that's actually good I've tried) - JetBrains AI and Junie (since I already pay for their IDEs, that came bundled), also nice but quotas are quite limiting - local models with Ollama or llama.cpp - cool conceptually but always really limited - OpenRouter for cloud models - ended up being kind of expensive and I didn't need those various models that much in the end - Cerebras Code - really generous token limits and amazing speed, but recently more down"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45772938,
+    "author": "lreeves",
+    "text": "I sometimes still code with a local LLM but can't imagine doing it on a laptop. I have a server that has GPUs and runs llama.cpp behind llama-swap (letting me switch between models quickly). The best local coding setup I've been able to do so far is using Aider with gpt-oss-120b. I guess you could get a Ryzen AI Max+ with 128GB RAM to try and do that locally but non-nVidia hardware is "
+   },
+   {
+    "src": "ask_hn",
+    "id": 45814519,
+    "author": "embedding-shape",
+    "text": "> But the 120b model has just as bad if not worse formatting issues, compared to the 20b one What runtime/tools are you using? Haven't been my experience at all, but I've also mostly used it via llama.cpp and my own \"coding agent\". It was slightly tricky to get the Harmony parsing in place and working correct, but once that's in place, I haven't seen any formatting issues at all? The 20B is definitely worse than 120B for me in every case and scenario, but it i"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45777455,
+    "author": "ThatPlayer",
+    "text": "With MoE models like gpt-oss, you can run some layers on the CPU (and some on GPU): https://github.com/ggml-org/llama.cpp/discussions/15396 Mentions 120b is runnable on 8GB VRAM too: \"Note that even with just 8GB of VRAM, we can adjust the CPU layers so that we can run the large 120B model too\""
+   },
+   {
+    "src": "ask_hn",
+    "id": 45781029,
+    "author": "embedding-shape",
+    "text": ". Choice goes something like this: - Need batching + highest total throughoutput? vLLM, complicated to deploy and install though, need special versions for top performance with GPT-OSS - Easiest to manage + fast enough: llama.cpp, easier to deploy as well (just a binary) and super fast, getting ~260 tok/s on a RTX Pro 6000 for the 20B version - Easiest for people not used to running shell commands or need a GUI and don't care much for performance: Ollama Then if you really wanna go fa"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45806027,
+    "author": "stuxnet79",
+    "text": "e sense that it was merely a front-end to Ollama, the llm command line tool & it didn't have any capabilities outside of that. I got spooked when the Ollama team started monetizing so I ended up doing more research into llama.cpp and realized it could do everything I wanted including serve up a web front end. Once I discovered this I sort of lost interest in Open WebUI. I'll have to revisit all these tools again to see what's possible in the current moment. > My sense is that you need"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50406493",
+    "author": "swiftcoder",
+    "date": "2026-11-07",
+    "text": "They also have references to stable-diffusion.cpp, which is probably the closest analogue to llama.cpp in this space"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50406428",
+    "author": "xrd",
+    "date": "2026-11-07",
+    "text": "I see references to comfyui in the readme. Is that the easiest way to run it? I've always found it a bit cumbersome to use and wish I had something like a simple CLI tool to use it like llama.cpp. Perhaps that's not possible with a video diffusion model?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50404921",
+    "author": "entrope",
+    "date": "2026-11-07",
+    "text": "What hardware and inference engine do you use? On my Radeon R9700, at least with llama.cpp and some others, the GPU provides as many tok/sec with a single stream as with concurrent ones, so it's just as fast and supports longer contexts to swap contexts to RAM on turn boundaries."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50394482",
+    "author": "hedora",
+    "date": "2026-11-06",
+    "text": "to sell laptops + phones in that world, but only if you can run frontier open models on their devices, and do so efficiently. This is definitely not the case for their in-house AI offerings, like Siri, but it is already true if you install llama.cpp or whatever. I suspect that AI will not be a big revenue source for them (unless they completely turn around their software engineering org), but instead will be a \"good enough to keep people from dumping their iCloud subscription\" offering instead. Siri is basically that: It's "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50390472",
+    "author": "ozgrakkurt",
+    "date": "2026-11-06",
+    "text": "How do you even fit that model in there? What quant is it? Are you using llama.cpp?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50386477",
+    "author": "selcuka",
+    "date": "2026-11-06",
+    "text": "SSD offloading [1]: > Unsloth Desktop + llama.cpp enables ~3x faster DeepSeek-V4.1 inference than other CPU/VRAM/ngram repos. DeepSeek and runs locally on 128GB+ RAM setups or 64GB RAM (slower). [1] https://unsloth.ai/docs/models/deepseek-v4.1-flash "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50385840",
+    "author": "degrees57",
+    "date": "2026-11-05",
+    "text": "Pro at $17 per month. And for what I've needed it to help me with, it has been fantastic. I had installed ROCm (the AMD local LLM toolkit), and it turns out one of the tasks I wanted to do wouldn't work with my (somewhat older) video card. Llama.cpp had a dependency on HIP 6.1, but my hardware can only do HIP 5.7. PP talked me through downloading the code from Github and running a command to remove everything newer than HIP 5.7 from the source code and then recompiling the whole thing. It worked! I am not a C programmer, bu"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50379014",
+    "author": "barrkel",
+    "date": "2026-11-05",
+    "text": "I'm pretty certain I can get it to go faster by caching experts and whatnot (with experimental llama.cpp branches), but that would consume a lot more VRAM and it's fast enough as it is for playing around with, and I can leave it always loaded . It's like 50% CPU inference, with a few layers + router + kv cache on the GPU."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50378847",
+    "author": "kikdij",
+    "date": "2026-11-05",
+    "text": "cal TTS, if that counts. 3) I'm using Codex and my own harness. I made my harness in the time of GPT-3.5, initially to talk with it through API (because it was way less costly than a sub - how fast things change), then adapted it to handle llama-server from llama.cpp, then added agentic loop features in it, then just a few days ago added support for OpenAI Oauth in it\u2026 My goal is to replace Codex in the long run. Way too many dependencies and supply chain attack opportunities to my taste. 4) Nothing to go parallel, but my pers"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50377358",
+    "author": "Tade0",
+    "date": "2026-11-05",
+    "text": "I've tried llama.cpp's new --moe-cache-mib flag and it lowers performance to about a third of what it is without the flag. And no wonder really - PCIe 4.0 x16 has a one direction bandwidth of around 31.5GB/s - much slower than system RAM - in my case about a third the speed and I think it's no coinc"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50375517",
+    "author": "petu",
+    "date": "2026-11-05",
+    "text": "he KV cache and whatever experts still fit. Those days engines try to optimize \"whatever experts\" part and can use remaining VRAM as cache, moving hot experts to GPU during inference (but less used experts keep executing on CPU, yea). e.g. llama.cpp recently added flag for that: https://github.com/ggml-org/llama.cpp/pull/29887 "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50374705",
+    "author": "ontouchstart",
+    "date": "2026-11-05",
+    "text": "I use a nix one-liner to run llama.cpp on M5. ``` nix run nixpkgs#llama-cpp -- server --models-dir models -m models/gemma-4-12B-it-Q8_0.gguf --port 8080 ``` open http://localhost:8080. I also run pi in a docker container to do some vibe agentic coding. But I prefer `cat flake.nix | pbcopy` and paste into the browser."
+   }
+  ]
+ },
+ {
+  "name": "MLX",
+  "url": "https://github.com/ml-explore/mlx",
+  "score": 71.5,
+  "github_stars": 29089,
+  "top_hn_story": {
+   "title": "Ollama is now powered by MLX on Apple Silicon in preview",
+   "points": 648,
+   "id": "47582482",
+   "url": "https://ollama.com/blog/mlx"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50368019,
+    "author": "l9o",
+    "text": " my behalf. I was using this delegation workflow a lot until Anthropic fixed the word salad issues on Opus 5.5. Nowadays I mostly do it to load balance my token usage. I also use locally hosted models (both via CUDA and MLX), but much less for coding unless it's for asynchronous tasks that I can't use subscriptions for. My main use case for local inference is privacy and tinkering. I've also been building my own harness focused on security and privacy for the past year or so, bu"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50368031,
+    "author": "benbojangles",
+    "text": "My halftop macbook m1 max 64gb is doing all my ai locally, i have not paid for any ai subscription for over a year. things i run locally using apple mlx models: general llm, coding llm, text-to-image, text-to-video, image-to-video, text-to-music, everything is holding up well. I may eventually swap the m1 max for a higher memory bandwidth device once they are available for a reasonable price in 6+ years"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50376601,
+    "author": "jedisct1",
+    "text": "Locally (MBP 128Gb) I have MLX-Serve constantly running with Clef (for model routing and decisions), Qwen-35B-A3B and Ornith-1.5-35B. And I switch to Qwen3.8-27B (the Perplexity Pro version that works well with MLX-Serve) or GLM-5.3-Flash (sushi) when I need to do serious work offline. As "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50380633,
+    "author": "cpobuda",
+    "text": "OpenCode + DeepSeek V4.1 Flash 1017 and IFM K2 Horizon 7B with speculative decoding via custom inference engine (MLX). Helyn Implement for coding, I work on design and specification, agentic protocol handles coding, testing, automated testing, and reviews (multiple models), process works extremely well. Enables fast iteration cycles since most issues are diagnosed in design"
+   },
+   {
+    "src": "ask_hn",
+    "id": 43960603,
+    "author": "dkaleta",
+    "text": "Yes, the idea is to \u2018speak/write\u2019 to the local model to fix those little things so you don\u2019t have to do them by hand. I actually already have a fine-tuned Qwen model running on Apple\u2019s MLX to handle some of that, but given the hard YC deadline, it didn\u2019t make it into the demo. Eventually, you\u2019d say, \u2018add an additional layer, TopicsController, between those two files,\u2019 and the local model would do it quickly without a problem, since it doesn\u2019t i"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45775449,
+    "author": "jetsnoc",
+    "text": "Model performance summary: **openai/gpt-oss-120b** \u2014 MLX (MXFP4), ~66 tokens/sec @ Hugging Face: `lmstudio-community/gpt-oss-120b-MLX-8bit` **google/gemma-3-27b** \u2014 MLX (4-bit), ~27 tokens/sec @ Hugging Face: `mlx-community/gemma-3-27b-it-qat-4bit` **qwen/qwen3-coder-30b** \u2014 MLX (8-bit), ~78 tokens/sec @ Hugging Fa"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45775325,
+    "author": "erikig",
+    "text": "Hardware: MacBook Pro M4 Max, 128GB Platform: LMStudio (primarily) & Ollama Models: - qwen/qwen3-coder-30b A3B Instruct 8-bit MLX - mlx-community/gpt-oss-120b-MXFP4-Q8 For code generation especially for larger projects, these models aren't as good as the cutting edge foundation models. For summarizing local git repos/libraries, generating documentation and simple offline command-line to"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45783616,
+    "author": "toogle",
+    "text": "I built a custom code-completion server: https://github.com/toogle/mlx-dev-server >. The key advantage is that it cancels generation when you continue typing, so invalidated completions don\u2019t waste time. This makes completion latency predictable (about 1.5 seconds for me). My setup: - MacBook Pro (M3 Max) - Neovim - https://gith"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46630180,
+    "author": "__jf__",
+    "text": "ril 2024 with Python and Transformers for each text chunk on an RTX-A6000. Wow that thing was fast but noisy and also burns 500W. So a year ago I switched to an M1 Ultra and only had to replace Transformers with Apple's MLX python library. Approximately the same speed but less heat and noise. The Llama model has 4k dimensions so at fp16 thats 8 kilobyte per chunk, which I store in a BLOB column in SQLite via numpy.save(). Between running on the RTX and M1 there is a very small d"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46642080,
+    "author": "threecheese",
+    "text": "For my personal PKM slash \u201clearn this crap\u201d, I have a fully local hybrid search on my MacBook using MLX and SQLite. I store file content blobs in SQLite, and use FTS5 (bm25) to maintain a fulltext index plus sqlite-vec for storing embeddings. Search uses both of these, and then reciprocal rank fusion gets the best results and pipes those to a local transformers"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50380633",
+    "author": "cpobuda",
+    "date": "2026-11-05",
+    "text": "OpenCode + DeepSeek V4.1 Flash 1017 and IFM K2 Horizon 7B with speculative decoding via custom inference engine (MLX). Helyn Implement for coding, I work on design and specification, agentic protocol handles coding, testing, automated testing, and reviews (multiple models), process works extremely well. Enables fast iteration cycles since most issues are diagnosed in design and specification a"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50376601",
+    "author": "jedisct1",
+    "date": "2026-11-05",
+    "text": "Locally (MBP 128Gb) I have MLX-Serve constantly running with Clef (for model routing and decisions), Qwen-35B-A3B and Ornith-1.5-35B. And I switch to Qwen3.8-27B (the Perplexity Pro version that works well with MLX-Serve) or GLM-5.3-Flash (sushi) when I need to do serious work offline. As a general harness fo"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50368031",
+    "author": "benbojangles",
+    "date": "2026-11-04",
+    "text": "My halftop macbook m1 max 64gb is doing all my ai locally, i have not paid for any ai subscription for over a year. things i run locally using apple mlx models: general llm, coding llm, text-to-image, text-to-video, image-to-video, text-to-music, everything is holding up well. I may eventually swap the m1 max for a higher memory bandwidth device once they are available for a reasonable price in 6+ years"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50368019",
+    "author": "l9o",
+    "date": "2026-11-04",
+    "text": "e one using Codex on my behalf. I was using this delegation workflow a lot until Anthropic fixed the word salad issues on Opus 5.5. Nowadays I mostly do it to load balance my token usage. I also use locally hosted models (both via CUDA and MLX), but much less for coding unless it's for asynchronous tasks that I can't use subscriptions for. My main use case for local inference is privacy and tinkering. I've also been building my own harness focused on security and privacy for the past year or so, but it's still a work "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50357499",
+    "author": "ActorNightly",
+    "date": "2026-11-03",
+    "text": "od at speed (especially with megakernels), but if its going in a wrong direction, it will go in the wrong direction hard. Gemma can self correct with its thinking. The only reason Qwen is more popular is because it can run decently fast on MLX, while Gemma needs a discrete GPU with 24gb of ram to run at usable speeds. Also, theoretically speaking, any small model can be as good as a big model if all they have to do is summarize text. Back before agents were a thing, we had prototype coders running of local inference m"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50323539",
+    "author": "raffraffraff",
+    "date": "2026-11-01",
+    "text": "So it's not about the model (eg TensorFold/Qwen3.8-27B-MLX-4bit) it's about the inference engine?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50322419",
+    "author": "nout",
+    "date": "2026-11-01",
+    "text": "and efforts are now making Qwen 3.8 27b work much faster on Mac and CUDA and the inference speed is doubling almost every week. There's now ongoing competition about who will make it work faster with exactly the same byte output at https://mlx.fast . TensorFold is the project to follow."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50322348",
+    "author": "jeffyaw",
+    "date": "2026-11-01",
+    "text": "disagree, it\u2019s absolutely comparable. but an m5 max is where it shines. and there are 50 flags to finetune with llama server before you get it right. i do prefer llama server over mlx currently on mac as well."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50281862",
+    "author": "inom155",
+    "date": "2026-10-28",
+    "text": "Honestly, I was very impressed with this. I did find the latency was quite high, so I tried to tune it to use MLX on Mac GPUs, and it's so much faster. Very cool either way, we're getting close to a full AI interactive tool that's offline and private! https://github.com/skorotkiewicz/lfm3-chat/pull/1 "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50273638",
+    "author": "ronfriedhaber",
+    "date": "2026-10-28",
+    "text": "It seems as if today, Python is in most cases a very well designed frontend for accelerators and their proprietary, vectorized, massively parallel IRs. Those libraries (Jax, MLX, etc) already take care of JIT code optimizations - Polyhedral et al - and therefore it makes sense for the frontend to not worry about runtime performance."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50269830",
+    "author": "raffraffraff",
+    "date": "2026-10-28",
+    "text": " Max are worthwhile for LLMs. An Ultra is just two Mac chips on a die, but I think they're just used in Mac Studio. I'll check it that inference engine! Thanks! Edit: it doesn't give numbers for unsloth/Qwen-3.6-35B-A3B 4bit, but I'm using mlx-serve right now and getting petty good numbers (and it took a while to tweak everything properly!)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50264968",
+    "author": "samstevens",
+    "date": "2026-10-27",
+    "text": "I think mlx-vlm should support both the Audio and the Omni model: https://github.com/Blaizzy/mlx-vlm/ and there should be native MLX exports for both here: - https://huggingface.co/LiquidAI/LFM3-Audio-2B-MLX-8bit - https://huggingface.co/LiquidAI/LFM3-Omni-2B-MLX-8bit "
+   }
+  ]
+ },
+ {
+  "name": "vLLM",
+  "url": "https://github.com/vllm-project/vllm",
+  "score": 67.0,
+  "github_stars": 96519,
+  "top_hn_story": {
+   "title": "Nano-vLLM: How a vLLM-style inference engine works",
+   "points": 271,
+   "id": "46855447",
+   "url": "https://neutree.ai/blog/nano-vllm-part-1"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 45778679,
+    "author": "whatreason",
+    "text": "What do you use to run gpt-oss here? ollama, vLLM, etc"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45781029,
+    "author": "embedding-shape",
+    "text": "Not parent, but frequent user of GPT-OSS, tried all different ways of running it. Choice goes something like this: - Need batching + highest total throughoutput? vLLM, complicated to deploy and install though, need special versions for top performance with GPT-OSS - Easiest to manage + fast enough: llama.cpp, easier to deploy as well (just a binary) and super fast, getting ~260 tok/s on a RTX Pro 6000 for the 20B version -"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45774702,
+    "author": "loudmax",
+    "text": "actual real work, I use Claude. If you want to use an open weights model to get real work done, the sensible thing would be to rent a GPU in the cloud. I'd be inclined to run llama.cpp because I know it well enough, but vLLM would make more sense for models that runs entirely on the GPU."
+   },
+   {
+    "src": "ask_hn",
+    "id": 45777371,
+    "author": "dennemark",
+    "text": " more. Maybe llama-swap is enough. I just need to see how to deal with context length. My models stop or go into infinite loop after some messages. But then i often start a new chat. Lemonade-server runs with llama.cpp, vllm seems to be scaling better thoug, but is not so easy to set up. Unsloth GGUFs are great resource for models. Also for Strix Halo check out kyuz0 repositorIES! Also has image gen. I didnt try those yet. But the benchmarks are awesome! Lots to learn from. Frame"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46632246,
+    "author": "gaganyatri",
+    "text": "Built discovery using - Qwen-3-VL-8B for Document Ocr + Prompts + Tool Call - ChromaDB for Vector storage. - BM25 + Embedding model for Hybrid RAG. - Backend- FastAPI + Python - Frontend- React + Typescript - vllm + docker for model deployment on L40 GPU Demo: https://app.dwani.ai GitHub: https://github.com/dwani-ai/discovery Now working on added Agentic features, by continuous analysis of Document with Generated prompts."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50399511",
+    "author": "dev-in",
+    "date": "2026-11-06",
+    "text": "Why not using a proxy in claudecode to forward all the claude-* model to anthropic as a standard proxy forwarder and route other models to other providers (openrouter, vllm, ..)? This way Claude's model can get all the context from other models as all in the same harness. To use other models than claude-* you can use agents files. Ps: as you won't use your proxy to distill or alter claudecode requests to anthropic you should be compliant with anthr"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50396624",
+    "author": "aftbit",
+    "date": "2026-11-06",
+    "text": " you might expect that future models from the same providers that you accepted before will show less divergence than totally new providers. Similarly, if you build your inference around one of their custom tools (e.g. DeepInfer rather than vLLM), you might find substantial switching costs in moving away to another provider. >And your speculation about future protectionist regulation is just that, not an actual fact. It's not a done deal for sure, but you can already see a lot of signs of this in recent actions from the"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50390743",
+    "author": "rahulk789",
+    "date": "2026-11-06",
+    "text": " Willing to relocate: Yes Technologies: Kubernetes, Rust, Go, Python, eBPF, Terraform, ArgoCD, CRIU, Linux, AWS (EKS, Karpenter), GCP, Slurm, Helm, Prometheus, Grafana, C/C++, TypeScript, SQL, OpenTelemetry, Postgres, CUDA/GPU infra (H100, vLLM, SGLang), NixOS R\u00e9sum\u00e9/CV: https://rahulk789.github.io (Feel free to email me or message me on Linkedin!) Email: base64 encoded :) cmFodWwudS5pbmRpYUBnbWFpbC5jb20= LinkedIn: https://www.linkedin.com/in/rahulk789/ DevOps/Software Engineer with 3+ years of experience, previously a"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50369851",
+    "author": "sofixa",
+    "date": "2026-11-04",
+    "text": "or enterprise AI inference. The problem they have and they've always had is that everyone uses CUDA. ROCm works, but everyone's toolchain is CUDA exclusive or CUDA first, so it's much harder to use AMD hardware. Using higher level tooling (vLLM, llama.cpp) I have DGX Spark comparable performance for 1/3 the price (but without the same software out of the box experience nor the clustering network options)."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50358732",
+    "author": "bitexploder",
+    "date": "2026-11-03",
+    "text": "You should be fine with 5060 on vLLM. The support for V100 is limited but getting much better. You should be able to get good performance. TP4 will hurt across any sort of network link, but you can see, the 5060 has a lot of compute power so the delays won't hurt as much."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50358342",
+    "author": "embedding-shape",
+    "date": "2026-11-03",
+    "text": "to work at least 80% of the quality Astra et al have, and can't get close to it. It keeps being so verbose, regardless of inference parameters, system prompts, reasoning effort, and keeps going on tangents. I'm running the BF16 weights via vLLM, can't imagine how much worse the experience must be with the quantized weights people run with the average consumer GPU. Even with tight guiding, as I guess you could say I do more \"AI pair-programming\" than vibecoding, it just loses the plot to often and waste time, enough tha"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50357113",
+    "author": "jononor",
+    "date": "2026-11-03",
+    "text": "Thanks, super information. I am considering a TP4 PP2 system using 2 nodes with 4x 5060ti 16gb on each. Already have 6 such GPUs, with 4 of them running 27B at the moment. Hoping to get similar performance. Ideally with stock vLLM to keep on a well maintained standard software."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50356927",
+    "author": "Sisirvoruvuru",
+    "date": "2026-11-03",
+    "text": "illing to relocate: Yes. The SF Bay Area is the goal (I want to be part of the bastion of frontier hardtech), or anywhere building robots Technologies: Python, PyTorch, torch.compile, TensorRT, INT8/FP8, Hugging Face LeRobot, VLAs, MuJoCo, vLLM, LangGraph, MCP, RAG R\u00e9sum\u00e9/CV: https://github.com/captof-omuamua/captof-omuamua/blob/main/S... Email: sisir.voruvuru (at) gmail.com I make robot brains fast enough for the real world and frugal enough for battery-powered robots, with nearly the same accuracy as the power-hungry"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50352859",
+    "author": "kgeist",
+    "date": "2026-11-03",
+    "text": "I'm currently evaluating GLM and oh boy, lots of correctness issues on large contexts if you run it on vLLM (bugs in the engine itself). I wonder what their config is."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50349459",
+    "author": "ozmekik",
+    "date": "2026-11-03",
+    "text": "te: Yes (EU and US East overlap) Willing to relocate: Open to it Technologies: Python/FastAPI, TypeScript/Node.js, Java/Spring, Rust, C++, PostgreSQL, Redis, Kafka, Docker, Kubernetes (GKE), GCP, AWS, LLM systems (RAG, agents, MCP, evals), vLLM, llama.cpp R\u00e9sum\u00e9/CV: https://drive.google.com/file/d/1x3jryT0EdUCANbVr3nogwCQB59o... GitHub: https://github.com/aozmekik Email: ahmed-semih@outlook.com Backend-leaning senior engineer, 6 years in production. - NextLangua ( https://nextlangua.com ): AI language-learning app I bu"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50347711",
+    "author": "anshmangukiya",
+    "date": "2026-11-03",
+    "text": "Location: Surat, India (IST \u2014 overlaps US mornings and EU afternoons) Remote: Yes Willing to relocate: No Technologies: Python, FastAPI, LangGraph, LangChain, vLLM, QLoRA/PEFT/TRL, Hugging Face, Qdrant, Pinecone, pgvector, PostgreSQL, Docker, multi-GPU Linux, .NET/C# integration R\u00e9sum\u00e9/CV: https://anshmangukiya.in Email: anshmangukiya.ai@gmail.com SEEKING FREELANCE / CONTRACT WORK. AI engineer building production GenAI systems at a US soft"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50345723",
+    "author": "karmakaze",
+    "date": "2026-11-02",
+    "text": "The best combo I've found is running Qwen3.8-27B-MXFP4 (radiance) on 2x R9700 in DeepSeek Harness on a cloud VM with a search subscription. I have a Cloudflare tunnel from my home vLLM to DSH VM. Since the dense model has high intelligence but not breadth+depth of knowledge being close to the internet with subscription ensures fast searches that quicken loops. It's exceedingly hard to get API models with low latency for interactive design work and this setup w"
+   }
+  ]
+ },
+ {
+  "name": "Open WebUI",
+  "url": "https://openwebui.com",
+  "score": 66.5,
+  "github_stars": 158019,
+  "top_hn_story": {
+   "title": "OSS Alternative to Open WebUI \u2013 ChatGPT-Like UI, API and CLI",
+   "points": 101,
+   "id": "45798193",
+   "url": "https://github.com/ServiceStack/llms"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50373248,
+    "author": "Quibblingeek",
+    "text": "se subscriptions? For example,  [question]  Local first. I have a box running Muse Spark on my desk. My main inference box is a launch day DGX Spark (I saw the hardware shortage coming) and has my entire local AI stack. OpenWebUI and everything that feeds it. I moved away from SearXNG and started using SlopSearX (it's quite good). Everything else goes to Openrouter. I use few models but GPT-6 Luna is my go-to, sometimes I switch it up. Really depends on the task I need to perform. 3) "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50376357,
+    "author": "mnahkies",
+    "text": " proxy, though tbh I'd like a solution that was relatively liberal whilst still mitigating exfiltration and prompt injection risks. Maybe I can find a curated allow list to use as a base. Finally, I make a lot of use of open-webui, but it's disjoint from the agentic setup currently - it'd be nice to find a better way to share information/research from it into the agentic sessions."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50376782,
+    "author": "rglullis",
+    "text": "Personally: I have a XTX7900 card which can run some decent models, eg, Qwen 27B and Gemma. For bigger stuff I have the Ollama Cloud subscription to access (mostly) GLM. I have a server with OpenWebUI, and for harnesses I use OpenCode, but I have been experimenting with pi.dev to create a workflow that takes the ideas from the Rational Unified Process (RUP) so that everything gets properly documented and reviewed by a human before getting to the implementa"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50376810,
+    "author": "a-saleh",
+    "text": "ig features, just because I want a nice chat interface (I am mostly talking through my health problems and trying to get my appointments in order) that already has basic tooling integrations out of the box. I.e. getting OpenWebUI have search tool was pain. Adding i.e. mcp for my todolist or calendar to Hermes was smooth."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50377715,
+    "author": "thibsrn",
+    "text": "rized images, which would be really useful in a lot of industries. For the frontend, I either use the web-based version of ChatGPT for quick questions and analytical work (the desktop version is unnecessarily heavy), or Open WebUI. For coding, I mostly use Zed. I like the traditional development environment and tooling, I tried several agent-first environments, but in the end I prefer an IDE on top of which agents were added. OpenCode Web has evolved a lot, I have been using it for qui"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50385251,
+    "author": "Primer81",
+    "text": "I use self hosted Open WebUI + open terminal instances on my development machines + DS Flash 4.1 + my own custom OWUI plugins for various things like per chat access grants for the open-terminal instances, per chat git credentials for traceability, and another plugin to enable inter-chat"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48417329,
+    "author": "igorhvr",
+    "text": "earch/hermes-agent/pull/38198/chan... - once the bug was found within codex I launched from it a tamandua bug-fix-merge-worktree run on top of deepseek-v4-pro that created the commit itself... As a web application I use OpenWebUI and I am specially fond of the notes feature ( https://docs.openwebui.com/features/notes/ ) which I did not find anywhere else. Last but not least, I love playing with local models. https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct is my current favo"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45783342,
+    "author": "gkfasdfasdf",
+    "text": "What were you using for RAG? Did you build your own or some off the shelf solution (e.g. openwebui)"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45779315,
+    "author": "disambiguation",
+    "text": "/lemmy.zip/post/50193734 (Lemmy is a reddit style forum) The author mainly demos their \"custom tools\" and doesn't elaborate further. But IMO is still an impressive showcase for an offline setup. I think the big hint is \"open webui\" which supports native function calls. Some more searching and i found this: https://pypi.org/project/llm-tools-kiwix/ It's possible the future is now.. assuming you have an M series with enough RAM. My sense is that you need ~1gb of RAM for every 1b paramter"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45806027,
+    "author": "stuxnet79",
+    "text": "It seems like the ecosystem around these tools has matured quite rapidly. I am somewhat familiar with Open WebUI, however, the last time I played around with it, I got the sense that it was merely a front-end to Ollama, the llm command line tool & it didn't have any capabilities outside of that. I got spooked when the Ollama team started monetizing so I ended up doing m"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45773970,
+    "author": "mjgs",
+    "text": "I use podman compose to spin up an Open WebUI container and various Llama.cpp containers, 1 for each model. Nothing fancy like a proxy or anything. Just connect direct. I also use Continue extension inside vscode, and always use devcontainers when I'm working with any LLMs. I had to create a custom image"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45774271,
+    "author": "gnarlouse",
+    "text": "Omarchy ArchLinux+ollama:deepseek-r1+open-webui On an RTX 3080 Ti+Ryzen 9"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45774663,
+    "author": "dethos",
+    "text": "Ollama, Continue.dev extension for editor/IDE, and Open-WebUI. My hardware is a bit dated, so I only use this setup for some smaller open models. On the laptop, I don't use any local models. Not powerful enough."
+   },
+   {
+    "src": "ask_hn",
+    "id": 45774690,
+    "author": "alexfromapex",
+    "text": "use it to do simple text-based tasks occasionally if my Internet is down or ChatGPT is down. I also use it in VS Code to help with code completion using the Continue extension. I created a Firefox extension so I can use Open WebUI in my browser by pressing Cmd+Shift+Space too when I am browsing the web and want to ask a question: https://addons.mozilla.org/en-US/firefox/addon/foxyai/ "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50397385",
+    "author": "Primer81",
+    "date": "2026-11-06",
+    "text": "Few comments on that thread also mentioned open webui and open terminal. Didnt see that mentioned in the article."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50385251",
+    "author": "Primer81",
+    "date": "2026-11-05",
+    "text": "I use self hosted Open WebUI + open terminal instances on my development machines + DS Flash 4.1 + my own custom OWUI plugins for various things like per chat access grants for the open-terminal instances, per chat git credentials for traceability, and another plugin to enable inter-chat communication. Coul"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50377715",
+    "author": "thibsrn",
+    "date": "2026-11-05",
+    "text": "r than text or rasterized images, which would be really useful in a lot of industries. For the frontend, I either use the web-based version of ChatGPT for quick questions and analytical work (the desktop version is unnecessarily heavy), or Open WebUI. For coding, I mostly use Zed. I like the traditional development environment and tooling, I tried several agent-first environments, but in the end I prefer an IDE on top of which agents were added. OpenCode Web has evolved a lot, I have been using it for quick scripting as well"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50376357",
+    "author": "mnahkies",
+    "date": "2026-11-05",
+    "text": "more - probably iron proxy, though tbh I'd like a solution that was relatively liberal whilst still mitigating exfiltration and prompt injection risks. Maybe I can find a curated allow list to use as a base. Finally, I make a lot of use of open-webui, but it's disjoint from the agentic setup currently - it'd be nice to find a better way to share information/research from it into the agentic sessions."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50345117",
+    "author": "pcf",
+    "date": "2026-11-02",
+    "text": "I'm planning to run something akin to https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Optimized... on my Mac Studio M3 Ultra with 96 GB RAM. It will be the main orchestrator of my entire system. The plan is to use it with Open WebUI, PostgreSQL with pgvector and Apache AGE, and my own database schema, and then have it be my complete second brain, running completely privately on my own hardware and always being available over Tailscale. Since I still have 20-30 GB RAM to spare after loading that main orchest"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50251092",
+    "author": "prophesi",
+    "date": "2026-10-26",
+    "text": "Have you tried Open WebUI? It doesn't determine which model works best for your hardware, but it otherwise has a very large feature set with a large community, and runs offline by default. Geared more for technical users, however."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50240215",
+    "author": "Tepix",
+    "date": "2026-10-26",
+    "text": "Can I use it with Open-Webui instead of Apache Tika?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50206508",
+    "author": "input_sh",
+    "date": "2026-10-23",
+    "text": "OpenAI, OpenCode, OpenChamber, OpenWork, OpenClaw, Open WebUI, now OpenShell... By the way things are headed, pretty soon we're gonna run out of nouns to put behind the word \"open\"."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50035607",
+    "author": "Primer81",
+    "date": "2026-10-10",
+    "text": "I call the API directly using a custom Open WebUI plugin (pipe function) I had Flash/Sonnet write/iterate on. I have a similar pipe function for Anthropic's API but even just Sonnet is prohibitively expensive for the same performance I get with Flash for pennies."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49896112",
+    "author": "troyvit",
+    "date": "2026-09-29",
+    "text": "oblem many of us do: We want the most powerful models, we're willing to pay for them, but we see over and over how much of a frontier the frontier actually is. Frontiers are ugly if you don't have guns. So for now maybe platform tools like Open WebUI and TypingMind are a good workaround since the big boys don't (apparently) train on API data (for now) or (probably) send that data to advertisers. It would be interesting to confirm that."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49725125",
+    "author": "spwa4",
+    "date": "2026-09-16",
+    "text": "Except ... this is not local. It's a remote service. Here is something that is: docker run ghcr.io/open-webui/open-webui:v0.11.3 docker run mcr.microsoft.com/playwright/mcp:latest Configure them. Open-webui needs a model (a local qwen3.8 does amazing), and you need to link them up. Playwright will just do stuff."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49717062",
+    "author": "blake__dev",
+    "date": "2026-09-15",
+    "text": "Sure. I tried Open WebUI, SillyTavern, AnythingLLM, etc. I wasn't a fan of installing a 500MB desktop app, or having to run a webhost locally, or having to configure a bunch of settings just to chat with the newest LLM."
+   }
+  ]
+ },
+ {
+  "name": "LM Studio",
+  "url": "https://lmstudio.ai",
+  "score": 66.4,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Running Gemma 4 locally with LM Studio's new headless CLI and Claude Code",
+   "points": 407,
+   "id": "47651540",
+   "url": "https://ai.georgeliu.com/p/running-google-gemma-4-locally-with"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50374298,
+    "author": "dofm",
+    "text": "1) none 2) Local LLMs on an M1 Max (Unsloth, LM Studio, occasionally direct llama.cpp). Muse Glimmer (because it is good at what it is optimised for: interactive coding sessions). Qwen 3.8 27B occasionally and a couple of other things for fun (an LFM MoE, experimenting with Nemotron Bolt 74B-9B, enjoying the real"
+   },
+   {
+    "src": "ask_hn",
+    "id": 43962177,
+    "author": "vijucat",
+    "text": "If you have any intellectual property worth protecting or need to comply with HIPAA, a completely local installation of Cline or Aider or Codeium with LM Studio with Qwen or DeepSeek Coder works well. If you'd rather not bother, I don't see any option to GitHub Copilot for Business. Sure, they're slower to catch up to Cursor, but catch up they will. https://github.com/features/copilot/plans?cft=copilot_li.fea... "
+   },
+   {
+    "src": "ask_hn",
+    "id": 45773563,
+    "author": "j45",
+    "text": "LM Studio also works well on Mac."
+   },
+   {
+    "src": "ask_hn",
+    "id": 45773267,
+    "author": "reactordev",
+    "text": "I use LM Studio with GGUF models running on either my Apple MacBook Air M1 (it\u2019s, ok\u2026) or my Alienware x17 R2 with an RTX 3080 on a Core i9 (runs like autocomplete) in VS Code using Continue.dev My only complaint is agent mode needs good token gen so I only go agent mode on "
+   },
+   {
+    "src": "ask_hn",
+    "id": 45773654,
+    "author": "embedding-shape",
+    "text": "> Which model(s) are you running (e.g., Ollama, LM Studio, or others) I'm running mainly GPT-OSS-120b/20b depending on the task, Magistral for multimodal stuff and some smaller models I've fine-tuned myself for specific tasks.. All the software is implemented by myself, but I started out with basically calling out t"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45774009,
+    "author": "vinhnx",
+    "text": "> Which model(s) are you running (e.g., Ollama, LM Studio, or others) and which open-source coding assistant/integration (for example, a VS Code plugin) you\u2019re using? Open-source coding assistant: VT Code (my own coding agent -- github.com/vinhnx/vtcode) Model: gpt-oss-120b remote hosted via Ollama cloud experimenta"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45774045,
+    "author": "BirAdam",
+    "text": "Mac Studio, M4 Max LM Studio + gpt-oss + aider Works quite quickly. Sometimes I just chat with it via LM Studio when I need a general idea for how to proceed with an issue. Otherwise, I typically use aider to do some pair programming work. It isn't always accurate, but it's often at leas"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45775449,
+    "author": "jetsnoc",
+    "text": "Model performance summary: **openai/gpt-oss-120b** \u2014 MLX (MXFP4), ~66 tokens/sec @ Hugging Face: `lmstudio-community/gpt-oss-120b-MLX-8bit` **google/gemma-3-27b** \u2014 MLX (4-bit), ~27 tokens/sec @ Hugging Face: `mlx-community/gemma-3-27b-it-qat-4bit` **qwen/qwen3-coder-30b** \u2014 MLX (8-bit), ~78 tokens/sec @ Hugging Face: `Qwen/Qwen3-Coder-30B-A3B-Instruct` Will reply"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45774677,
+    "author": "finfun234",
+    "text": "lmstudio with local models"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45778334,
+    "author": "giancarlostoro",
+    "text": "I have only ever used the M4 (on my wife's Macbook Air) and M4 Pro (on my Macbook Pro) and it was reasonable speeds, I was able to tie LM Studio with PyCharm and ask it questions about code, but my context Window kept running out, I don't think the 24GB model is the right choice, the key thing you have to also look out for is for example I might hvae 24GB of RAM, but only 16 of it can be used as VRAM,"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45777550,
+    "author": "trailbits",
+    "text": "The default context window using ollama or lmstudio is small, but you can easily quadruple the default size while running gpt-oss-20b on a 24GB Mac."
+   },
+   {
+    "src": "ask_hn",
+    "id": 45775061,
+    "author": "garethsprice",
+    "text": " Mini with a 20GB ADA 4000, 96GB RAM, 2TB SSD, Ubuntu. Would get a Macbook with a ton of RAM if I was buying today, a full form factor PC, the mini form factor looks nice but gets real hot and is hard to upgrade. Tools: LM Studio for playing around with models, the ones I stabilize on for work go into ollama. Models: Qwen3 Coder 30b is the one I come back to most for coding tasks. It is decent in isolation but not so much at the multi-step, context-heavy agentic work that the hosted f"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45782663,
+    "author": "nickthegreek",
+    "text": "just setup searxng yesterday and mcp for it in lm studio to be able to search the net for answers to simple queries. small ibm granite worked surpassingly well, while oss20b seemed to be looping searches."
+   },
+   {
+    "src": "ask_hn",
+    "id": 45775325,
+    "author": "erikig",
+    "text": "Hardware: MacBook Pro M4 Max, 128GB Platform: LMStudio (primarily) & Ollama Models: - qwen/qwen3-coder-30b A3B Instruct 8-bit MLX - mlx-community/gpt-oss-120b-MXFP4-Q8 For code generation especially for larger projects, these models aren't as good as the cutting edge foundation models. For summarizing local git r"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50399156",
+    "author": "kcartlidge",
+    "date": "2026-11-06",
+    "text": "For the easy path: - Serve the model with either Ollama or LM Studio (the latter 'hides' their traditional Studio on the download page for the agentic one they are preferring you use). - For the model, Gemma 4 E4B is a nice combination of performance and speed with a decent context size. Not good enough for complex coding needs, but the Qwen mode"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50397648",
+    "author": "dofm",
+    "date": "2026-11-06",
+    "text": " RAM unified machine) gets you Qwen 3.8 27B at a good adaptive Q4, maybe Q5. Muse Glimmer at Q4 and Q5, etc. These models can code well enough in an agentic way, I find, and the chat-to-assistant scenario is just fine in Unsloth Desktop or LM Studio. A slightly lighter harness helps; a lighter system prompt is entirely possible, especially for Muse Glimmer, which is post-trained so effectively for agentic helper tasks that it barely seems to need a system prompt at all except for a \"plan\" mode. Tool use is all fine, all tha"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50374298",
+    "author": "dofm",
+    "date": "2026-11-05",
+    "text": "1) none 2) Local LLMs on an M1 Max (Unsloth, LM Studio, occasionally direct llama.cpp). Muse Glimmer (because it is good at what it is optimised for: interactive coding sessions). Qwen 3.8 27B occasionally and a couple of other things for fun (an LFM MoE, experimenting with Nemotron Bolt 74B-9B, enjoying the really super Gemma 4 12B"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50365264",
+    "author": "999900000999",
+    "date": "2026-11-04",
+    "text": ">Oddly, the direction of the problem flips depending on power source. Unplugged, Linux hit around 61 to 67 tokens per second on LM Studio, comparable to Windows. Plugged in, that same test dropped to about 15 tokens per second. Absolutely hilarious. This is just incompetence. No reason Nvidia with its TRILLIONS of market cap couldn't of tested and fixed this on Linux before shipping. Or a day one patch. I have no "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50342108",
+    "author": "selicos",
+    "date": "2026-11-02",
+    "text": "has a recent CVE issue but worked fine. CachyOS/etc set up for more Windows like UI and transplants was fine but not focused on the Stricx Halo setup. Although I do see close to RTX 5070 performance in most games I've tested. I was running LM Studio and some other runtimes for ease of setup and model switching. Once you settle on a runtime and model setup you like it is easy to set it up, let it run, and manage as needed. Last week I set up GUFO, as it targets the AMD Strix Halo hardware and is efficient for Qwen Flash Next"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50290029",
+    "author": "AriesIMio",
+    "date": "2026-10-29",
+    "text": " and paste the setup prompt to your agent (Claude Code, Codex, or any assistant that can run commands) Currently supports Claude / OpenAI / Gemini / DeepSeek / xAI / OpenRouter, any OpenAI-compatible API, and local models through Ollama or LM Studio It's free and open source (MIT), for macOS 14 or later Friends who are interested are welcome to try it out and give feedback For any suggestions, you can click \"Send Feedback\u2026\" in the menu to tell me, or leave a comment Building for myself. Releasing for others. https://github."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50278579",
+    "author": "m132",
+    "date": "2026-10-28",
+    "text": "Please tell me the rounded corners at the bottom of the screen are just for the effect and they aren't actually physically like that. This would be worse than the current notch, you can even see them clipping the text in the LM Studio picture."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50264925",
+    "author": "dchuk",
+    "date": "2026-10-27",
+    "text": "Just tried both the Omni model and the text only model, both as mlx versions, in lm studio omlx and rapid mlx, none of them could actually fire the model up, kept saying safetensors cant be read (yes I realize Claude should hear this not this thread)."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50253704",
+    "author": "dofm",
+    "date": "2026-10-27",
+    "text": "l work, Gemma 4 12B is really impressive. (I mostly use Muse Glimmer but it might be rather slow on an M1 Pro) If you want to have the space to learn the terminology, tinker with what you can control etc., then you have three easy options: LM Studio, Unsloth Desktop or the llama.cpp native Mac app. But don\u2019t get put off by the llama.cpp command line; most of these tools are running it behind the scenes, and most entries on Hugging Face have recommended parameters. MLX is an option but so far I haven\u2019t found it to have an ed"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50242615",
+    "author": "dofm",
+    "date": "2026-10-26",
+    "text": "Just last night I noticed that one tiny thing LM Studio has over the otherwise absolutely glorious Unsloth Desktop is that transcripts print really nicely out of the app."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50134094",
+    "author": "jdgoesmarching",
+    "date": "2026-10-17",
+    "text": "Note that the model discussed in this article isn\u2019t available in this app running on the phone. Still, it has some good local options like Gemma 4 and can link to the desktop LM Studio app which is cool."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50113436",
+    "author": "vivzkestrel",
+    "date": "2026-10-16",
+    "text": "- anyone knows a decent local model compatible with lm studio or anything for that matter capable of reverse engineering executable files (aka decompile / disassemble)"
+   }
+  ]
+ },
+ {
+  "name": "Unsloth",
+  "url": "https://unsloth.ai",
+  "score": 56.0,
+  "github_stars": 79152,
+  "top_hn_story": {
+   "title": "Unsloth Studio",
+   "points": 388,
+   "id": "47414032",
+   "url": "https://unsloth.ai/docs/new/studio"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50374298,
+    "author": "dofm",
+    "text": "1) none 2) Local LLMs on an M1 Max (Unsloth, LM Studio, occasionally direct llama.cpp). Muse Glimmer (because it is good at what it is optimised for: interactive coding sessions). Qwen 3.8 27B occasionally and a couple of other things for fun (an LFM MoE, experimenting with Nemotron Bolt 74B-9B, enjoyi"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45775717,
+    "author": "dust42",
+    "text": "I usually use unsloth quants, in this case https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-... - the Q4_K_M variant. On 128GB I would definitely run a larger model, probably with ~10B active parameters. All depends how many tokens per second is comfortable for you. To "
+   },
+   {
+    "src": "ask_hn",
+    "id": 45777371,
+    "author": "dennemark",
+    "text": "h context length. My models stop or go into infinite loop after some messages. But then i often start a new chat. Lemonade-server runs with llama.cpp, vllm seems to be scaling better thoug, but is not so easy to set up. Unsloth GGUFs are great resource for models. Also for Strix Halo check out kyuz0 repositorIES! Also has image gen. I didnt try those yet. But the benchmarks are awesome! Lots to learn from. Framework forum can be useful, too. https://github.com/kyuz0/amd-strix-halo-t"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46843700,
+    "author": "ineedasername",
+    "text": " just about build such a system for $2500, but the ram along probably adds another $2k onto that now. Nvidia dgx boxes and similar setups with 256gb unified ram can probably manage it more slowly ~1-2 tokens per second. Unsloth has the quantized models. I\u2019ve test Kimi though don\u2019t have quite the headroom at home for it, and I don\u2019t yet see a significant enough difference between it and the Qwen 3 models that can run in more modest setups: I get a highly usable 50 tokens per second o"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50400728",
+    "author": "UncleOxidant",
+    "date": "2026-11-07",
+    "text": "I'm using it in opencode through llama-swap. Here's the gufo command: gufo serve 1lm \\ -m /mnt/LLMs/models/unsloth/Qwen3.8-Flash-Next-GGUF/UD-104_XS/Qwen3.8-Flash-Next-UD-1Q4_XS-80081-0f-00083.gguf \\ --served-model-name Quen3.8-Flash-Next-UD-104_XS \\ --host 127.8.8.1 --port 10083 \\ -c 262144 -n 16384 -j 1 \\ --prefill-chunk 8192 \\ --speculative mtp \\ --mtp-model /mnt/LLMs/models/unsloth/Qwen3"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50397648",
+    "author": "dofm",
+    "date": "2026-11-06",
+    "text": " say a 48GB-unified RAM unified machine) gets you Qwen 3.8 27B at a good adaptive Q4, maybe Q5. Muse Glimmer at Q4 and Q5, etc. These models can code well enough in an agentic way, I find, and the chat-to-assistant scenario is just fine in Unsloth Desktop or LM Studio. A slightly lighter harness helps; a lighter system prompt is entirely possible, especially for Muse Glimmer, which is post-trained so effectively for agentic helper tasks that it barely seems to need a system prompt at all except for a \"plan\" mode. Tool use"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50386477",
+    "author": "selcuka",
+    "date": "2026-11-06",
+    "text": "SSD offloading [1]: > Unsloth Desktop + llama.cpp enables ~3x faster DeepSeek-V4.1 inference than other CPU/VRAM/ngram repos. DeepSeek and runs locally on 128GB+ RAM setups or 64GB RAM (slower). [1] https://unsloth.ai/docs/models/deepseek-v4.1-flash "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50374909",
+    "author": "latentsea",
+    "date": "2026-11-05",
+    "text": "t, and less harness engineering will be needed for the same results, and an equivalent amount of harness engineering tuned for the updated models weaknesses will produce results much closer to current SOTA. I was also pretty stunned to see Unsloth's IQ1_M quants of Deepseek v4.1 Flash 1017 held up too. Even that has become runnable locally. It's truly a new era. https://unsloth.ai/docs/models/deepseek-v4.1-flash "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50374298",
+    "author": "dofm",
+    "date": "2026-11-05",
+    "text": "1) none 2) Local LLMs on an M1 Max (Unsloth, LM Studio, occasionally direct llama.cpp). Muse Glimmer (because it is good at what it is optimised for: interactive coding sessions). Qwen 3.8 27B occasionally and a couple of other things for fun (an LFM MoE, experimenting with Nemotron Bolt 74B-9B, enjoying the really super "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50373621",
+    "author": "electroglyph",
+    "date": "2026-11-05",
+    "text": "semi-related: https://unsloth.ai/docs/get-started/reinforcement-learning-r... i personally do finetuning in FP16 because then the LoRA merge at the end has less rounding error. for most models it's lossless as well (when coming from a BF16 source), it's very quick to scan the weights and make sure they're al"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50365264",
+    "author": "999900000999",
+    "date": "2026-11-04",
+    "text": " eventually. Long after RTX Spark laptops flop and can be purchased for half off. Last night I pulled out my 5070TI laptop and installed CachyOS. I was running various models within about 20 minutes. That 12GB of VRAM is a hard limitation, Unsloth can't split jobs between vram and system memory."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50358321",
+    "author": "davidetroiani",
+    "date": "2026-11-03",
+    "text": "rint compared to Strata with the same model on this machine. Currently the project is an open-source alpha, I am still optimizing and adding support to more model architectures. Currently tested models are Qwen 3.8 FN and Qwen 3.6 35B A3B (Unsloth\u2019s Q6) that runs at 400+ t/s in prefill. The project is called MoEShift and I\u2019d love to see how it performs on your Macs: you can share the benchmark as a GitHub issue using the benchmark runner that I prepared. Of course technical feedback is much appreciated. Link to source cod"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50355286",
+    "author": "bitexploder",
+    "date": "2026-11-03",
+    "text": " https://github.com/bitexploder/fnfl-v100 -- I am still fixing the odd bug in it and it is really specific to ISTA IQ3_XXS and Unsloth UD4_K_XL in terms of what I have built. Some of the smaller benchmark data is out of date, like I think I got 32GB MoE cache V100 up to about 700-1000pps."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50348526",
+    "author": "1broseidon",
+    "date": "2026-11-03",
+    "text": "I\u2019ll check it out. I tried the unsloth version but it couldn\u2019t handle anything larger than an 8k context window unless I used a 2 or 3 bit quant"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50342930",
+    "author": "shaikihsan38",
+    "date": "2026-11-02",
+    "text": "ling to relocate: open for discussions Technologies: Python, C, SQL, OpenCV, LangChain, LangGraph, LangSmith, DeepEval, MCP (Model Context Protocol), AI Agents, Agentic AI, LoRA/QLoRA, Langfuse, Docling, AutoGen, Ollama, CrewAI, vLLM, TGI, Unsloth, LLMs, VLMs, Fine-tuning, Prompt Engineering, Context Engineering, RAG, Multi-Agent Orchestration, OCR, NLP, A2A (Agent-to-Agent Protocol), Vector Search, Model Deployment, Model Hosting, Kubernetes, CI/CD (GitHub Actions), FastAPI, Docker, Linux, Git, GitHub, AWS, Alibaba Cloud"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50335987",
+    "author": "mrkeen",
+    "date": "2026-11-02",
+    "text": "I've always been skeptical about \"unified memory\" vs VRAM. But my memory isn't great, so I tried to measure it right now, and see if a tiny model was as slow as I remember. llama-ui on unsloth/Llama-3.2 3B Instruct: > hello Runtime info Current time is 2026-11-02T13:00:18+01:00 Runtime info Current time is 2026-11-02T13:00:19+01:00 Runtime info Current time is 2026-11-02T13:00:21+01:00 Runtime info Current time is 2026-11-02T13:00:23+01:00 There is not enough informat"
+   }
+  ]
+ },
+ {
+  "name": "Lemonade",
+  "url": "https://lemonade-server.ai",
+  "score": 44.9,
+  "github_stars": 6140,
+  "top_hn_story": {
+   "title": "Lemonade by AMD: a fast and open source local LLM server using GPU and NPU",
+   "points": 572,
+   "id": "47612724",
+   "url": "https://lemonade-server.ai"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 45777371,
+    "author": "dennemark",
+    "text": "I have AMD Strix Halo (395) on my work laptop (HP Ultrabook G1A) as well as at home with Framework Desktop. On both i have setup lemonade-server on system start. At work i use Qwen3 Coder 30B-3A with continue.dev. It serves me well in 90% of cases. At home i have 128GB RAM. I try a bit GPT120B. I host Open WebUI on it and connect via https and wireguard to it, so i can use it as PWA on my phone"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48860702,
+    "author": "data-ottawa",
+    "text": "Tmux with vim as a 50% split, I\u2019ll run an agent in a quarter split. I have neovim hooked up to a local llama.cpp (through lemonade) for completion, but I have not found a plugin that I\u2019m happy with. Avante is probably the closest because you can give inline instructions, but it both got very very heavily and stopped working with small LLMs so I uninstalled it. I\u2019m using minuet currently."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50158123,
+    "author": "flir",
+    "text": "nspect in detail. I realise this is heresy, but my conclusion is that unit tests aren't important any more. E2E testing on the other hand... (I'm agreeing with you about the quality of LLM tests, I'm just trying to make lemonade out of all these LLMons)."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49021527",
+    "author": "esseph",
+    "date": "2026-07-23",
+    "text": "> A reasonable use case is to have multiple smaller models loaded- you can have an image generation model loaded along with the text model. Lemonade server updated yesterday for an Arena model / ai routing. --- The Lemonade local AI server allows easily deploying LLM workloads across Ryzen AI NPUs, Radeon GPUs, and CPUs with ease under both Windows and Linux. The most significant change with Lemonade 11.5 is the completion o"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48547902",
+    "author": "jderekw",
+    "date": "2026-06-15",
+    "text": "Running AMD Lemonade as the daily rig, Started with Ollama then over to LMStudio and now standardized on AMD Lemonade which has been helpful to monitor cRAM, CPU, GPU and gRam. The multi-models on Lemonade make it straight forward to run a stack for LLM, Voice to Text, NPU, and Image Generation. Pla"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47940724",
+    "author": "canucker2016",
+    "date": "2026-04-28",
+    "text": "s say 10x, but the article mentions an almost 100MB drop in size to less than 10MB for macos/windows. For Linux, they suggest using the web ui instead of the appimage. see https://www.phoronix.com/forums/forum/phoronix/latest-phoron... AMD Lemonade - https://lemonade-server.ai/ One local service for every modality. Point your app at Lemonade and get chat, vision, image gen, transcription, speech gen, and more with standard APIs. "
+   },
+   {
+    "src": "hn_comment",
+    "id": "47615275",
+    "author": "buildbot",
+    "date": "2026-04-02",
+    "text": "It\u2019s a community project supported and sponsored by AMD according to their GitHub; https://github.com/lemonade-sdk/lemonade AMD employees work on it/have been making blog posts about it for a bit."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47615273",
+    "author": "hombre_fatal",
+    "date": "2026-04-02",
+    "text": "> You can reach us by filing an issue, emailing lemonade@amd.com Found this on the github readme."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49915889",
+    "author": "esseph",
+    "date": "2026-09-30",
+    "text": "> completely offtopic but is rolling with rocm worth it? It's so fucking easy. From AMD: https://lemonade-server.ai/ Then you can easily throw a openweb-ui container in front, and then connect to the openweb-ui via your mobile app of choice (if you want chat, otherwise you just point your harness of choice at the lemonade server api endpoint)."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49602917",
+    "author": "SomeHacker44",
+    "date": "2026-09-07",
+    "text": "Please share what operating system and model runtime you use? I have two and don't get close to that with AMD's own Lemonade. Thanks!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49272782",
+    "author": "lhl",
+    "date": "2026-08-12",
+    "text": "For updated/validated updates, Donato Capitella maintains independent Strix Halo \"toolboxes\": https://strix-halo-toolboxes.com/ A team from AMD maintains Lemonade, another all-in-one setp with convenient installers for setting everything up: https://lemonade-server.ai/ These are probably better than running against llama.cpp ROCm directly as there are frequent/constant regressions on the main branch, especially for gfx1151 (Strix Halo), b"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48805978",
+    "author": "syntaxing",
+    "date": "2026-07-06",
+    "text": "I have another strix halo that I got for half the price (before this price increase world wide). AMD making lemonade is one of the best reasons to get a strix halo. Lemonade + qwen3.6 35B MTP @ Q8_0 + anythingLLM (in docker) replaced 90%+ of my AI usage. And it\u2019s fully local! Setting everything up took less than 3 hours total, including installing the OS https://lemonade-server.ai/ "
+   },
+   {
+    "src": "hn_comment",
+    "id": "47821988",
+    "author": "seemaze",
+    "date": "2026-04-19",
+    "text": "Check out the officially supported project Lemonade[0] by AMD. It has gfx1151 specific builds of vLLM, llama.cpp, comfy-ui, and even a PR to merge a Strix Halo port of Apple\u2019s MLX[1] with a quick and easy install. [0] https://www.amd.com/en/developer/resources/technical-article... [1] https://github.com/lemonade-sdk/lemonade/issu"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47790404",
+    "author": "opem",
+    "date": "2026-04-16",
+    "text": "There is also lemonade-server from AMD. Although I am not sure if that is any better."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47435057",
+    "author": "nl",
+    "date": "2026-03-19",
+    "text": "I believe Lemonade is the AMD team right? But yes I agree with you about their lack of prioritization for software!"
+   }
+  ]
+ },
+ {
+  "name": "SGLang",
+  "url": "https://github.com/sgl-project/sglang",
+  "score": 42.2,
+  "github_stars": 38559,
+  "top_hn_story": {
+   "title": "DeepSeek-V4 on Day 0: From Fast Inference to Verified RL with SGLang and Miles",
+   "points": 80,
+   "id": "47905768",
+   "url": "https://www.lmsys.org/blog/2026-04-25-deepseek-v4/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 43962492,
+    "author": "rfoo",
+    "text": "eds of milliseconds (if not seconds) on local hardware, making 100ms of network latency irrelevant. Even for a 7B model your expensive Mac or 4090 can't beat, for example, a box with 8x A100s running FOSS serving stack (sglang) with TP=8, in latency."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50390743",
+    "author": "rahulk789",
+    "date": "2026-11-06",
+    "text": "ng to relocate: Yes Technologies: Kubernetes, Rust, Go, Python, eBPF, Terraform, ArgoCD, CRIU, Linux, AWS (EKS, Karpenter), GCP, Slurm, Helm, Prometheus, Grafana, C/C++, TypeScript, SQL, OpenTelemetry, Postgres, CUDA/GPU infra (H100, vLLM, SGLang), NixOS R\u00e9sum\u00e9/CV: https://rahulk789.github.io (Feel free to email me or message me on Linkedin!) Email: base64 encoded :) cmFodWwudS5pbmRpYUBnbWFpbC5jb20= LinkedIn: https://www.linkedin.com/in/rahulk789/ DevOps/Software Engineer with 3+ years of experience, previously at Cedana"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50347893",
+    "author": "azterizm",
+    "date": "2026-11-03",
+    "text": "Location: Hyderabad, Pakistan (UTC+5) Remote: Yes Willing to relocate: No Technologies: Python, TypeScript, Node.js, SGLang, PyTorch, OpenAI, Anthropic and Gemini APIs, RAG, Remix, Prisma, Redis, SQLite R\u00e9sum\u00e9/CV: https://azterizm.com/Abdullah_Memon_CV.pdf Email: abdullah@azterizm.com My verifier catches wrong statements in LLM answers as they are written. It checks each sentence against its source a"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50339429",
+    "author": "qaisermehdi",
+    "date": "2026-11-02",
+    "text": "Location: India Remote: Yes Willing to relocate: No Technologies: vLLM, SGLang, Prometheus /metrics, Python, GPU benchmarking (T4, L4, L40S, RTX 3090, A100) R\u00e9sum\u00e9/CV: https://github.com/qaisermehdi3-coder Email: qvunexaudit@gmail.com Looking for fixed-price contract work: I measure what self-hosted LLM inference really costs. GPU cost per request at your "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50330586",
+    "author": "rajveerb",
+    "date": "2026-11-01",
+    "text": " using open weights models. It beats OpenAI, Google, xAI, and Phonic on \u03c4\u00b3-Voice task completion. Avartha\u2019s optimized inference stack supports up to 10x more concurrent conversations per GPU than SOTA open-source inference engines vLLM and SGLang. Spun out of Georgia Tech, Avartha\u2019s first release, Ava Zero, achieves 86% task completion at just $2.50 per conversation hour."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50301079",
+    "author": "himata4113",
+    "date": "2026-10-30",
+    "text": "depends on how they're spliced, they have to be tuned for each configuration as there is no silver bullet. It also requires customizations to sglang/vllm to get it working in the first place so it's definitely pretty involved. However, it's still cheaper than obtaining more gpus."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50293282",
+    "author": "formerly_proven",
+    "date": "2026-10-29",
+    "text": "Open weight models are kind of weird because they're usually just a bunch of weights and maybe a chat template, not even test vectors or anything. Quite odd, and probably one of the reasons why vllm, sglang, the llamas etc. so often produce buggy output. It's actually quite strange how little attention is given to verifying these setups work."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50260933",
+    "author": "himata4113",
+    "date": "2026-10-27",
+    "text": "This is entirely self inflicted as SGLang is optimized for (near) maximum performance. Another issue is that this is dealing with a device driver rather than system memory which rust has very little control over, as in there is no native implementation in rust that allows you to address multiple-memory buffers. Think ho"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50259277",
+    "author": "paimapi",
+    "date": "2026-10-27",
+    "text": "Did we read different articles? None of the issues they brought up (architecture splitting, memory transport, Cloudflare's misconfigured context window provisioning, the SGLang state leak, lack of client error provisioning) are model related. These all exist at the layer of the harness (ie Cloudflare's configuration). A better title would be \"Cross-request KV cache exposure in Cloudflare provisioned GLM-5.3 Workers AI model\" because it narrows culpabil"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50255946",
+    "author": "robrenaud",
+    "date": "2026-10-27",
+    "text": "I was surprised in reading the article that it had nothing to do with the contents of the model. It could have been any model capable of 1M context that triggered this bug/misconfig on Cloudflare/SGLangs side. The title is extremely misleading."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50254683",
+    "author": "octoberfranklin",
+    "date": "2026-10-27",
+    "text": "Upshot: even though sglang is written in Rust, they still got burned by undefined behavior from uninitialized memory."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50254246",
+    "author": "XYen0n",
+    "date": "2026-10-27",
+    "text": "I have read this post, and it appears that this is indeed an issue specific to the GLM 5.3 model on their platform. I am unsure whether this is because only GLM 5.3 uses SGLang or because only its configuration is problematic."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50253891",
+    "author": "jacquesm",
+    "date": "2026-10-27",
+    "text": "Which is pointing the finger at Sglang, who also weren't responsible for this. At a minimum someone should have realized during testing that their utilization figures are off by 40%. A much better title would be \"Cloudflare configuration error leaked data between user sessions\""
+   }
+  ]
+ },
+ {
+  "name": "llama-swap",
+  "url": "https://github.com/mostlygeek/llama-swap",
+  "score": 33.3,
+  "github_stars": 6205,
+  "top_hn_story": {
+   "title": "Llama-swap: Reliable model swapping",
+   "points": 2,
+   "id": "47354939",
+   "url": "https://github.com/mostlygeek/llama-swap"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 45772938,
+    "author": "lreeves",
+    "text": "I sometimes still code with a local LLM but can't imagine doing it on a laptop. I have a server that has GPUs and runs llama.cpp behind llama-swap (letting me switch between models quickly). The best local coding setup I've been able to do so far is using Aider with gpt-oss-120b. I guess you could get a Ryzen AI Max+ with 128GB RAM to try and do that locally but non-nVidia hardware is incredibly slow fo"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45775707,
+    "author": "neilv",
+    "text": " https://github.com/mostlygeek/llama-swap "
+   },
+   {
+    "src": "ask_hn",
+    "id": 45777371,
+    "author": "dennemark",
+    "text": " it and connect via https and wireguard to it, so i can use it as PWA on my phone. I love not needing to think about where my data goes. But i would like to allow parallel requests, so i need to tinker a bit more. Maybe llama-swap is enough. I just need to see how to deal with context length. My models stop or go into infinite loop after some messages. But then i often start a new chat. Lemonade-server runs with llama.cpp, vllm seems to be scaling better thoug, but is not so easy to se"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50400728",
+    "author": "UncleOxidant",
+    "date": "2026-11-07",
+    "text": "I'm using it in opencode through llama-swap. Here's the gufo command: gufo serve 1lm \\ -m /mnt/LLMs/models/unsloth/Qwen3.8-Flash-Next-GGUF/UD-104_XS/Qwen3.8-Flash-Next-UD-1Q4_XS-80081-0f-00083.gguf \\ --served-model-name Quen3.8-Flash-Next-UD-104_XS \\ --host 127.8.8.1 --port 10083 \\ -c 262144 -n 16384 -j 1 \\ --prefill-chun"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50342108",
+    "author": "selicos",
+    "date": "2026-11-02",
+    "text": "o have to restart the model every so often as Copilot Chat in VS Code starts failing. I have also run Lemonade, llama.cpp directly, vllm, and more. Custom or bespoke runtimes for your hardware are key, like Srata or GUFO. I need to look at llama-swap. LM Studio is easy and with their Tailscale backed link feature you can stay connected from any device. IF it supports OpenAI/etc back end you're mostly there. Get the model running and connect from your preferred harness/etc. GUFO works well with Copilot Chat in VS Code. I need"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49836240",
+    "author": "LeBit",
+    "date": "2026-09-24",
+    "text": "I use the following models: - Qwen3.5 9B - Qwen3.6 35B A3B - Qwen3.8 27B - Gemma 4 26B A4B - Gemma 31B - Muse Glimmer 30B I have 48G. The MacMini is used solely for inference. llama.cpp + llama-swap. People are saying local models are crap and serves no purposes. I use them to help me spell check, write emails, write text messages, write JIRA tickets, write PR comments, etc. I also use them in coding agents to complete different tasks. I find them quite useful!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49531302",
+    "author": "hkchad",
+    "date": "2026-09-02",
+    "text": "What do you want to know? Just start llama-swap with the models i have downloaded, add llama-swap as a provider in bifrost, expose the models you want and they become available in one single endpoint you can use in anything like opencode, openwebui or anything that speaks openai."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49531224",
+    "author": "brettdav",
+    "date": "2026-09-02",
+    "text": "Can you share a bit more about your bifrost and llama swap setup? I\u2019m facing memory constraints and am looking for a managed model solution that will help with hot swapping loaded models and stay-warm concurrency. Ideally with prioritization."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49530083",
+    "author": "hkchad",
+    "date": "2026-09-02",
+    "text": "I run a similar setup to the one he described on similar hardware. I run bifrost and llama swap though (tailscale rocks). My local model usage is for some out of band batch processing one of my personal apps uses. Basically a personalized recommender for media, it curates stuff for me based on a database i've compiled over years, so non-interactive. For that use case, I do"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49513137",
+    "author": "gcoakes",
+    "date": "2026-08-31",
+    "text": "I have a RX 9070 also. I run llama-swap with a fill-in-middle 7B model, local 9B model, and it proxies up to OpenRouter for the bigger stuff. I think that's where the sweet spot is right now. I've spent $2 in the last 2 weeks on OpenRouter. I've been trying to only use the medium sized models that I would otherwise be"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49276185",
+    "author": "cptskippy",
+    "date": "2026-08-12",
+    "text": "oes mean you're more likely to incur a load penalty for any request. I generally use the same two models for my agentic workloads and they sit comfortably next to one another in the 32GB of VRAM on my GPU. If I need to load a larger model, llama-swap can easily eject both models if necessary."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49275520",
+    "author": "tredre3",
+    "date": "2026-08-12",
+    "text": "If you can get away with it, you really should stick to llama-server alone. When they added support the ability to load multiple models + an idle timeout to unload them, it finally did it for me. Adding llama-swap adds a fair amount of complexity that is unpleasant to debug and its documentation isn't very good (the only real doc is the sample config file)."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49275333",
+    "author": "cptskippy",
+    "date": "2026-08-12",
+    "text": "The router mode and matrix routing in llama.cpp is still early days and it can't easily juggle multiple models as easily as llama-swap so there's still benefits if you're using 24-32GB cards that can run multiple models simultaneously. The gulf is quickly shrinking though and it seems like the need for llama-swap will disappear soon."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49275239",
+    "author": "asveikau",
+    "date": "2026-08-12",
+    "text": "election of models on the \"ollama store\" was pretty stale, and gguf models on huggingface are technically downloadable but don't work as well. The \"friends don't let friends use ollama\" article linked in another comment convinced me to try llama-swap. I find it easier to directly deal with gguf files. Hard to quantify, but the outputs of the LLM seem better too. Asking the same gguf the same question with the same chat harness, I subjectively find llama.cpp does better. Might be some different defaults. I haven't dug deeply."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49275100",
+    "author": "cptskippy",
+    "date": "2026-08-12",
+    "text": "There are tools like llama-swap that make this pretty bullet proof and offer an OAI style API and compatibility for local Agents. I've been running flavors of OpenClaw and Hermes exclusively on local models hosted this way. https://github.com/mostlygeek/llama-swap "
+   }
+  ]
+ },
+ {
+  "name": "Apfel",
+  "url": "https://github.com/Arthur-Ficial/apfel",
+  "score": 30.5,
+  "github_stars": 6592,
+  "top_hn_story": {
+   "title": "Show HN: Apfel \u2013 The free AI already on your Mac",
+   "points": 743,
+   "id": "47624645",
+   "url": "https://apfel.franzai.com"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "49697527",
+    "author": "Telemakhos",
+    "date": "2026-09-14",
+    "text": "Apfel filled that role: $ apfel \"List the files in this folder.\" https://apfel.franzai.com/ "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49435618",
+    "author": "lucky_cloud",
+    "date": "2026-08-25",
+    "text": "They already do: https://developer.apple.com/documentation/foundationmodels/s... Also see: https://apfel.franzai.com "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49281513",
+    "author": "figmert",
+    "date": "2026-08-13",
+    "text": "Appel has, and it can be used. Apfel[0] has exposed it as a CLI: $ apfel \"What is the capital of Austria?\" The capital of Austria is Vienna. [0] https://apfel.franzai.com/ "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48895516",
+    "author": "satvikpendem",
+    "date": "2026-07-13",
+    "text": "It's a local model so it's essentially open weight such that you could feasibly export it somehow since it's already on the laptop somewhere. Apfel is a wrapper app like ChatGPT but using Apple Foundation Models, I assume something similar will happen with this transcription model. https://apfel.franzai.com/ "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48856639",
+    "author": "ikari_pl",
+    "date": "2026-07-10",
+    "text": "one. apfel."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48509522",
+    "author": "dofm",
+    "date": "2026-06-12",
+    "text": " the whole VM environment anyway and I'm on Sequoia. But I'd be interested if you did anything like that with Apple's container CLI instead; sooner or later I will have to upgrade to Tahoe because I want to play with the container CLI (and apfel)."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48460807",
+    "author": "mark_l_watson",
+    "date": "2026-06-09",
+    "text": "Thanks apfel looks useful! I have been experimenting with Apple's foundation models for almost a year and they are useful for embedded applications. I have been taking a deeper dive into local agentic coding tools (starting with 'little-coder --model ollama/gemma4:12b-it-qat') and I put toge"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48458230",
+    "author": "franze",
+    "date": "2026-06-09",
+    "text": "fm serve - \"Start a Chat Completions API server\" chat completion is openai's api surface name. but only when it is actually available we will see if it's a clean drop-in vs. just \"chat-completions-ish\". one of my learnings from apfel is that is is very easy to get a kinda openAI api compatible server, and a lot of work to get it really totally compatible. sometimes i wonder if even the openai implementation of openai's api is openai api compatible to the core...."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48457994",
+    "author": "franze",
+    "date": "2026-06-09",
+    "text": "did miss it until now, cool to see it on device and first party. as soon as it lands I will see the impact on apfel. but i definitely feel flattered, either my little project inspired them or that I reached the same conclusion at a similar time as a team at apple that \"hey, this is totally missing\""
+   },
+   {
+    "src": "hn_comment",
+    "id": "48457423",
+    "author": "dofm",
+    "date": "2026-06-09",
+    "text": "dpoint in Core AI, even if just as a testing tool? I am. I also really want to hear more about their containerisation/seatbelt strategy now that they are offering MCP support. Not seen any news about Darwin inside their containers system. (Apfel is a cool project; it\u2019s been the only thing tempting me to upgrade to Tahoe)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48453237",
+    "author": "crancher",
+    "date": "2026-06-08",
+    "text": "Apfel is very useful, thanks for the effort."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48453228",
+    "author": "franze",
+    "date": "2026-06-08",
+    "text": "i am more excited about the ondevice foundation model update that is coming https://developer.apple.com/documentation/updates/foundation... (not much info yet) but i maintain https://github.com/Arthur-Ficial/apfel so i might be biased"
+   }
+  ]
+ },
+ {
+  "name": "KoboldCpp",
+  "url": "https://github.com/LostRuins/koboldcpp",
+  "score": 22.9,
+  "github_stars": 12189,
+  "top_hn_story": {
+   "title": "KoboldCPP: Run GGUF Models Easily with a KoboldAI UI. One File. Zero Install",
+   "points": 3,
+   "id": "48704726",
+   "url": "https://github.com/LostRuins/koboldcpp"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50252072",
+    "author": "jrm4",
+    "date": "2026-10-26",
+    "text": "Fwiw, I'm liking the koboldcpp \"ecosystem\", including koboldlite; basically it's letting me try a little of everything, though there may be something of a \"jack of all trades master of none\" thing going on. But it has these nice little presets for, e.g. llms, voice, music, images, a \"chatgpt\"-esque interfa"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50131229",
+    "author": "Dwedit",
+    "date": "2026-10-17",
+    "text": "ult token from a list of tokens and their probabilities. It's not a situation like cryptography where you need secure random numbers. Just traditional and simple RNGs (seeded using the system clock) are useful enough for this task. For the koboldcpp/llama.cpp example, there is a setting where you can change the initial RNG value. It says \"seed\" in sampler settings. Set it to any constant besides 0 and you get consistent behavior."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50115398",
+    "author": "Dwedit",
+    "date": "2026-10-16",
+    "text": "Given the same text input, same hardware type (inference on CPU vs on GPU), and same RNG seed , you will get the same exact output. That is deterministic. That was from when I was testing out someone's claim that koboldcpp got less smart in a newer release, but I was reproducing the exact same output across different versions of the program."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49732549",
+    "author": "carlos_rpn",
+    "date": "2026-09-16",
+    "text": "Qwen 3.6 did the same thing for me. Only after some cajolling it finally went to check the history I asked it to (I had been testing KoboldCPP's web search)."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49331805",
+    "author": "refsab",
+    "date": "2026-08-17",
+    "text": "Should be more? I envisioned the user of this as kind of local koboldcpp or lmstudio users with limited resources"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48878731",
+    "author": "whs",
+    "date": "2026-07-12",
+    "text": "ng for similar distributed computing style LLM, and I found AI Horde and a few other smaller efforts like one from Aphrodite people and distributed training from Nous Research. AI Horde seems to be the biggest of them all. Their API speaks KoboldCPP text completion (not even chat completion). It seems that the community (or at least the active people) strongly prefer it this way because the API exposes more tunables than chat completions, which for roleplay use seems to result in better result. I don't know what else you"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48678407",
+    "author": "Eisenstein",
+    "date": "2026-06-25",
+    "text": "Rolling build of Koboldcpp now supports Krea2: * https://github.com/LostRuins/koboldcpp/releases/tag/rolling Model weights: * https://github.com/leejet/stable-diffusion.cpp/blob/master/d... In the launcher GUI, select 'Image Gen' and set Krea2 Turbo gguf as the image model, Qwen3 VL 4b gguf as the T5 m"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48671374",
+    "author": "Eisenstein",
+    "date": "2026-06-25",
+    "text": "Koboldcpp supports image generation, but you will have to wait for the next release for Krea2 support. * https://github.com/LostRuins/koboldcpp "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48207263",
+    "author": "rayboy1995",
+    "date": "2026-05-20",
+    "text": "I'm running Qwen 3.6 27B Q5 K M GGUF on a Tesla P40 and koboldcpp using pi.dev as the harness, I gotta say I am impressed. Took some setup and configuring but I already have some code it has made commited and pushed. It can be slow on my hardware at >50k tokens, but the fact I bought this one P40 for like $150 back when the LLM trend starte"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47794099",
+    "author": "Eisenstein",
+    "date": "2026-04-16",
+    "text": "Check out Koboldcpp. The dev has a specific philosophy about things (minimal or no dependencies, no installers, no logs, don't do anything to user's system they didn't ask for explicitly) that I find particularly agreeable. It's a single exec and includes the kitchen sink so there is no excuse n"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47791841",
+    "author": "JKCalhoun",
+    "date": "2026-04-16",
+    "text": "\"LM Studio\u2026 Jan\u2026 Msty\u2026 koboldcpp\u2026\" Plenty of alternatives listed. Can anyone with experience suggest the likely successor to Ollama? I have a Mac Mini but don't mind a C/L tool. I think, as was pointed out, Ollama won because of how easy it is to set up, pull down new models. I would expect similar for a rep"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47791110",
+    "author": "Eisenstein",
+    "date": "2026-04-16",
+    "text": "Koboldcpp is a single executable with a GUI launcher and a built in webui. It also supports tts, stt, image gen, embeddings, music creation, and a bunch of other stuff out of the box, and can download and browse HF models from within the GUI. That's pretty easy to use."
+   }
+  ]
+ },
+ {
+  "name": "Jan",
+  "url": "https://jan.ai",
+  "score": 22.5,
+  "github_stars": 45561,
+  "top_hn_story": {
+   "title": "I stopped using LM Studio once I found this (Jan.ai) open-source alternative",
+   "points": 1,
+   "id": "47882655",
+   "url": "https://www.makeuseof.com/stopped-using-lm-studio-found-open-source-alternative/"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50129192",
+    "author": "samuell",
+    "date": "2026-10-17",
+    "text": "force GTX 1660 6GB, and would like to see how far one could go even with such a crappy card. At least it was quite amazing to see the difference between CPU-based and even this crappy GPU-based inference when trying out some tiny models in jan.ai. It's still like orders of magnitude faster at least."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49703974",
+    "author": "fl0id",
+    "date": "2026-09-14",
+    "text": "just use unsloth or jan.ai or..."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48989516",
+    "author": "a3w",
+    "date": "2026-07-21",
+    "text": "jan.ai is the F/LOSS alternative to it. If you do want a gui."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48988998",
+    "author": "jsomedon",
+    "date": "2026-07-21",
+    "text": "I can't really tell why would I use this over like lm studio, jan.ai and such?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48983795",
+    "author": "philips",
+    "date": "2026-07-20",
+    "text": "There is also https://github.com/ml-explore/mlx-swift-lm which is what https://jan.ai uses."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48353798",
+    "author": "AnthonyR",
+    "date": "2026-06-01",
+    "text": "Maybe I am misunderstanding but I feel like https://www.jan.ai/ is similar and works great for me"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47964719",
+    "author": "rglullis",
+    "date": "2026-04-30",
+    "text": "Open WebUI or Jan ( https://www.jan.ai/ ). Work well with Ollama."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47797778",
+    "author": "4k93n2",
+    "date": "2026-04-16",
+    "text": "jan.ai would be the ideal route to take here then. its open source, has a simple chat interface, it uses llama.cpp, it lets you search for models and downloads them, and it supports .gguf so youre not locked in if you want to use the models with another program later on"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47789712",
+    "author": "mentalgear",
+    "date": "2026-04-16",
+    "text": "The reported alternatives seem pretty User-Friendly to me: > LM Studio gives you a GUI if that\u2019s what you want. It uses llama.cpp under the hood, exposes all the knobs, and supports any GGUF model without lock-in. > Jan( https://www.jan.ai/ ) is another open-source desktop app with a clean chat interface and local-first design. > Msty( https://msty.ai/ ) offers a polished GUI with multi-model support and built-in RAG. koboldcpp is another option with a web UI and extensive configuration options. API wise: LM St"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47517877",
+    "author": "jubilanti",
+    "date": "2026-03-25",
+    "text": "one else's GGUFs. The decentralized sync history part seems new? Not much else. But the advertisement copy is so insufferably annoying in how it presents this wrapper as a product. Have a comparison chart to Ollama, LMStudio, LocalAI, Exo, Jan.AI, GPT4ALL, PocketPal, etc."
+   },
+   {
+    "src": "hn_comment",
+    "id": "46801561",
+    "author": "jckahn",
+    "date": "2026-01-28",
+    "text": "Jan: https://www.jan.ai/ "
+   },
+   {
+    "src": "hn_comment",
+    "id": "46086856",
+    "author": "yakkomajuri",
+    "date": "2025-11-29",
+    "text": "In this case do you even need a RAG? Most models will have been trained on Wikipedia anyway. Give Jan ( https://www.jan.ai/ ) a try for instance. You'll need to do a bit of research as to what model will give you the best perf on your system but one of the quantized Llama or Qwen models will probably suit you well."
+   }
+  ]
+ }
+]

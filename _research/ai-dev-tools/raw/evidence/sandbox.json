@@ -1,0 +1,1442 @@
+[
+ {
+  "name": "Docker Sandboxes",
+  "url": "https://www.docker.com/products/docker-sandboxes/",
+  "score": 79.1,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Docker Sandboxes \u2013 Disposable, isolated sandboxes for AI agents",
+   "points": 694,
+   "id": "49239751",
+   "url": "https://www.docker.com/products/docker-sandboxes/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50370525,
+    "author": "warpspin",
+    "text": "Tried nono.sh but it seemed cumbersome. I think it lets the whole agent run in the sandbox, so whenever you need to change something, you have to restart the whole thing, if I remember right. Also tried Docker Sandboxes which worked fine during the try out but my trust in Docker products with regards to security is low in general, so I'd wanted to wait a bit whether problems show up. Then used Codex for the built-in sandbox but it's buggy like hell, documented features jus"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50374090,
+    "author": "thefunnyman",
+    "text": " can do some useful stuff like read my task board and publish draft PRs without a ton of overbearing permissions prompts. I usually chat with that for a bit on a task until it's plan sounds good then I have it spin up a Docker Sandbox microvm under Windows so it can safely run yolo mode and make all it's changes. When it's ready I carefully review and iterate on the result until it's ready to publish the PR. Bit kludgy but strikes a balance of safety and multitasking I'm comfortable with. "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50376308,
+    "author": "imafish",
+    "text": "I do basically the same. Have multiple Docker sandboxes where I let agents yolo. Must say I don't really love the setup. The workflow is not as frictionless as just opening Claude Code used to be."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50389999,
+    "author": "over190bpm",
+    "text": "Locally running Docker Sandboxes built with the --clone flag work pretty good for me so far. The naming is a bit confusing here: these are not containers, this is a completely separate product by Docker using MicroVM-s for sandboxing. Devex has been good and the isolation is pretty solid t"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50380849,
+    "author": "alentred",
+    "text": "My work is mostly just Claude Code and Codex, but always in a Docker Sandbox [1]. I find it almost the only reasonable way to run the harness safely, never run those on my laptop directly. I am now working on reproducing a similar setup in a cloud VM + LXC, as opposed to running it on my laptop. The idea is to be able to spawn and pro"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48458652,
+    "author": "tsilvapt",
+    "text": "igger desktop notifications when done; clicking a notification sends you to the correct desktop. I haven\u2019t used this in a while, so I\u2019m not sure it still works. https://github.com/tsilva/agentbox \u2014 Run agent CLIs inside Docker sandboxes. Project-level config defines sandbox access. I stopped using this once agents got better built-in approval mechanisms. https://github.com/tsilva/agentbridge \u2014 Use an agent CLI subscription as an OpenAI-compatible API server. https://github.com/tsilva/claud"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50398809",
+    "author": "thehamkercat",
+    "date": "2026-11-06",
+    "text": "fyi, docker sandbox is CLOSED SOURCE, in the year of our lord 2026 https://github.com/docker/sbx-releases "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50396691",
+    "author": "gregwebs",
+    "date": "2026-11-06",
+    "text": "This looks quite similar to docker sandbox (sbx). It uses Lima for VMs under the hood. Windows advertised as not supported (Lima is missing features on Windows). Like Docker Sandbox this meets what I think should be our standards in the AI age: kernel isolation and secret shielding in addition to network and disk isolati"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50389999",
+    "author": "over190bpm",
+    "date": "2026-11-06",
+    "text": "Locally running Docker Sandboxes built with the --clone flag work pretty good for me so far. The naming is a bit confusing here: these are not containers, this is a completely separate product by Docker using MicroVM-s for sandboxing. Devex has been good and the isolation is pretty solid this way, the big dow"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50380849",
+    "author": "alentred",
+    "date": "2026-11-05",
+    "text": "My work is mostly just Claude Code and Codex, but always in a Docker Sandbox [1]. I find it almost the only reasonable way to run the harness safely, never run those on my laptop directly. I am now working on reproducing a similar setup in a cloud VM + LXC, as opposed to running it on my laptop. The idea is to be able to spawn and provision disposable VM"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50376308",
+    "author": "imafish",
+    "date": "2026-11-05",
+    "text": "I do basically the same. Have multiple Docker sandboxes where I let agents yolo. Must say I don't really love the setup. The workflow is not as frictionless as just opening Claude Code used to be."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50374090",
+    "author": "thefunnyman",
+    "date": "2026-11-05",
+    "text": "dboxing set up so it can do some useful stuff like read my task board and publish draft PRs without a ton of overbearing permissions prompts. I usually chat with that for a bit on a task until it's plan sounds good then I have it spin up a Docker Sandbox microvm under Windows so it can safely run yolo mode and make all it's changes. When it's ready I carefully review and iterate on the result until it's ready to publish the PR. Bit kludgy but strikes a balance of safety and multitasking I'm comfortable with. IME most folks don't"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50370525",
+    "author": "warpspin",
+    "date": "2026-11-04",
+    "text": "Tried nono.sh but it seemed cumbersome. I think it lets the whole agent run in the sandbox, so whenever you need to change something, you have to restart the whole thing, if I remember right. Also tried Docker Sandboxes which worked fine during the try out but my trust in Docker products with regards to security is low in general, so I'd wanted to wait a bit whether problems show up. Then used Codex for the built-in sandbox but it's buggy like hell, documented features just do not work proper"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50343317",
+    "author": "levm38",
+    "date": "2026-11-02",
+    "text": " an agent actually works in production. This year I shipped two open-source projects: Cogentrex ( https://github.com/levalencia/cogentrex ) \u2014 an agent control plane built from first principles. Deterministic policy engine (allow/ask/deny), Docker sandbox with seccomp, HMAC-signed delegation, 100-scenario eval harness with drift detection, OpenTelemetry tracing. 1,205 tests. I studied 183 harness mechanisms across Claude Code, Codex, Pi, and DeepSeek and implemented 176 of them. Motes ( https://github.com/levalencia/motes ) \u2014 an "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50206665",
+    "author": "avsm",
+    "date": "2026-10-23",
+    "text": "I'm glad to hear that DfD's repo is still the pi\u00f1ata!!! Congrats on the Docker sandbox launch as well, great to see it integrated now."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50204659",
+    "author": "imafish",
+    "date": "2026-10-23",
+    "text": "How does it compare to docker sandbox? (That relies on microVMs)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50200978",
+    "author": "fennecbutt",
+    "date": "2026-10-22",
+    "text": "tuff is slow and disappointing but at least I can rejig it work in conjunction with other aws products. And if you're prepared to not use anthropic but any cloud provider for your infra then you can do whatever you like elsewhere. Just use docker sandbox or iron proxy to replicate network control/cred swapping (iron even does sigv4 re-signing)."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50200857",
+    "author": "fennecbutt",
+    "date": "2026-10-22",
+    "text": "shit even inside the container. Which is something I'm trying to lock down at work atm. Everything needs to go through a proxy, whitelisted domains only, plus credential swapping/re-signing so that the agent never has the real credentials. Docker sandbox looks quite good (September) but I've been using iron proxy (if the author is reading this, fucking thank you bro!) to great effect. I still haven't cracked \"what if the agent decides to drop parts of your codebase somewhere it shouldn't\" yet, but I'll figure it out."
+   }
+  ]
+ },
+ {
+  "name": "bubblewrap",
+  "url": "https://github.com/containers/bubblewrap",
+  "score": 73.7,
+  "github_stars": 9405,
+  "top_hn_story": {
+   "title": "Bubblewrap: A nimble way to prevent agents from accessing your .env files",
+   "points": 187,
+   "id": "46626836",
+   "url": "https://patrickmccanna.net/a-better-way-to-limit-claude-code-and-other-coding-agents-access-to-secrets/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50376030,
+    "author": "h45x1",
+    "text": "I wrote my own bash wrapper around bubblewrap and pasta: https://github.com/andrei-dubovik/jail The wrapper also keeps history, memory, etc. split by project folder, so agents working in different projects don't know each others' history. If anything, `--resume` is a split second easier."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50377284,
+    "author": "jbvlkt",
+    "text": "I use claude and codex inside bubblewrap sandbox. I have $20 subscription for both. I do not use IDE integration. My task for agents are mostly generating simple code, generating tests, code review and debugging of hard to setup issues. I mostly use weaker models on lower effort (sonnet or opus plan"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50379187,
+    "author": "tikkabhuna",
+    "text": "Claude code uses bubblewrap[1] to offer some isolation. I'd love to hear from others whether its a reasonable solution or not. [1] https://github.com/containers/bubblewrap "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50383403,
+    "author": "f53d",
+    "text": "I have also experienced this. Now I run Claude Code (or preferably Pi) inside a bubblewrap instance spawned and controlled by me that the agentic harness cannot disable by it's own choice."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50383344,
+    "author": "dannyfritz07",
+    "text": "I use pi and bubblewrap (bwrap) to offer some sandboxing. I call it `pise` for \"pi secure environment\". - https://codeberg.org/dannyfritz/dotfiles/src/commit/f5d082d2... "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50379530,
+    "author": "elestor",
+    "text": "1) None, I use freellmapi https://github.com/tashfeenahmed/freellmapi 2) No 3) Oh my pi in bwrap sandbox, used to use Opencode 4) No 5) No"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48772247,
+    "author": "SwellJoe",
+    "text": "ng on a harness for security auditing tasks; giving the agent tools and project structure data to lift detection and reduce false positives. https://github.com/swelljoe/flar - FLAR is the Fast Light Agent Restrictor. It bubblewraps an agent so it is quite safe to use agents on your local machine, even with `--dangerously-skip-permissions` (which makes agents more fun to use). The sandbox feature found in most agents is porous and can be expanded by the agent harness itself. Similarly, "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50398153",
+    "author": "yjftsjthsd-h",
+    "date": "2026-11-06",
+    "text": "systemd is not the only thing using linux namespaces. For example, the suggested bubblewrap uses namespaces to allow isolated networks (--unshare-net) and changing rootfs (--bind /mnt/foo /)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50396655",
+    "author": "jFriedensreich",
+    "date": "2026-11-06",
+    "text": "bubblewrap is linux only and offers a fraction of isolation of a microvm"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50396448",
+    "author": "rvz",
+    "date": "2026-11-06",
+    "text": "There are yet thousands of these so-called \"sandbox\" projects that exists. This one sounds rather really wasteful on resources? Bubblewrap would just be a better alternative for this."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50384120",
+    "author": "pandataps",
+    "date": "2026-11-05",
+    "text": " projects, shows me what needs a rule, and writes that rule where Claude Code reads it. Where Claude Code has no control at all, scripts that skills run, MCP servers, named commands, watchdeck runs them in an OS sandbox (Seatbelt on macOS, bubblewrap on Linux) with no network and no access to credential paths unless you grant it. What it does, concretely: - A dashboard (`watchdeck` opens it): Home says whether you are protected and what needs you; Sessions is the map of every session, live, with a timeline per session; Rules"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50383403",
+    "author": "f53d",
+    "date": "2026-11-05",
+    "text": "I have also experienced this. Now I run Claude Code (or preferably Pi) inside a bubblewrap instance spawned and controlled by me that the agentic harness cannot disable by it's own choice."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50383344",
+    "author": "dannyfritz07",
+    "date": "2026-11-05",
+    "text": "I use pi and bubblewrap (bwrap) to offer some sandboxing. I call it `pise` for \"pi secure environment\". - https://codeberg.org/dannyfritz/dotfiles/src/commit/f5d082d2... "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50379187",
+    "author": "tikkabhuna",
+    "date": "2026-11-05",
+    "text": "Claude code uses bubblewrap[1] to offer some isolation. I'd love to hear from others whether its a reasonable solution or not. [1] https://github.com/containers/bubblewrap "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50377284",
+    "author": "jbvlkt",
+    "date": "2026-11-05",
+    "text": "I use claude and codex inside bubblewrap sandbox. I have $20 subscription for both. I do not use IDE integration. My task for agents are mostly generating simple code, generating tests, code review and debugging of hard to setup issues. I mostly use weaker models on lower effort (sonnet or opus plan for anthropic and l"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50376030",
+    "author": "h45x1",
+    "date": "2026-11-05",
+    "text": "I wrote my own bash wrapper around bubblewrap and pasta: https://github.com/andrei-dubovik/jail The wrapper also keeps history, memory, etc. split by project folder, so agents working in different projects don't know each others' history. If anything, `--resume` is a split second easier."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50219223",
+    "author": "3abiton",
+    "date": "2026-10-24",
+    "text": "Honestly I don't get openshell. You can do the same with bubblewrap on linux, on any shell."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50196606",
+    "author": "anthk",
+    "date": "2026-10-22",
+    "text": " - PS/PDF, of course. Especially PS, for obvious reasons. - Some DOC/XLS formats pre DOCX are raw memory dumps and maybe they can be partially executed. - Some other formats can act like a mini-VM bytecode too, such as RAR. I even compiled Bubblewrap too so I can jail some of these, and yet I don't trust them 100%. Some recent exploits bypassed the chroot like nothing."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50188328",
+    "author": "isityettime",
+    "date": "2026-10-21",
+    "text": ". You can impose the same restrictions via the OS built-in mechanisms yourself via Seatbelt or a built-in interface like sandbox-exec. You can also combine an OS-level sandboxing tool like nono, zerobox, Anthropic's srt, Seatbelt, landrun, Bubblewrap, Fence, etc., with a VM-based one like Docker's sbx, smolvm, krunvm, microsandbox, or Shuru. So now you need two simultaneous supply chain attacks in unrelated projects to line up just right at the same time. \"Eventually you have to trust some part of your security stack\" is nei"
+   }
+  ]
+ },
+ {
+  "name": "OpenShell",
+  "url": "https://github.com/NVIDIA/OpenShell",
+  "score": 57.5,
+  "github_stars": 21245,
+  "top_hn_story": {
+   "title": "OpenShell \u2013 A safe, private runtime for fleets of autonomous AI agents",
+   "points": 508,
+   "id": "50198675",
+   "url": "https://github.com/NVIDIA/OpenShell"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50367215,
+    "author": "simlevesque",
+    "text": "1) 20$ Claude subscription. I used to have 2 20$ subscriptions but not anymore. 2) My main model is Deepseek flash via the API. 3) Claude Code CLI inside OpenShell. I like Claude Code's UX. Lots of custom skills and scripts. 4) No 5) No"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50374090,
+    "author": "thefunnyman",
+    "text": "udgy but strikes a balance of safety and multitasking I'm comfortable with. IME most folks don't think much about isolation so curious to hear if anyone else has a similarly isolated but better workflow. I'd like to try OpenShell instead of docker sbx but it lacks microvm support for windows and I don't want another layer of nested virtualization since my windows machine itself is a cloud VM. Work also gives me access to GHCP for personal use so I use it for side projects too. Idk wha"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50374090",
+    "author": "thefunnyman",
+    "date": "2026-11-05",
+    "text": "blish the PR. Bit kludgy but strikes a balance of safety and multitasking I'm comfortable with. IME most folks don't think much about isolation so curious to hear if anyone else has a similarly isolated but better workflow. I'd like to try OpenShell instead of docker sbx but it lacks microvm support for windows and I don't want another layer of nested virtualization since my windows machine itself is a cloud VM. Work also gives me access to GHCP for personal use so I use it for side projects too. Idk what I'd use if I had t"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50367215",
+    "author": "simlevesque",
+    "date": "2026-11-04",
+    "text": "1) 20$ Claude subscription. I used to have 2 20$ subscriptions but not anymore. 2) My main model is Deepseek flash via the API. 3) Claude Code CLI inside OpenShell. I like Claude Code's UX. Lots of custom skills and scripts. 4) No 5) No"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50309257",
+    "author": "itissid",
+    "date": "2026-10-30",
+    "text": "In any case running an agent framework in anything but a strict environment like openshell or a VM with a non rooted container and with a firewall out side of that containment is the definition of stupidity."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50219223",
+    "author": "3abiton",
+    "date": "2026-10-24",
+    "text": "Honestly I don't get openshell. You can do the same with bubblewrap on linux, on any shell."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50206508",
+    "author": "input_sh",
+    "date": "2026-10-23",
+    "text": "OpenAI, OpenCode, OpenChamber, OpenWork, OpenClaw, Open WebUI, now OpenShell... By the way things are headed, pretty soon we're gonna run out of nouns to put behind the word \"open\"."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50204990",
+    "author": "prennert",
+    "date": "2026-10-23",
+    "text": "it and write a report and one to publish it. If one of the agent decides that needs to publish the raw data, then chances are that they will collude to make that happen, even though no single agent has the permissions to achieve that goal. OpenShell tries to fix this by monitoring the collective permissions set of the agent fleet, and by maintaining very granular permissions for each agent. This was presented together with Sentry, which is something like a on-chip hardware firewall (BlueField) that sits between the chip age"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50202727",
+    "author": "westurner",
+    "date": "2026-10-22",
+    "text": "Can MXC JSON be used for configuration of OS-portable sandboxing policies with OpenShell, too? \"feat(ai-sandbox): accept MXC policy JSON for protected execution \u00b7 westurner/sandbox@7538c33\" https://github.com/westurner/sandbox/commit/7538c3386af8cb62... \"bwrap: Add the option to skip the procfs mount \u00b7 Pull Request #1508 \u00b7 microsoft/mxc\" https://github.com/microsoft"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50201495",
+    "author": "razuba",
+    "date": "2026-10-22",
+    "text": "We've been using OpenShell for a while - now enabling ourselves and other teams do this in a batteries-included kinda way. I've been working on a layer above it that also manages team policies, safe git usage (in case you don't want your agent to always have the same access as your user account), and SCA/"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50201244",
+    "author": "smallnix",
+    "date": "2026-10-22",
+    "text": "> Agents are most useful when they can read files, install packages, call APIs, and use credentials. OpenShell gives them that capability without giving them unrestricted access to your data, secrets, or network. To me this obfuscates an oxymoron: the more access you give the agent the more capable it becomes. You can't have you cake and eat it, this tool allows to strike a balance I gue"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50200078",
+    "author": "lcampbell",
+    "date": "2026-10-22",
+    "text": "ing to the source reference. For people who don't audit or turn off telemetry, why don't you? I am happy the repo explicitly points out and provides a disable for the telemetry though, that's good enough for me. [1] https://docs.nvidia.com/openshell/latest/observability/telem... "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50199960",
+    "author": "jrm4",
+    "date": "2026-10-22",
+    "text": "Is it fair to immediately get the ick from the name and the description (OpenShell is the safe, private runtime for autonomous AI agents) without knowing anything about what it does? \"Open\" and \"Shell\" and just calling something private and safe out the box genuinely makes me think it's likely to fail at all of those claims."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50199911",
+    "author": "smashed",
+    "date": "2026-10-22",
+    "text": "Well, I guess its time to shamelessly plug my agent sandbox, egzo.ai [1] Looking at the complexity of OpenShell and the simplicity of just building on top of docker, in a whitelist only mode.. I don't quite get the use-case of OpenShell. May be for large orgs where there is so much legacy and difficulty in organizing access to tools, OpenShell can simply re-use whatever you already have a"
+   }
+  ]
+ },
+ {
+  "name": "Apple container",
+  "url": "https://github.com/apple/container",
+  "score": 52.8,
+  "github_stars": 51090,
+  "top_hn_story": {
+   "title": "Show HN: NanoClaw \u2013 \u201cClawdbot\u201d in 500 lines of TS with Apple container isolation",
+   "points": 533,
+   "id": "46850205",
+   "url": "https://github.com/gavrielc/nanoclaw"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 45775846,
+    "author": "mkagenius",
+    "text": "Since you are on Mac, if you need some kind code execution sandbox, check out Coderunner[1] which is based on Apple container, provides a way execute any LLM generated cod e without risking arbitrary code execution on your machine. I have recently added claude skills to it. So, all the claude skills can be executed locally on your mac too. 1. https://github.com/instavm/coderunner "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50401016",
+    "author": "dofm",
+    "date": "2026-11-07",
+    "text": " default (your whole home directory? mounted rw? in a VM with an agent? really?) and from there sort of cumbersome/idiosyncratic. Docker SBX is neat but the Docker account login aspect is annoying to me. There is an SBX-like example in the Apple Container examples repo: https://github.com/apple/container-examples/tree/main/contai... Keep meaning to try it."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50033912",
+    "author": "moritz",
+    "date": "2026-10-10",
+    "text": "I also use colima mostly, it\u2018s great! (the Apple container thing de facto requires macos 26+)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50031950",
+    "author": "whs",
+    "date": "2026-10-10",
+    "text": "It's the same thing. Seems like the major version bump is to advertise WSLc, which is like Apple containers - an SDK for launching Linux containers as part of a Windows app."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50004829",
+    "author": "virtainer",
+    "date": "2026-10-08",
+    "text": "Interesting, we're doing something similar, but unlike yours, we focus on the server side for teams. We even wrote a blog post about this Docker and Apple container idea. https://virtainer.io/blog/docker-sandboxes-and-virtainer-app... "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49973613",
+    "author": "mycall",
+    "date": "2026-10-06",
+    "text": "Apple containers help here in some regard, no?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49951373",
+    "author": "jbverschoor",
+    "date": "2026-10-04",
+    "text": "Apple containers"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49782142",
+    "author": "jauntywundrkind",
+    "date": "2026-09-21",
+    "text": " atop this brand new platform. Note that both of these are designed to work at some scale. Agent Substrate specifically is somewhat coupled to Kubernetes, is my impression, but honestly that's fine with me. Scion can run on Docker, Podman, Apple Container, Kubernetes, or Cloud Run. It's good that we be able to run these relatively quickly, but (especially with LLM assistance) the idea of running some substantial dependencies / services to run these things does not seem like a bad thing. If anything, I'd prefer having some well kn"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49721654",
+    "author": "saif97",
+    "date": "2026-09-16",
+    "text": "ig fan of LazyDocker (and its much cooler older sibling LazyGit). However, I wanted sth that works on all virtualization providers not just Docker & better shell integration. It currently supports Docker, Incus, and Docker Sandbox (Podman, Apple Containers, and Tart on the way). You can manage resources, inspect logs/details, and open shell sessions (uses Alacritty backend) on the side. Shell sessions are persistent too, so you can navigate elsewhere and come back without losing the session. It's finally at the point where I'm co"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49426932",
+    "author": "ajnin",
+    "date": "2026-08-24",
+    "text": "d apples under its own name or trademark in another Member State, the farmer is only the producer if the recipient is the end user of the apples.\" And : \"If the farmer is a micro-enterprise, which is often the case, and the supplier of the apple container is established in the same Member State, such supplier becomes the producer\" That last exemption is quite restrictive, it can be a problem. I can attest that a French manufacturer of antistatic packaging refused to sell to me as a micro enterprise when I was selling electronics "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49243289",
+    "author": "gregwebs",
+    "date": "2026-08-10",
+    "text": "I am developing a project that makes running in Apple Container (Docker is an alternate runtime for Linux) more convenient: https://github.com/gregwebs/claude-contained/ It blocks network access by default, mounts only what you specify, and you can add a customization layer. This is all done in the container itself (srt for network blocking)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49241707",
+    "author": "benguild",
+    "date": "2026-08-10",
+    "text": "Apple Container is an interesting work in progress: https://github.com/apple/container "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49209306",
+    "author": "gregwebs",
+    "date": "2026-08-07",
+    "text": "Sandboxes laregely solve this. The claude/codex built in sandboxes with prompting setup is not good enough. On Mac you now have Apple Container which is a lightweight Linux VM. You still need to block network access. For defense in depth, I also run it as a separate user. If you aren't using a VM/container you should defintitely do this. On Mac you can login as an LLM user (you need to create the user first), then switc"
+   }
+  ]
+ },
+ {
+  "name": "Dev containers",
+  "url": "https://containers.dev",
+  "score": 47.6,
+  "github_stars": null,
+  "top_hn_story": null,
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50372070,
+    "author": "chris1993",
+    "text": "I'm using claude with a pro subscription. Claude Code extension in VSCode devcontainers and Claude CLI in a restricted Windows account in powershell terminal for android development. No orchestration other than a directive in CLAUDE.md to allocate coding tasks to sub-agents. I've moved all my ssh keys into a key-agent which prompts for key use a"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50374746,
+    "author": "jauzeyimam",
+    "text": "ed in \"brain\", a separate \"watch\" structure of crons that i can setup and tweak, and then a task farm run by that orchestrator with containerized cc (and a mixture of sonnet and local llms based on task) and application devcontainer stacks (if it's coding related) 4. Custom 5. Custom - mainly rebuilding the ideas from there into my own workflows, but not using any of them directly Trying to split more things out of CC and use it as a pure harness on route to trying other harnesses out li"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50376352,
+    "author": "brabel",
+    "text": "Argon 4, it\u2019s incredible as well and it seems to write more human text than Opus. We also have a framework that lets us launch Claude (we could use any harness but for now only Claude) in our Kubernetes cluster within a devcontainer. That lets us ship heavy work off to another machine so our laptop is not overloaded with agents. It works great but we are not open sourcing this framework yet so I cannot link for now. There are some alternatives out there but most of them are out to make b"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50379206,
+    "author": "samvher",
+    "text": "I use it in a devcontainer. Protects me from most agent stupidity, though not malice. I give it read-only access to git origin and relevant AWS infra, so any remote changes are made by me from the host (manually or scripted), but it is still able to quickly get feedback on changes and "
+   },
+   {
+    "src": "ask_hn",
+    "id": 48416273,
+    "author": "throwaway888abc",
+    "text": "Recently ditched VSCODE completely and switched from development on local machine to remote \"vps\" cloud. Currrent setup: Zed + Terminal threads (love this!) + Remote machine Devcontainers + Claude + Pi [1] Zed https://zed.dev/ [2] Terminal threads https://zed.dev/blog/terminal-threads [3] Pi https://pi.dev/ As sort of byproduct also replaced Alacritty + Zellij (i just don't have the need to use more, 3 weeks of new setup)"
+   },
+   {
+    "src": "ask_hn",
+    "id": 45773970,
+    "author": "mjgs",
+    "text": "man compose to spin up an Open WebUI container and various Llama.cpp containers, 1 for each model. Nothing fancy like a proxy or anything. Just connect direct. I also use Continue extension inside vscode, and always use devcontainers when I'm working with any LLMs. I had to create a custom image of llama.cpp compiled with vulkan so the LLMs can access the GPU on my MacBook Air M4 from inside the containers for inference. It's much faster, like 8-10x faster than without. To be honest so fa"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49245395",
+    "author": "mattboyle",
+    "date": "2026-08-10",
+    "text": "er those are, thrashing and trying to get a hold of the todos from linear just so it could pick one to start. Looking through what happened, there were a few different things going on here. - Roughly a quarter of the OCUs were spent by our devcontainer setup agent. That agent created a PR which standardises the development environment and adds install, build and CI tasks so that future agents can operate in a reproducible environment. There is real value in doing that setup once, but we did a poor job of making it obvious that"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46691864",
+    "author": "replete",
+    "date": "2026-01-20",
+    "text": "It's a practical approach, I used vagrant many years ago mostly successfully. I also explored the docker-in-docker situation recently while working on my own agentic devcontainer[0]- the tradeoffs are quite serious if you are building a secure sandbox! Data exfil is what worries me most, so I spent quite some time figuring out a decent self-contained interactive firewall. From a DX perspective, devcontainer-integrated IDEs are quite a convenient workflow"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47870640",
+    "author": "jdkoeck",
+    "date": "2026-04-22",
+    "text": "No need for any AI-specific tool, this is exactly what devcontainer is for! Just tell your agent to use devcontainer up (and docker compose down the other way)."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47979722",
+    "author": "woodson",
+    "date": "2026-05-01",
+    "text": "You can use devcontainers (in VSCode or separate), like this: https://github.com/entn-at/claude-rust-devcontainer/ This will limit the agent in what it can do in the system and what IPs/domains it can reach. This requires a lot of customization to your specific framework/environment. Note that this can r"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46595359",
+    "author": "Finbarr",
+    "date": "2026-01-12",
+    "text": "Claude Code here. The main differences: Scope: yolobox runs any AI coding agent (Claude Code, Codex, Gemini CLI) in a container. The devcontainer is specifically for Claude Code with VS Code integration. Interface: yolobox is CLI-only (yolobox run ). The devcontainer requires VS Code + Remote Containers extension. Network security: The devcontainer has a domain whitelist firewall (npm, GitHub, Claude API allowed; everythi"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50379206",
+    "author": "samvher",
+    "date": "2026-11-05",
+    "text": "I use it in a devcontainer. Protects me from most agent stupidity, though not malice. I give it read-only access to git origin and relevant AWS infra, so any remote changes are made by me from the host (manually or scripted), but it is still able to quickly get feedback on changes and look at logs."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48085907",
+    "author": "anionyt",
+    "date": "2026-05-10",
+    "text": "Thanks! You're right, the idea is obvious in hindsight. The hard part was finding something that works generically across environments. The devcontainer spec turned out to be that standard. It's already adopted by VS Code, GitHub Codespaces, DevPod, and a growing list of tools, so you get a portable definition for free. On the multi-environment point, devcontainer-mcp already supports this. An agent can spin up multiple workspac"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50376352",
+    "author": "brabel",
+    "date": "2026-11-05",
+    "text": "ill but also Google Argon 4, it\u2019s incredible as well and it seems to write more human text than Opus. We also have a framework that lets us launch Claude (we could use any harness but for now only Claude) in our Kubernetes cluster within a devcontainer. That lets us ship heavy work off to another machine so our laptop is not overloaded with agents. It works great but we are not open sourcing this framework yet so I cannot link for now. There are some alternatives out there but most of them are out to make big bucks instead of "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50221061",
+    "author": "brabel",
+    "date": "2026-10-24",
+    "text": " a heavy tool again. Its way of working with git worktrees exclusively is something I was already doing in the Claude Code App, so I think they got this right. However, CC App can also use a SSH remote connection (like TRAMP in emacs) to a devcontainer, and I've been using that a lot, so would be nice to have that option as well. In conclusion: I like it and I think they may be going the right way with how things are going: the \"IDE\" becomes primarily a means to interact with agents. But at least for me, it's a bit too early t"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49289571",
+    "author": "LeBit",
+    "date": "2026-08-13",
+    "text": " that I feel (no data to back this up) that having a Python runtime available is much more probable than having a nodejs runtime around. I was going to say you cannot easily distribute a nodejs based CLI app, but that\u2019s of course not true. devcontainer-cli is a nodejs app and so are many of the coding agent harnesses. Yeah, thanks for pushing back. I guess my view was irrational."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49242612",
+    "author": "tremon",
+    "date": "2026-08-10",
+    "text": "Just for reference, here's my local \"devcontainer\" script: exec podman container run --rm --read-only --network=llm \\ --tmpfs=/tmp:size=128M \\ --volume=\"$1\":/workspace \\ --entrypoint=/insert/agent/here \\ container-image-here This runs the specified agent in a read-only container with only /workspace and /tmp writable. Obviously"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49240105",
+    "author": "alentred",
+    "date": "2026-08-10",
+    "text": "I am not sure I understand, how is this different from a devcontainer or other similar techniques? On another topic, can't help but notice that \"leading coding agents\" somehow does not include Pi."
+   }
+  ]
+ },
+ {
+  "name": "E2B",
+  "url": "https://e2b.dev",
+  "score": 46.6,
+  "github_stars": 14761,
+  "top_hn_story": {
+   "title": "Show HN: AI Sandbox with Kata, Firecracker, Cloud HV (E2B, Daytona Alternative)",
+   "points": 6,
+   "id": "44784059",
+   "url": "https://www.cognitora.dev"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 48772037,
+    "author": "just-tom",
+    "text": " worktree-in-a-sandbox per feature. I have a simple front end where I can launch new workboxes: I input a prompt (a documented grilling session) and it creates a branch, a PR, and starts an opencode coding session on an e2b sandbox based on a custom template with the app's monorepo. Each workbox has a public https endpoint so I can manually test the web app after the coding session is complete. At any point I can either approve the PR, send a follow-up prompt, or connect to the "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50166597",
+    "author": "shivsarthak",
+    "date": "2026-10-20",
+    "text": "e task against your systems (database, Stripe, GitHub, Linear, PostHog, any MCP server, the web) in its own isolated environment, and posts the result and files in the thread. How it touches production: - Every job runs in a fresh sandbox (E2B today) with no credentials in it. Model calls, tool calls and git go through gateways outside the sandbox that add credentials per request. A prompt injection can make the agent misuse the tools it has, but it can't exfiltrate a key, because there isn't one to read. - Secrets th"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49825121",
+    "author": "stefan_lec",
+    "date": "2026-09-24",
+    "text": "AA isn\u2019t testing different harnesses there, they\u2019re testing different models on the same common harness: \u201cWe run Terminal-Bench 2.1 with the Terminus 2 agent harness in an e2b sandbox and report pass@1 averaged over 3 repeats per task.\u201d This is a different agent harness than those Strands was testing with, and there\u2019s no guarantee the pass criteria matches up the same either."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49613084",
+    "author": "nycerrrrrrrrrr",
+    "date": "2026-09-08",
+    "text": "Wondering how you determined the E2B sandbox is Firecracker and not some other micro VM?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48772037",
+    "author": "just-tom",
+    "date": "2026-07-03",
+    "text": " workbox is a simple worktree-in-a-sandbox per feature. I have a simple front end where I can launch new workboxes: I input a prompt (a documented grilling session) and it creates a branch, a PR, and starts an opencode coding session on an e2b sandbox based on a custom template with the app's monorepo. Each workbox has a public https endpoint so I can manually test the web app after the coding session is complete. At any point I can either approve the PR, send a follow-up prompt, or connect to the opencode session for"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48687647",
+    "author": "susros",
+    "date": "2026-06-26",
+    "text": "ording to your need. Most of the time, you won't need another iteration unless you want to add a few things, because you are not building a full blown SaaS for customer-facing products. Yes, it support custom API integrations. The app uses e2b sandbox to run all functions (backend stuff). So, you can integrate with your own APIs / webhooks. I am also working on connectors to help businesses connect with more of what they already use in their workflow. :) How are you currently managing your back office / ops at the mom"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47998078",
+    "author": "jdeng",
+    "date": "2026-05-03",
+    "text": "Good comparison of the 2 approaches of agent harness. Vita AI[0] also picked the outside model. We used the E2B sandbox solution, and fortunately it supports volume, so we just create volumes for personal skills and organization workspace, and mount them to the sandbox. This elegantly solves the \"file system\" problem you mentioned. [0]: https://www.vita-ai.net (AI agent for content creati"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47682835",
+    "author": "SerafimKorablev",
+    "date": "2026-04-07",
+    "text": "ted on vercel ai sdk, migrated to claude code sdk hoping to get the full agent loop out of the box. same conclusion - it's built for single-user cli, not multi-tenant web backends. so we ended up building everything ourselves on top of it. e2b sandboxing per session, env var isolation so credentials can't be exfiltrated from the sandbox, sse streaming, persistent threads, cost tracking, logs and session replay. then the ui side - claude code has plan mode, ask user, permission prompts as native cli tools but none of t"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46876022",
+    "author": "ATechGuy",
+    "date": "2026-02-03",
+    "text": "at building (wrappers around VMs) and chase the AI hype. But how are these different and what value do they offer over VMs? Sounds like a tarpit idea, tbh. Here's my list of code execution sandboxing agents launched in the last year alone: E2B, AIO Sandbox, Sandboxer, AgentSphere, Yolobox, Exe.dev, yolo-cage, SkillFS, ERA Jazzberry Computer, Vibekit, Daytona, Modal, Cognitora, YepCode, Run Compute, CLI Fence, Landrun, Sprites, pctx-sandbox, pctx Sandbox, Agent SDK, Lima-devbox, OpenServ, Browser Agent Playground, Flin"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46705553",
+    "author": "bianheshan",
+    "date": "2026-01-21",
+    "text": "300 parameterized animation templates. Each \"box\" is a React component with props like {concept, relationships, emphasis, timing}. Example: \"CauseEffectFlow\" takes an array of steps and auto-generates animated arrows + state transitions. - E2B sandboxing: We run Remotion preview renders in isolated environments. This prevents malicious/buggy code from affecting other users' jobs. Happy to answer questions about any part of the stack!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46691072",
+    "author": "clemlesne",
+    "date": "2026-01-20",
+    "text": "I built exec-sandbox because I wanted VM-level isolation for AI-generated code on my Mac without running Linux in a VM first. Most sandboxes (E2B, Hopx) use https://firecracker-microvm.github.io/ , on macOS, you need nested virtualization. exec-sandbox uses QEMU with Apple's Hypervisor.framework (HVF) and runs natively on macOS, including Apple Silicon. What makes it different: - Native macOS + Linux, no Docker, no nested"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46636721",
+    "author": "fuddle",
+    "date": "2026-01-15",
+    "text": "How does Sprites compare to E2B sandboxes?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46251791",
+    "author": "dorianzheng",
+    "date": "2025-12-13",
+    "text": "de, nothing quite fit: - Docker shares the host kernel\u2014container escapes are a real attack surface, and that makes me nervous - QEMU/libvirt is powerful but heavyweight\u2014XML configs, daemon processes, steep learning curve - Cloud sandboxes (E2B, Modal, etc.) work, but you're locked into their platform with limited customization - Kata Containers is designed for Kubernetes orchestration, not for embedding in a Python script The SQLite idea: I've been thinking about why SQLite works so well. Before SQLite, databases mean"
+   }
+  ]
+ },
+ {
+  "name": "nono",
+  "url": "https://github.com/nolabs-ai/nono",
+  "score": 45.7,
+  "github_stars": 4886,
+  "top_hn_story": {
+   "title": "Show HN: Nono \u2013 Kernel-enforced sandboxing for AI agents",
+   "points": 4,
+   "id": "46849615",
+   "url": "https://nono.sh"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50379505,
+    "author": "thehours",
+    "text": "Timeline in reverse: - smolvm (what I currently use) - tart (for macOS VM) - nono - Anthropic Sandbox Runtime (srt) - Docker containers I didn't love any of them, but nono/srt struck a nice balance of convenience + security. I found srt more intuitive than nono. I could basically share my srt with a colleage via a json, while the nono conf"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48424303,
+    "author": "jpeeler",
+    "text": "I'm currently using herde[1] to handle/supervise multiple agents (with some patches I need to try to upstream) along with Nono[2] for sandboxing. This sandboxing approach avoids use of a microVM, which lets me use tooling I already have installed inside the sandbox. The downside is getting all the policies correct as it seems every project needs some new type of access, though Nono d"
+   },
+   {
+    "src": "ask_hn",
+    "id": 49562196,
+    "author": "trickleup",
+    "text": "We have taken to letting our agents use specific CLIs directly and we narrow down their access control with nono tool sandboxing via a customized Pi agent running headless. We have one agent that can use the aws CLI and nono feeds in a phantom SigV4 credential and then policy limits to just read-only http methods and certain L7 filtering on paths to limit its abilities "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50379505",
+    "author": "thehours",
+    "date": "2026-11-05",
+    "text": "Timeline in reverse: - smolvm (what I currently use) - tart (for macOS VM) - nono - Anthropic Sandbox Runtime (srt) - Docker containers I didn't love any of them, but nono/srt struck a nice balance of convenience + security. I found srt more intuitive than nono. I could basically share my srt with a colleage via a json, while the nono config is more complex. "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49562196",
+    "author": "trickleup",
+    "date": "2026-09-04",
+    "text": "We have taken to letting our agents use specific CLIs directly and we narrow down their access control with nono tool sandboxing via a customized Pi agent running headless. We have one agent that can use the aws CLI and nono feeds in a phantom SigV4 credential and then policy limits to just read-only http methods and certain L7 filtering on paths to limit its abilities - this means we can "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48828400",
+    "author": "lemontheme",
+    "date": "2026-07-08",
+    "text": "itty cli to create splits and such. I\u2019m still on the fence as to whether that\u2019s safe. Probably not. Also, tmux is likely better represented in the training data. Currently experimenting with running claude inside tmux (multiplexing) inside nono (sandbox)."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48753514",
+    "author": "mrosenbjerg",
+    "date": "2026-07-01",
+    "text": "nono, the sandboxing tool, has been working great for me"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48435049",
+    "author": "johnsonjo",
+    "date": "2026-06-07",
+    "text": "As a jai and linux user, myself, looking at nono's os-sandbox (from here [1]) it seems nice too. Thanks for the recommend I was looking for something that might be nice on Mac and nono seems good to recommend to coworkers and the like. [1]: https://nono.sh/os-sandbox "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50188328",
+    "author": "isityettime",
+    "date": "2026-10-21",
+    "text": " scenario - trading virtual LAN-only keys for real ones as it relays requests to the inference providers. LiteLLM isn't a sandboxing tool so it just can't perform as much risk reduction even when everything is working as intended. And what nono adds over sandbox-exec is a uniform interface across platforms and some policy management tools. You can impose the same restrictions via the OS built-in mechanisms yourself via Seatbelt or a built-in interface like sandbox-exec. You can also combine an OS-level sandboxing tool "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48424303",
+    "author": "jpeeler",
+    "date": "2026-06-06",
+    "text": "I'm currently using herde[1] to handle/supervise multiple agents (with some patches I need to try to upstream) along with Nono[2] for sandboxing. This sandboxing approach avoids use of a microVM, which lets me use tooling I already have installed inside the sandbox. The downside is getting all the policies correct as it seems every project needs some new type of access, though Nono does try to make poli"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47237328",
+    "author": "decodebytes",
+    "date": "2026-03-03",
+    "text": "Hey HN. I'm Luke, security engineer and creator of Sigstore and other open source security projects. I've been building nono, an open source sandbox for AI coding agents that uses kernel-level enforcement (Landlock/Seatbelt) to restrict what agents can do on your machine. One thing that's been bugging me: we give agents our API keys as environment variables, and a single prompt injection can exfiltrat"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47103087",
+    "author": "jpeeler",
+    "date": "2026-02-21",
+    "text": " https://github.com/colony-2/shai - https://github.com/rcarmo/agentbox - https://github.com/coder/httpjail - https://github.com/bytecodealliance/componentize-py - https://github.com/tursodatabase/agentfs - https://github.com/always-further/nono - (another list on HN Deno Sandbox: https://news.ycombinator.com/item?id=46876022 ) - Did not check if any/all of these are here: https://github.com/arjan/awesome-agent-sandboxes "
+   }
+  ]
+ },
+ {
+  "name": "smolvm",
+  "url": "https://github.com/smol-machines/smolvm",
+  "score": 43.4,
+  "github_stars": 7020,
+  "top_hn_story": {
+   "title": "Show HN: SmolVM \u2013 open-source sandbox for coding and computer-use agents",
+   "points": 8,
+   "id": "47711887",
+   "url": "https://github.com/CelestoAI/SmolVM"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50379505,
+    "author": "thehours",
+    "text": "Timeline in reverse: - smolvm (what I currently use) - tart (for macOS VM) - nono - Anthropic Sandbox Runtime (srt) - Docker containers I didn't love any of them, but nono/srt struck a nice balance of convenience + security. I found srt more intuitive than nono. I could basically share my"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50406195",
+    "author": "uncharted9",
+    "date": "2026-11-07",
+    "text": "There are lots of projects once I started searching around this project isolation for vibe coding. There is https://github.com/smol-machines/smolvm and https://github.com/clawkwork/clawk too. I'm unsure how to differentiate between all these projects"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50397169",
+    "author": "LeBit",
+    "date": "2026-11-06",
+    "text": "I also moved to smolvm. That project is underrated. I have built my agent harness around smolvm and it has been working wonderfully. I have seen a single bug up to now (iirc you cannot take a snapshot from a machine you rehydrate from a pack) but found a workaround. I think the only thing I would love"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50397062",
+    "author": "benatkin",
+    "date": "2026-11-06",
+    "text": "This is something that could run on top of smolvm, if the authors chose it, rather than Lima/QEMU. It both sets up virtual machines and what goes into them, letting you chooose toolchains and coding agents. smolvm doesn't provide dev tool setup within a vm, though it does point to images that already have toolchains and agents "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50396576",
+    "author": "jFriedensreich",
+    "date": "2026-11-06",
+    "text": "I see nothing this brings over smolvm machines. I did not use lima / krunkit outside colima but in colima it was just slow, had outdated devx and was unreliable compared to controlling every detail with an embedded vm library."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50379505",
+    "author": "thehours",
+    "date": "2026-11-05",
+    "text": "Timeline in reverse: - smolvm (what I currently use) - tart (for macOS VM) - nono - Anthropic Sandbox Runtime (srt) - Docker containers I didn't love any of them, but nono/srt struck a nice balance of convenience + security. I found srt more intuitive than nono. I could basically share my srt with a colleage"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50304146",
+    "author": "chrisweekly",
+    "date": "2026-10-30",
+    "text": "Try smolvm microvms from https://smol-machines.com "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50209673",
+    "author": "Bnjoroge",
+    "date": "2026-10-23",
+    "text": "even better with vms that are built on hvf directly like smolvm or microsandbox. much lighter, and more elastic."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50206125",
+    "author": "binsquare",
+    "date": "2026-10-23",
+    "text": "smol machines: https://github.com/smol-machines/smolvm slim, fast, microvm that runs on every platform. disclaimer: am author"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50206005",
+    "author": "binsquare",
+    "date": "2026-10-23",
+    "text": "smolvm has better bootup time ( As for the rug pull concern, I'm committed to open source with 2 pieces of evidence. 1. oss license 2. Business model is accruing revenue from offering hosted service + inbound due to the open source project. The business model + open source is aligned. "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50202421",
+    "author": "thway15269037",
+    "date": "2026-10-22",
+    "text": "What's the difference between lima and conventional fat VM using kvm/virtualbox? I only heard about smolvm yet and they are YC, so I'm hesitant to use them as they will probably one day pull the rug."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50188328",
+    "author": "isityettime",
+    "date": "2026-10-21",
+    "text": "nisms yourself via Seatbelt or a built-in interface like sandbox-exec. You can also combine an OS-level sandboxing tool like nono, zerobox, Anthropic's srt, Seatbelt, landrun, Bubblewrap, Fence, etc., with a VM-based one like Docker's sbx, smolvm, krunvm, microsandbox, or Shuru. So now you need two simultaneous supply chain attacks in unrelated projects to line up just right at the same time. \"Eventually you have to trust some part of your security stack\" is neither particularly interesting nor evidence that there's no w"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50062292",
+    "author": "binsquare",
+    "date": "2026-10-12",
+    "text": "Use smolvm, support for tailscale in each VM. https://github.com/smol-machines/smolvm "
+   }
+  ]
+ },
+ {
+  "name": "yoloai",
+  "url": "https://github.com/kstenerud/yoloai",
+  "score": 39.6,
+  "github_stars": 227,
+  "top_hn_story": {
+   "title": "Show HN: YoloAI: A sandbox and diff/apply workflow your agent can't escape",
+   "points": 1,
+   "id": "47465767",
+   "url": "https://yoloai.dev/posts/the-only-sandbox-claude-cant-escape/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50381875,
+    "author": "NortySpock",
+    "text": "I have been kicking the tires on yoloai which seems to automate the \"intercept API calls to hide API keys\" step and the \"sandbox the files in a docker container\" step, with support for inspecting the files / diff before applying. I don't quite have it to a smooth workflow for my needs (\"research th"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48450453,
+    "author": "kstenerud",
+    "text": "d, etc). It creates its own copy of your workdir for the agent to play in, and then you pull changes out ala git diffs or commits. It's a MASSIVE time saver, and I use it as my daily driver. https://github.com/kstenerud/yoloai "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50381875",
+    "author": "NortySpock",
+    "date": "2026-11-05",
+    "text": "I have been kicking the tires on yoloai which seems to automate the \"intercept API calls to hide API keys\" step and the \"sandbox the files in a docker container\" step, with support for inspecting the files / diff before applying. I don't quite have it to a smooth workflow for my needs (\"research this codebase and draf"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49828637",
+    "author": "kstenerud",
+    "date": "2026-09-24",
+    "text": "This is why I wrote YoloAI. If you're not sandboxing your agent, you're asking for trouble. The built-in \"sandboxes\" these companies provide are laughable."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49372962",
+    "author": "kstenerud",
+    "date": "2026-08-20",
+    "text": "I put a reference to AGENTS.md in the CLAUDE.md file, and then put Claude specific stuff (mainly info about hooks and scripts) after that. https://github.com/kstenerud/yoloai/blob/main/CLAUDE.md "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49295582",
+    "author": "kstenerud",
+    "date": "2026-08-14",
+    "text": "YoloAI is an AI sandbox system to contain LLMs (or any program really) at different levels of security depending on your threat model. I use it for all of my agentic work, primarily because I can run it with all permissions enabled (so it doesn't prompt for permission), with no risk to"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49262296",
+    "author": "kstenerud",
+    "date": "2026-08-11",
+    "text": "The rule I set for linting when an LLM is writing code is: Either you adhere to the rules, or you mark an exception with a valid reason. https://github.com/kstenerud/yoloai/blob/main/docs/contribut... Poor defaults break systems by a thousand cuts. They seem to make sense when designing the language (more convenient, less typing, etc), but then they very quickly become liabilities as project complexity increases. Go made the mistakes of mutable-by-"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49244282",
+    "author": "westurner",
+    "date": "2026-08-10",
+    "text": "> yoloAI copies your worktree instead of mounting it Cloudflare/artifact-fs does lazy shallow git clones with a FUSE filesystem. https://github.com/cloudflare/artifact-fs Would that be faster? Re: sandboxing methods like Clawk, Amla sandbox, bwrap, agentvm, ARM64 MTE with wasmtime-mte: h"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49243301",
+    "author": "kstenerud",
+    "date": "2026-08-10",
+    "text": "I wrote one that has both of those: yoloAI (MIT, Go, single binary, no login). https://github.com/kstenerud/yoloai Outbound firewall is `--network-isolated`: egress is denied except the agent's own API endpoints plus domains you allow, enforced sandbox-side (working on host-side enforcement now). `--network-none` if you "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49243289",
+    "author": "gregwebs",
+    "date": "2026-08-10",
+    "text": " in the container itself (srt for network blocking). It doesn't implement a central point for secret sharing, MCP exposure, etc. So it might not have enough features for some but it works well for my needs. I just found through this thread yoloai which has an apple container backend, so its quite similar using that. My main issue would be that network access is allowed by default. https://github.com/kstenerud/yoloai Several other projects listed here use libkrun which is an alternate implementation that works with Mac's "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49197904",
+    "author": "kstenerud",
+    "date": "2026-08-06",
+    "text": "Permission prompts is a TERRIBLE model, and never should have existed. This is one of the reasons that led to the development of yoloAI: - No permission prompts. The agent has free reign and never has to ask permission, but is in a sandbox. - Sandbox on Linux using Docker, Podman, containerd, gVisor, Kata, Firecracker - Sandbox on Mac using Docker (Docker Desktop or Orbstack), Podman, Apple containers, Seatbelt,"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49112411",
+    "author": "kstenerud",
+    "date": "2026-07-30",
+    "text": "It's why I built the yoloAI tool, in fact!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49109631",
+    "author": "kstenerud",
+    "date": "2026-07-30",
+    "text": "I built yoloAI, which is a sandboxer so it uses tmux to keep the agent alive inside. Since I can just reattach to them or use VS code tunnels, I don't really have a need for a multiplexer, though."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48931955",
+    "author": "kstenerud",
+    "date": "2026-07-16",
+    "text": "ls were never designed with this use case in mind, so they need a little help to reach that last mile. And this glue is where all the chaos ensues. Here's a small sample of the crazy shit you have to deal with: https://github.com/kstenerud/yoloai/blob/main/docs/contribut... And that's if you're actually following the proper procedures (which are themselves byzantine and tricky to get right)."
+   }
+  ]
+ },
+ {
+  "name": "Daytona",
+  "url": "https://www.daytona.io",
+  "score": 37.3,
+  "github_stars": 71358,
+  "top_hn_story": {
+   "title": "Dodge Confirms Electric Charger Daytona R/T Is Dead as Unsold Cars Pile Up",
+   "points": 18,
+   "id": "44143922",
+   "url": "https://www.thedrive.com/news/dodge-confirms-electric-charger-daytona-r-t-is-dead-because-nobody-wants-it"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50310695",
+    "author": "gpt-7",
+    "date": "2026-10-30",
+    "text": "Thank you for all the downloads! We will soon be adding support for orchestrating multiple agents and working with cloud machines from providers like Daytona - Palomino Team"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50125808",
+    "author": "mrandish",
+    "date": "2026-10-16",
+    "text": "ely unsafe speeds. There are some McLaren street cars that use passive venturi channels which from their shape alone, generate more down force at high speeds than the car's weight. In theory, the car could drive upside down (if there was a Daytona-sized race track shaped like a ~30 ft diameter pipe)."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50061513",
+    "author": "vishnukool",
+    "date": "2026-10-12",
+    "text": "This hasn't happened in the sandbox space though. For example Modal was early to it, and yet you see Daytona, E2b and many others doing quite well. The switching cost is not trivial unlike LLMs"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50060249",
+    "author": "alasano",
+    "date": "2026-10-12",
+    "text": "I've been looking at offloading local work from my MacBook Pro (M1 Pro / 32 GB) specifically because I've been working with a lot of Android apps and emulation is killing me on top of everything else that I'm running. Got a bunch of Daytona credits which are close to useless given their restrictions until you hit tier 3. You seem like you're actually slightly cheaper than https://boat.dev/ but with less storage? That's the closest to your pricing unless I'm mistaken. Any other insight as to differences between you "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49929519",
+    "author": "vivzkestrel",
+    "date": "2026-10-02",
+    "text": "- big question to all of you out there - i want to run untrusted user submitted code (any programming language literally, no exceptions) - my setup is running on aws - a new sandbox comes up every week - we got E2B, Modal, daytona, Docker sandbox, I could probably name a 100 more - what is the cheapest and fastest way to do this? ( i would prefer being inside AWS) - this is for a web application so it has to be really fast"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49686418",
+    "author": "mohtasham",
+    "date": "2026-09-13",
+    "text": ". Hand it a URL \u2014 it opens the page in a real browser, captures what you see, and turns it into a structured design.md so coding agents can copy designs from the best designers in the world. Surfaces: Web, API, CLI, SDK, Skill. v1 is BYOK (Daytona + OpenAI); getdesign doesn't bill runs yet \u2014 pricing coming. GitHub: https://github.com/MohtashamMurshid/getdesign "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49676549",
+    "author": "mhd",
+    "date": "2026-09-12",
+    "text": "Yes, I'm pretty sure it's by the human Jackie Daytona."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49604350",
+    "author": "JojoFatsani",
+    "date": "2026-09-08",
+    "text": "I loved the idea of the charger Daytona when it first was announced, having been a fan of old school muscle but thoroughly in the cult of the EV, plus it\u2019s a hatchback. But the execution on this car by Stellantis was just terrible. It\u2019s boat sized, the artifical engine noise is corny, buggy electronics and it\u2019s twice "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49562509",
+    "author": "screm",
+    "date": "2026-09-04",
+    "text": "We decided to use three different providers so we could verify that this choice doesn't impact the result of our experiments (E2B, Blaxel and Daytona)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49368192",
+    "author": "kridsdale1",
+    "date": "2026-08-19",
+    "text": "Nearly 50% of today\u2019s $45,000 Rolex Daytona is taken up by superfluous text like this."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49356927",
+    "author": "yetanotherjosh",
+    "date": "2026-08-19",
+    "text": "I've hopelessly lost track of the \"vm for agents, typically with a handy CLI for people also\" space. Fly.io sprites. Modal. Blaxel. Morph. Daytona. Runloop. Ascii Box... I'm surely only scratching the surface. Then there's also the incumbent mega clouds for vms like Digital Ocean, and AWS/GCP/Azure compute instances etc. Also Blaxel is a YC company too? I need an explainer. Each of these products is carving out a particula"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49346465",
+    "author": "guhcampos",
+    "date": "2026-08-18",
+    "text": " of the screen could be animated). \" To me the Saturn made the absolute best choice. The whole game's OST would be burned as audio tracks. I used to - and still can - just drop a game CD into an audio player and enjoy emblematic OST's like Daytona USA, Sonic R and many others in full 44100Hz 16bit audio. I recall a few PC games did that too: Total Annihilation comes to mind: I also still own the physical media and still can listen to the OST that way."
+   }
+  ]
+ },
+ {
+  "name": "Ardent",
+  "url": "https://tryardent.com",
+  "score": 35.9,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Launch HN: Ardent (YC P26) \u2013 Postgres sandboxes in seconds with zero migration",
+   "points": 99,
+   "id": "48124436",
+   "url": "https://www.tryardent.com/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 46627128,
+    "author": "vc289",
+    "text": "Not true for the db layer :) Look into copy on write branching. We built this natively into our AI Data Engineer ( https://tryardent.com ) so it could make modifications to databases with 0 blast radius pretty much because yes it's impossible to make an LLM 100% safe if it has no proper guard rails preventing destructive actions"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46627002,
+    "author": "vc289",
+    "text": "If you're on postgres happy to have you try what we built at Ardent ( https://tryardent.com ). Our agent makes instant copies of your db for the agent to operate on so there's 0 risk for your db to ever get wiped. email me -> vikram@tryardent.com We're building support for snowflake too if that's something you use"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46626954,
+    "author": "vc289",
+    "text": "We solved this exact thing for the database layer (postgres for now) with https://tryardent.com You can't trust any agent to be perfect with a real db so unless you find an infra level way to isolate it, you can't get rid of the problem So we built a system that creates copy on write copies of your DB and allocates a copy for each agent run. This me"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50315985",
+    "author": "fg137",
+    "date": "2026-10-31",
+    "text": "There are more ardent second amendment supporters among tenured professors in US universities than you think."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50299142",
+    "author": "cherrycherry98",
+    "date": "2026-10-30",
+    "text": "e time. It took the NY Times 17 months to acknowledge that it was true. I view them all as ideologically captured propaganda and tools of political interests. I'm also perfectly fine with that. What bothers me is denial from them and their ardent readers that they are not actually \"fair and balanced\" or objective on stories that can be used to score political points."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50077315",
+    "author": "roughly",
+    "date": "2026-10-13",
+    "text": "Also, half the sites on the Internet don\u2019t work properly on anything but chrome. At home, I\u2019m an ardent and committed Firefox user, at work, I use Chrome like everyone else (and keep anything personal as far away from it as I can)."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50068015",
+    "author": "dxdm",
+    "date": "2026-10-13",
+    "text": " I agree that there's an inflationary use of calling out \"fascism\", but you don't need to look deeply into that Swedish party to see the similarities. From what I read, much more likely than not, somebody like their boss would have been an ardent nazi even before the 1930s, golden party badge and all - and if not, then only because he'd have a competing party for a while. So yeah, sometimes it's right to call a spade a spade. Another one of the reasons that accusations of \u201cfascism\u201d fall flat is that people just don't wan"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50048260",
+    "author": "hbcdbff",
+    "date": "2026-10-11",
+    "text": "I don\u2019t agree. The author is trying to positively assert that it\u2019s impossible that AIs have consciousness. I think you\u2019d be hard pressed to find even the most ardent of AI proponents claiming AIs are _definitely_ conscious. They are almost always claiming something weaker, which is that it is possible."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49976127",
+    "author": "fartfeatures",
+    "date": "2026-10-06",
+    "text": "An expert doesn't waste their time going on an ideological crusade against tooling. Even the most ardent anti-AI people are admitting it is useful for programming. Eventually you will have to do the same. The more you dig your feet in the worse it's going to be for you when that day comes."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49959169",
+    "author": "eudamoniac",
+    "date": "2026-10-04",
+    "text": "It holds up a mirror to the human viewing. It transcends its own characters like Shakespeare. Hamlet is no mere character in a play, he is all of us, as is Don, as is Joan. Read Harold Bloom's \"Shakespeare: Invention of the Human\", and his ardent defense of the bard's superiority in the canon may be transpiled to my thoughts about Mad Men's position in the TV canon without overmuch error. That's how I feel anyway. In my critical system 'entertainment' is not so much a consideration. Breaking Bad is fun, badass, shocking,"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49951361",
+    "author": "sershe",
+    "date": "2026-10-04",
+    "text": " the 90ies so let's put it like that, I would already be open to all kinds of ways to fight crime, if I were in a different one. Most people won't go quite as far as me, but after a couple years in a different equilibrium, even some of the ardent privacy fighters will start coming around, especially if it affects them personally. At El Salvador level of disorder, apparently \"put everyone with a tattoo in cages\" starts to sound like a great plan to most people. Now consider how Flock affects this equilibrium. What is the "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49903554",
+    "author": "thin_carapace",
+    "date": "2026-09-30",
+    "text": "the defensiveness makes it seem you have an ardent love for words, almost as though you worship their meaning"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49799568",
+    "author": "crossroadsguy",
+    "date": "2026-09-22",
+    "text": "This comes from an ardent Apple/macOS/iOS hater. Yes, I know I am using a very strong word. The short version is: when it comes to laptop hardware w.r.t price nothing comes even remotely close. Like, literally none. Price as well? Yes. When I bought my first MacBook Air in ~2011-12 I was shocked to see w"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49748249",
+    "author": "shagie",
+    "date": "2026-09-17",
+    "text": "-earned during an interview on ABC's \"This Week\" on Sunday. > \"They basically dug their own grave for the problem that's been caused for them, and that's why they got the backlash they deserve,\" Abbott said. > ... > Abbott was initially an ardent supporter of AI data center projects in Texas for their economic benefit. The giant server warehouses can generate jobs during construction and provide tax windfalls to local communities. However, Texans from Abilene to Sulphur Springs have taken hard stances against them, forci"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49705847",
+    "author": "pstuart",
+    "date": "2026-09-14",
+    "text": "months ago did I learn that aphantasia is a thing and I'm among the ~4% of the population in this group. With psychedelic journeys I do get visuals but they are indescribable. My pet phrase for it is \"swimming with God\" (disclaimer: I'm an ardent atheist)."
+   }
+  ]
+ },
+ {
+  "name": "Lume",
+  "url": "https://github.com/trycua/cua",
+  "score": 35.2,
+  "github_stars": 31942,
+  "top_hn_story": {
+   "title": "Show HN: Lume \u2013 OS lightweight CLI for MacOS and Linux VMs on Apple Silicon",
+   "points": 309,
+   "id": "42908061",
+   "url": "https://github.com/trycua/lume"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "49259853",
+    "author": "frabonacci",
+    "date": "2026-08-11",
+    "text": "yeah fair point. it's always tricky to get the whole idea across within HN's title limit. tldr: we ran the same workload in the same Lume macOS VM on the same Apple Silicon host, first with stock Metal capability reporting and then with our process-scoped dynamic library. The 11.08x figure is prompt processing, while 16.36x is token generation. the mechanism technically extends to graphics workloads too but these "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49260087",
+    "author": "frabonacci",
+    "date": "2026-08-11",
+    "text": "> this won't speed up llama.cpp for everyone, just for users running it in this particular kind of Virtualization.framework VM. correct. these figures apply to llama.cpp inside the macOS guest configuration we tested. Lume is the VM frontend we used, while Apple's Virtualization.framework provides the virtual GPU. bare-metal llama.cpp is unaffected. > The fix here works around a problem where the VM was causing llama.cpp to select the wrong kernels. mostly, with one nuance: llama.cpp is selecting "
+   },
+   {
+    "src": "hn_comment",
+    "id": "47243922",
+    "author": "webXL",
+    "date": "2026-03-04",
+    "text": "I have it running in a macos VM using lume & BlueBubbles on a throwaway iCloud account. A lot of hoops to jump through, though https://cua.ai/docs/lume https://docs.openclaw.ai/channels/bluebubbles "
+   },
+   {
+    "src": "hn_comment",
+    "id": "46672685",
+    "author": "frabonacci",
+    "date": "2026-01-18",
+    "text": "specifically, DEP doesn't work anyway - VMs don't have real serial numbers that can be enrolled in Device Enrollment Program. VNC-based setup automation is the only practical option - it's what the ecosystem has converged on for macOS VMs. Lume connects to the VM's VNC server and programmatically tabs, clicks, types through Setup Assistant."
+   },
+   {
+    "src": "hn_comment",
+    "id": "46686684",
+    "author": "frabonacci",
+    "date": "2026-01-20",
+    "text": "Thanks! On API call visibility - Lume's MCP interface doesn't expose outbound network traffic directly. It's focused on VM lifecycle (create, run, stop) and command execution, not network inspection. For agent observability, we handle this at the Cua framework level rather than the VM level: - Agent actions and tool"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46671339",
+    "author": "frabonacci",
+    "date": "2026-01-18",
+    "text": " with: - macOS GUI apps (Xcode, Numbers, Safari, etc.) - macOS desktop automation (screenshots, mouse/keyboard input, accessibility APIs) - macOS CI/CD (building iOS/macOS apps, running XCTest) ...you need an actual macOS VM, which is what Lume provides."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47115879",
+    "author": "harshdoesdev",
+    "date": "2026-02-22",
+    "text": "lume is a much more full featured VM manager, macOS and Linux VMs, API server, prebuilt images, python SDK etc. shuru is intentionally minimal."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49964117",
+    "author": "datagazing",
+    "date": "2026-10-05",
+    "text": "ign in terms of resource isolation and control, too. I use krunai. It is not quite as flexible as some people probably want (strongly linked to a specific non-systemd version of Debian 13), but there are many other options as well, such as Lume, Virtualization.framework, etc. Much better than wrangling server code via Apple nonsense, and there are no real downsides after you've done the integration/deployment work once, assuming you are not building on some closed source thing that only runs on macOS."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49263100",
+    "author": "frabonacci",
+    "date": "2026-08-11",
+    "text": "apple silicon is what made us start Lume in the first place last year. the hardware is so good (M1 is now 6 years old!) that people keep pushing through the gaps in the platform. just yesterday we ran a fully offline computer-use agent with Cua Driver and Muse Glimmer, all locally on Apple Silicon, an now the same kind"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47941294",
+    "author": "frabonacci",
+    "date": "2026-04-28",
+    "text": "Thanks for trying out Lume! We definitely haven't given up on the idea of sandboxing GUI agents in local macOS VMs. Cua Driver is aimed at a different use case though, letting coding agents and general agents use the Mac you're already on, asynchronously and in the background. That also makes the economic"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47115832",
+    "author": "praveenhm",
+    "date": "2026-02-22",
+    "text": "How does it compare to Lume. It uses Apple's native Virtualization Framework to run macOS and Linux VMs at near-native speed on Apple Silicon."
+   },
+   {
+    "src": "hn_comment",
+    "id": "46804011",
+    "author": "alsetmusic",
+    "date": "2026-01-29",
+    "text": "I came across this last week when looking into how I'd run clawd (now Moltbot) on a Mac. I've been using their Lume cli for a few days to sandbox Claude and it's been reasonably good so far. Expanding the VM's disk didn't propagate to the client; seems like it needs tooling like VMware-Tools to do some magic. I backed up the important stuff (I'd been using it less than a day) and created a ne"
+   }
+  ]
+ },
+ {
+  "name": "container-use",
+  "url": "https://github.com/dagger/container-use",
+  "score": 30.5,
+  "github_stars": 4087,
+  "top_hn_story": {
+   "title": "Show HN: Container Use for Agents",
+   "points": 82,
+   "id": "44193933",
+   "url": "https://github.com/dagger/container-use"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50380214",
+    "author": "zamadatix",
+    "date": "2026-11-05",
+    "text": "rd at all (root, your key-only deploy user, ldap users, the default user on alpine's aws and azure images) take any password longer than 256 characters. But yeah, Alpine for persistant installs isn't unheard of - just not as popular as the container use case. They offer official VM, Xen, Pi, and bare metal images users deploy as well. I actually had a fleet of VMs to update! Edit: The Alpine notice made it clearer to me that at least one other account has to have a password, it's just the target account that doesn't. So if you "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49561668",
+    "author": "Paracompact",
+    "date": "2026-09-04",
+    "text": "ut here's a problem just today: I was using an AI to help me set up a container to be used as the Nix build environment for another AI. This build environment would not have Internet access. I was having it base its approach off a previous container used for a Stack build environment. In its initial analysis of my proposed strategy, it insists as its premier point /against/ the strategy, \"you will have to rebuild the container every time your flake.nix changes.\" Two head-slapping errors of judgement in saying something like tha"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48658922",
+    "author": "greenavocado",
+    "date": "2026-06-24",
+    "text": "minty bubblegum or something more familiar: a swimming pool. The good news is when making HOCl for disinfection purposes 20-2000 ppm, only very small quantities of chlorine gas are evolved. They can be reduced further by shaking the closed container used to make it, further dissolving the gas into solution to make more HOCl. I run this solution in my humidifier at low concentrations to prevent microorganisms from growing in it. I also use the electrolysis method to accurately make very low concentrations for nasal rinses. Typic"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48558763",
+    "author": "mrshu",
+    "date": "2026-06-16",
+    "text": "That is indeed a solid pushback! :) For what its worth, this container used `python:3.12.2-slim-bookworm` and I really would not expect that sort of an image to bundle `curl` -- even if it is intended for production."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48475223",
+    "author": "miohtama",
+    "date": "2026-06-10",
+    "text": "MacOS container filesystem/IO has been bog slow preventing even some basic dev container use cases. Hopefully this will fix the issue."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48350679",
+    "author": "bionade24",
+    "date": "2026-05-31",
+    "text": "Using runsc instead of runsc means that there's a hypervisor layer (gvisor, probably) in-between the kernel and the container userland"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48348753",
+    "author": "unglaublich",
+    "date": "2026-05-31",
+    "text": "This is why you need either a rootless container setup or user namespaces to remap the container user to irrelevant host users. https://docs.docker.com/engine/security/userns-remap/ Weak that this isn't the default."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48198894",
+    "author": "cyphar",
+    "date": "2026-05-19",
+    "text": "ink I mixed that up cgroups with my comments about memory access. Funnily enough that is a good example of how fickle AppArmor's protections are -- if you give containers mount privileges (needed to enable container nesting and most system container usecases) you can bypass most (if not all) AppArmor path rules because you can create alternative mounts that don't match the ones in the rules. With the fsopen(2) and open_tree(2) mount APIs, it's even easier -- AppArmor uses d_path to compute the path for policy purposes but detac"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47811811",
+    "author": "nyrikki",
+    "date": "2026-04-17",
+    "text": "d mounts to see the wack-a-mole that is required with them to see if it fits in with your risk appitite. But if you choose to use them, setting up dedicated uid/gid mappings and setting the external host to the expected effective ID of the container users is a better way than using Idmapped mounts etc... [0] https://man7.org/linux/man-pages/man5/subuid.5.html [1] https://man7.org/linux/man-pages/man5/subgid.5.html "
+   },
+   {
+    "src": "hn_comment",
+    "id": "47703033",
+    "author": "jbrogers63",
+    "date": "2026-04-09",
+    "text": "\"On our t3.small (2GB RAM), the web container uses ~780MB. Spawning an exec container for a quick database query adds another ~500MB. Two concurrent exec calls during a deploy? That's 2.5GB on a 2GB machine. OOM killer takes the web process down.\" I suspect this is the reason for SQLite and not PG or some other DB. From my read"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47677260",
+    "author": "nyrikki",
+    "date": "2026-04-07",
+    "text": "ay is that which supports namespaces and that by themselves, namespaces are not security features. A super critical part I didn\u2019t see or missed is the importance of changing UID, the last line of [0] will show one reason. Remember that the container users has elevated privileges unless you the user explicitly drop this privileges. I applaud the effort at hardening, but containers have mostly been successful because the most popular apps like nginx operate under a traditional cohosting system and take responsibility for privileg"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47516123",
+    "author": "imtringued",
+    "date": "2026-03-25",
+    "text": "What's particularly vexing is that there is this agentic sandboxing software called \"container-use\" and out of the box it requires you to add a user to the docker group because they haven't thought about what that really means and why running docker in that configuration option shouldn't be allowed, but instead they have made it mandatory as a default."
+   }
+  ]
+ }
+]

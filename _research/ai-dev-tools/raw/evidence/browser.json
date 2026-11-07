@@ -1,0 +1,1298 @@
+[
+ {
+  "name": "Playwright MCP",
+  "url": "https://github.com/microsoft/playwright-mcp",
+  "score": 89.4,
+  "github_stars": 39303,
+  "top_hn_story": {
+   "title": "Show HN: Playwright Skill for Claude Code \u2013 Less context than playwright-MCP",
+   "points": 189,
+   "id": "45642911",
+   "url": "https://github.com/lackeyjb/playwright-skill"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 48416641,
+    "author": "0xbadcafebee",
+    "text": "b interface so you can switch around sessions easily, keep it running in the background (on a VPS for example). Add to it MCP servers for other systems you use, like AWS Docs MCP, Atlassian MCP, Linear MCP, SearXNG MCP, Playwright MCP, etc, which basically multiplies the AI's usefulness. Tune config to block all use of /tmp/ because the AGENTS.md instructions to not use that dir are always ignored. Set API tokens in env vars for most services and modern AI models will figure out how to"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48430429,
+    "author": "cadamsdotcom",
+    "text": "ore it\u2019s permitted to write code. Witnessing tests fail first proves that they test something, and depending on e2e tests means that in a year of building I\u2019ve never had to hand my model a browser. Instead it will write Playwright code to validate its work, and that becomes forever part of the codebase, preventing regressions forever. Even despite this, I test everything manually and review every line I merge. It takes 10x as long to get a change into shape for merging as the model spe"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46258698,
+    "author": "jMyles",
+    "text": "3. Puppeteer? Or Playwright? I haven't been able to make Puppeteer work for the past 8 weeks or so (\"failed to reconnect\"). Do you have a doc on this?"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46259710,
+    "author": "cebert",
+    "text": "I know the Playwright MCP server works great. I use it daily."
+   },
+   {
+    "src": "ask_hn",
+    "id": 46259748,
+    "author": "jMyles",
+    "text": "Same, I use Playwright all the time, but haven't been able to make puppeteer work in quite some time. Playwright, while reliable in terms of features, just absolutely eats the heck out of context."
+   },
+   {
+    "src": "ask_hn",
+    "id": 46699257,
+    "author": "8note",
+    "text": "ake a big difference one of the biggest things that gets the results better is if you can get a feedback loop in from what the app actually does back to the agent. good logs, being able to interact/take screenshots a la playwright etc guidelines and guardrails are best if theyre tools that the agent runs, or that run automatically to give feedback."
+   },
+   {
+    "src": "ask_hn",
+    "id": 48772253,
+    "author": "karlkloss",
+    "text": " gave me a new code, I had to start the player and test the control in the server's web GUI, report the errors back, and so forth, and it tried a lot, but never found the real cause. Then I got tired, and told it to use PlayWright to control the browser and test by itself. After some hangs, that I had to stop manually, it did all by itself, and finally fixed the bug. I had to increase the agents' steps setting in the config, but that was it. While it was fixing the bug, I surfed the we"
+   },
+   {
+    "src": "ask_hn",
+    "id": 49591330,
+    "author": "softwarewright",
+    "text": "I am a single person LLC so my \"production\" is just me using AI to build things. I use MCP for some things, like Playwright; for web UI development, but I also use CLIs, especially custom CLIs I create that have built-in help for the AI coding agent to use. I just to run my command (in the path) with --help and it figures out how to use. This seems more straightforward and efficie"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46714009,
+    "author": "simonw",
+    "text": "Python libraries and Python CLI tools. I often have Claude Code build little HTML+JavaScript tools which are simple enough that I don't need a template (\"Vanilla JavaScript, no dependencies or build script, test it with Playwright\"). I've built a couple of Go apps which works great because Go has such strong default patterns and a full featured standard library, so again no need for a template."
+   },
+   {
+    "src": "ask_hn",
+    "id": 46331161,
+    "author": "giancarlostoro",
+    "text": "> AFAICT, there\u2019s no service that lets me: give a prompt, write the code, spin up all this infra, run Playwright, handle database migrations, and let me manually poke at the system. We approximate this with GitHub Actions, but that doesn\u2019t help with manual verification or DB work. What you want is CI/CD that deploys to rotating stating or dev environments per PR before "
+   },
+   {
+    "src": "ask_hn",
+    "id": 46331170,
+    "author": "sergeyk",
+    "text": "> AFAICT, there\u2019s no service that lets me: give a prompt, write the code, spin up all this infra, run Playwright, handle database migrations, and let me manually poke at the system. We approximate this with GitHub Actions, but that doesn\u2019t help with manual verification or DB work. I think this is almost exactly what we've built with https://superconductor.dev - set up a"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48450603,
+    "author": "onion2k",
+    "text": "o be honest the maths is trivial; the hardest part is gathering data and normalizing it in a vaguely sensible way. I've also built a release notes app for my QA teams, a DORA metrics app, a thing to map UX journeys with Playwright, and a ton of games and stuff. AI got me back into enjoying building things again."
+   },
+   {
+    "src": "ask_hn",
+    "id": 48454313,
+    "author": "pedropaulovc",
+    "text": "se engineered Hik-Connect P2P CCTV protocol for integration with OSS like Home Assistant and Frida: https://github.com/AlexxIT/go2rtc/issues/2289 * Some patches for different OSS projects like improvements to MCP tools, Playwright, Claude Code, etc."
+   },
+   {
+    "src": "ask_hn",
+    "id": 48454421,
+    "author": "wizenheimer",
+    "text": " of clicking through flows by hand, it reads your code diffs, identifies the affected UI flows, and tests them in real browser Plus after each run you get screen recordings with console logs, network requests, HARs, and Playwright traces so you can inspect exactly what the agent did :) https://github.com/wizenheimer/canary P.S. I attempted to do a Show HN but got flagged for some reason"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50364044",
+    "author": "spwa4",
+    "date": "2026-11-04",
+    "text": "... yet. In fact I'm running qwen3.8-flash-next with a Playwright-mcp docker and it is far better for scraping than my ChatGPT or Claude subscription, for the simple reason that sites aren't lying to Playwright."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50343991",
+    "author": "jeffan",
+    "date": "2026-11-02",
+    "text": "oes the video render correctly? etc.) But to your general point, this benchmark is showing we are finding 3-5X more bugs than the best OSS performance out there right now. We did also try it on tester army e2e and it underperformed Codex + Playwright MCP (this will make it in the benchmark soon). The \"better\" comes from custom agents and massively parallelized infrastructure. I'm not sure how many folks want to or even can self-host fleets of GPUs, browsers and Mac minis. We're happy for folks who can but our current offerin"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50343092",
+    "author": "MGabrielDenton",
+    "date": "2026-11-02",
+    "text": "You're right stock CC was pretty terrible. Thats why we compared against CC && Codex with agent browser and playwright mcp as well as devin. Do you have any other agents / configurations you'd like to see? We had someone recommend browser-use and are running it against the benchmark currently. We're hosting the results here if you'd like to see more: https://momentic.ai/qa-bench "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50341890",
+    "author": "MGabrielDenton",
+    "date": "2026-11-02",
+    "text": "Agreed! We've also found that the tooling you use makes a big difference in how efficient and precise the agent is, which is why we included the comparison of Playwright MCP vs agent-browser. When we were first starting Mo we tried using several different browser interfaces but we weren't able to get the recall we wanted. We settled on rewriting some custom tooling based on our mcp for our investigatory/exploratory agents. Tooling about how to i"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50247036",
+    "author": "CompoundEyes",
+    "date": "2026-10-26",
+    "text": "thing but inspecting a few of them the testing seems quite thin. I won\u2019t do anything now without layers of controls for agent coding. Just for testing \u2014 near 100s for v8 coverage, property, mutation, fuzz, chaos, contract, bdd e2e, api and playwright exploratory mcp. Long term maintenance of all of this is going to need a ci/cd that puts all that through a ringer around the clock."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50164168",
+    "author": "kunalshaw79",
+    "date": "2026-10-20",
+    "text": "Does this work exactly like playwright MCP for Desktop apps as well?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50164053",
+    "author": "ReservedSnow",
+    "date": "2026-10-20",
+    "text": "How are you making it fast? I use playwright MCP and it's too slow, doesn't understand anything, how to test it fully."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50148314",
+    "author": "olooney",
+    "date": "2026-10-19",
+    "text": "Seems like an easier approach would be to just make all your keywords strings that trip safety filters. Or use a graphical language like LabVIEW. I'd like to see an LLM drag connectors around using Playwright MCP if it doesn't have a DOM and has to script mouse movements and take screenshots. They can probably do it but it would be unbelievably slow and token heavy. The character counting is interesting but I predict frontier models are going to give up on tokens and just traim end-t"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50040199",
+    "author": "veldandev",
+    "date": "2026-10-11",
+    "text": "Location: North Sumatra, Indonesia (UTC+7) Remote: Yes Willing to relocate: No Technologies: Python, TypeScript, Node.js, Next.js, React, LLM APIs (Claude, OpenAI, OpenRouter), MCP, Playwright, Telegram Bot API, SQLite, Ollama R\u00e9sum\u00e9/CV: on request Email: yasurtraadityasuryaputra09@gmail.com GitHub: https://github.com/VeldanDev Portfolio: https://portfolio-web-roan-pi-22.vercel.app Junior developer focused on AI automation and agent tooling. Things I built and run: - "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49966736",
+    "author": "only1kareem",
+    "date": "2026-10-05",
+    "text": " and NYC on-site or hybrid works too Willing to relocate: No Technologies: TypeScript, React, Next.js, Node, Postgres, Redis, Python (FastAPI), Tailwind, Stripe, Vercel, LLM APIs (Anthropic, OpenAI, Gemini, Groq), agents and tool use, MCP, Playwright, Claude Code R\u00e9sum\u00e9/CV: No r\u00e9sum\u00e9. My work is below, and I'm glad to walk you through the code. Email: hello@aminenterprises.net I build AI products end to end. My main work is Venta ( https://venta.tools ), an AI operating environment I built myself. Its agent runtime plans wor"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49834193",
+    "author": "smpandya",
+    "date": "2026-09-24",
+    "text": "Are there results comparing agents running different tools (agent-browser, playwright MCP, browse CLI), or is this mostly Stagehand focused?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49811652",
+    "author": "undefuser",
+    "date": "2026-09-23",
+    "text": "Why did it need to generate its own driver when there is a Playwright MCP available and works right out of the box? Am I missing something?"
+   }
+  ]
+ },
+ {
+  "name": "Chrome DevTools MCP",
+  "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+  "score": 55.0,
+  "github_stars": 54930,
+  "top_hn_story": {
+   "title": "Chrome DevTools MCP (2025)",
+   "points": 604,
+   "id": "47390817",
+   "url": "https://developer.chrome.com/blog/chrome-devtools-mcp-debug-your-browser-session"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50380647,
+    "author": "bloppe",
+    "text": "I recently got really weird with my personal computer after discovering browser DevTools MCP. I basically inverted the relationship between browser and desktop environment, booting directly to a browser in kiosk mode (with Ghostty quick terminal as well, so I always have easy terminal access) and running a local Weston server that shows up as a bookm"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50386473,
+    "author": "bloppe",
+    "text": "It's the former. I just find that the browser provides an incredibly reach ecosystem for the agents to operate in. Of course, you can also set up a devtools MCP connection while still using a traditional desktop environment, I just thought it was cool. I mentioned the Weston fallback to illustrate that switching to a web-first GUI environment can be incremental."
+   },
+   {
+    "src": "ask_hn",
+    "id": 46260250,
+    "author": "cebert",
+    "text": "I\u2019ve heard folks claim the Chrome DevTools MCP eats less context, but I don\u2019t know how accurate that is."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50403715",
+    "author": "Nancy6549",
+    "date": "2026-11-07",
+    "text": "R\u00e9sum\u00e9/CV: https://nancy6547.github.io/resume.pdf GitHub: https://github.com/nancy6547 Email: singhnancy2004@gmail.com 2026 CS grad. I build tools that catch software lying about whether it works. - 10 merged PRs: 8 in Google's Puppeteer + Chrome DevTools MCP, 1 in Hugging Face sentence-transformers, 1 in DeepEval - Saisei: record/replay API responses for Playwright; a race-dependent test went from 47/100 to 100/100 passing - Junban: finds the API response order that breaks a flaky test; caught 6/6 rare races by run 5 vs 2/6 in 3,000"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49936051",
+    "author": "victor_pudeyev",
+    "date": "2026-10-02",
+    "text": "e found your project if you didn't mention it here, so good job! It looks good, minimal, I like that you're using javascript instead of that thing typescript. Unrelated, I found that when an open model (qwen3-coder:30b) drives an mcp tool (chrome-devtools-mcp@latest), it hallucinates the tool calls, and the docs say they never promised that tool calls would make sense or be valid. To me, this is a blocker and is the reason I've stopped looking at harnesses like pi. The tool calls are just fine if a closed LLM, gpt-5.* drives them, bu"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48774584",
+    "author": "bel8",
+    "date": "2026-07-03",
+    "text": "I can speak for Chrome's MCP which I have more experience. devtools MCP will have access to more deep level fetures such as performance profiling, lighthouse and network requests in details (headers, auth, cookies...). For example, I had success using chrome devtools mcp to debug frontend performance issues. The LLM captured and analyzed some nice t"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48772076",
+    "author": "bel8",
+    "date": "2026-07-03",
+    "text": "I have been using Chrome's official MCP devtools server since Nov 2025. https://github.com/ChromeDevTools/chrome-devtools-mcp Before that I used Chrome web drivers but MCP is faster and more capable. I also instruct LLMs to test my pages on Firefox using its official MCP to make sure they work in Firefox too: https://github.com/mozilla/firefox-devtools-mcp Now I will add Safari to the compatibility tes"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48546231",
+    "author": "garethsprice",
+    "date": "2026-06-15",
+    "text": " don't need to drive a Rolls Royce to the supermarket, when a used Corolla gets you there just fine. It also enables new workflows that would be cost-prohibitive with frontier LLMs (especially as token costs rise) - eg. overnight I use the Chrome devtools MCP and have the above setup fuzz-test as a user for a number of hours and see if it can break things. Even got it working with multi-modal so it can check screenshots, which blows my mind (and not my wallet, as Claude+screenshots burns $$$). The \"12-18 months behind frontier\" sound"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48315993",
+    "author": "kian",
+    "date": "2026-05-28",
+    "text": "ectural experience -- but if you're able to tell the AI in detail what you want, have it ask questions for clarifications, and read through a plan before getting it implemented, and have a solid testing plus manual qa process (automated by chrome devtools mcp) in place, I've find that you can one-shot complex features, rewrites, and even not-insignificant applications that would have taken days to write by hand in a few hours."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47931685",
+    "author": "safehuss",
+    "date": "2026-04-28",
+    "text": "This is awesome! Worked on something similar albeit a different industry. For the more challenging scrapes, would highly recommend using the Chrome Devtools MCP to be able to attach the network requests, being made by the browser to the site, as context for your agent/LLM chat - this approach really helped me to write a solid API-based scraper (also using curl_cffi) and bypassed the old tedious playwright-based approach I used to rely o"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47906826",
+    "author": "soraminazuki",
+    "date": "2026-04-26",
+    "text": "I don't see your point. If it's not a problem, can I have read-only access to your financials? Also, the article states that the initial implementation was using Chrome DevTools MCP. That doesn't sound like read-only to me."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47878883",
+    "author": "laurels-marts",
+    "date": "2026-04-23",
+    "text": "o do this with Docker) and a helper script for tearing down a worktree after you've merged the changes back into main. I'm even supplying unique chrome debug ports and unique temp user data dirs for isolated automated testing in chrome via chrome devtools mcp. Like, I'm not sure why an external library/tool is needed for this."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47507453",
+    "author": "infamia",
+    "date": "2026-03-24",
+    "text": "Chrome Devtools MCP now has an (experimental) CLI as well and can produce neat things like Lighthouse Audits. https://github.com/ChromeDevTools/chrome-devtools-mcp/pull/1... I've only used it a bit, but it's working well so far."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47503469",
+    "author": "hwartig",
+    "date": "2026-03-24",
+    "text": "hecklyhq.com we and our customers use it heavily and reliably through playwright for various monitoring, testing and automation use cases. As you want to use it from an Agent you also should take a look at https://developer.chrome.com/blog/chrome-devtools-mcp and https://github.com/microsoft/playwright-mcp "
+   },
+   {
+    "src": "hn_comment",
+    "id": "47500807",
+    "author": "nunodonato",
+    "date": "2026-03-24",
+    "text": "chrome devtools mcp really clutters your context. Playwright-cli (not mcp) is so much more efficient."
+   }
+  ]
+ },
+ {
+  "name": "Browser MCP",
+  "url": "https://browsermcp.io",
+  "score": 52.1,
+  "github_stars": 7307,
+  "top_hn_story": {
+   "title": "Show HN: Browser MCP \u2013 Automate your browser using Cursor, Claude, VS Code",
+   "points": 616,
+   "id": "43613194",
+   "url": "https://browsermcp.io/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 48459356,
+    "author": "nicman23",
+    "text": "a scrapper / browser mcp with camoufox. plug a vision llm to that bad boy and you can defeat any google / cloudflare captcha."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50188184",
+    "author": "siliconc0w",
+    "date": "2026-10-21",
+    "text": "I suspect we'll see (or what I want to see) is like an independent personal datahub and browser MCP which the assistant uses to conduct business as yourself so you have full visibility and control how it accesses your data or when it can use your cookies/credentials. Also the dots/muse/etc browsers all are seemingly getting blocked so federating it out would seem to solve that"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49345367",
+    "author": "pitiflautico",
+    "date": "2026-08-18",
+    "text": "I built NeoBrowser because every browser MCP I tried had the same failure mode: it launches a fresh, fingerprintable headless browser with no cookies, so the model hits login walls and bot checks constantly. NeoBrowser drives the real Google Chrome binary over CDP and can reuse your actual logged-in profile, so the model l"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48944230",
+    "author": "OsrsNeedsf2P",
+    "date": "2026-07-17",
+    "text": "Just open your favorite browser MCP and ask it to beat the captcha"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48764625",
+    "author": "madamelic",
+    "date": "2026-07-02",
+    "text": "Hmm. That's an interesting idea. I have never distinguished between playwright and chrome MCP, I generally just tell it \"use a browser MCP\" but I do have different ones installed on different computers."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48753830",
+    "author": "bel8",
+    "date": "2026-07-01",
+    "text": "ort a single prompt before hitting weekly limit. And that's when it works instead of downgrading. If that is a first movers play, it's a disastrous one. How sexy do you think this guy finds Anthropic now? > Today I told Sonnet (!) to use a browser MCP to enter a username and password for the project it is working on, it told me that it can't do that because it violates its security protocol. > This worked fine before. I love Claude, I have stuck with it even through people saying Codex is better but this is definitely getting"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48753568",
+    "author": "madamelic",
+    "date": "2026-07-01",
+    "text": "Today I told Sonnet (!) to use a browser MCP to enter a username and password for the project it is working on, it told me that it can't do that because it violates its security protocol. This worked fine before. I love Claude, I have stuck with it even through people saying Codex is better but this is definitely getting t"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48513740",
+    "author": "stevula",
+    "date": "2026-06-13",
+    "text": "An LLM can absolutely center a div and then use a browser MCP or playwright to visually validate that it was centered."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48459356",
+    "author": "nicman23",
+    "date": "2026-06-09",
+    "text": "a scrapper / browser mcp with camoufox. plug a vision llm to that bad boy and you can defeat any google / cloudflare captcha."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47984134",
+    "author": "ngruhn",
+    "date": "2026-05-02",
+    "text": "Try to get an animation just right without human guidance. It's difficult to give the agent feedback on its work. With browser MCP the agent can only make screenshots and see a single frame of the animation. Also agents are quite slow with browser handling. If the animation starts when a button is clicked, the animation is usually over before the agent has taken the screenshot. All behavior of backend code "
+   },
+   {
+    "src": "hn_comment",
+    "id": "47952231",
+    "author": "fishtoaster",
+    "date": "2026-04-29",
+    "text": "d on something similar for my own game, though it's been pretty tricky. I'm building a physics-based 2d game involving slingshotting around planets. The realtime nature of it has meant that it's nearly impossible for the AI to test using a browser mcp. It'll take one screenshot, then another, and in the intervening time the player shot off the map and into deep space. Instead I gave it both a code-level api to step forward and backward the physics engine and a browser-based, `window.game` api to do it via a browser mcp consol"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47867368",
+    "author": "OsrsNeedsf2P",
+    "date": "2026-04-22",
+    "text": "Try a browser MCP and ask it to bypass the captcha. Works for me most of the time"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47546241",
+    "author": "hombre_fatal",
+    "date": "2026-03-27",
+    "text": "e's built-in /chrome MCP. In practice, I also find it more useful that the Chrome MCP uses my current profile since I might want Claude to look at some page I'm already logged in to. I'm not very sophisticated here though. I mainly use use browser MCP to get around the fact that 30% of servers block agent traffic like Apple's documentation."
+   }
+  ]
+ },
+ {
+  "name": "agent-browser",
+  "url": "https://github.com/vercel-labs/agent-browser",
+  "score": 50.4,
+  "github_stars": 46631,
+  "top_hn_story": {
+   "title": "Kuri \u2013 Zig based agent-browser alternative",
+   "points": 57,
+   "id": "47857964",
+   "url": "https://github.com/justrach/kuri"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50385555,
+    "author": "mschwarz",
+    "text": "nd persistent agents (returning user) is nice. The persistent agents remember why things are as they are without having to look everything up and their feedback is generally much better than a blank slate user. Vercel's agent-browser has a good skill for this, it will find stuff I would have never thought to test myself. That feedback is sent to a pm-intake seat, who checks it against the roadmap, etc (missions/slices). The product-lead will then talk to you about it. If they are creating"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50385555",
+    "author": "mschwarz",
+    "date": "2026-11-05",
+    "text": " agents (new user) and persistent agents (returning user) is nice. The persistent agents remember why things are as they are without having to look everything up and their feedback is generally much better than a blank slate user. Vercel's agent-browser has a good skill for this, it will find stuff I would have never thought to test myself. That feedback is sent to a pm-intake seat, who checks it against the roadmap, etc (missions/slices). The product-lead will then talk to you about it. If they are creating a lot of feedback, "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50343092",
+    "author": "MGabrielDenton",
+    "date": "2026-11-02",
+    "text": "You're right stock CC was pretty terrible. Thats why we compared against CC && Codex with agent browser and playwright mcp as well as devin. Do you have any other agents / configurations you'd like to see? We had someone recommend browser-use and are running it against the benchmark currently. We're hosting the results here if you'd like to see more: https://momentic.ai/qa-bench "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50341890",
+    "author": "MGabrielDenton",
+    "date": "2026-11-02",
+    "text": "Agreed! We've also found that the tooling you use makes a big difference in how efficient and precise the agent is, which is why we included the comparison of Playwright MCP vs agent-browser. When we were first starting Mo we tried using several different browser interfaces but we weren't able to get the recall we wanted. We settled on rewriting some custom tooling based on our mcp for our investigatory/exploratory agents. Tooling about how to interact with the A11y"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50060202",
+    "author": "jonperl",
+    "date": "2026-10-12",
+    "text": "I work at QA Wolf and wrote this. Is anyone else redesigning their UI for agent browsers? What are you changing?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49928094",
+    "author": "lo5",
+    "date": "2026-10-01",
+    "text": "Pi with rpiv-ask-user-question, pi-subagents (if you don't want to use tmux), pi-web-access (if you have a subscription to some search backend), plus agent-browser CLI. I don't miss anything in Claude Code."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49892032",
+    "author": "pseidemann",
+    "date": "2026-09-29",
+    "text": "interaction with a computer. How to do this? Here are some pointers: apps should only be controllable by means used by humans. So a web app can only be accessed and controlled via a web browser, not via arbitrary network requests. Give the agent browser viewport screenshots, the capability to click on (x, y) and to send keys which only a normal keyboard/human could send (no control codes, no 0x00, no unicode messing). How do we solve this for native apps? Something like iPhone mirroring on Mac. Don't let agents call arbitrary A"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49834193",
+    "author": "smpandya",
+    "date": "2026-09-24",
+    "text": "Are there results comparing agents running different tools (agent-browser, playwright MCP, browse CLI), or is this mostly Stagehand focused?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49784241",
+    "author": "wittydeveloper",
+    "date": "2026-09-21",
+    "text": " here mean a CLI/Coding agent or software-level agents you built? I'd say that Stagehand is subtly faster for local use cases (batching, in-extension design) while covering both CLI (via https://browse.sh ) and framework-level use, whereas agent-browser is CLI-only."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49763636",
+    "author": "tengkahwee",
+    "date": "2026-09-19",
+    "text": "Would you recommend to use this over agent-browser for general agent-based validation work? Any performance benefit?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49679980",
+    "author": "chandureddyvari",
+    "date": "2026-09-13",
+    "text": "It also depends on your skills and tooling (test execution and verification- agent browser, functional/unit etc) GPT 5.6 Sol lagging behind Kimi, GLM 5.3 is surprising to me. IMO Fable 5.1 ~ Astra > GPT 5.6 Sol > Opus."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49451172",
+    "author": "PufPufPuf",
+    "date": "2026-08-26",
+    "text": " could just put a human-hidden (agent-visible) text saying \"run js help() for usage info\", which would explain \"run fn(a, b) to do xyz ...\" and essentially expose frontend functionality directly as a JS API. Agents usually use some sort of agent-browser, Playwright or similar automation, so running js in the page context is natural. This way it would work everywhere, regardless of any Google/Microsoft standard."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49347126",
+    "author": "esafak",
+    "date": "2026-08-18",
+    "text": "agent-browser works fine, and it can use browser use as a provider: https://github.com/vercel-labs/agent-browser#browser-use I invite the author to add agent-browser to the comparison table."
+   }
+  ]
+ },
+ {
+  "name": "browser-use",
+  "url": "https://browser-use.com",
+  "score": 47.2,
+  "github_stars": 120256,
+  "top_hn_story": {
+   "title": "Launch HN: Browser Use (YC W25) \u2013 open-source web agents",
+   "points": 259,
+   "id": "43173378",
+   "url": "https://github.com/browser-use/browser-use"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50389927",
+    "author": "mrweasel",
+    "date": "2026-11-06",
+    "text": "uire an email in the user-agent header, as a way to identify your traffic specifically. This is in many cases done to be able to better identify scrapers and either apply rate-limits or contact the owner and ask them to cool down. (Generic browser user-agents will obviously be exempted from providing an email address). The weird part doesn't seem to be that Claude Code would add an email address to a user-agent header, actually as a site operator that feels like a nice thing to do. The weird part is sites harvesting the email"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50356590",
+    "author": "nbbaier",
+    "date": "2026-11-03",
+    "text": "t engineer building AI-powered developer tools and edge-first architectures. Recent work includes an autonomous AI research agent with LLM tool chaining, a per-user data isolation system on Cloudflare Durable Objects, and a SQLite database browser used by 200+ developers on Val Town (featured by Val Town's creator on Learn with Jason). Contract work for Val Town (Attio-to-Slack integration template) and Mastra (technical case studies, customer interviews). Background in linguistics research (PhD, UC Berkeley). Looking for rol"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50355466",
+    "author": "kylehotchkiss",
+    "date": "2026-11-03",
+    "text": "I was just in my settings telling codex to stop trying to browser use Safari (ugh) and noticed that model training was enabled. Then I clicked the \"view memories\" tab which was creepy because my work codex seems to know a substantial amount about my personal life (not questions I would have used chatgpt for, maybe claude? is it watching my screen?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50346287",
+    "author": "com2kid",
+    "date": "2026-11-03",
+    "text": "way gets so long that adherence drops. You also end up with just stupid shit. I gave Sol too much free reign and it decided to update my DB schema to save stack traces to a DB. Code which it then wrote a bunch of tests for. And then used a browser use agent to manually test."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50343092",
+    "author": "MGabrielDenton",
+    "date": "2026-11-02",
+    "text": "You're right stock CC was pretty terrible. Thats why we compared against CC && Codex with agent browser and playwright mcp as well as devin. Do you have any other agents / configurations you'd like to see? We had someone recommend browser-use and are running it against the benchmark currently. We're hosting the results here if you'd like to see more: https://momentic.ai/qa-bench "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50314638",
+    "author": "adrian_b",
+    "date": "2026-10-31",
+    "text": "ad a complete YouTube list of clips, with a total size of several tens of GB. Towards the end of the list, after a couple of hours or so, the download was interrupted. Then my IP address was completely banned for YouTube, regardless of the browser used. The ban lasted for a couple of weeks. Now, used only for infrequently downloading single clips, yt-dlp works again fine."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50311065",
+    "author": "lando_cal",
+    "date": "2026-10-30",
+    "text": "interesting, want to see how it performs. been using a browser use for a while so curious to see"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50280209",
+    "author": "6thbit",
+    "date": "2026-10-28",
+    "text": "atic, on specific cases where people not using a major browser were accessing resources some is interested on, on a network they have control of. Makes the surface quite small. The threat here is more so for 'backend' services than regular browser users."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50211925",
+    "author": "srean",
+    "date": "2026-10-23",
+    "text": "Cannot confirm because I am on Chrome. But it would be so sad if that website is Chrome only. I doubt it though. Can other browser users chime in."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50198073",
+    "author": "jjuel",
+    "date": "2026-10-22",
+    "text": "So the new browser uses AI to read your tabs? No thanks!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50188447",
+    "author": "testycool",
+    "date": "2026-10-21",
+    "text": "I first used something similar with this: https://github.com/browser-use/agency "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50188093",
+    "author": "UFOFlyer",
+    "date": "2026-10-21",
+    "text": "One use case I've been having a lot of success with is using Muse's browser use capabilities to cut through annoying web UIs. I subscribe to a meal delivery service but the web app is slow and I often forget to pick the next week's meals (being stuck with unappetizing defaults), so now I have Muse crawl through the app weekly and surface the options I care "
+   }
+  ]
+ },
+ {
+  "name": "Lightpanda",
+  "url": "https://lightpanda.io",
+  "score": 40.2,
+  "github_stars": 41556,
+  "top_hn_story": {
+   "title": "Show HN: Lightpanda, an open-source headless browser in Zig",
+   "points": 319,
+   "id": "42817439",
+   "url": "https://github.com/lightpanda-io/browser"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50207644",
+    "author": "sheo",
+    "date": "2026-10-23",
+    "text": "The website is filled with popups and looks ugly IMO No benchmarks shown so claim \"the fastest\" looks weird No actual *browser* competitors listed e.g. https://lightpanda.io/ "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50151962",
+    "author": "eatonphil",
+    "date": "2026-10-19",
+    "text": "I was not precise there sorry. They were not crashes but Lightpanda failed to render them. It was these URLs https://duckdb.org/2025/07/04/ducklake-02.html https://ducklabs.com/news/2024/06/03/duckdb-version-100-rele... https://neovim.io/doc/user/dev_arch https://www.twelvelabs.io/blog/%EB%B9%84%EB%94%94%EC%98%A4%E... "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50118460",
+    "author": "krichprollsch",
+    "date": "2026-10-16",
+    "text": "Hello, Lightpanda co-author here. Thanks for the evaluation and for sharing some results! I'd love to know more about your process and the crashes you ran into, if you're happy to share :)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50117348",
+    "author": "eatonphil",
+    "date": "2026-10-16",
+    "text": "I have a research folder of some findings comparing Chrome, headless-shell, lightpanda, jsdom, etc. Lightpanda still did quite well, though with much smaller multiples compared once you've mildly tuned Chrome/headless-shell, but it crashed more often than Chrome and headless-shell. I haven't yet had time to write it up on The Consensus. So here are some findings y"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50080257",
+    "author": "mboyd1",
+    "date": "2026-10-13",
+    "text": "I have only had to block Lightpanda user-agent for super aggressive scraping from a multitude of source IPs. I did have to implement heavier rate limiting for some application paths to reduce performance impact from other agentic traffic. Rather than wholesale blocking agents I\u2019d prefer they see my applications as"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49693596",
+    "author": "ospider",
+    "date": "2026-09-14",
+    "text": "I tried to build a lightweight browser for agents, like lightpanda/obscura/kindsurf. But I then found out it's a dead end for me and all the others. The web spec is vast and endless, if you try to build something actually works for modern sites, it will be huge. If you want to keep it lightweight, it won't work for most sites. Just use chrome-h"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49218533",
+    "author": "ElijahLynn",
+    "date": "2026-08-08",
+    "text": "Just to throw in the context window, another agentic browser (headless): https://lightpanda.io/ "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49131105",
+    "author": "ernsheong",
+    "date": "2026-08-01",
+    "text": "Hello, how does cwbrowser compare with Lightpanda?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48576769",
+    "author": "Reformedot",
+    "date": "2026-06-17",
+    "text": "We decided to maintain Chromium as engine for stealth purposes. Browsers like LightPanda lack stealth at all, they are trivial to detect. There are ways to make Chromium more performant, by removing everything that you don't need. We believe that Chromium can reach that performance without starting an entire engine from scratch, and without losing stealth, a top pri"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48576330",
+    "author": "hobofan",
+    "date": "2026-06-17",
+    "text": " stuck with Chromium. We have a much less sophisticated setup in our web-access MCP server[0] where browser instances are spawned as subprocesses and the biggest win in stability, CPU and memory usage we had was in switching from Chrome to Lightpanda[1]. Fitting to the statement at the end of the article, the faster browser to boot might be one that allocates less memory in general. [0]: https://github.com/EratoLab/web-access-mcp [1]: https://lightpanda.io "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48552925",
+    "author": "zeron0a",
+    "date": "2026-06-16",
+    "text": "To my knowledge Lightpanda is a headless browser used for automation. While Zero Browser is just a UI for end user. Zero might be able to use Lightpanda as a optional plugin."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48552555",
+    "author": "theturtletalks",
+    "date": "2026-06-16",
+    "text": "I see you thank LightPanda at the bottom. Is that also not a minimal browser like this? How does Zero differ?"
+   }
+  ]
+ },
+ {
+  "name": "Firecrawl",
+  "url": "https://firecrawl.dev",
+  "score": 39.5,
+  "github_stars": 199456,
+  "top_hn_story": {
+   "title": "Show HN: Draco \u2013 A single-binary, self-hostable Firecrawl alternative in Rust",
+   "points": 15,
+   "id": "49148163",
+   "url": "https://github.com/0xchasercat/draco/"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50395198",
+    "author": "ckugblenu",
+    "date": "2026-11-06",
+    "text": "Not to derail the conversation but i've noticed firecrawl skill also prompt injecting the agent to send search feedback via it's skill. these are dark patterns that leak information."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50313509",
+    "author": "bilater",
+    "date": "2026-10-31",
+    "text": "All - I\u2019ve been wanting to use Jev in a project, and I recently saw Firecrawl use it in an interesting way. They use their crawler to pull company data and then use Jev to classify the companies into categories. I thought this was a very powerful way to gain insights out of publicly available data, so I tried it on Hacker News. I pulled every comment and "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50188805",
+    "author": "pram",
+    "date": "2026-10-21",
+    "text": "You should consider using something like Exa or Firecrawl."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50148881",
+    "author": "ilya-bogin",
+    "date": "2026-10-19",
+    "text": "We have measured DeepSeek search at Keenable too on our open-sourced NEEDLE benchmark. From our measurements its better than Jina, Firecrawl and Tavily but worser than Parallel and Exa in terms of quality"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50144703",
+    "author": "ggnore7452",
+    "date": "2026-10-18",
+    "text": "Ran a few quick tests on my web-fetch bench. As much as I like DeepSeek, its search and fetch aren't very good (is quite cheap tho). You'd probably be better off using free services like Jina directly, or if you're going paid, Parallel, Firecrawl, Tavily and Exa are all pretty good now."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50140183",
+    "author": "lukewarm707",
+    "date": "2026-10-18",
+    "text": "e user's web history (URLs, etc). To avoid selling the llm prompt content you would need your own inference or a contract. Sadly most just hoard the data and some will offer a model where they charge for privacy. They are all quite scammy. Firecrawl: logs. Parallel: logs. Bright data: logs. Kagi: logs for abuse. Bocha, querit etc: logs logs logs. Cloudflare: doesn't say what they do. Exa: charge for no retention. Linkup: no retention on request. Brave: no retention on request, but actually approved it (win for brave)."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50116889",
+    "author": "squatrito23",
+    "date": "2026-10-16",
+    "text": " worth investigating. Then an agent with industry main KPIs list is in charge to figure out which metrics could help explain what's happening, given a constraint of viable sources (mainly web scraping), and determines what data to collect. Firecrawl handles scraping, other sources are internal. System structures data, run calculations, generate BI charts and insights, and publish the results. The whole pipeline runs automatically, from identifying a market question to producing a data-backed analysis. Additionally users may"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50113142",
+    "author": "fishisnow",
+    "date": "2026-10-16",
+    "text": "I built a free tool( https://mdpdf.net ), based on the fast PDF conversion library ( https://github.com/firecrawl/pdf-inspector ). It runs entirely in the user\u2019s browser. In my view, the biggest pain points when converting PDF to Markdown are whether it can properly handle content like tables and code blocks, as well as OCR. Current OCR approaches don\u2019t seem very effective unless you use an"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49973675",
+    "author": "LTL_FTC",
+    "date": "2026-10-06",
+    "text": "I believe 2.5 lite will be deprecated on the 20th or so. Recently had to move to newer models at work. Edit to add that my ai scientists currently use google\u2019s vertex for web search and grounding as well as firecrawl."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49968986",
+    "author": "hrideshmg",
+    "date": "2026-10-05",
+    "text": "Surprised no one in this thread has mentioned running a self hosted search API. I personally used to use Firecrawl's paid credits (got a bunch of em for free at an event) before I realized that they allow you to self-host your own instance (albeit missing some features I never use anyways). It's been working really well for my agents, I even hosted a small observability tool that proxies the"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49967498",
+    "author": "innocent_name",
+    "date": "2026-10-05",
+    "text": "Of course Firecrawl isn't \"Verified bot\". Their customers were responsible for 95% of my traffic bill overcharge."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49928677",
+    "author": "m00dy",
+    "date": "2026-10-02",
+    "text": "of the market: - Traditional proxy providers (Bright Data, Oxylabs, Smartproxy, Proxybase) give you raw IPs or massive unparsed HTML blobs, leaving you to deal with DOM bloat, token waste, and brittle parsing pipelines. - Modern tools like Firecrawl or Jina made clean Markdown extraction easy for hobby setups, but they often struggle when you throw heavy SPAs, high-concurrency jobs, or hardened anti-bot walls (Cloudflare Under-Attack / Turnstile, Kasada, DataDome) at them. - Rolling your own Playwright / Puppeteer cluster w"
+   }
+  ]
+ },
+ {
+  "name": "Stagehand",
+  "url": "https://www.stagehand.dev",
+  "score": 38.1,
+  "github_stars": 25978,
+  "top_hn_story": {
+   "title": "Show HN: Stagehand \u2013 an open source browser automation framework powered by AI",
+   "points": 326,
+   "id": "42635942",
+   "url": "https://github.com/browserbase/stagehand"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50191109",
+    "author": "orliesaurus",
+    "date": "2026-10-22",
+    "text": "great job OP. Are there some benchmarks (couldnt find any) on how it performs vs like Stagehand etc etc.?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49924538",
+    "author": "dataviz1000",
+    "date": "2026-10-01",
+    "text": ", JavaScript, Python, PHP, React, React Native, Svelte, Express, Bun, Node.js, Tailwind, Angular, GraphQL, D3.js, visx, Backbone, jQuery, LangChain, Mastra, FastAPI, pandas, scikit-learn, Optuna, Chrome Extension API, Playwright, Electron, Stagehand, browser-use, Web Audio API, WebRTC, WebSockets, PostgreSQL, TimescaleDB, MySQL, MongoDB, Redis, AWS, EC2, S3, Lambda, Docker, Git, LLM agent design, agent evaluation, reinforcement learning, browser automation, MCP R\u00e9sum\u00e9/CV: Ask via email Email: [HN username]@gmail.com I'm loo"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49834193",
+    "author": "smpandya",
+    "date": "2026-09-24",
+    "text": "Are there results comparing agents running different tools (agent-browser, playwright MCP, browse CLI), or is this mostly Stagehand focused?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49834078",
+    "author": "mhykim",
+    "date": "2026-09-24",
+    "text": "Why use Stagehand when agents can write CDP / Playwright on the fly for browser use"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49833928",
+    "author": "MiguelG719",
+    "date": "2026-09-24",
+    "text": "Try https://stagehand.dev/dino ;)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49833761",
+    "author": "MiguelG719",
+    "date": "2026-09-24",
+    "text": "ep agents but 71% at ~$10/task on fx. The eval harness is a CLI you can run yourself (pick harness + tools/mcps + model, pass high-level tasks, grades with LLM verifiers, has trials/concurrency/OTEL tracing): https://github.com/browserbase/stagehand/tree/main/packages/... Happy to get into methodology, and if you want your model or harness added, just let me know."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49784241",
+    "author": "wittydeveloper",
+    "date": "2026-09-21",
+    "text": "Does \"agent-based\" here mean a CLI/Coding agent or software-level agents you built? I'd say that Stagehand is subtly faster for local use cases (batching, in-extension design) while covering both CLI (via https://browse.sh ) and framework-level use, whereas agent-browser is CLI-only."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49784175",
+    "author": "wittydeveloper",
+    "date": "2026-09-21",
+    "text": "The cache serves as a managed server-side layer in the Stagehand API, keyed to instruction, page content, and the options you provide. Model configuration is intentionally excluded from the cache, so switching models does not invalidate it. If the page structure changes, the call does not result in a cache hit, and we revert to full inference"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49773778",
+    "author": "mgrandl",
+    "date": "2026-09-20",
+    "text": "I think what they are suggesting is that this would replace playwright/cypress in favor of stagehand+test runner (like vitest or whatever you are already using)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49768496",
+    "author": "MiguelG719",
+    "date": "2026-09-19",
+    "text": "We also just added Jev support https://github.com/browserbase/stagehand/pull/2952 On the act/extract/observe evals it shows promising results being extremely efficient - act: 4.3x faster, 97% fewer LLM calls. Pass rate: 97.5% -> 98.3%. - heldout: 4.1x faster, 78% fewer LLM calls. Pass rate: 87.5% -> 97.5%. - observe: 11.1x faster, 69% fewer LLM call"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49767485",
+    "author": "Phemist",
+    "date": "2026-09-19",
+    "text": "using Playwright a lot and also hit on the friction between playwright's web testing scope (e.g. no 1st class support for \"muted\" start-up of browsers, jeez) and usage for task automation all the time. This looks very interesting! How does stagehand deal with complex http/websocket request/response and or console message filtering? https://docs.stagehand.dev/v4/reference/page#on E.g. I would like a script that tracks all communication that matches a specific filter (implemented as an anonymous function/lambda). This filter "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49765724",
+    "author": "ChemSpider",
+    "date": "2026-09-19",
+    "text": "If agents need to run on the desktop or logged into a user's real browser, the alternative would be Ui.Vision MCP. But stagehand is designed for backend use, so apples and oranges."
+   }
+  ]
+ },
+ {
+  "name": "Vibium",
+  "url": "https://github.com/VibiumDev/vibium",
+  "score": 34.7,
+  "github_stars": 2955,
+  "top_hn_story": {
+   "title": "Show HN: Vibium \u2013 Browser automation for AI and humans, by Selenium's creator",
+   "points": 443,
+   "id": "46377597",
+   "url": "https://github.com/VibiumDev/vibium"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "47569674",
+    "author": "Grokify",
+    "date": "2026-03-30",
+    "text": "buted to 19M+ commits on GitHub, it will be interesting to see where this ends up. Specifically on copyright, it will be interesting to see if any DMCA takedown notices are filed, including popular projects such as OpenClaw, GSD, Gas Town, Vibium, and others. More on the 19M+ commits here: https://news.ycombinator.com/item?id=47501348 "
+   },
+   {
+    "src": "hn_comment",
+    "id": "47395262",
+    "author": "hugs",
+    "date": "2026-03-16",
+    "text": "have you tried vibium's cli + agent skill?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47395256",
+    "author": "hugs",
+    "date": "2026-03-16",
+    "text": "some serious people use vibium instead. (full-disclosure: \"some serious people\" is me.)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47392561",
+    "author": "schainks",
+    "date": "2026-03-15",
+    "text": "Very interested. Would even pay for an api for this. I am doing something similar with vibium and need something more token efficient."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47357010",
+    "author": "hugs",
+    "date": "2026-03-12",
+    "text": "they probably meant desktop. i do browser test automation (selenium, vibium), and the lack of google chrome on arm64 trips up new users frequently. the workaround is to just use chromium, but that's a confusing extra step for some if it's not automated and hidden for you. on that note, it would have been nice if they also clarified if this means they'll"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47335051",
+    "author": "hugs",
+    "date": "2026-03-11",
+    "text": "hi, i'm jason huggins (selenium, appium, now vibium). browser automation and testing have been my jam for a long time. for most of that time, it would be fair to say browser automation was an often forgotten and overlooked corner of the tech landscape. with vibe/agentic coding, things have changed. the folks at kernel reached out"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46623870",
+    "author": "hugs",
+    "date": "2026-01-14",
+    "text": "vibium clicker, too. https://github.com/VibiumDev/vibium/blob/main/CONTRIBUTING.m... \"browser automation for ai agents\" is a popular idea these days."
+   },
+   {
+    "src": "hn_comment",
+    "id": "46528342",
+    "author": "jMyles",
+    "date": "2026-01-07",
+    "text": "Any notions of how this differs from Vibium?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46436216",
+    "author": "ludamn",
+    "date": "2025-12-30",
+    "text": "I commented your project in this thread lol, but since my account has low score the comment is probably hidden to most folks, so thanks for sharing about Vibium here. I'm following your progress since I asked a similar \"Ask HN\" a couple of weeks ago, it's been interesting checking your (and Claude's) work/commits on https://github.com/VibiumDev/vibium/commits/main/ "
+   },
+   {
+    "src": "hn_comment",
+    "id": "46436060",
+    "author": "hugs",
+    "date": "2025-12-30",
+    "text": "i'm vibe coding vibium, a test automation tool in the spirit of playwright and selenium. (was #1 on hn last week for a little bit with a lively discussion.)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46435855",
+    "author": "ludamn",
+    "date": "2025-12-30",
+    "text": " https://github.com/VibiumDev/vibium/commits/main/ This is a new browser-testing library by the creator of selenium, apparently all code commits are co-authored by claude, I'm following this repo to see how far this strategy will go"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46415917",
+    "author": "linsomniac",
+    "date": "2025-12-29",
+    "text": "I may not be understanding the the context of #3 (Javascript console, page contents showing traceback?), but I'd be looking at MCP servers for Playwright or https://github.com/VibiumDev/vibium or that browser automation MCP that I think Google announced a month or so for Chrome and the name of which escapes me."
+   }
+  ]
+ },
+ {
+  "name": "Claude in Chrome",
+  "url": "https://claude.com/chrome",
+  "score": 32.7,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Claude in Chrome",
+   "points": 316,
+   "id": "46339777",
+   "url": "https://claude.com/chrome"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50383418",
+    "author": "cchase88",
+    "date": "2026-11-05",
+    "text": "ures at runtime, even those that were themselves defined at runtime. Instead of the normal work flow of having Claude make changes, starting up a web service, testing the web service with some Javascript driver code, I instead work through Claude in Chrome and expose a web-based interpreter from within the running web service itself. I can instruct Claude to make changes at runtime and immediately after making that change, the code can be tested by Claude. Those changes can then be dumped to disk and reincorporated back into the b"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50186428",
+    "author": "doctoboggan",
+    "date": "2026-10-21",
+    "text": "on of this using Claude code and cron jobs to help me manage my online jewelry business. It's an idea that is pretty game changing, and really pay dividends if most of your business is handled online with APIs and web apps. Also, using the Claude in chrome extension greatly expands the possibilities of tasks you can hand off. I like my hacked together version, because Claude code uses locally stored memories, which I feel is important for me to remain in control of the situation and give me an easy ability to try other agents in t"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50101578",
+    "author": "helsinkiandrew",
+    "date": "2026-10-15",
+    "text": "Claude (Opus5.5Medium) with \"Claude in Chrome\" can scan your activities in Strava and Garmin Connect websites and download GPX files without use of an MCP (perhaps not as quick). I've found it can also give quite good suggestions for what kind of run to do after looking at my previous weeks activities on the Strava website."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49889405",
+    "author": "konsnos",
+    "date": "2026-09-29",
+    "text": "Sometimes it's not about token usage but speed of the task. I am using Sonnet 5.0 in browser (btw Claude in Chrome extension works in Edge) to download Datadog logs with multiple filters. It's running for about an hour, doesn't run out of tokens and does a splendid job."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49733080",
+    "author": "idopmstuff",
+    "date": "2026-09-16",
+    "text": "At this point, I mostly ask Claude to use Claude in Chrome to use ChatGPT to create lifestyle images (because I am cheap and I don't want to pay for API usage when I could get them free) based on whatever product shots I have. Sometimes I give it some more specific direction about what I want, but usually for the first pass I just tell "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49703297",
+    "author": "trencedamp",
+    "date": "2026-09-14",
+    "text": "rrors current models make given their intelligence They have no intelligence. These are very very very refined prediction engines. > A common set is having Claude take some product photos and turn them into lifestyle ones using ChatGPT via Claude in Chrome. It's a pretty well-honed workflow at this point, but it'll still return images where the product is obviously not correct and seemingly not notice them. Obvious to you or I, or someone with actual intelligence. But things like this slip by a frontier model in the same way AI fr"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49702729",
+    "author": "idopmstuff",
+    "date": "2026-09-14",
+    "text": "get better, errors will decline, but I am somewhat surprised to see some of the errors current models make given their intelligence. A common set is having Claude take some product photos and turn them into lifestyle ones using ChatGPT via Claude in Chrome. It's a pretty well-honed workflow at this point, but it'll still return images where the product is obviously not correct and seemingly not notice them. Anyway, even if the agents are \"perfect\" in terms of their ability to execute tasks, there's still just an enormous amount of"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49452249",
+    "author": "suncemoje",
+    "date": "2026-08-26",
+    "text": "Use Claude Code with Chrome MCP / Claude in Chrome and it'll happily do it for you, 100%"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49351596",
+    "author": "debarshri",
+    "date": "2026-08-18",
+    "text": "I dont this is top most priority. We do this with codex or claude in chrome and validate the UX. I think BDD is going to be back in style for agent generate code. When you generate at scale discovering, maintaining and scaling test is the major problem, thats why were katana [1] a behavior driven testinf utility thay discovers behavior and maintain, gen"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49161789",
+    "author": "dotfrag",
+    "date": "2026-08-03",
+    "text": "Aside from the fact that an agent can use this, how is this better than Claude for Chrome? With all the capabilities that Claude in Chrome has, it almost seems better to just have an agent come up with a prompt you can send CiC -- quickly send the prompt, get feedback and send it back to the agent. I know, it defeats the purpose of AI but seems like a bit of extra se"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49112804",
+    "author": "carloslfu",
+    "date": "2026-07-30",
+    "text": "or each launcher like `open -n -a /Applications/Claude.app --args --user-data-dir=\" \"`. I got my first Claude to make me two different launchers for the two apps, and it's been working perfectly. wdyt? The only problem I've noticed is with Claude in Chrome. It seems to not work well in the second account. And this makes sense because it was designed just for one app. Do you find yourself having the same problem with this setup? have you tried the second one with the Claude in Chrome ext?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48827112",
+    "author": "juppytt",
+    "date": "2026-07-08",
+    "text": "Several critical vulnerabilities in real-world agents that allow an attacker to launch various attacks: arbitrary click attacks on web agents (Claude in Chrome, Antigravity, and Nanobrowser), and remote cade execution and supply-chain attacks on coding agents (Claude Code, Codex, and Gemini CLI)."
+   }
+  ]
+ },
+ {
+  "name": "Scrapling",
+  "url": "https://github.com/D4Vinci/Scrapling",
+  "score": 23.0,
+  "github_stars": 99200,
+  "top_hn_story": {
+   "title": "Scrapling v0.2.99 \u2013 Easy, effortless Web Scraping With Python as it should be",
+   "points": 1,
+   "id": "43852100",
+   "url": "https://github.com/D4Vinci/Scrapling"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "49825368",
+    "author": "nijave",
+    "date": "2026-09-24",
+    "text": "It also took about 5 minutes of fiddling with notmuch cli and jq to extract SNS message bodies from emails (for instance). I think a thin layer on notmuch would get you pretty close without so much infrastructure. On the web scraping side, scrapling seems to pretty much just work. There hasn't been a website yet it won't load in some mode--even Google SERP."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49677004",
+    "author": "nijave",
+    "date": "2026-09-12",
+    "text": "SearXNG has been working pretty well for me. I had an agent write the MCP then do a couple passes comparing to server side LLM web tools and exa and tweaking and it works pretty well. I also added scrapling for fetch which covers pretty much everything but sometimes is a bit context heavy."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49211670",
+    "author": "nijave",
+    "date": "2026-08-07",
+    "text": "Currently using exa/searxng/scrapling with pretty good success. Has anyone compared these to agent research?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49185197",
+    "author": "nijave",
+    "date": "2026-08-05",
+    "text": ">This doesn't work in the cloud Software-as-a-Service model, because you are not running your own copy of the app. Let me introduce you to scrapling+MCP--the closest I've come. Stealthed, controllable browser gives you an API to arbitrary web things You can't modify it, but you can extend it which imo is the next best thing adb (Android) is close albeit a bit more tedious. It's fun watching an LLM take screenshots, read them"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48447086",
+    "author": "nullbio",
+    "date": "2026-06-08",
+    "text": "What is the advantage of your product over having Codex generate a script using something like https://github.com/D4Vinci/Scrapling ?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48040324",
+    "author": "nzeid",
+    "date": "2026-05-06",
+    "text": "General purpose, mostly internet research in the form of slow-crawling. (Emphasis on slow - I've ultimately landed on Scrapling's API for seamless content rendering, and I use image support so as not to exclude informative images or weirdly rendered text.) For coding I don't need image support so I stuff the entire GPU with text-only mode. I don't have a workflow where I send LLMs off to generate thousan"
+   }
+  ]
+ },
+ {
+  "name": "Browserbase",
+  "url": "https://www.browserbase.com",
+  "score": 22.7,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Browserbase Founder Rejected by 500 Internships before founding $300M company [video]",
+   "points": 8,
+   "id": "47345075",
+   "url": "https://www.youtube.com/watch?v=Eyuo1kG_APQ"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "49833761",
+    "author": "MiguelG719",
+    "date": "2026-09-24",
+    "text": "Hi HN, Over the last 2 years, we observed computer use models improving at a rapid pace and saturating benchmarks. This new benchmark replaces Online-Mind2Web with our own Browserbase Benchmark v2 that better represents the complex tasks that browser agents face in the real world. It runs against 23 models (frontier and open-weight) and 9 harnesses (Claude Code to LangChain Deep Agents) on accuracy, speed, and cost. This new benchmark confirmed our belief tha"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49784175",
+    "author": "wittydeveloper",
+    "date": "2026-09-21",
+    "text": "t in a cache hit, and we revert to full inference. Additionally, any cached selector that no longer resolves will also revert, with self-healing disabled during replay. Regarding the local file issue: currently, caching keys are based on a Browserbase session. This means that with a purely local browser, the cache option has no effect, and there\u2019s nothing to verify. Each call returns metadata (including status, miss reason, threshold, count, and tokens saved) so you can observe churn rather than make guesses about it."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49768496",
+    "author": "MiguelG719",
+    "date": "2026-09-19",
+    "text": "We also just added Jev support https://github.com/browserbase/stagehand/pull/2952 On the act/extract/observe evals it shows promising results being extremely efficient - act: 4.3x faster, 97% fewer LLM calls. Pass rate: 97.5% -> 98.3%. - heldout: 4.1x faster, 78% fewer LLM calls. Pass rate: 87.5% -> 97.5%. - observe: 11.1x faster, 69% fewe"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49763632",
+    "author": "ulrikrasmussen",
+    "date": "2026-09-19",
+    "text": "useful, and I like the caching idea which I think makes it interesting for self-healing CI tests. How does it determine when a cached act() fails and has to be re-evaluated by the LLM? And in particular, if the cache is saved in the cloud (Browserbase?), won't this lead to a lot of cache churn if used in CI pipelines where different versions of the site are running against the same cache? Also, is there a technical reason why the cache couldn't just be a local file that's checked in along with the script but must be provided "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49757218",
+    "author": "dot_louis",
+    "date": "2026-09-18",
+    "text": "Do I need to pay for Browserbase to use this?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49511458",
+    "author": "kushagrchitkar",
+    "date": "2026-08-31",
+    "text": "Our browser is interactive, in the sense that one could click around the browser, as well as the agent. Usually for 2FA logins, Almanac would hand it over to the human, who'd complete login, and then continue. We use Browserbase for the browser and session persistence is inbuilt. For ToS violations, this is a limitation. Accessing sites that don't allow for bot access could result in account ban/suspension. Simply using Browserbase under the hood does not remove this risk."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49503278",
+    "author": "cute_boi",
+    "date": "2026-08-30",
+    "text": "All this happens due to companies like browserbase, Hyperbrowser, Scrapefly. These service exists to facilitate such operation and they aren't doing anything to prevent abuse. They are infact selling way to bypass captchas etc... I think any service that is trying to sell a way to solve captchas must be banned by government. At "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49483687",
+    "author": "cute_boi",
+    "date": "2026-08-28",
+    "text": "The issue with accessibility is bots from scrapefly or browserbase will abuse website to death. There is reason why we can't have good things due to abuser like scrapefly, browser base, anchor browser etc... I had to turn off all the accessible selector and randomized html soup to make their life harder."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49274504",
+    "author": "carimura",
+    "date": "2026-08-12",
+    "text": "Not yet. The agents do have access to the web but not really a proper browser. Browserbase or equivalent is next on my list."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48855638",
+    "author": "TheYahiaBakour",
+    "date": "2026-07-10",
+    "text": "the reality is that the space is huge and expanding many that you mentioned serve different needs and it tends to not be zero sum to everyone's surprise (including mine at first) e.g. browseruse, browserbase = browser automation exa, parallel = search for ai (primarily) we differentiate by prioritizing the infrastructure use-case, we encourage people to build products & features on top of our APIs and build it accordingly some direct differentiators are: no hidden credit multipliers"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48855590",
+    "author": "jackienotchan",
+    "date": "2026-07-10",
+    "text": "How did you find your differentiation in a highly commoditized space? It's probably one of the most crowded spaces. Even within YC, there are many competitors that do pretty much the same thing: - Firecrawl - BrowserUse - Browserbase - CloudCruise - NotteLabs - Intuned - Expand.ai - Reworkd And then you have the extremely well-funded web retrieval players like Parallel and Exa. How do you differentiate to all these? Another thing that might interest HN: AI crawlers come with negative side effects for website"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48663108",
+    "author": "cute_boi",
+    "date": "2026-06-24",
+    "text": "It has failed because of these company like browserbase and hackers who hack smart device and TV's for residential proxy."
+   }
+  ]
+ },
+ {
+  "name": "Jina Reader",
+  "url": "https://jina.ai/reader",
+  "score": 21.8,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "TB \u2013 super\u2011fast text\u2011only browser using Jina Reader API",
+   "points": 2,
+   "id": "48429579",
+   "url": "https://github.com/falcga/tb"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 48451913,
+    "author": "irthomasthomas",
+    "text": "tting the provider in openrouter or creating a consortium of high temperature models) llm-prompt-json adds a --json flag to return the llm logs object (good for getting conversion_id, or reasoning output in scripts) llm-jina adds support for all jina AI specialised models and tools like web fetching, embedding and reranking."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48868207",
+    "author": "chonghaoju",
+    "date": "2026-07-11",
+    "text": "stripping to markdown with Jina Reader or Trafilatura before passing to the agent cuts that 68k down to ~3-5k for most Wikipedia pages, and handles the JS-rendered case too."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47048097",
+    "author": "retio_pagemap",
+    "date": "2026-02-17",
+    "text": "I built PageMap because I got frustrated with existing MCP browsing tools. Playwright MCP dumps the entire accessibility tree per page, which is 50-540K tokens. After 2-3 page navigations your context window is gone. Firecrawl and Jina Reader are better on token count but they convert to markdown, so you can read but not interact. No clicking, no typing, no form filling. PageMap takes a different approach. It runs a 5-stage HTML pruning pipeline and a 3-tier interactive element detector (ARIA roles, implicit H"
+   },
+   {
+    "src": "hn_comment",
+    "id": "45936282",
+    "author": "astralshard",
+    "date": "2025-11-15",
+    "text": " optimized titles + 3 descriptions in ~10 seconds - CTR scoring (0\u2013100), power word highlights, Google SERP preview - 12 languages - Free tier: 3 URLs/day forever - Pro: $35 one-time (first 100) \u2014 unlimited, bulk CSV, API Tech: - Scraping: Jina Reader \u2192 Firecrawl \u2192 cheerio fallback - AI: OpenRouter (DeepSeek, Qwen, Mistral) - Frontend: Next.js 15 + shadcn/ui - Payments: Stripe Checkout - No user accounts, no tracking beyond Vercel Analytics Try it free: https://metamagic.vercel.app I\u2019m using it on my next launch (RankL"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48867104",
+    "author": "arthurcolle",
+    "date": "2026-07-11",
+    "text": "one of the early jina.ai products was/is reader api, and they trained ReaderLM for this purpose. definitely a good idea to check out existing implementations"
+   }
+  ]
+ }
+]

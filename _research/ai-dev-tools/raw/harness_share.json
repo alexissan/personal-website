@@ -1,0 +1,54 @@
+{
+ "authors": 538,
+ "thread": 50366117,
+ "rows": [
+  {
+   "name": "Claude Code",
+   "authors": 140
+  },
+  {
+   "name": "Codex CLI",
+   "authors": 128
+  },
+  {
+   "name": "OpenCode",
+   "authors": 89
+  },
+  {
+   "name": "Their own harness",
+   "authors": 58
+  },
+  {
+   "name": "Pi",
+   "authors": 45
+  },
+  {
+   "name": "Cursor",
+   "authors": 25
+  },
+  {
+   "name": "VS Code / Copilot",
+   "authors": 24
+  },
+  {
+   "name": "Zed",
+   "authors": 15
+  },
+  {
+   "name": "Antigravity",
+   "authors": 9
+  },
+  {
+   "name": "DeepSeek Harness",
+   "authors": 9
+  },
+  {
+   "name": "Kiro",
+   "authors": 7
+  },
+  {
+   "name": "Aider",
+   "authors": 5
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "_rename": {
+  "Duet": "Claude Duet"
+ },
+ "Conductor": {
+  "verdict": "Ran Claude and Codex in parallel git worktrees, and recent threads say it is winding down. Users liked it for mid-size tasks and review; gripes were weak multi-repo support and Mac-only builds."
+ },
+ "Continue": {
+  "what": "Open-source assistant for VS Code and JetBrains",
+  "verdict": "Was the usual way to plug Ollama or LM Studio models into VS Code. Commenters report it was acquired by Cursor in 2026, and recent mentions are mostly about its future."
+ },
+ "Claude Duet": {
+  "what": "Anthropic's proactive agent for professionals, in preview"
+ },
+ "Gas Town": {
+  "verdict": "Steve Yegge's many-agent orchestrator. On HN it is mostly a punchline: too complex, too opinionated and a token sink, with nobody showing evals against a plain harness."
+ },
+ "_hide_story": [
+  "Aider",
+  "Impeccable",
+  "Apple container",
+  "MLX",
+  "Open WebUI",
+  "n8n",
+  "LangGraph",
+  "vLLM",
+  "Daytona",
+  "smolvm",
+  "Inspect AI",
+  "Playwright MCP"
+ ]
+}

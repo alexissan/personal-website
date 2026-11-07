@@ -1,0 +1,1699 @@
+[
+ {
+  "name": "OpenClaw",
+  "url": "https://openclaw.ai",
+  "score": 95.8,
+  "github_stars": 394125,
+  "top_hn_story": {
+   "title": "Claude Code refuses requests or charges extra if your commits mention \"OpenClaw\"",
+   "points": 1349,
+   "id": "47963204",
+   "url": "https://twitter.com/theo/status/2049645973350363168"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50367207,
+    "author": "codingbear",
+    "text": "moved to openclaw for everything, with occasional claude usage for tricky bits. I have $200 of both codex and claude subs. Openclaw is the answer to question \"do X if Y happens\". An agent per each type of Y channel manages the flow and memory. And user input is just another ca"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50367272,
+    "author": "joshstrange",
+    "text": "ere 3. Claude Code and Codex for the respective subscriptions. Played with OpenCode and Pi some as well 4. I've tried a number of these tools and settled on my own tool (not released) to oversee my agents 5. Played with OpenClaw and Hermes in the past, cool ideas but execution fell flat. I currently use Dots and Duet for little things (mostly monitoring communications). Dots is much better than Duet today but I hope Duet gets better."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50367423,
+    "author": "giovanniwants",
+    "text": "I use a custom Daemon. I tried OpenClaw and Letta and it was like emailing your AI. I have a 64gb Mac m1 Max and the largest model I could run in openclaw was a 27b because its not built for local AI, it's built for API. I wanted something that you could chat to, collaborate with, build, evalutate "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50367571,
+    "author": "nkotov",
+    "text": "unts, 2x ChatGPT/Codex Pro. Couple of local hosted models for quick stuff (text formatting, TTS, etc.) I'm sticking with Default CLI/Desktop apps + built my own to combine them for my specific workflows. Used previously OpenClaw and Hermes but it seems to fall apart when you give it any real work. Ending up giving up because I just don't have to tinker / fine-tune it. I will say, I enjoy Muse a lot for some reason for personal things. I don't overshare anything I wouldn't mind saying"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50368019,
+    "author": "l9o",
+    "text": "My workflow has simplified a lot over the past year and I personally haven't seen a need for complex orchestration tools or the agent platforms like OpenClaw / Hermes. Since agents can message each other nowadays, most of the time I just talk to one Opus 5.5 session (because of its 1M context window) and let it talk to all the other sessions, acting as an orchestrator that I use from the cli and the mobile app. I "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373324,
+    "author": "jeswin",
+    "text": " usecases, I use https://www.ctlflow.com . This lets me run dozens of agents on tasks like equity analysis. The information a swarm of agents can surface from a large data store can be quite surprising. 5) I have tested OpenClaw, but now I just use ctlflow.com or claude + codex."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373740,
+    "author": "shepherdjerred",
+    "text": " small custom app to keep track of my usages since I hit limits quite often. 4. No. Just the CLIs. For very large projects I've found Claude Code to be the best -- it can very easily manage many subagents. 5. I've tried OpenClaw, Hermes, Dots, and Muse. I really just haven't found great use cases for these tools I use Claude & Codex for most of my personal coding/projects. For the other providers I mostly want to have broad experience with different models/harnesses. It's very intere"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373974,
+    "author": "browningstreet",
+    "text": ".. it has gtm and research and dev loops (the latter builds autonomously for future projects vis a vis my attention, I\u2019ve used quite a bit of it). 5 - Hermes Agent, which has become a core tech for me. I\u2019ve tried to use Openclaw but it has not been something I can keep running. It spirals and crashes after a week in ways I\u2019ve never experienced from Hermes, doing the same things. I have little interest in those generalist agents, maybe after a year."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373985,
+    "author": "Arubis",
+    "text": "nt, so I tend to stand up a repo of custom plugins against every client repo I work with. It\u2019s a nice efficiency layer for me up front and often grows into a bonus client deliverable after a couple months of refinement. OpenClaw runs persistently, mostly for little calendar tasks and trying to mitigate my ADHD: energy level check-ins, redirects to use attention for things that matter. It orchestrates Hermes under the hood but I don\u2019t interact with the latter directly. I still mostly "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50374261,
+    "author": "seanmcdirmid",
+    "text": " on releasing my subagent framework soon (called autofab in pypi), which is basically a specification driven code development agent system (using existing agent harnesses rather than implementing my own). I tried goose, OpenClaw, Claude, codex, etc\u2026and they didn\u2019t really work for what I needed. I might get a $100/month ChatGPT subscription to go with my Google one, primarily to get a different perspective and benchmark openAI models on codex (Claude doesn\u2019t really support what I need"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50374270,
+    "author": "maxkxd1",
+    "text": " but nowadays i just launch claude remote control and just talk to it through my phone. 4) something custom, i wired it all up in slack so i could easily talk to agents through the same place i do my work 5) Used to use openclaw on a raspberry pi to experiment with like autonomous development but i needed something with a bit more transparency so i moved everything into slack."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50374491,
+    "author": "ghempton",
+    "text": "1) claude, claude again, codex, antigravity, cursor 2) no 3) using a variety of different harnesses managed by codealong 4) built https://github.com/codealong/codealong 5) openclaw not used very much anymore in favor of native harnesses"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50375575,
+    "author": "saiprasadr",
+    "text": "scriptions - None Using OpenCode BigPickle 2) Models - OpenCode BigPickle and deepseek v1 3) Harness - OpenCode as primary , but started liking Pi recently because of all the customizations 4) None 5) Played around with OpenClaw for a really long time , now been exploring the Hermes Agent"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50376410,
+    "author": "FlyingSnake",
+    "text": " QwenTTS for marketing and product videos. 3. Pi exclusively, which I have tweaked for my hybrid setup. 4. I have my own custom agent orchestration that routes between Codex and local models based on the task. 5. I used OpenClaw for a bespoke market research task once, it worked flawlessly."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50403697",
+    "author": "r3ason",
+    "date": "2026-11-07",
+    "text": "It seems that Ryph is primarily an agent orchestration platform for teams, while OpenClaw and Hermes are primarily personal AI-assistant platforms."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50403101",
+    "author": "bahung1221",
+    "date": "2026-11-07",
+    "text": "Just curious, what is the main different between this agent vs OpenClaw or Hermes? I read the intro, and it seems it also run on a machine, act based on chat and events, and have it own persistent memory."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50397038",
+    "author": "andai",
+    "date": "2026-11-06",
+    "text": "Didn't they make a computer thing like a year ago? I think it was called computer. (Right around the time OpenClaw was big?) Edit: https://www.perplexity.ai/products/computer "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50395602",
+    "author": "bphish",
+    "date": "2026-11-06",
+    "text": "1) Paying for both OpenAI's + Anthropic's $200/mo plans 2) no 3) Codex + Claude Code (I'm a sucker for GUIs) 4) I sort of hack together a swarm in Codex+ClaudeCode, then use a separate tool I built for a collaboration layer 5) OpenClaw but mostly retired it Also indispensable for me is Workspace which lets me manage larger projects, databases, markdown files, etc.. ( https://www.brianhirsh.com/workspace ) it's an offline Notion (like obsidian but better databses + UI), so it's incredibly fast to work with mult"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50392709",
+    "author": "alexfthom",
+    "date": "2026-11-06",
+    "text": "Yeah, I have been searching. I know a couple people running openclaw on some spare machines but I find them constantly having to tinker with it. It seems not all that reliable when it comes to admin work. I have small business and not enough revenue to do the admin work. I am outdoors a lot for my biz so I don't have the ability to go through my "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50386276",
+    "author": "Aurornis",
+    "date": "2026-11-05",
+    "text": "The people on AI company plans don't need these services because they're included in the plans. It's the people downloading open weight models and running OpenClaw (or this month's trend) who don't care how many tokens it takes because it only costs them electricity."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50385379",
+    "author": "nathanfig",
+    "date": "2026-11-05",
+    "text": "> I went from an early adopter of AI tools, building my own tools, setting up a crazy openClaw rig, back to just the default coding apps. It is interesting how many apps/startup ideas are being swallowed by the big AI desktop apps."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50384963",
+    "author": "egrm",
+    "date": "2026-11-05",
+    "text": "ipt auto alternate between them. This is because cheapest subscription gives most weekly usage per $. 2)no, you dont need an API key if you know how to use your subscription to replace it 3)I tried many; from opencode, warp, paseo, orca to openclaw, hermes, etc. I always end up returning to the default claude and codex. 4) kinda an orchestration tool, i have one to oversee my entire business (Varyz AI), it constantly makes content, fixes bugs based on feedback and etc (spawning agents to do so)."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50384594",
+    "author": "grey-area",
+    "date": "2026-11-05",
+    "text": "Do we even care about MCP any more? It really doesn't add much to an API. It will go the way of Openclaw, Personal Agents, Scaffolding, Skills and all these other things people prematurely tried to build around LLM models."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50381382",
+    "author": "catketch",
+    "date": "2026-11-05",
+    "text": "g their orbs (vm) and local runners I like the direction in particular Amp is taking -- it was a tougher sell 6-8 months ago because you couldn't bring your own subs, but that is now longer a barrier I toyed with a bunch of other things... openclaw, gas town, munder difflin etc, but mostly for toy experiments and tyring to keep ahead on what techniques/approaches might start breaking through."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50381009",
+    "author": "wombat-man",
+    "date": "2026-11-05",
+    "text": "able for big picture planning discussion. This costs some added money, but I switch back to Opus to use quota for coding. No swarm tools... I sometimes add a skill or an MD file to the repo to keep context through compaction. Haven't tried OpenClaw, not really sure what the value add there. The bottleneck is me understanding what code is going in and I don't think I want a ton of code I don't understand being added while I'm afk."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50380973",
+    "author": "vvilliamperez",
+    "date": "2026-11-05",
+    "text": "I went from an early adopter of AI tools, building my own tools, setting up a crazy openClaw rig, back to just the default coding apps. For work use Claude code on desktop. Mostly using sonnet, sometimes opus. Personal development has gotten pretty interesting, mostly centered around my Android phone. I just have the $20 claude plan. Claude code is running on a build ma"
+   }
+  ]
+ },
+ {
+  "name": "Hermes Agent",
+  "url": "https://github.com/NousResearch/hermes-agent",
+  "score": 81.9,
+  "github_stars": 261431,
+  "top_hn_story": {
+   "title": "Hermes Agent \u2013 Open-source AI agent with persistent memory",
+   "points": 52,
+   "id": "48419000",
+   "url": "https://hermes-agent.org/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50367272,
+    "author": "joshstrange",
+    "text": " Code and Codex for the respective subscriptions. Played with OpenCode and Pi some as well 4. I've tried a number of these tools and settled on my own tool (not released) to oversee my agents 5. Played with OpenClaw and Hermes in the past, cool ideas but execution fell flat. I currently use Dots and Duet for little things (mostly monitoring communications). Dots is much better than Duet today but I hope Duet gets better."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50367571,
+    "author": "nkotov",
+    "text": "GPT/Codex Pro. Couple of local hosted models for quick stuff (text formatting, TTS, etc.) I'm sticking with Default CLI/Desktop apps + built my own to combine them for my specific workflows. Used previously OpenClaw and Hermes but it seems to fall apart when you give it any real work. Ending up giving up because I just don't have to tinker / fine-tune it. I will say, I enjoy Muse a lot for some reason for personal things. I don't overshare anything I wouldn't mind saying in public."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50367582,
+    "author": "yewenjie",
+    "text": "g to find recommendation for this online is hopeless because it's full of opinion from people who never used a terminal before. 5) Grok Bot for running experiments with supplements, calory tracking etc.. Tried to set up Hermes a couple of times but hated it every time. Just gave Rakazo a try yesterday and still hating it. Gosh, I dream about the time when you could look at a github repo and make a decent guess about the quality of the software."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50367676,
+    "author": "drbscl",
+    "text": " an \u201cADE\u201d (mostly for the multi-worktree interface and mobile app). In my day job I use Claude Code & Codex subscriptions (Codex is mostly for review, second opinion, and as a backup). Personally I use both oh-my-pi and Hermes with a Codex subscription. I tend to use OMP more now though, since I find its interface a bit nicer when working on the laptop."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50367930,
+    "author": "sksksk",
+    "text": "At work, we're using Kiro. I've got no complaints. In my personal life, I'm extensively using Hermes. If you look at some previous comments you can see what I use it for. I genuinely think personal AI agents are the future, the way I feel when I use it is how I felt when I tried out the first iPhone. In 5 years time, I think most people will have a personal "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50368019,
+    "author": "l9o",
+    "text": "My workflow has simplified a lot over the past year and I personally haven't seen a need for complex orchestration tools or the agent platforms like OpenClaw / Hermes. Since agents can message each other nowadays, most of the time I just talk to one Opus 5.5 session (because of its 1M context window) and let it talk to all the other sessions, acting as an orchestrator that I use from the cli and the mobile app. I also have"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50368106,
+    "author": "gaoshan",
+    "text": "runs and that costs money... but not much) . Professionally I use an unlimited Claude via AWS Bedrock. 2. I use both qwen 3.6 35b-a3b and qwen 3.8 27b on my Macbook Pro (M5 Pro, 48GB, 18/20). I use those with ollama and hermes (and Obsidian, to an extent) 3. Hermes Agent, Claude CLI and Claude in VS Code 4. No 5. Hermes Agent I use a carefully curated selection of agents for my professional work. Agents to handle adversarial code review, planning, questioning, dev work, etc. I also"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50368325,
+    "author": "world2vec",
+    "text": "outer and Deepseek for some stuff that Claude refused to do 3) I use Claude Desktop (Linux) and a heavily modified pi.dev at work VSCode as IDE. At home just use the iOS app and Claude Desktop (Windows). 4) No 5) I have Hermes Agent setup at work and home but don't really use it."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50370886,
+    "author": "sadilek",
+    "text": "lip or Munder Difflin or anything. I actually think it doesn't make sense to create persistent agent personas. Just spawn an agent when needed, give each full access to all skills and docs, and they'll figure it out. 5) Hermes Agent running, sending me regular news research reports, but frankly, it's just a cronjob and the whole Hermes setup isn't really adding value for me."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373135,
+    "author": "mv4",
+    "text": "For building, I started with Kiro and later switched to Antigravity (Opus 5.5 for planning, Gemini 3.8 for implementation - but now using Argon for everything and quite happy). Claude for design. Had a Hermes set up with a dual NVIDIA DGX Spark and Deepseek v4 Flash, but then built my own harness (getcinnamon.ai) and pretty much switched to that 100% including family members."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373248,
+    "author": "Quibblingeek",
+    "text": "my workflow and tools. It took me a while to find a good mix of utility, control, and efficiency and haven't wanted to change it until at least next year. 5) Are you using  [question]  I have a dedicated Mac Mini to run Hermes. It is pretty much integrated into my entire life now. I could live without it, but automating general purpose things is the entire point of why I put that machine together. How is this different from this time last year? Radically different to say the least."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373357,
+    "author": "guhcampos",
+    "text": " for everything and B. The company setup would not support the use case of mixing the self-hosted and closed models in the same harness - this limitation is on our side. 3.b) For my personal stuff I've been using mostly Hermes. Some actual coding goes into Opencode, often piloted by Hermes itself. I'm using Zed as my code editor, but with the AI features disabled. My opencode subscription is actually configured in Zed, but I prefer the UI without them. 4) No. I don't really need th"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50374093,
+    "author": "Scrounger",
+    "text": "> 5) Hermes. Generally happy with it - despite it being extremely unstable between updates, with frequent regressions, weird UI bugs and half assed features (bot mode, anyone?). I have 3 distinct instances (laptop, home server, VPS) doing different things - all hooked up"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373447,
+    "author": "mazone",
+    "text": "an that i got last christmas for $14 a month. Will not renew in jan. 2. Locally hosted qwen 3.8 flash next on a wake on lan machine rtx5090 3. Currently orca as front end orchestrator to a mini pc with pi for coding and hermes for general purpose"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50386134",
+    "author": "browningstreet",
+    "date": "2026-11-05",
+    "text": "I lowered my RAM allocation on my Oracle Ampere server and it runs my Hermes Agent just fine. But yes, to get the free ampere server I had to put in a credit card for possible billing. But I've never been billed."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50380509",
+    "author": "yipinwong",
+    "date": "2026-11-05",
+    "text": "1. Paying for Open Router only. 2. Local VPS: serve small models like Desert Ant, Laya, etc only (the VPS has GPU). 3. Hermes only: Stick with one, arch is converging. 4. No. Used to use Hedr but that's about it. I ask Hermes to do that for me. (or create custom Hermes agents by specifying graph in text) 5. Just Hermes: refer to #3. - Fun at home, build, automate, disabled gateways for online chatting "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50379819",
+    "author": "prologic",
+    "date": "2026-11-05",
+    "text": "re you using any agent orchestration or swarm tools? > No. - For example, Munder Difflin, Gas Town, Ruflo, or something custom. > I'm building my own specialized \"bots\" and \"agents\". 5) Are you using broader agent platforms like OpenClaw / Hermes Agent / Grok bot / Dots / Muse? > No. Not interested."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50378776",
+    "author": "Xonzo",
+    "date": "2026-11-05",
+    "text": "via Basalt (Local) + OpenRouter for DeepSeek V4.1 Flash 3) I primarily use Pi with many custom extensions. Occasionally I will use Codex. 4) I use Pi Subagents and Herdr. With QFN being the worker, and Sol 6.1 xHigh for planning/review. 5) Hermes Agent via Telegram. I use this to follow-up, check status and work on projects while away from the house."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50377697",
+    "author": "gonxman",
+    "date": "2026-11-05",
+    "text": "i use hermes-agent as my personal assistant and it talks to my claude code and codex if it needs to do projects and other stuff. openrouter is my default for the hermes-agent and sometimes i connect to lm-studio if openrouter gets errors or maybe try out some local models"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50377557",
+    "author": "tomburgs",
+    "date": "2026-11-05",
+    "text": "er helpful and I'm using it as a personal assistant. I delegate tasks to it that I just can't be bothered doing manually or can't figure out easily (e.g using some accounting tools, figuring out cryptic documentation, etc.). I've also used Hermes Agent, but I didn't like it as much. It's great intent but the UI/UX is really not it. It looks like it was taken out of a 90s hacker movie and I'm sure some people like it, but I prefer tools that look polished and focused. I might switch back to it though if something was to h"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50377455",
+    "author": "vekker",
+    "date": "2026-11-05",
+    "text": "en source framework (not affiliated). 5) Agent platforms: Tried OpenClaw earlier this year, when it was such a hype. Did not like it. Every update something broke, and I spent more time fixing things than I got value out of it. Switched to Hermes Agent running on a Mac Mini (I know...), and I'm still using that for various Hermes agents for all kinds of agentic tasks on the go, and so is my wife. #1 use case is capturing videos, podcasts, and posts online that I like, or meeting recordings, transcribing them with whisper"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50377453",
+    "author": "castwide",
+    "date": "2026-11-05",
+    "text": "s like OpenCode, Pi, Aider, Muse Code, or custom-built harnesses? I occasionally use Cline in VS Code, but it's rare. > 4) Are you using any agent orchestration or swarm tools? No. > 5) Are you using broader agent platforms like OpenClaw / Hermes Agent / Grok bot / Dots / Muse? I built custom agents on top of RubyLLM. I primarily communicate with them via email. One of them has access to a Redmine project board where it can pick up tasks and complete assignments. That agent also has non-sudo access to a sandbox container"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50377307",
+    "author": "internet_points",
+    "date": "2026-11-05",
+    "text": "on't do tool calling. Mostly just code review (have personal scripts set up to get diffs and automatically redact stuff). 4) Are you using any agent orchestration or swarm tools? No. 5) Are you using broader agent platforms like OpenClaw / Hermes Agent / Grok bot / Dots / Muse? No. I'd like to try agent stuff using a local model, but it seems quite expensive to set up. I don't feel comfortable giving so much access to OpenAI/Anthropic."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50376286",
+    "author": "mangasmango",
+    "date": "2026-11-05",
+    "text": "1) Opencode GO 10euro (claude max at work payed by empl) 2) Online opencode 3) Opencode harness is better at keeping your costs low but claude code on ultra code is simillar to agent orchestrator 4) Agent orchestrator 5) Ive tried hermes agent but my little server cant hold it :("
+   },
+   {
+    "src": "hn_comment",
+    "id": "50375575",
+    "author": "saiprasadr",
+    "date": "2026-11-05",
+    "text": "ickle 2) Models - OpenCode BigPickle and deepseek v1 3) Harness - OpenCode as primary , but started liking Pi recently because of all the customizations 4) None 5) Played around with OpenClaw for a really long time , now been exploring the Hermes Agent"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50375546",
+    "author": "hestefisk",
+    "date": "2026-11-05",
+    "text": "Inference: combination of Opus 5.5 (best model in the market) and local models (DeepSeek 4.1f 1017 and GLM 5.3f) running on 3x DGX Spark. Harness: Primarily Hermes Agent across desktop, terminal, and phone (via Telegram). I have also tried OMP but find it a bit clunky to use. Hermes tui + tmux are my favourite tools and Hermes works well with local models. Orchestration: I haven\u2019t seriously worked with it yet, but starting to use herdr wit"
+   }
+  ]
+ },
+ {
+  "name": "Claude Cowork",
+  "url": "https://claude.com/product/cowork",
+  "score": 75.7,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Cowork: Claude Code for the rest of your work",
+   "points": 1298,
+   "id": "46593022",
+   "url": "https://claude.com/blog/cowork-research-preview"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50375407,
+    "author": "dgunay",
+    "text": "r most tasks. It monitors the workers and has them go through at least one round of agentic code review. It surfaces PRs for me to read once they've passed agent review. It then either ships them or hands them off to my coworkers for codebases where I'm not allowed to just merge PRs. Around this workflow I had it write a small collection of skills and scripts to grease the wheels and make repetitive actions more reliable. Since Remuda supports several terminal multiplexers, I've sw"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50377705,
+    "author": "gabriel-uribe",
+    "text": "er projects include subagent prompts) 5) Atm, just OpenAI's dot. I used OpenClaw for about a month 6 months ago, but realized that the features would be done & better by the labs, so gave up and ported my work to Claude Cowork at the time. Main use case is orchestration for my life & my projects. Manages email, tracks todos/deadlines. I could see the use cases growing with time as they add integrations + I trust it more."
+   },
+   {
+    "src": "ask_hn",
+    "id": 48573279,
+    "author": "rexposadas",
+    "text": "-engineers, get up to speed with AI so they can be more productive. My personal AI tech stack is: 1. Claude Code in the terminal (on a Mac) with Zed as my editor (Any editor would do). 2. Claude Desktop for Projects and CoWork. 3. ChatGPT Desktop. It\u2019s a simple and effective setup. I don\u2019t run a formal bootcamp, but I do help others in the company become AI-enabled. The biggest return on investment I\u2019ve found is helping people develop a clear understanding of how to use the feature"
+   },
+   {
+    "src": "ask_hn",
+    "id": 47391907,
+    "author": "tenacious_tuna",
+    "text": "panies (and bosses) are more self-aware than others, which can help for framing the conversation (and retaining one's sanity), but at the end of the day if I'm making a stand about how bad AI quality is, but my AI-using coworker has shipped six medium sized features, I'm not winning that argument. It doesn't help that I think non-engineers view code quality as a technical boogeyman and an internal issue to their engineering divisions. Our technical leadership's attitude towards our"
+   },
+   {
+    "src": "ask_hn",
+    "id": 47390589,
+    "author": "Tade0",
+    "text": " -Tests. Obvious cases it can handle, but once you reach a certain threshold of coverage, it starts producing nonsense. Overall, it's amazing at pattern matching, but doesn't actually understand what it's doing. I had a coworker like this - same vibe."
+   },
+   {
+    "src": "ask_hn",
+    "id": 47392484,
+    "author": "peab",
+    "text": "This seems to be a team problem more than anything? Why are your coworkers taking on your responsibilities? Where's your manager on this?"
+   },
+   {
+    "src": "ask_hn",
+    "id": 47394313,
+    "author": "unsaved159",
+    "text": "Not really AI problem, more like garbage coworkers."
+   },
+   {
+    "src": "ask_hn",
+    "id": 47393074,
+    "author": "etoxin",
+    "text": "mazon but can confirm massive productivity gains. The issue is reviewing code. With output similar to a firehose of PR's we need to be more careful and mindful with PR's. Don't vibe code a massive PR and slap it on your coworkers and expect a review. The same PR etiquette exist today as it did years ago."
+   },
+   {
+    "src": "ask_hn",
+    "id": 47393437,
+    "author": "spondyl",
+    "text": "eir mind but reality has shifted around a lot since. Generally LLMs are pretty good at surfacing this once they check how things are in reality but LLMs don't \"know\" what your mental model is when you frame a question - Coworkers defaulting to asking LLMs about niche queries instead of asking others. There are a few queries I've seen where the answer from an LLM is fine but it lacks the historical part that makes many things make sense. As an example off the top of my head, website"
+   },
+   {
+    "src": "ask_hn",
+    "id": 47393865,
+    "author": "luisgvv",
+    "text": "onfigured to review PRs, make corrections etc. - I'd say it's good enough but from time to time it will raise false positives on issues. I'd say it works fine but you still need to keep an eye on generated BS. I've seen coworkers show me amazing stuff done with agentic coding and I've seen coworkers open up slop PRs with bunch of garbage generated code which is kind of annoying, but I'll let it slide... Stack - .NET, Angular, SQL Server and ofc hosted in Azure. Team is composed of "
+   },
+   {
+    "src": "ask_hn",
+    "id": 47397044,
+    "author": "icar",
+    "text": "I am working on getting the sailing Captain license (I started sailing when I was 8), and move my life there. I hate how things work nowadays. I feel like I am a police officer vs my friends/coworkers AI code. And I don't want to do that"
+   },
+   {
+    "src": "ask_hn",
+    "id": 47397948,
+    "author": "adonovan",
+    "text": "nversation, in which it mostly is fluent at the level of an experienced engineer and has been able explain, defend, and justify design choices quite coherently. This saved time I would otherwise have spent debating with coworkers. But it\u2019s not always right and it is easily led astray (and will lead astray), so you need a clear idea in mind, a firm hand, and good judgment."
+   },
+   {
+    "src": "ask_hn",
+    "id": 47398084,
+    "author": "code_martial",
+    "text": "> This saved time I would otherwise have spent debating with coworkers. But it\u2019s not always right and it is easily led astray (and will lead astray), so you need a clear idea in mind, a firm hand, and good judgment. The \u201cwill lead astray\u201d part is concerning. If you already have a clear idea in mind, you probably don\u2019t need to"
+   },
+   {
+    "src": "ask_hn",
+    "id": 47400665,
+    "author": "xantronix",
+    "text": "Before the advent of widespread LLM usage, and more particularly, before LLM-using coworkers began submitting large PRs against codebases I am the primary maintainer of, my velocity had never been greater. I do not like the current culture around LLMs. I do not use LLMs, I shall continue to resist any peer pressure to use them, much as I have resi"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50380774",
+    "author": "mmnfrdmcx",
+    "date": "2026-11-05",
+    "text": "it's becoming pretty mainstream, lots of (ordinary, non-dev) people connecting google docs/slides, notion, linear etc to their claude or cowork"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50377705",
+    "author": "gabriel-uribe",
+    "date": "2026-11-05",
+    "text": "in CC/Codex (my larger projects include subagent prompts) 5) Atm, just OpenAI's dot. I used OpenClaw for about a month 6 months ago, but realized that the features would be done & better by the labs, so gave up and ported my work to Claude Cowork at the time. Main use case is orchestration for my life & my projects. Manages email, tracks todos/deadlines. I could see the use cases growing with time as they add integrations + I trust it more."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50372206",
+    "author": "inbharath",
+    "date": "2026-11-04",
+    "text": " GDPVal, GDP.pdf, GDP.xlsx (as opposed to research work). In this GDPVal benchmark, even a light-weight model such as Qwen 3.8 27B excels. And I remember very well, for creating the presentation slides for my master's thesis, I used Claude Cowork Opus 5 vs OpenCode DeepSeek v4 Flash 0731 (with detailed prompt), and I couldn't find a difference. Believe it or not, I ended up picking the DeepSeek's file in the end. I am sucker for Vision-Language models and I hated these Chinese models for not being natively multimodal. Bu"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50350314",
+    "author": "copywriterfilip",
+    "date": "2026-11-03",
+    "text": "ne (async ideal), open to other TZs for good opportunities Remote: Yes Willing to relocate: Yes, depends Technologies: Clay, Smartlead, Instantly, Claude Code, Codex, ActiveCampaign, Klaviyo, Apollo, Outscraper, OpenAI Codex, Claude (Chat, Cowork, Code), etc R\u00e9sum\u00e9/CV: https://drive.google.com/file/d/1c4AtcxM3J2vD1NNszjGGF9ttz794afs0/view?usp=drive_link Linkedin: https://www.linkedin.com/in/email-marketer/ Portfolio: https://docs.google.com/document/d/1h0sZqni_WGEeRS9A2J25Pd_GAC8f7Oaz3JdcSD9OSE4/edit?usp=drive_link Email"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50349170",
+    "author": "jeffybefffy519",
+    "date": "2026-11-03",
+    "text": "I am actively pushing my workplace to scale back our AI usage (claude cowork)... the amount of AI slop being pushed between teams is off the charts and ends up creating a mountain of work for reviewers. Hurts productivity rather than improves it."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50327183",
+    "author": "Wowfunhappy",
+    "date": "2026-11-01",
+    "text": "wathe of users so they can pursue areas higher up the value chain. that was essentially the original decision they made when they went after software engineering instead of general users. ...I don't think I agree that this happened. Claude Cowork exists, as does Claude Design. My read of Anthropic's strategy is to focus on coding as a means of achieving capability in other domains, via writing code. I would say that's paying off: see Claude Opus 5.5 creating a music video, via building animations in Javascript. https://w"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50252386",
+    "author": "nl",
+    "date": "2026-10-26",
+    "text": ">You're just glancing over every You're glossing over > every single niche they've tried to launch and failed to get any traction on. This isn't true. I personally know a company that has trained over 300 companies this year to use Claude Cowork mostly for \"business operations\" type tasks. People love offloading boring, repetitive tasks to it. And the spend is spending - most start on a free plan and after 3 months have multiple people on the Teams plans. > Chinese models are pretty much on par. There isn't even an open"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50144669",
+    "author": "simianwords",
+    "date": "2026-10-18",
+    "text": "What's a software factory? Honestly I have no idea. Is it something that takes in prompts and spits out a released software? That's already my Claude Cowork setup by default. Or is it just a collection of AGENTS.md docs?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50084974",
+    "author": "senordevnyc",
+    "date": "2026-10-14",
+    "text": "\u201cHello, IT, have you tried asking Claude Cowork about it?\u201d"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50078887",
+    "author": "TeMPOraL",
+    "date": "2026-10-13",
+    "text": "ually can? This is exactly what Karpathy was talking about the other day[0]. If your only LLM experience is the default chat app in chat mode, then this doesn't make sense. If your experience includes using agentic harness like Claude Code/Cowork / Codex/ChatGPT Work, then it's obvious. The LLM app in \"chat mode\" will just zero-shot you a pelican, or digitize your notes into SVG, and maybe improve on it a bit if you complain about the result. The same app[1] in \"agentic mode\" will digitize your notes, refine the SVG agai"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50050720",
+    "author": "layerv-ai",
+    "date": "2026-10-12",
+    "text": "This seems a bit exaggerated; ultimately an hour spent working is an hour spent working. If you did one task quickly, then go and do more tasks and add more value to your clients. And if have to bill for Claude Cowork tokens, then you can figure out a way to tack that onto the bill in some form (\"Claude hours\"?). Same model as before. This just means you can do more things for people in the same amount of time - which likely will mean that people will ask you to do \"more work\" (volume-wise) a"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50048751",
+    "author": "nasmorn",
+    "date": "2026-10-11",
+    "text": "Also seems weird to me. Claude cowork could just do my monthly tax receipt collection and compare with my account better than the bookkeeper I pay for it. That is a very cross sectional problem"
+   }
+  ]
+ },
+ {
+  "name": "Muse",
+  "url": "https://ai.meta.com/muse/",
+  "score": 69.8,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Muse \u2013 Meta\u2019s personal AI agent",
+   "points": 666,
+   "id": "49615537",
+   "url": "https://ai.meta.com/muse/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50373947,
+    "author": "0x4e",
+    "text": "ser of both and don\u2019t really see the need to go anywhere else. It all just sounds like mumbo jumbo. As a solopreneur of a boring SMB. I still do coding and build my own tools but I don\u2019t see the need for agent swarms or Muse or Grok Bot or any of that. The reason why I stay away is because I like to do QA on the slop these things generate. Having them run amok just makes me nervous."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50367571,
+    "author": "nkotov",
+    "text": " them for my specific workflows. Used previously OpenClaw and Hermes but it seems to fall apart when you give it any real work. Ending up giving up because I just don't have to tinker / fine-tune it. I will say, I enjoy Muse a lot for some reason for personal things. I don't overshare anything I wouldn't mind saying in public. Within the last month, I basically use Claude Design exclusively for front end work and Codex for backend work. Codex just works but sucks as design. Claud"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50367744,
+    "author": "tinyhouse",
+    "text": "When I want a \"different pair of eyes\" to review things I'm working on with Opus, I use Pi with other model providers and just pay API prices. 3. Deepseek harness with a deepseek API key. Really great value. 4. I have a Muse $5/month subscription that I keep as a backup although I don't really need it. I also use cloud agents to setup reoccurring jobs. For expensive agent runs, like visit 5000 websites and extract something from each, I would set up something cheap with an agents"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50367965,
+    "author": "diehunde",
+    "text": "t now. All the top open-weight models work fine for my projects. Currently using Mistral. 3) I used pi for a while and lately I started using openrouter's ori coding agent. Working great so far. 4) None 5) None. I tried Muse for a while and it was too slow to do anything useful."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50368119,
+    "author": "patwolf",
+    "text": "ot be paying for it. 2) I do use Openrouter for side projects that need an embedded AI. For example, on Halloween I made a talking pumpkin to greet trick or treaters as they came to the porch. 3) Mostly code. I've tried muse, grok, gemini, codex, and pi w/ openrouter, but I always come back to code. 4) no 5) I have a grok bot account I use to manage personal stuff. It organizes my email and calendar, keeps me up-to-date on news, does health tracking, trip planning, and shopping r"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373698,
+    "author": "mgiampapa",
+    "text": "r a number of toys I have built for my kid, I probably could refactor this but it predates getting a Claude Pro subscription. 3) Claude Code letting it do the work, pure vibes and dropping to vstudio as needed. 4) No 5) Muse, I have it doing things like basic research, waiting on ticket windows and just being a personal assistant. It also does a really good job at scraping churning forums and blogs and has made a few thousand dollars in the last month just on bank and brokerage b"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373740,
+    "author": "shepherdjerred",
+    "text": "ack of my usages since I hit limits quite often. 4. No. Just the CLIs. For very large projects I've found Claude Code to be the best -- it can very easily manage many subagents. 5. I've tried OpenClaw, Hermes, Dots, and Muse. I really just haven't found great use cases for these tools I use Claude & Codex for most of my personal coding/projects. For the other providers I mostly want to have broad experience with different models/harnesses. It's very interesting to see how each pe"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50374288,
+    "author": "RyanShook",
+    "text": "I\u2019ve moved from paid subscriptions on Codex to Claude to Muse. I now use Muse as my primary agent and then spin up and manage Codex and Claude agents as needed on an Oracle server."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50374298,
+    "author": "dofm",
+    "text": "1) none 2) Local LLMs on an M1 Max (Unsloth, LM Studio, occasionally direct llama.cpp). Muse Glimmer (because it is good at what it is optimised for: interactive coding sessions). Qwen 3.8 27B occasionally and a couple of other things for fun (an LFM MoE, experimenting with Nemotron Bolt 74B-9B, enjoying the really super Gemma 4 12B QAT when working "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50374678,
+    "author": "deathmonger5000",
+    "text": "I use Circus Chief to orchestrate workflows that use various combinations of Claude, Codex, Muse, z.ai, and Grok subscriptions. When one subscription runs out, Circus Chief falls back to the next. You can configure tiers to control how that works. Full disclosure: I\u2019m the creator of the project. https://github.com/ferrislucas/Circus-Chief "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50374816,
+    "author": "hodder",
+    "text": "Muse and cursor. It beats every custom setup I had by far on ease of use. The cost is trivial."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50374994,
+    "author": "ls612",
+    "text": "VSCode. I\u2019m actively investigating various ways of getting a Hermes Agent going on my homelab with either a local model, Openrouter ZDR models, or both but I\u2019m unlikely to pull the trigger on that yet. I would never use Muse, Grok Bot, etc as a personal agent."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50375407,
+    "author": "dgunay",
+    "text": "etups and fancy GUI orchestrators I'm seeing, but it's light, hackable, and so far the bitter lesson has kept this working really well for me so I haven't felt much of a need to try anything else. I have been trying out Muse for a while but it hasn't found a solid place in my life yet. Still too unreliable and too many privacy concerns to justify giving it a lot of access."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50376110,
+    "author": "teekert",
+    "text": "for all my infra, very proud of what I build, but I can't run my agents :( I really hope that will change soon (for privacy and for control reasons.) I pisses me off that I can't get nice hardware, meanwhile I can get a Muse or Dot, which is an LLM with a VM with up to 12 GBs of RAM, for free, paid for by their borrowed money. This whole idea makes me die a bit inside. For the company I do all IT for we have a Mistral Team subscription, I find it hard to work with anything other "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50186218",
+    "author": "Waterluvian",
+    "date": "2026-10-21",
+    "text": "Organizing photos. Compiling hockey schedules. Giving out my home address to strangers. https://www.cbc.ca/news/canada/montreal/meta-agent-muse-conc... "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49981612",
+    "author": "GeekyBear",
+    "date": "2026-10-06",
+    "text": "> Meta\u2019s New Muse AI Agent Read My Private Messages. I Never Asked It To https://www.inc.com/jason-aten/metas-new-muse-ai-agent-read-... "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49978802",
+    "author": "ChrisArchitect",
+    "date": "2026-10-06",
+    "text": "Since this is mostly a collection of links to previously discussed articles: Related: Updates to Full Disk Access in macOS https://news.ycombinator.com/item?id=49937631 Meta\u2019s Muse has a serious 0-day https://news.ycombinator.com/item?id=49802030 Unsurprisingly, Meta's new Muse AI agent blatantly ignores users permissions https://news.ycombinator.com/item?id=49893709 Maybe don't let Muse run your Facebook Marketplace account https://news.ycombinator.com/it"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49937480",
+    "author": "anant",
+    "date": "2026-10-02",
+    "text": "Open source device SDKs to build peripherals based on ESP32 ore Linux for Meta's Muse agent."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49876298",
+    "author": "user43928",
+    "date": "2026-09-28",
+    "text": "A substantive discussion would focus on whether Meta's Muse agent does indeed have a memory feature, whether the user's request to 'never do this again' triggers it, and how good their Muse model and harness is at following such instructions."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49847066",
+    "author": "gremlinsinc",
+    "date": "2026-09-25",
+    "text": "I just had meta's muse agent run my entire groups marketing campaign for my new app, it brought in 500 users in 2 weeks...it read the rules, advised on best posting practices on a per group basis and saved the notes and data for each group into a spreadsheet for future posts, then it created instagram"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49826011",
+    "author": "rendaw",
+    "date": "2026-09-24",
+    "text": "That article seems to be a 2nd hand take on this: https://www.404media.co/meta-tests-muse-ai-agent-calls-that-... Anyways, aside from being make believe, there's another good point that this is disclosing private information to humans, probably not well paid ones at that?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49815379",
+    "author": "johnny-g-tyler",
+    "date": "2026-09-23",
+    "text": "NYT's stock price was down 7% yesterday because Wall Street analysts believe Meta's Muse agent will help consumers lower their subscription price. JPM's Mark Schilsky writes: \u201cHave you ever tried to cancel your Times subscription? They offer you a huge discount every time! SIRI does the same thing. Somehow I think Muse will figure this out for MANY subscribers. I st"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49898595",
+    "author": "panarky",
+    "date": "2026-09-29",
+    "text": "A wave of nausea hit when I first saw the warm, fuzzy, cutesy, kawaii, Teletubby-like avatar that Meta gave its Muse agent. And now OpenAI has done the same thing with their fuzzy, friendly, colorful dots. I am physically sick."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50374043",
+    "author": "mark_l_watson",
+    "date": "2026-11-05",
+    "text": "Maybe people enjoy ordering food themselves? There are many things that agents can do that I would rather do myself. I do run agents like Meta Muse and Google Spark just to experiment with them, but those are just short experiences."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50221836",
+    "author": "nradov",
+    "date": "2026-10-24",
+    "text": "But we do have more than one Amazon. Both on the retail and web services sides there are multiple competitors within an order of magnitude on revenue. There is some reason to think that personal AI agents like Meta Muse will disrupt Amazon's retail business. Amazon currently blocks those bots and doesn't seem to have a strategy to address them."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50185867",
+    "author": "Zigurd",
+    "date": "2026-10-21",
+    "text": " works so well is that all the tooling meant to keep human coders out of trouble, like lint, leak detectors, profiling tools, test harnesses, etc. prevent agents from making errors. This is in contrast with general purpose agents like Meta Muse that make some amusing and horrifying errors. These kinds of agents don't have the interfaces and guardrails that were built for human coders. They use a lot of ad hoc screen scraping and guessing at what APIs do. That's also why Apple and Google haven't shipped fully general pu"
+   }
+  ]
+ },
+ {
+  "name": "n8n",
+  "url": "https://n8n.io",
+  "score": 60.4,
+  "github_stars": 209761,
+  "top_hn_story": {
+   "title": "Show HN: Sim \u2013 Apache-2.0 n8n alternative",
+   "points": 240,
+   "id": "46234186",
+   "url": "https://github.com/simstudioai/sim"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50373357,
+    "author": "guhcampos",
+    "text": "atures on the server itself, from upgrades, documentation and more devopsy stuff to organizing files, managing transcoding queues, etc. The cloud hosted version automates is not very used yet. I plan to have it pilot an n8n instance I keep to automate some boring stuff, like filing weekly tax records and automatically forwarding bureaucratic e-mails, nothing fancy."
+   },
+   {
+    "src": "ask_hn",
+    "id": 48416707,
+    "author": "brian_r_hall",
+    "text": "gent / worktree setups are useful later, but I\u2019d start with a really small loop so they understand the basics first. Ask for one change, read the diff, run it, understand it. If you jump straight into multi-agent stuff, n8n-style nodes, etc., a lot of beginners will just get paralysis by analysis."
+   },
+   {
+    "src": "ask_hn",
+    "id": 46700436,
+    "author": "julianeon",
+    "text": "ort questions for chat or documentation, w/good material 2. people doing GTM work in marketing, for things like email automation 3. people using a combination of expensive tools - Claude + Cursor + something else (maybe n8n, maybe a custom coding service) - to make greenfield apps"
+   },
+   {
+    "src": "ask_hn",
+    "id": 49566694,
+    "author": "diegof79",
+    "text": "h the internal MCP, then drafting responses. Of course, this has scaling issues, and at some point it is better to move these everyday automations to a proper system, but I saw how MCP enables what products like Zapier, n8n, or IFTTT try to do: user-friendly ad-hoc integrations. My only complaint: implementing MCP auth in an MCP server still isn't very streamlined. Some libraries, like Cloudflare MCP, simplify all of that, but AFAIK it's tied to using their services."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50404621",
+    "author": "astieman",
+    "date": "2026-11-07",
+    "text": "SEEKING WORK | Lima, Peru (UTC-5, same hours as US Eastern) | Remote Location: Lima, Peru Remote: Yes, remote only Willing to relocate: No Technologies: n8n, Claude Code / Claude Agent SDK, Gemini, RAG with pgvector, Next.js, React, TypeScript, Supabase (Postgres, RLS), Python, Docker, Linux R\u00e9sum\u00e9/CV: on request Email: astieman@outlook.com LinkedIn: linkedin.com/in/sjaack-tieman-72a242224 I'm the in-house AI and automation speciali"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50383047",
+    "author": "csroay",
+    "date": "2026-11-05",
+    "text": "Chetan Sroay | London until 15 Nov, then India (UAE-based or UAE-sponsored also fine) | Remote Full-stack and AI agent engineer. TypeScript, Next.js and React, Supabase/Postgres, pgvector RAG, tool-calling agents, MCP, n8n and Make. 21 months as the sole engineer on four AI products (three live), built by directing coding agents with tests on every change. Eight years of client marketing automation before that. Python: scripts only. No AWS depth. Proof: https://app.kompense.com/demo (demo workspac"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50373357",
+    "author": "guhcampos",
+    "date": "2026-11-05",
+    "text": " a limited set of features on the server itself, from upgrades, documentation and more devopsy stuff to organizing files, managing transcoding queues, etc. The cloud hosted version automates is not very used yet. I plan to have it pilot an n8n instance I keep to automate some boring stuff, like filing weekly tax records and automatically forwarding bureaucratic e-mails, nothing fancy."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50359481",
+    "author": "vikramlal00990",
+    "date": "2026-11-03",
+    "text": "No Technologies: Python, JavaScript, Linux, Telegram/Discord bots (python-telegram-bot, discord.py), web scraping (BeautifulSoup, Scrapy, Playwright), Excel/Google Sheets automation (openpyxl, Google Sheets API), API integration, Make.com, n8n, Zapier, Airtable, Laravel/Nova, Nginx R\u00e9sum\u00e9/CV: https://vikramlal00990.github.io/vikram-portfolio/ Email: aradhyakumari042@gmail.com Hi, I'm Vikram, a Python automation developer from Hyderabad, Pakistan (12th-grade Pre-Engineering student). I build Telegram/Discord bots, web "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50358998",
+    "author": "FuriouslyAdrift",
+    "date": "2026-11-03",
+    "text": "Yeah I am aware fo the open source base with subscripton model they have. I hope it doesn't go the direction of N8N because that's a fuster cluck."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50356070",
+    "author": "hxii",
+    "date": "2026-11-03",
+    "text": "Location: Israel Remote: Yes Willing to relocate: Depends. Maybe. Technologies: Python, AI/LLM/MCP, Grafana, N8n, GitHub Workflows, Okta, Terraform, some Ruby and some Crystal R\u00e9sum\u00e9/CV: https://hxii.github.io or https://0xff.nu Email: my HN username [at] 0xff.nu I made my way through support orgs, self-learned programming and understood I absolutely love creating, solving problems and jus"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50348064",
+    "author": "shihabcodes",
+    "date": "2026-11-03",
+    "text": "on: Dhaka, Bangladesh (flexible with US/EU overlap) Remote: Yes, remote only Willing to relocate: No Technologies: TypeScript, Python, Next.js, Node.js, PostgreSQL, Supabase, Redis, OpenAI and Gemini APIs, RAG, AI agents, MCP, Claude Code, n8n, Clay, Apollo R\u00e9sum\u00e9/CV: https://shihabcodes.github.io/resume.pdf Email: shihabcodes@gmail.com Portfolio: https://shihabcodes.github.io Most early teams hire one person to build AI features and another to find customers for them. I do both, and I make sure the app is safe to lau"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50346883",
+    "author": "blackwaltz0818",
+    "date": "2026-11-03",
+    "text": "Location: Taipei, Taiwan (GMT+8) Remote: Yes, async Willing to relocate: Remote only Technologies: n8n (self-hosted), ChatGPT, Claude, Gemini, Microsoft Copilot; process mapping and requirements (CBAP, PMP) R\u00e9sum\u00e9/CV: https://jasonchuang.com/about Email: jason@jasonchuang.com Freelance, fixed-price projects. 19 years as a business analyst in large organisations (KPMG Taiwan, E.SU"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50345251",
+    "author": "bram2w",
+    "date": "2026-11-02",
+    "text": "ing an open-source no-code platform for agents, databases, applications, and automations. We're looking for a technical, customer-facing Product Specialist to help customers build solutions with Baserow. Ideal experience includes Airtable, n8n, APIs, databases, and automation. Fluent German and English required. Remote-first, flexible hours, competitive salary + stock options. Details & apply: https://baserow.io/jobs/product-specialist-baserow "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50340806",
+    "author": "rafaelmelhem",
+    "date": "2026-11-02",
+    "text": "Location: Brazil (S\u00e3o Paulo state) Remote: Yes Willing to relocate: Open to discussion Technologies: Python, FastAPI, SQL, PostgreSQL, BigQuery, Elasticsearch, Neo4j, Docker, GCP, n8n, LLMs, RAG, Vector Search, REST APIs, ETL/ELT Resume: linkedin.com/in/rafaelmelhem Email: rafael.melhem [at] gmail Applied AI Engineer / Data Generalist I'm an engineer with 6+ years of experience working across AI (semantic search, vector databases, reranking), data analytics, "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50340506",
+    "author": "youboll",
+    "date": "2026-11-02",
+    "text": "ly Willing to relocate: No Technologies: Python, Django (DRF, multi-DB routing), PostgreSQL, Redis, TypeScript, React, TanStack, shadcn/ui, Vue, HTMX, Docker, AWS (ECS Fargate, RDS, SQS, EventBridge, CloudFront), Terraform, GitHub Actions, n8n, Claude Code R\u00e9sum\u00e9/CV: https://mansan.dev (PDF on request) Email: pedro.ciclobrasil@gmail.com Full stack developer, almost 5 years in, mostly on one product: a multi-tenant SaaS for online courses and memberships (checkout, video hosting, email marketing, affiliates, community)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50340355",
+    "author": "gamzeozgul",
+    "date": "2026-11-02",
+    "text": "Location: Istanbul, Turkey (UTC+3) Remote: Yes (full EU hours or overlap with US mornings) Willing to relocate: Yes Technologies: n8n, JavaScript/Node.js, Google Apps Script, SQL (Oracle, PostgreSQL), REST APIs and webhooks, LLM APIs (Gemini, OpenAI), Git; Python (learning) R\u00e9sum\u00e9/CV: on request GitHub: https://github.com/gamzeozgul Email: gamze.ozgul [at] hotmail.com Self-taught developer with a data backgrou"
+   }
+  ]
+ },
+ {
+  "name": "Home Assistant + LLM",
+  "url": "https://www.home-assistant.io/integrations/conversation/",
+  "score": 51.8,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Hestia \u2013 a local-first Home Assistant that trusts timers over the LLM",
+   "points": 2,
+   "id": "48707227",
+   "url": "https://github.com/thefullnacho/hestia"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50373734,
+    "author": "muppetman",
+    "text": "1) Neither. 2) Yes, I use pay as you go from OpenAI and Anthropic. 3) OpenCode 4) No 5) No I use OpenCode to update my Home Assistant automations. Home Assistant also does two lightweight checks a day using gpt-5-luna (Look at this photo is the pool cover on or off?). I also use OpenCode for a few other small basic tasks. This is me personally. At work I have a ChatGPT sub an a, seemingly l"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50378530,
+    "author": "nfriedly",
+    "text": " can control, which comes in handy. I can bring up documentation in one tab, log into a service in another, and then tell the agent to do something. For example, this was how I got it to connect my Nest thermostat to my Home Assistant instance after I had tried and failed several times on my own.) Oh, and separate from all that, I have Facebook muse set to automatically lower prices on a couple things I have on FB marketplace."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50378737,
+    "author": "netsroht",
+    "text": "odel can dual serve chat and decisions on the same weights. I mainly use chat here for critical data like health & finance topics that I'm not comfortable sending to a provider I don't control as well as having my local Home Assistant installation connected to it (only via LAN, hence a local modal is a good fit here). The decision part of this model is used for generic content screening, advising, and (re-)ranking [1]. I'm also planning on integrating this setup into various other things l"
+   },
+   {
+    "src": "ask_hn",
+    "id": 49563826,
+    "author": "jamesponddotco",
+    "text": "I built an MCP server for my voice assistant. By default, Home Assistant offers a few tools to the models, but I felt like it was missing some, so I built it. It has tools to get real jokes, do math, unit conversion, get stock information, search the web with Kagi, and other things I consider to be essential in a voice assistant. "
+   },
+   {
+    "src": "ask_hn",
+    "id": 49564167,
+    "author": "erikus",
+    "text": "I use MCP for a voice assistant as well. I got a Pebble Index 01 ring and it has support for custom MCP servers. I run one on Tailscale and it can interact with Home Assistant, my home issue tracker, my Anki setup, etc. I've come full circle on MCP. With agents with a shell tool they quickly became unnecessary but these days I've been coming up with more agentic use cases where I don't want to give the agent a shell, and a narrower"
+   },
+   {
+    "src": "ask_hn",
+    "id": 49569150,
+    "author": "qwerpy",
+    "text": "> Home Assistant I've been using https://github.com/homeassistant-ai/ha-mcp for my Home Assistant instance and it has been awesome. \"What amps and charging schedule should I set my EV to charge at, so that at peak electricity rate time my house battery is at 90%.\" Looks at my"
+   },
+   {
+    "src": "ask_hn",
+    "id": 49674162,
+    "author": "jamesponddotco",
+    "text": "personal projects. If I don\u2019t care about the code, i.e. I\u2019m writing something quick just to test something, I\u2019ll use GPT Astra to save my Fable tokens. For conversations and research I usually go with GPT Astra Pro. For Home Assistant I use a combination of Grok 4.20 and DeepSeek Flash 4.1. Grok as a voice assistant, because it\u2019s the only model with good latency here in Brazil (it\u2019s nearly instant), and DeepSeek for everything else. I don\u2019t really use LLMs for writing, but I\u2019m writing a fi"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48450776,
+    "author": "mlaretallack",
+    "text": "A port of the open epaper lib used in home assistant, but cli based, and an mqtt interface to allow it to run on a different computer to.HA https://github.com/mretallack/OpenEPaperCliTool ----- 3d printer pipeline, so its can print stuff directly without having to use the computer to set it up. https://github.c"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48453837,
+    "author": "flutas",
+    "text": "A \"Home Agent\" setup, with customized special agents to manage various aspects of the house through home assistant, learning feedback from household users to try and tune everything at the right time. Various MCPs for above. A \"remote claude code server\", that gives project level overview and lets me run projects / develop on my home server rather than locally through my "
+   },
+   {
+    "src": "ask_hn",
+    "id": 48459754,
+    "author": "nzach",
+    "text": "igital housekeeper that keeps an eye on what is happening in my house and notifies me about dead/unreliable devices, fix broken automations, suggest new automations based on sensor data, etc... I've setup the unofficial home assistant MCP already, but LLMs seems to struggle a bit to use it properly and I haven't looked into it yet to understand what is happening."
+   },
+   {
+    "src": "ask_hn",
+    "id": 48454313,
+    "author": "pedropaulovc",
+    "text": "a bigger project I have to create a 1:1 replica of Albert Michelson's harmonic analyzer: https://github.com/pedropaulovc/harmonic-analyzer * Reverse engineered Hik-Connect P2P CCTV protocol for integration with OSS like Home Assistant and Frida: https://github.com/AlexxIT/go2rtc/issues/2289 * Some patches for different OSS projects like improvements to MCP tools, Playwright, Claude Code, etc."
+   },
+   {
+    "src": "ask_hn",
+    "id": 48455603,
+    "author": "zcfan",
+    "text": "I made a home assistant esp32 device to toggle the light switch for me. Codex done all the software stuffs, I just plug it into mac, let codex \"this is a esp32, this is how i connect it with a motor, make it xxx\". And it works exactly as I want after 15 minutes."
+   },
+   {
+    "src": "ask_hn",
+    "id": 48459635,
+    "author": "nzach",
+    "text": "I've created lots of small things, but the most interesting is a firefox plugin that detects when some media is playing and send an event with the details to my home assistant. This way I can create some automations that automatically change the lights when I play/pause some media. It's really cool to have your lights automatically dim when you start watching a movie and then for some accent light to turn on when I pause the movie "
+   },
+   {
+    "src": "ask_hn",
+    "id": 48471980,
+    "author": "paool",
+    "text": " to translate. To save on inference, I had Claude create a lightweight typescript library to handle translations and detection. Now I get the previous functionality for 200mb~ ram versus paid API credits. I also built a home assistant menu bar in osx, let's me easily monitor activity, toggle devices, view cameras, etc."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47107815",
+    "author": "0xbadcafebee",
+    "date": "2026-02-22",
+    "text": "All the assistants work with locally hosted models. Home Assistant LLM works with small tuned models to do specific things, and the *Claw stuff works with larger models"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49466439",
+    "author": "jamesponddotco",
+    "date": "2026-08-27",
+    "text": "Not much to say, really; it controls my house in Home Assistant using an LLM, and a STT/TTS server. It acts as the Home Assistant Voice Preview Edition, with a trigger word and whatnot. It's basically like giving an Alexa, Siri, or Gemini a body. It moves, show \"emotions\", comments when someone enter the room, uses the camera to see who ente"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48976539",
+    "author": "chronogram",
+    "date": "2026-07-20",
+    "text": "This is amazing! I can see in a few years having Home Assistant use an LLM to coordinate my home while I'm away. Tell the LLM to make an inventory of my home and then send the vacuum and the robot around to clean everything up. A multimodal LLM can inspect pictures for items that need to go in the dishwasher, the laundry or needs polishing a"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46889839",
+    "author": "jxyxfinite",
+    "date": "2026-02-04",
+    "text": "Looks like it\u2019s also included with prime. Interesting to see how it will perform as one of the first major llm home assistant"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49948367",
+    "author": "qurren",
+    "date": "2026-10-03",
+    "text": "> Home Assistant already knows which bins (trash cans, for the international readers) are due for collection. [...] What it can\u2019t tell me is whether I\u2019ve actually done anything about it. My first gut reaction to this was: Have you tried using a vision-language model? I used to have an elaborate "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49059190",
+    "author": "eightysixfour",
+    "date": "2026-07-26",
+    "text": "I use STT/TTS to interface with a local LLM for Home Assistant in my house."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48992399",
+    "author": "PetitPrince",
+    "date": "2026-07-21",
+    "text": "I guess a good amount of the HN crowd would say that this can be replicated from within Home Assistant (probably with some LLM help) with the added benefit of even better hardware freedom (from cheap Aliexpress soil sensor and/or sprinker or drip system to brand-name ones) and total control of data. Still, the same thing was said about Dropbox; hopefully there's enough people wil"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48459754",
+    "author": "nzach",
+    "date": "2026-06-09",
+    "text": " similar, I want a digital housekeeper that keeps an eye on what is happening in my house and notifies me about dead/unreliable devices, fix broken automations, suggest new automations based on sensor data, etc... I've setup the unofficial home assistant MCP already, but LLMs seems to struggle a bit to use it properly and I haven't looked into it yet to understand what is happening."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47889602",
+    "author": "grepular",
+    "date": "2026-04-24",
+    "text": "Does it work for websockets too, where the authentication is done in a websocket frame? Like for Home Assistant? Also, if the LLM manages to do something to reflect the authentication token back in a response, do you detect it and strip it out as an extra layer of protection?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46227813",
+    "author": "Helmut10001",
+    "date": "2025-12-11",
+    "text": "e card on ebay for 1600\u20ac and buy 2x Xeon 6254 CPUs (100\u20ac each) to replace the 2x Silver ones that are in it. Last week, I bought two Blackwell RTX 4000 Pro for 1100\u20ac each. Enough for gaming with my son! (and I can do some fun with LLMs and home assistant/smart home..) The case fits 4x dual-size GPUs, so I could fit 4x RTX 6000 in it (384GB VRAM). At a price of 3k, this would come at 12k (still too much for me.. but let's check back in a couple of years..). Buying used enterprise gear is fun. I had so many good experiences and th"
+   },
+   {
+    "src": "hn_comment",
+    "id": "45866111",
+    "author": "amluto",
+    "date": "2025-11-09",
+    "text": "Sometimes avoiding boilerplate is out of scope. I\u2019m currently using an LLM agent to write a Home Assistant integration. The LLM is happy to write boilerplate crap to interact with the terrible Home Assistant API without complaining about it. Sure, some of the code it writes is awful, and I can fix that. (The record was about 15 lines of code, including non-functional error handling, "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49257569",
+    "author": "xd1936",
+    "date": "2026-08-11",
+    "text": "I think they're talking about you making Cactus Needle be an engine to respond to user queries in Home Assistant by making a custom add-on. https://www.home-assistant.io/voice_control/best_practices/ https://developers.home-assistant.io/docs/core/llm/ https://developers.home-assistant.io/docs/core/entity/conver... Something like the Ollama integration: https://www.home-assistant.io/integra"
+   }
+  ]
+ },
+ {
+  "name": "NanoClaw",
+  "url": "https://github.com/qwibitai/nanoclaw",
+  "score": 49.0,
+  "github_stars": 31091,
+  "top_hn_story": {
+   "title": "Show HN: NanoClaw \u2013 \u201cClawdbot\u201d in 500 lines of TS with Apple container isolation",
+   "points": 533,
+   "id": "46850205",
+   "url": "https://github.com/gavrielc/nanoclaw"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50379312,
+    "author": "m_w_",
+    "text": "uct) use many other models. Latest deepseek checkpoint is very solid 3. CC + extensive config / hooks 4. Usually supervising myself w/ 5-6 sessions, if orchestrating more than that it's a hand-rolled swarm tool 5. Tried NanoClaw, and I have access to Claude Duet, but between getting on and off the waitlist for Duet, I hand-rolled a personal agent that does what I want."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50385925,
+    "author": "fzxu22",
+    "text": "utions between self-hosted and API providers. 3. Mostly Pi (oh-my-pi for main coding env, bare bone pi for drop in usages). Its small footprint is really important for self hosted models 4. I don\u2019t think so, I do have a nanoclaw setup a while ago and am trying to port it to use pi as driver and connect to self hosted models. 5. No, they\u2019re never to be trusted."
+   },
+   {
+    "src": "ask_hn",
+    "id": 47390466,
+    "author": "eranation",
+    "text": " recommend my children to do so either, but I am not sure I will push them to learn Computer Science, unless they really want to do Computer Science . What excites me the most right now is my experiments with OpenClaw / NanoClaw, I'm just having a blast. tl;dr most exciting yet terrifying times of my life."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50385925",
+    "author": "fzxu22",
+    "date": "2026-11-05",
+    "text": "xploring routing solutions between self-hosted and API providers. 3. Mostly Pi (oh-my-pi for main coding env, bare bone pi for drop in usages). Its small footprint is really important for self hosted models 4. I don\u2019t think so, I do have a nanoclaw setup a while ago and am trying to port it to use pi as driver and connect to self hosted models. 5. No, they\u2019re never to be trusted."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50384881",
+    "author": "sobellian",
+    "date": "2026-11-05",
+    "text": "I ran into (2) when trying out nanoclaw many months ago (turned out to be useless, I ditched it). I wanted an LLM to sort my email like an EA might, what I got was an LLM writing regexes to attempt to sort my email. If LLMs have been trained to be the ultimate programmers, the one pitfall is that the best programmers "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50379312",
+    "author": "m_w_",
+    "date": "2026-11-05",
+    "text": "dized / part of product) use many other models. Latest deepseek checkpoint is very solid 3. CC + extensive config / hooks 4. Usually supervising myself w/ 5-6 sessions, if orchestrating more than that it's a hand-rolled swarm tool 5. Tried NanoClaw, and I have access to Claude Duet, but between getting on and off the waitlist for Duet, I hand-rolled a personal agent that does what I want."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50300170",
+    "author": "nathanfig",
+    "date": "2026-10-30",
+    "text": "This is very close to my Nanoclaw setup. rpi5 on an isolated network."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50297847",
+    "author": "lazzlazzlazz",
+    "date": "2026-10-29",
+    "text": "All the features the author describes here are present in Grokbot, which I find the best by far, and I've tried Hermes Agent, OpenClaw, NanoClaw, IronClaw, Instinct, Muse, dots, and many others at length. The simplest and best overall package so far is Grokbot, by a respectable margin. Although I haven't tried Duet!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49818499",
+    "author": "atonse",
+    "date": "2026-09-23",
+    "text": "Mostly custom. Full data model and full web and mobile app to help run day to day operations. The agent has switched a few times, initially NanoClaw, then Hermes, and now Vercel's Eve (maximum customizability). NextJS/Shadcn web app, postgres db, eve agent layer, MCP tools (over 100 so every single thing can be done by an agent), SwiftUI mobile app, etc. Integrations with gmail, gcal, gdrive, quickbooks, using mdx for the wi"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49511723",
+    "author": "saratogacx",
+    "date": "2026-08-31",
+    "text": " which I really didn't see myself wanting to maintain long term. I looked at other alternatives which were similar enough to do what I was looking for (mostly scheduled tasks using data on my computer and some API data). I saw a mention of nanoclaw which I looked at but didn't try personally. I eventually settled on trying picoclaw[1] because it was extremely small, fast, and had enough features to do the job for me. It is under 10mb, fairly straight forward go codebase, and works with multiple model providers or locally h"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49508928",
+    "author": "joemccall86",
+    "date": "2026-08-31",
+    "text": "You may be interested in https://nanoclaw.dev/ . It uses Claude by default but can run other harnesses after initial setup. Easier to grok IMHO."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49508574",
+    "author": "nisegami",
+    "date": "2026-08-31",
+    "text": "There's a lot of similar projects out there that are closer to what you're looking for. For example, I used nanoclaw for a bit before switching to Hermes."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49373350",
+    "author": "pitzips",
+    "date": "2026-08-20",
+    "text": "I started using OneCLI when Nanoclaw (came out just after Open Claw) announced them as the way to handle credentials. I think that may have been their first boost?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49289887",
+    "author": "cdnsteve",
+    "date": "2026-08-13",
+    "text": "What do you use for Nanoclaw's sandboxing?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49289043",
+    "author": "eviks",
+    "date": "2026-08-13",
+    "text": "What is NanoClaw? Glad you asked: > NanoClaw is a secure, lightweight alternative to OpenClaw."
+   }
+  ]
+ },
+ {
+  "name": "nanobot",
+  "url": "https://github.com/HKUDS/nanobot",
+  "score": 33.1,
+  "github_stars": 49903,
+  "top_hn_story": {
+   "title": "Nanobot: Ultra-Lightweight Alternative to OpenClaw",
+   "points": 257,
+   "id": "46897737",
+   "url": "https://github.com/HKUDS/nanobot"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50405326",
+    "author": "tim333",
+    "date": "2026-11-07",
+    "text": "I've read most of Kurzweil's books and been a believer in the Moore's law like stuff but always skeptical on the nanobots. And a lot of stuff related to health or fashion. He takes ideas from a variety of sources and the nanobot idea seems to be quite questionable. The \"whole universe would be intelligent\" bit I think is quite plausible in the long term. You need robots that can build robots and f"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50399050",
+    "author": "gwbas1c",
+    "date": "2026-11-06",
+    "text": "Does anyone remember the book \"The Singularity is Near?\" I read it about 20 years ago, and once it got into nanobots and Kurzweil's vision that the whole universe would be intelligent, I didn't find the book credible. But I'm wondering if the short-term prediction, that in the 2030s we won't be able to anticipate what tech does for us, (IE, the Singularity,) is useful? https://en.wikipedia.or"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50349091",
+    "author": "jabl",
+    "date": "2026-11-03",
+    "text": "Google says it's \"CPEU most commonly stands for Continuing Professional Education Unit, a credit system used by dietitians and nutrition professionals.\". Yeah, not sure how that is related to RISC-V. Perhaps we should eat RISC-V powered nanobots to, uh, future sci-fi something?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50267140",
+    "author": "kragen",
+    "date": "2026-10-27",
+    "text": "No. Possibly Kishore Patil, who was born yesterday in Mumbai, will build a replacement for her on a whim when he is 70, using self-assembling nanobots, or possibly next century the Creative Cold War Re-Enactment Society will cosplay 20th-century steel-mill workers and welders long enough to build a replacement for her in a period-correct fashion, but nothing really resembling Cunard will exist in a future where building a rep"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50252961",
+    "author": "meindnoch",
+    "date": "2026-10-27",
+    "text": "What if I told you we already have the tech to manufacture these autonomous self-replicating killer nanobots? We just call them \"virus\"."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50252931",
+    "author": "meindnoch",
+    "date": "2026-10-27",
+    "text": "By \"self-replicating killer nanobots\" I meant \"viruses\". We already have the tech to engineer them, even without AI."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50251093",
+    "author": "chasd00",
+    "date": "2026-10-26",
+    "text": "> autonomous self-replicating killer nanobots? this conversation is making my day!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50247607",
+    "author": "meindnoch",
+    "date": "2026-10-26",
+    "text": "How do you do asymmetric warfare against autonomous self-replicating killer nanobots? In other words: AI-engineered bioweapons (with AI-engineered antidotes for the rich)."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50205851",
+    "author": "Terr_",
+    "date": "2026-10-23",
+    "text": "Imagine the Earth is covered in a \"Grey Goo\" outbreak of spreading nanotechnology, infiltrating every corner of the planet in a constant churn of molecular and informational warfare. Eventually it leads to vast colonies of nanobots which rise thousands of units high clambering across the land, driven by vast inscrutable colony-minds. I can tell you with 100% certainty that they will pay rent, because they are us."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50194867",
+    "author": "intenex",
+    "date": "2026-10-22",
+    "text": "Haha solid question - got very lucky and became a millionaire at 25 and basically have been retired for the past several years now just chilling and enjoying these last few infinitely precious and wondrous moments of our lives before the nanobots eat us :) I\u2019ve had one real job ever for a grand total of <1 year. Technically I\u2019m consulting a bit for the company that acquired the last company I started with my wife, but I\u2019m doing a truly trivial amount of work for them that I don\u2019t really count :)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50062692",
+    "author": "Terr_",
+    "date": "2026-10-12",
+    "text": "I sometimes take refuge in the reminder that our \"normal\" limbs are\u2014quite literally\u2014a swarm of the most incredible and sophisticated nanobots in existence which still evade our understanding. Yeah, I can't pick up red hot ingots and punch them into complicated shapes, but there are dozens of other features I'm not willing to part with."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49959392",
+    "author": "api",
+    "date": "2026-10-05",
+    "text": " limits should be placed on surveillance or policing in the AI age. Those are discussions the very rich and the political class don't want to have. They'd rather us worry about Roko's Basilisk or magical runaway superintelligence inventing nanobots, wild bullshit that won't happen. It's the same reason those powers would rather people argue about the culture war or inane conspiracy theories. I guess Yudkowskiism is the inane conspiracism of the AI safety discourse, a great distraction."
+   }
+  ]
+ },
+ {
+  "name": "Duet",
+  "url": "https://duet.so",
+  "score": 28.9,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Anthropic opens research preview of Claude Duet, a agent for professionals",
+   "points": 2,
+   "id": "50188944",
+   "url": "https://www.reuters.com/technology/anthropic-unveils-claude-duet-ai-agent-app-2026-10-21/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50367272,
+    "author": "joshstrange",
+    "text": "e as well 4. I've tried a number of these tools and settled on my own tool (not released) to oversee my agents 5. Played with OpenClaw and Hermes in the past, cool ideas but execution fell flat. I currently use Dots and Duet for little things (mostly monitoring communications). Dots is much better than Duet today but I hope Duet gets better."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50379016,
+    "author": "wj",
+    "text": "than on-going repetitive work--the work of the back office. I've built a platform for the latter specifically around centralizing agents while decentralizing orchestration. ( https://sleeperservice.io/ ) 5. Waiting on a Duet invitation. But Dots is interesting to me. Use Gemini with Gmail to some extent."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50379312,
+    "author": "m_w_",
+    "text": "pseek checkpoint is very solid 3. CC + extensive config / hooks 4. Usually supervising myself w/ 5-6 sessions, if orchestrating more than that it's a hand-rolled swarm tool 5. Tried NanoClaw, and I have access to Claude Duet, but between getting on and off the waitlist for Duet, I hand-rolled a personal agent that does what I want."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50188284",
+    "author": "robgough",
+    "date": "2026-10-21",
+    "text": "I just watched a YouTube video from How I AI[1] doing a bit of a preview on Duet. Their point was quite the opposite. The Duet agent is so slow that it's not actually particularly pleasant to use, even if it is smart. I tend to agree, and think speed is a key feature here. If it's not quick, it risks feeling disconnected. I have, against my better wishes, ra"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50187705",
+    "author": "juanre",
+    "date": "2026-10-21",
+    "text": "I am sure it is. I have not tried Duet, but agents working with opus and sol have been managing mine for quite a while and it is great. The key, though, is that I can replace a claude with something else and all still works."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50196282",
+    "author": "mirmor23",
+    "date": "2026-10-22",
+    "text": "> \"Claude Duet is a proactive agent that understands what needs your attention. It takes on tasks of all sizes, keeps working while you\u2019re away, and waits for your ok when it matters.\" More hyperbole from a company angling for IPO gold. It would serve all existing customers well if they had a "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50379312",
+    "author": "m_w_",
+    "date": "2026-11-05",
+    "text": "r models. Latest deepseek checkpoint is very solid 3. CC + extensive config / hooks 4. Usually supervising myself w/ 5-6 sessions, if orchestrating more than that it's a hand-rolled swarm tool 5. Tried NanoClaw, and I have access to Claude Duet, but between getting on and off the waitlist for Duet, I hand-rolled a personal agent that does what I want."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50300153",
+    "author": "nathanfig",
+    "date": "2026-10-30",
+    "text": "That is the trend for sure. Duet is where I go from an agent manager to a manager of agent managers, and I have mixed feelings about that."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50379016",
+    "author": "wj",
+    "date": "2026-11-05",
+    "text": " etc.) is different than on-going repetitive work--the work of the back office. I've built a platform for the latter specifically around centralizing agents while decentralizing orchestration. ( https://sleeperservice.io/ ) 5. Waiting on a Duet invitation. But Dots is interesting to me. Use Gemini with Gmail to some extent."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50367272",
+    "author": "joshstrange",
+    "date": "2026-11-04",
+    "text": " OpenCode and Pi some as well 4. I've tried a number of these tools and settled on my own tool (not released) to oversee my agents 5. Played with OpenClaw and Hermes in the past, cool ideas but execution fell flat. I currently use Dots and Duet for little things (mostly monitoring communications). Dots is much better than Duet today but I hope Duet gets better."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50348371",
+    "author": "joshjob42",
+    "date": "2026-11-03",
+    "text": "I would strongly prefer if the function of the glasses was as an IO device I can hook up to whatever agent I want be it Claude/Claude Duet app on my phone, something running on a server I have somewhere, whatever."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50297847",
+    "author": "lazzlazzlazz",
+    "date": "2026-10-29",
+    "text": " I find the best by far, and I've tried Hermes Agent, OpenClaw, NanoClaw, IronClaw, Instinct, Muse, dots, and many others at length. The simplest and best overall package so far is Grokbot, by a respectable margin. Although I haven't tried Duet!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50296542",
+    "author": "tinyhouse",
+    "date": "2026-10-29",
+    "text": "Sounds like Duet is more like Grokbot than Muse? Haven't used it but the author is talking about channels, github policy access for specific channels, etc. That doesn't sound like the Muse use case. I actually use Claude's agents on the Claude platform for all things work related and it works pr"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50253904",
+    "author": "theptip",
+    "date": "2026-10-27",
+    "text": "now, but the direction is clear. Gobbling up all the SaaS in order of descending value to agents. My bet is on promoting their internal Tasks representation to something more like a Jira/Linear. But then obviously Slack is another one, and Duet is already starting to build a \u201cChannel\u201d abstraction, so making Duet multiplayer is a clear possible next step."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50238913",
+    "author": "tangotaylor",
+    "date": "2026-10-26",
+    "text": "> It\u2019s no surprise both companies are trying to build moats to defend against this trend, such as a focus on enterprise commitments and personal agentic assistants like OpenAI Dots and Claude Duet. Also regulatory capture, like OpenAI calcifying its teen mode into law via Adam's Law. https://openai.com/index/supporting-california-bill-advance-... Openrouter recently changed their TOS to exclude under-18 users, presumably to escape liability from the law. https://conductat"
+   }
+  ]
+ },
+ {
+  "name": "Eigent",
+  "url": "https://github.com/eigent-ai/eigent",
+  "score": 24.2,
+  "github_stars": 15762,
+  "top_hn_story": {
+   "title": "Eigent: An open source Claude Cowork alternative",
+   "points": 35,
+   "id": "46618954",
+   "url": "https://github.com/eigent-ai/eigent"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "49806330",
+    "author": "BlobberSnobber",
+    "date": "2026-09-22",
+    "text": "I\u2019d say \u201ceigentlich\u201d"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49802629",
+    "author": "MostlyStable",
+    "date": "2026-09-22",
+    "text": "Ich glaube, dass Deutsche buchstabieren es \"aktuelle\", eigentlich. (apologies for my broken learner German, I decided not to use a translator)."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49783995",
+    "author": "throwawaydeutsc",
+    "date": "2026-09-21",
+    "text": "Wohnungen in Friedrichshain [11] 10. Allgemein gegen Wohnungsbau in Treptow [12] 11. Allgemein gegen Wohnungsbau in Pankow [13] 12. Allgemein gegen Neubauziele in ganz Berlin [14] Alles Beispiele von Die Linke, weil das die Partei ist, die eigentlich am h\u00e4rtesten f\u00fcr den sozialen Wohnungsbau k\u00e4mpfen m\u00fcsste. Auch Neubau im Au\u00dfenbereich wird nicht gerne gesehen: 5.000 Wohnungen auf der Elisabeth-Aue sollten verhindert werden [15]. [1] https://web.archive.org/web/20211015205615/https://www.tages... [2] https://web.archive.o"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49693804",
+    "author": "geraneum",
+    "date": "2026-09-14",
+    "text": "meone here [1] has found a [German] blog [2] writing about this cipher. There are two comments (Jan and Helmut) from 2014 under the blog post which posit that it's a book cipher. Here's one of those comments [in German]: \"Die L\u00f6sung m\u00fcsste eigentlich mit Hilfe des Buches zu finden sein (..who worthily will hear or read this book..)\" I find it curious that the article here claims that people have attempted to decipher it and lists a few methods that are quite similar to what\u2019s proposed in the comments under that post, exc"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49693434",
+    "author": "geraneum",
+    "date": "2026-09-14",
+    "text": "In your first link one of the comments says: > Die L\u00f6sung m\u00fcsste eigentlich mit Hilfe des Buches zu finden sein (..who worthily will hear or read this book..) And there\u2019s another one that says: > jeweils 32 zahlen pro reihe. erste zeile seitenzahl zweite zeile wort? oder umgekehrt? w\u00e4r mir als erstes in den sinn gekommen. leider gerade keine zeit da"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49590998",
+    "author": "setuporg",
+    "date": "2026-09-06",
+    "text": "Eigen Hacks extends eigentimes.com, the world\u2019s first newspaper aligning the day\u2019s news along the eigenvectors of all news. Hacks for all Hacker News! Blog: https://firstpair.press/eigen-hacks/ "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48330424",
+    "author": "c0rruptbytes",
+    "date": "2026-05-29",
+    "text": " https://github.com/OpenCoworkAI/open-cowork https://www.eigent.ai/ "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48132233",
+    "author": "noahgolmant",
+    "date": "2026-05-14",
+    "text": "Back in 2018 I published pytorch-hessian-eigenthings, a niche open source package for GPU-accelerated curvature analysis of PyTorch models. Loss landscape curvature metrics like the eigenvalues of the Hessian have been implicated in many generalization properties of neural networks (like flat-minima hypotheses, low-rank Hessi"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47776961",
+    "author": "olegbk",
+    "date": "2026-04-15",
+    "text": " on. Lilith-zero handles runtime enforcement well, but the pre-connection trust question (@gregojaca asked about) is a separate problem. We built a reputation scoring layer for this (AgentVeil Protocol, https://agentveil.dev ). Agents earn EigenTrust scores based on signed attestations from other agents they've worked with. NetFlow prevents sybil inflation. Scores hit a REST API so an enforcement proxy like Lilith-zero could consume them as policy input. Runtime enforcement + pre-connection trust = full stack. We also ru"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47776724",
+    "author": "olegbk",
+    "date": "2026-04-15",
+    "text": "s are self-reported. The agent runs the test on itself. An alternative we've been building: attestation-based reputation. Trust scores come from signed proof of work by independent agents who actually delegated tasks and verified outcomes. EigenTrust computes scores from the attestation graph, and NetFlow prevents sybil clusters from inflating each other. You can't inject a pytest hook into a signed interaction history. Live visualization of how this works: https://agentveil.dev/live "
+   },
+   {
+    "src": "hn_comment",
+    "id": "47586969",
+    "author": "olegbk",
+    "date": "2026-03-31",
+    "text": "Built trust and reputation infrastructure for AI agents. W3C DID identity, EigenTrust peer reputation with sybil detection, automated onboarding pipeline with seed agents, and hash-chained audit trail anchored to IPFS. \u0421ore problem: agent identity tells you who an agent is. It says nothing about whether you should trust it. Demo: https://raw.githubusercontent"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47560700",
+    "author": "deanishe",
+    "date": "2026-03-29",
+    "text": "Ne, kannst du eigentlich nicht."
+   }
+  ]
+ },
+ {
+  "name": "Dots",
+  "url": "https://openai.com/index/introducing-dots/",
+  "score": 21.5,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Ask HN: Are people aware OpenAI Dots intercept SSL?",
+   "points": 7,
+   "id": "50229493",
+   "url": null
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50367272,
+    "author": "joshstrange",
+    "text": "nd Pi some as well 4. I've tried a number of these tools and settled on my own tool (not released) to oversee my agents 5. Played with OpenClaw and Hermes in the past, cool ideas but execution fell flat. I currently use Dots and Duet for little things (mostly monitoring communications). Dots is much better than Duet today but I hope Duet gets better."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50238913",
+    "author": "tangotaylor",
+    "date": "2026-10-26",
+    "text": "> It\u2019s no surprise both companies are trying to build moats to defend against this trend, such as a focus on enterprise commitments and personal agentic assistants like OpenAI Dots and Claude Duet. Also regulatory capture, like OpenAI calcifying its teen mode into law via Adam's Law. https://openai.com/index/supporting-california-bill-advance-... Openrouter recently changed their TOS to exclude under-18 users, presumably to escape liability from the law. h"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50186653",
+    "author": "minimaxir",
+    "date": "2026-10-21",
+    "text": "A notable distinction between Duet and Meta Muse/OpenAI Dots is the lack of quirky anthropomorphic branding. As a result, the use cases are more clear/more professionally-oriented as they don't rely on you creating a magic pet/BFF that does whatever you want."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50186198",
+    "author": "rvz",
+    "date": "2026-10-21",
+    "text": "This is an OpenAI Dots, Grok Bot and Muse competitor. All four of them including Claude Duet have two out of three requirements to survive in this product sector in the long run: 1) The compute to scale these agents to every user on their platform. 2) The models that power them for 'intelligence'. 3) "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50173771",
+    "author": "devnavigator",
+    "date": "2026-10-20",
+    "text": "OpenAI Dots represent the next evolution of agentic AI: persistent agents that can understand goals, use computers and applications, learn from feedback, and continue working over time. The opportunity for enterprises is not simply better automation, but a new way to divide responsibilities"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50019637",
+    "author": "adityapurwa",
+    "date": "2026-10-09",
+    "text": "Run Sunnie ( https://github.com/YourSunnie/sunnie ) It's like OpenAI dots but on your own server. Disclaimer: Creator"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49971445",
+    "author": "jychang",
+    "date": "2026-10-05",
+    "text": "I used OpenAI Dots running GPT-6 Astra on the Ultra reasoning mode, as an agent swarm with 6 subagents, to create a new mathematical proof. The proof comes with Lean verification. Caveat: this is not peer reviewed yet, so consider it speculative. Still, not bad for a weekend of playing with agent "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49959160",
+    "author": "mariagorskikh",
+    "date": "2026-10-04",
+    "text": "build on it together: add more services and tools, better permissions, different payment strategies, better prompts... The goal is to make it easy and affordable for anyone to launch a startup selling agents so that the world isnt ruled by openai dots and meta muses Check it out and let me know what you think!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49911151",
+    "author": "jameshart",
+    "date": "2026-09-30",
+    "text": "ow chat agents operate\u2019 but they are specific to how claude code/opencode/pi/codex operate. Giving agents a Unix computer account they can play with is definitely a powerful tool that makes them capable of doing a lot more (see: meta muse, OpenAI dots), in much the same way that giving a human a computer they are trained to use makes them way more capable\u2026 but it\u2019s surely not the only way we can run these things."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49909438",
+    "author": "transitivebs",
+    "date": "2026-09-30",
+    "text": "somebody bought dot.com to confuse openai dots.com users by redirecting to Grok bot lmao"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49906932",
+    "author": "jasode",
+    "date": "2026-09-30",
+    "text": "ww.youtube.com/watch?v=uXspbC2srEQ A man wants his website changed, and a woman wants her presentation slides updated. \"Serious engineers\" don't need cutesy re-incarnated mascots of Microsoft's Bob or MS Office Clippy paperclip assistants. OpenAI dots doesn't have to win over HN techies who are comfortable with CLI tools."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50285806",
+    "author": "turbobutton",
+    "date": "2026-10-29",
+    "text": "I like the AI future shown in the dots announcement trailer ( https://openai.com/index/introducing-dots/ ). Cooking, engaging with family, enjoying nature while simultaneously conversing with an unobtrusive AI that facilitates your creative and commercial endeavors. Would that be so terrible?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50292648",
+    "author": "zenburnmyface",
+    "date": "2026-10-29",
+    "text": "ets. 3. They finally, right at the end, flip-flopped on 100/200/500 plan usage. Also, those names won't scale with inflation. 4. I see _eight_ (8!) models in my codex model selector. 5. _All_ their produce announcements (codex, chat, work, dots, agents) have the same messaging: \"extra capabilities designed for long running tasks\" - so which do I choose!? I mean, I know it's a new technology and products are evolving, but..."
+   }
+  ]
+ },
+ {
+  "name": "Paperclip",
+  "url": "https://github.com/paperclipai/paperclip",
+  "score": 19.7,
+  "github_stars": 111950,
+  "top_hn_story": {
+   "title": "StackOverflow closed my OpenClaw and paperclipAI integration q. as \"irrelevant\"",
+   "points": 4,
+   "id": "48578387",
+   "url": "https://stackoverflow.com/questions/79958607/how-do-i-view-server-logs-from-paperclipai-being-run-via-npx-paperclipai-run"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "49633106",
+    "author": "cschneid",
+    "date": "2026-09-09",
+    "text": "Also seems very similar to Paperclip ( https://paperclipai.net/ ). It's a \"company\" with an org chart of agents."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48188298",
+    "author": "maxdo",
+    "date": "2026-05-19",
+    "text": "i seriously thought it is https://github.com/paperclipai/paperclip about this :) it's the complete opposite lol"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47600498",
+    "author": "latentsea",
+    "date": "2026-04-01",
+    "text": "5 to Opus 4.5 and what that unlocked, and consider the rumoured Mythos model is apparently not just an incremental improvement, but another step change. Then pair it with infrastructure for operating agents at scale like https://github.com/paperclipai/paperclip and SOTA harnesses like the ones being written about on the blogs of the frontier labs... I mean... you tell me what you think is coming down the pipe?"
+   }
+  ]
+ },
+ {
+  "name": "Claude Code Routines",
+  "url": "https://code.claude.com/docs/en/routines",
+  "score": 19.5,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Claude Code Routines",
+   "points": 720,
+   "id": "47768133",
+   "url": "https://code.claude.com/docs/en/routines"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "48434993",
+    "author": "nozzlegear",
+    "date": "2026-06-07",
+    "text": "> Scheduled tasks that run locally ( https://support.claude.com/en/articles/13854387-schedule-rec ... ) importantly different from Claude Code routines What do people do with these? I don't use Claude but when I did I couldn't think of anything useful to do with the routines. I'm probably not being imaginative enough."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48434685",
+    "author": "Recursing",
+    "date": "2026-06-07",
+    "text": "1. Same experience as my non-Linux coworkers, so we can share learnings and processes 2. Scheduled tasks that run locally ( https://support.claude.com/en/articles/13854387-schedule-rec... ) importantly different from Claude Code routines 3. Multiple projects/isolated memories in the same folder 4. Better UI"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47938018",
+    "author": "vjerancrnjak",
+    "date": "2026-04-28",
+    "text": "e pre-LLM era. Turning compute into excrement as fast as the planet is filled with it. Excrement being \"Github Copilot code review\" in compute world, and no need to draw what it is in our real world. Weird that Anthropic decided to build a Claude Code Routines toilet."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47777357",
+    "author": "rbalicki",
+    "date": "2026-04-15",
+    "text": "You may want to check out Barnum, which is a programming language/agent orchestration tool that makes it easy to build things like /loop, or Claude code routines. And you won't end up dependent on the specifics of how Claude code routines work! https://github.com/barnum-circus/barnum "
+   },
+   {
+    "src": "hn_comment",
+    "id": "47774230",
+    "author": "dbmikus",
+    "date": "2026-04-15",
+    "text": "If you don't get it working with Claude Code Routines, would love to connect and see if we can help! We're building an open core product that can spin up sandboxed coding and control them from Slack (and also web UI, TUI, and HTTP APIs + CLIs) We work with any coding model / harness. website: https://www.amika.dev/ OSS repo: https:"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47773601",
+    "author": "nateb2022",
+    "date": "2026-04-15",
+    "text": "erf the tool/model behind the feature... No trust they won't sunset the feature (the graveyard of LLM-features is vast and growing quickly while they throw stuff at the wall to see what sticks) Doesn't really apply to the article regarding Claude Code Routines in particular. Should this feature disappear, it should be trivially easy to setup a similar pipeline locally, using a cronjob to run opencode configured to use a local LLM. Easy. I have no qualms using a convenient feature I could reimplement myself, it saves me time."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47772912",
+    "author": "haukem",
+    "date": "2026-04-14",
+    "text": "I used the claude-code-action GitHub Action to review PRs before, but it is pretty buggy e.g. PRs from forked repositories do not work, and I had to fix it myself. This should work better with Claude Code Routines. claude-code-action only works with the API and is therefore pretty expensive compared to the subscription. I think LLM reviews on PRs are helpful and will reduce the load on maintainers. I am working on OpenWrt and was approved for the Claude Code Max Open Source Program today."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47772061",
+    "author": "fragmede",
+    "date": "2026-04-14",
+    "text": " vendor's system, but compared the to the fiction of moving from one cloud to another, eg AWS to GCP, the friction between opening Claude code vs codex is basically zero. Have an active subscription and have Claude.md say \"read Agents.md\". Claude Code routines sounds useful, but at the same time, under AI-codepocalypse, my guess is it would take an afternoon to have codex reimplement it using some existing freemium SaaS Cron platform, assuming I didn't want to roll my own (because of the maintenance overhead vs paying someone else to "
+   },
+   {
+    "src": "hn_comment",
+    "id": "47770796",
+    "author": "bottlepalm",
+    "date": "2026-04-14",
+    "text": "being one of the best AI assistants. But yea there's some annoying overlap here with Cowork which also has scheduled tasks, in Cowork the tasks can use your desktop, browser and accounts which is pretty useful - a big difference from these Claude Code Routines."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47769511",
+    "author": "senko",
+    "date": "2026-04-14",
+    "text": "I've had an AI assistant send me email digests with local news, and another watching a cron job, analyzing the logs and sending me reports if there's any problem. I'd say that counts as yes. (For clarity: neither are powered by Claude Code Routines. Rather, Claude Code coded them and they're simple cron jobs themselves.)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47789696",
+    "author": "senko",
+    "date": "2026-04-16",
+    "text": "Reading through the comments here, most use cases is running an agent with some input in a cron job. Anthropic now have Routines in Claude Code that do precisely that, and I\u2019d bet they will bring that to Cowork. ChatGPT can\u2019t be far behind (or maybe they already have - tbh hard to keep track of everything). Devs can already set up reliable cron jobs for cheaper. Normies will have a less brittle solution f"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47768557",
+    "author": "matthieu_bl",
+    "date": "2026-04-14",
+    "text": "Blog post https://claude.com/blog/introducing-routines-in-claude-code "
+   }
+  ]
+ }
+]

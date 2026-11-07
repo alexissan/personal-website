@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Dev Tools Field Guide — Alexis Santos</title>
+<meta name="description" content="The AI developer tools people actually use, ranked from 6,000+ Hacker News comments plus Lobsters, dev.to, GitHub, npm and PyPI. 12 categories, top 10 each. November 2026.">
+<link rel="canonical" href="https://alexissantos.dev/ai-dev-tools">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI Dev Tools Field Guide — what developers actually use">
+<meta property="og:description" content="12 categories, top 10 each, ranked from 6,000+ Hacker News comments and five other sources. November 2026 edition.">
+<meta property="og:url" content="https://alexissantos.dev/ai-dev-tools">
+<meta property="og:image" content="https://alexissantos.dev/ai-dev-tools/cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@deepfirstsearch">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  color-scheme: light;
+  --paper: #f5f3ee;
+  --ink: #17160f;
+  --ink-2: #4f4d46;
+  --ink-3: #7c796f;
+  --rule: #dcd8cd;
+  --rule-strong: #17160f;
+  --accent: #157a5c;
+  --accent-soft: #e2eee8;
+  --track: #e6e2d8;
+  --hn: #e8601c;
+  --serif: "Newsreader", "Iowan Old Style", Georgia, serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --paper: #131311; --ink: #ecebe5; --ink-2: #b6b3a9; --ink-3: #85827a;
+    --rule: #2c2b27; --rule-strong: #ecebe5; --accent: #45b892; --accent-soft: #1b2b25; --track: #2a2925; --hn: #ff7a33;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #131311; --ink: #ecebe5; --ink-2: #b6b3a9; --ink-3: #85827a;
+  --rule: #2c2b27; --rule-strong: #ecebe5; --accent: #45b892; --accent-soft: #1b2b25; --track: #2a2925; --hn: #ff7a33;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 64px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { background: var(--paper); color: var(--ink); font: 400 18px/1.55 var(--serif); font-optical-sizing: auto; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration-color: color-mix(in srgb, currentColor 35%, transparent); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+a:hover { text-decoration-color: currentColor; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+.mono, .kicker, dt, .facts, .rank, .score-n, .cat-num, .tag, .toc span, .hc-val, .also span, .back { font-family: var(--mono); }
+
+/* Masthead */
+.back { display: inline-block; font-size: 13px; color: var(--ink-3); text-decoration: none; padding: 20px 0 0; }
+.back:hover { color: var(--ink); }
+.mast { border-bottom: 1px solid var(--rule-strong); padding: 56px 0 28px; }
+.kicker { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); display: flex; gap: 14px; flex-wrap: wrap; }
+.kicker b { color: var(--accent); font-weight: 500; }
+h1 { font-weight: 500; font-size: clamp(40px, 7.4vw, 84px); line-height: .98; letter-spacing: -.025em; margin: 18px 0 22px; max-width: 13ch; }
+h1 em { font-style: italic; font-weight: 400; color: var(--accent); }
+.lede { font-size: clamp(19px, 2.3vw, 23px); line-height: 1.45; color: var(--ink-2); max-width: 40em; }
+.stats { display: grid; grid-template-columns: repeat(6, 1fr); border-top: 1px solid var(--rule); margin-top: 40px; }
+.stats div { padding: 14px 14px 0 0; }
+.stats div + div { padding-left: 14px; border-left: 1px solid var(--rule); }
+dt { font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); }
+dd { font-size: 30px; font-weight: 500; letter-spacing: -.02em; line-height: 1.2; }
+
+/* Sticky category rail */
+.rail { position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--paper) 92%, transparent); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid var(--rule); }
+.rail ol { list-style: none; display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; padding: 10px 0; }
+.rail ol::-webkit-scrollbar { display: none; }
+.rail a { display: block; white-space: nowrap; font: 500 13px/1 var(--mono); color: var(--ink-3); text-decoration: none; padding: 8px 10px; border-radius: 6px; }
+.rail a:hover { color: var(--ink); background: var(--track); }
+.rail a[aria-current="true"] { color: var(--paper); background: var(--ink); }
+
+/* Section labels */
+.label { font: 500 12px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); padding: 56px 0 18px; display: flex; align-items: center; gap: 12px; }
+.label::after { content: ""; flex: 1; height: 1px; background: var(--rule); }
+
+/* Findings */
+.findings { list-style: none; display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 48px; counter-reset: f; }
+.findings li { counter-increment: f; padding: 18px 0 22px; border-top: 1px solid var(--rule); }
+.findings h3 { font-size: 22px; font-weight: 500; line-height: 1.25; letter-spacing: -.01em; margin-bottom: 6px; }
+.findings h3::before { content: counter(f, decimal-leading-zero); font: 500 12px/1 var(--mono); color: var(--accent); display: block; margin-bottom: 10px; }
+.findings p { color: var(--ink-2); font-size: 17px; }
+
+/* Harness chart */
+.harness { border-top: 1px solid var(--rule); padding-top: 18px; }
+.harness figcaption { color: var(--ink-2); font-size: 17px; max-width: 44em; margin-bottom: 20px; }
+.harness figcaption b { color: var(--ink); font-weight: 500; }
+.hc { list-style: none; display: grid; gap: 9px; }
+.hc li { display: grid; grid-template-columns: 170px 1fr 44px; align-items: center; gap: 14px; }
+.hc-name { font-size: 16px; text-align: right; }
+.hc-track { height: 10px; display: block; }
+.hc-track i { display: block; height: 100%; background: var(--accent); border-radius: 0 4px 4px 0; min-width: 3px; }
+.hc li:hover .hc-track i { filter: brightness(1.15); }
+.hc li.muted .hc-track i { background: var(--ink-3); }
+.hc li.muted .hc-name { font-style: italic; color: var(--ink-2); }
+.hc-val { font-size: 13px; color: var(--ink-2); }
+
+/* TOC */
+.toc ol { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--rule); }
+.toc li { border-bottom: 1px solid var(--rule); }
+.toc a { display: flex; gap: 14px; align-items: baseline; padding: 14px 0; text-decoration: none; font-size: 20px; }
+.toc a:hover { color: var(--accent); }
+.toc span { font-size: 12px; color: var(--ink-3); }
+
+/* Category */
+.cat { padding-top: 72px; }
+.cat-head { display: grid; grid-template-columns: 96px 1fr; gap: 0 8px; border-top: 2px solid var(--rule-strong); padding-top: 18px; margin-bottom: 8px; }
+.cat-num { font-size: 12px; letter-spacing: .08em; color: var(--accent); display: block; margin-bottom: 8px; }
+.cat h2 { font-size: clamp(32px, 4.6vw, 48px); font-weight: 500; line-height: 1.05; letter-spacing: -.02em; }
+.dek { font-size: 19px; color: var(--ink-2); margin-top: 8px; max-width: 36em; }
+.note { font-size: 15px; color: var(--ink-3); margin-top: 8px; max-width: 46em; font-style: italic; }
+.tools { list-style: none; }
+.tool { display: grid; grid-template-columns: 96px 1fr 132px; gap: 0 8px; padding: 22px 0; border-bottom: 1px solid var(--rule); }
+.rank { font-size: 15px; color: var(--ink-3); padding-top: 6px; }
+.tool:first-child .rank { color: var(--accent); }
+.tool h3 { font-size: 25px; font-weight: 500; line-height: 1.2; letter-spacing: -.01em; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+.tool h3 a { text-decoration: none; }
+.tool h3 a:hover { text-decoration: underline; }
+.tool p { color: var(--ink-2); font-size: 17px; margin: 6px 0 10px; max-width: 40em; }
+.tool p b { color: var(--ink); font-weight: 500; }
+.cite { text-decoration: none; }
+.cite:hover { color: var(--ink); text-decoration: underline; }
+.tag-rising { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 45%, transparent); }
+.tag-fading { color: var(--ink-3); border-style: dashed; }
+.tag { font-size: 11px; font-weight: 500; letter-spacing: .02em; color: var(--ink-2); border: 1px solid var(--rule); border-radius: 4px; padding: 2px 6px; line-height: 1.4; }
+.tag-new-in-2026 { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 45%, transparent); }
+.facts { font-size: 12.5px; color: var(--ink-3); display: flex; flex-wrap: wrap; gap: 4px 18px; align-items: center; }
+.facts b { color: var(--ink); font-weight: 500; }
+.story { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; }
+.story:hover { color: var(--ink); }
+.hn { display: inline-grid; place-items: center; width: 15px; height: 15px; background: var(--hn); color: #fff; font: 500 10px/1 var(--mono); border-radius: 2px; }
+.score { text-align: right; padding-top: 4px; }
+.score-n { font-size: 22px; font-weight: 500; display: block; line-height: 1; }
+.score-bar { display: block; height: 3px; background: var(--track); margin: 10px 0 0 auto; width: 100%; border-radius: 2px; }
+.score-bar i { display: block; height: 100%; background: var(--ink); border-radius: 2px; }
+.tool:first-child .score-bar i { background: var(--accent); }
+.also { font-size: 15px; color: var(--ink-3); padding: 16px 0 0 104px; }
+.also span { font-size: 11px; letter-spacing: .06em; text-transform: uppercase; margin-right: 6px; }
+.also a { color: var(--ink-2); }
+
+/* Method */
+.method { display: grid; grid-template-columns: 1fr 1fr; gap: 0 48px; }
+.method h3 { font-size: 22px; font-weight: 500; margin: 0 0 10px; }
+.method p, .method li { color: var(--ink-2); font-size: 17px; }
+.method p + p { margin-top: 12px; }
+.src { list-style: none; border-top: 1px solid var(--rule); }
+.src li { padding: 12px 0; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: 1fr auto; gap: 2px 16px; }
+.src b { color: var(--ink); font-weight: 500; }
+.src .mono { font-size: 12.5px; color: var(--ink-3); text-align: right; white-space: nowrap; }
+.src small { grid-column: 1 / -1; font-size: 15px; color: var(--ink-3); }
+.weights { width: 100%; border-collapse: collapse; font-size: 16px; margin: 6px 0 18px; }
+.weights td { padding: 8px 0; border-bottom: 1px solid var(--rule); color: var(--ink-2); }
+.weights td:last-child { text-align: right; font-family: var(--mono); font-size: 14px; color: var(--ink); }
+.method-wide { grid-column: 1 / -1; }
+
+footer { margin-top: 88px; border-top: 1px solid var(--rule-strong); padding: 22px 0 64px; font: 13px/1.6 var(--mono); color: var(--ink-3); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+footer a { color: var(--ink-2); }
+.theme-toggle { background: none; border: 1px solid var(--rule); color: var(--ink-2); font: 12px var(--mono); padding: 4px 10px; border-radius: 6px; cursor: pointer; }
+
+@media (max-width: 860px) {
+  .stats { grid-template-columns: repeat(3, 1fr); }
+  .stats div:nth-child(4) { border-left: 0; padding-left: 0; }
+  .findings, .method { grid-template-columns: 1fr; }
+  .toc ol { grid-template-columns: repeat(2, 1fr); }
+  .toc li:nth-child(odd) a { padding-right: 12px; }
+}
+@media (max-width: 600px) {
+  body { font-size: 17px; }
+  .wrap { padding: 0 16px; }
+  .mast { padding-top: 36px; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .stats div:nth-child(n) { border-left: 0; padding-left: 0; }
+  .stats div:nth-child(even) { border-left: 1px solid var(--rule); padding-left: 14px; }
+  dd { font-size: 24px; }
+  .toc ol { grid-template-columns: 1fr; }
+  .tool { grid-template-columns: 40px 1fr; }
+  .cat-head { grid-template-columns: 1fr; }
+  .cat-head > span:first-child { display: none; }
+  .tool h3 { font-size: 22px; }
+  .score { grid-column: 2; display: flex; align-items: center; gap: 12px; text-align: left; padding-top: 10px; }
+  .score-n { font-size: 15px; }
+  .score-bar { margin: 0; flex: 1; max-width: 160px; }
+  .also { padding-left: 48px; }
+  .hc li { grid-template-columns: 104px 1fr 38px; gap: 10px; }
+  .hc-name { font-size: 14px; }
+}
+@media print { .rail, .theme-toggle { display: none; } .cat { break-inside: avoid-page; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="/">← Alexis Santos</a>
+  <header class="mast">
+    <p class="kicker"><b>Field guide</b><span>November 2026 edition</span><span>12 categories · top 10 each</span></p>
+    <h1>The AI dev tools people <em>actually</em> use.</h1>
+    <p class="lede">Not a launch list and not a sponsored roundup. I read what developers said about their own setups in 24 Hacker News threads, then cross-checked it against Lobsters, dev.to, GitHub, npm and PyPI. Here is the result, ranked within each category.</p>
+    <dl class="stats"><div><dt>HN comments read</dt><dd>6,323</dd></div><div><dt>Ask HN threads</dt><dd>24</dd></div><div><dt>HN stories scanned</dt><dd>3,229</dd></div><div><dt>Lobsters stories</dt><dd>2,979</dd></div><div><dt>dev.to posts</dt><dd>42,357</dd></div><div><dt>Tools scored</dt><dd>191</dd></div></dl>
+  </header>
+</div>
+
+<nav class="rail" aria-label="Jump to category"><div class="wrap"><ol id="rail"></ol></div></nav>
+
+<main class="wrap">
+  <p class="label">What the data says</p>
+  <ol class="findings"><li><h3>Three harnesses won the terminal.</h3><p>In the November 2026 “what’s your setup” thread, 26% of the 538 people answering name Claude Code, 24% Codex and 17% OpenCode. Codex roughly tripled its share of commenters since 2025. Most people run two of them and switch by subscription.</p></li><li><h3>One in nine built their own.</h3><p>58 of those 538 describe a harness, agent loop or orchestrator they wrote themselves, more than name Pi, Cursor or Copilot. The harness is becoming what dotfiles were: personal, forked, and shared as a gist.</p></li><li><h3>The IDE is no longer the centre.</h3><p>Cursor went from 8.7% of commenters in 2025 threads to 2.2% in the second half of 2026. Windsurf, Continue and Roo Code all but disappear. Zed is the one editor whose share went up.</p></li><li><h3>The most popular orchestrator is tmux.</h3><p>94 people in recent threads describe tmux panes plus git worktrees. Of the dedicated tools, Herdr is the breakout, from zero mentions to 41 in a few months.</p></li><li><h3>Cheap plans plus open harnesses is a real lane now.</h3><p>OpenRouter went from 0.4% to 3.3% of commenters, and 32 people mention OpenCode Go. The pattern: DeepSeek, GLM or Qwen through a $10 plan, driven by OpenCode or Pi.</p></li><li><h3>GitHub stars stopped meaning much.</h3><p>Several 2026 repos sit at 80k to 440k stars with almost no discussion anywhere. cc-switch has 152k stars and three HN comments in a year. So stars count for little here: what people say they use counts for most.</p></li></ol>
+
+  <p class="label">The harness seat</p>
+  <figure class="harness" aria-labelledby="harness-cap">
+  <figcaption id="harness-cap"><b>Who gets named for the harness seat.</b> Share of the 538 people answering
+  <a href="https://news.ycombinator.com/item?id=50366117">“Ask HN: What’s your current AI agentic setup?”</a> (November 2026) who mention each tool. Most name more than one.</figcaption>
+  <ol class="hc"><li title="140 of 538 people"><span class="hc-name">Claude Code</span><span class="hc-track" aria-hidden="true"><i style="width:100.0%"></i></span><span class="hc-val">26%</span><span class="sr-only"> (140 of 538 people)</span></li><li title="128 of 538 people"><span class="hc-name">Codex CLI</span><span class="hc-track" aria-hidden="true"><i style="width:91.4%"></i></span><span class="hc-val">24%</span><span class="sr-only"> (128 of 538 people)</span></li><li title="89 of 538 people"><span class="hc-name">OpenCode</span><span class="hc-track" aria-hidden="true"><i style="width:63.6%"></i></span><span class="hc-val">17%</span><span class="sr-only"> (89 of 538 people)</span></li><li title="58 of 538 people" class="muted"><span class="hc-name">Their own harness</span><span class="hc-track" aria-hidden="true"><i style="width:41.4%"></i></span><span class="hc-val">11%</span><span class="sr-only"> (58 of 538 people)</span></li><li title="45 of 538 people"><span class="hc-name">Pi</span><span class="hc-track" aria-hidden="true"><i style="width:32.1%"></i></span><span class="hc-val">8%</span><span class="sr-only"> (45 of 538 people)</span></li><li title="25 of 538 people"><span class="hc-name">Cursor</span><span class="hc-track" aria-hidden="true"><i style="width:17.9%"></i></span><span class="hc-val">5%</span><span class="sr-only"> (25 of 538 people)</span></li><li title="24 of 538 people"><span class="hc-name">VS Code / Copilot</span><span class="hc-track" aria-hidden="true"><i style="width:17.1%"></i></span><span class="hc-val">4%</span><span class="sr-only"> (24 of 538 people)</span></li><li title="15 of 538 people"><span class="hc-name">Zed</span><span class="hc-track" aria-hidden="true"><i style="width:10.7%"></i></span><span class="hc-val">3%</span><span class="sr-only"> (15 of 538 people)</span></li><li title="9 of 538 people"><span class="hc-name">Antigravity</span><span class="hc-track" aria-hidden="true"><i style="width:6.4%"></i></span><span class="hc-val">2%</span><span class="sr-only"> (9 of 538 people)</span></li><li title="9 of 538 people"><span class="hc-name">DeepSeek Harness</span><span class="hc-track" aria-hidden="true"><i style="width:6.4%"></i></span><span class="hc-val">2%</span><span class="sr-only"> (9 of 538 people)</span></li><li title="7 of 538 people"><span class="hc-name">Kiro</span><span class="hc-track" aria-hidden="true"><i style="width:5.0%"></i></span><span class="hc-val">1%</span><span class="sr-only"> (7 of 538 people)</span></li><li title="5 of 538 people"><span class="hc-name">Aider</span><span class="hc-track" aria-hidden="true"><i style="width:3.6%"></i></span><span class="hc-val">1%</span><span class="sr-only"> (5 of 538 people)</span></li></ol>
+</figure>
+
+  <p class="label">Categories</p>
+  <nav class="toc" aria-label="Categories"><ol><li><a href="#terminal"><span>01</span>Terminal agents</a></li><li><a href="#editors"><span>02</span>Editors &amp; IDEs</a></li><li><a href="#orchestration"><span>03</span>Running many agents</a></li><li><a href="#review"><span>04</span>Code review &amp; PR agents</a></li><li><a href="#context"><span>05</span>Context, MCP &amp; skills</a></li><li><a href="#browser"><span>06</span>Browser &amp; web for agents</a></li><li><a href="#sandbox"><span>07</span>Sandboxes &amp; safety</a></li><li><a href="#local"><span>08</span>Local models &amp; inference</a></li><li><a href="#gateways"><span>09</span>Model access &amp; routing</a></li><li><a href="#frameworks"><span>10</span>Build your own agent</a></li><li><a href="#evals"><span>11</span>Evals &amp; observability</a></li><li><a href="#assistants"><span>12</span>Always-on agents</a></li></ol></nav>
+
+  <section class="cat" id="terminal" aria-labelledby="h-terminal">
+  <header class="cat-head">
+    <span></span>
+    <div><span class="cat-num">01 / 12</span><h2 id="h-terminal">Terminal agents</h2><p class="dek">The harness is the product. CLI agents that read, edit, run and loop until the job is done.</p></div>
+  </header>
+  <ol class="tools">
+<li class="tool" id="claude-code">
+  <span class="rank">01</span>
+  <div class="body">
+    <h3><a href="https://code.claude.com" rel="noopener">Claude Code</a></h3>
+    <p><b>Terminal coding agent from Anthropic.</b> The default harness in HN setup threads, often run through Desktop, Web or T3 Code. Praised for UX, skills and remote control; complaints are usage burn, ignored memory and unwanted files.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>463</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>33k</b> comments/yr</span><span title="GitHub stars"><b>155k</b> stars</span><span title="npm + PyPI downloads, last month"><b>47.4M</b> downloads/mo</span><a class="story" href="https://news.ycombinator.com/item?id=48734373" title="Biggest HN thread about it: Claude Code is steganographically marking requests"><span class="hn" aria-hidden="true">Y</span>2.4k-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50367215">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 100 out of 100">100</span><span class="score-bar" aria-hidden="true"><i style="width:100%"></i></span></div>
+</li>
+<li class="tool" id="codex-cli">
+  <span class="rank">02</span>
+  <div class="body">
+    <h3><a href="https://developers.openai.com/codex" rel="noopener">Codex CLI</a><span class="tag tag-open-source">Open source</span><span class="tag tag-rising">Rising</span></h3>
+    <p><b>OpenAI&#x27;s terminal and desktop coding agent.</b> Usually the second subscription beside Claude, kept for review and second opinions. Credited with solid one-shots and fast-moving desktop features; dinged for hitting limits, bugs and loud default design taste.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>277</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>15k</b> comments/yr</span><span title="GitHub stars"><b>134k</b> stars</span><span title="npm + PyPI downloads, last month"><b>95.6M</b> downloads/mo</span><a class="story" href="https://news.ycombinator.com/item?id=46902638" title="Biggest HN thread about it: GPT-5.3-Codex"><span class="hn" aria-hidden="true">Y</span>1.5k-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50367676">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 88 out of 100">88</span><span class="score-bar" aria-hidden="true"><i style="width:88%"></i></span></div>
+</li>
+<li class="tool" id="opencode">
+  <span class="rank">03</span>
+  <div class="body">
+    <h3><a href="https://opencode.ai" rel="noopener">OpenCode</a><span class="tag tag-open-source">Open source</span><span class="tag tag-rising">Rising</span></h3>
+    <p><b>Open-source terminal coding agent, any model.</b> The go-to open harness for DeepSeek, GLM or local models, often on the $10 OpenCode Go plan. Liked for per-agent model choice; a few moved on to Pi or T3 Code.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>136</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>5.3k</b> comments/yr</span><span title="GitHub stars"><b>225k</b> stars</span><span title="npm + PyPI downloads, last month"><b>14.2M</b> downloads/mo</span><a class="story" href="https://news.ycombinator.com/item?id=47460525" title="Biggest HN thread about it: OpenCode – Open source AI coding agent"><span class="hn" aria-hidden="true">Y</span>1.3k-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50367789">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 84 out of 100">84</span><span class="score-bar" aria-hidden="true"><i style="width:84%"></i></span></div>
+</li>
+<li class="tool" id="pi">
+  <span class="rank">04</span>
+  <div class="body">
+    <h3><a href="https://pi.dev" rel="noopener">Pi</a><span class="tag tag-open-source">Open source</span><span class="tag tag-rising">Rising</span></h3>
+    <p><b>Minimal, hackable open-source coding agent harness.</b> A lean harness people bend to their own workflows, often with local or open models and the oh-my-pi fork. Liked for small prompts that fit tight context windows.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>67</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>375</b> comments/yr</span><span title="GitHub stars"><b>121k</b> stars</span><span title="npm + PyPI downloads, last month"><b>1.5M</b> downloads/mo</span><a class="story" href="https://news.ycombinator.com/item?id=48847407" title="Biggest HN thread about it: Opinionated and easy Pi.dev configuration"><span class="hn" aria-hidden="true">Y</span>151-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50374449">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 68 out of 100">68</span><span class="score-bar" aria-hidden="true"><i style="width:68%"></i></span></div>
+</li>
+<li class="tool" id="deepseek-harness">
+  <span class="rank">05</span>
+  <div class="body">
+    <h3><a href="https://deepseek.com/harness/en/" rel="noopener">DeepSeek Harness</a><span class="tag tag-open-source">Open source</span><span class="tag tag-new-in-2026">New in 2026</span></h3>
+    <p><b>DeepSeek&#x27;s own agent harness, desktop and TUI.</b> A cheap home setup for many commenters, paired with DeepSeek Flash for a few dollars a month. Praised for speed, value and plugins; web search is the recurring weak spot.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>10</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>499</b> comments/yr</span><span title="GitHub stars"><b>276k</b> stars</span><a class="story" href="https://news.ycombinator.com/item?id=49285244" title="Biggest HN thread about it: DeepSeek Harness developer preview"><span class="hn" aria-hidden="true">Y</span>747-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50376062">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 60 out of 100">60</span><span class="score-bar" aria-hidden="true"><i style="width:60%"></i></span></div>
+</li>
+<li class="tool" id="aider">
+  <span class="rank">06</span>
+  <div class="body">
+    <h3><a href="https://aider.chat" rel="noopener">Aider</a><span class="tag tag-open-source">Open source</span><span class="tag tag-fading">Fading</span></h3>
+    <p><b>Open-source terminal pair programmer, manual context.</b> The pre-agent pair programmer, still liked by a few for manual file control and accuracy. Most commenters moved on, calling the manual context loading busywork next to agentic tools.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>64</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>324</b> comments/yr</span><span title="GitHub stars"><b>50k</b> stars</span><span title="npm + PyPI downloads, last month"><b>261k</b> downloads/mo</span><a class="cite" href="https://news.ycombinator.com/item?id=46260755">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 58 out of 100">58</span><span class="score-bar" aria-hidden="true"><i style="width:58%"></i></span></div>
+</li>
+<li class="tool" id="gemini-cli">
+  <span class="rank">07</span>
+  <div class="body">
+    <h3><a href="https://github.com/google-gemini/gemini-cli" rel="noopener">Gemini CLI</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Google&#x27;s open-source terminal agent for Gemini.</b> Older threads used it as the free option and liked its web search and code explanations. By late 2026 commenters call it deprecated for subscribers and replaced by Antigravity CLI.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>14</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>2k</b> comments/yr</span><span title="GitHub stars"><b>109k</b> stars</span><span title="npm + PyPI downloads, last month"><b>1.6M</b> downloads/mo</span><a class="story" href="https://news.ycombinator.com/item?id=44376919" title="Biggest HN thread about it: Gemini CLI"><span class="hn" aria-hidden="true">Y</span>1.4k-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=49714726">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 53 out of 100">53</span><span class="score-bar" aria-hidden="true"><i style="width:53%"></i></span></div>
+</li>
+<li class="tool" id="copilot-cli">
+  <span class="rank">08</span>
+  <div class="body">
+    <h3><a href="https://github.com/features/copilot/cli" rel="noopener">Copilot CLI</a></h3>
+    <p><b>GitHub Copilot&#x27;s terminal coding agent.</b> Used where work already pays for GitHub Copilot; users say it runs close to Claude Code on the same models. Complaints target Autopilot mode, token burn and a thin plugin system.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>5</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>657</b> comments/yr</span><span title="GitHub stars"><b>11k</b> stars</span><span title="npm + PyPI downloads, last month"><b>6.7M</b> downloads/mo</span><a class="cite" href="https://news.ycombinator.com/item?id=47391754">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 48 out of 100">48</span><span class="score-bar" aria-hidden="true"><i style="width:48%"></i></span></div>
+</li>
+<li class="tool" id="goose">
+  <span class="rank">09</span>
+  <div class="body">
+    <h3><a href="https://block.github.io/goose" rel="noopener">Goose</a><span class="tag tag-open-source">Open source</span><span class="tag tag-rising">Rising</span></h3>
+    <p><b>Block&#x27;s open-source extensible agent, Linux Foundation.</b> Block&#x27;s open agent, now under the Linux Foundation, used for everyday tasks and custom bots. A few like its TUI; others found it too agentic or no better than prompting directly.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>10</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>59</b> comments/yr</span><span title="GitHub stars"><b>56k</b> stars</span><a class="story" href="https://news.ycombinator.com/item?id=42879323" title="Biggest HN thread about it: Goose: An open-source, extensible AI agent that goes beyond code suggestions"><span class="hn" aria-hidden="true">Y</span>249-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50368526">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 43 out of 100">43</span><span class="score-bar" aria-hidden="true"><i style="width:43%"></i></span></div>
+</li>
+<li class="tool" id="mistral-vibe">
+  <span class="rank">10</span>
+  <div class="body">
+    <h3><a href="https://mistral.ai/news/devstral-2-vibe-cli" rel="noopener">Mistral Vibe</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Mistral&#x27;s open-source terminal coding agent.</b> Mostly used as a cheap way to run hosted GLM-5.3. Fans call it fast and good enough; critics say the harness is sluggish, times out or ignores instructions.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>2</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>83</b> comments/yr</span><span title="GitHub stars"><b>5.3k</b> stars</span><a class="story" href="https://news.ycombinator.com/item?id=46205437" title="Biggest HN thread about it: Mistral releases Devstral2 and Mistral Vibe CLI"><span class="hn" aria-hidden="true">Y</span>745-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=49932202">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 35 out of 100">35</span><span class="score-bar" aria-hidden="true"><i style="width:35%"></i></span></div>
+</li>
+  </ol>
+  <p class="also"><span>Also scored</span> <a href="https://ai.meta.com/muse/">Muse Code</a>, <a href="https://github.com/MoonshotAI/kimi-cli">Kimi CLI</a>, <a href="https://github.com/QwenLM/qwen-code">Qwen Code</a>, <a href="https://github.com/gi-dellav/zerostack">Zerostack</a>, <a href="https://github.com/codewhale-hq/Codewhale">Codewhale</a>, <a href="https://ampcode.com">Amp</a>, <a href="https://github.com/1jehuang/jcode">jcode</a>, <a href="https://plandex.ai">Plandex</a>, <a href="https://factory.ai">Droid</a>, <a href="https://github.com/charmbracelet/crush">Crush</a>, <a href="https://github.com/openinterpreter/openinterpreter">Open Interpreter</a>, <a href="https://kiro.dev/cli/">Kiro CLI</a></p>
+</section>
+<section class="cat" id="editors" aria-labelledby="h-editors">
+  <header class="cat-head">
+    <span></span>
+    <div><span class="cat-num">02 / 12</span><h2 id="h-editors">Editors &amp; IDEs</h2><p class="dek">Where you still look at the code. Editors with agents built in rather than bolted on.</p></div>
+  </header>
+  <ol class="tools">
+<li class="tool" id="vs-code-copilot">
+  <span class="rank">01</span>
+  <div class="body">
+    <h3><a href="https://code.visualstudio.com/docs/copilot/overview" rel="noopener">VS Code + Copilot</a><span class="tag tag-fading">Fading</span></h3>
+    <p><b>GitHub Copilot agent inside VS Code.</b> Mostly the option work pays for. Praised for PR reviews, model choice and keep/undo diffs; others call it meh and dry next to Claude.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>130</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>1.9k</b> comments/yr</span><a class="story" href="https://news.ycombinator.com/item?id=47923357" title="Biggest HN thread about it: GitHub Copilot is moving to usage-based billing"><span class="hn" aria-hidden="true">Y</span>767-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50378415">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 88 out of 100">88</span><span class="score-bar" aria-hidden="true"><i style="width:88%"></i></span></div>
+</li>
+<li class="tool" id="cursor">
+  <span class="rank">02</span>
+  <div class="body">
+    <h3><a href="https://cursor.com" rel="noopener">Cursor</a><span class="tag tag-fading">Fading</span></h3>
+    <p><b>AI-first VS Code fork with agents.</b> Often described as where commenters used to be. Usage limits and API-priced bills keep pushing people to a Claude subscription; a few still like its bundled plans.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>244</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>7.6k</b> comments/yr</span><a class="story" href="https://news.ycombinator.com/item?id=43683012" title="Biggest HN thread about it: Cursor IDE support hallucinates lockout policy, causes user cancellations"><span class="hn" aria-hidden="true">Y</span>1.5k-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50395313">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 87 out of 100">87</span><span class="score-bar" aria-hidden="true"><i style="width:87%"></i></span></div>
+</li>
+<li class="tool" id="zed">
+  <span class="rank">03</span>
+  <div class="body">
+    <h3><a href="https://zed.dev" rel="noopener">Zed</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Fast Rust editor with ACP agent support.</b> The editor many keep beside their agents, driving Claude or Codex over ACP or just reviewing code. Liked for speed and agent support; some found it overhyped or unusable without a GPU.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>70</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>2.4k</b> comments/yr</span><span title="GitHub stars"><b>94k</b> stars</span><a class="story" href="https://news.ycombinator.com/item?id=47949027" title="Biggest HN thread about it: Zed 1.0"><span class="hn" aria-hidden="true">Y</span>2.2k-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50378907">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 84 out of 100">84</span><span class="score-bar" aria-hidden="true"><i style="width:84%"></i></span></div>
+</li>
+<li class="tool" id="antigravity">
+  <span class="rank">04</span>
+  <div class="body">
+    <h3><a href="https://antigravity.google" rel="noopener">Antigravity</a></h3>
+    <p><b>Google&#x27;s agent IDE and CLI for Gemini.</b> The only subscription route to Gemini. Some use it daily for search and planning; complaints center on billing and account friction and a weak harness.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>29</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>1.6k</b> comments/yr</span><a class="story" href="https://news.ycombinator.com/item?id=45967814" title="Biggest HN thread about it: Google Antigravity"><span class="hn" aria-hidden="true">Y</span>1.1k-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50374261">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 69 out of 100">69</span><span class="score-bar" aria-hidden="true"><i style="width:69%"></i></span></div>
+</li>
+<li class="tool" id="windsurf">
+  <span class="rank">05</span>
+  <div class="body">
+    <h3><a href="https://windsurf.com" rel="noopener">Windsurf</a><span class="tag tag-fading">Fading</span></h3>
+    <p><b>AI VS Code fork, team now at Google.</b> Mostly mentioned in the past tense now that its team went to Google. Older threads liked its codebase Q&amp;A, autocomplete and parallel flows, but said it struggled on large files.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>62</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>379</b> comments/yr</span><a class="story" href="https://news.ycombinator.com/item?id=44536988" title="Biggest HN thread about it: OpenAI’s Windsurf deal is off, and Windsurf’s CEO is going to Google"><span class="hn" aria-hidden="true">Y</span>1.1k-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=46266283">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 64 out of 100">64</span><span class="score-bar" aria-hidden="true"><i style="width:64%"></i></span></div>
+</li>
+<li class="tool" id="cline">
+  <span class="rank">06</span>
+  <div class="body">
+    <h3><a href="https://cline.bot" rel="noopener">Cline</a><span class="tag tag-open-source">Open source</span><span class="tag tag-fading">Fading</span></h3>
+    <p><b>Open-source agent extension for VS Code.</b> Popular for pairing cheap API models like DeepSeek Flash, or local Ollama models, with VS Code. Liked for permission prompts and provider choice; several left after finding it slow and unstable.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>35</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>325</b> comments/yr</span><span title="GitHub stars"><b>71k</b> stars</span><a class="story" href="https://news.ycombinator.com/item?id=42829034" title="Biggest HN thread about it: Using AI for Coding: My Journey with Cline and LLMs"><span class="hn" aria-hidden="true">Y</span>198-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50373936">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 64 out of 100">64</span><span class="score-bar" aria-hidden="true"><i style="width:64%"></i></span></div>
+</li>
+<li class="tool" id="kiro">
+  <span class="rank">07</span>
+  <div class="body">
+    <h3><a href="https://kiro.dev" rel="noopener">Kiro</a><span class="tag tag-rising">Rising</span></h3>
+    <p><b>Amazon&#x27;s spec-driven agentic VS Code fork.</b> Mostly a work-mandated tool at AWS shops. Its spec-driven workflow gets borrowed elsewhere; Amazon engineers say the harness trails Claude Code and degrades over long context.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>13</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>433</b> comments/yr</span><a class="story" href="https://news.ycombinator.com/item?id=44560662" title="Biggest HN thread about it: Kiro: A new agentic IDE"><span class="hn" aria-hidden="true">Y</span>1.1k-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=47392420">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 57 out of 100">57</span><span class="score-bar" aria-hidden="true"><i style="width:57%"></i></span></div>
+</li>
+<li class="tool" id="roo-code">
+  <span class="rank">08</span>
+  <div class="body">
+    <h3><a href="https://roocode.com" rel="noopener">Roo Code</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Cline fork for VS Code, now discontinued.</b> Ran on your own API key or local models inside VS Code. Users liked its control, visible costs and architect and orchestrator modes; it has been discontinued, with forks carrying on.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>13</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>72</b> comments/yr</span><span title="GitHub stars"><b>24k</b> stars</span><a class="cite" href="https://news.ycombinator.com/item?id=43923565">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 49 out of 100">49</span><span class="score-bar" aria-hidden="true"><i style="width:49%"></i></span></div>
+</li>
+<li class="tool" id="kilo-code">
+  <span class="rank">09</span>
+  <div class="body">
+    <h3><a href="https://kilocode.ai" rel="noopener">Kilo Code</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Roo Code fork for VS Code, JetBrains.</b> Run on your own keys or Kilo credits across many models. Users say it gets the job done; gripes are weak compaction and a recent version that feels blander.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>6</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>69</b> comments/yr</span><span title="GitHub stars"><b>28k</b> stars</span><a class="cite" href="https://news.ycombinator.com/item?id=50388891">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 47 out of 100">47</span><span class="score-bar" aria-hidden="true"><i style="width:47%"></i></span></div>
+</li>
+<li class="tool" id="neovim-codecompanion-avante">
+  <span class="rank">10</span>
+  <div class="body">
+    <h3><a href="https://github.com/olimorris/codecompanion.nvim" rel="noopener">Neovim (CodeCompanion / avante)</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>AI chat and edit plugins for Neovim.</b> Neovim users reach for CodeCompanion for in-editor chat and quick edits, handing bigger tasks to OpenCode or Claude Code. Local-model setups can loop, and completion trails Cursor Tab.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>38</b> HN devs</span><span title="GitHub stars"><b>6.9k</b> stars</span><a class="cite" href="https://news.ycombinator.com/item?id=48889018">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 46 out of 100">46</span><span class="score-bar" aria-hidden="true"><i style="width:46%"></i></span></div>
+</li>
+  </ol>
+  <p class="also"><span>Also scored</span> <a href="https://www.jetbrains.com/junie/">JetBrains Junie</a>, <a href="https://github.com/karthink/gptel">Emacs gptel</a>, <a href="https://continue.dev">Continue</a>, <a href="https://github.com/devdotfast/whiteboard">Whiteboard</a>, <a href="https://voideditor.com">Void</a></p>
+</section>
+<section class="cat" id="orchestration" aria-labelledby="h-orchestration">
+  <header class="cat-head">
+    <span></span>
+    <div><span class="cat-num">03 / 12</span><h2 id="h-orchestration">Running many agents</h2><p class="dek">Worktrees, multiplexers and boards for when one agent at a time stops being enough.</p><p class="note">“tmux + git worktrees” isn’t a product, but it’s what most people actually describe, so it stays in the ranking.</p></div>
+  </header>
+  <ol class="tools">
+<li class="tool" id="herdr">
+  <span class="rank">01</span>
+  <div class="body">
+    <h3><a href="https://herdr.dev" rel="noopener">Herdr</a><span class="tag tag-open-source">Open source</span><span class="tag tag-new-in-2026">New in 2026</span></h3>
+    <p><b>Terminal workspace for many agent sessions.</b> Runs several Claude Code, Codex or Pi sessions side by side. Loved for agent-done pings and a pane overview; a few never clicked with it or switched to Rex.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>41</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>552</b> comments/yr</span><span title="GitHub stars"><b>49k</b> stars</span><a class="story" href="https://news.ycombinator.com/item?id=48756578" title="Biggest HN thread about it: Herdr: One terminal to rule them all"><span class="hn" aria-hidden="true">Y</span>404-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50373956">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 84 out of 100">84</span><span class="score-bar" aria-hidden="true"><i style="width:84%"></i></span></div>
+</li>
+<li class="tool" id="tmux-git-worktrees">
+  <span class="rank">02</span>
+  <div class="body">
+    <h3><a href="https://git-scm.com/docs/git-worktree" rel="noopener">tmux + git worktrees</a><span class="tag tag-rising">Rising</span></h3>
+    <p><b>DIY parallel agents with tmux, worktrees.</b> The do-it-yourself baseline: a worktree per task, a tmux pane per agent, send-keys for messages. Fans say the new agent IDEs only repackage it; many build their own wrappers on top.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>109</b> HN devs</span><a class="cite" href="https://news.ycombinator.com/item?id=50236377">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 73 out of 100">73</span><span class="score-bar" aria-hidden="true"><i style="width:73%"></i></span></div>
+</li>
+<li class="tool" id="paseo">
+  <span class="rank">03</span>
+  <div class="body">
+    <h3><a href="https://github.com/getpaseo/paseo" rel="noopener">Paseo</a><span class="tag tag-rising">Rising</span></h3>
+    <p><b>Open-source desktop and mobile agent interface.</b> A front end for Pi, Claude Code, Codex and OpenCode agents. Liked for its phone app and client-server setup; reports of memory strain and hung sub-agent status updates.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>11</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>175</b> comments/yr</span><span title="GitHub stars"><b>23k</b> stars</span><a class="cite" href="https://news.ycombinator.com/item?id=50376205">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 65 out of 100">65</span><span class="score-bar" aria-hidden="true"><i style="width:65%"></i></span></div>
+</li>
+<li class="tool" id="gas-town">
+  <span class="rank">04</span>
+  <div class="body">
+    <h3><a href="https://github.com/gastownhall/gastown" rel="noopener">Gas Town</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Steve Yegge&#x27;s multi-agent coding orchestrator.</b> Steve Yegge&#x27;s many-agent orchestrator. On HN it is mostly a punchline: too complex, too opinionated and a token sink, with nobody showing evals against a plain harness.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>11</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>609</b> comments/yr</span><span title="GitHub stars"><b>19k</b> stars</span><a class="story" href="https://news.ycombinator.com/item?id=46734302" title="Biggest HN thread about it: Gas Town&#x27;s agent patterns, design bottlenecks, and vibecoding at scale"><span class="hn" aria-hidden="true">Y</span>403-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50379514">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 62 out of 100">62</span><span class="score-bar" aria-hidden="true"><i style="width:62%"></i></span></div>
+</li>
+<li class="tool" id="t3-code">
+  <span class="rank">05</span>
+  <div class="body">
+    <h3><a href="https://t3.codes" rel="noopener">T3 Code</a><span class="tag tag-open-source">Open source</span><span class="tag tag-new-in-2026">New in 2026</span></h3>
+    <p><b>Open-source GUI driving multiple agent harnesses.</b> Drives Claude Code, Codex and Pi from one UI across machines. Fans praise mid-conversation agent handoff and remote sessions; others found it buggy or heavy on resources.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>10</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>64</b> comments/yr</span><span title="GitHub stars"><b>51k</b> stars</span><a class="cite" href="https://news.ycombinator.com/item?id=50375873">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 60 out of 100">60</span><span class="score-bar" aria-hidden="true"><i style="width:60%"></i></span></div>
+</li>
+<li class="tool" id="beads">
+  <span class="rank">06</span>
+  <div class="body">
+    <h3><a href="https://github.com/steveyegge/beads" rel="noopener">Beads</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Git-backed issue tracker for coding agents.</b> Gives agents epics, tasks and dependencies to pull from, and some teams run their whole backlog on it. Critics call it bloated and question why it needs a daemon and database.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>10</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>459</b> comments/yr</span><span title="GitHub stars"><b>29k</b> stars</span><a class="story" href="https://news.ycombinator.com/item?id=46075616" title="Biggest HN thread about it: Beads – A memory upgrade for your coding agent"><span class="hn" aria-hidden="true">Y</span>111-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=46839635">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 60 out of 100">60</span><span class="score-bar" aria-hidden="true"><i style="width:60%"></i></span></div>
+</li>
+<li class="tool" id="orca">
+  <span class="rank">07</span>
+  <div class="body">
+    <h3><a href="https://github.com/stablyai/orca" rel="noopener">Orca</a><span class="tag tag-open-source">Open source</span><span class="tag tag-new-in-2026">New in 2026</span></h3>
+    <p><b>Open-source agent IDE for worktrees, remote.</b> Often self-hosted, with a mobile app for steering agents away from the desk. Praised for remote SSH and multi-worktree views; one user hit install trouble on a headless server.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>12</b> HN devs</span><span title="GitHub stars"><b>118k</b> stars</span><a class="cite" href="https://news.ycombinator.com/item?id=50389282">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 51 out of 100">51</span><span class="score-bar" aria-hidden="true"><i style="width:51%"></i></span></div>
+</li>
+<li class="tool" id="conductor">
+  <span class="rank">08</span>
+  <div class="body">
+    <h3><a href="https://conductor.build" rel="noopener">Conductor</a><span class="tag tag-rising">Rising</span></h3>
+    <p><b>Mac app for parallel worktree agents, closing.</b> Ran Claude and Codex in parallel git worktrees, and recent threads say it is winding down. Users liked it for mid-size tasks and review; gripes were weak multi-repo support and Mac-only builds.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>14</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>42</b> comments/yr</span><a class="cite" href="https://news.ycombinator.com/item?id=48415462">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 50 out of 100">50</span><span class="score-bar" aria-hidden="true"><i style="width:50%"></i></span></div>
+</li>
+<li class="tool" id="juggler">
+  <span class="rank">09</span>
+  <div class="body">
+    <h3><a href="https://github.com/juggler-ai/juggler" rel="noopener">Juggler</a><span class="tag tag-open-source">Open source</span><span class="tag tag-new-in-2026">New in 2026</span></h3>
+    <p><b>GUI coding agent from JUCE&#x27;s creator.</b> Treats local and remote sessions the same, which suits cross-platform work. Users like the control and visibility; one found its nested output stressful, another wished it were less vibecoded.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>2</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>98</b> comments/yr</span><span title="GitHub stars"><b>853</b> stars</span><a class="story" href="https://news.ycombinator.com/item?id=48883305" title="Biggest HN thread about it: Show HN: Juggler – an open-source GUI coding agent, by the creator of JUCE"><span class="hn" aria-hidden="true">Y</span>280-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50379165">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 40 out of 100">40</span><span class="score-bar" aria-hidden="true"><i style="width:40%"></i></span></div>
+</li>
+<li class="tool" id="ralph-loop">
+  <span class="rank">10</span>
+  <div class="body">
+    <h3><a href="https://ghuntley.com/ralph/" rel="noopener">Ralph loop</a></h3>
+    <p><b>Loop-until-done agent prompting pattern.</b> A pattern, not a product: rerun the agent until the task list says done. Used for overnight PR polishing and test coverage; skeptics call it token burning that hides broken tests.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>3</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>51</b> comments/yr</span><a class="cite" href="https://news.ycombinator.com/item?id=47391517">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 39 out of 100">39</span><span class="score-bar" aria-hidden="true"><i style="width:39%"></i></span></div>
+</li>
+  </ol>
+  <p class="also"><span>Also scored</span> <a href="https://www.vibekanban.com">Vibe Kanban</a>, <a href="https://github.com/omnara-ai/omnara">Omnara</a>, <a href="https://munderdiffl.in">Munder Difflin</a>, <a href="https://github.com/raine/workmux">workmux</a>, <a href="https://github.com/yc-software/qm">qm</a>, <a href="https://github.com/ruvnet/ruflo">Ruflo</a>, <a href="https://superset.sh">Superset</a>, <a href="https://github.com/smtg-ai/claude-squad">Claude Squad</a>, <a href="https://github.com/Yeachan-Heo/oh-my-claudecode">oh-my-claudecode</a>, <a href="https://imbue.com/sculptor/">Sculptor</a>, <a href="https://github.com/stravu/crystal">Crystal</a>, <a href="https://agentexecutor.io">AX (Agent Executor)</a></p>
+</section>
+<section class="cat" id="review" aria-labelledby="h-review">
+  <header class="cat-head">
+    <span></span>
+    <div><span class="cat-num">04 / 12</span><h2 id="h-review">Code review &amp; PR agents</h2><p class="dek">The second pair of eyes. Agents that read diffs and catch what the first agent missed.</p><p class="note">Most review here happens inside the harness (a second model reviewing the first). Dedicated review bots get surprisingly few mentions.</p></div>
+  </header>
+  <ol class="tools">
+<li class="tool" id="claude-code-review">
+  <span class="rank">01</span>
+  <div class="body">
+    <h3><a href="https://code.claude.com/docs/en/code-review" rel="noopener">Claude Code review</a><span class="tag tag-open-source">Open source</span><span class="tag tag-rising">Rising</span></h3>
+    <p><b>Anthropic&#x27;s managed PR review for Claude Code.</b> Used as a PR pass alongside Codex or as a local /review skill. The recurring complaint is price, quoted at $15 to $25 per review, plus slowness and reviews that need re-checking.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>13</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>552</b> comments/yr</span><span title="GitHub stars"><b>9.8k</b> stars</span><a class="cite" href="https://news.ycombinator.com/item?id=50123907">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 58 out of 100">58</span><span class="score-bar" aria-hidden="true"><i style="width:58%"></i></span></div>
+</li>
+<li class="tool" id="copilot-code-review">
+  <span class="rank">02</span>
+  <div class="body">
+    <h3><a href="https://docs.github.com/en/copilot/concepts/agents/code-review" rel="noopener">Copilot code review</a></h3>
+    <p><b>GitHub&#x27;s built-in AI pull request reviewer.</b> The low-friction pick for teams already on GitHub; several call its PR comments surprisingly insightful. Complaints center on noisy, overeager comments and the 2026 change billing reviews against Actions minutes.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>3</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>75</b> comments/yr</span><a class="story" href="https://news.ycombinator.com/item?id=47932028" title="Biggest HN thread about it: GitHub Copilot code review will start consuming GitHub Actions minutes"><span class="hn" aria-hidden="true">Y</span>312-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=47392370">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 55 out of 100">55</span><span class="score-bar" aria-hidden="true"><i style="width:55%"></i></span></div>
+</li>
+<li class="tool" id="coderabbit">
+  <span class="rank">03</span>
+  <div class="body">
+    <h3><a href="https://coderabbit.ai" rel="noopener">CodeRabbit</a></h3>
+    <p><b>AI pull request review bot.</b> The name people reach for when describing an AI PR reviewer, usually as the reference point. Few first-hand endorsements here; several teams say they had gripes or built their own instead.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>1</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>149</b> comments/yr</span><a class="story" href="https://news.ycombinator.com/item?id=44953032" title="Biggest HN thread about it: How we exploited CodeRabbit: From simple PR to RCE and write access on 1M repos"><span class="hn" aria-hidden="true">Y</span>687-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50250980">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 46 out of 100">46</span><span class="score-bar" aria-hidden="true"><i style="width:46%"></i></span></div>
+</li>
+<li class="tool" id="cursor-bugbot">
+  <span class="rank">04</span>
+  <div class="body">
+    <h3><a href="https://cursor.com/bugbot" rel="noopener">Cursor Bugbot</a></h3>
+    <p><b>Cursor&#x27;s AI bug-finding PR reviewer.</b> The most praised review bot in these threads; users say it finds subtle bugs Claude and Codex miss. Downsides: inconsistent across rounds, and a move to per-run pricing drove some away.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>4</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>25</b> comments/yr</span><a class="cite" href="https://news.ycombinator.com/item?id=48557973">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 42 out of 100">42</span><span class="score-bar" aria-hidden="true"><i style="width:42%"></i></span></div>
+</li>
+<li class="tool" id="codex-code-review">
+  <span class="rank">05</span>
+  <div class="body">
+    <h3><a href="https://developers.openai.com/codex/integrations/github" rel="noopener">Codex code review</a></h3>
+    <p><b>OpenAI Codex reviewing PRs and diffs.</b> Popular as the cross-vendor second opinion: write with Claude, review with Codex. Praised for catching real bugs; criticized for endless nitpick loops and an opaque separate quota.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>1</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>560</b> comments/yr</span><a class="cite" href="https://news.ycombinator.com/item?id=50135030">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 39 out of 100">39</span><span class="score-bar" aria-hidden="true"><i style="width:39%"></i></span></div>
+</li>
+<li class="tool" id="codex-security">
+  <span class="rank">06</span>
+  <div class="body">
+    <h3><a href="https://openai.com/index/codex-security/" rel="noopener">Codex Security</a></h3>
+    <p><b>OpenAI&#x27;s open-source security review CLI.</b> OpenAI&#x27;s open-source security scanning CLI. The launch thread, answered by the Promptfoo team, is dominated by model refusals on defensive security work and slow access for open-source maintainers.</p>
+    <div class="facts"><span title="HN comments mentioning it in the last 12 months"><b>112</b> comments/yr</span><a class="story" href="https://news.ycombinator.com/item?id=49089755" title="Biggest HN thread about it: Codex Security"><span class="hn" aria-hidden="true">Y</span>598-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=49095084">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 35 out of 100">35</span><span class="score-bar" aria-hidden="true"><i style="width:35%"></i></span></div>
+</li>
+<li class="tool" id="qodo">
+  <span class="rank">07</span>
+  <div class="body">
+    <h3><a href="https://www.qodo.ai" rel="noopener">Qodo</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>AI code review and PR agent.</b> An AI PR reviewer that teams try and often drop over noise. One user likes it for speeding up human review rather than replacing it, and Bugbot gives more quota per dollar.</p>
+    <div class="facts"><span title="GitHub stars"><b>15k</b> stars</span><a class="story" href="https://news.ycombinator.com/item?id=44874736" title="Biggest HN thread about it: Qodo CLI agent scores 71.2% on SWE-bench Verified"><span class="hn" aria-hidden="true">Y</span>139-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=49621594">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 30 out of 100">30</span><span class="score-bar" aria-hidden="true"><i style="width:30%"></i></span></div>
+</li>
+<li class="tool" id="graphite">
+  <span class="rank">08</span>
+  <div class="body">
+    <h3><a href="https://graphite.com" rel="noopener">Graphite</a></h3>
+    <p><b>Stacked PR tool with AI code review.</b> Mostly known for stacked PRs, with an AI review agent on top, and now part of Cursor. The one real user here credits stacks with keeping AI-era PRs small.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>2</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>359</b> comments/yr</span><a class="story" href="https://news.ycombinator.com/item?id=46327206" title="Biggest HN thread about it: Graphite is joining Cursor"><span class="hn" aria-hidden="true">Y</span>276-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=46330999">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 29 out of 100">29</span><span class="score-bar" aria-hidden="true"><i style="width:29%"></i></span></div>
+</li>
+<li class="tool" id="greptile">
+  <span class="rank">09</span>
+  <div class="body">
+    <h3><a href="https://greptile.com" rel="noopener">Greptile</a></h3>
+    <p><b>Codebase-aware AI pull request reviewer.</b> A PR review bot that shows up in several stacks next to Codex and Claude Code. One user found few false positives; others found it noisy or pricey like its rivals.</p>
+    <div class="facts"><span title="HN comments mentioning it in the last 12 months"><b>64</b> comments/yr</span><a class="cite" href="https://news.ycombinator.com/item?id=50219719">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 27 out of 100">27</span><span class="score-bar" aria-hidden="true"><i style="width:27%"></i></span></div>
+</li>
+<li class="tool" id="open-code-review-alibaba">
+  <span class="rank">10</span>
+  <div class="body">
+    <h3><a href="https://github.com/alibaba/open-code-review" rel="noopener">Open Code Review (Alibaba)</a><span class="tag tag-open-source">Open source</span><span class="tag tag-new-in-2026">New in 2026</span></h3>
+    <p><b>Alibaba&#x27;s open-source CLI code review tool.</b> Alibaba&#x27;s open-sourced internal code review CLI. Commenters see the value in its curated rule files, which originally shipped in Chinese and prompted community translations; first-hand usage reports are scarce.</p>
+    <div class="facts"><span title="GitHub stars"><b>50k</b> stars</span><a class="cite" href="https://news.ycombinator.com/item?id=48410013">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 25 out of 100">25</span><span class="score-bar" aria-hidden="true"><i style="width:25%"></i></span></div>
+</li>
+  </ol>
+  <p class="also"><span>Also scored</span> <a href="https://sourcery.ai">Sourcery</a>, <a href="https://sphinx-six-theta.vercel.app/">Sphinx</a></p>
+</section>
+<section class="cat" id="context" aria-labelledby="h-context">
+  <header class="cat-head">
+    <span></span>
+    <div><span class="cat-num">05 / 12</span><h2 id="h-context">Context, MCP &amp; skills</h2><p class="dek">What the agent knows. Docs, code search, memory and the skills that steer it.</p></div>
+  </header>
+  <ol class="tools">
+<li class="tool" id="agents-md">
+  <span class="rank">01</span>
+  <div class="body">
+    <h3><a href="https://agents.md" rel="noopener">AGENTS.md</a><span class="tag tag-fading">Fading</span></h3>
+    <p><b>Open instruction file format for coding agents.</b> The default home for project rules; nearly every setup described here has one, sometimes as CLAUDE.md. Pain points are files that keep growing and instructions agents still ignore.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>90</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>2k</b> comments/yr</span><a class="story" href="https://news.ycombinator.com/item?id=44957443" title="Biggest HN thread about it: AGENTS.md – Open format for guiding coding agents"><span class="hn" aria-hidden="true">Y</span>837-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50395599">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 94 out of 100">94</span><span class="score-bar" aria-hidden="true"><i style="width:94%"></i></span></div>
+</li>
+<li class="tool" id="agent-skills">
+  <span class="rank">02</span>
+  <div class="body">
+    <h3><a href="https://agentskills.io" rel="noopener">Agent Skills</a><span class="tag tag-rising">Rising</span></h3>
+    <p><b>Open format for reusable agent instruction packs.</b> Widely used for project-specific workflows and teaching agents in-house tools. A vocal minority says too many skills pollute context and that stronger models increasingly do fine without them.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>26</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>1.7k</b> comments/yr</span><a class="cite" href="https://news.ycombinator.com/item?id=46257391">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 81 out of 100">81</span><span class="score-bar" aria-hidden="true"><i style="width:81%"></i></span></div>
+</li>
+<li class="tool" id="superpowers">
+  <span class="rank">03</span>
+  <div class="body">
+    <h3><a href="https://github.com/obra/superpowers" rel="noopener">Superpowers</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Skills library for structured Claude Code workflows.</b> A Claude Code skills pack that walks the agent through brainstorm, design doc, plan, then build. Fans like the structure; skeptics say current models do fine run raw.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>10</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>909</b> comments/yr</span><span title="GitHub stars"><b>314k</b> stars</span><a class="story" href="https://news.ycombinator.com/item?id=45547344" title="Biggest HN thread about it: Superpowers: How I&#x27;m using coding agents in October 2025"><span class="hn" aria-hidden="true">Y</span>435-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=46258057">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 56 out of 100">56</span><span class="score-bar" aria-hidden="true"><i style="width:56%"></i></span></div>
+</li>
+<li class="tool" id="spec-kit">
+  <span class="rank">04</span>
+  <div class="body">
+    <h3><a href="https://github.com/github/spec-kit" rel="noopener">Spec Kit</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>GitHub&#x27;s spec-driven development toolkit.</b> GitHub&#x27;s spec-driven development kit, used to force requirements, plan and tasks before code. The main complaint is volume: reams of repetitive markdown that are tedious to review.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>4</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>138</b> comments/yr</span><span title="GitHub stars"><b>148k</b> stars</span><a class="story" href="https://news.ycombinator.com/item?id=45610996" title="Biggest HN thread about it: Understanding Spec-Driven-Development: Kiro, Spec-Kit, and Tessl"><span class="hn" aria-hidden="true">Y</span>128-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=46257559">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 52 out of 100">52</span><span class="score-bar" aria-hidden="true"><i style="width:52%"></i></span></div>
+</li>
+<li class="tool" id="context7">
+  <span class="rank">05</span>
+  <div class="body">
+    <h3><a href="https://context7.com" rel="noopener">Context7</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>MCP server for up-to-date library docs.</b> One of the standard MCP servers people install, used to pull current library docs so the agent stops guessing APIs. No complaints turned up in these threads.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>6</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>92</b> comments/yr</span><span title="GitHub stars"><b>64k</b> stars</span><span title="npm + PyPI downloads, last month"><b>3.2M</b> downloads/mo</span><a class="cite" href="https://news.ycombinator.com/item?id=46699656">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 52 out of 100">52</span><span class="score-bar" aria-hidden="true"><i style="width:52%"></i></span></div>
+</li>
+<li class="tool" id="github-mcp-server">
+  <span class="rank">06</span>
+  <div class="body">
+    <h3><a href="https://github.com/github/github-mcp-server" rel="noopener">GitHub MCP server</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Official MCP server for GitHub APIs.</b> Used to let agents read issues, search dependency code and open PRs, even from ChatGPT. The open questions are whether it beats the gh CLI and how it ties into Copilot billing.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>3</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>56</b> comments/yr</span><span title="GitHub stars"><b>34k</b> stars</span><a class="cite" href="https://news.ycombinator.com/item?id=47384773">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 47 out of 100">47</span><span class="score-bar" aria-hidden="true"><i style="width:47%"></i></span></div>
+</li>
+<li class="tool" id="semble">
+  <span class="rank">07</span>
+  <div class="body">
+    <h3><a href="https://github.com/MinishLab/semble" rel="noopener">Semble</a><span class="tag tag-open-source">Open source</span><span class="tag tag-new-in-2026">New in 2026</span></h3>
+    <p><b>Token-efficient code search for agents.</b> A code search tool for agents that claims far fewer tokens than grep. Two users keep it beside ripgrep and Serena; a skeptic says models aren&#x27;t trained to use such tools.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>9</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>58</b> comments/yr</span><span title="GitHub stars"><b>6.4k</b> stars</span><a class="story" href="https://news.ycombinator.com/item?id=48169874" title="Biggest HN thread about it: Show HN: Semble – Code search for agents that uses 98% fewer tokens than grep"><span class="hn" aria-hidden="true">Y</span>445-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=49722168">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 37 out of 100">37</span><span class="score-bar" aria-hidden="true"><i style="width:37%"></i></span></div>
+</li>
+<li class="tool" id="rtk">
+  <span class="rank">08</span>
+  <div class="body">
+    <h3><a href="https://github.com/rtk-ai/rtk" rel="noopener">rtk</a><span class="tag tag-open-source">Open source</span><span class="tag tag-new-in-2026">New in 2026</span></h3>
+    <p><b>CLI proxy that compresses agent command output.</b> A shell wrapper that trims command output before it reaches the agent&#x27;s context. Its own stats claim big savings, but independent benchmarks found agents take more turns and save little.</p>
+    <div class="facts"><span title="HN comments mentioning it in the last 12 months"><b>64</b> comments/yr</span><span title="GitHub stars"><b>86k</b> stars</span><a class="story" href="https://news.ycombinator.com/item?id=49656471" title="Biggest HN thread about it: RTK reports token savings, but our cost benchmarks disagree"><span class="hn" aria-hidden="true">Y</span>170-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=46976200">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 36 out of 100">36</span><span class="score-bar" aria-hidden="true"><i style="width:36%"></i></span></div>
+</li>
+<li class="tool" id="impeccable">
+  <span class="rank">09</span>
+  <div class="body">
+    <h3><a href="https://github.com/pbakaus/impeccable" rel="noopener">Impeccable</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Design skill to de-slop AI frontends.</b> A design skill for stripping the generic AI look from frontends. Users say it removes slop tells more aggressively than rivals, though output is a starting point and token use is high.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>1</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>190</b> comments/yr</span><span title="GitHub stars"><b>105k</b> stars</span><a class="cite" href="https://news.ycombinator.com/item?id=50381456">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 36 out of 100">36</span><span class="score-bar" aria-hidden="true"><i style="width:36%"></i></span></div>
+</li>
+<li class="tool" id="graphify">
+  <span class="rank">10</span>
+  <div class="body">
+    <h3><a href="https://github.com/Graphify-Labs/graphify" rel="noopener">Graphify</a><span class="tag tag-open-source">Open source</span><span class="tag tag-new-in-2026">New in 2026</span></h3>
+    <p><b>Codebase knowledge graph for coding agents.</b> Maps a codebase into a knowledge graph so agents spend fewer tokens. Mostly cited as the baseline rivals claim to beat; one tester found models can&#x27;t use its output well.</p>
+    <div class="facts"><span title="HN comments mentioning it in the last 12 months"><b>31</b> comments/yr</span><span title="GitHub stars"><b>144k</b> stars</span><a class="cite" href="https://news.ycombinator.com/item?id=50092211">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 32 out of 100">32</span><span class="score-bar" aria-hidden="true"><i style="width:32%"></i></span></div>
+</li>
+  </ol>
+  <p class="also"><span>Also scored</span> <a href="https://www.figma.com/developers/mcp">Figma MCP</a>, <a href="https://repomix.com">Repomix</a>, <a href="https://github.com/thedotmack/claude-mem">claude-mem</a>, <a href="https://linear.app/docs/mcp">Linear MCP</a>, <a href="https://github.com/oraios/serena">Serena</a>, <a href="https://docs.sentry.io/product/sentry-mcp/">Sentry MCP</a>, <a href="https://github.com/DeusData/codebase-memory-mcp">codebase-memory-mcp</a>, <a href="https://github.com/headroomlabs-ai/headroom">headroom</a>, <a href="https://github.com/mksglu/context-mode">context-mode</a></p>
+</section>
+<section class="cat" id="browser" aria-labelledby="h-browser">
+  <header class="cat-head">
+    <span></span>
+    <div><span class="cat-num">06 / 12</span><h2 id="h-browser">Browser &amp; web for agents</h2><p class="dek">Letting agents see and drive the web: debugging, testing, scraping.</p></div>
+  </header>
+  <ol class="tools">
+<li class="tool" id="playwright-mcp">
+  <span class="rank">01</span>
+  <div class="body">
+    <h3><a href="https://github.com/microsoft/playwright-mcp" rel="noopener">Playwright MCP</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Microsoft&#x27;s MCP server for browser automation.</b> The default way to give an agent a browser, used daily for UI checks and scraping. Works out of the box; the complaints are slowness and heavy context use.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>13</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>270</b> comments/yr</span><span title="GitHub stars"><b>39k</b> stars</span><span title="npm + PyPI downloads, last month"><b>30.9M</b> downloads/mo</span><a class="cite" href="https://news.ycombinator.com/item?id=46259710">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 91 out of 100">91</span><span class="score-bar" aria-hidden="true"><i style="width:91%"></i></span></div>
+</li>
+<li class="tool" id="chrome-devtools-mcp">
+  <span class="rank">02</span>
+  <div class="body">
+    <h3><a href="https://github.com/ChromeDevTools/chrome-devtools-mcp" rel="noopener">Chrome DevTools MCP</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Official MCP server for Chrome DevTools.</b> Chosen over Playwright when the agent needs real DevTools: network requests, performance traces, Lighthouse audits. Users run it for automated QA and debugging; one says it clutters context.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>2</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>44</b> comments/yr</span><span title="GitHub stars"><b>55k</b> stars</span><span title="npm + PyPI downloads, last month"><b>8.6M</b> downloads/mo</span><a class="story" href="https://news.ycombinator.com/item?id=47390817" title="Biggest HN thread about it: Chrome DevTools MCP (2025)"><span class="hn" aria-hidden="true">Y</span>604-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=48774584">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 58 out of 100">58</span><span class="score-bar" aria-hidden="true"><i style="width:58%"></i></span></div>
+</li>
+<li class="tool" id="agent-browser">
+  <span class="rank">03</span>
+  <div class="body">
+    <h3><a href="https://github.com/vercel-labs/agent-browser" rel="noopener">agent-browser</a><span class="tag tag-open-source">Open source</span><span class="tag tag-new-in-2026">New in 2026</span></h3>
+    <p><b>Vercel&#x27;s browser automation CLI for agents.</b> Vercel&#x27;s browser automation CLI for coding agents, often benchmarked against Playwright MCP. Users say it works fine, and its bundled skill turns up issues they would not think to test.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>1</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>94</b> comments/yr</span><span title="GitHub stars"><b>47k</b> stars</span><span title="npm + PyPI downloads, last month"><b>8.3M</b> downloads/mo</span><a class="cite" href="https://news.ycombinator.com/item?id=50385555">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 49 out of 100">49</span><span class="score-bar" aria-hidden="true"><i style="width:49%"></i></span></div>
+</li>
+<li class="tool" id="firecrawl">
+  <span class="rank">04</span>
+  <div class="body">
+    <h3><a href="https://firecrawl.dev" rel="noopener">Firecrawl</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Web scraping and search API for LLMs.</b> A common scraping and search API for agents, rated well and self-hostable. Critics cite request logging, a skill that nudges agents to send feedback, and site owners paying for its customers&#x27; traffic.</p>
+    <div class="facts"><span title="HN comments mentioning it in the last 12 months"><b>73</b> comments/yr</span><span title="GitHub stars"><b>199k</b> stars</span><a class="cite" href="https://news.ycombinator.com/item?id=49968986">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 40 out of 100">40</span><span class="score-bar" aria-hidden="true"><i style="width:40%"></i></span></div>
+</li>
+<li class="tool" id="lightpanda">
+  <span class="rank">05</span>
+  <div class="body">
+    <h3><a href="https://lightpanda.io" rel="noopener">Lightpanda</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Lightweight headless browser written in Zig.</b> A Zig headless browser built for agents and scraping. One team got big CPU and memory wins over Chrome; others hit pages it can&#x27;t render and note it&#x27;s easy to detect.</p>
+    <div class="facts"><span title="HN comments mentioning it in the last 12 months"><b>48</b> comments/yr</span><span title="GitHub stars"><b>42k</b> stars</span><a class="story" href="https://news.ycombinator.com/item?id=42817439" title="Biggest HN thread about it: Show HN: Lightpanda, an open-source headless browser in Zig"><span class="hn" aria-hidden="true">Y</span>319-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=48576330">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 39 out of 100">39</span><span class="score-bar" aria-hidden="true"><i style="width:39%"></i></span></div>
+</li>
+<li class="tool" id="stagehand">
+  <span class="rank">06</span>
+  <div class="body">
+    <h3><a href="https://www.stagehand.dev" rel="noopener">Stagehand</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>AI browser automation framework by Browserbase.</b> Browserbase&#x27;s open-source AI browser automation framework, with act, extract and observe calls and a cached replay layer. Threads are mostly vendor posts; one skeptic asks why not let agents write Playwright directly.</p>
+    <div class="facts"><span title="HN comments mentioning it in the last 12 months"><b>44</b> comments/yr</span><span title="GitHub stars"><b>26k</b> stars</span><span title="npm + PyPI downloads, last month"><b>8.5M</b> downloads/mo</span><a class="story" href="https://news.ycombinator.com/item?id=42635942" title="Biggest HN thread about it: Show HN: Stagehand – an open source browser automation framework powered by AI"><span class="hn" aria-hidden="true">Y</span>326-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=49784175">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 38 out of 100">38</span><span class="score-bar" aria-hidden="true"><i style="width:38%"></i></span></div>
+</li>
+<li class="tool" id="claude-in-chrome">
+  <span class="rank">07</span>
+  <div class="body">
+    <h3><a href="https://claude.com/chrome" rel="noopener">Claude in Chrome</a></h3>
+    <p><b>Anthropic&#x27;s Chrome extension browsing agent.</b> Used for web chores in your logged-in browser: pulling Strava GPX files, downloading Datadog logs, driving ChatGPT, validating UX. Weak spots include missed obvious errors, multi-account setups and click-hijack vulnerabilities.</p>
+    <div class="facts"><span title="HN comments mentioning it in the last 12 months"><b>112</b> comments/yr</span><a class="story" href="https://news.ycombinator.com/item?id=46339777" title="Biggest HN thread about it: Claude in Chrome"><span class="hn" aria-hidden="true">Y</span>316-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50101578">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 36 out of 100">36</span><span class="score-bar" aria-hidden="true"><i style="width:36%"></i></span></div>
+</li>
+<li class="tool" id="vibium">
+  <span class="rank">08</span>
+  <div class="body">
+    <h3><a href="https://github.com/VibiumDev/vibium" rel="noopener">Vibium</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Browser automation for agents from Selenium&#x27;s creator.</b> Browser automation for agents from Selenium&#x27;s creator, with a CLI and agent skill. Most mentions come from the creator or people watching its Claude-coauthored repo; one user wants it leaner on tokens.</p>
+    <div class="facts"><span title="HN comments mentioning it in the last 12 months"><b>50</b> comments/yr</span><span title="GitHub stars"><b>3k</b> stars</span><a class="story" href="https://news.ycombinator.com/item?id=46377597" title="Biggest HN thread about it: Show HN: Vibium – Browser automation for AI and humans, by Selenium&#x27;s creator"><span class="hn" aria-hidden="true">Y</span>443-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=47335051">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 35 out of 100">35</span><span class="score-bar" aria-hidden="true"><i style="width:35%"></i></span></div>
+</li>
+<li class="tool" id="browser-use">
+  <span class="rank">09</span>
+  <div class="body">
+    <h3><a href="https://browser-use.com" rel="noopener">browser-use</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Open-source framework for LLM web agents.</b> An open-source framework for LLM-driven web agents from YC W25, with 120k GitHub stars. Recent HN threads barely discuss it directly; it mostly appears as a benchmark comparison target.</p>
+    <div class="facts"><span title="HN comments mentioning it in the last 12 months"><b>337</b> comments/yr</span><span title="GitHub stars"><b>120k</b> stars</span><span title="npm + PyPI downloads, last month"><b>8.1M</b> downloads/mo</span><a class="story" href="https://news.ycombinator.com/item?id=43173378" title="Biggest HN thread about it: Launch HN: Browser Use (YC W25) – open-source web agents"><span class="hn" aria-hidden="true">Y</span>259-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50343092">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 30 out of 100">30</span><span class="score-bar" aria-hidden="true"><i style="width:30%"></i></span></div>
+</li>
+<li class="tool" id="scrapling">
+  <span class="rank">10</span>
+  <div class="body">
+    <h3><a href="https://github.com/D4Vinci/Scrapling" rel="noopener">Scrapling</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Stealthy Python web scraping library.</b> A stealthy Python scraping library that agents call for fetching pages, often behind an MCP. One frequent user says it loads nearly any site, even Google results, though output can be context-heavy.</p>
+    <div class="facts"><span title="GitHub stars"><b>99k</b> stars</span><span title="npm + PyPI downloads, last month"><b>920k</b> downloads/mo</span><a class="cite" href="https://news.ycombinator.com/item?id=49825368">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 27 out of 100">27</span><span class="score-bar" aria-hidden="true"><i style="width:27%"></i></span></div>
+</li>
+  </ol>
+  <p class="also"><span>Also scored</span> <a href="https://browsermcp.io">Browser MCP</a>, <a href="https://jina.ai/reader">Jina Reader</a>, <a href="https://www.browserbase.com">Browserbase</a></p>
+</section>
+<section class="cat" id="sandbox" aria-labelledby="h-sandbox">
+  <header class="cat-head">
+    <span></span>
+    <div><span class="cat-num">07 / 12</span><h2 id="h-sandbox">Sandboxes &amp; safety</h2><p class="dek">Blast-radius control. Run agents in YOLO mode without betting your laptop or prod DB.</p></div>
+  </header>
+  <ol class="tools">
+<li class="tool" id="bubblewrap">
+  <span class="rank">01</span>
+  <div class="body">
+    <h3><a href="https://github.com/containers/bubblewrap" rel="noopener">bubblewrap</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Linux namespace sandbox for agent processes.</b> The DIY pick on Linux: people wrap Claude Code, Codex and Pi in bwrap scripts the harness cannot disable. Main knock: Linux only, and weaker than a microVM.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>7</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>372</b> comments/yr</span><span title="GitHub stars"><b>9.4k</b> stars</span><a class="story" href="https://news.ycombinator.com/item?id=46626836" title="Biggest HN thread about it: Bubblewrap: A nimble way to prevent agents from accessing your .env files"><span class="hn" aria-hidden="true">Y</span>187-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50383403">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 77 out of 100">77</span><span class="score-bar" aria-hidden="true"><i style="width:77%"></i></span></div>
+</li>
+<li class="tool" id="docker-sandboxes">
+  <span class="rank">02</span>
+  <div class="body">
+    <h3><a href="https://www.docker.com/products/docker-sandboxes/" rel="noopener">Docker Sandboxes</a></h3>
+    <p><b>MicroVM sandboxes for running coding agents.</b> Where people run Claude Code and Codex in yolo mode, inside a microVM rather than a container. Praised for solid isolation; knocked for workflow friction and closed source.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>6</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>430</b> comments/yr</span><a class="story" href="https://news.ycombinator.com/item?id=49239751" title="Biggest HN thread about it: Docker Sandboxes – Disposable, isolated sandboxes for AI agents"><span class="hn" aria-hidden="true">Y</span>694-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50389999">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 76 out of 100">76</span><span class="score-bar" aria-hidden="true"><i style="width:76%"></i></span></div>
+</li>
+<li class="tool" id="openshell">
+  <span class="rank">03</span>
+  <div class="body">
+    <h3><a href="https://github.com/NVIDIA/OpenShell" rel="noopener">OpenShell</a><span class="tag tag-open-source">Open source</span><span class="tag tag-new-in-2026">New in 2026</span></h3>
+    <p><b>NVIDIA policy-controlled runtime for agent fleets.</b> NVIDIA&#x27;s policy layer for agent fleets, used by some teams to run Claude Code under granular permissions. Sceptics call it overcomplicated next to bwrap or plain Docker.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>2</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>64</b> comments/yr</span><span title="GitHub stars"><b>21k</b> stars</span><a class="story" href="https://news.ycombinator.com/item?id=50198675" title="Biggest HN thread about it: OpenShell – A safe, private runtime for fleets of autonomous AI agents"><span class="hn" aria-hidden="true">Y</span>508-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50201495">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 58 out of 100">58</span><span class="score-bar" aria-hidden="true"><i style="width:58%"></i></span></div>
+</li>
+<li class="tool" id="apple-container">
+  <span class="rank">04</span>
+  <div class="body">
+    <h3><a href="https://github.com/apple/container" rel="noopener">Apple container</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Apple&#x27;s lightweight Linux VM containers for macOS.</b> Mac users build agent sandboxes on it because each container is a lightweight Linux VM. Still called a work in progress, needs macOS 26, and you must block network access yourself.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>1</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>195</b> comments/yr</span><span title="GitHub stars"><b>51k</b> stars</span><a class="cite" href="https://news.ycombinator.com/item?id=49209306">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 52 out of 100">52</span><span class="score-bar" aria-hidden="true"><i style="width:52%"></i></span></div>
+</li>
+<li class="tool" id="dev-containers">
+  <span class="rank">05</span>
+  <div class="body">
+    <h3><a href="https://containers.dev" rel="noopener">Dev containers</a></h3>
+    <p><b>Open spec for containerised development environments.</b> The no-new-tool answer: run the agent inside the devcontainer you already have. Protects against agent stupidity, not malice, and locking down the network takes real customisation.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>6</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>27</b> comments/yr</span><a class="cite" href="https://news.ycombinator.com/item?id=47870640">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 50 out of 100">50</span><span class="score-bar" aria-hidden="true"><i style="width:50%"></i></span></div>
+</li>
+<li class="tool" id="e2b">
+  <span class="rank">06</span>
+  <div class="body">
+    <h3><a href="https://e2b.dev" rel="noopener">E2B</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Hosted Firecracker sandboxes for agent code execution.</b> The hosted sandbox people build products on: per-session agent runs, untrusted code and preview environments. Volumes get praise; the cost is platform lock-in and limited customisation.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>1</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>60</b> comments/yr</span><span title="GitHub stars"><b>15k</b> stars</span><a class="cite" href="https://news.ycombinator.com/item?id=48772037">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 50 out of 100">50</span><span class="score-bar" aria-hidden="true"><i style="width:50%"></i></span></div>
+</li>
+<li class="tool" id="nono">
+  <span class="rank">07</span>
+  <div class="body">
+    <h3><a href="https://github.com/nolabs-ai/nono" rel="noopener">nono</a><span class="tag tag-open-source">Open source</span><span class="tag tag-new-in-2026">New in 2026</span></h3>
+    <p><b>Kernel-enforced Landlock/Seatbelt sandbox for coding agents.</b> Runs agents under Landlock or Seatbelt without a VM, so installed tooling still works, and can inject phantom credentials. Liked, but policy config is fiddlier than Anthropic&#x27;s srt.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>3</b> HN devs</span><span title="GitHub stars"><b>4.9k</b> stars</span><a class="cite" href="https://news.ycombinator.com/item?id=48424303">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 48 out of 100">48</span><span class="score-bar" aria-hidden="true"><i style="width:48%"></i></span></div>
+</li>
+<li class="tool" id="smolvm">
+  <span class="rank">08</span>
+  <div class="body">
+    <h3><a href="https://github.com/smol-machines/smolvm" rel="noopener">smolvm</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Lightweight cross-platform microVMs for agent sandboxing.</b> Where users land after trying containers and OS sandboxes; praised as light and solid enough to build a whole agent harness on. Some fear a YC rug pull.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>1</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>141</b> comments/yr</span><span title="GitHub stars"><b>7k</b> stars</span><a class="cite" href="https://news.ycombinator.com/item?id=50397169">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 45 out of 100">45</span><span class="score-bar" aria-hidden="true"><i style="width:45%"></i></span></div>
+</li>
+<li class="tool" id="yoloai">
+  <span class="rank">09</span>
+  <div class="body">
+    <h3><a href="https://github.com/kstenerud/yoloai" rel="noopener">yoloai</a><span class="tag tag-open-source">Open source</span><span class="tag tag-new-in-2026">New in 2026</span></h3>
+    <p><b>Agent sandbox with copy-and-diff apply workflow.</b> Copies your workdir into a sandbox, hides API keys, and shows a diff before changes land. Most HN mentions come from its author; one tester calls the workflow not yet smooth.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>2</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>72</b> comments/yr</span><span title="GitHub stars"><b>227</b> stars</span><a class="cite" href="https://news.ycombinator.com/item?id=50381875">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 40 out of 100">40</span><span class="score-bar" aria-hidden="true"><i style="width:40%"></i></span></div>
+</li>
+<li class="tool" id="lume">
+  <span class="rank">10</span>
+  <div class="body">
+    <h3><a href="https://github.com/trycua/cua" rel="noopener">Lume</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>macOS and Linux VM CLI for Apple Silicon.</b> A macOS and Linux VM manager on Apple&#x27;s Virtualization framework, used to sandbox Claude or run macOS-only agents. Users call it reasonably good but report setup hoops and disk resizing glitches.</p>
+    <div class="facts"><span title="GitHub stars"><b>32k</b> stars</span><a class="story" href="https://news.ycombinator.com/item?id=42908061" title="Biggest HN thread about it: Show HN: Lume – OS lightweight CLI for MacOS and Linux VMs on Apple Silicon"><span class="hn" aria-hidden="true">Y</span>309-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=46804011">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 35 out of 100">35</span><span class="score-bar" aria-hidden="true"><i style="width:35%"></i></span></div>
+</li>
+  </ol>
+  <p class="also"><span>Also scored</span> <a href="https://www.daytona.io">Daytona</a>, <a href="https://agent-safehouse.dev">Agent Safehouse</a>, <a href="https://tryardent.com">Ardent</a>, <a href="https://sprites.dev">Sprites (Fly.io)</a>, <a href="https://github.com/dagger/container-use">container-use</a>, <a href="https://modal.com/docs/guide/sandboxes">Modal Sandboxes</a>, <a href="https://vercel.com/docs/vercel-sandbox">Vercel Sandbox</a></p>
+</section>
+<section class="cat" id="local" aria-labelledby="h-local">
+  <header class="cat-head">
+    <span></span>
+    <div><span class="cat-num">08 / 12</span><h2 id="h-local">Local models &amp; inference</h2><p class="dek">Run open weights on your own hardware. Private, offline, and cheaper than you think.</p></div>
+  </header>
+  <ol class="tools">
+<li class="tool" id="ollama">
+  <span class="rank">01</span>
+  <div class="body">
+    <h3><a href="https://ollama.com" rel="noopener">Ollama</a><span class="tag tag-open-source">Open source</span><span class="tag tag-fading">Fading</span></h3>
+    <p><b>Local model runner with paid cloud tier.</b> The easy path to local Qwen and Gemma, and increasingly a paid cloud plan for hosted open models like DeepSeek Flash and GLM. Few complaints beyond local models feeling limited.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>61</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>2k</b> comments/yr</span><span title="GitHub stars"><b>186k</b> stars</span><a class="story" href="https://news.ycombinator.com/item?id=47582482" title="Biggest HN thread about it: Ollama is now powered by MLX on Apple Silicon in preview"><span class="hn" aria-hidden="true">Y</span>648-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50399156">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 100 out of 100">100</span><span class="score-bar" aria-hidden="true"><i style="width:100%"></i></span></div>
+</li>
+<li class="tool" id="llama-cpp">
+  <span class="rank">02</span>
+  <div class="body">
+    <h3><a href="https://github.com/ggml-org/llama.cpp" rel="noopener">llama.cpp</a><span class="tag tag-open-source">Open source</span><span class="tag tag-fading">Fading</span></h3>
+    <p><b>C/C++ inference engine and llama-server.</b> A single fast binary that people move to from Ollama for control, usually serving models via llama-server. Complaints are about ROCm build friction and new flags that can cut speed.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>27</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>2.1k</b> comments/yr</span><span title="GitHub stars"><b>134k</b> stars</span><a class="story" href="https://news.ycombinator.com/item?id=43943047" title="Biggest HN thread about it: Vision Now Available in Llama.cpp"><span class="hn" aria-hidden="true">Y</span>550-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=45781029">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 88 out of 100">88</span><span class="score-bar" aria-hidden="true"><i style="width:88%"></i></span></div>
+</li>
+<li class="tool" id="mlx">
+  <span class="rank">03</span>
+  <div class="body">
+    <h3><a href="https://github.com/ml-explore/mlx" rel="noopener">MLX</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Apple&#x27;s array framework for Apple Silicon ML.</b> The Apple Silicon route to local inference, via MLX-Serve, LM Studio or custom engines. Praised for speed with less heat than a GPU box; some still prefer llama-server on Mac.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>10</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>715</b> comments/yr</span><span title="GitHub stars"><b>29k</b> stars</span><span title="npm + PyPI downloads, last month"><b>545k</b> downloads/mo</span><a class="cite" href="https://news.ycombinator.com/item?id=50281862">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 75 out of 100">75</span><span class="score-bar" aria-hidden="true"><i style="width:75%"></i></span></div>
+</li>
+<li class="tool" id="lm-studio">
+  <span class="rank">04</span>
+  <div class="body">
+    <h3><a href="https://lmstudio.ai" rel="noopener">LM Studio</a><span class="tag tag-fading">Fading</span></h3>
+    <p><b>Desktop GUI app for running local models.</b> The GUI on-ramp for local models, often paired with Aider, Continue or Cline and praised for easy setup and model switching. Newer gripe: it now steers downloads to its agentic app.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>18</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>596</b> comments/yr</span><a class="story" href="https://news.ycombinator.com/item?id=47651540" title="Biggest HN thread about it: Running Gemma 4 locally with LM Studio&#x27;s new headless CLI and Claude Code"><span class="hn" aria-hidden="true">Y</span>407-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=45774045">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 70 out of 100">70</span><span class="score-bar" aria-hidden="true"><i style="width:70%"></i></span></div>
+</li>
+<li class="tool" id="open-webui">
+  <span class="rank">05</span>
+  <div class="body">
+    <h3><a href="https://openwebui.com" rel="noopener">Open WebUI</a><span class="tag tag-fading">Fading</span></h3>
+    <p><b>Self-hosted chat UI for local and API models.</b> The usual self-hosted chat front end over Ollama, llama.cpp or APIs, extended with plugins and Open Terminal. Feature-rich, but wiring up tools like search is painful and setup feels heavy.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>18</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>118</b> comments/yr</span><span title="GitHub stars"><b>158k</b> stars</span><a class="cite" href="https://news.ycombinator.com/item?id=50385251">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 69 out of 100">69</span><span class="score-bar" aria-hidden="true"><i style="width:69%"></i></span></div>
+</li>
+<li class="tool" id="vllm">
+  <span class="rank">06</span>
+  <div class="body">
+    <h3><a href="https://github.com/vllm-project/vllm" rel="noopener">vLLM</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>High-throughput GPU inference and serving engine.</b> The pick for batching and throughput on dedicated GPUs, run stock by self-hosters with multi-GPU rigs. Seen as harder to deploy than llama.cpp, with reports of engine bugs on long contexts.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>5</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>924</b> comments/yr</span><span title="GitHub stars"><b>97k</b> stars</span><span title="npm + PyPI downloads, last month"><b>1.9M</b> downloads/mo</span><a class="cite" href="https://news.ycombinator.com/item?id=45781029">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 68 out of 100">68</span><span class="score-bar" aria-hidden="true"><i style="width:68%"></i></span></div>
+</li>
+<li class="tool" id="unsloth">
+  <span class="rank">07</span>
+  <div class="body">
+    <h3><a href="https://unsloth.ai" rel="noopener">Unsloth</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Quantized model builds, fine-tuning and desktop app.</b> Best known as the source of quantized GGUFs people actually run, with even IQ1 DeepSeek quants holding up. Unsloth Desktop is gaining fans; complaints are tight context limits and no VRAM-to-RAM splitting.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>4</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>822</b> comments/yr</span><span title="GitHub stars"><b>79k</b> stars</span><span title="npm + PyPI downloads, last month"><b>886k</b> downloads/mo</span><a class="story" href="https://news.ycombinator.com/item?id=47414032" title="Biggest HN thread about it: Unsloth Studio"><span class="hn" aria-hidden="true">Y</span>388-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=45777371">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 57 out of 100">57</span><span class="score-bar" aria-hidden="true"><i style="width:57%"></i></span></div>
+</li>
+<li class="tool" id="lemonade">
+  <span class="rank">08</span>
+  <div class="body">
+    <h3><a href="https://lemonade-server.ai" rel="noopener">Lemonade</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>AMD&#x27;s local LLM server for GPU and NPU.</b> AMD&#x27;s all-in-one local server and the go-to on Strix Halo, with easy installers and one endpoint for chat, images and speech. Owners say it replaced most cloud use; one reports weaker speeds.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>3</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>35</b> comments/yr</span><span title="GitHub stars"><b>6.1k</b> stars</span><a class="story" href="https://news.ycombinator.com/item?id=47612724" title="Biggest HN thread about it: Lemonade by AMD: a fast and open source local LLM server using GPU and NPU"><span class="hn" aria-hidden="true">Y</span>572-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=48805978">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 46 out of 100">46</span><span class="score-bar" aria-hidden="true"><i style="width:46%"></i></span></div>
+</li>
+<li class="tool" id="sglang">
+  <span class="rank">09</span>
+  <div class="body">
+    <h3><a href="https://github.com/sgl-project/sglang" rel="noopener">SGLang</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>High-performance LLM serving framework for GPU clusters.</b> A datacenter serving engine named alongside vLLM for multi-GPU inference. Recent talk centres on a Cloudflare KV-cache leak involving an SGLang state bug, though some put the blame on Cloudflare&#x27;s config.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>1</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>167</b> comments/yr</span><span title="GitHub stars"><b>39k</b> stars</span><span title="npm + PyPI downloads, last month"><b>3M</b> downloads/mo</span><a class="cite" href="https://news.ycombinator.com/item?id=50259277">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 41 out of 100">41</span><span class="score-bar" aria-hidden="true"><i style="width:41%"></i></span></div>
+</li>
+<li class="tool" id="llama-swap">
+  <span class="rank">10</span>
+  <div class="body">
+    <h3><a href="https://github.com/mostlygeek/llama-swap" rel="noopener">llama-swap</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Model-swapping proxy in front of llama-server.</b> The proxy home-lab users put in front of llama.cpp to hot-swap models behind one OpenAI-style endpoint. Called bulletproof by fans; critics say it adds hard-to-debug complexity now llama-server can juggle models itself.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>3</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>53</b> comments/yr</span><span title="GitHub stars"><b>6.2k</b> stars</span><a class="cite" href="https://news.ycombinator.com/item?id=49275100">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 36 out of 100">36</span><span class="score-bar" aria-hidden="true"><i style="width:36%"></i></span></div>
+</li>
+  </ol>
+  <p class="also"><span>Also scored</span> <a href="https://github.com/Arthur-Ficial/apfel">Apfel</a>, <a href="https://jan.ai">Jan</a>, <a href="https://github.com/LostRuins/koboldcpp">KoboldCpp</a></p>
+</section>
+<section class="cat" id="gateways" aria-labelledby="h-gateways">
+  <header class="cat-head">
+    <span></span>
+    <div><span class="cat-num">09 / 12</span><h2 id="h-gateways">Model access &amp; routing</h2><p class="dek">One key, every model. Gateways and plans that make switching models cheap.</p></div>
+  </header>
+  <ol class="tools">
+<li class="tool" id="openrouter">
+  <span class="rank">01</span>
+  <div class="body">
+    <h3><a href="https://openrouter.ai" rel="noopener">OpenRouter</a><span class="tag tag-rising">Rising</span></h3>
+    <p><b>Pay-as-you-go API router across model providers.</b> The pay-as-you-go side door to open-weight models like DeepSeek, GLM and Kimi, used to test models, run side projects and get past refusals. Main gripe: frontier models cost more there than subscriptions.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>80</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>3.9k</b> comments/yr</span><a class="story" href="https://news.ycombinator.com/item?id=49364559" title="Biggest HN thread about it: OpenRouter is joining Stripe"><span class="hn" aria-hidden="true">Y</span>964-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50367582">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 98 out of 100">98</span><span class="score-bar" aria-hidden="true"><i style="width:98%"></i></span></div>
+</li>
+<li class="tool" id="aws-bedrock">
+  <span class="rank">02</span>
+  <div class="body">
+    <h3><a href="https://aws.amazon.com/bedrock/" rel="noopener">AWS Bedrock</a></h3>
+    <p><b>AWS managed API for Claude and other models.</b> How companies buy Claude and other models at work: API pricing, budgets tracked with AWS spend, stronger privacy guarantees. Works well, but it costs more than Anthropic&#x27;s own subscriptions.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>6</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>461</b> comments/yr</span><a class="story" href="https://news.ycombinator.com/item?id=48473166" title="Biggest HN thread about it: AWS Bedrock to require sharing data with Anthropic for Mythos and future models"><span class="hn" aria-hidden="true">Y</span>427-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50378946">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 58 out of 100">58</span><span class="score-bar" aria-hidden="true"><i style="width:58%"></i></span></div>
+</li>
+<li class="tool" id="litellm">
+  <span class="rank">03</span>
+  <div class="body">
+    <h3><a href="https://github.com/BerriAI/litellm" rel="noopener">LiteLLM</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Python SDK and proxy unifying LLM APIs.</b> The common self-hosted gateway that teams point tools at for cheap multi-model access and token metering. Talk now centres on its PyPI supply-chain compromise and whether it can be trusted.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>3</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>431</b> comments/yr</span><span title="GitHub stars"><b>63k</b> stars</span><span title="npm + PyPI downloads, last month"><b>92.2M</b> downloads/mo</span><a class="story" href="https://news.ycombinator.com/item?id=47501426" title="Biggest HN thread about it: Tell HN: Litellm 1.82.7 and 1.82.8 on PyPI are compromised"><span class="hn" aria-hidden="true">Y</span>938-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50383728">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 56 out of 100">56</span><span class="score-bar" aria-hidden="true"><i style="width:56%"></i></span></div>
+</li>
+<li class="tool" id="opencode-go-zen">
+  <span class="rank">04</span>
+  <div class="body">
+    <h3><a href="https://opencode.ai/go" rel="noopener">OpenCode Go / Zen</a><span class="tag tag-rising">Rising</span></h3>
+    <p><b>OpenCode&#x27;s subscription and pay-per-use model access.</b> The budget pick: $10 a month buys generous open-weight usage, mostly DeepSeek Flash, and users rarely hit limits. The one knock is free Zen models rotating into the paid tier.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>32</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>35</b> comments/yr</span><a class="cite" href="https://news.ycombinator.com/item?id=50373351">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 54 out of 100">54</span><span class="score-bar" aria-hidden="true"><i style="width:54%"></i></span></div>
+</li>
+<li class="tool" id="claude-code-router">
+  <span class="rank">05</span>
+  <div class="body">
+    <h3><a href="https://github.com/musistudio/claude-code-router" rel="noopener">Claude Code Router</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Proxy routing Claude Code to other models.</b> The usual way to keep Claude Code&#x27;s harness while swapping in Kimi, Grok, DeepSeek or local Qwen, handy when quota runs out. One user found tool-call translation never fully lined up.</p>
+    <div class="facts"><span title="HN comments mentioning it in the last 12 months"><b>33</b> comments/yr</span><span title="GitHub stars"><b>38k</b> stars</span><a class="story" href="https://news.ycombinator.com/item?id=44705958" title="Biggest HN thread about it: Claude Code Router"><span class="hn" aria-hidden="true">Y</span>160-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=46894094">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 36 out of 100">36</span><span class="score-bar" aria-hidden="true"><i style="width:36%"></i></span></div>
+</li>
+<li class="tool" id="llm-simon-willison">
+  <span class="rank">06</span>
+  <div class="body">
+    <h3><a href="https://llm.datasette.io" rel="noopener">llm (Simon Willison)</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>CLI and Python library for many LLMs.</b> Simon Willison&#x27;s CLI and Python library for prompting any model through plugins, with exportable logs. Others build plugins and IPython tools on it and praise its docs; core releases have slowed.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>9</b> HN devs</span><span title="GitHub stars"><b>13k</b> stars</span><span title="npm + PyPI downloads, last month"><b>488k</b> downloads/mo</span><a class="cite" href="https://news.ycombinator.com/item?id=45989206">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 34 out of 100">34</span><span class="score-bar" aria-hidden="true"><i style="width:34%"></i></span></div>
+</li>
+<li class="tool" id="vercel-ai-gateway">
+  <span class="rank">07</span>
+  <div class="body">
+    <h3><a href="https://vercel.com/ai-gateway" rel="noopener">Vercel AI Gateway</a></h3>
+    <p><b>Vercel&#x27;s hosted multi-provider model API gateway.</b> Shows up mainly as where new models launch, sometimes free, and as a pay-per-token work account. Gripes: a required credit card, and third-party routing with the usual provider quality issues.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>1</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>25</b> comments/yr</span><a class="cite" href="https://news.ycombinator.com/item?id=49926328">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 28 out of 100">28</span><span class="score-bar" aria-hidden="true"><i style="width:28%"></i></span></div>
+</li>
+<li class="tool" id="cc-switch">
+  <span class="rank">08</span>
+  <div class="body">
+    <h3><a href="https://github.com/farion1231/cc-switch" rel="noopener">cc-switch</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Provider switcher for Claude Code and Codex.</b> A switcher that points Claude Code or Codex at cheaper models like MiniMax or DeepSeek, translating between API formats. Thin evidence, but the users who mention it are happy.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>1</b> HN devs</span><span title="GitHub stars"><b>153k</b> stars</span><a class="cite" href="https://news.ycombinator.com/item?id=46264180">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 25 out of 100">25</span><span class="score-bar" aria-hidden="true"><i style="width:25%"></i></span></div>
+</li>
+<li class="tool" id="portkey">
+  <span class="rank">09</span>
+  <div class="body">
+    <h3><a href="https://portkey.ai" rel="noopener">Portkey</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Hosted AI gateway with routing and logging.</b> An AI gateway that shows up in benchmark comparisons against LiteLLM and Bifrost. The one hands-on report switched from LiteLLM&#x27;s proxy on the free plan and found it much faster.</p>
+    <div class="facts"><span title="GitHub stars"><b>13k</b> stars</span><a class="cite" href="https://news.ycombinator.com/item?id=47506280">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 21 out of 100">21</span><span class="score-bar" aria-hidden="true"><i style="width:21%"></i></span></div>
+</li>
+<li class="tool" id="chutes">
+  <span class="rank">10</span>
+  <div class="body">
+    <h3><a href="https://chutes.ai" rel="noopener">Chutes</a></h3>
+    <p><b>Decentralised GPU inference with TEE-served models.</b> Cheap open-model inference from trusted execution environments, so GPU owners cannot read prompts. One newcomer found no documented route into OpenCode or Claude Code.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>2</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>32</b> comments/yr</span><a class="cite" href="https://news.ycombinator.com/item?id=49623079">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 20 out of 100">20</span><span class="score-bar" aria-hidden="true"><i style="width:20%"></i></span></div>
+</li>
+  </ol>
+  <p class="also"><span>Also scored</span> <a href="https://github.com/cheaper-inference/OmniRoute">OmniRoute</a>, <a href="https://developers.cloudflare.com/ai-gateway/">Cloudflare AI Gateway</a>, <a href="https://synthetic.new">Synthetic</a></p>
+</section>
+<section class="cat" id="frameworks" aria-labelledby="h-frameworks">
+  <header class="cat-head">
+    <span></span>
+    <div><span class="cat-num">10 / 12</span><h2 id="h-frameworks">Build your own agent</h2><p class="dek">SDKs and frameworks for shipping agents inside your product.</p><p class="note">The weakest HN signal of any category: people mostly talk about agents they use, not ones they build. Downloads carry more weight here.</p></div>
+  </header>
+  <ol class="tools">
+<li class="tool" id="langchain">
+  <span class="rank">01</span>
+  <div class="body">
+    <h3><a href="https://www.langchain.com" rel="noopener">LangChain</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Python and JS framework for LLM apps.</b> Still the default résumé keyword and a common base for internal RAG chatbots. Users say it works but adds overhead and latency, and some builders advertise skipping it entirely.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>4</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>816</b> comments/yr</span><span title="GitHub stars"><b>149k</b> stars</span><span title="npm + PyPI downloads, last month"><b>170.5M</b> downloads/mo</span><a class="story" href="https://news.ycombinator.com/item?id=46386009" title="Biggest HN thread about it: Critical vulnerability in LangChain – CVE-2025-68664"><span class="hn" aria-hidden="true">Y</span>131-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=46630166">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 74 out of 100">74</span><span class="score-bar" aria-hidden="true"><i style="width:74%"></i></span></div>
+</li>
+<li class="tool" id="mastra">
+  <span class="rank">02</span>
+  <div class="body">
+    <h3><a href="https://mastra.ai" rel="noopener">Mastra</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Open-source TypeScript framework for AI agents.</b> The TypeScript agent framework with the warmest comments. A heavy user runs production agents on it, and a bug reporter says the CTO fixed eval scoring bugs within nine hours.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>2</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>118</b> comments/yr</span><span title="GitHub stars"><b>29k</b> stars</span><span title="npm + PyPI downloads, last month"><b>10.4M</b> downloads/mo</span><a class="story" href="https://news.ycombinator.com/item?id=43103073" title="Biggest HN thread about it: Show HN: Mastra – Open-source JS agent framework, by the developers of Gatsby"><span class="hn" aria-hidden="true">Y</span>442-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50377455">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 58 out of 100">58</span><span class="score-bar" aria-hidden="true"><i style="width:58%"></i></span></div>
+</li>
+<li class="tool" id="claude-agent-sdk">
+  <span class="rank">03</span>
+  <div class="body">
+    <h3><a href="https://docs.claude.com/en/docs/agent-sdk/overview" rel="noopener">Claude Agent SDK</a></h3>
+    <p><b>Anthropic&#x27;s SDK exposing the Claude Code harness.</b> Most discussion is about billing: whether it can run on a Claude subscription, which the docs now confirm. Builders note it inherits Claude Code&#x27;s heavy system prompts, and telemetry takes hacks.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>2</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>395</b> comments/yr</span><span title="npm + PyPI downloads, last month"><b>58.5M</b> downloads/mo</span><a class="cite" href="https://news.ycombinator.com/item?id=49999718">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 54 out of 100">54</span><span class="score-bar" aria-hidden="true"><i style="width:54%"></i></span></div>
+</li>
+<li class="tool" id="langgraph">
+  <span class="rank">04</span>
+  <div class="body">
+    <h3><a href="https://langchain-ai.github.io/langgraph/" rel="noopener">LangGraph</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Graph-based agent orchestration library from LangChain.</b> Mostly a résumé keyword next to LangChain. Where people describe it, they reach for it when they want deterministic, graph-shaped control over multi-step agent workflows.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>1</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>465</b> comments/yr</span><span title="GitHub stars"><b>45k</b> stars</span><span title="npm + PyPI downloads, last month"><b>44.8M</b> downloads/mo</span><a class="cite" href="https://news.ycombinator.com/item?id=50365329">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 54 out of 100">54</span><span class="score-bar" aria-hidden="true"><i style="width:54%"></i></span></div>
+</li>
+<li class="tool" id="dspy">
+  <span class="rank">05</span>
+  <div class="body">
+    <h3><a href="https://dspy.ai" rel="noopener">DSPy</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Stanford framework for programming and optimizing LLM prompts.</b> Loved by a vocal few for small classification and extraction tasks done in a few lines. Skeptics say plain agent loops beat DSPy-built agents in their own evals.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>2</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>130</b> comments/yr</span><span title="GitHub stars"><b>39k</b> stars</span><span title="npm + PyPI downloads, last month"><b>5.3M</b> downloads/mo</span><a class="story" href="https://news.ycombinator.com/item?id=47490365" title="Biggest HN thread about it: If DSPy is so great, why isn&#x27;t anyone using it?"><span class="hn" aria-hidden="true">Y</span>227-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=49818501">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 53 out of 100">53</span><span class="score-bar" aria-hidden="true"><i style="width:53%"></i></span></div>
+</li>
+<li class="tool" id="microsoft-agent-framework">
+  <span class="rank">06</span>
+  <div class="body">
+    <h3><a href="https://github.com/microsoft/agent-framework" rel="noopener">Microsoft Agent Framework</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Microsoft&#x27;s open-source .NET and Python agent framework.</b> Shows up mostly in .NET and Azure shops, in job posts and as the C# answer for MCP-based agents. Few hands-on reviews; one commenter notes its harness is still single-player.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>3</b> HN devs</span><span title="GitHub stars"><b>15k</b> stars</span><a class="cite" href="https://news.ycombinator.com/item?id=49251807">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 50 out of 100">50</span><span class="score-bar" aria-hidden="true"><i style="width:50%"></i></span></div>
+</li>
+<li class="tool" id="openai-agents-sdk">
+  <span class="rank">07</span>
+  <div class="body">
+    <h3><a href="https://openai.github.io/openai-agents-python/" rel="noopener">OpenAI Agents SDK</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>OpenAI&#x27;s lightweight Python multi-agent SDK.</b> Common in résumés and enterprise orchestrators. The one detailed user report praises it for wiring sandbox, Slack and knowledge-base integrations while controlling exactly what gets exposed to OpenAI.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>1</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>55</b> comments/yr</span><span title="GitHub stars"><b>31k</b> stars</span><span title="npm + PyPI downloads, last month"><b>12.4M</b> downloads/mo</span><a class="story" href="https://news.ycombinator.com/item?id=43485566" title="Biggest HN thread about it: OpenAI adds MCP support to Agents SDK"><span class="hn" aria-hidden="true">Y</span>807-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=49653842">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 49 out of 100">49</span><span class="score-bar" aria-hidden="true"><i style="width:49%"></i></span></div>
+</li>
+<li class="tool" id="google-adk">
+  <span class="rank">08</span>
+  <div class="body">
+    <h3><a href="https://google.github.io/adk-docs/" rel="noopener">Google ADK</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Google&#x27;s open-source Agent Development Kit.</b> Google&#x27;s agent kit, used for sequential and looping multi-agent setups. It ships features fast enough to obsolete in-house work, but its LiteLLM dependency drew complaints after LiteLLM&#x27;s vulnerability.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>1</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>71</b> comments/yr</span><span title="GitHub stars"><b>22k</b> stars</span><span title="npm + PyPI downloads, last month"><b>10.1M</b> downloads/mo</span><a class="cite" href="https://news.ycombinator.com/item?id=50283128">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 43 out of 100">43</span><span class="score-bar" aria-hidden="true"><i style="width:43%"></i></span></div>
+</li>
+<li class="tool" id="crewai">
+  <span class="rank">09</span>
+  <div class="body">
+    <h3><a href="https://www.crewai.com" rel="noopener">CrewAI</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Python framework for role-based multi-agent crews.</b> An early multi-agent framework that now shows up mainly as a résumé keyword. The one experience report says agents left to coordinate themselves collaborate awkwardly unless the spec defines roles.</p>
+    <div class="facts"><span title="HN comments mentioning it in the last 12 months"><b>156</b> comments/yr</span><span title="GitHub stars"><b>61k</b> stars</span><span title="npm + PyPI downloads, last month"><b>2.4M</b> downloads/mo</span><a class="cite" href="https://news.ycombinator.com/item?id=49625124">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 42 out of 100">42</span><span class="score-bar" aria-hidden="true"><i style="width:42%"></i></span></div>
+</li>
+<li class="tool" id="pydantic-ai">
+  <span class="rank">10</span>
+  <div class="body">
+    <h3><a href="https://ai.pydantic.dev" rel="noopener">Pydantic AI</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Type-safe Python agent framework from Pydantic.</b> A Python favourite among people leaving LangChain. Users like its provider abstractions on their own and use it as a thin base for small headless agents.</p>
+    <div class="facts"><span title="HN comments mentioning it in the last 12 months"><b>110</b> comments/yr</span><span title="GitHub stars"><b>21k</b> stars</span><span title="npm + PyPI downloads, last month"><b>5.4M</b> downloads/mo</span><a class="story" href="https://news.ycombinator.com/item?id=45055439" title="Biggest HN thread about it: Building your own CLI coding agent with Pydantic-AI"><span class="hn" aria-hidden="true">Y</span>197-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=49820007">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 41 out of 100">41</span><span class="score-bar" aria-hidden="true"><i style="width:41%"></i></span></div>
+</li>
+  </ol>
+  <p class="also"><span>Also scored</span> <a href="https://modelcontextprotocol.io">MCP SDKs</a>, <a href="https://ai-sdk.dev">Vercel AI SDK</a>, <a href="https://strandsagents.com">Strands Agents</a>, <a href="https://github.com/huggingface/smolagents">smolagents</a>, <a href="https://github.com/agentjido/jido">Jido</a>, <a href="https://boundaryml.com">BAML</a>, <a href="https://github.com/earendil-works/pi">Pi agent toolkit</a></p>
+</section>
+<section class="cat" id="evals" aria-labelledby="h-evals">
+  <header class="cat-head">
+    <span></span>
+    <div><span class="cat-num">11 / 12</span><h2 id="h-evals">Evals &amp; observability</h2><p class="dek">Traces, evals and regression tests. How you know the agent got better, not just different.</p><p class="note">Thin on HN too. Treat this list as a shortlist to try, not a verdict.</p></div>
+  </header>
+  <ol class="tools">
+<li class="tool" id="opentelemetry-genai">
+  <span class="rank">01</span>
+  <div class="body">
+    <h3><a href="https://opentelemetry.io/docs/specs/semconv/gen-ai/" rel="noopener">OpenTelemetry GenAI</a></h3>
+    <p><b>OpenTelemetry semantic conventions for LLM telemetry.</b> The plumbing under most LLM observability tools rather than something people debate. People instrument API calls so agents can query a local collector, and export LLM traces to vendors like Braintrust.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>3</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>49</b> comments/yr</span><a class="story" href="https://news.ycombinator.com/item?id=45398467" title="Biggest HN thread about it: LLM Observability in the Wild – Why OpenTelemetry Should Be the Standard"><span class="hn" aria-hidden="true">Y</span>144-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=47391754">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 55 out of 100">55</span><span class="score-bar" aria-hidden="true"><i style="width:55%"></i></span></div>
+</li>
+<li class="tool" id="promptfoo">
+  <span class="rank">02</span>
+  <div class="body">
+    <h3><a href="https://www.promptfoo.dev" rel="noopener">promptfoo</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Open-source CLI for prompt evals and red-teaming.</b> The go-to for personal regression evals: people use it to check prompts before switching models and to build benchmarks for their own workflow. Its team has since joined OpenAI.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>1</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>48</b> comments/yr</span><span title="GitHub stars"><b>27k</b> stars</span><span title="npm + PyPI downloads, last month"><b>4M</b> downloads/mo</span><a class="cite" href="https://news.ycombinator.com/item?id=49394119">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 48 out of 100">48</span><span class="score-bar" aria-hidden="true"><i style="width:48%"></i></span></div>
+</li>
+<li class="tool" id="langfuse">
+  <span class="rank">03</span>
+  <div class="body">
+    <h3><a href="https://langfuse.com" rel="noopener">Langfuse</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Open-source LLM tracing, evals and prompt management.</b> The default open-source pick for LLM tracing, evals and prompt management, all over résumés. Users note a processing lag on traces, which a reply blames on outdated SDKs, and limited chart customisation.</p>
+    <div class="facts"><span title="HN comments mentioning it in the last 12 months"><b>125</b> comments/yr</span><span title="GitHub stars"><b>37k</b> stars</span><span title="npm + PyPI downloads, last month"><b>23.6M</b> downloads/mo</span><a class="story" href="https://news.ycombinator.com/item?id=46656552" title="Biggest HN thread about it: ClickHouse acquires Langfuse"><span class="hn" aria-hidden="true">Y</span>220-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50270795">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 46 out of 100">46</span><span class="score-bar" aria-hidden="true"><i style="width:46%"></i></span></div>
+</li>
+<li class="tool" id="arize-phoenix">
+  <span class="rank">04</span>
+  <div class="body">
+    <h3><a href="https://phoenix.arize.com" rel="noopener">Arize Phoenix</a><span class="tag tag-fading">Fading</span></h3>
+    <p><b>Open-source LLM tracing and eval platform.</b> Open-source tracing and eval tool people use for LLM-as-judge and production trace analysis. Evidence is thin, and one user found its Claude Code tracing setup heavy.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>30</b> HN devs</span><span title="GitHub stars"><b>12k</b> stars</span><span title="npm + PyPI downloads, last month"><b>626k</b> downloads/mo</span><a class="cite" href="https://news.ycombinator.com/item?id=49163206">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 42 out of 100">42</span><span class="score-bar" aria-hidden="true"><i style="width:42%"></i></span></div>
+</li>
+<li class="tool" id="mlflow">
+  <span class="rank">05</span>
+  <div class="body">
+    <h3><a href="https://mlflow.org" rel="noopener">MLflow</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Open-source ML lifecycle and experiment tracking platform.</b> The established ML experiment tracker, now also used for agent tracing. Those who tried MLflow 3&#x27;s agent observability liked its session capture and metadata like files touched and model used.</p>
+    <div class="facts"><span title="HN comments mentioning it in the last 12 months"><b>55</b> comments/yr</span><span title="GitHub stars"><b>29k</b> stars</span><span title="npm + PyPI downloads, last month"><b>19.9M</b> downloads/mo</span><a class="cite" href="https://news.ycombinator.com/item?id=50270800">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 38 out of 100">38</span><span class="score-bar" aria-hidden="true"><i style="width:38%"></i></span></div>
+</li>
+<li class="tool" id="logfire">
+  <span class="rank">06</span>
+  <div class="body">
+    <h3><a href="https://pydantic.dev/logfire" rel="noopener">Logfire</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Pydantic&#x27;s OpenTelemetry-based observability platform.</b> Pydantic&#x27;s tracing service, often paired with Pydantic AI. Users call it very helpful for diagnosing agent bugs; one who tried both found it similar to Langfuse but with fewer eval features.</p>
+    <div class="facts"><span title="GitHub stars"><b>4.5k</b> stars</span><span title="npm + PyPI downloads, last month"><b>13M</b> downloads/mo</span><a class="cite" href="https://news.ycombinator.com/item?id=47868762">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 33 out of 100">33</span><span class="score-bar" aria-hidden="true"><i style="width:33%"></i></span></div>
+</li>
+<li class="tool" id="opik">
+  <span class="rank">07</span>
+  <div class="body">
+    <h3><a href="https://www.comet.com/site/products/opik/" rel="noopener">Opik</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Comet&#x27;s open-source LLM tracing and eval tool.</b> Comet&#x27;s open-source LLM tracing and eval tool, with little discussion. Mentions call it useful for LLMOps, and one contributor fixed streaming wrappers that were swallowing exceptions.</p>
+    <div class="facts"><span title="GitHub stars"><b>23k</b> stars</span><span title="npm + PyPI downloads, last month"><b>1.7M</b> downloads/mo</span><a class="cite" href="https://news.ycombinator.com/item?id=46511450">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 29 out of 100">29</span><span class="score-bar" aria-hidden="true"><i style="width:29%"></i></span></div>
+</li>
+<li class="tool" id="braintrust">
+  <span class="rank">08</span>
+  <div class="body">
+    <h3><a href="https://www.braintrust.dev" rel="noopener">Braintrust</a></h3>
+    <p><b>Hosted LLM eval and observability platform.</b> A hosted eval platform that shows up in startup stacks like Curai&#x27;s. The few opinions call it solid for evals; its top HN story is a confirmed breach.</p>
+    <div class="facts"><span title="HN comments mentioning it in the last 12 months"><b>32</b> comments/yr</span><span title="npm + PyPI downloads, last month"><b>6.6M</b> downloads/mo</span><a class="cite" href="https://news.ycombinator.com/item?id=48813080">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 29 out of 100">29</span><span class="score-bar" aria-hidden="true"><i style="width:29%"></i></span></div>
+</li>
+<li class="tool" id="helicone">
+  <span class="rank">09</span>
+  <div class="body">
+    <h3><a href="https://www.helicone.ai" rel="noopener">Helicone</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Open-source LLM gateway and observability proxy.</b> Known as much for its LLM cost page as its gateway. Self-hosters found almost no setup docs, cost analysis needs your own SQL, and the service is now in maintenance mode.</p>
+    <div class="facts"><span title="GitHub stars"><b>6.3k</b> stars</span><a class="cite" href="https://news.ycombinator.com/item?id=46657214">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 28 out of 100">28</span><span class="score-bar" aria-hidden="true"><i style="width:28%"></i></span></div>
+</li>
+<li class="tool" id="deepeval">
+  <span class="rank">10</span>
+  <div class="body">
+    <h3><a href="https://deepeval.com" rel="noopener">DeepEval</a><span class="tag tag-open-source">Open source</span></h3>
+    <p><b>Open-source Python framework for LLM evals.</b> A Python eval library used mostly for RAG checks and LLM-as-judge assertions. Advice threads pitch it as the code-first option next to promptfoo&#x27;s YAML.</p>
+    <div class="facts"><span title="GitHub stars"><b>19k</b> stars</span><span title="npm + PyPI downloads, last month"><b>2.6M</b> downloads/mo</span><a class="cite" href="https://news.ycombinator.com/item?id=46842922">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 28 out of 100">28</span><span class="score-bar" aria-hidden="true"><i style="width:28%"></i></span></div>
+</li>
+  </ol>
+  <p class="also"><span>Also scored</span> <a href="https://www.langchain.com/langsmith">LangSmith</a>, <a href="https://inspect.aisi.org.uk">Inspect AI</a>, <a href="https://github.com/NVIDIA/garak">garak</a>, <a href="https://wandb.ai/site/weave/">Weights &amp; Biases Weave</a>, <a href="https://www.lmnr.ai">Laminar</a></p>
+</section>
+<section class="cat" id="assistants" aria-labelledby="h-assistants">
+  <header class="cat-head">
+    <span></span>
+    <div><span class="cat-num">12 / 12</span><h2 id="h-assistants">Always-on agents</h2><p class="dek">Personal agents that live on a server or a Mac mini and work while you sleep.</p></div>
+  </header>
+  <ol class="tools">
+<li class="tool" id="openclaw">
+  <span class="rank">01</span>
+  <div class="body">
+    <h3><a href="https://openclaw.ai" rel="noopener">OpenClaw</a><span class="tag tag-open-source">Open source</span><span class="tag tag-rising">Rising</span></h3>
+    <p><b>Open-source always-on personal AI agent.</b> The personal agent many tried and most have retired. A few keep it for event-driven chores and calendar nudges; the rest cite constant tinkering, crashes after a week and poor local-model support.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>72</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>5.1k</b> comments/yr</span><span title="GitHub stars"><b>394k</b> stars</span><a class="story" href="https://news.ycombinator.com/item?id=47963204" title="Biggest HN thread about it: Claude Code refuses requests or charges extra if your commits mention &quot;OpenClaw&quot;"><span class="hn" aria-hidden="true">Y</span>1.3k-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50373974">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 93 out of 100">93</span><span class="score-bar" aria-hidden="true"><i style="width:93%"></i></span></div>
+</li>
+<li class="tool" id="hermes-agent">
+  <span class="rank">02</span>
+  <div class="body">
+    <h3><a href="https://github.com/NousResearch/hermes-agent" rel="noopener">Hermes Agent</a><span class="tag tag-open-source">Open source</span><span class="tag tag-rising">Rising</span></h3>
+    <p><b>Nous Research&#x27;s open-source persistent personal agent.</b> The personal agent with the most loyal users, run on Mac Minis or VPSes, reached via Telegram, often on local models. Detractors cite a dated UI and regressions between updates.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>54</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>507</b> comments/yr</span><span title="GitHub stars"><b>261k</b> stars</span><a class="cite" href="https://news.ycombinator.com/item?id=50377455">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 82 out of 100">82</span><span class="score-bar" aria-hidden="true"><i style="width:82%"></i></span></div>
+</li>
+<li class="tool" id="muse">
+  <span class="rank">03</span>
+  <div class="body">
+    <h3><a href="https://ai.meta.com/muse/" rel="noopener">Muse</a><span class="tag tag-rising">Rising</span></h3>
+    <p><b>Meta&#x27;s consumer personal AI agent.</b> Meta&#x27;s consumer agent. Fans use it for research, forum scraping and group marketing, but most comments cite privacy incidents, ignored permissions, a 0-day, and slowness.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>21</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>86</b> comments/yr</span><a class="story" href="https://news.ycombinator.com/item?id=49615537" title="Biggest HN thread about it: Muse – Meta’s personal AI agent"><span class="hn" aria-hidden="true">Y</span>666-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=49978802">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 67 out of 100">67</span><span class="score-bar" aria-hidden="true"><i style="width:67%"></i></span></div>
+</li>
+<li class="tool" id="claude-cowork">
+  <span class="rank">04</span>
+  <div class="body">
+    <h3><a href="https://claude.com/product/cowork" rel="noopener">Claude Cowork</a></h3>
+    <p><b>Claude&#x27;s desktop agent for non-coding work.</b> Claude&#x27;s agent for non-coding work, used for email, todos, receipts and business operations, including by non-developers. One complaint: it floods teams with AI slop that reviewers must clean up.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>40</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>937</b> comments/yr</span><a class="story" href="https://news.ycombinator.com/item?id=46593022" title="Biggest HN thread about it: Cowork: Claude Code for the rest of your work"><span class="hn" aria-hidden="true">Y</span>1.3k-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50377705">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 60 out of 100">60</span><span class="score-bar" aria-hidden="true"><i style="width:60%"></i></span></div>
+</li>
+<li class="tool" id="n8n">
+  <span class="rank">05</span>
+  <div class="body">
+    <h3><a href="https://n8n.io" rel="noopener">n8n</a></h3>
+    <p><b>Fair-code visual workflow automation platform.</b> The workflow automation tool AI and automation freelancers list on résumés, used for chores like filing tax records and forwarding email. One comment calls its open-core licensing direction a mess.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>4</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>429</b> comments/yr</span><span title="GitHub stars"><b>210k</b> stars</span><a class="cite" href="https://news.ycombinator.com/item?id=50373357">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 60 out of 100">60</span><span class="score-bar" aria-hidden="true"><i style="width:60%"></i></span></div>
+</li>
+<li class="tool" id="nanoclaw">
+  <span class="rank">06</span>
+  <div class="body">
+    <h3><a href="https://github.com/qwibitai/nanoclaw" rel="noopener">NanoClaw</a><span class="tag tag-open-source">Open source</span><span class="tag tag-new-in-2026">New in 2026</span></h3>
+    <p><b>Minimal container-isolated OpenClaw alternative in TypeScript.</b> A lightweight, container-isolated OpenClaw alternative some find easier to understand. Several users moved on to Hermes or hand-rolled agents, and one ditched it as useless for email triage.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>3</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>200</b> comments/yr</span><span title="GitHub stars"><b>31k</b> stars</span><a class="story" href="https://news.ycombinator.com/item?id=46850205" title="Biggest HN thread about it: Show HN: NanoClaw – “Clawdbot” in 500 lines of TS with Apple container isolation"><span class="hn" aria-hidden="true">Y</span>533-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=49508928">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 48 out of 100">48</span><span class="score-bar" aria-hidden="true"><i style="width:48%"></i></span></div>
+</li>
+<li class="tool" id="home-assistant-llm">
+  <span class="rank">07</span>
+  <div class="body">
+    <h3><a href="https://www.home-assistant.io/integrations/conversation/" rel="noopener">Home Assistant + LLM</a><span class="tag tag-rising">Rising</span></h3>
+    <p><b>Home Assistant&#x27;s LLM conversation and voice integrations.</b> Home Assistant&#x27;s LLM and voice hooks, often run on local models. People wire it to MCP servers for voice control and EV charging plans, though LLMs can struggle with the unofficial MCP.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>13</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>93</b> comments/yr</span><a class="cite" href="https://news.ycombinator.com/item?id=49569150">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 47 out of 100">47</span><span class="score-bar" aria-hidden="true"><i style="width:47%"></i></span></div>
+</li>
+<li class="tool" id="claude-duet">
+  <span class="rank">08</span>
+  <div class="body">
+    <h3><a href="https://claude.com/product/claude-duet" rel="noopener">Claude Duet</a></h3>
+    <p><b>Anthropic&#x27;s proactive agent for professionals, in preview.</b> Anthropic&#x27;s waitlisted proactive agent, still in research preview. Early users run it for monitoring communications, but find it slow and say OpenAI&#x27;s Dots is better today.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>3</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>32</b> comments/yr</span><a class="story" href="https://news.ycombinator.com/item?id=50186037" title="Biggest HN thread about it: Claude Duet"><span class="hn" aria-hidden="true">Y</span>568-point thread</a><a class="cite" href="https://news.ycombinator.com/item?id=50367272">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 37 out of 100">37</span><span class="score-bar" aria-hidden="true"><i style="width:37%"></i></span></div>
+</li>
+<li class="tool" id="dots">
+  <span class="rank">09</span>
+  <div class="body">
+    <h3><a href="https://openai.com/index/introducing-dots/" rel="noopener">Dots</a></h3>
+    <p><b>OpenAI&#x27;s persistent personal agent.</b> OpenAI&#x27;s persistent personal agent. One user built a speculative Lean-verified proof with a Dots swarm, another rates it above Duet; critics dislike the cutesy branding and a confusing product lineup.</p>
+    <div class="facts"><span title="Distinct people naming it in 24 Ask HN threads about AI tooling"><b>1</b> HN devs</span><span title="HN comments mentioning it in the last 12 months"><b>24</b> comments/yr</span><a class="cite" href="https://news.ycombinator.com/item?id=49971445">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 22 out of 100">22</span><span class="score-bar" aria-hidden="true"><i style="width:22%"></i></span></div>
+</li>
+<li class="tool" id="paperclip">
+  <span class="rank">10</span>
+  <div class="body">
+    <h3><a href="https://github.com/paperclipai/paperclip" rel="noopener">Paperclip</a><span class="tag tag-open-source">Open source</span><span class="tag tag-new-in-2026">New in 2026</span></h3>
+    <p><b>Open-source org chart for running agent companies.</b> An open-source tool for running a &#x27;company&#x27; of agents with an org chart. HN mentions are passing comparisons, with no hands-on reports.</p>
+    <div class="facts"><span title="GitHub stars"><b>112k</b> stars</span><a class="cite" href="https://news.ycombinator.com/item?id=49633106">what people said ↗</a></div>
+  </div>
+  <div class="score"><span class="score-n" aria-label="Score 20 out of 100">20</span><span class="score-bar" aria-hidden="true"><i style="width:20%"></i></span></div>
+</li>
+  </ol>
+  <p class="also"><span>Also scored</span> <a href="https://code.claude.com/docs/en/routines">Claude Code Routines</a>, <a href="https://github.com/HKUDS/nanobot">nanobot</a>, <a href="https://github.com/eigent-ai/eigent">Eigent</a></p>
+</section>
+
+  <section id="method" aria-labelledby="h-method">
+    <p class="label" id="h-method">How this was made</p>
+    <div class="method">
+      <div>
+        <h3>Sources I scraped</h3>
+        <ul class="src"><li><b>Hacker News: Ask HN threads</b><span class="mono">6,323 comments</span><small>24 threads where developers describe their AI setups, May 2025 to Nov 2026. The core signal: distinct people naming a tool.</small></li><li><b>Hacker News: stories and comments</b><span class="mono">3,229 stories</span><small>Front-page pull since Jan 2025, plus each tool’s comment volume over the last 12 months via the Algolia API, typo tolerance off, checked against a 100-comment sample.</small></li><li><b>Lobsters</b><span class="mono">2,979 stories</span><small>Story titles from the ai, vibecoding, programming, devops, release and show tags since Jan 2025.</small></li><li><b>dev.to</b><span class="mono">42,357 posts</span><small>Top posts of the last year across 12 tags. Practitioner blogging, title mentions weighted by reactions.</small></li><li><b>GitHub</b><span class="mono">120 repos</span><small>Stars, last push and licence for every tool with a public repo.</small></li><li><b>npm and PyPI</b><span class="mono">monthly downloads</span><small>Last-month downloads from the npm registry and pypistats.</small></li></ul>
+      </div>
+      <div>
+        <h3>Sources worth adding</h3>
+        <ul class="src"><li><b>Reddit</b><span class="mono">not scraped</span><small>r/LocalLLaMA, r/ClaudeAI and r/ChatGPTCoding are where local-model and harness talk is densest. Reddit blocks anonymous scripts, so this needs a registered OAuth app. First thing I’d add.</small></li><li><b>OpenRouter rankings</b><span class="mono">usage, not opinion</span><small>A public leaderboard of tokens routed per app. The closest thing to real usage share for open-model harnesses.</small></li><li><b>VS Code Marketplace and Open VSX</b><span class="mono">install counts</span><small>Hard numbers for editor extensions (Cline, Roo, Kilo, Continue), which HN underweights.</small></li><li><b>Bluesky and X</b><span class="mono">builder chatter</span><small>Bluesky’s firehose is open and easy to sample. X has the launches but its API is paid.</small></li><li><b>Discord servers</b><span class="mono">needs consent</span><small>Where support questions and complaints actually happen. Private by default: only with a bot the server admins approve.</small></li><li><b>Newsletters and podcasts</b><span class="mono">editorial cross-check</span><small>Simon Willison, Latent Space, The Pragmatic Engineer, Interconnects. Low volume, high signal, good for catching what HN misses.</small></li><li><b>Stack Overflow Developer Survey</b><span class="mono">yearly</span><small>Huge sample, slow cadence. Best for the enterprise defaults this page underrates.</small></li></ul>
+      </div>
+      <div>
+        <h3>How the score works</h3>
+        <table class="weights"><tbody><tr><td>HN devs naming it in Ask HN threads</td><td>40</td></tr><tr><td>HN comment volume, last 12 months</td><td>20</td></tr><tr><td>Adoption: GitHub stars or package downloads</td><td>16</td></tr><tr><td>HN front-page points on stories about it</td><td>12</td></tr><tr><td>Lobsters stories</td><td>7</td></tr><tr><td>dev.to reactions</td><td>5</td></tr><tr><td>Tone of HN comments</td><td>±6</td></tr></tbody></table>
+        <p>Every signal is log-scaled and divided by the best value in its category, so a tool is ranked against its neighbours rather than against Claude Code. Hosted tools with no public repo or package aren’t penalised: their adoption weight is spread across the HN signals instead.</p>
+      </div>
+      <div>
+        <h3>What to be sceptical of</h3>
+        
+<p>Hacker News skews senior, terminal-first and sceptical. Enterprise defaults like Copilot and JetBrains are underrepresented, and tools popular in China or on Reddit get less credit than they deserve.</p>
+<p>Names collide: Pi, Cursor, Muse, Phoenix. Every tool has a context-aware pattern, every comment count was checked against a sample, and comments that turned out to be about something else are discounted. The November thread’s questionnaire named several tools, so quoted question text was stripped before counting.</p>
+<p>Each tool’s HN comments were also read for tone, which moves its score by up to six points. A tool HN uses but complains about still ranks, with the complaint in its write-up.</p>
+<p>This is a snapshot from 7 November 2026. A third of these tools didn’t exist a year ago.</p>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Compiled by <a href="/">Alexis Santos</a> · data as of 7 November 2026</span>
+    <span><a href="tools.json">Download the data (JSON)</a> · <button class="theme-toggle" type="button" id="theme">Theme</button></span>
+  </footer>
+</main>
+
+<script>
+(() => {
+  // Category rail: built from the section headings, highlights the section in view.
+  const rail = document.getElementById("rail");
+  const cats = [...document.querySelectorAll("section.cat")];
+  cats.forEach((s, i) => {
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.href = "#" + s.id;
+    a.textContent = s.querySelector("h2").textContent;
+    li.append(a); rail.append(li);
+  });
+  const links = new Map([...rail.querySelectorAll("a")].map(a => [a.hash.slice(1), a]));
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      links.forEach(a => a.removeAttribute("aria-current"));
+      const a = links.get(e.target.id);
+      if (a) { a.setAttribute("aria-current", "true"); a.scrollIntoView({ block: "nearest", inline: "nearest" }); }
+    });
+  }, { rootMargin: "-45% 0px -50% 0px" });
+  cats.forEach(s => io.observe(s));
+
+  // Theme toggle: remembers the choice per viewer; the page works without it.
+  const root = document.documentElement, btn = document.getElementById("theme");
+  try { const t = localStorage.getItem("theme"); if (t) root.dataset.theme = t; } catch {}
+  btn.addEventListener("click", () => {
+    const dark = root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+    root.dataset.theme = dark ? "light" : "dark";
+    try { localStorage.setItem("theme", root.dataset.theme); } catch {}
+  });
+})();
+</script>
+</body>
+</html>

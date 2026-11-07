@@ -1,0 +1,1287 @@
+[
+ {
+  "name": "OpenRouter",
+  "url": "https://openrouter.ai",
+  "score": 94.8,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "OpenRouter is joining Stripe",
+   "points": 964,
+   "id": "49364559",
+   "url": "https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50367146,
+    "author": "enjoyyourlife",
+    "text": " https://github.com/mkornreich/llm-desktop-electron with OpenRouter. I love Claude but Anthropic is expensive and too restrictive"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50367272,
+    "author": "joshstrange",
+    "text": "1. Claude Ultra for personal, Claude Max for work, Codex $100/mo 2. OpenRouter, DeepSeek, Luna, and testing out models here and there 3. Claude Code and Codex for the respective subscriptions. Played with OpenCode and Pi some as well 4. I've tried a number of these tools and settled on my own tool (not released) to oversee my agents 5. "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50367326,
+    "author": "ctolsen",
+    "text": "round \u20ac100 a month total. I generally use open weight models (Kimi K3.1, Mistral Large 4, GLM-5.3, DeepSeek v4.1 Flash, Mimo v2.6 Pro is the current quiver) but I use closed frontiers enough to stay up to date. 2) I use OpenRouter if I have a specific need, audio transcription (MAI-Transcribe 2) being something I use often enough. Also using it just to test random models. Not much local anymore except classifiers / decision models that I've played with. 3) Pi all the way. 4) I use Pase"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50367338,
+    "author": "jherdman",
+    "text": "Herdr, Pi, OpenRouter. I haven't found that I've needed much more than this for quite some time now."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50367582,
+    "author": "yewenjie",
+    "text": "bs. Grok gave me three months at $30 when I tried to cancel so there's that too. I wanted to really keep Claude but ChatGPT voice mode is too good tbh and no other comes close. I wish I could use Opus 5.5 for coding. 2) OpenRouter PAYG, mostly for experimenting with Chinese models like Deepseek and GLM, usually for stuff that Codex or Grok refuses to do. Had been looking into NEAR and Venice for completely private information processing (like emails) but haven't set them up yet. 3) Cod"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50367965,
+    "author": "diehunde",
+    "text": "1) None 2) Openrouter. I don't have a preference right now. All the top open-weight models work fine for my projects. Currently using Mistral. 3) I used pi for a while and lately I started using openrouter's ori coding agent. Working great so far. 4) None 5) None. I tried Muse for"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50368119,
+    "author": "patwolf",
+    "text": "l have a ChatGPT subscription. I'm tempted to cancel it, but I like their app. Gemini is bundled somehow into my google subscriptions. I use it occasionally, but I'd be just as happy to not be paying for it. 2) I do use Openrouter for side projects that need an embedded AI. For example, on Halloween I made a talking pumpkin to greet trick or treaters as they came to the porch. 3) Mostly code. I've tried muse, grok, gemini, codex, and pi w/ openrouter, but I always come back to code. 4)"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50368325,
+    "author": "world2vec",
+    "text": "1) Claude Code (Claude Teams Premium seat) plus pi.dev (self-hosted GLM-5.3) at work, Claude Pro at home. Opus 5.5 Extra effort for ~99% of the prompts. 2) Not really, messed around with Openrouter and Deepseek for some stuff that Claude refused to do 3) I use Claude Desktop (Linux) and a heavily modified pi.dev at work VSCode as IDE. At home just use the iOS app and Claude Desktop (Windows). 4) No 5) I have Hermes Agent setup at work and home but don't"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50368526,
+    "author": "grep_name",
+    "text": "1. I've been using the $100 github copilot tier but am looking for something cheaper, as my usage is waning somewhat. I like to hop between models for comparison, but openrouter always seems to end up being way more expensive for the flagship models. I also keep a GPT Plus subscription for voice, until someone has a comparable offering 2. No outside models yet. Working on a setup for that. Sometimes I throw some money at openrouter t"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373129,
+    "author": "regnull",
+    "text": "I feel like this is a great opportunity to mention https://github.com/regnull/openbot , my attempt to create an open-source tool similar to Grok Bot. You can hook it up to OpenRouter and solve 80% of problems with 1/10th of the cost. I use it all the time. Contributors are always welcome."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373248,
+    "author": "Quibblingeek",
+    "text": "y DGX Spark (I saw the hardware shortage coming) and has my entire local AI stack. OpenWebUI and everything that feeds it. I moved away from SearXNG and started using SlopSearX (it's quite good). Everything else goes to Openrouter. I use few models but GPT-6 Luna is my go-to, sometimes I switch it up. Really depends on the task I need to perform. 3) What coding harnesses and interfaces are you using?  [question]  Github Copilot for work. It's meh. Personal projects and general personal"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373324,
+    "author": "jeswin",
+    "text": "1) I use 2x ChatGPT Pro 200, and a Claude Max 200. 2) I use other models via Open Router, but ChatGPT beats them in value (at the moment) thanks to Tibo's resets. 3) I mostly make Claude coordinate a group of Codex agents. They've set up a communication channel between them, and Claude acts as the coordinator and a second verifier. This saves me "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373624,
+    "author": "Macha",
+    "text": "1) Claude Pro (the $20/mo tier). No other subscriptions. 2) I use models on open router occasionally, primarily GLM and Deepseek models. I\u2019ve experimented with Qwen locally but the models that run on my hardware are too dumb for extended use cases and too slow for quick questions. 3) Personal use: Primarily Zed. I use employer paid Claude Code i"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373770,
+    "author": "profdevloper",
+    "text": "1. Claude pro monthly 2. Kimi on OpenRouter, Abliterated.ai as needed 3. Claude Code (with all models), Claude Desktop, tried pi.dev, opencode 4. No 5. No Main use case(s): - Software applications - One-off automations (calendar sync from scraped data, email alerts) - Deep research and planning for per"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50403939",
+    "author": "Sankozi",
+    "date": "2026-11-07",
+    "text": "There are already 80 providers on Openrouter."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50402723",
+    "author": "mrlongroots",
+    "date": "2026-11-07",
+    "text": "dels that are price competitive with the top open models (before factoring in subscription discounts and corporate lock-in), then I don't see how that leads to the average user walking away from the labs in favor of self-hosting or relying OpenRouter/Together/etc. The premise is this: frontier models seem to advance, and OSS models also seem to advance in terms of cost efficiency etc. It's like a race with say a 6 month (WLOG) gap between frontier and OSS models. For frontier models to win perpetually against OSS, they will "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50400995",
+    "author": "lelandbatey",
+    "date": "2026-11-07",
+    "text": "Nah, OpenRouter is the same API as self hosting, but you need to provide your API key. It's as easy as a URL swap"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50400790",
+    "author": "dofm",
+    "date": "2026-11-07",
+    "text": "hem and advise others how to (local inference is not a zero-sized market). My next step up will be to take the apps I'm looking at building that run against these small models, and host those apps online with some sort of cloud inference \u2014 openrouter, digitalocean, cloudflare \u2014 for those same models. If I ever find I want to vaguely describe some desktop application before bed and come down the next morning to an aggravating slop version of it written in Rust, I'll consider Claude. For a local non-laptop, I've looked at the "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50400210",
+    "author": "calebkaiser",
+    "date": "2026-11-07",
+    "text": "dels that are price competitive with the top open models (before factoring in subscription discounts and corporate lock-in), then I don't see how that leads to the average user walking away from the labs in favor of self-hosting or relying OpenRouter/Together/etc. I also went out of my way to clarify that I personally prefer and use open models wherever possible. I'm not saying that there isn't a real group of people who prefer them. I'm specifically saying that frontier labs also sell \"good enough\" models and that there's n"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50400072",
+    "author": "unrented7977",
+    "date": "2026-11-06",
+    "text": "sing need for anything more complex than that. My multi-agent setups tend to be a pile of bespoke scripts per project anyway, an MCP server is only gonna get in the way. But I suppose this is because I self-host the models, if you're using OpenRouter or whatever it may need more complexity than a curl call to an unauthenticated port"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50399948",
+    "author": "manyatoms",
+    "date": "2026-11-06",
+    "text": "OpenRouter gives you easier to verify cost analysis of generic inference, as you can know the model weight size and so on, and see how competing providers price that"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50399511",
+    "author": "dev-in",
+    "date": "2026-11-06",
+    "text": "Why not using a proxy in claudecode to forward all the claude-* model to anthropic as a standard proxy forwarder and route other models to other providers (openrouter, vllm, ..)? This way Claude's model can get all the context from other models as all in the same harness. To use other models than claude-* you can use agents files. Ps: as you won't use your proxy to distill or alter claudecode requests to anthropic you should be compliant with"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50399337",
+    "author": "dofm",
+    "date": "2026-11-06",
+    "text": "ted insult: You should factor in that undeniably most people don't have the means to run even a 27B dense model locally, and therefore do not actually know what they are and are not capable of in that context. And you might want to look at openrouter's rankings. If you are comfortable automatically assuming that \"doesn't use Claude or Codex\" is equivalent to \"not a good engineer\" or \"bad engineer\", then I think you are probably lost to more nuanced discussions."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50398416",
+    "author": "wernam",
+    "date": "2026-11-06",
+    "text": "AMD Ryzen AI/Strix Halo is for running locally on your hardware. Openrouter is for evaluating the models you'll be running locally, before buying the hardware. In any case, 128-256GB unified memory systems running MOE models is the \"cheap\" option, RTX6000 is the step above it."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50398364",
+    "author": "ax0ar",
+    "date": "2026-11-06",
+    "text": "There's actually a decision model version of GPT-6 Luna... You are right to be confused though. OpenAI and their never ending naming games. https://openrouter.ai/openai/gpt-6-luna-decisions "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50397532",
+    "author": "wernam",
+    "date": "2026-11-06",
+    "text": "12GB GPU is useless. The good experience is with 128-256GB unified memory architectures like strix halo etc. You don't need to buy any hardware, you can experience the latest open weight MOE (flash) models from DeepSeek, qwen, or GLM on openrouter using a local agent like kilo."
+   }
+  ]
+ },
+ {
+  "name": "LiteLLM",
+  "url": "https://github.com/BerriAI/litellm",
+  "score": 56.4,
+  "github_stars": 62870,
+  "top_hn_story": {
+   "title": "Tell HN: Litellm 1.82.7 and 1.82.8 on PyPI are compromised",
+   "points": 938,
+   "id": "47501426",
+   "url": "https://github.com/BerriAI/litellm/issues/24512"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50368111,
+    "author": "dgb23",
+    "text": "Didn't set it up myself so my info will be meagre, but I think it's litellm and a big enough nvidia card. We use it for development but also for internal applications (where smaller models might escalate a task to it when needed). Obviously not feasible for (just) personal use, the model is too large for consumer hardware."
+   },
+   {
+    "src": "ask_hn",
+    "id": 43923545,
+    "author": "kristopolous",
+    "text": "self hosting via litellm or olama isn't as hard as you think. If you have company kind of money it shouldn't be a problem."
+   },
+   {
+    "src": "ask_hn",
+    "id": 43928972,
+    "author": "Ey7NFZ3P0nzAe",
+    "text": "f it does then you have to configure the whole cursor IDE to work like your original IDE. In total you've either lost features or been captured into a new walled garden. And lost some time in the process. Aider's use of litellm makes it 5s change to switch to the latest models. And it's always up to date thanks to uvx. No really I don't get why people are not using aider more. Plus the dev is lovely, responsive and helpful."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50383728",
+    "author": "lbreakjai",
+    "date": "2026-11-05",
+    "text": "Our designer uses some some of open-source Lovable. I don't remember the name, it's just pointed to our liteLLM gateway. A dev helped him with the setup, so there's still a bit of value in lovable's \"it just works\", but it's so much cheaper someone is bound to eat their lunch."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50373604",
+    "author": "John_Huang",
+    "date": "2026-11-05",
+    "text": "l: huangfengjob@gmail.com Senior AI & Manufacturing Engineer with 10+ years across manufacturing engineering and production AI systems. - Built and currently maintaining huidedu-agent-base (enterprise AI runtime with Nginx gateway routing, LiteLLM/PG token metering, Redis JobQueue, and SKILL.md deterministic guardrails running 24/7 in production). - Architected knowhow-miner: end-to-end unstructured engineering correspondence parsing, quote stripping, intent classification, and DFM rule causal graph extraction. - Shipped "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50368111",
+    "author": "dgb23",
+    "date": "2026-11-04",
+    "text": "Didn't set it up myself so my info will be meagre, but I think it's litellm and a big enough nvidia card. We use it for development but also for internal applications (where smaller models might escalate a task to it when needed). Obviously not feasible for (just) personal use, the model is too large for consumer hardware."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50344233",
+    "author": "mindwork",
+    "date": "2026-11-02",
+    "text": "e: Yes Willing to relocate: Yes for right opportunity Technologies: C#, Python, TypeScript, Ruby, React, Next.js, PostgreSQL, MSSQL, MongoDB, Supabase, Kubernetes, Docker, Helm, Terraform, Ansible, AWS, Linux, Jenkins, Prometheus, Grafana, LiteLLM, spaCy R\u00e9sum\u00e9/CV: https://penk.in/resume Email: Can be found here - https://penk.in/contact "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50339551",
+    "author": "TEForstner",
+    "date": "2026-11-02",
+    "text": "ou'd build the tools that let it act across the product, own parts of the agent harness (planning, tool use, context) and put evals around what you ship, together with our QA team. Stack: TypeScript/Node.js, MongoDB, pgvector, AWS Bedrock, LiteLLM, Mastra, some React. Engineers pick their own AI tooling (Claude Code, Codex, Cursor...) and we pay for the usage. We're looking for programmers first who now build with LLMs, and who have shipped something people use. Years of ML matter less to us than what you've built. We app"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50339248",
+    "author": "zernie",
+    "date": "2026-11-02",
+    "text": "nd EU hours Remote: Yes Willing to relocate: Yes, to the US Technologies: TypeScript, React, Next.js, Node.js, Ruby on Rails, PostgreSQL, Redis, GraphQL, Python; Claude Code and Codex harnesses (skills, hooks, MCP), LLM evals (Braintrust), LiteLLM R\u00e9sum\u00e9/CV: https://zernie.com \u00b7 https://linkedin.com/in/zernie Email: contact@zernie.com Senior full-stack engineer, 10+ years, mostly for North American startups. Looking for part-time or contract work, up to 3 days a week. Plain full-stack (Rails, React/Next.js, Node) is as we"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50261442",
+    "author": "spenvo",
+    "date": "2026-10-27",
+    "text": "tinued fiddling) and cost of a high-end local compute system represent major investments, when I could just... keep being insanely productive with frontier AI in CC. And models/harnesses can themselves be security liabilities (see Mistral, LiteLLM, etc recent supply chain attacks). So I'm personally waiting for the local AI scene to mature, so I can be more precise about how I take the plunge. I will say: if the subscription pricing ever goes away or materially changes for Anthropic, I'm headed straight to order whatever "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50248208",
+    "author": "iacgm",
+    "date": "2026-10-26",
+    "text": "Hey, Ian from Strix here. We've been working on a dependency firewall to block installations of malicious packages, and after the LiteLLM supply-chain attack last week, we're ready to open-source it. Come take a look."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50216300",
+    "author": "dollo_7",
+    "date": "2026-10-23",
+    "text": "I guess this is good news! It will surely benefit from a broader adoption from the community. Any ideas to avoid security issues like the LiteLLM ones? Kudos to all the work you have done. Looks like ages since you started talking about RPI and it hasn\u2019t been that long actually"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50201342",
+    "author": "zahlman",
+    "date": "2026-10-22",
+    "text": "; but because Python programmers are accustomed to looking for data files at paths relative to the current source file, installers put .pth files in places that will easily be picked up by the `site` scan. So the point is simply that, once LiteLLM is installed, malware injected directly into the final package (not a dependency) runs at startup in the compromised environment even if you don't use the LiteLLM code explicitly. Nothing \"creates a directory from the build file\". The attacker-modified source includes the entire"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50195647",
+    "author": "pwython",
+    "date": "2026-10-22",
+    "text": "ython 3.13 and 3.14 (3.13.17 and 3.14.9). uv 0.10.9 \u2192 0.13.5. python.org Python 3.13: pip 26.2.2, installed from PyPI\u2019s wheel with its checksum checked, then certifi 2026.10.19. It also checked some of the other recent vulnerabilities like LiteLLM (already updated)."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50195274",
+    "author": "prepend",
+    "date": "2026-10-22",
+    "text": "Isn't the issue with upgrading the insecurity of litellm and its inability to prevent being pwned? How did you address this issue?"
+   }
+  ]
+ },
+ {
+  "name": "AWS Bedrock",
+  "url": "https://aws.amazon.com/bedrock/",
+  "score": 56.2,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "AWS Bedrock to require sharing data with Anthropic for Mythos and future models",
+   "points": 427,
+   "id": "48473166",
+   "url": null
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50368106,
+    "author": "gaoshan",
+    "text": "t with various apps and toys (I created a Fantasy Premier League app that does research and sentiment analysis as part of its runs and that costs money... but not much) . Professionally I use an unlimited Claude via AWS Bedrock. 2. I use both qwen 3.6 35b-a3b and qwen 3.8 27b on my Macbook Pro (M5 Pro, 48GB, 18/20). I use those with ollama and hermes (and Obsidian, to an extent) 3. Hermes Agent, Claude CLI and Claude in VS Code 4. No 5. Hermes Agent I use a carefully curated selecti"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373740,
+    "author": "shepherdjerred",
+    "text": "nt models/harnesses. It's very interesting to see how each performs and what kind of tasks they do/don't excel out. The only con of having cheap plans is you really can only give them simple tasks. --- At work I use AWS Bedrock w/ Anthropic + OpenAI models at API pricing. Each employee is given a rolling 28-day budget w/o access to Fable/Astra. I use the same Claude Code/Codex CLI + Herdr."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373936,
+    "author": "alexfromapex",
+    "text": "I like using Cline the VS Code extension. It can use local models and local inference with Ollama and tons of external inference providers like AWS Bedrock, Vertex, etc. It asks for permission to read webpages or run commands. You can give it whitelisted permission to just read your files which is what I do. If you want, you can put it into ACT mode and give it permission to write to files but I avoid that. If y"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50377140,
+    "author": "computomatic",
+    "text": "You can access Claude models through any number of providers - OpenRouter, AWS Bedrock, etc. and as far as I know, Claude Code can be used with any of them. The only real benefit to going direct through Anthropic is the subscriptions. It\u2019s worth the risk for the discount, but if you get locked out, there\u2019s other (pricy) options to get unblocked"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50378946,
+    "author": "lintbrush",
+    "text": " and the occasional local skill (eg one that understands common Looker data patterns for our setup or the wacky history of our Archive). For longer batch tasks or our automated systems we're using various models through Bedrock so I can track it with the rest of our AWS spend and that's been working quite well. I'm experimenting with Opencode and Openrouter/Bedrock. If Claude Code didn't exist I would think Opencode was a miracle from heaven so it's a nice backup Anthropic pricing g"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48452181,
+    "author": "tbeseda",
+    "text": "I converted my web app to a SwiftUI macOS app https://hnr.app It has less features (no OG media or title/story analysis via Bedrock) but it focuses more on the features I like/need from an HN client"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50397880",
+    "author": "rhdunn",
+    "date": "2026-11-06",
+    "text": "Chatbots aren't a money maker. Each interaction is likely to be 1-2K tokens at most. AWS Bedrock prices 11K token input and 4K output for a total of $0.184 using on-demand usage [1]. So for normal usage (occasionally asking questions) you are looking at less than $1 per month for a person. Using the models for data processing (a lot of input/output tokens) and for role-play"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50396094",
+    "author": "qlte",
+    "date": "2026-11-06",
+    "text": "tGPT/Claude Chat) or Antigravity (Codex/Claude Code). https://one.google.com/about/ AI Studio is the developer console (OpenAI Platform/Claude Platform). Vertex AI is the Google Cloud enterprise platform (using GPT or Claude models via AWS Bedrock/Azure AI Foundry). Pretty much every product is a 1:1 equivalent with the same offering from OpenAI/Anthropic + Azure/AWS. Google is both a hyperscaler and an AI lab, so the venn diagram includes both the direct OpenAI/Anthropic products and what they also serve for enterprises "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50389564",
+    "author": "nevmstas",
+    "date": "2026-11-06",
+    "text": "Location: Georgia (GTM +4) Remote: Yes Willing to relocate: No Technologies: TypeScript, React, Next.js, Node, PostgreSQL, AWS, LLM pipelines and agents (Claude, Bedrock, MCP, GPT), FHIR, SwiftUI, Python R\u00e9sum\u00e9/CV: https://nevmstas.me Email: nevmyvakastas@gmail.com Senior Fullstack Engineer. I own features end to end on a 24/7 virtual ER care platform: telehealth flows for patients and charting screens for clinicians on the open-source Ottehr EH"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50378615",
+    "author": "ayakan",
+    "date": "2026-11-05",
+    "text": "l investigations at an enterprise software vendor, plus previous Google Cloud Infrastructure and Data/AI support. Selected freelance work: - Completed a 225-hour Operations/SRE engagement with 5.0 client feedback. - Completed a private AWS Bedrock AI infrastructure engagement involving VPC, PrivateLink, and RAG, also with 5.0 feedback. - Earned $80K+ on Upwork with a 100% Job Success Score and 1,400+ total tracked freelance hours across different engagements. I\u2019m interested in: - Production incident investigation and docu"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50377140",
+    "author": "computomatic",
+    "date": "2026-11-05",
+    "text": "You can access Claude models through any number of providers - OpenRouter, AWS Bedrock, etc. and as far as I know, Claude Code can be used with any of them. The only real benefit to going direct through Anthropic is the subscriptions. It\u2019s worth the risk for the discount, but if you get locked out, there\u2019s other (pricy) options to get unblocked."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50374748",
+    "author": "ghshephard",
+    "date": "2026-11-05",
+    "text": " with Anthropic and then got cut off. Enterprises also need very stringent IP protections that you don't get through the subscriptions. Even the Anthropic-API per token license isn't great - sometimes you need to go to 3rd parties like AWS Bedrock to get guarantees regarding no multi-tenant GPUs."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50373936",
+    "author": "alexfromapex",
+    "date": "2026-11-05",
+    "text": "I like using Cline the VS Code extension. It can use local models and local inference with Ollama and tons of external inference providers like AWS Bedrock, Vertex, etc. It asks for permission to read webpages or run commands. You can give it whitelisted permission to just read your files which is what I do. If you want, you can put it into ACT mode and give it permission to write to files but I avoid that. If you use something lik"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50373740",
+    "author": "shepherdjerred",
+    "date": "2026-11-05",
+    "text": "erience with different models/harnesses. It's very interesting to see how each performs and what kind of tasks they do/don't excel out. The only con of having cheap plans is you really can only give them simple tasks. --- At work I use AWS Bedrock w/ Anthropic + OpenAI models at API pricing. Each employee is given a rolling 28-day budget w/o access to Fable/Astra. I use the same Claude Code/Codex CLI + Herdr."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50368106",
+    "author": "gaoshan",
+    "date": "2026-11-04",
+    "text": "lowly chip away at it with various apps and toys (I created a Fantasy Premier League app that does research and sentiment analysis as part of its runs and that costs money... but not much) . Professionally I use an unlimited Claude via AWS Bedrock. 2. I use both qwen 3.6 35b-a3b and qwen 3.8 27b on my Macbook Pro (M5 Pro, 48GB, 18/20). I use those with ollama and hermes (and Obsidian, to an extent) 3. Hermes Agent, Claude CLI and Claude in VS Code 4. No 5. Hermes Agent I use a carefully curated selection of agents for my "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50352304",
+    "author": "reacharavindh",
+    "date": "2026-11-03",
+    "text": "heir wagon to one AI provider unless they came with an order of magnitude better quality at competitive costs.. For example, we use Claude Opus 5.5 for particular tasks that justifies its cost, but use self-hosted(not really\u2026 hosted on AWS Bedrock, but the point applies in spirit) cheaper models from Anthropic\u2019s competitors and even open weight models for specialized tasks that don\u2019t need the frontier model. Even if Anthropic pulls a huge lead against their competitors, there is no reality where the whole world sticks to "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50350646",
+    "author": "littlecranky67",
+    "date": "2026-11-03",
+    "text": "The thing is the have been told to use the tokens wisely, but no limit is communicated. Still everybody is hesitant. To be fair, the company runs claude on AWS bedrock for data privacy requirements at a different pricelevel. But I guess that is the drawback for german job-security: each and all of them know they basically can't get laid off. I also attribute a lot of it to be just plain outright denial. I have a feeling a lot of people don't W"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50349129",
+    "author": "Bat-elN",
+    "date": "2026-11-03",
+    "text": " 2015, 70+ engineers, AWS Premier, Google Cloud & Snowflake Partner) with a growing GenAI practice and several active client projects. You'll build production LLM agents for clients: multi-agent systems, tool use and RAG, in Python, on AWS Bedrock and GCP Vertex AI. Direct client contact. We're looking for a hands-on engineer (not a research or prompt-only role) who has built and shipped LLM agents to production, with frameworks like Strands Agents, LangChain, Agno, Deep Agents, Google ADK or Claude Agent SDK. Just as imp"
+   }
+  ]
+ },
+ {
+  "name": "OpenCode Go / Zen",
+  "url": "https://opencode.ai/go",
+  "score": 50.4,
+  "github_stars": null,
+  "top_hn_story": null,
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50367326,
+    "author": "ctolsen",
+    "text": "1) Right now I have Opencode Go Plus, Mistral Pro, Kimi. It changes. Kimi is not staying and I'm probably getting ChatGPT for a bit, last month I had Claude Pro. I stay around \u20ac100 a month total. I generally use open weight models (Kimi K3.1, Mistral Large 4, GLM-5.3, DeepSeek v4.1 Flash, M"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50367589,
+    "author": "peepee1982",
+    "text": " my coding agents on all my personal computers and my VPS. For the actual agents I use Claude Code for my Claude subscription, Codex for my OpenAI subscription (I usually only keep one of those at a time), and pi for my OpenCode Go subscription. I mostly use Sonnet 5.5 medium and Sol 6.1 medium for everything. But lately I have been using DeepSeek 4.1 Flash a lot and find it very capable. At work I use T3 Code as well, but it isn't connected to my personal machines or subscriptions and "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50367789,
+    "author": "swiftcoder",
+    "text": "For personal stuff, a $10/month OpenCode Go subscription with OpenCode, mostly running DeepSeek Flash. I've yet to run out of tokens. Work provides an enterprise Claude subscription for work stuff, I've never hit any limits on that either."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50370716,
+    "author": "slipwalker",
+    "text": "1) GPT plus, z.ai GLM Coding Lite-Monthly Plan ( legacy ), Opencode Go 2) personally, no. At work there is a Gemini Enterprise and Kiro Pro+ subscriptions 3) pi.dev inside herdr; both at home and work. I just pile the APIkeys and stick to same harness. 4) mostly, pi-subagents has an orchestration mode 5) no."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373317,
+    "author": "platevoltage",
+    "text": "Opencode with $10 Opencode Go plan until his heinous Clammy Sammy lets me have enough Ram for a local inference setup."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373351,
+    "author": "Aozora7",
+    "text": "I subscribe to OpenCode Go when I have a personal projects I need to work on. It's by far the best value since it's only $10 and I doesn't run out of its five hour limit in an hour they way Claude Code/Codex do. Models are more than good enough. At work, I'm using Codex with the subscr"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373357,
+    "author": "guhcampos",
+    "text": "dium as my Code Viewer. I almost never need anything stronger than Sonnet at work - 80% of which is YAML and Terraform these days (or rather markdown, if you really think about it). 1.b) For personal stuff I maintain an Opencode GO subscription, USD40 tier. I also have a Google One subscription which is supposed to have some AI capabilities, haven't tested it yet. 2) Besides my Opencode GO subscription, I sometimes add a few bucks to use Zen. It's rare: my USD40 is usually fine for the "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373974,
+    "author": "browningstreet",
+    "text": "1 - Opencode Go $40, Claude $20, $0-100 on Deepseek API 2 - No 3 - I use a lot of Opencode + Deepseek, strategize some of that work with Claude Opus, and some gtm, research, and project stuff in Hermes with its coding agent. When I guide by hand I use Orca Dev, which is love"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373985,
+    "author": "Arubis",
+    "text": "$200/ea plans on Claude and Codex, plus OpenCode Zen for experimenting with other models, plus Qwen3.8-28b locally. (I test-drove DS4 Flash locally in a 128GiB MBP for a while, but the tokens per second were too slow to be useful for more than being a toy.) At my prior anchor client I had an additional max20 pl"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50374549,
+    "author": "smashed",
+    "text": "I am using mainly claude code on a Pro subscription. I also have an OpenCode Go subscription, so I can keep an eye on the capabilities of the Chinese models. Opus 5.5 medium for the vast majority of coding and code review tasks. I will sometimes save on tokens by dropping to sonnet if I have a well detailed plan built with opus. I spend "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50374806,
+    "author": "einhard",
+    "text": "1) OpenCode Go $10, though I'm just experimenting with it. Before I have just been using the free models available in OpenCode, since sometimes its hard to justify a subscription when you're unemployed. 2) I tried a local Qwen model but my poor old 1660 Ti did not enjoy it,"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50375807,
+    "author": "Footprint0521",
+    "text": "I am currently stacking 5 opencode go accounts, spending $50 a month for $500 in deepseek v4.1 flash credits, using OMP as my harness"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50376145,
+    "author": "amboo7",
+    "text": "1. none 2. nvidia nim, opencode zen, google free models. local QFN iq3_xss on m1 max 64gb, paperniuk splash 3. pi agent, pi pocket 4. no 5. no"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50376216,
+    "author": "rcgeorge23",
+    "text": " a $20 codex subscription. I initially just used codex cloud but more recently have been using opencode with the open chamber ui over the top of it. Codex usage limits have really gone down hill so I also now have a $10 opencode go subscription on which I pretty much just use DeepSeek 4.1 flash. I\u2019ve found DS to be a great model - probably somewhere just below GPT 6.1 Sol but at a fraction of the price. In terms of workflow, I discuss features with chat gpt (because it\u2019s free and it has"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50395427",
+    "author": "djleni",
+    "date": "2026-11-06",
+    "text": "I haven\u2019t really gotten into comparing models but I wonder if I\u2019m doing something wrong or different, because results like these don\u2019t match my experience. I\u2019m using OpenCode Go/Zen with OMP and generally DeepSeek Flash will complete a task for 10 cents or less. Every time I\u2019ve used any OpenAI models, even Luna, it burned through dollars for similar complexity tasks. Is it the effort settings? I leave OMP on auto. Something else?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50134038",
+    "author": "kelvinjps10",
+    "date": "2026-10-17",
+    "text": "opencode go and zen?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49434299",
+    "author": "estebarb",
+    "date": "2026-08-25",
+    "text": "Personally I have been using Deepseek V4 flash and it is enough for my needs. You can use OpenCode Zen/Go and also get access to many other models, including OpenAI ones. Writing purpose specific agents can make cheaper models close the intelligence gap with the most expensive ones"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49367253",
+    "author": "OleksandrC",
+    "date": "2026-08-19",
+    "text": "y is even smaller (0.6 MB), MIT-licensed. No wasm though. Important difference - fx is currently Vercel AI Gateway only - while hax does support multiple providers already (OpenAI API, ChatGPT/Codex subscription, Anthropic API, OpenRouter, OpenCode Zen/Go), and integrates well out of the box with local llama-server."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49243824",
+    "author": "bellowsgulch",
+    "date": "2026-08-10",
+    "text": "rrent experiences? qwen3.6-35b-a3b for local inference, GitHub Copilot Chat was previously worth it, and no longer is, tried OpenRouter and still read through their rankings to see what the industry is actively using, wholesale migrated to OpenCode Zen/Go. Does this mirror what other people have been experiencing in waves?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48752252",
+    "author": "dizhn",
+    "date": "2026-07-01",
+    "text": "It's only a cli because they yanked out the opencode desktop code. (As well as the opencode go/zen model provider) Edit: my theory is they wanted to mimic being the primary provider in a quick way with a lot of string replace. Though they could have added opencode back as a regular provider."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48740921",
+    "author": "2muchtime",
+    "date": "2026-07-01",
+    "text": "Opencode Go/Zen claim to use infrastructure based in the EU, USA and Singapore that have a 0 retention policy."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48716016",
+    "author": "Mashimo",
+    "date": "2026-06-29",
+    "text": "OpenRouter, Z.ai coding plan, OpenCode Go, OpenCode Zen .. and probably more."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48627787",
+    "author": "jiri",
+    "date": "2026-06-22",
+    "text": "opencode zen go?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48626303",
+    "author": "2muchtime",
+    "date": "2026-06-22",
+    "text": "The amount the HN community, at least from what I\u2019ve seen, is sleeping on OpenCode Go (and zen) is kind of amazing. $10 a month gets you generous usage with the best open weight models and they claim to have zero retention and not to train on your usage. It\u2019s unclear to me what the advantages of openrouter are but it seems to be a default I see many people talkin"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48526881",
+    "author": "jamesinmn",
+    "date": "2026-06-14",
+    "text": "Just look up OpenRouter, OpenCode Go/Zen, Together, Fireworks, Cerebras, etc. DeepSeek Platform API is worth checking out too, due to their insanely good caching and token costs."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48472033",
+    "author": "klardotsh",
+    "date": "2026-06-10",
+    "text": "ere AI costs are rising from nearly all providers (sometimes for multiple reasons) seems like exactly the thing I'd expect them to pull the subsidy plug on after a launch teaser. (Even the open-weight models sometimes do this: for example, OpenCode Zen/Go has a rotating door of free models at any given time that eventually leave the free tier and move into the paid tier once the launch day hype/marketing dies down)"
+   }
+  ]
+ },
+ {
+  "name": "llm (Simon Willison)",
+  "url": "https://llm.datasette.io",
+  "score": 40.7,
+  "github_stars": 12719,
+  "top_hn_story": null,
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50385840,
+    "author": "degrees57",
+    "text": "You're not the only one using Perplexity Pro at $17 per month. And for what I've needed it to help me with, it has been fantastic. I had installed ROCm (the AMD local LLM toolkit), and it turns out one of the tasks I wanted to do wouldn't work with my (somewhat older) video card. Llama.cpp had a dependency on HIP 6.1, but my hardware can only do HIP 5.7. PP talked me through downloading the code from Github and running a command to"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46717483,
+    "author": "disgruntledphd2",
+    "text": "0 trials/tasks to get a good estimate. Personally, that sounds really implausible, and even if you did accomplish this, I'd be sceptical of the results as one would expect a learning effect (getting better at both using LLM tools and side projects in general). The simple answer here (to your original question) is no, you probably can't measure this yourself as you won't have enough data or enough controls around the collection of this data to make accurate estimates. To get anywhere "
+   },
+   {
+    "src": "ask_hn",
+    "id": 43961386,
+    "author": "wrasee",
+    "text": "I think you\u2019re arguing a straw man I don\u2019t think the point was \u201cdon\u2019t use LLM tools\u201d. I read the argument here as about the best way to integrate these tools into your workflow. Similar to the parent, I find interfacing with a chat window sufficiently productive and prefer that to autocomplete, which is just too noisy for me."
+   },
+   {
+    "src": "ask_hn",
+    "id": 46630799,
+    "author": "codebolt",
+    "text": "Giving the LLM tools with an OData query interface has worked well for me. In C# it's pretty trivial to set up an MCP server with OData querying for an arbitrary data model. At work we have an Excel sheet with 40k rows which the LLM was able to quickly and reliably analyse using"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48451913,
+    "author": "irthomasthomas",
+    "text": "nd iteratively refines a response. This was inspired by a karpathy tweet [0] and the prototype created using another tool of mine: The LLM Plugin Generator plugin (essentially a curated collection of plugins for simonws llm cli as a few-shot prompt) The llm-model-gateway companion plugin lets you serve models from the LLM cli as a an openai API. This allows you to use saved consortiums in your various clients as if they where a regular model. Bringing massive parallel reasoning to a"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48455360,
+    "author": "manphone",
+    "text": " whenever I am; transcoding, subtitles, specialized dupe and renaming metadata. A little automated datawarehouse that manages all my output in an object store. My own tag system of course. A personalized eval system for llm tools."
+   },
+   {
+    "src": "ask_hn",
+    "id": 44103459,
+    "author": "noosphr",
+    "text": "t better, this will not always be the state of things, but for now \u201cvibe coding\u201d (specifically not reviewing/writing code yourself) is not sustainable. It will not. And I say this as someone whose been building internal LLM tools since 2021. The issue is their context window. If you increase the context window so they can see more code costs skyrocket as n^2 the size of the code base. If you don't then you have all the issues people have in this thread. The reason why I have a job ri"
+   },
+   {
+    "src": "ask_hn",
+    "id": 44096006,
+    "author": "souenzzo",
+    "text": "my code setup hasn't changed in 10 years I tried to use many LLM tools. They are generally not capable of doing anything useful in a real project. Maybe solutions like MCP, that allow the LLM to access the git history make the LLM become useful for someone that actually works on a project."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50190840,
+    "author": "tstrimple",
+    "text": "pedantic, but in my mind a feedback loop involves both feedback and a loop . So by my reckoning the \"feedback loop\" must, by definition, guide the direction of the next step. I hold this true of feedback loops with zero LLM tooling involved. It's the same thing. The \"entity\" determining whether to continue the loop or not must have a good enough definition of success or improvement. Of course there is a lot of variability in how effectively the feedback is delivered. That's one of th"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50383819",
+    "author": "juampatronics",
+    "date": "2026-11-05",
+    "text": "[ipyllm]( https://juampatronics.com/ipyllm/ ) is an *IPython extension* that lets you talk to any model supported by the [`llm`]( https://llm.datasette.io/ ) Python package *from inside the running shell*. The model doesn't get a paste \u2014 it gets a set of tools that can see your variable names and types, inspect a specific object, read your recent input history, and \u2014 with your permission \u2014 run code in the live namespace, so it "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49565008",
+    "author": "simonw",
+    "date": "2026-09-04",
+    "text": "My automation is pretty simple. I use my https://llm.datasette.io tool where I have a template saved: llm \"Generate an SVG of a pelican riding a bicycle\" --save pelican When a model comes out I first make sure LLM can talk to it - usually by updating the relevant plugin, but if it's on OpenRouter I can use it directly with https://github.co"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49530540",
+    "author": "simonw",
+    "date": "2026-09-02",
+    "text": "For the transcripts I shares above I'm using my https://llm.datasette.io/ tool - it has the ability to export logs to markdown: llm logs -cue > transcript.md Then I paste that into a Gist, then paste the Gist URL into https://tools.simonwillison.net/markdown-svg-renderer "
+   },
+   {
+    "src": "hn_comment",
+    "id": "47851955",
+    "author": "simonw",
+    "date": "2026-04-21",
+    "text": "I've been maintaining an abstraction layer over multiple providers for a couple of years now - https://llm.datasette.io/ The best effort we have to defining a standard is OpenAI harmony/responses - https://developers.openai.com/cookbook/articles/openai-harmo... - but it's not seen much pickup. The older OpenAI Chat Completions thing is much more of an ad-hoc standard - almost every provider en"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47055281",
+    "author": "simonw",
+    "date": "2026-02-18",
+    "text": "Took me a while to create the pelican because I was busy adding Opus/Sonnet 4.6 support to my plugin for https://llm.datasette.io/ - pelican now available here, it's not quite as good as the Opus 4.6 one but does look equivalent to the Opus 4.5 one - and it has a snazzy top hat. https://simonwillison.net/2026/Feb/17/claude-sonnet-46/ "
+   },
+   {
+    "src": "hn_comment",
+    "id": "46959264",
+    "author": "simonw",
+    "date": "2026-02-10",
+    "text": "t-containers/ - in which I reverse engineered and documented a massive new feature of ChatGPT that OpenAI hadn't announced or documented anywhere I remain very proud of my current open source projects too - https://datasette.io and https://llm.datasette.io and https://sqlite-utils.datasette.io and a whole lot more: https://github.com/simonw/simonw/blob/main/releases.md Are you ready to say none of that is \"novel or compelling\", in good faith?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46582748",
+    "author": "simonw",
+    "date": "2026-01-12",
+    "text": "My great regret from the past few years is that experimenting with LLMs has been such a huge distraction from my other work! My https://llm.datasette.io/ tool is from that era though, and it's pretty cool."
+   },
+   {
+    "src": "hn_comment",
+    "id": "46254305",
+    "author": "simonw",
+    "date": "2025-12-13",
+    "text": "I shipped a new release yesterday - https://llm.datasette.io/en/stable/changelog.html#v0-28 but yeah, the last core release before that was in August. I've been pushing out plugin releases for it though, for new models from Gemini and Anthropic and others. Honestly the main problem has been that LLM's unique selling point back in 2024 "
+   },
+   {
+    "src": "hn_comment",
+    "id": "46240331",
+    "author": "austhrow743",
+    "date": "2025-12-12",
+    "text": "was it, no other competitors or naming schemes to worry about, and discussions were still full of people talking about current capabilities without saying what model they were using. For me, \"gemini\" currently means using this model in the llm.datasette.io cli tool. openrouter/google/gemini-3-pro-preview For what anyone else means? If they're equivalent? If Google does something different when you use \"Gemini 3\" in their browser app vs their cli app vs plans vs api users vs third party api users? No idea to any of the above. I "
+   },
+   {
+    "src": "hn_comment",
+    "id": "45989206",
+    "author": "benatkin",
+    "date": "2025-11-20",
+    "text": "llm is a lot about the Python API (or SDK) as well: https://llm.datasette.io/en/stable/python-api.html It shows how to use it async or sync, and even handles using async in a sync context. It's hard to write a good CLI without also writing most of a Python API, and llm went the rest of the way by documenting it. I think llm has the best docs of the Py"
+   }
+  ]
+ },
+ {
+  "name": "Claude Code Router",
+  "url": "https://github.com/musistudio/claude-code-router",
+  "score": 31.4,
+  "github_stars": 38033,
+  "top_hn_story": {
+   "title": "Claude Code Router",
+   "points": 160,
+   "id": "44705958",
+   "url": "https://github.com/musistudio/claude-code-router"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50151581",
+    "author": "pwillia7",
+    "date": "2026-10-19",
+    "text": "Until they quit subsidizing my personal tokens I don't think I want this. I do love having insight when I run qwen locally through Claude Code Router so I do agree it's so valuable to have, just not valuable enough to pay API rates lol"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49914586",
+    "author": "imshaikot",
+    "date": "2026-09-30",
+    "text": "Whatever it is - I'm not gonna use AGY again. I'd rather use claude-code-router instead, to give gemini-4 a shot."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47918768",
+    "author": "fxtentacle",
+    "date": "2026-04-27",
+    "text": "Ugh. This is peak AI influencer. It\u2019s a 21 page AI-generated presentation and an AI prompt for: npm i -g @musistudio/claude-code-router So it looks like the person who set up this GitHub repository didn\u2019t even make the software that does all the actual work. They also never mention the original author in the README. But, of course, their AI prompt includes instructions to open their homepage, so this is effectiv"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47632093",
+    "author": "scottcha",
+    "date": "2026-04-03",
+    "text": "I use OpenCode and have just started using Nanoclaw with ClaudeCode (my coworker has a post coming on this) and sometimes ClaudeCode with Claude Code Router. I do a range of small to complex work with these but I also do drop back in to Claude Opus for some really complex things where I want it to be more autonomous."
+   },
+   {
+    "src": "hn_comment",
+    "id": "46992227",
+    "author": "claythearc",
+    "date": "2026-02-12",
+    "text": "anything with an open ai compatible endpoint can have claude code router put in front of it afaik https://github.com/musistudio/claude-code-router "
+   },
+   {
+    "src": "hn_comment",
+    "id": "46986042",
+    "author": "rnewme",
+    "date": "2026-02-12",
+    "text": "Claude code router"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46968135",
+    "author": "all2",
+    "date": "2026-02-10",
+    "text": "mall batches until the feature is complete. I'm running golang for my projects right now. I can try a more strongly typed language, but that means learning a whole new language and its gotchas and architectural constraints. Right now I use claude-code-router and Claude Code on top of openrouter, so swapping models is trivial. I use mostly Grok-4.1 Fast or Kimi 2.5. Both of these choke less than Anthropic's own Sonnet (which is still more expensive than the two alternatives)."
+   },
+   {
+    "src": "hn_comment",
+    "id": "46918735",
+    "author": "shortformblog",
+    "date": "2026-02-06",
+    "text": "Curious to see how this worked, I tried this on Deepseek using Claude Code Router, following the author\u2019s guide, with two small changes: Make it an emo song that uses acoustic guitar (or, obviously an equivalent), and it could install one text-to-speech tool using Python. It double-tracked the vocals like freaking Elliott Smith, which cracked me up."
+   },
+   {
+    "src": "hn_comment",
+    "id": "46903407",
+    "author": "sathish316",
+    "date": "2026-02-05",
+    "text": "You can run an ensemble of LLMs (Opus, Gemini, Codex) in Claude Code Router via OpenRouter or any Agent CLI that supports Subagents and not tied to a single LLM like Opencode. I have an example of this in Pied-Piper, a subagent orchestrator that runs in Claude Code or ClaudeCodeRouter and uses distinct model/roles for each Subagent: 1. GPT-5.2 Codex Max"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46894094",
+    "author": "sathish316",
+    "date": "2026-02-05",
+    "text": "Claude Code Router or ccr can connect to OpenRouter. When your quota runs out, it\u2019s a much better speed vs quality vs cost tradeoff compared to running Qwen3 locally - https://github.com/musistudio/claude-code-router "
+   },
+   {
+    "src": "hn_comment",
+    "id": "46725633",
+    "author": "g4cg54g54",
+    "date": "2026-01-22",
+    "text": "osted by a reseller - with some proxy that offers anthropic format to my claude --- but it seems like nothing gets to fully line things up (double-translated tool names for example) reseller is abacus.ai - tried BerriAI/litellm, musistudio/claude-code-router, ziozzang/claude2openai-proxy, 1rgs/claude-code-proxy, fuergaosi233/claude-code-proxy,"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46693369",
+    "author": "foobar10000",
+    "date": "2026-01-20",
+    "text": "Claude code router"
+   }
+  ]
+ },
+ {
+  "name": "Vercel AI Gateway",
+  "url": "https://vercel.com/ai-gateway",
+  "score": 27.3,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Building an AI blog post summary feature with Vercel's AI Gateway",
+   "points": 5,
+   "id": "45430510",
+   "url": "https://www.ericdodds.com/blog/building-an-ai-blog-post-summary-feature-using-vercel-ai-gateway"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50367976,
+    "author": "laserlinus",
+    "text": "1. Two Claude Ultra, ChatGPT plus, Gemini through credits 2. Pay-per-token for work through Vercel AI Gateway (mainly same models + grok, but trying out others too) 3. Claude Code, Codex & OpenCode 4. Homebuilt https://svall.dev/ 5. No"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50367976",
+    "author": "laserlinus",
+    "date": "2026-11-04",
+    "text": "1. Two Claude Ultra, ChatGPT plus, Gemini through credits 2. Pay-per-token for work through Vercel AI Gateway (mainly same models + grok, but trying out others too) 3. Claude Code, Codex & OpenCode 4. Homebuilt https://svall.dev/ 5. No"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49926328",
+    "author": "boundlesshq",
+    "date": "2026-10-01",
+    "text": "Hi HN - I'm Santiago, VP of Marketing at Boundless, an inference platform for open models. We're now serving Laya, the open-source alternative to Jev, for free on Vercel AI Gateway (through Oct 31)."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49925880",
+    "author": "thymikee",
+    "date": "2026-10-01",
+    "text": "6% for Claude Opus 5.5. The reported evaluation cost is $7.72 versus $28.75. These are our benchmarks, so we\u2019d encourage you to try tasks from your own repository too. Over the weekend we released a stealth version of Apex, Pixel Canary on Vercel AI Gateway. In Vercel\u2019s Next.js evaluation, that preview passed 28 of 31 tasks, or 30 with documentation in context, matching GPT-6 Astra. Opening free access to the model on AI Gateway smashed our infrastructure and in these first days Pixel Canary was slow. We're not DevOps by train, but"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49845258",
+    "author": "matt_oriordan",
+    "date": "2026-09-25",
+    "text": "landscape/ and https://github.com/mattheworiordan/jev-landscape/ , which scanned ~6k posts and looked at the data from two public gateways and twenty rapidly emerging rivals). The short version. Adoption is very real (a quarter of Vercel's AI Gateway requests, 2% of its tokens), but the 100x claim is against frontier models. In practie, Jev is more like 7x and 5x against small models you'd have likely used. So my conclusion is Jev is a great model, unblocks things you could not do before when you're in builder mode, but when"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49766524",
+    "author": "annjose",
+    "date": "2026-09-19",
+    "text": "And on Vercel AI gateway"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49754538",
+    "author": "matt_oriordan",
+    "date": "2026-09-18",
+    "text": "Hi HN, Matt here, co-founder of Ably. I built this after Jev landed on Vercel's AI Gateway: https://github.com/ably-labs/jev-pong It's pong where the ball moves one step per model decision. Four lanes, one model each, same serve, same rules. Every step the model gets the same tiny JSON state (ball, paddle, predicted intercept) and the same question: up, down or stay. "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49656364",
+    "author": "maxcoding",
+    "date": "2026-09-11",
+    "text": "Vercel AI Gateway also route to other providers, so the same issues can occur there as well."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49656251",
+    "author": "james-bcn",
+    "date": "2026-09-11",
+    "text": "Vercel AI Gateway is one I've used: https://vercel.com/ai-gateway/models "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49629893",
+    "author": "mattmcal",
+    "date": "2026-09-09",
+    "text": "OpenCode but I variously use DeepSeek API/OpenRouter/Vercel AI gateway. I'm sure it's the combo of model + inference provider that is the issue and not the model alone. DeepSeek API also has far better inference speed and reliability than the cheapest providers. That said I never seem to have these issues when using GLM 5.3 flash served by OpenRout"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49373804",
+    "author": "mellosouls",
+    "date": "2026-08-20",
+    "text": "Would like to try this but the apparent requirement of a credit card (Vercel AI Gateway) and lack of transparency in how to avoid that ever being used is a big fat nope."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49367253",
+    "author": "OleksandrC",
+    "date": "2026-08-19",
+    "text": "hor). Most of the list applies, similar minimalist Unix tool approach, with some differences. Hax is written in C, the dynamically linked binary is even smaller (0.6 MB), MIT-licensed. No wasm though. Important difference - fx is currently Vercel AI Gateway only - while hax does support multiple providers already (OpenAI API, ChatGPT/Codex subscription, Anthropic API, OpenRouter, OpenCode Zen/Go), and integrates well out of the box with local llama-server."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49354194",
+    "author": "konaraddi",
+    "date": "2026-08-18",
+    "text": "Nice to see herdr support. The docs seem to imply it only works with vercel\u2019s AI gateway? I guess it cant be configured to use another provider?"
+   }
+  ]
+ },
+ {
+  "name": "cc-switch",
+  "url": "https://github.com/farion1231/cc-switch",
+  "score": 25.0,
+  "github_stars": 152579,
+  "top_hn_story": {
+   "title": "CC Switch: Claude Code and Codex Provider Switcher",
+   "points": 3,
+   "id": "45861477",
+   "url": "https://github.com/farion1231/cc-switch"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 46264180,
+    "author": "radio879",
+    "text": "k in Claude Code it burns thru all the credits too fast. I am having a LOT of great luck using Minimax M2 in Claude Code, its very cheap, and it works so good.. its close to Sonnet in Claude Code. I use this tool called cc-switch to swap out different models for Claude Code."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49343556",
+    "author": "dongkeren",
+    "date": "2026-08-18",
+    "text": "enRouter. If you want to have a even better harness experience, then I would say the native harness from codex or claude code is still the best, you don't have give away the native harness just because it binds to the original models; with cc-switch you can use the native harness with alternative models like DeepSeek, cc-swith does lots of work to support this setup in best effort. For example, the latest Codex uses Responses API, while lots of cheap models are still using Chat Completions, then with cc-swith, you can have:"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48241780",
+    "author": "thisisit",
+    "date": "2026-05-22",
+    "text": "Found this: https://github.com/farion1231/cc-switch It allows for switching models in Claude Code."
+   },
+   {
+    "src": "hn_comment",
+    "id": "46264180",
+    "author": "radio879",
+    "date": "2025-12-14",
+    "text": " to 'hack it' to work in Claude Code it burns thru all the credits too fast. I am having a LOT of great luck using Minimax M2 in Claude Code, its very cheap, and it works so good.. its close to Sonnet in Claude Code. I use this tool called cc-switch to swap out different models for Claude Code."
+   }
+  ]
+ },
+ {
+  "name": "Chutes",
+  "url": "https://chutes.ai",
+  "score": 23.0,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "OpenCode on a Budget \u2013 Synthetic.new, Chutes.ai, and Z.ai",
+   "points": 3,
+   "id": "47144700",
+   "url": "https://blog.patshead.com/2026/02/opencode-on-a-budget-synthetic-dot-new-chutes-dot-ai-and-z-dot-ai.html"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 48416641,
+    "author": "0xbadcafebee",
+    "text": "ENTS.md instructions to not use that dir are always ignored. Set API tokens in env vars for most services and modern AI models will figure out how to use them (cli, api, etc). 2) OpenCode Go subscription, backstopped by Chutes Plus subscription, OpenRouter with $10 in credit (for very rare use of SOTA models), and various free providers (options: https://codeberg.org/mutablecc/calculate-ai-cost/src/branch/... ). I almost never run out of the OpenCode Go subscription so I'm not a he"
+   },
+   {
+    "src": "ask_hn",
+    "id": 43964793,
+    "author": "kristopolous",
+    "text": "typo correct. I have that turned on at the shell level (setopt correct) but sometimes it doesn't work like here git cloen blahalalhah I did a ctrl+x x and it fixed it. I'm using openrouter/google/gemma-3-27b-it:free via chutes. Not a frontier model in the slightest."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50393648",
+    "author": "genxy",
+    "date": "2026-11-06",
+    "text": "A real expert told Elon that self landing rockets were possible over chutes. The retconning to build the myth of Elon is ridiculous. Lars Blackmore was doing self-landing rocket research before he went to spacex. Musk's reusable rockets (who doesn't want that, this is why the shuttle exists) wanted to use parachutes."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50388763",
+    "author": "aliasxneo",
+    "date": "2026-11-06",
+    "text": "your confusion about America seriously. In places such as the Lubyanka basement, Butovo firing range, and other NKVD sites, prisoners were often shot in the back of the head while standing or seated. Some facilities had drainage systems or chutes. Bodies were trucked to pre-prepared mass graves (Katyn, Kurapaty, Bykivnia, and many others). This was part of a deliberate system of class-based and political terror: the Red Terror under Lenin, the Great Purge, dekulakization, the Holodomor, and the gulag system. If you can s"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49770143",
+    "author": "jmbwell",
+    "date": "2026-09-19",
+    "text": "s too. And wild cars. All the action sequences have the delightful feel of an eight year old playing with toys. In fact a lot of it seems to have a fun child\u2019s-idea aspect. \u201cAnd it\u2019s part submarine and part fighter jet! And they slide down chutes into the cockpit! And his office is a secret elevator! And all the grownups are doing computer things! And to get a whiskey you push a whiskey button! And the whole thing is under a movie studio!\u201d But god yes, Stryker\u2019s family story is harsh . Way overbearing the trope that he\u2019s"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49623079",
+    "author": "irthomasthomas",
+    "date": "2026-09-09",
+    "text": "Chutes.ai models are served from a Trusted Execution Environment, so the GPU owners can't see your prompts."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49535073",
+    "author": "Youden",
+    "date": "2026-09-02",
+    "text": "Chutes, Near AI, Phala and Tinfoil all offer various privacy assurances around inference. Some of the bigger providers also offer \"zero data retention\". The problem I have with these is that the guarantees aren't strong enough (Phala, Near) or the models are old (Tinfoil). Chutes is mo"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49336833",
+    "author": "ignoramous",
+    "date": "2026-08-17",
+    "text": "> So theres nothing to price against. To my surprise, providers on OpenRouter (io/akash/chutes) are serving Qwen3.8 27B at ~ $0.4 (in) / $3 (out) / $0.25 (cache), more expensive than DeepSeek v4 Flash . https://openrouter.ai/qwen/qwen3.8-27b / https://archive.vn/RrDGO "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49169404",
+    "author": "bombcar",
+    "date": "2026-08-04",
+    "text": "quick for a human. Washing the dishes is boring for the human, but a robot gets a sort of sick and twisted pleasure from cycling that dirty water around for hours on end. In fact, we've removed some labor-saving features of houses (laundry chutes went away decades ago, and only recently has \"laundry on the bedroom floor\" become somewhat standard) for \"safety\". MAKE DUMBWAITERS GREAT AGAIN"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48942054",
+    "author": "ignoramous",
+    "date": "2026-07-17",
+    "text": "> continuing to refuse to use chinese models due to security and IP concerns One can run open weights in an exclusive TEE'd GPU too, which still comes out cheaper than closed weight LLMs. Ex: https://chutes.ai/pricing "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48416641",
+    "author": "0xbadcafebee",
+    "date": "2026-06-05",
+    "text": "/tmp/ because the AGENTS.md instructions to not use that dir are always ignored. Set API tokens in env vars for most services and modern AI models will figure out how to use them (cli, api, etc). 2) OpenCode Go subscription, backstopped by Chutes Plus subscription, OpenRouter with $10 in credit (for very rare use of SOTA models), and various free providers (options: https://codeberg.org/mutablecc/calculate-ai-cost/src/branch/... ). I almost never run out of the OpenCode Go subscription so I'm not a heavy user. Use Kimi K"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48175612",
+    "author": "dnnddidiej",
+    "date": "2026-05-18",
+    "text": "So fast they shit their pants as the chutes were deployed."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48120822",
+    "author": "irthomasthomas",
+    "date": "2026-05-13",
+    "text": "erving and hosting APIs that let you add your own GPUs to a pool and earn money. But for regular inference they have an openai responses API a basic chat app. You can signup to a $3 subscription, or deposit $5 and use your api key. https://chutes.ai/app/chute/2ff25e81-4586-5ec8-b892-3a6f3426... curl -X POST \\ https://llm.chutes.ai/v1/chat/completions \\ -H \"Authorization: Bearer $CHUTES_API_TOKEN\" \\ -H \"Content-Type: application/json\" \\ -d ' { \"model\": \"moonshotai/Kimi-K2.5-TEE\", \"messages\": [ { \"role\": \"user\", \"content\":"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48086211",
+    "author": "comment0r",
+    "date": "2026-05-10",
+    "text": "I tried looking into Chutes just now. Seems like there is no easy way to just pay & start using it with OpenCode or Claude Code, right? Their docs don\u2019t seem to mention it. Do I really have to execute code with their API in order to use the models?"
+   }
+  ]
+ },
+ {
+  "name": "Portkey",
+  "url": "https://portkey.ai",
+  "score": 21.3,
+  "github_stars": 13339,
+  "top_hn_story": {
+   "title": "Benchmarking AI Gateways: GoModel vs. LiteLLM vs. Portkey vs. Bifrost",
+   "points": 4,
+   "id": "48688213",
+   "url": "https://enterpilot.io/blog/benchmarking-ai-gateways-gomodel-litellm-portkey-bifrost-june-2026/"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "48688214",
+    "author": "santiago-pl",
+    "date": "2026-06-26",
+    "text": "GoModel author is here. This is my attempt to honestly compare GoModel vs LiteLLM vs Portkey vs Bifrost AI gateways."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48241949",
+    "author": "jubilanti",
+    "date": "2026-05-22",
+    "text": "docs.litellm.ai/docs/provider_registration/add_model... https://artificialanalysis.ai/api-reference https://github.com/simonw/llm-prices https://github.com/assistant-ui/modelpedia https://github.com/pydantic/genai-prices https://github.com/Portkey-AI/models https://github.com/truefoundry/models https://github.com/agentstation/starmap https://github.com/dcSpark/ai-model-catalog https://github.com/mitkury/aimodels https://github.com/nuxdie/ai-pricing "
+   },
+   {
+    "src": "hn_comment",
+    "id": "47820031",
+    "author": "ButlerianJihad",
+    "date": "2026-04-18",
+    "text": "ic's murder with: \"Kill the Spare!\" It turns out that Cedric, being superfluous to the \"Resurrection Ritual\" and Voldemort's plan of revenge, is actually a spare. In fact it was unexpected that two boys get through the whole thing with the Portkey and all. Harry was the only one who was supposed to end up there with the Death Eaters in the first place, so Cedric's appearance was quite unfortunate for everyone involved. But Cedric's \"spareness\" certainly didn't have to do with expendability as far as his Dad was concerned,"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47506280",
+    "author": "treefarmer",
+    "date": "2026-03-24",
+    "text": "If you're talking about their proxy offering, I had this exact same issue and switched to Portkey. I just use their free plan and don't care about the logs (I log separately on my own). It's way faster (probably cause their code isn't garbage like the LiteLLM code - they had a 5K+ line Python file with all their important code in it the last time I checked)."
+   },
+   {
+    "src": "hn_comment",
+    "id": "46712434",
+    "author": "nicklo",
+    "date": "2026-01-21",
+    "text": "i've always wondered (for this, portkey, etc) - why not have a parallel option that fires an extra request instead of mitm the llm call?"
+   }
+  ]
+ },
+ {
+  "name": "OmniRoute",
+  "url": "https://github.com/cheaper-inference/OmniRoute",
+  "score": 19.9,
+  "github_stars": 85385,
+  "top_hn_story": null,
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "48999634",
+    "author": "mrinterweb",
+    "date": "2026-07-21",
+    "text": "Two that I use are: * Openrouter.ai for a hosted router * https://github.com/diegosouzapw/OmniRoute for a local router"
+   }
+  ]
+ },
+ {
+  "name": "Cloudflare AI Gateway",
+  "url": "https://developers.cloudflare.com/ai-gateway/",
+  "score": 18.1,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Cloudflare AI Gateway now supports spend limits",
+   "points": 3,
+   "id": "48409284",
+   "url": "https://developers.cloudflare.com/ai-gateway/features/spend-limits/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 47397044,
+    "author": "icar",
+    "text": "I am working on getting the sailing Captain license (I started sailing when I was 8), and move my life there. I hate how things work nowadays. I feel like I am a police officer vs my friends/coworkers AI code. And I don't want to do that"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49963656",
+    "author": "bayesianbot",
+    "date": "2026-10-05",
+    "text": "CloudFlare AI Gateway was quite convenient for me - I wanted to give my zeroclaw instance a limited budget to services like Image generation/Replicate/Fal.ai, which would mean for each service I'd have to run my own proxy that stores the keys and cuts off the real calls if we go over the limits. Easy"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49543151",
+    "author": "nijave",
+    "date": "2026-09-02",
+    "text": "ork is all vibes...) Some gateways/proxies/hosts also offer multiple endpoints (z.ai has both Anthropic endpoint and Completions endpoint) Edit: Here's the PoC I made for work although it assumes you're using Cloudflare Access (VPN) with a Cloudflare AI Gateway to hand wave the auth away (auth to the LLM API gets auto injected by Cloudflare Access derived from the client's VPN connection) https://gist.github.com/nijave/6f5e5793a992619808135ce85fa49... "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49460891",
+    "author": "ma2kx",
+    "date": "2026-08-27",
+    "text": "Holy shit, is this model really that bad??? Just asked it a question via the custom opencode go endpoint routed over cloudflare ai gateway doesnt show me the correct models. My fault was that I set \" https://opencode.ai/zen/go \" as endpoint and tried my-gateway.com/custom-ocgo/v1/models, turns out I had to add /v1 to the opencode url and leave it on my -gateway.com. But first it told me that opencode is not on the "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49331981",
+    "author": "CharlesW",
+    "date": "2026-08-17",
+    "text": "Cloudflare AI Gateway launched in beta in 2023, and went GA in 2024. Recent overview: https://blog.cloudflare.com/ai-platform/ "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49191466",
+    "author": "kentonv",
+    "date": "2026-08-06",
+    "text": "The code currently supports Anthropic, OpenAI, Gemini, Workers AI, and ollama as AI providers. It additionally optionally supports sending all requests through Cloudflare AI Gateway as a proxy. The same set of providers is supported either way, but when you configure AI Gateway, we assume you intend to install side-wide API keys into the gatew"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49191389",
+    "author": "ahriad",
+    "date": "2026-08-06",
+    "text": "I'm talking about setting up one provider for the entire OS not about BYOK per user. Right now only cloudflare AI gateway is supported and in it you hardcoded it to US providers. Plus your AI workers and from your model you only supporting two."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49184301",
+    "author": "kentonv",
+    "date": "2026-08-05",
+    "text": "Use of Cloudflare AI Gateway is optional. In the default configuration, you just plop your Anthropic/OpenAI/Gemini/Workers AI/ollama API keys into the UI and it talks to each provider directly. That said, I would recommend AI Gateway, it has a lot of nice features. :)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48974911",
+    "author": "endlessroad1991",
+    "date": "2026-07-20",
+    "text": "sily audit the full source code. 2. Zero infra to operate: no VM to patch, no database server to maintain, no secret manager to set up; just upload worker code to Cloudflare. 3. Cloudflare provides sufficient free quota for personal use. - Cloudflare AI Gateway: Cloudflare AI gateway's budget control is static policies applied to a fixed time window (e.g. $1 every day). My implementation is more flexible: you can create a new budget limited token at any time, with any budget limit. My hope is that Cloudflare AI gateway just implements "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48891331",
+    "author": "mgranados",
+    "date": "2026-07-13",
+    "text": "s that i find myself usually doing with email: managing calendar invites, publishing and sharing calendars, but also want it to act like a proxy to avoid giving away my actual email in different services. It's a work in progress but I love cloudflare ai gateway, been using it to bring some ai into the functionalities. Future things: handling newsletters, more ai free use (?) If you wanna test it, please ping me so I add your email to allowlist!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47806253",
+    "author": "sf_tristanb",
+    "date": "2026-04-17",
+    "text": "Sexy, but I wouldn't trust it. Why ? because Cloudflare AI Gateway is reporting inaccurate/wrong price for flagship models such as Nano Banana 2 and Nano Banana pro (I run production app using those). Been reporting it on discord and twitter, and they don't care. Entreprise client here :)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47683418",
+    "author": "vbtechguy",
+    "date": "2026-04-08",
+    "text": " One command, any AI model, with transparent backgrounds, reference image editing, prompt engineering patterns, and composite banner generation built in. The skill supports five AI image models through OpenRouter\u2019s API, all proxied through Cloudflare AI Gateway for monitoring and cost control: Gemini 3.1 Flash Image Preview (Google Nano Banana 2) FLUX.2 Max Riverflow v2 Pro Seedream 4.5 GPT-5 Image"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47301851",
+    "author": "idrisitanzil",
+    "date": "2026-03-08",
+    "text": "I was routing support-bot traffic through Cloudflare AI Gateway and noticed the cache hit rate was near zero despite the product being mature. After pulling 500 consecutive cache misses and stripping requests down to just the user message, 89% mapped to fewer than 30 distinct intents. The misses weren't real misses; they were caused by reque"
+   }
+  ]
+ },
+ {
+  "name": "Synthetic",
+  "url": "https://synthetic.new",
+  "score": 14.1,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Synthetic.new <3 OpenCode",
+   "points": 9,
+   "id": "46571955",
+   "url": "https://synthetic.new/blog/2026-01-10-synthetic-heart-opencode"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50389193",
+    "author": "reissbaker",
+    "date": "2026-11-06",
+    "text": "Hey, thanks for the shout-out! (I'm one of the cofounders of Synthetic.new.) I think I recognize you from Discord :) Yep, on subscription plans DS4.1-Flash-1017 feels more or less infinite. I still reach for Astra at the high end of tasks but DS is great for cheap \"repeatedly crawl the entire codebase and find query optimization\" type tasks. I also use"
+   }
+  ]
+ }
+]

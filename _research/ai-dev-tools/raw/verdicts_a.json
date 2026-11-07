@@ -1,0 +1,630 @@
+{
+  "terminal": [
+    {
+      "name": "Claude Code",
+      "pos": 15,
+      "neg": 3,
+      "mixed": 1,
+      "neutral": 7,
+      "false": 0,
+      "what_it_is": "Terminal coding agent from Anthropic",
+      "verdict": "The default harness in HN setup threads, often run through Desktop, Web or T3 Code. Praised for UX, skills and remote control; complaints are usage burn, ignored memory and unwanted files.",
+      "cite": [
+        "50367215",
+        "50374732",
+        "50403136"
+      ],
+      "notes": ""
+    },
+    {
+      "name": "Codex CLI",
+      "pos": 12,
+      "neg": 5,
+      "mixed": 2,
+      "neutral": 7,
+      "false": 0,
+      "what_it_is": "OpenAI's terminal and desktop coding agent",
+      "verdict": "Usually the second subscription beside Claude, kept for review and second opinions. Credited with solid one-shots and fast-moving desktop features; dinged for hitting limits, bugs and loud default design taste.",
+      "cite": [
+        "50367676",
+        "50367744",
+        "50405283"
+      ],
+      "notes": ""
+    },
+    {
+      "name": "OpenCode",
+      "pos": 14,
+      "neg": 2,
+      "mixed": 1,
+      "neutral": 9,
+      "false": 0,
+      "what_it_is": "Open-source terminal coding agent, any model",
+      "verdict": "The go-to open harness for DeepSeek, GLM or local models, often on the $10 OpenCode Go plan. Liked for per-agent model choice; a few moved on to Pi or T3 Code.",
+      "cite": [
+        "50367789",
+        "50398365",
+        "50373248"
+      ],
+      "notes": ""
+    },
+    {
+      "name": "Pi",
+      "pos": 20,
+      "neg": 1,
+      "mixed": 1,
+      "neutral": 4,
+      "false": 0,
+      "what_it_is": "Minimal, hackable open-source coding agent harness",
+      "verdict": "A lean harness people bend to their own workflows, often with local or open models and the oh-my-pi fork. Liked for small prompts that fit tight context windows.",
+      "cite": [
+        "50374449",
+        "50368325",
+        "50359833"
+      ],
+      "notes": "Several ids appear twice (ask_hn and hn_comment copies of the same comment)."
+    },
+    {
+      "name": "Gemini CLI",
+      "pos": 6,
+      "neg": 7,
+      "mixed": 1,
+      "neutral": 7,
+      "false": 5,
+      "what_it_is": "Google's open-source terminal agent for Gemini",
+      "verdict": "Older threads used it as the free option and liked its web search and code explanations. By late 2026 commenters call it deprecated for subscribers and replaced by Antigravity CLI.",
+      "cite": [
+        "49714726",
+        "50081645",
+        "50079370"
+      ],
+      "notes": "5 false matches: Antigravity CLI mentions and a Gemini-protocol client."
+    },
+    {
+      "name": "Aider",
+      "pos": 7,
+      "neg": 4,
+      "mixed": 3,
+      "neutral": 12,
+      "false": 0,
+      "what_it_is": "Open-source terminal pair programmer, manual context",
+      "verdict": "The pre-agent pair programmer, still liked by a few for manual file control and accuracy. Most commenters moved on, calling the manual context loading busywork next to agentic tools.",
+      "cite": [
+        "46260755",
+        "50374626",
+        "43960110"
+      ],
+      "notes": "Several neutral hits are the Ask HN question text quoted back; one points to the successor Cecli."
+    },
+    {
+      "name": "DeepSeek Harness",
+      "pos": 16,
+      "neg": 0,
+      "mixed": 2,
+      "neutral": 5,
+      "false": 0,
+      "what_it_is": "DeepSeek's own agent harness, desktop and TUI",
+      "verdict": "A cheap home setup for many commenters, paired with DeepSeek Flash for a few dollars a month. Praised for speed, value and plugins; web search is the recurring weak spot.",
+      "cite": [
+        "50376062",
+        "50375427",
+        "50374306"
+      ],
+      "notes": "Many ids duplicated across ask_hn and hn_comment."
+    },
+    {
+      "name": "Goose",
+      "pos": 3,
+      "neg": 4,
+      "mixed": 1,
+      "neutral": 7,
+      "false": 7,
+      "what_it_is": "Block's open-source extensible agent, Linux Foundation",
+      "verdict": "Block's open agent, now under the Linux Foundation, used for everyday tasks and custom bots. A few like its TUI; others found it too agentic or no better than prompting directly.",
+      "cite": [
+        "50368526",
+        "50376056",
+        "46207457"
+      ],
+      "notes": "7 false matches: goose idioms, goose-neck microphone, Pygmy-Goose."
+    },
+    {
+      "name": "Copilot CLI",
+      "pos": 10,
+      "neg": 2,
+      "mixed": 2,
+      "neutral": 4,
+      "false": 1,
+      "what_it_is": "GitHub Copilot's terminal coding agent",
+      "verdict": "Used where work already pays for GitHub Copilot; users say it runs close to Claude Code on the same models. Complaints target Autopilot mode, token burn and a thin plugin system.",
+      "cite": [
+        "47391754",
+        "50208526",
+        "50103206"
+      ],
+      "notes": "1 false match: AWS Copilot CLI."
+    },
+    {
+      "name": "Qwen Code",
+      "pos": 4,
+      "neg": 2,
+      "mixed": 0,
+      "neutral": 4,
+      "false": 6,
+      "what_it_is": "Alibaba's terminal agent for Qwen models",
+      "verdict": "Mostly paired with local Qwen models on home hardware. One user built a 3D game with it in two days; others found local runs slow and error-prone next to Claude Code.",
+      "cite": [
+        "50013021",
+        "50373227",
+        "49530083"
+      ],
+      "notes": "6 false matches about Qwen Coder models rather than the CLI; thin direct evidence."
+    },
+    {
+      "name": "Muse Code",
+      "pos": 5,
+      "neg": 2,
+      "mixed": 2,
+      "neutral": 7,
+      "false": 0,
+      "what_it_is": "Meta's terminal agent for Muse models",
+      "verdict": "Usually a cheap extra subscription next to Claude or Codex. One user relies on it for code review; others note tight limits on the top model or say they barely touch it.",
+      "cite": [
+        "50285041",
+        "50373256",
+        "50377888"
+      ],
+      "notes": "7 neutral hits are the Ask HN question text quoted back; thin evidence."
+    },
+    {
+      "name": "Mistral Vibe",
+      "pos": 7,
+      "neg": 1,
+      "mixed": 2,
+      "neutral": 4,
+      "false": 0,
+      "what_it_is": "Mistral's open-source terminal coding agent",
+      "verdict": "Mostly used as a cheap way to run hosted GLM-5.3. Fans call it fast and good enough; critics say the harness is sluggish, times out or ignores instructions.",
+      "cite": [
+        "49932202",
+        "49536706",
+        "49757334"
+      ],
+      "notes": ""
+    },
+    {
+      "name": "Kimi CLI",
+      "pos": 8,
+      "neg": 1,
+      "mixed": 0,
+      "neutral": 6,
+      "false": 0,
+      "what_it_is": "Moonshot's open-source terminal agent for Kimi",
+      "verdict": "Moonshot's harness for Kimi models, used by Kimi subscribers. Commenters credit its checkpoint rollback for taming Kimi's tool-call loops; one critic called it a copy of basic harnesses.",
+      "cite": [
+        "49103438",
+        "48501216",
+        "48980608"
+      ],
+      "notes": ""
+    }
+  ],
+  "editors": [
+    {
+      "name": "Cursor",
+      "pos": 3,
+      "neg": 7,
+      "mixed": 2,
+      "neutral": 8,
+      "false": 6,
+      "what_it_is": "AI-first VS Code fork with agents",
+      "verdict": "Often described as where commenters used to be. Usage limits and API-priced bills keep pushing people to a Claude subscription; a few still like its bundled plans.",
+      "cite": [
+        "50395313",
+        "50402850",
+        "50374816"
+      ],
+      "notes": "6 false matches: text cursors and terminal cursors."
+    },
+    {
+      "name": "VS Code + Copilot",
+      "pos": 5,
+      "neg": 4,
+      "mixed": 3,
+      "neutral": 13,
+      "false": 1,
+      "what_it_is": "GitHub Copilot agent inside VS Code",
+      "verdict": "Mostly the option work pays for. Praised for PR reviews, model choice and keep/undo diffs; others call it meh and dry next to Claude.",
+      "cite": [
+        "50378415",
+        "50373956",
+        "50402364"
+      ],
+      "notes": "1 false match: Microsoft 365 Copilot. Many neutral mentions of employer-provided seats."
+    },
+    {
+      "name": "Zed",
+      "pos": 13,
+      "neg": 5,
+      "mixed": 2,
+      "neutral": 6,
+      "false": 0,
+      "what_it_is": "Fast Rust editor with ACP agent support",
+      "verdict": "The editor many keep beside their agents, driving Claude or Codex over ACP or just reviewing code. Liked for speed and agent support; some found it overhyped or unusable without a GPU.",
+      "cite": [
+        "50378907",
+        "50381382",
+        "50404176"
+      ],
+      "notes": ""
+    },
+    {
+      "name": "Antigravity",
+      "pos": 12,
+      "neg": 6,
+      "mixed": 0,
+      "neutral": 8,
+      "false": 0,
+      "what_it_is": "Google's agent IDE and CLI for Gemini",
+      "verdict": "The only subscription route to Gemini. Some use it daily for search and planning; complaints center on billing and account friction and a weak harness.",
+      "cite": [
+        "50374261",
+        "50403084",
+        "50394196"
+      ],
+      "notes": ""
+    },
+    {
+      "name": "Windsurf",
+      "pos": 6,
+      "neg": 4,
+      "mixed": 0,
+      "neutral": 15,
+      "false": 1,
+      "what_it_is": "AI VS Code fork, team now at Google",
+      "verdict": "Mostly mentioned in the past tense now that its team went to Google. Older threads liked its codebase Q&A, autocomplete and parallel flows, but said it struggled on large files.",
+      "cite": [
+        "46266283",
+        "43960047",
+        "50385528"
+      ],
+      "notes": "1 false match (windsurfer). Recent mentions are mostly in tool lists or acquisition talk."
+    },
+    {
+      "name": "Cline",
+      "pos": 11,
+      "neg": 8,
+      "mixed": 1,
+      "neutral": 6,
+      "false": 0,
+      "what_it_is": "Open-source agent extension for VS Code",
+      "verdict": "Popular for pairing cheap API models like DeepSeek Flash, or local Ollama models, with VS Code. Liked for permission prompts and provider choice; several left after finding it slow and unstable.",
+      "cite": [
+        "50373936",
+        "50388891",
+        "50377417"
+      ],
+      "notes": "Many ids duplicated across ask_hn and hn_comment."
+    },
+    {
+      "name": "Kiro",
+      "pos": 7,
+      "neg": 3,
+      "mixed": 1,
+      "neutral": 14,
+      "false": 0,
+      "what_it_is": "Amazon's spec-driven agentic VS Code fork",
+      "verdict": "Mostly a work-mandated tool at AWS shops. Its spec-driven workflow gets borrowed elsewhere; Amazon engineers say the harness trails Claude Code and degrades over long context.",
+      "cite": [
+        "47392420",
+        "47391478",
+        "50378376"
+      ],
+      "notes": ""
+    },
+    {
+      "name": "Neovim (CodeCompanion / avante)",
+      "pos": 9,
+      "neg": 2,
+      "mixed": 1,
+      "neutral": 4,
+      "false": 10,
+      "what_it_is": "AI chat and edit plugins for Neovim",
+      "verdict": "Neovim users reach for CodeCompanion for in-editor chat and quick edits, handing bigger tasks to OpenCode or Claude Code. Local-model setups can loop, and completion trails Cursor Tab.",
+      "cite": [
+        "48889018",
+        "47567719",
+        "47965944"
+      ],
+      "notes": "10 false matches: generic Neovim mentions and mcp-neovim-server, not the plugins."
+    },
+    {
+      "name": "Roo Code",
+      "pos": 14,
+      "neg": 2,
+      "mixed": 2,
+      "neutral": 8,
+      "false": 0,
+      "what_it_is": "Cline fork for VS Code, now discontinued",
+      "verdict": "Ran on your own API key or local models inside VS Code. Users liked its control, visible costs and architect and orchestrator modes; it has been discontinued, with forks carrying on.",
+      "cite": [
+        "43923565",
+        "44101414",
+        "47935529"
+      ],
+      "notes": "Project shut down; much praise is from 2025 threads."
+    },
+    {
+      "name": "Kilo Code",
+      "pos": 10,
+      "neg": 2,
+      "mixed": 1,
+      "neutral": 7,
+      "false": 0,
+      "what_it_is": "Roo Code fork for VS Code, JetBrains",
+      "verdict": "Run on your own keys or Kilo credits across many models. Users say it gets the job done; gripes are weak compaction and a recent version that feels blander.",
+      "cite": [
+        "50388891",
+        "50374637",
+        "49487233"
+      ],
+      "notes": "3 hits are from a Kilo maintainer disclosing affiliation."
+    },
+    {
+      "name": "JetBrains Junie",
+      "pos": 15,
+      "neg": 0,
+      "mixed": 2,
+      "neutral": 7,
+      "false": 1,
+      "what_it_is": "JetBrains' coding agent inside its IDEs",
+      "verdict": "Popular with IntelliJ users, often paired with cheap Gemini Flash. Good for small, well-defined tasks and tests; quotas are tight and some rate the harness below Claude Code.",
+      "cite": [
+        "46703057",
+        "48057234",
+        "47865734"
+      ],
+      "notes": "1 false match about JetBrains Air."
+    },
+    {
+      "name": "Continue",
+      "pos": 6,
+      "neg": 2,
+      "mixed": 1,
+      "neutral": 13,
+      "false": 0,
+      "what_it_is": "Open-source VS Code assistant, now end-of-life",
+      "verdict": "Was the usual way to plug Ollama or LM Studio models into VS Code. Now end-of-life after Cursor bought it; one user found it broken regardless of model.",
+      "cite": [
+        "45773720",
+        "48558530",
+        "47397114"
+      ],
+      "notes": "Most recent mentions are about the acquisition and shutdown."
+    },
+    {
+      "name": "Emacs gptel",
+      "pos": 10,
+      "neg": 0,
+      "mixed": 2,
+      "neutral": 7,
+      "false": 0,
+      "what_it_is": "LLM client and agent toolkit for Emacs",
+      "verdict": "Built for human-in-the-loop work: chat, code review and questions inside Emacs. Praised for staying out of the way and tiny token bills; agentic features are mostly do-it-yourself.",
+      "cite": [
+        "43960839",
+        "48870083",
+        "46355046"
+      ],
+      "notes": ""
+    }
+  ],
+  "orchestration": [
+    {
+      "name": "Herdr",
+      "pos": 14,
+      "neg": 3,
+      "mixed": 0,
+      "neutral": 9,
+      "false": 0,
+      "what_it_is": "Terminal workspace for many agent sessions",
+      "verdict": "Runs several Claude Code, Codex or Pi sessions side by side. Loved for agent-done pings and a pane overview; a few never clicked with it or switched to Rex.",
+      "cite": [
+        "50373956",
+        "50374449",
+        "50402234"
+      ],
+      "notes": ""
+    },
+    {
+      "name": "tmux + git worktrees",
+      "pos": 10,
+      "neg": 0,
+      "mixed": 1,
+      "neutral": 13,
+      "false": 0,
+      "what_it_is": "DIY parallel agents with tmux, worktrees",
+      "verdict": "The do-it-yourself baseline: a worktree per task, a tmux pane per agent, send-keys for messages. Fans say the new agent IDEs only repackage it; many build their own wrappers on top.",
+      "cite": [
+        "50236377",
+        "50373684",
+        "46719396"
+      ],
+      "notes": "Generic pattern, so many snippets are about third-party tools built on it."
+    },
+    {
+      "name": "Gas Town",
+      "pos": 0,
+      "neg": 12,
+      "mixed": 2,
+      "neutral": 9,
+      "false": 0,
+      "what_it_is": "Steve Yegge's multi-agent coding orchestrator",
+      "verdict": "On HN it is mostly a punchline: called too complex, too opinionated and a token sink, with nobody running evals against a plain harness. A few tried it for experiments.",
+      "cite": [
+        "50379514",
+        "46710670",
+        "50300516"
+      ],
+      "notes": ""
+    },
+    {
+      "name": "Paseo",
+      "pos": 13,
+      "neg": 3,
+      "mixed": 4,
+      "neutral": 3,
+      "false": 0,
+      "what_it_is": "Open-source desktop and mobile agent interface",
+      "verdict": "A front end for Pi, Claude Code, Codex and OpenCode agents. Liked for its phone app and client-server setup; reports of memory strain and hung sub-agent status updates.",
+      "cite": [
+        "50376205",
+        "50379808",
+        "50376632"
+      ],
+      "notes": ""
+    },
+    {
+      "name": "Beads",
+      "pos": 13,
+      "neg": 3,
+      "mixed": 1,
+      "neutral": 4,
+      "false": 4,
+      "what_it_is": "Git-backed issue tracker for coding agents",
+      "verdict": "Gives agents epics, tasks and dependencies to pull from, and some teams run their whole backlog on it. Critics call it bloated and question why it needs a daemon and database.",
+      "cite": [
+        "46839635",
+        "46710670",
+        "46692731"
+      ],
+      "notes": "4 false matches about literal beads."
+    },
+    {
+      "name": "T3 Code",
+      "pos": 17,
+      "neg": 2,
+      "mixed": 0,
+      "neutral": 4,
+      "false": 0,
+      "what_it_is": "Open-source GUI driving multiple agent harnesses",
+      "verdict": "Drives Claude Code, Codex and Pi from one UI across machines. Fans praise mid-conversation agent handoff and remote sessions; others found it buggy or heavy on resources.",
+      "cite": [
+        "50375873",
+        "50377597",
+        "50385453"
+      ],
+      "notes": ""
+    },
+    {
+      "name": "Conductor",
+      "pos": 4,
+      "neg": 2,
+      "mixed": 3,
+      "neutral": 14,
+      "false": 3,
+      "what_it_is": "Mac app for parallel worktree agents, closing",
+      "verdict": "Ran Claude and Codex in parallel git worktrees and is now shutting down. Users liked it for mid-size tasks and review; complaints were weak multi-repo support and Mac-only builds.",
+      "cite": [
+        "48415462",
+        "50367546",
+        "50369878"
+      ],
+      "notes": "3 false matches (superconductor, semiconductor). One positive hit is from the creator."
+    },
+    {
+      "name": "Orca",
+      "pos": 12,
+      "neg": 1,
+      "mixed": 1,
+      "neutral": 7,
+      "false": 0,
+      "what_it_is": "Open-source agent IDE for worktrees, remote",
+      "verdict": "Often self-hosted, with a mobile app for steering agents away from the desk. Praised for remote SSH and multi-worktree views; one user hit install trouble on a headless server.",
+      "cite": [
+        "50389282",
+        "48418811",
+        "49606598"
+      ],
+      "notes": "One hit is from the Orca team."
+    },
+    {
+      "name": "Juggler",
+      "pos": 4,
+      "neg": 1,
+      "mixed": 2,
+      "neutral": 4,
+      "false": 3,
+      "what_it_is": "GUI coding agent from JUCE's creator",
+      "verdict": "Treats local and remote sessions the same, which suits cross-platform work. Users like the control and visibility; one found its nested output stressful, another wished it were less vibecoded.",
+      "cite": [
+        "50379165",
+        "50376056",
+        "50320790"
+      ],
+      "notes": "4 hits are from the creator; 3 false matches (Amiga Juggler, juggling)."
+    },
+    {
+      "name": "Ralph loop",
+      "pos": 5,
+      "neg": 4,
+      "mixed": 0,
+      "neutral": 6,
+      "false": 0,
+      "what_it_is": "Loop-until-done agent prompting pattern",
+      "verdict": "A pattern, not a product: rerun the agent until the task list says done. Used for overnight PR polishing and test coverage; skeptics call it token burning that hides broken tests.",
+      "cite": [
+        "47391517",
+        "48276995",
+        "48490761"
+      ],
+      "notes": ""
+    },
+    {
+      "name": "Sculptor",
+      "pos": 0,
+      "neg": 0,
+      "mixed": 0,
+      "neutral": 1,
+      "false": 12,
+      "what_it_is": "Imbue's desktop UI for Claude Code",
+      "verdict": "A desktop UI for running Claude Code agents. The scraped comments are almost all about actual sculptors, so there are no recent user reports to summarize.",
+      "cite": [
+        "50372793"
+      ],
+      "notes": "12 of 13 snippets are false matches; no usable sentiment evidence."
+    },
+    {
+      "name": "Vibe Kanban",
+      "pos": 4,
+      "neg": 1,
+      "mixed": 1,
+      "neutral": 6,
+      "false": 0,
+      "what_it_is": "Kanban board that dispatches coding agents",
+      "verdict": "Users liked managing agents across projects from one board, but its developers stopped investing in it, and some felt it added little to their productivity.",
+      "cite": [
+        "48241393",
+        "48185316",
+        "47601048"
+      ],
+      "notes": ""
+    },
+    {
+      "name": "Omnara",
+      "pos": 1,
+      "neg": 1,
+      "mixed": 1,
+      "neutral": 9,
+      "false": 0,
+      "what_it_is": "Remote and API layer for coding agents",
+      "verdict": "Began as phone and web remote control for Claude Code and Codex, now pitched as a self-hostable agent API. One user relies on it in transit; another found alternatives more reliable.",
+      "cite": [
+        "48142849",
+        "48143779",
+        "50192022"
+      ],
+      "notes": "Most snippets are from the founder or builders; little user evidence."
+    }
+  ]
+}

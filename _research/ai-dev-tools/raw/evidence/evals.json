@@ -1,0 +1,1197 @@
+[
+ {
+  "name": "Arize Phoenix",
+  "url": "https://phoenix.arize.com",
+  "score": 65.5,
+  "github_stars": 12191,
+  "top_hn_story": {
+   "title": "Arize Phoenix: observability tool for experimentation and evaluation of LLMs",
+   "points": 1,
+   "id": "43582733",
+   "url": "https://docs.arize.com/phoenix"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50375342,
+    "author": "sheepscreek",
+    "text": "rect but we cannot change it due to some other service depending on it, don't use Y as it is deprecated in favor of Z. Reset your context frequently instead of only relying on compaction. Use the following prompt to summarize the current context for the new agent: Describe the current project or larger task in progress, then give a breakdown of all the planned sub-tasks with status, explain any learnings, then note what work is remaining. Write this in a file called HANDOFF.md Giv"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48417051,
+    "author": "bohdanstefaniuk",
+    "text": "s managing all those md artifacts. I'm curious how do you manage them? Do you preserve them for the future or delete as soon as task was accomplished? If you're deleting those artifacts after job being done - do you summarize those specs into the Jira ticket or whatever system you use."
+   },
+   {
+    "src": "ask_hn",
+    "id": 47392913,
+    "author": "theshrike79",
+    "text": "If you shove clearly AI generated content at me, I will use an AI to summarize it. Or I'll walk up to your desk and ask you to explain it."
+   },
+   {
+    "src": "ask_hn",
+    "id": 47393547,
+    "author": "SOLAR_FIELDS",
+    "text": "I also don't mind that. Summarized information exchange feels very efficient. But for sure, it seems like a societal expectation is emerging around these tools right now - expect me to put as much effort into consuming data as you did producing it. If you shat out a bunch of data from an LLM,"
+   },
+   {
+    "src": "ask_hn",
+    "id": 47396419,
+    "author": "duskdozer",
+    "text": "Some day someone brilliant will discover the idea of \"sharing prompts\" to get around this issue. So, instead of sending the clean and summarized LLM output, you'll just send your prompt, and then the recipient can read that, and in response, share their prompt back to the original sender."
+   },
+   {
+    "src": "ask_hn",
+    "id": 47404709,
+    "author": "romperstomper",
+    "text": "And then you use AI to summarize those 50 pages :)"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46279444,
+    "author": "mattmanser",
+    "text": "tter imo, keeping me focused on getting on with letting the agent do the work. I've also found it good for stopping me doing the same thing in slack messages. I ramble my general essay to ChatGPT/Claude, get them to summarize rewrite a few lines in my own voice. Stops me spending an hour crafting a slack message and tends to soften it."
+   },
+   {
+    "src": "ask_hn",
+    "id": 46256166,
+    "author": "dboreham",
+    "text": "1. Introduce it to the code base (tell it: we're going to work on this project, project does X is written in language Y). Ask it to look at the project to familiarize. 2. Tell it you want to refactor the code to achieve goal Z. Tell it to take a look and tell you how it will approach this. Consider showing it one example refactor you've already done (before and after). 3. Ask it to refactor one thing (only) and let you loo"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46258249,
+    "author": "xpe",
+    "text": "se once you \"see it\" it won't feel like a foreign idea being imposed on you -- there are ways that help to lower and even drop expectations. How? To mention just one: good reading. Read \"Be a new homunculus\" [1]. To summarize, visualize yourself like you are the \"thing that lives in your brain\". Yes, this is non-sense but try it anyway. If you find various ways to accept \"the world is changing faster than ever before\" and it feels like too much. Maybe you are pissed off or anxious"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46691880,
+    "author": "proc0",
+    "text": "ion of this abstract machine. I predict that if AI can do this then it will be able to do every single other job, including physical jobs as it would be able to reason within a robotic body in the physical world. To summarize, people are underestimating programming, using their simple projects to incorrectly extrapolate to any possible prompt, and missing the hard part of programming which involves building abstract machines that work on first principles and mathematical logic."
+   },
+   {
+    "src": "ask_hn",
+    "id": 48788922,
+    "author": "satvikpendem",
+    "text": "You don't ask it all that, it does it itself. You can also ask it to summarize all the instructions into a skill which it can then invoke on command. It really is not as much hassle as you're making it out to be."
+   },
+   {
+    "src": "ask_hn",
+    "id": 46648946,
+    "author": "xpe",
+    "text": "ies uniformity. In the present paper, we show that the EB is actually not the result of a conceptual error about the definition of randomness.\u201d You can also find an ELI5 Reddit thread on this topic where one comment summarizes it as follows: \u201cPeople are conflating the number of distinguishable outcomes with the distribution of probability directly.\u201d https://www.reddit.com/r/explainlikeimfive/comments/1bpor68/... "
+   },
+   {
+    "src": "ask_hn",
+    "id": 46631409,
+    "author": "reactordev",
+    "text": "I have three tools dedicated to this. save_memory, recall_memory, search Save memory vectorizes a session, summarizes it, and stores it in SQLite. Recall memory takes vector or a previous tool run id and loads the full text output. Search takes a vector array or string array and searches through the graph using fuzzy matching and vector dot products. It\u2019s not fancy, but it "
+   },
+   {
+    "src": "ask_hn",
+    "id": 44379141,
+    "author": "treetalker",
+    "text": "Kagi Translate. Kagi Summarizer (via bookmarklet) to help weed out articles that won't be worth reading (even here on HN) or to get the one sentence that matters. Kagi Assistant. This I use for random things, like pasting a webpage's source and having it figure out what to fill in on this "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50348143",
+    "author": "Trakshan",
+    "date": "2026-11-03",
+    "text": "ly took back three of my claims. I also built leakmap, a CI check that tells you when your app sends personal data or secrets to a third party, and which vendor and country gets it. I've had fixes merged in Apache Superset, Kubeflow, Opik, Arize Phoenix and facebook/astryx, and I'm a co-author on a PostgreSQL segfault fix. Looking for backend or AI/LLM roles, remote or relocation. Can start soon."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50338981",
+    "author": "Aidev112",
+    "date": "2026-11-02",
+    "text": "onths later I found problems in my own benchmark and publicly took back three of my claims. I also made a CI check that tells you when your app sends personal data to a third party. I've had fixes merged in Apache Superset, Kubeflow, Opik, Arize Phoenix and a Meta UI library, and I'm a co-author on a PostgreSQL segfault fix. Using a throwaway since I'm employed. Looking for backend or AI/LLM roles, remote or relocation."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49163206",
+    "author": "gersonazgo",
+    "date": "2026-08-04",
+    "text": " escalate high-risk cases to human professionals. I also built the RAG pipeline and an evaluation framework from scratch (LLM-as-a-judge plus code-based evaluators, synthetic trace generation, continuous production-trace analysis, all with Arize Phoenix), drawing on clinical safety benchmarks like VERA-MH (Spring Health) and TherapyGym. My background pairs engineering with business (B.A. in Marketing), so the customer-facing half is something I'm very comfortable with."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47320733",
+    "author": "alexhans",
+    "date": "2026-03-10",
+    "text": "and fast moving space. Depending on how they're made up, different teams do vastly different things. No evals at all, integration tests with no tooling, some use mixed observability tools like LangFuse in their CI/CD. Some other tools like arize phoenix, deepeval, braintrust, promptfoo, pydanticai throughout their development. It's definitely an afterthought for most teams although we are starting to see increased interest. My hope is that we can start thinking about evals as a common language for \"product\" across role "
+   },
+   {
+    "src": "hn_comment",
+    "id": "46805185",
+    "author": "vitorbaptistaa",
+    "date": "2026-01-29",
+    "text": "That looks great! Any plans on allowing exports to OpenTelemetry apps like Arize Phoenix? I am looking for ways to connect my Claude Code using Max plan (no API) to it and the best I found was https://arize.com/blog/claude-code-observability-and-tracing... , but it seems kinda overweight."
+   }
+  ]
+ },
+ {
+  "name": "OpenTelemetry GenAI",
+  "url": "https://opentelemetry.io/docs/specs/semconv/gen-ai/",
+  "score": 61.0,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "LLM Observability in the Wild \u2013 Why OpenTelemetry Should Be the Standard",
+   "points": 144,
+   "id": "45398467",
+   "url": "https://signoz.io/blog/llm-observability-opentelemetry/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50375619,
+    "author": "ehostunreach",
+    "text": " of what happened in the past. https://gist.github.com/vkalintiris/3ad526e71a75bcba013aaadc... . Another approach I want to explore is using https://github.com/netdata/netdata (disclaimer, I work at Netdata) to send all OTel logs/traces of LLMs to it. The idea is to replace the status repo skill with something that will allow LLMs to retrieve the history of a given task/feature. It will probably require some \"checkpointing\" to make this more efficient."
+   },
+   {
+    "src": "ask_hn",
+    "id": 47391754,
+    "author": "zmj",
+    "text": "ble the agent to debug and iterate. Whatever you'd do to test and verify after you write your first pass at an implementation, figure out a way for an agent to do it too. For example: every API call is instrumented with OpenTelemetry, and the agent has a local collector to query. 2. Make scripts or skills to increase the reliability of fallible multi-step processes that need to be repeated often. For example: getting an oauth token to call some api with the appropriate user scopes for the"
+   },
+   {
+    "src": "ask_hn",
+    "id": 49572946,
+    "author": "skittleson",
+    "text": "Its a mixed bag of usage. Work i use a few for otel and some custom workflows for older systems that have heavy apis."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50383309",
+    "author": "skinner3481",
+    "date": "2026-11-05",
+    "text": "ributed systems, event-driven architecture, microservices, real-time systems, WebSockets/streaming, NATS, AWS (EKS, ECS), GCP, Firebase, Kubernetes, Docker, Pulumi, Firestore, MongoDB, Redis, PostgreSQL, Elasticsearch, Prometheus, Grafana, OpenTelemetry, Langfuse, LLM integration, RAG, MCP, LangGraph, agent orchestration, human-in-the-loop, LLM-as-judge, evals, fine-tuning (LoRA) R\u00e9sum\u00e9/CV: https://drive.google.com/file/d/13tDwa9HFDxqJVPsYg-9IhlwJ65k... Email: skinner.cheng@gmail.com Who I am: I'm a Deaf engineer who spent 11+ "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50004832",
+    "author": "suveshmoza",
+    "date": "2026-10-08",
+    "text": " Location: India Remote: Yes Willing to relocate: Yes (*India) Technologies: TypeScript, JavaScript, React, Next.js, Node.js, Go, PostgreSQL, Redis, Docker, RAG, LLMs, MCP, GCP, Expo, OpenTelemetry, WXT R\u00e9sum\u00e9/CV: Available on request - email me Email: hellosuvesh[at]gmail[dot]com GitHub: https://github.com/suveshmoza I'm a software engineer with 2+ years of experience as a founding engineer at an early-stage startup. I've worked across the stack, from improving frontend p"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48421090",
+    "author": "lucashage2311",
+    "date": "2026-06-06",
+    "text": "t, JavaScript, Node.js, NestJS, Express, React, Next.js, Python, PostgreSQL, MongoDB, RabbitMQ, SQS, AWS, Kubernetes, Docker, GitHub Actions, Microservices, DDD, Hexagonal Architecture, Event-Driven Systems, AI/LLMs, AWS Bedrock, RAG, OCR, OpenTelemetry, Grafana Software Engineer with 5+ years of experience building backend systems, cloud-native applications, microservices, and AI-powered solutions. Recently worked on large-scale platforms involving Kubernetes migrations, distributed file processing pipelines, RabbitMQ/SQS mess"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49969571",
+    "author": "alexweaver2126",
+    "date": "2026-10-05",
+    "text": "cript, Go, Node.js, FastAPI, React, Next.js, GraphQL, REST APIs, AWS, GCP, Azure, Kubernetes, Docker, PostgreSQL, MongoDB, Redis, Kafka, LangChain, LangGraph, RAG, AI Agents, LLM Applications, Distributed Systems, Microservices, Terraform, OpenTelemetry. About Me: Senior Software Engineer with experience building AI-powered applications, distributed systems, data platforms, and scalable cloud-native services. I specialize in backend architecture, LLM orchestration, RAG systems, AI agents, and real-time data pipelines. I've deli"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49158944",
+    "author": "skinner3481",
+    "date": "2026-08-03",
+    "text": " AWS (EKS, ECS), GCP/Firebase, Kubernetes, Docker, Pulumi, PostgreSQL, Firestore, MongoDB, Redis, Elasticsearch, Prometheus, Grafana, agent orchestration, LLM integration, RAG, MCP, human-in-the-loop, LLM-as-judge, evals and observability, OpenTelemetry, fine-tuning (LoRA) R\u00e9sum\u00e9/CV: https://drive.google.com/file/d/13tDwa9HFDxqJVPsYg-9IhlwJ65k... Email: skinner.cheng@gmail.com Ava, a real-time captioning platform for one-on-one and group conversations, online and in person. 11+ years, zero to product. I co-founded it and was CT"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46557487",
+    "author": "barbazoo",
+    "date": "2026-01-09",
+    "text": "Lots of LLM observability tools out there. Lots of them integrate with model sdks or llm frameworks\" and sends traces via OpenTelemetry to providers like Braintrust, that's the one I know. You shouldn't have to build all this yourself if you're willing to spend some money."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50356899",
+    "author": "zanedev28",
+    "date": "2026-11-03",
+    "text": "ion: Charleston, SC Remote: Yes Willing to relocate: Yes Technologies: Ruby, Python, JavaScript (ES6), TypeScript, React, Node.js, PostgreSQL, MongoDB, OpenSearch/Elasticsearch, AWS (ECS, EC2, VPC, ALB, Secrets Manager), Docker, Terraform, OpenTelemetry, Jaeger, Prometheus Resume/CV: https://drive.google.com/file/d/16BdYXG4MMYK7JTWvuMly7OAk8f0... LinkedIn: https://www.linkedin.com/in/zane-lee-14496a297/ Email: zanedev28@gmail.com GitHub: https://github.com/Kcstills17 Co-creator of Retriever ( https://runretriever.app/ ), an AWS"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50343317",
+    "author": "levm38",
+    "date": "2026-11-02",
+    "text": "Location: Brussels, Belgium (CET) Remote: Yes (remote only) Technologies: Python, FastAPI, Pydantic, asyncio, SQLAlchemy, Docker, OpenTelemetry, PostgreSQL, Redis, GitHub Actions, MCP Protocol, Azure AI Foundry, Azure OpenAI, SvelteKit, TypeScript (working), SwiftUI R\u00e9sum\u00e9/CV: https://linkedin.com/in/levalencia Email: levm38@outlook.com Senior Python engineer. 10x Microsoft MVP AI. I build agent systems \u2014 not wrappers a"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50339079",
+    "author": "vetrinusacc",
+    "date": "2026-11-02",
+    "text": "ocation: Astana, Kazakhstan (UTC+5) Remote: Yes Willing to relocate: Yes, anywhere (visa sponsorship needed outside Kazakhstan) Technologies: Go, PHP, PostgreSQL, TypeScript (Node, Vue 3, React), Redis, RabbitMQ, Kubernetes/GKE, GitLab CI, OpenTelemetry, Sentry; payments (Stripe API, Payrails, Checkout.com, 3-D Secure, Apple/Google Pay, dunning, reconciliation); Claude Code, MCP R\u00e9sum\u00e9/CV: https://linkedin.com/in/vetrinus (PDF on request) Email: vetrinusacc@gmail.com Senior backend engineer (Go), 9 years in backend, former CTO."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50338812",
+    "author": "3amon_2",
+    "date": "2026-11-02",
+    "text": "e: No Technologies: Python, C/C++, TypeScript. Zephyr, FreeRTOS, nRF52840, ESP32, Thread, BLE, LoRa, signed OTA, KiCad, some VHDL. MCP servers, agent frameworks, LLM-judged evals, Claude Code. Kubernetes/GKE, Terraform, Cloudflare Workers, OpenTelemetry, Grafana. R\u00e9sum\u00e9/CV: https://3amon.net/Eamon-White-Resume.pdf Email: white.eamon@gmail.com Years of experience: 19 I'm an embedded engineer who spent the last year building AI agents, and I'd like to keep doing both. Most of my career was firmware and real-time work: optical ter"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50083209",
+    "author": "levm38",
+    "date": "2026-10-14",
+    "text": "Location: Brussels, Belgium (CET) Remote: Yes (remote only) Willing to relocate: Yes (Paris) Technologies: Python, FastAPI, Pydantic, asyncio, SQLAlchemy, Docker, OpenTelemetry, PostgreSQL, Redis, GitHub Actions, MCP Protocol, SvelteKit, TypeScript (working), SwiftUI R\u00e9sum\u00e9/CV: https://linkedin.com/in/levalencia Email: levm38@outlook.com Senior Python engineer. 10x Microsoft MVP AI. I build agent systems \u2014 not wrappers around LLMs, but the runtime, pol"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50009085",
+    "author": "davidlang422",
+    "date": "2026-10-08",
+    "text": "ht, Unit & Integration Testing, Code Reviews API & Business Integrations: Salesforce, Stripe, Twilio, SendGrid, Microsoft Graph, OAuth 2.0, JWT, Auth0 DevOps & Observability: GitHub Actions, Jenkins, CI/CD, Grafana, Prometheus, CloudWatch, OpenTelemetry, Datadog Engineering Practices: Git, Agile/Scrum, Jira, System Design, Technical Documentation, Mentoring AI-Assisted Development: Claude Code, Cursor, GitHub Copilot R\u00e9sum\u00e9/CV: https://drive.google.com/file/d/1pUS80ZK3fA1qFAmfgxJCjfW4iFN... Email: davidlang0422@outlook.com Soft"
+   }
+  ]
+ },
+ {
+  "name": "Langfuse",
+  "url": "https://langfuse.com",
+  "score": 46.2,
+  "github_stars": 37128,
+  "top_hn_story": {
+   "title": "ClickHouse acquires Langfuse",
+   "points": 220,
+   "id": "46656552",
+   "url": "https://langfuse.com/blog/joining-clickhouse"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50391747",
+    "author": "mmegy",
+    "date": "2026-11-06",
+    "text": "Location: Cairo, Egypt (UTC+2) Remote: Yes Willing to relocate: Yes Technologies: Python, TypeScript, Java, Rust, LLMs (Azure OpenAI, OpenAI), agent loops, tool calling, RAG, LangGraph, LangChain, Qdrant, Langfuse, evals, FastAPI, Spring Boot, Docker, Azure, AWS, gRPC, Claude Code R\u00e9sum\u00e9/CV: https://www.linkedin.com/in/mahmoudmohseneg/ GitHub: https://github.com/MahmoudMohsenEgy Email: mahmoudmohsenegy (at) gmail.com Software engineer, 4 years. I build AI agents that real users use, and I"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50383309",
+    "author": "skinner3481",
+    "date": "2026-11-05",
+    "text": ", event-driven architecture, microservices, real-time systems, WebSockets/streaming, NATS, AWS (EKS, ECS), GCP, Firebase, Kubernetes, Docker, Pulumi, Firestore, MongoDB, Redis, PostgreSQL, Elasticsearch, Prometheus, Grafana, OpenTelemetry, Langfuse, LLM integration, RAG, MCP, LangGraph, agent orchestration, human-in-the-loop, LLM-as-judge, evals, fine-tuning (LoRA) R\u00e9sum\u00e9/CV: https://drive.google.com/file/d/13tDwa9HFDxqJVPsYg-9IhlwJ65k... Email: skinner.cheng@gmail.com Who I am: I'm a Deaf engineer who spent 11+ years buil"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50379640",
+    "author": "madhavbhanot",
+    "date": "2026-11-05",
+    "text": "brid in Bangalore or Pune Willing to relocate: Yes Technologies: TypeScript, React, Next.js, React Native (Expo), Node.js/Express, Python, PostgreSQL + pgvector, MongoDB, WebSockets/SSE, RAG, AI agents (tool calling), LLM evals (LangSmith, Langfuse), MCP, Docker, AWS R\u00e9sum\u00e9/CV: https://drive.google.com/file/d/1RGuvmGZlTarWL2BQ1vMS0BP1don... Portfolio: https://madhavbhanot.vercel.app GitHub: https://github.com/madhavbhanot Email: mdhvbhanot [at] gmail [dot] com Hi HN, I'm Madhav. I finished my CS degree in June and I like b"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50361671",
+    "author": "amanbirs",
+    "date": "2026-11-04",
+    "text": "Location: Delhi, India Remote: Yes, full overlap with UK/EU and US Eastern business hours; US Pacific mornings Willing to relocate: Yes Technologies: Python, TypeScript, Django, Next.js, Postgres, LLM agents, evals and tracing (Langfuse), real-time voice (LiveKit), Claude Code, Azure/AWS/GCP Email: amanbir.s@gmail.com Hands-on product and engineering leader with 14 years across engineering, ML and AI. Previously led product and engineering at Cuebo.ai and Monsoon CreditTech, building products from first prototy"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50359131",
+    "author": "jhpritch",
+    "date": "2026-11-03",
+    "text": "cation: Gainesville, FL Remote: Yes (preferred) Willing to relocate: Yes \u2014 Seattle, Atlanta, or Charlotte Technologies: Python (FastAPI, Pydantic), Kubernetes (k3d/K3s), LangGraph, MCP, Ollama/llama.cpp, ChromaDB/Qdrant, Prometheus/Grafana/Langfuse, Docker, ROCm, Tailscale/WireGuard, React R\u00e9sum\u00e9/CV: https://jhpritch-dev.github.io/fredrin-scratch/ \u2014 benchmarks at https://rawmark.io Email: jhpritch@hotmail.com I build and operate BIFROST, a local-first multi-model inference platform: three nodes, twelve routing tiers, a com"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50345564",
+    "author": "alanoteles",
+    "date": "2026-11-02",
+    "text": ", PostgreSQL + pgvector, Redis, Docker/Traefik, GitHub Actions; LLM orchestration (multi-provider semantic router), RAG with hybrid search (BM25 + vectors, RRF), MCP servers over existing REST APIs with approval gates, evals/observability (Langfuse) Email: alanoteles@increative.io Senior backend engineer (20+ years) who moved into AI engineering. In 2026 I shipped three production AI platforms: a multimodal document platform with model benchmarking, a multi-provider LLM gateway with semantic routing, and a bookmark/search "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50342930",
+    "author": "shaikihsan38",
+    "date": "2026-11-02",
+    "text": "ia Remote: yes, also open to hybrid if in Hyderabad Willing to relocate: open for discussions Technologies: Python, C, SQL, OpenCV, LangChain, LangGraph, LangSmith, DeepEval, MCP (Model Context Protocol), AI Agents, Agentic AI, LoRA/QLoRA, Langfuse, Docling, AutoGen, Ollama, CrewAI, vLLM, TGI, Unsloth, LLMs, VLMs, Fine-tuning, Prompt Engineering, Context Engineering, RAG, Multi-Agent Orchestration, OCR, NLP, A2A (Agent-to-Agent Protocol), Vector Search, Model Deployment, Model Hosting, Kubernetes, CI/CD (GitHub Actions), F"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50341833",
+    "author": "robz75",
+    "date": "2026-11-02",
+    "text": "ry, tooling, security, and evaluations. You will work directly with me (co-founder & CEO). Requirements: strong Python engineering, power user of agentic coding, strong architectural thinking. Bonus points: AWS deployment & infrastructure, Langfuse for observability & evaluations. What's guaranteed: intense execution pace & exponential learning curve. Zero bullshit environment, we focus mostly on results and KPIs. Autodidacts are welcome. Two weeks maximum from apply to reply. Apply right here: https://forms.gle/ALgZfzwpZU"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50274564",
+    "author": "lotteverh",
+    "date": "2026-10-28",
+    "text": "The delay in Langfuse only happens if you are ingesting via outdated SDKs/endpoints. If you use the new ones there's no delay"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50270798",
+    "author": "jack_bing",
+    "date": "2026-10-28",
+    "text": "I used both Langfuse and Logfire. Imo both very similar, and at the same time limited when you want to customize graphs. Langfuse in general has broder feature set (however I used Logfire long time ago so it might have changed) like evaluation and prompt management"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50270795",
+    "author": "Applied_AI",
+    "date": "2026-10-28",
+    "text": "If you only want observability then it is save and easy to switch to/from LangFuse. Other features (if you care about) are more lock-in. Also, it take some times for LangFuse to process spans and traces from the agents, so if you want to have visibility in milliseconds then that is not the option for you. But if few minute gap before code execution and traces "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50151325",
+    "author": "CharlieDigital",
+    "date": "2026-10-19",
+    "text": "If you are using a Datadog, Langfuse, Langchain, or other OTEL target, you do nothing. Just query it. Build alerts, dashboards, and datasets; whatever you normally do with your OTEL collector. A forward OTEL collector deployment is still useful for filtering but the Datadog Agent, for example, already has buffering"
+   }
+  ]
+ },
+ {
+  "name": "promptfoo",
+  "url": "https://www.promptfoo.dev",
+  "score": 45.8,
+  "github_stars": 26936,
+  "top_hn_story": {
+   "title": "Promptfoo Is Joining OpenAI",
+   "points": 28,
+   "id": "47312346",
+   "url": "https://www.promptfoo.dev/blog/promptfoo-joining-openai/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 48525648,
+    "author": "gauravvij137",
+    "text": "A fully automated prompt optimizer - https://github.com/gauravvij/autoprompter Built with inspiration from Karpathy's AutoResearch + PromptFoo."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50356623",
+    "author": "rhdunn",
+    "date": "2026-11-03",
+    "text": "It's fairly straightforward to write a function that detects looping output -- I wrote one for promptfoo in [1]. For training you would need to hook it up to a LoRA training harness, identify the looping weight direction, and adjust the weights accordingly. I've not (yet) looked into how to do this. [1] https://news.ycombinator.com/item?id=48555634 "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49801149",
+    "author": "boundless88",
+    "date": "2026-09-22",
+    "text": "Is https://www.promptfoo.dev/ actually useful to you?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49574889",
+    "author": "saicharanjogu",
+    "date": "2026-09-05",
+    "text": "Location: Hyderabad, India Remote: Yes (preferred USA, India) Willing to relocate: Yes Technologies: AI/LLM product management, agentic workflows, RAG, evals (LangSmith, DeepEval, Promptfoo), prompt engineering, B2B SaaS, PRDs/roadmaps, AWS, workflow automation, stakeholder management R\u00e9sum\u00e9/CV: https://charanjogu.vercel.app Email: saicharanjogu0@gmail.com"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49523815",
+    "author": "AlexisAguirre",
+    "date": "2026-09-01",
+    "text": "Location: C\u00f3rdoba, Argentina Remote: Yes, remote only Willing to relocate: No Technologies: TypeScript, React, Next.js, Node, GraphQL with Apollo, Playwright, Python, SQLite, Postgres, LLM agents, MCP servers, RAG, promptfoo evals, OpenTelemetry R\u00e9sum\u00e9/CV: https://portfolio-aguirre-alexis.vercel.app Email: aguirrealexis.cba@gmail.com I do not trust what I have not verified, including my own code. Full-stack dev, 5+ years, last year building LLM products rather than demos. Everything below is somethi"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49416446",
+    "author": "rhdunn",
+    "date": "2026-08-24",
+    "text": "own or rent 2-8 H100/B100 devices or Google's TPUs. The majority of workflows for a company providing AI capabilities are likely best solved by tailoring a system prompt for the chosen model, evaluating the prompt and model with tools like promptfoo, and then running it on a compute cloud provider (including AWS Bedrock). If the company is big/financially well off enough they could look at buying the hardware needed to run it on their own servers. For other uses like agentic software development you'd need to spin up a suit"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49394119",
+    "author": "azuanrb",
+    "date": "2026-08-21",
+    "text": "ing thorough, but it\u2019s quite expensive. Luna xhigh seems to compensate for slightly lower intelligence by thinking and reasoning for longer, so tasks can take more time to complete. But it\u2019s crazy cheap. I also have some custom evals using promptfoo to make sure I\u2019m not introducing regressions when switching models. So far, Luna xhigh has been really, really good for the price. Don\u2019t sleep on it. Give Luna a try."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49333994",
+    "author": "abdik",
+    "date": "2026-08-17",
+    "text": "he same way, so we do not care which architecture (s2s or cascaded) wins. For now, what we see in production so far is that most teams still want to control each piece: swap the STT for medical vocabulary, keep the LLM, keep the voice. On \"promptfoo of voice models\": that is closer to how it started. At my last company we ran these evals manually, we would even hire native-speaking raters, benchmark, switch if it wins. The evals are the value, agreed. The routing is what makes them actionable: teams told us swapping always "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49313344",
+    "author": "jaggederest",
+    "date": "2026-08-15",
+    "text": ", etc, and only as little as is necessary. That generates the project plan, and then I feed that into claude code or whatever. I think the biggest thing I've done recently is start to be extremely critical about the output, basically using promptfoo to try to figure out what the right level of context and instructions are, not just for external facing e.g. chatbots or whatever, but for my own internal development process, planning, everything. The more you can pin down and calibrate the better - it's easy to run a given pro"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49307612",
+    "author": "thomadev0",
+    "date": "2026-08-15",
+    "text": "We host the best abliterated and fine tuned models with no input or output prompt retention based here in the Bay Area. Integrates with all major harnesses including Claude code, codex, opencode, cyberstrike, promptfoo, Garak and etc\u2026 We have added many features over the last few weeks to make the platform the most developer-friendly LLM provider in the world. We are looking for feedback and suggestions on how we can make the next great Silicon Valley AI company with a completely contrarian ap"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49301347",
+    "author": "rhdunn",
+    "date": "2026-08-14",
+    "text": "The only useful benchmarks are those you've created for your specific workflow. Only then can you assess whether a given model is better or worse for what you are using it for. There are tools like promptfoo designed for this."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49092009",
+    "author": "dangelosaurus",
+    "date": "2026-07-29",
+    "text": "Yes, I think this is an under-appreciated part of the release. I hope people can adapt them to their own workflows. We run A LOT of evals as the Promptfoo team and we've spent billions of tokens fine-tuning them. You can expect more skills as we branch out to other security workflows and further improvements to the codex security prompts."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49091831",
+    "author": "dangelosaurus",
+    "date": "2026-07-29",
+    "text": "Thank you, that means a lot. Being able to keep building practical, open-source security tooling was important to us. Really glad we got to ship this, and there's still a lot we want to improve in Codex Security and in Promptfoo!"
+   }
+  ]
+ },
+ {
+  "name": "MLflow",
+  "url": "https://mlflow.org",
+  "score": 37.0,
+  "github_stars": 28717,
+  "top_hn_story": {
+   "title": "MLFlow Alternative Written in Go",
+   "points": 5,
+   "id": "49030916",
+   "url": "https://github.com/zeddo123/mlsolid"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50349751",
+    "author": "kreldjarn",
+    "date": "2026-11-03",
+    "text": "PyTorch. Bonus if you've worked with 3D, CAD or graph neural nets. ML Ops Engineer: on-prem and AWS GPUs, make every experiment reproducible, keep costs down and customer data safe, and get rid of whatever slows the ML team down. SkyPilot, MLflow, PyTorch. https://www.getencube.com/ml-engineer-oct-2026 https://www.getencube.com/ml-ops-engineer-oct-2026 "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50341352",
+    "author": "itszafeer",
+    "date": "2026-11-02",
+    "text": " Available: from mid-December 2026 Technologies: Python, Bash, Kubernetes (kubeadm, bare-metal HA), Docker, Helm, Argo CD, Jenkins, GitHub Actions, Terraform, Ansible, Vault, Harbor, NGINX/HAProxy/Keepalived, PyTorch DDP, Kubeflow Trainer, MLflow, Kafka, Postgres, Redis, Prometheus/Grafana, NVIDIA GPUs, Qualcomm Cloud AI 100, AWS (EKS), Alibaba Cloud R\u00e9sum\u00e9/CV: https://zafeer.dev/resume.pdf Website: https://zafeer.dev/?utm_source=hn&utm_campaign=wwtbh-nov26 Email: mohammed.xafeer@gmail.com --- Platform / DevOps / MLOps e"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50270800",
+    "author": "Applied_AI",
+    "date": "2026-10-28",
+    "text": "Also MLFlow since version 3.0 has nice features for agent observability. Worth investigating too as it is well established solution"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50150490",
+    "author": "hetspookjee",
+    "date": "2026-10-19",
+    "text": "Mlflow does it pretty nice including session gathering and optional data enrichment (eg what files were touched, what model was used, git remote). We use these session IDs for commenting on issues and stories touched by AI for context tracing. I just wrapped around the Mlflow setup to "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50065803",
+    "author": "pralakxavier",
+    "date": "2026-10-13",
+    "text": "g Python, Great Expectations, and pytest to catch schema changes, missing values, and data anomalies early. Machine Learning Data: Prepared and validated feature and training datasets using Python and Snowflake to support ML workflows with MLflow and Amazon SageMaker. Big Data Processing: Built PySpark and Pandas pipelines to process data from 20+ different sources, improving processing runtimes by 30\u201340% through join and partition optimization. Pipeline Automation: Developed event-driven workflows with Apache Airflow, i"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50062439",
+    "author": "kujta1",
+    "date": "2026-10-12",
+    "text": "tract or advisory) Willing to relocate: No Technologies: Python, C++, SQL, PyTorch, TensorFlow/Keras, Transformers, Hugging Face, YOLO, Segment Anything, LightGlue, OpenCV, scikit-learn, ONNX, FAISS, Kalman filters, OCR (Tesseract, docTR), MLflow, W&B, Ray, Docker, AWS, GCP, Azure R\u00e9sum\u00e9/CV: https://bit.ly/cvhackernews Email: kujtim.rahmani [at] gmail [dot] com Computer vision and ML engineer with a PhD in computer science (Germany) and 12+ years building vision systems from data collection to production. What I've built"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49985598",
+    "author": "Ashlesha_2025",
+    "date": "2026-10-06",
+    "text": "illing to relocate: Yes Technologies: Python, SQL, PyTorch, scikit-learn, HuggingFace, LangGraph, LangChain, AutoGen, LlamaIndex, RAG, multi-agent systems, LoRA fine-tuning, Pinecone, Chroma, Azure ML, AKS, AWS Bedrock, Docker, Kubernetes, MLflow, GitHub Actions R\u00e9sum\u00e9/CV: https://drive.google.com/file/d/1B4z8CqVRD3pKs0i06tNrOHpAp0k... Email: ashleshaahirwadi2025@u.northwestern.edu I build AI agents that run real workflows end to end. At Imagit (Chicago): an agent that sources, screens and onboards technician candidates "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49970913",
+    "author": "Swanilgtm",
+    "date": "2026-10-05",
+    "text": "ch, TensorFlow, OpenCV, Transformers, YOLO, SAM2, DINOv3, VLMs, LLMs, Object Detection, Image Classification, Image Segmentation, Human Pose Estimation, 3D Vision, ONNX, TensorRT, CUDA, NVIDIA Jetson, ROS2, Docker, AWS, Azure, SQL, Qdrant, MLflow. About Me: Machine Learning / Computer Vision Engineer with 5+ years of experience, mostly in startups, building and deploying computer vision and multimodal AI systems for real-world applications. I was previously a founding ML engineer, where I helped build the ML stack from t"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49943331",
+    "author": "Shrey_07",
+    "date": "2026-10-03",
+    "text": "n: India Remote: Yes Willing to relocate: Yes \u2014 anywhere. India, EU, US, UK. Technologies: Python, PyTorch, Redis LLM inference, LLM fine-tuning (Qlora, peft), Google ADK, Agentic systems, FastAPI, Playwright, Docker, SQL, AWS, Tensorflow, MLflow, MCP, RAG, Neo4j, Git/Github, CI/CD, Typescript, API, scikit-learn, Vector Databases, HuggingFace. Resume - https://drive.google.com/file/d/1qUxHkYu8dx866aGJy4-GLejJui7... Email: shrey7shrey@gmail.com --- 2026 CS grad looking for my first full-time role. I build things that have"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49939094",
+    "author": "itszafeer",
+    "date": "2026-10-02",
+    "text": "s, open to discussing (UAE / KSA or elsewhere) Technologies: Python, Bash, TypeScript, Kubernetes (kubeadm, bare-metal HA), Docker, Argo CD, Jenkins, GitHub Actions, Terraform, Ansible, Vault, Harbor, NGINX/HAProxy/Keepalived, PyTorch DDP, MLflow, Kafka, ClickHouse, Postgres, Redis, Prometheus/Grafana, AWS (EKS), Alibaba Cloud, Cloudflare R\u00e9sum\u00e9/CV: https://zafeer.dev/resume Website: https://zafeer.dev Email: mohammed.xafeer@gmail.com --- Platform / DevOps / MLOps engineer (SDE II). I write the Python services, pipelines"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49930365",
+    "author": "kumi_da",
+    "date": "2026-10-02",
+    "text": "es (flexible on EU/Gulf/US-overlap hours); on-site/hybrid also works Willing to relocate: Yes - UAE, KSA, EU, UK, ANZ, SG. Available at short notice Technologies: Python, Java, Spring Boot, FastAPI | LangGraph, LangSmith, MCP, RAG, NL2SQL, MLflow, Kubeflow | Kubernetes, Helm, Terraform, ArgoCD, Istio, Kyverno, NVIDIA GPU Operator, Volcano | MySQL, PostgreSQL/PgVector, MongoDB, ClickHouse | OpenSearch, Elasticsearch, Lucene | Prometheus, Grafana, Thanos, GitHub Actions R\u00e9sum\u00e9/CV: https://kumida.xyz/resume GitHub: https://"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49638170",
+    "author": "sush98",
+    "date": "2026-09-10",
+    "text": "Location: Nepal Remote: Yes Willing to relocate: Yes Technologies: LangGraph, LangChain, LangSmith, Anthropic Claude API, RAG pipelines, Multi-agent orchestration, LLMOps, RAGAS, DeepEval, Databricks, MLflow Resume: https://github.com/sush98 Email: csushmasharma98@gmail.com"
+   }
+  ]
+ },
+ {
+  "name": "Logfire",
+  "url": "https://pydantic.dev/logfire",
+  "score": 31.7,
+  "github_stars": 4537,
+  "top_hn_story": {
+   "title": "Shredding JSON columns gave Logfire up to 1000x faster queries",
+   "points": 29,
+   "id": "50048490",
+   "url": "https://pydantic.dev/articles/dynamic-shredding-2026-01-26"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50270798",
+    "author": "jack_bing",
+    "date": "2026-10-28",
+    "text": "I used both Langfuse and Logfire. Imo both very similar, and at the same time limited when you want to customize graphs. Langfuse in general has broder feature set (however I used Logfire long time ago so it might have changed) like evaluation and prompt management"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50055853",
+    "author": "imp-joshi",
+    "date": "2026-10-12",
+    "text": "ding client requirements and designing the solution to building, deploying and debugging it. I've recently built and shipped a self-hosted, white-labelled, virtual walkthrough in Typescript/Nextjs. I've contributed merged fixes to Pydantic/Logfire, including an embeddings performance optimization and instrumentation API improvement. https://github.com/pydantic/logfire/pull/1886 Interested in the product/full-stack, backend, forward deployed engineering (fde) roles. Looking for a team where I can own problems end to end, w"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47868762",
+    "author": "cpill",
+    "date": "2026-04-22",
+    "text": "yeah, but they don't support a lot of the features Claude does like MCP integration. we've booked this up to logfire (telemetry provider) and it's a game changer when doing optimisation or diagnosis of bugs. plugins and skills also missing. but it is nice to switch between provider easily"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46805334",
+    "author": "cetra3",
+    "date": "2026-01-29",
+    "text": "Yeah would love this for logfire"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46666646",
+    "author": "scolvin",
+    "date": "2026-01-18",
+    "text": "ROFL. I clearly didn't build pydantic \"to take VC money\" - I maintained Pydantic for 5 years before deciding to take VC money. I wanted to build logfire and I didn't want to compete with or restrict our open source, we so built logfire. Let's see on the investment; seems to be going pretty well so far."
+   },
+   {
+    "src": "hn_comment",
+    "id": "46659617",
+    "author": "scolvin",
+    "date": "2026-01-17",
+    "text": "We have a SaaS platform (Pydantic Logfire - General and AI observability), and we raised our Series A from Sequoia. For good or bad, I think we're pretty \"SaaS/vc/etc.\" already."
+   },
+   {
+    "src": "hn_comment",
+    "id": "46658961",
+    "author": "amai",
+    "date": "2026-01-17",
+    "text": "What is the advantage of a specialized llm tracing solution like langfuse vs a complete tracing solution like logfire: https://pydantic.dev/logfire ?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46657913",
+    "author": "jascha_eng",
+    "date": "2026-01-17",
+    "text": "e to exit early before the llm hype crashes down. There is also a question of how big this market really is they mostly do observability for chatbots but there are only so many of those and with other players like openais tracing, pydantic logfire, posthog etc they become more a feature than a product of its own. Without a great distribution system they would eventually fall behind I think. 2 years to a decent exit (probably 100m cash out or so with a good chunk being Clickhouse shares) seems like a good idea rather than "
+   },
+   {
+    "src": "hn_comment",
+    "id": "46657100",
+    "author": "jimmySixDOF",
+    "date": "2026-01-17",
+    "text": "I predict it will be Pydantic next to get picked up by someone for logfire and agent framework.... fine as long as all these open source projects stay open source then good for them"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46421623",
+    "author": "digitalhobbit",
+    "date": "2025-12-29",
+    "text": " Pro/Flash to synthesize the trends and post a fleshed out idea to Ghost CMS each morning. The stack is Python 3.13, Pydantic AI, and Postgres with pgvector. I found Pydantic AI particularly helpful for handling the structured outputs, and Logfire was a super helpful bonus. The vector search turned out to be critical for semantic deduplication so the agent doesn't get stuck in a loop suggesting the same ideas every day. Happy to answer questions about the architecture or the prompt engineering logic!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46349018",
+    "author": "scolvin",
+    "date": "2025-12-21",
+    "text": "Correction, logging used to suck - now it's fixed https://pydantic.dev/logfire :-)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46342191",
+    "author": "kacper-vstorm",
+    "date": "2025-12-21",
+    "text": "tend: Optional Next.js 15 (App Router, React 19, Tailwind, dark mode, i18n) with real-time WebSocket chat UI AI/LLM: Integrated PydanticAI for type-safe agents, tool calling, streaming responses, and conversation persistence Observability: Logfire for tracing everything from API requests to agent runs; plus Sentry/Prometheus CLI: Django-style management commands with auto-discovery (e.g., user creation, DB seeding, custom scripts) DevOps: Docker Compose, CI/CD templates (GitHub Actions/GitLab), Kubernetes manifests 20+ co"
+   }
+  ]
+ },
+ {
+  "name": "Braintrust",
+  "url": "https://www.braintrust.dev",
+  "score": 30.5,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "AI evaluation startup Braintrust confirms breach",
+   "points": 4,
+   "id": "48042494",
+   "url": "https://techcrunch.com/2026/05/06/ai-evaluation-startup-braintrust-confirms-breach-tells-every-customer-to-rotate-sensitive-keys/"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50342579",
+    "author": "hackily",
+    "date": "2026-11-02",
+    "text": "gineer, Agentic AI ($175-210k): https://jobs.lever.co/curai/cd31b67b-d83c-466a-ac55-cfa4c2ec... * Sr Software Engineer, Marketing Platform ($150-180k): https://jobs.lever.co/curai/b157298e-4dc7-4594-a9c4-29f0dec4... Tech stack: Agents SDK, Braintrust, Python, React, React Native/Expo, AWS, Postgres, DynamoDB, Docker, Terraform."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50339248",
+    "author": "zernie",
+    "date": "2026-11-02",
+    "text": "; I work US and EU hours Remote: Yes Willing to relocate: Yes, to the US Technologies: TypeScript, React, Next.js, Node.js, Ruby on Rails, PostgreSQL, Redis, GraphQL, Python; Claude Code and Codex harnesses (skills, hooks, MCP), LLM evals (Braintrust), LiteLLM R\u00e9sum\u00e9/CV: https://zernie.com \u00b7 https://linkedin.com/in/zernie Email: contact@zernie.com Senior full-stack engineer, 10+ years, mostly for North American startups. Looking for part-time or contract work, up to 3 days a week. Plain full-stack (Rails, React/Next.js, Node"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49924974",
+    "author": "hackily",
+    "date": "2026-10-01",
+    "text": "f477... * Sr Software Engineer, Agentic AI: https://jobs.lever.co/curai/cd31b67b-d83c-466a-ac55-cfa4c2ec... * Sr Software Engineer, Marketing Platform: https://jobs.lever.co/curai/b157298e-4dc7-4594-a9c4-29f0dec4... Tech stack: Agents SDK, Braintrust, Python, React, React Native/Expo, AWS, Postgres, DynamoDB, Docker, Terraform."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49907538",
+    "author": "gradschool",
+    "date": "2026-09-30",
+    "text": "impression is that libraries like mimalloc and tcmalloc are painstakingly optimized by specialists and unlikely to benefit from any casual embellishments beyond using the supported malloc and free functions for everything. What does the HN braintrust recommend?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49320910",
+    "author": "budsniffer952",
+    "date": "2026-08-16",
+    "text": "Of course they do. The HN braintrust is mostly financially illiterate and sees conspiracies and fraud everywhere. This is the biggest capital buildout on history. Saying money will be wasted is not insightful, it's obvious."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49160967",
+    "author": "screm",
+    "date": "2026-08-03",
+    "text": "ation) is not in your logs because it lives in your users' AI client not on your server. So we need to reconstruct these sessions and then on top of it we can build the analytics layer and add evals. About BrainFuse, do you mean Langfuse / Braintrust LLM observability tools? If yes, those instrument an agent you own and run while with an MCP you are on the other side: someone else's agent is calling you, and you cannot instrument their side with these tools :/ Hope it answers and thanks for the kind words!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49088800",
+    "author": "gen220",
+    "date": "2026-07-28",
+    "text": "in the world (who, incidentally, are spending the most money on frontier model inference), already have \"the expensive part\", the labeled dataset. The cost of maintaining the datasets and the models is getting commoditized by startups like braintrust and huggingface."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48813080",
+    "author": "scritty-dev",
+    "date": "2026-07-07",
+    "text": "Braintrust which is a really solid eval tool/platform just compared it to Opus 4.8 to see if it could preserve exact long context retrieval under prod serving constraints and it did really well. I think 6-12 months before OSS has Fable-esque models"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48660586",
+    "author": "redwood",
+    "date": "2026-06-24",
+    "text": "ly implied rather than explicitly described. I would have thought that they were referring to the companies that provide a technology platform to enable you to do evals in an AI application context for example companies like Comet/Opik and Braintrust. But it sounds like the author does not mean those companies at all since those are actually important in enabling the very Venn diagram he/she describes. Based on what I assume the author's referring to they are referring to something more like a public benchmark report provide"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48536138",
+    "author": "inthepond",
+    "date": "2026-06-15",
+    "text": "iew or /code-review to have the code thoroughly checked, and I also use my OSS project git-aftermerge to check if LLM is making a same mistake or something (Or you could just use CLAUDE.md to memorise that). I am looking into Langsmith and Braintrust to see if code output can be more stable and with higher quality."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48499548",
+    "author": "lonelyc",
+    "date": "2026-06-12",
+    "text": "I wonder if companies that are looking to acquire or get acquired need a way to talk about their private evals depending on the value of them to the core business. Besides Braintrust or Langchain is there any company doing that? Maybe it\u2019s easier to make with agents ?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48391614",
+    "author": "bhvk08",
+    "date": "2026-06-03",
+    "text": "Location: San Francisco, CA | Remote: Yes | Willing to relocate: Yes Technologies: Python, C/C++, CUDA, Triton, PyTorch, JAX, TensorFlow, ONNX Runtime, LangGraph, LangChain, Gemini API, Braintrust, E2B, Weights & Biases, HuggingFace, CMake, Node.js, Express, Angular, PostgreSQL, MongoDB, AWS (EC2/S3), Android, Git Resume: https://drive.google.com/file/d/1D3RynLnu-M3I1ltmv-2y_BLKjH4... Email:bhavikupadhyay08@gmail.com Visa: F-1 STEM OPT, deadline in under a month. Need an "
+   }
+  ]
+ },
+ {
+  "name": "Helicone",
+  "url": "https://www.helicone.ai",
+  "score": 28.6,
+  "github_stars": 6273,
+  "top_hn_story": {
+   "title": "Show HN: Helicone (YC W23) \u2013 OSS LLM Observability and Development Platform",
+   "points": 29,
+   "id": "42806254",
+   "url": "https://github.com/Helicone/helicone"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "49093357",
+    "author": "rrkher059",
+    "date": "2026-07-29",
+    "text": " guys is to run it on a live trace and report back what it got wrong. here's the quick summary: kind of. LangSmith and Langfuse allow ranking on cost per step, but as dashboard widgets aggregating data over many runs over a period of time. Helicone allows doing so if you label your call and have to write your own SQL queries. Phoenix provides cost per span and per project but no middle ground. So if you need to know what made this particular run cost the way it costs, you will still need to read the trace tree manually. No"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48288627",
+    "author": "jasonjmcghee",
+    "date": "2026-05-27",
+    "text": "Hmm not sure I necessarily agree. Cloudflare's strategy has been looking like \"the only platform you need\" for a while now. Their recent features / announcements have been equivalent to: (LaunchDarkly) Resend, Firecrawl, CrewAI, Helicone, Replicate, Pinecone - Which like\u2026 many companies have a painful procurement process. If all you need is Cloudflare, and prices are within reason- why not use them"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48244121",
+    "author": "becomevocal",
+    "date": "2026-05-23",
+    "text": "At this point you have to use more than one to get a complete picture, which I\u2019m doing now. Mainly because: 1) some are not always up to date (started on helicone but felt a lag on price updates) 2) they don\u2019t return every model / provider I want ( https://ai-gateway.vercel.sh/v1/models has rich data but is a subset, so I combine with helicone) I always hope for the best when someone has a new list because of this. I want a de facto sourc"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48241949",
+    "author": "jubilanti",
+    "date": "2026-05-22",
+    "text": " the available AI models. We started Models.dev as a community-contributed project to address this. There are literally dozens of existing projects that are doing what you are trying to do. Insert XKCD standards reference here: https://www.helicone.ai/llm-cost https://pricepertoken.com/ https://docs.litellm.ai/docs/provider_registration/add_model... https://artificialanalysis.ai/api-reference https://github.com/simonw/llm-prices https://github.com/assistant-ui/modelpedia https://github.com/pydantic/genai-prices https://git"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47395801",
+    "author": "gdhaliwal23",
+    "date": "2026-03-16",
+    "text": "You're right that Langfuse and Helicone are retrospective \u2014 they show traces but don't roll up to \"feature X costs $0.12/invocation.\" A middle ground that's worked: tag every API call with a feature ID during prototype runs and compute per-call cost from token counts using current pricing. Within a day or two of testi"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47239539",
+    "author": "bobtheborg",
+    "date": "2026-03-03",
+    "text": "> What this means for you: Helicone's services will remain live for the foreseeable future in maintenance mode. This means security updates, new models, bug & performance fixes all keep shipping. Hmm"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47061889",
+    "author": "shotwellj",
+    "date": "2026-02-18",
+    "text": " in Go) that sits between your code and your LLM provider. Every prompt, completion, and tool call gets recorded with HMAC-SHA256 tamper-evident audit chains \u2014 modify one record and the chain breaks. What makes this different from Langfuse/Helicone/LangSmith: accountability, not just observability. Tamper-evident chains instead of mutable logs. Content stays on your infra (S3/MinIO). 22 compliance controls auto-mapped to SOC 2, ISO 27001, and EU AI Act. Deterministic replay of any AI decision. Python SDK integrates with Op"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47054486",
+    "author": "shotwellj",
+    "date": "2026-02-17",
+    "text": " in Go) that sits between your code and your LLM provider. Every prompt, completion, and tool call gets recorded with HMAC-SHA256 tamper-evident audit chains \u2014 modify one record and the chain breaks. What makes this different from Langfuse/Helicone/LangSmith: accountability not just observability (tamper-evident chains, not mutable logs), content stays on your infra (prompts/completions go to your S3/MinIO), compliance built-in (22 auto-evaluated controls mapped to SOC 2 and ISO 27001), and deterministic replay to reproduc"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46657214",
+    "author": "Roark66",
+    "date": "2026-01-17",
+    "text": "es, recognises tool calls, reasoning content, nice to have ability to define own session/conversation recognition rules I used gemini 3 and opus 4.5 for the initial planning/comparison of os projects that could be useful. Both converged on helicone as being supposedly the best. Until towards the very end of implementation it was found helicone has pretty much zero docs for properly setting up self hosted platform, it tries redirecting to their Web page for auth and agents immediately went into rewriting parts of the source"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46309137",
+    "author": "deaux",
+    "date": "2025-12-18",
+    "text": " https://www.helicone.ai/llm-cost Tried a lot of them and settled on this one, they update instantly on model release and having all models on one page is the best UX."
+   }
+  ]
+ },
+ {
+  "name": "LangSmith",
+  "url": "https://www.langchain.com/langsmith",
+  "score": 27.7,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Show HN: I built an open-source, local-first  alternative to LangSmith",
+   "points": 6,
+   "id": "48063206",
+   "url": "https://pypi.org/project/opensmith/"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50379640",
+    "author": "madhavbhanot",
+    "date": "2026-11-05",
+    "text": "h onsite/hybrid in Bangalore or Pune Willing to relocate: Yes Technologies: TypeScript, React, Next.js, React Native (Expo), Node.js/Express, Python, PostgreSQL + pgvector, MongoDB, WebSockets/SSE, RAG, AI agents (tool calling), LLM evals (LangSmith, Langfuse), MCP, Docker, AWS R\u00e9sum\u00e9/CV: https://drive.google.com/file/d/1RGuvmGZlTarWL2BQ1vMS0BP1don... Portfolio: https://madhavbhanot.vercel.app GitHub: https://github.com/madhavbhanot Email: mdhvbhanot [at] gmail [dot] com Hi HN, I'm Madhav. I finished my CS degree in June an"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50361215",
+    "author": "giovanniwants",
+    "date": "2026-11-04",
+    "text": "ow with local models. I have a MacBook m1 64gb and the biggest model I could get to run decently was a 24b. even then it was like emailing instead of chatting. I found LangChain/Smith and used that and found ways to make latency sub 1 sec. LangSMith/Chain was actually adding latency so I changed to a custom Daemon with an Sqlite memory system that the AI helped design by me asking the ai if you could design your own memory system what would you do. We calibrated it by tweaking it together. Then I started seeing SSD Streamin"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50343179",
+    "author": "shubhankarLord",
+    "date": "2026-11-02",
+    "text": " BullMQ, gRPC, AWS (EC2, S3, Lambda, RDS, SES, CloudFront), Cloudflare Workers, Docker, Docker Compose, CI/CD, Microservices, Distributed Systems, Event-Driven Architecture, Concurrency, Background Workers, OpenAI, Azure OpenAI, LangChain, LangSmith, RAG, Embeddings, Vector Databases, AI Agents, LLM Streaming, ONNX Runtime, Speech-to-Text, Text-to-Speech, Grafana, Loki, Sentry. Portfolio: https://shubhankar-devv-portfolio.pages.dev/ GitHub: https://github.com/shubhankar-mern LinkedIn: https://www.linkedin.com/in/shubhankar2"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50342930",
+    "author": "shaikihsan38",
+    "date": "2026-11-02",
+    "text": "Location: Hyderabad, India Remote: yes, also open to hybrid if in Hyderabad Willing to relocate: open for discussions Technologies: Python, C, SQL, OpenCV, LangChain, LangGraph, LangSmith, DeepEval, MCP (Model Context Protocol), AI Agents, Agentic AI, LoRA/QLoRA, Langfuse, Docling, AutoGen, Ollama, CrewAI, vLLM, TGI, Unsloth, LLMs, VLMs, Fine-tuning, Prompt Engineering, Context Engineering, RAG, Multi-Agent Orchestration, OCR, NLP, A2A (Agent-to-Agent Protocol), "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50342843",
+    "author": "mahussain7",
+    "date": "2026-11-02",
+    "text": "Location: Hyderabad, India Remote: Yes Willing to relocate: No Technologies / Specialities: Python, RAG, Agentic AI, LangChain, LangGraph, LangSmith, vLLM, PEFT/LoRA/QLoRA, AWS R\u00e9sum\u00e9/CV: https://drive.google.com/file/d/1MmotjncRmHYGb3KUk9oLYuaHaFl... Email: hmairaj94@gmail.com AI Engineer with 1.5 years of experience designing and shipping production AI systems, primarily in client-facing engineering roles. My work centers "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50340167",
+    "author": "govindgupta",
+    "date": "2026-11-02",
+    "text": "l-stack platforms that serve thousands of users at scale. What I've shipped: 1. Multi-agent feature development system on LangGraph, runs daily in production. Supervised agent team, Postgres checkpointing, pgvector RAG, custom MCP servers, LangSmith eval harness, human approval gates. 2. https://turtlemint.com , insurance platform scaled to 10,000+ monthly users 3. https://ontosight.ai , life sciences AI platform, document analysis and verification workflows 4. Enterprise network management platform serving real-time dashbo"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50339527",
+    "author": "rasikjain",
+    "date": "2026-11-02",
+    "text": "ure from start to finish and keeping the code simple. If your team is building products with LLMs, I would be glad to talk. Technologies: \u2022 Generative AI: LLMs, LangChain, LangGraph, Agentic RAG, AI Agents, Vector DBs (Pinecone, ChromaDB), LangSmith \u2022 Languages: Python, TypeScript, C# \u2022 Frontend: React, Next.js, Tailwind CSS \u2022 Backend: FastAPI, Node.js, ASP.NET Core \u2022 Cloud & DevOps: AWS, Azure, Docker, GitHub Actions \u2022 Databases: PostgreSQL, MongoDB, Redis Email: jainrasik.pro [at] gmail.com Resume/CV: https://www.rasikjai"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49973210",
+    "author": "toddfreeman513",
+    "date": "2026-10-06",
+    "text": "Location: 1144 Sutton PI, Texas Remote: Yes Willing to relocate: Yes Technologies: Agentic AI, CrewAI, MCP, Langchain/Langgraph/LangSmith, Evaluation, Pinecone, PgVector, Next.js, Nestjs, FastAPI, Docker, Kubernetes, Terraform, CI/CD, AWS, GCP, Azure, Temporal, EntraID, Microservice Architecture, ETL/ELT, SnowFlask, Databrick, Rabbitmq, Kafka Resume: https://www.toddfreeman.online/cv Email: toddfreemn06@gmail.com"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49947047",
+    "author": "rasikjain",
+    "date": "2026-10-03",
+    "text": "ure from start to finish and keeping the code simple. If your team is building products with LLMs, I would be glad to talk. Technologies: \u2022 Generative AI: LLMs, LangChain, LangGraph, Agentic RAG, AI Agents, Vector DBs (Pinecone, ChromaDB), LangSmith \u2022 Languages: Python, TypeScript, C# \u2022 Frontend: React, Next.js, Tailwind CSS \u2022 Backend: FastAPI, Node.js, ASP.NET Core \u2022 Cloud & DevOps: AWS, Azure, Docker, GitHub Actions \u2022 Databases: PostgreSQL, MongoDB, Redis Email: jainrasik.pro [at] gmail.com Resume/CV: https://www.rasikjai"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49934931",
+    "author": "jefejeffery1362",
+    "date": "2026-10-02",
+    "text": "Location: Rockwall, TX Remote: Yes Willing to relocate: Yes Technologies: Python, FastAPI, React, TypeScript, AWS, PostgreSQL, Databricks, PySpark, Docker, Terraform, Claude, OpenAI, Gemini, LangGraph, LangSmith, Pinecone, LlamaIndex, MCP, GitHub Actions R\u00e9sum\u00e9/CV: Available on request Email: jefejeffery1362@gmail.com Senior engineer, 8+ years. I usually get pulled in when a system\u2019s brittle, the team needs production AI that won\u2019t wreck things, or both. Recent work: at Laptop Freedom I"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49930365",
+    "author": "kumi_da",
+    "date": "2026-10-02",
+    "text": "n: Bengaluru, India Remote: Yes (flexible on EU/Gulf/US-overlap hours); on-site/hybrid also works Willing to relocate: Yes - UAE, KSA, EU, UK, ANZ, SG. Available at short notice Technologies: Python, Java, Spring Boot, FastAPI | LangGraph, LangSmith, MCP, RAG, NL2SQL, MLflow, Kubeflow | Kubernetes, Helm, Terraform, ArgoCD, Istio, Kyverno, NVIDIA GPU Operator, Volcano | MySQL, PostgreSQL/PgVector, MongoDB, ClickHouse | OpenSearch, Elasticsearch, Lucene | Prometheus, Grafana, Thanos, GitHub Actions R\u00e9sum\u00e9/CV: https://kumida.x"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49924151",
+    "author": "govindgupta",
+    "date": "2026-10-01",
+    "text": "l-stack platforms that serve thousands of users at scale. What I've shipped: 1. Multi-agent feature development system on LangGraph, runs daily in production. Supervised agent team, Postgres checkpointing, pgvector RAG, custom MCP servers, LangSmith eval harness, human approval gates. 2. https://turtlemint.com , insurance platform scaled to 10,000+ monthly users 3. https://ontosight.ai , life sciences AI platform, document analysis and verification workflows 4. Enterprise network management platform serving real-time dashbo"
+   }
+  ]
+ },
+ {
+  "name": "Opik",
+  "url": "https://www.comet.com/site/products/opik/",
+  "score": 27.0,
+  "github_stars": 23246,
+  "top_hn_story": {
+   "title": "Opik Agent Optimizer \u2013 Open-Source Prompt Optimization Framework",
+   "points": 6,
+   "id": "46267143",
+   "url": "https://github.com/comet-ml/opik/tree/main/sdks/opik_optimizer"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50348143",
+    "author": "Trakshan",
+    "date": "2026-11-03",
+    "text": "publicly took back three of my claims. I also built leakmap, a CI check that tells you when your app sends personal data or secrets to a third party, and which vendor and country gets it. I've had fixes merged in Apache Superset, Kubeflow, Opik, Arize Phoenix and facebook/astryx, and I'm a co-author on a PostgreSQL segfault fix. Looking for backend or AI/LLM roles, remote or relocation. Can start soon."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50338981",
+    "author": "Aidev112",
+    "date": "2026-11-02",
+    "text": " few months later I found problems in my own benchmark and publicly took back three of my claims. I also made a CI check that tells you when your app sends personal data to a third party. I've had fixes merged in Apache Superset, Kubeflow, Opik, Arize Phoenix and a Meta UI library, and I'm a co-author on a PostgreSQL segfault fix. Using a throwaway since I'm employed. Looking for backend or AI/LLM roles, remote or relocation."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49933671",
+    "author": "Trakshan",
+    "date": "2026-10-02",
+    "text": "mmits, and raised pass@1 from 5.5% to 25.8% on 128 tasks. It ships as a CLI and MCP server with 358 tests in CI, and I published a self-audit that retracted three of my own earlier claims. Open source, every fix with tests: merged in Comet Opik (streaming wrappers were swallowing exceptions) and facebook/astryx (focus-trap bug). In review: apache/superset (approved), kubeflow/mcp-server (FastMCP 4 upgrade), bitcoindevkit/bdk_wallet (Rust, relative locktimes), and a Java/ClickHouse change in Opik. I also review PostgreS"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48660586",
+    "author": "redwood",
+    "date": "2026-06-24",
+    "text": " it is only implied rather than explicitly described. I would have thought that they were referring to the companies that provide a technology platform to enable you to do evals in an AI application context for example companies like Comet/Opik and Braintrust. But it sounds like the author does not mean those companies at all since those are actually important in enabling the very Venn diagram he/she describes. Based on what I assume the author's referring to they are referring to something more like a public benchmark"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46511450",
+    "author": "pauliusztin",
+    "date": "2026-01-06",
+    "text": "yes! LLMOps tools such as Opik are great for that"
+   }
+  ]
+ },
+ {
+  "name": "DeepEval",
+  "url": "https://deepeval.com",
+  "score": 26.5,
+  "github_stars": 19352,
+  "top_hn_story": {
+   "title": "DeepEval Open-Sourced for TypeScript",
+   "points": 2,
+   "id": "49277024",
+   "url": "https://deepeval.com/blog/introducing-deepeval-typescript"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50403715",
+    "author": "Nancy6549",
+    "date": "2026-11-07",
+    "text": "Location: Delhi, India Remote: Yes (comfortable with US/EU overlap) Willing to relocate: Yes (EU/US, with visa sponsorship) Technologies: TypeScript, Python, Playwright, Puppeteer, Chrome DevTools Protocol, PyTorch, RAG/LLM evals (DeepEval, NLI cross-encoders) R\u00e9sum\u00e9/CV: https://nancy6547.github.io/resume.pdf GitHub: https://github.com/nancy6547 Email: singhnancy2004@gmail.com 2026 CS grad. I build tools that catch software lying about whether it works. - 10 merged PRs: 8 in Google's Puppeteer + Chrome DevTools MC"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50377274",
+    "author": "Hayyan612",
+    "date": "2026-11-05",
+    "text": " India Remote: Yes Willing to relocate: Yes (Germany, Netherlands, Ireland, UAE, Japan) Technologies: Python, FastAPI, TypeScript, React, Next.js, NestJS, React Native/Expo, PostgreSQL, Redis, Pinecone/Qdrant, LLM/RAG pipelines, LLM evals (DeepEval), LangGraph, Docker, Linux, GitHub Actions, self-hosting R\u00e9sum\u00e9/CV: https://hayyan.space Email: hayyan.connect@gmail.com Full-stack engineer who ships AI features to real users and runs the infra under them. Built the backend of an internal RAG assistant (routing across ~9 model"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50342930",
+    "author": "shaikihsan38",
+    "date": "2026-11-02",
+    "text": "Location: Hyderabad, India Remote: yes, also open to hybrid if in Hyderabad Willing to relocate: open for discussions Technologies: Python, C, SQL, OpenCV, LangChain, LangGraph, LangSmith, DeepEval, MCP (Model Context Protocol), AI Agents, Agentic AI, LoRA/QLoRA, Langfuse, Docling, AutoGen, Ollama, CrewAI, vLLM, TGI, Unsloth, LLMs, VLMs, Fine-tuning, Prompt Engineering, Context Engineering, RAG, Multi-Agent Orchestration, OCR, NLP, A2A (Agent-to-Agent Protocol), Vector Sea"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49638170",
+    "author": "sush98",
+    "date": "2026-09-10",
+    "text": "Location: Nepal Remote: Yes Willing to relocate: Yes Technologies: LangGraph, LangChain, LangSmith, Anthropic Claude API, RAG pipelines, Multi-agent orchestration, LLMOps, RAGAS, DeepEval, Databricks, MLflow Resume: https://github.com/sush98 Email: csushmasharma98@gmail.com"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49574889",
+    "author": "saicharanjogu",
+    "date": "2026-09-05",
+    "text": "Location: Hyderabad, India Remote: Yes (preferred USA, India) Willing to relocate: Yes Technologies: AI/LLM product management, agentic workflows, RAG, evals (LangSmith, DeepEval, Promptfoo), prompt engineering, B2B SaaS, PRDs/roadmaps, AWS, workflow automation, stakeholder management R\u00e9sum\u00e9/CV: https://charanjogu.vercel.app Email: saicharanjogu0@gmail.com"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48859448",
+    "author": "hamzaarifi98",
+    "date": "2026-07-10",
+    "text": "al Llama via Ollama/vLLM), OCR pipelines (Google Vision, PaddleOCR), MLOps (MLflow, GitHub Actions CI/CD, Docker, AWS ECS/Fargate, ECR), classical ML (scikit-learn, regression and classification models), SQL/PostgreSQL, evaluation tooling (DeepEval, LangSmith), Frontend (React), Mobile apps (React-Native). R\u00e9sum\u00e9/CV: https://github.com/hamzaarifi98/mycv Email: hamzaa.arifii@gmail.com Portfolio: https://github.com/hamzaarifi98 "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48662068",
+    "author": "alexhans",
+    "date": "2026-06-24",
+    "text": "The way eval startup is defined here is very specific and doesn't cover successful eval farmwork/SaaS vendors like Arize, Promptfoo, deepeval, etc The author does have a point around generic benchmarks not being super valuable for companies. But evals should be seen as verifying design/behaviour constraints and can greatly aid product building, golden dataset creations and good software practices. It's just that the a"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47320733",
+    "author": "alexhans",
+    "date": "2026-03-10",
+    "text": " space. Depending on how they're made up, different teams do vastly different things. No evals at all, integration tests with no tooling, some use mixed observability tools like LangFuse in their CI/CD. Some other tools like arize phoenix, deepeval, braintrust, promptfoo, pydanticai throughout their development. It's definitely an afterthought for most teams although we are starting to see increased interest. My hope is that we can start thinking about evals as a common language for \"product\" across role families so I'm tr"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47224290",
+    "author": "iwantchips",
+    "date": "2026-03-02",
+    "text": "Location: Maryland, USA Remote: Yes Willing to relocate: No Technologies: AI Platform & LLM Systems: RAG architectures, LLM orchestration, control planes, routing & fallback logic, evaluation frameworks (Langfuse, deepeval), trace-level observability, prompt/version management, context engineering, agentic workflows Distributed Systems & Infrastructure: High-availability design, autoscaling concepts, failure modeling, SLO/SLA enforcement, load balancing (HAProxy/Nginx), Kubernetes, Docker, cloud-n"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46842922",
+    "author": "alexhans",
+    "date": "2026-02-01",
+    "text": "ving to maintain\" (ZeroOps) whatever we do and not having to worry [1] about manually monitoring. For evals I suggest you explore 2 different tools, such as promptfoo (Technically no programming required for an eval creator, just yaml) and deepevals/pydanticai-evals (python based) and see how you feel about using either based on your context/team composition needs. Once you start, some things will start to click such as the value of bounding non-determinism [2] as much as possible and you might even have proof for them. Ot"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46592040",
+    "author": "dustfinger",
+    "date": "2026-01-12",
+    "text": "to mitigate against that. If you are willing and interested enough to take a quick look, here is what my script generated for our 2025 changelog (no hand-curation yet, this is the raw output): https://raw.githubusercontent.com/confident-ai/deepeval/refs... I am curious: does this still seem too noisy in your opinion, or is it getting closer? And what would you want to see for breaking changes/migrations to make it actually useful? I now have 2024 & 2025 generated; to fully hand-curate two years of history just wasn\u2019t pract"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46445276",
+    "author": "deepankarm44",
+    "date": "2025-12-31",
+    "text": "bage, streams cut mid-response. Traditional chaos tools don't understand these failure modes. `agent-chaos` lets you define conversation scenarios, inject chaos (rate limits, tool errors, corrupt data), and assert behavior. Integrates with DeepEval for LLM-as-judge assertions. Feedback welcome."
+   }
+  ]
+ },
+ {
+  "name": "Inspect AI",
+  "url": "https://inspect.aisi.org.uk",
+  "score": 25.5,
+  "github_stars": 3198,
+  "top_hn_story": {
+   "title": "Show HN: Claypot \u2013 a block-based studio for kids to inspect AI systems",
+   "points": 2,
+   "id": "49495751",
+   "url": "https://claypot.app/"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50387713",
+    "author": "YusefSyed",
+    "date": "2026-11-06",
+    "text": "Location: Toronto (moving to San Francisco or New York, January 2027) Remote: Open for a standout AI team; prefer in person Willing to relocate: Yes, SF or NYC Technologies: Python, TypeScript/Node.js, Rust, SQL, Inspect AI, PyRIT, Docker, Linux (ptrace/seccomp), PostgreSQL, GitHub Actions R\u00e9sum\u00e9/CV: https://drive.google.com/file/d/179REr5d9oPvLWqvJ1V9m-JSaRIh... Email: yusef.syed@mail.utoronto.ca 19, first year at U of T, U.S. and Canadian citizen (no sponsorship), looking for a full-time security"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48192770",
+    "author": "KerrickStaley",
+    "date": "2026-05-19",
+    "text": "crease [1]. Unfortunately Info-ZIP which provides the unzip command hasn't had a release in 18 years, so it doesn't support this newer compression/decompression method. You have to use 7-Zip instead. [1] https://github.com/UKGovernmentBEIS/inspect_ai/pull/3145 "
+   },
+   {
+    "src": "hn_comment",
+    "id": "46311901",
+    "author": "ggsp",
+    "date": "2025-12-18",
+    "text": "Yeah I\u2019ve wondered about the same myself\u2026 My evals are also a pile of text snippets, as are some of my workflows. Thought I\u2019d have a look to see what\u2019s out there and found Promptfoo and Inspect AI. Haven\u2019t tried either but will for my next round of evals"
+   }
+  ]
+ },
+ {
+  "name": "garak",
+  "url": "https://github.com/NVIDIA/garak",
+  "score": 22.7,
+  "github_stars": 9918,
+  "top_hn_story": null,
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50308710",
+    "author": "1potato",
+    "date": "2026-10-30",
+    "text": "I do have to agree on that. Garak was really a standout character on DS9."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50297931",
+    "author": "hnlmorg",
+    "date": "2026-10-29",
+    "text": "Though in defence to Bashir, without him you wouldn\u2019t have Garak, who is possibly one of the best written characters in all of SciFi. And some of O'Brien\u2018s best performances were counterpointing Bashir too. I think as a solo character, he\u2019s a little shallow. But he works exceptionally well at being an anchor for other characters to play off."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49591371",
+    "author": "minimaxa",
+    "date": "2026-09-06",
+    "text": "tool security, and AI supply\u2011chain checks. Why now: 78% of cybersecurity jobs now require AI skills; firms need people who can direct, constrain, and verify agent work. Do this: Study OWASP Top 10 for LLMs, MITRE ATLAS; practice with PyRIT/Garak/Lakera. Add tool\u2011invocation audits, skill provenance checks, and least\u2011privilege patterns to your agents. Package a \u201csafe agent deployment\u201d audit + hardening retainer. Profit link: You become the person who lets companies adopt agents without getting pwned\u2014high demand, low suppl"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49372264",
+    "author": "moffkalast",
+    "date": "2026-08-20",
+    "text": "> especially the bullets DS9 Garak \"especially the lies\" reference maybe?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49307612",
+    "author": "thomadev0",
+    "date": "2026-08-15",
+    "text": "We host the best abliterated and fine tuned models with no input or output prompt retention based here in the Bay Area. Integrates with all major harnesses including Claude code, codex, opencode, cyberstrike, promptfoo, Garak and etc\u2026 We have added many features over the last few weeks to make the platform the most developer-friendly LLM provider in the world. We are looking for feedback and suggestions on how we can make the next great Silicon Valley AI company with a completely contrarian approach."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48236036",
+    "author": "iso1631",
+    "date": "2026-05-22",
+    "text": "ve any moral problem in downloading Rivals from piratebay though, as far as I'm concerned I'm paying for it. But sometimes though there's no option to buy the thing. I want to buy the audio version of \"a stitch in time\" by Andrew Robinson (Garak from Star Trek). It's not available in my country on audible -- only the German translation. I haven't acquired it via other means yet, I'm still on the look out for another supplier which will take my money, and if I can trust that's a legitimate supplier so at least some of my"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47015011",
+    "author": "pimeys",
+    "date": "2026-02-14",
+    "text": " all time. Absolutely great actors and amazing writing. DS9 is the weird one. I do really enjoy the trajectory of many of its characters: Sisko, Odo, Bashir, Dax (one of my favorite characters in all ST), O'Brien, Quark, Kira, Worf, Dukat, Garak, Damar... The list of great characters in DS9 is the best part of this series. The last season was a definite letdown for me though, and I didn't like the ending at all. Voyager was the surprising one. I expected a lesser series after reading the old discussion about the three T"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47014592",
+    "author": "uxcolumbo",
+    "date": "2026-02-14",
+    "text": "you mean they copied characters or story lines? And how is DS9 a soap opera? I associate soap operas with sh!t acting and not really exploring deeper philosophical topics. DS9 had amazing actors, character development and story lines. Take Garak for example, amazing character."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47014526",
+    "author": "zelphirkalt",
+    "date": "2026-02-14",
+    "text": "like it was a bit too much of the social stuff, maybe because it plays mostly on a station instead of an exploration vessel, but I guess that is exactly what people like about it. The characters and their development and so on. I liked the Garak character for example, but disliked Zisko being some chosen one for the wormhole gods or something. I much prefer Data, or Picard or most of their crew, even if they don't develop as much. Well, to each their own, they are all good series to watch."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47013375",
+    "author": "beloch",
+    "date": "2026-02-14",
+    "text": " go on more traditional Star Trek adventures. The station was home base, but the crew got out a lot. It typically felt like the station was well under control, with only minor differences between it and a star-fleet vessel. (Toss Quark and Garak out an airlock and you'd pretty much have a standard starship.) B5 did send its characters on excursions, but they were fewer and far between. The station was not a safe home base. It was a bigger and wilder place than DS9 ever was. It always felt like some crisis or another was"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46235147",
+    "author": "ProjectRecon",
+    "date": "2025-12-11",
+    "text": "erywhere. I built this repo to organize the ecosystem into a proper security lifecycle, rather than just a dump of links. It covers: - Agent Firewalls & Runtime Protection (e.g., AgentGateway, PhantomWall) - Red Teaming Tools (e.g., PyRIT, Garak) - Sandboxing (e.g., SandboxAI, OpenHands) - Static Analysis & Guardrails I\u2019m looking for more open-source tools to add. If you\u2019re building something in this space or know a tool I missed, please let me know or open a PR! Repo: https://github.com/ProjectRecon/awesome-ai-agent-se"
+   }
+  ]
+ }
+]

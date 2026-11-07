@@ -1,0 +1,1372 @@
+[
+ {
+  "name": "LangChain",
+  "url": "https://www.langchain.com",
+  "score": 74.2,
+  "github_stars": 149163,
+  "top_hn_story": {
+   "title": "Critical vulnerability in LangChain \u2013 CVE-2025-68664",
+   "points": 131,
+   "id": "46386009",
+   "url": "https://cyata.ai/blog/langgrinch-langchain-core-cve-2025-68664/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 45775061,
+    "author": "garethsprice",
+    "text": "nice to have a way my dumbest questions don't burn tokens I want to reserve for real work. Small LLM scripting tasks with dspy (simple categorization, CSV munging type tasks), sometimes larger RAG/agent type things with LangChain but it's a lot of overhead for personal scripts. My company is building a software product that heavily utilizes LLMs so I often point my local dev environment at my local model (whatever's loaded, usually one of the 7B models), initially I did this not to in"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48781508,
+    "author": "ernsheong",
+    "text": "do you mind sharing the more specific setup or agent framework? Hermes? LangChain? DIY?"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46630166,
+    "author": "bzGoRust",
+    "text": "In my company, we build the internal chatbot based on RAG through LangChain + Milvus + LLM. Since the documents are well formatted, it is easy to do the overlapping chunking, then all those chunking data are inserted into vector db Milvus. The hybrid search (combine dense search and sparse search) is native supported in the Milvus co"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46630555,
+    "author": "acutesoftware",
+    "text": "I am using LangChain with a SQLite database - it works pretty well on a 16G GPU, but I started running it on a crappy NUC, which also worked with lesser results. The real lightbulb moment is when you realise the ONLY thing a RAG passes to the LLM is a short string of search resul"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50394700",
+    "author": "shajin_joseph",
+    "date": "2026-11-06",
+    "text": "P server development, Supabase/Postgres, Redis, Docker, Railway, Vercel, Stripe R\u00e9sum\u00e9/CV: Available on request Email: shajin.ponnu [at] gmail [dot] com Solo founder who has shipped 5 AI products. I build LLM pipelines from the SDK up \u2014 no LangChain, all hand-built orchestration. Most relevant work: harness-mcp \u2014 a production MCP server I built from scratch with 36 tools, a task supervisor with an LLM-as-judge (fail-closed, provider fallback), and a THINK\u2192ACT\u2192OBSERVE build orchestrator. Live on a VPS, PM2-managed. Also buil"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50393605",
+    "author": "mfalcon",
+    "date": "2026-11-06",
+    "text": "I've been looking at several projects but didn't find something that convinced me, most of what I've seen are more focused on software generation \"AI factories\". - This is interesting but more complex https://github.com/langchain-ai/design-agent . - This talk points to something similar but ingesting all the data into the system and chunking it to allow semantic search later https://ai.engineer/talks/KWmkMV0FNwQ-building-alices-brain-... Plase tell your experience (I'll take a look at https://github.com/"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50391747",
+    "author": "mmegy",
+    "date": "2026-11-06",
+    "text": "Location: Cairo, Egypt (UTC+2) Remote: Yes Willing to relocate: Yes Technologies: Python, TypeScript, Java, Rust, LLMs (Azure OpenAI, OpenAI), agent loops, tool calling, RAG, LangGraph, LangChain, Qdrant, Langfuse, evals, FastAPI, Spring Boot, Docker, Azure, AWS, gRPC, Claude Code R\u00e9sum\u00e9/CV: https://www.linkedin.com/in/mahmoudmohseneg/ GitHub: https://github.com/MahmoudMohsenEgy Email: mahmoudmohsenegy (at) gmail.com Software engineer, 4 years. I build AI agents that rea"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50390766",
+    "author": "spartanx5",
+    "date": "2026-11-06",
+    "text": "rlapping with US or UK hours Willing to relocate: Within India only Technologies: TypeScript, JavaScript, Python, React, Next.js, React Native, Expo, Node.js, Express, FastAPI, MongoDB, PostgreSQL, Redis, Docker, GitHub Actions, LangGraph, LangChain, Claude API, MCP R\u00e9sum\u00e9/CV: https://www.linkedin.com/in/yuvrajsinh-jadav-2041a822b/ Email: devyuvrajsinh@gmail.com Full-stack engineer with 3.5 years of building and running complete products, now focused on AI agents with human approval gates. Available immediately for full-tim"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50390210",
+    "author": "haxzie",
+    "date": "2026-11-06",
+    "text": "CP, ClickHouse, Three.js R\u00e9sum\u00e9/CV: [resume.haxzie.com]( https://resume.haxzie.com ) Email: musthaq.gm@gmail.com At Composio, I built the TypeScript/Python SDKs (`@composio/core`, 1M+ weekly downloads), provider packages for Vercel AI SDK, LangChain and Claude Code, an agent CLI that cut token usage 60\u201370%, and authentication across 1000+ apps. Previously a founding engineer at Locale for six years, building React interfaces, a metrics DSL on ClickHouse and geospatial tools. Now building Sequel, GenMotion and Prequel. Looki"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50374468",
+    "author": "emoradian",
+    "date": "2026-11-05",
+    "text": "Location: Los Angeles, CA Remote: Yes; hybrid in LA Willing to relocate: No Technologies: Python, SQL, PyTorch, scikit-learn, XGBoost, Airflow, dbt, Databricks, Snowflake, Tableau, LangChain/RAG, Claude Code, AWS/GCP/Azure R\u00e9sum\u00e9/CV: https://drive.google.com/file/d/1lf_-a1DZdC7UHFd-1rq52b6Vr-N... Email: egmoradian1@gmail.com Senior data scientist, 7 years in product analytics, experimentation, ML and LLM/RAG systems. Recent work at Meta Reality Labs (via TEKsystems)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50362186",
+    "author": "asoni07",
+    "date": "2026-11-04",
+    "text": "Location: Bengaluru, India Remote: Yes Willing to relocate: Yes Technologies: Go, Ruby, Python, TypeScript, JavaScript, Node.js, PostgreSQL, Mastra, LangChain, LangGraph, AI Agents, Svelte, Vue.js R\u00e9sum\u00e9/CV: https://tinyurl.com/3ht8529s LinkedIn: https://www.linkedin.com/in/ajitsoni05/ Email: ajitsoni000005@gmail.com I'm a software engineer focused on backend systems, distributed services, and AI-powered applications. At Amagi, I buil"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50361215",
+    "author": "giovanniwants",
+    "date": "2026-11-04",
+    "text": "but I wanted something more agentic but OpenClaw and Letta were crazy slow with local models. I have a MacBook m1 64gb and the biggest model I could get to run decently was a 24b. even then it was like emailing instead of chatting. I found LangChain/Smith and used that and found ways to make latency sub 1 sec. LangSMith/Chain was actually adding latency so I changed to a custom Daemon with an Sqlite memory system that the AI helped design by me asking the ai if you could design your own memory system what would you do. We c"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50354756",
+    "author": "valdezm",
+    "date": "2026-11-03",
+    "text": "Willing to relocate: Prefer to stay in the Bay Area Seeking: Founding / founding product engineer roles Technologies: TypeScript, React, Node (Fastify, tRPC), Next.js, Ruby on Rails, PostgreSQL, AWS, Claude Code / multi-agent AI workflows, LangChain, Langflow 16 years full stack, 10+ of them building 0-to-1 products directly with founders. - 2026: Ported a HIPAA-regulated healthcare SaaS platform from Supabase to TypeScript on AWS: Fastify/tRPC, React, PostgreSQL row-level security, WorkOS. 169 merged PRs. Built the multi-a"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50352493",
+    "author": "skp9046",
+    "date": "2026-11-03",
+    "text": "user bases. Adept at owning complex challenges end-to-end, from system design and integrations to AI development and production deployment. Location: India Remote: Yes Willing to relocate: Yes Technologies: LLMs, Generative AI, Agentic AI, LangChain, LangGraph, MCP, RAG, Python, Java, Spring Boot, Fast API, GraphQL, REST APIs, Node, Kafka, AWS, Docker, Kubernetes, GitHub Actions R\u00e9sum\u00e9/CV: https://www.linkedin.com/in/shashankpandey9046 Email: pandeyshashank9046@gmail.com "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50351320",
+    "author": "Anon84",
+    "date": "2026-11-03",
+    "text": " Location: NYC Remote: Yes Willing to relocate: No Technologies: Machine Learning, Python, LLMs, LangChain, CrewAI R\u00e9sum\u00e9/CV: By request Website: https://www.data4sci.com GitHub: https://github.com/DataForScience/ Substack: http://data4sci.substack.com/ Email: bgoncalves@data4sci.com "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50349254",
+    "author": "naman_411",
+    "date": "2026-11-03",
+    "text": "Location: Bhopal, India (IST, UTC+5:30) Remote: Yes. Can overlap 4+ hours with EU or US East. Willing to relocate: Yes, within India (Bengaluru, Hyderabad, Mumbai) Technologies: Python, TypeScript, FastAPI, LangGraph, LangChain, Google ADK, MCP, Qdrant, pgvector, Postgres, Redis, Docker, Next.js R\u00e9sum\u00e9/CV: https://namangupta.dev/?ref=hn-nov26 Email: naman@namangupta.dev GitHub: https://github.com/namanxdev Applied AI engineer, 1+ year at early-stage startups. I build agents and retrieval systems, then "
+   }
+  ]
+ },
+ {
+  "name": "Microsoft Agent Framework",
+  "url": "https://github.com/microsoft/agent-framework",
+  "score": 58.8,
+  "github_stars": 14577,
+  "top_hn_story": {
+   "title": "Microsoft Agent Framework",
+   "points": 58,
+   "id": "46377537",
+   "url": "https://learn.microsoft.com/en-us/agent-framework/overview/agent-framework-overview"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50374261,
+    "author": "seanmcdirmid",
+    "text": "ugh. DSH supports a Python coordinator orchestrating DSH subagents as conversations via RPC. AGY only supports a sub-agent orchestrating other sub-agents but it works well enough at this point. I plan on releasing my subagent framework soon (called autofab in pypi), which is basically a specification driven code development agent system (using existing agent harnesses rather than implementing my own). I tried goose, OpenClaw, Claude, codex, etc\u2026and they didn\u2019t really work for what I needed."
+   },
+   {
+    "src": "ask_hn",
+    "id": 48781508,
+    "author": "ernsheong",
+    "text": "do you mind sharing the more specific setup or agent framework? Hermes? LangChain? DIY?"
+   },
+   {
+    "src": "ask_hn",
+    "id": 49561005,
+    "author": "cjonas",
+    "text": "We use mcp as a \"gateway\" for a customer facing cloud agent. It basically is just a tool registry and could have been built using open-api... but MCP is arguably more robust/aligned for context management and the agent frameworks and observability tools support it first class."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49251807",
+    "author": "rhplus",
+    "date": "2026-08-11",
+    "text": "ke an MCP server and a client model. If you\u2019re in the C# ecosystem you could consider converting your APIs to MCP format tools using the MCP SDK. https://devblogs.microsoft.com/dotnet/build-a-model-context-... And then leveraging Microsoft Agent Framework for the client and orchestration side of things: https://learn.microsoft.com/en-us/agent-framework/ "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49184209",
+    "author": "sreekanth850",
+    "date": "2026-08-05",
+    "text": "how this can be compared against Microsoft agent framework?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49167619",
+    "author": "bilarikan",
+    "date": "2026-08-04",
+    "text": "ntario, Canada (ET) Remote: Yes (open to hybrid in Toronto) Willing to relocate: No Technologies: Python, SQL, HTML/CSS/JS, Claude API + Claude Code, MCP, RAG and vector DBs, multi-agent orchestration (Copilot Studio, Google ADK, Microsoft Agent Framework), Power Automate, xAPI/cmi5/SCORM, Cornerstone LMS, Pendo, Storyline/Rise, Camtasia, Git, Linux, Proxmox, local inference (llama.cpp, GGUF) R\u00e9sum\u00e9/CV: https://www.linkedin.com/in/bilarikan Email: bil@arikan.ca Writing: https://bil.arikan.ca I currently lead AI solutions inside t"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48762099",
+    "author": "tbpollard",
+    "date": "2026-07-02",
+    "text": " 1 Build the cloud platform, reusable services, and development frameworks used to deliver secure enterprise AI applications. Technologies: Azure OpenAI, Azure AI Foundry, Power Platform, Copilot Studio, Microsoft 365 Agents SDK, Microsoft Agent Framework Apply: https://careers.southstatebank.com/us/en/job/R-05241/AI-Plat... When applying please mention this post."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48534000",
+    "author": "danielrmay",
+    "date": "2026-06-14",
+    "text": "on local-first software, personal data stores, capability security, knowledge graphs, etc. https://github.com/danielrmay/likewise I also shipped Claudity, an experimental thinking partner plugin for Claude Code based on Microsoft's Clarity Agent framework/harness open-sourced last month. https://github.com/danielrmay/claudity https://github.com/microsoft/clarity-agent/ Lastly, I'm working on an homage/satire project to milliondollarhomepage.com as it's one of my favorite web phenomenons of all time."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47696015",
+    "author": "OutOfHere",
+    "date": "2026-04-08",
+    "text": "I would use Microsoft Agent Framework. It is open source."
+   },
+   {
+    "src": "hn_comment",
+    "id": "46042136",
+    "author": "jiggawatts",
+    "date": "2025-11-25",
+    "text": "It's a mess vibe coding combined with my crude experiments with the new Microsoft Agent Framework. Not something that's worth sharing! Also, I found that I had to partially rewrite it for each \"job\", because requirements vary so wildly. For example, one customer had 200K lines of VBA code in an Access database, which is a non-trivial exercise to extract, parse, and cross-ref"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46022922",
+    "author": "meander_water",
+    "date": "2025-11-23",
+    "text": "We already have AG-UI [0], which has been implemented by frameworks like Microsoft agent framework, pydantic AI and llamaindex. I guess they'll just have to duplicate functionality. Sigh. [0] https://docs.ag-ui.com/introduction "
+   },
+   {
+    "src": "hn_comment",
+    "id": "45898241",
+    "author": "kurokawad",
+    "date": "2025-11-12",
+    "text": "To me, it's pretty much unbelievable that Microsoft introduces an agent framework while for JSON serializing third-party Newtonsoft is still the go-to. Edit. I was not aware that the gap between System.Text.Json and Newtonsoft narrowed, take my comment with a grain of salt, please!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49183518",
+    "author": "knighthacker",
+    "date": "2026-08-05",
+    "text": "Microsoft just shipped something literally called the Agent Framework Harness, plus a \"build your own agent harness\" tutorial series. The harness is officially a product category now. Their harness is the loop around the model: tools, memory, approvals, the plan/execute cycle. Necessary. And still single-player. The part no SDK ships: where that l"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49925098",
+    "author": "recruitingsut",
+    "date": "2026-10-01",
+    "text": "e a German strategy & transformation consultancy building our own product: a platform to design, orchestrate, run and govern AI agents for enterprise processes \u2013 built entirely on Microsoft Azure in C#/.NET (Azure AI Foundry, Azure OpenAI, Semantic Kernel/Agent Framework, MCP, knowledge graphs, RAG, vector DBs). We are looking for the person who owns the engineering end-to-end: architecture, hands-on coding, CI/CD (Azure DevOps or GitHub Actions, IaC), multi-tenancy, security, cost control, and leading a small senior team. Must h"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48273312",
+    "author": "EFLKumo",
+    "date": "2026-05-26",
+    "text": " their team is brilliant ( https://openai.com/index/hardening-atlas-against-prompt-inje... ), there has been a number of succeeded injection attacks. IMO the real vulnerability is located at the \"Act\" part of \"ReAct\" (reasoning and action) agent framework. > \u201c[Copilot] Cowork asks for your permission before taking sensitive actions...\u201d ... when the recipient is the active user, these actions execute immediately without requiring human approval (users do not have a setting to modify this behavior). > Copilot Cowork can retrieve \u2018p"
+   }
+  ]
+ },
+ {
+  "name": "Claude Agent SDK",
+  "url": "https://docs.claude.com/en/docs/agent-sdk/overview",
+  "score": 57.8,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Use the Claude Agent SDK with Your Claude Plan",
+   "points": 39,
+   "id": "48125552",
+   "url": "https://support.claude.com/en/articles/15036540-use-the-claude-agent-sdk-with-your-claude-plan"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 48773409,
+    "author": "alexfortin",
+    "text": "rtantly, the workflows around them. Currently I'm refining what I think works best for me, which I'd call something like \"issues/PR based LLM workflow\", powered mainly by this action I'm building on top of the Pi coding agent SDK: https://github.com/shaftoe/pi-coding-agent-action Essentially I issue prompts swapping between the terminal and the git forge web app (GitHub and my own Forgejo instance) and it currently looks something like this: - create an issue with detail/quality of sp"
+   },
+   {
+    "src": "ask_hn",
+    "id": 44414295,
+    "author": "miketery",
+    "text": "Awesome! Let me know how your experience is or if you have any questions. I went pretty simple, used OpenAI agent sdk and built a couple of tools like \u201crun_query\u201d with read only connection. Initially I also had a tool for getting the join path from A to B, but the context I wrote out was sufficient. I think main challenge with this agent is how to keep the context up to date"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50404621",
+    "author": "astieman",
+    "date": "2026-11-07",
+    "text": "SEEKING WORK | Lima, Peru (UTC-5, same hours as US Eastern) | Remote Location: Lima, Peru Remote: Yes, remote only Willing to relocate: No Technologies: n8n, Claude Code / Claude Agent SDK, Gemini, RAG with pgvector, Next.js, React, TypeScript, Supabase (Postgres, RLS), Python, Docker, Linux R\u00e9sum\u00e9/CV: on request Email: astieman@outlook.com LinkedIn: linkedin.com/in/sjaack-tieman-72a242224 I'm the in-house AI and automation specialist at a food company group in Li"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50401232",
+    "author": "tmartirosian",
+    "date": "2026-11-07",
+    "text": "Location: New York / New Jersey Remote: Yes Willing to relocate: Yes Technologies: Python, TypeScript, FastAPI, React, Playwright, SQL, Claude API, Claude Agent SDK, MCP R\u00e9sum\u00e9/CV: on request GitHub: https://github.com/tigran-martirosian Email: martirosian [dot] tigr [at] gmail [dot] com Software developer, B.A. in Computer Science from Rutgers University\u2013New Brunswick (2022\u20132026). Open to full-time, part-time, contract or a fixed-price job"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50349129",
+    "author": "Bat-elN",
+    "date": "2026-11-03",
+    "text": "rtex AI. Direct client contact. We're looking for a hands-on engineer (not a research or prompt-only role) who has built and shipped LLM agents to production, with frameworks like Strands Agents, LangChain, Agno, Deep Agents, Google ADK or Claude Agent SDK. Just as important: we hire good people. Communicative, collaborative, eager to learn and happy to take ownership. That's what makes people succeed here, with clients and with the team. Process: intro call -> take-home assignment -> technical interview -> offer. Apply: https://w"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50286044",
+    "author": "InsideOutSanta",
+    "date": "2026-10-29",
+    "text": "I just checked, the docs now say this: \"the Claude Agent SDK and claude -p still draw from your subscription limits\" https://support.claude.com/en/articles/15036540-use-the-clau... "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50286042",
+    "author": "InsideOutSanta",
+    "date": "2026-10-29",
+    "text": "I just checked, the docs now say this: \"the Claude Agent SDK and claude -p still draw from your subscription limits\" https://support.claude.com/en/articles/15036540-use-the-clau... "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50155121",
+    "author": "dinm",
+    "date": "2026-10-19",
+    "text": "Sometimes, it gets to very hacky solutions, such as what we did at Laminar with Claude Agent SDK. Basically we spin up a tiny in-process proxy that intercepts requests and responses and emits the telemetry as OTEL traces. We repoint the Python / JS SDK to convince the harness that our proxy is the anthropic URL, and the proxy then forward the request downstream. I wrote abo"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50100164",
+    "author": "movedx01",
+    "date": "2026-10-15",
+    "text": "The one that Claude Agent SDK uses?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50064110",
+    "author": "pugz",
+    "date": "2026-10-12",
+    "text": "Amp recently achieved it. Apparently it's permitted as long as you use the Claude Agent SDK. https://ampcode.com/news/use-your-claude-plan "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50030272",
+    "author": "komali2",
+    "date": "2026-10-10",
+    "text": "Thanks for the link, though that particular project is abandonware. The active project seems to use Claude code's agent API https://github.com/anthropics/claude-agent-sdk-typescript so yes you can issue commands to Claude code from opencode, but the harness in that case is still ultimately Claude code, with all the big fat system prompts that come with it."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50003380",
+    "author": "InsideOutSanta",
+    "date": "2026-10-08",
+    "text": "Thank you, that's great news! \"You can still use the Claude Agent SDK, claude -p, and third-party apps with your subscription limits.\" "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49999753",
+    "author": "nullishdomain",
+    "date": "2026-10-07",
+    "text": "They have updated the site just now with a new sentence clarifying that subscription plans may still be used: > ...You can still use the Claude Agent SDK, claude -p, and third-party apps with your subscription limits."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49999718",
+    "author": "luketaylor",
+    "date": "2026-10-07",
+    "text": "Sorry for the misleading wording on this page; we\u2019ve updated it to clarify that the Claude Agent SDK can still be used with subscriptions."
+   }
+  ]
+ },
+ {
+  "name": "Mastra",
+  "url": "https://mastra.ai",
+  "score": 56.3,
+  "github_stars": 29396,
+  "top_hn_story": {
+   "title": "Show HN: Mastra \u2013 Open-source JS agent framework, by the developers of Gatsby",
+   "points": 442,
+   "id": "43103073",
+   "url": "https://github.com/mastra-ai/mastra"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50377455,
+    "author": "vekker",
+    "text": "arness: Claude, sometimes Codex I tried OpenCode, did not like it the CLI nor the results, as compared to Claude. I want to but haven't really tried Pi yet. 4) Agent orchestration: only custom tooling now, heavy user of Mastra for custom agentic workflows incl. production agents. Fantastic open source framework (not affiliated). 5) Agent platforms: Tried OpenClaw earlier this year, when it was such a hype. Did not like it. Every update something broke, and I spent more time fixing "
+   },
+   {
+    "src": "ask_hn",
+    "id": 46629396,
+    "author": "esperent",
+    "text": " 95% of my docs in small markdown markdown files so I'm just... not (+) . I'm using SQLite FTS5 (full text search) to build a normal search index and using that. Well, I already had the index so I just wired it up to my mastra agents. Each file has a short description field, so if a keyword search surfaces the doc they check the description and if it matches, load the whole doc. This took about one hour to set up and works very well. (+) At least, I don't think this counts as RAG. "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50377455",
+    "author": "vekker",
+    "date": "2026-11-05",
+    "text": "-facing agents. 3) Harness: Claude, sometimes Codex I tried OpenCode, did not like it the CLI nor the results, as compared to Claude. I want to but haven't really tried Pi yet. 4) Agent orchestration: only custom tooling now, heavy user of Mastra for custom agentic workflows incl. production agents. Fantastic open source framework (not affiliated). 5) Agent platforms: Tried OpenClaw earlier this year, when it was such a hype. Did not like it. Every update something broke, and I spent more time fixing things than I got va"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50362186",
+    "author": "asoni07",
+    "date": "2026-11-04",
+    "text": "Location: Bengaluru, India Remote: Yes Willing to relocate: Yes Technologies: Go, Ruby, Python, TypeScript, JavaScript, Node.js, PostgreSQL, Mastra, LangChain, LangGraph, AI Agents, Svelte, Vue.js R\u00e9sum\u00e9/CV: https://tinyurl.com/3ht8529s LinkedIn: https://www.linkedin.com/in/ajitsoni05/ Email: ajitsoni000005@gmail.com I'm a software engineer focused on backend systems, distributed services, and AI-powered applications. At Am"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50356590",
+    "author": "nbbaier",
+    "date": "2026-11-03",
+    "text": "ta isolation system on Cloudflare Durable Objects, and a SQLite database browser used by 200+ developers on Val Town (featured by Val Town's creator on Learn with Jason). Contract work for Val Town (Attio-to-Slack integration template) and Mastra (technical case studies, customer interviews). Background in linguistics research (PhD, UC Berkeley). Looking for roles in full-stack development, AI tooling, or developer experience/tooling."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50347893",
+    "author": "azterizm",
+    "date": "2026-11-03",
+    "text": "tes, before any search runs and without a model call. Across 1,897 real citations it never picked the wrong law, and declined the 4% it could not place: https://github.com/azterizm/legal-rag-router In October I reported two scoring bugs in Mastra's evals with a reproduction, and their CTO fixed both within nine hours: https://github.com/mastra-ai/mastra/issues/28736 . A fix I wrote for keyword scoring in the RAG search of Tether's QVAC is open as a PR: https://github.com/tetherto/qvac/pull/5467 Since 2021 I've built clie"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50339551",
+    "author": "TEForstner",
+    "date": "2026-11-02",
+    "text": "d the tools that let it act across the product, own parts of the agent harness (planning, tool use, context) and put evals around what you ship, together with our QA team. Stack: TypeScript/Node.js, MongoDB, pgvector, AWS Bedrock, LiteLLM, Mastra, some React. Engineers pick their own AI tooling (Claude Code, Codex, Cursor...) and we pay for the usage. We're looking for programmers first who now build with LLMs, and who have shipped something people use. Years of ML matter less to us than what you've built. We apply model"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50339514",
+    "author": "RitaSand",
+    "date": "2026-11-02",
+    "text": "Mastra | Founding Sales (Founding AE) | US Remote | Full-time Mastra is the open-source TypeScript framework for building AI agents (agents, workflows, memory, evals, tracing). From the team behind Gatsby, YC-backed, https://github.com/mastra-ai/mastra Why: Four months ago Mastra was a"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50049389",
+    "author": "cagster",
+    "date": "2026-10-11",
+    "text": "r: sudo ./docker/install-gvisor.sh && make docker-images SANDBOX_PROVIDER=docker SANDBOX_DOCKER_RUNTIME=runsc go run ./examples/minimal Clients: Go, Python (tools for Agno, CrewAI and Google ADK) and TypeScript (Vercel AI SDK, Trigger.dev, Mastra). What it isn't yet: pre-1.0, no other users, no outside security audit, and it's just me: the bus factor is one, and I'm careful around buses. gVisor is Linux only, so a Mac gets the container tier. The tier is configuration plus startup smoke tests, not attestation. If you run"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50034596",
+    "author": "haxzie",
+    "date": "2026-10-10",
+    "text": "Location: US/Canada/India Remote: Yes Willing to relocate: Yes, US or Canada Technologies: TypeScript, Node.js, Bun, React, Next.js, Vue, Nuxt, Hono, Postgres, Cloudflare Workers, AWS, SDK architecture and packaging, Vercel AI SDK, Mastra, LangChain, Claude Code SDK, MCP, agent tooling, UI/UX design R\u00e9sum\u00e9/CV: https://resume.haxzie.com Email: musthaq.gm@gmail.com GitHub: https://github.com/haxzie I am a product engineer with a frontend lean, about seven years in, mostly on developer tools. Most recently I set up "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49995549",
+    "author": "RitaSand",
+    "date": "2026-10-07",
+    "text": "Mastra | AI Engineer | REMOTE (AMER or EMEA time zones) | Full-time Mastra is the open-source TypeScript framework for building AI agents (agents, workflows, memory, evals, tracing). From the team behind Gatsby, YC-backed, https://github.com/mastra-ai/mastra Why: We\u2019re starting to buil"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49932254",
+    "author": "nelsontaleite",
+    "date": "2026-10-02",
+    "text": "ion: Porto, Portugal Remote: Yes Willing to relocate: No Technologies: React, Next.js, TypeScript, JavaScript, HTML, CSS, Zustand, React Query, TanStack, Tailwind CSS, CSS-in-JS, Node.js, PostgreSQL, Prisma, Drizzle ORM, Redis, Agentic AI, Mastra, Langfuse, Jest, Playwright, React Testing Library, Git, Storybook R\u00e9sum\u00e9/CV: https://drive.google.com/file/d/1SI8pPUYG1-I8jyROPdNEQxla1oVkNv6V/view?usp=drive_link Email: nelsontaleite@gmail.com Senior Frontend / Full-Stack Engineer with 13 years of experience, obsessed with the"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49929292",
+    "author": "nbbaier",
+    "date": "2026-10-02",
+    "text": "ta isolation system on Cloudflare Durable Objects, and a SQLite database browser used by 200+ developers on Val Town (featured by Val Town's creator on Learn with Jason). Contract work for Val Town (Attio-to-Slack integration template) and Mastra (technical case studies, customer interviews). Background in linguistics research (PhD, UC Berkeley). Looking for roles in full-stack development, AI tooling, or developer experience/tooling."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49924538",
+    "author": "dataviz1000",
+    "date": "2026-10-01",
+    "text": "Location: New Orleans, LA Remote: Yes Willing to relocate: Yes Technologies: TypeScript, JavaScript, Python, PHP, React, React Native, Svelte, Express, Bun, Node.js, Tailwind, Angular, GraphQL, D3.js, visx, Backbone, jQuery, LangChain, Mastra, FastAPI, pandas, scikit-learn, Optuna, Chrome Extension API, Playwright, Electron, Stagehand, browser-use, Web Audio API, WebRTC, WebSockets, PostgreSQL, TimescaleDB, MySQL, MongoDB, Redis, AWS, EC2, S3, Lambda, Docker, Git, LLM agent design, agent evaluation, reinforcement lea"
+   }
+  ]
+ },
+ {
+  "name": "LangGraph",
+  "url": "https://langchain-ai.github.io/langgraph/",
+  "score": 54.2,
+  "github_stars": 44618,
+  "top_hn_story": {
+   "title": "LangManus: An Open-Source Manus Agent with LangChain + LangGraph",
+   "points": 127,
+   "id": "43434171",
+   "url": "https://github.com/langmanus/langmanus"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 47393215,
+    "author": "seudxs",
+    "text": "oduction but are part of the project in my experience with cursor for example) goal summary if you've forgotten the big picture of the project because you came back from a break or something. I used AI agent for my last langgraph solo project only which had python and go languages, git and cursor so take my advice with a grain of salt :)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50391747",
+    "author": "mmegy",
+    "date": "2026-11-06",
+    "text": "Location: Cairo, Egypt (UTC+2) Remote: Yes Willing to relocate: Yes Technologies: Python, TypeScript, Java, Rust, LLMs (Azure OpenAI, OpenAI), agent loops, tool calling, RAG, LangGraph, LangChain, Qdrant, Langfuse, evals, FastAPI, Spring Boot, Docker, Azure, AWS, gRPC, Claude Code R\u00e9sum\u00e9/CV: https://www.linkedin.com/in/mahmoudmohseneg/ GitHub: https://github.com/MahmoudMohsenEgy Email: mahmoudmohsenegy (at) gmail.com Software engineer, 4 years. I build AI agen"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50390766",
+    "author": "spartanx5",
+    "date": "2026-11-06",
+    "text": "ortable overlapping with US or UK hours Willing to relocate: Within India only Technologies: TypeScript, JavaScript, Python, React, Next.js, React Native, Expo, Node.js, Express, FastAPI, MongoDB, PostgreSQL, Redis, Docker, GitHub Actions, LangGraph, LangChain, Claude API, MCP R\u00e9sum\u00e9/CV: https://www.linkedin.com/in/yuvrajsinh-jadav-2041a822b/ Email: devyuvrajsinh@gmail.com Full-stack engineer with 3.5 years of building and running complete products, now focused on AI agents with human approval gates. Available immediately f"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50383309",
+    "author": "skinner3481",
+    "date": "2026-11-05",
+    "text": "vices, real-time systems, WebSockets/streaming, NATS, AWS (EKS, ECS), GCP, Firebase, Kubernetes, Docker, Pulumi, Firestore, MongoDB, Redis, PostgreSQL, Elasticsearch, Prometheus, Grafana, OpenTelemetry, Langfuse, LLM integration, RAG, MCP, LangGraph, agent orchestration, human-in-the-loop, LLM-as-judge, evals, fine-tuning (LoRA) R\u00e9sum\u00e9/CV: https://drive.google.com/file/d/13tDwa9HFDxqJVPsYg-9IhlwJ65k... Email: skinner.cheng@gmail.com Who I am: I'm a Deaf engineer who spent 11+ years building the product I needed myself. Ava "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50377274",
+    "author": "Hayyan612",
+    "date": "2026-11-05",
+    "text": "te: Yes Willing to relocate: Yes (Germany, Netherlands, Ireland, UAE, Japan) Technologies: Python, FastAPI, TypeScript, React, Next.js, NestJS, React Native/Expo, PostgreSQL, Redis, Pinecone/Qdrant, LLM/RAG pipelines, LLM evals (DeepEval), LangGraph, Docker, Linux, GitHub Actions, self-hosting R\u00e9sum\u00e9/CV: https://hayyan.space Email: hayyan.connect@gmail.com Full-stack engineer who ships AI features to real users and runs the infra under them. Built the backend of an internal RAG assistant (routing across ~9 models, LLM-judge"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50375922",
+    "author": "prasid74",
+    "date": "2026-11-05",
+    "text": "red Bay Area, NYC, Austin, and Boston) Visa: F-1 OPT, 3 years of US work authorization (STEM OPT eligible) Technologies: Python, PyTorch, Hugging Face, LLMs, RAG, Qdrant, Hybrid Retrieval (BM25 + dense), Cross-Encoder Reranking, PEFT/LoRA, LangGraph, NLP, Computer Vision, Slurm, PySpark, Vertex AI, AWS, GCP, Docker, Kubernetes, W&B, Airflow, SQL, C++ Resume/CV: https://kubershahi.github.io Email: kshahi@ucsd.edu ML Engineer / AI Engineer with 2+ years of industry experience across ML systems, NLP, and large-scale data pipel"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50366224",
+    "author": "ksk385",
+    "date": "2026-11-04",
+    "text": "are: HL7 v2, FHIR R4, ADT feeds, NCQA HEDIS, CMS MSSP/ACOMS | Cloud: AWS, Azure, GCP, Terraform, Docker, Vercel, Supabase | Languages: Python, SQL, JavaScript/TypeScript, Java | App: Node.js/Express, Django, GraphQL, React/Next.js | AI/ML: LangGraph, OpenAI & Claude APIs, RAG, Vector Stores, Hugging Face | Observability: Datadog, Grafana Resume/CV: https://karankrishnani.com/resume LinkedIn: https://linkedin.com/in/karan-krishnani Email: karan.krishnani at gmail dot com"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50365329",
+    "author": "aigenos",
+    "date": "2026-11-04",
+    "text": "I built it for multi step complex workflows in banking which involves money, to achieve combination of a determinism like langgraph + intelligence like llm , best of both , please test and share feedbacks"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50362186",
+    "author": "asoni07",
+    "date": "2026-11-04",
+    "text": "Location: Bengaluru, India Remote: Yes Willing to relocate: Yes Technologies: Go, Ruby, Python, TypeScript, JavaScript, Node.js, PostgreSQL, Mastra, LangChain, LangGraph, AI Agents, Svelte, Vue.js R\u00e9sum\u00e9/CV: https://tinyurl.com/3ht8529s LinkedIn: https://www.linkedin.com/in/ajitsoni05/ Email: ajitsoni000005@gmail.com I'm a software engineer focused on backend systems, distributed services, and AI-powered applications. At Amagi, I built productio"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50359131",
+    "author": "jhpritch",
+    "date": "2026-11-03",
+    "text": "Location: Gainesville, FL Remote: Yes (preferred) Willing to relocate: Yes \u2014 Seattle, Atlanta, or Charlotte Technologies: Python (FastAPI, Pydantic), Kubernetes (k3d/K3s), LangGraph, MCP, Ollama/llama.cpp, ChromaDB/Qdrant, Prometheus/Grafana/Langfuse, Docker, ROCm, Tailscale/WireGuard, React R\u00e9sum\u00e9/CV: https://jhpritch-dev.github.io/fredrin-scratch/ \u2014 benchmarks at https://rawmark.io Email: jhpritch@hotmail.com I build and operate BIFROST, a local-first mul"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50356927",
+    "author": "Sisirvoruvuru",
+    "date": "2026-11-03",
+    "text": " to relocate: Yes. The SF Bay Area is the goal (I want to be part of the bastion of frontier hardtech), or anywhere building robots Technologies: Python, PyTorch, torch.compile, TensorRT, INT8/FP8, Hugging Face LeRobot, VLAs, MuJoCo, vLLM, LangGraph, MCP, RAG R\u00e9sum\u00e9/CV: https://github.com/captof-omuamua/captof-omuamua/blob/main/S... Email: sisir.voruvuru (at) gmail.com I make robot brains fast enough for the real world and frugal enough for battery-powered robots, with nearly the same accuracy as the power-hungry monsters t"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50353915",
+    "author": "shahet07",
+    "date": "2026-11-03",
+    "text": "nologies: Python, Java, TypeScript, JavaScript, SQL, React, Next.js, Node.js, FastAPI, Spring Boot, REST APIs, PostgreSQL, MySQL, Redis, Neo4j, Elasticsearch, Docker, AWS (S3), Azure, GitHub Actions, Jenkins, pytest, Playwright, LLMs, RAG, LangGraph, MCP R\u00e9sum\u00e9/CV: https://drive.google.com/file/d/1joibXT5JVTcM3TzAo0qkEgwrWgl... Email: shahet07@gmail.com"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50352493",
+    "author": "skp9046",
+    "date": "2026-11-03",
+    "text": " Adept at owning complex challenges end-to-end, from system design and integrations to AI development and production deployment. Location: India Remote: Yes Willing to relocate: Yes Technologies: LLMs, Generative AI, Agentic AI, LangChain, LangGraph, MCP, RAG, Python, Java, Spring Boot, Fast API, GraphQL, REST APIs, Node, Kafka, AWS, Docker, Kubernetes, GitHub Actions R\u00e9sum\u00e9/CV: https://www.linkedin.com/in/shashankpandey9046 Email: pandeyshashank9046@gmail.com "
+   }
+  ]
+ },
+ {
+  "name": "DSPy",
+  "url": "https://dspy.ai",
+  "score": 51.5,
+  "github_stars": 38967,
+  "top_hn_story": {
+   "title": "If DSPy is so great, why isn't anyone using it?",
+   "points": 227,
+   "id": "47490365",
+   "url": "https://skylarbpayne.com/posts/dspy-engineering-patterns/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 45775061,
+    "author": "garethsprice",
+    "text": "nthropic, OpenAI via their clis or Cursor). I often hit usage limits on the hosted models so it's nice to have a way my dumbest questions don't burn tokens I want to reserve for real work. Small LLM scripting tasks with dspy (simple categorization, CSV munging type tasks), sometimes larger RAG/agent type things with LangChain but it's a lot of overhead for personal scripts. My company is building a software product that heavily utilizes LLMs so I often point my local dev environm"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46630070,
+    "author": "lsb",
+    "text": "I'm using Sonnet with 1M Context Window at work, just stuffing everything in a window (it works fine for now), and I'm hoping to investigate Recursive Language Models with DSPy when I'm using local models with Ollama"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50343731",
+    "author": "thingfyi",
+    "date": "2026-11-02",
+    "text": "This is a big finding. Omar and his team have been working on this line of research (e.g., DSPy) for the past couple of years. To be honest, I had always been skeptical about his approach of using LLMs to optimize LLMs. It was in my view borrowing Matei Zaharia's research - Matei is Omar's PhD advisor, also the CTO of Databrick - in big data (compiler optimization etc.) an"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50340338",
+    "author": "tnyein15",
+    "date": "2026-11-02",
+    "text": " relocate: Yes, within Canada Work authorization: Canada. I'm on an open work permit (no sponsorship needed) and my PR application is in its final stretch. Technologies: Databricks (Spark, Delta Lake), SQL, Python/PySpark, dbt, ClickHouse, DSPy, R, Metabase R\u00e9sum\u00e9/CV: Email me and I'll send it LinkedIn: linkedin.com/in/thet-h-nyein Email: tnyein15@gmail.com I'm a data analyst with an MSc in Statistics. For the last two years I was the person behind the numbers at a health tech startup, from late seed to Series B. Most "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49980686",
+    "author": "vikramkr",
+    "date": "2026-10-06",
+    "text": ">having LLMs author prompts for themselves (free-form that is, not DSPy-style) is disastrous They've been perfectly capable at managing their own subagents since opus 4.8 and really good at it since fable."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49881551",
+    "author": "genxy",
+    "date": "2026-09-28",
+    "text": "You really need to work on your rhetorical combat, hn is not for amateurs. I said \"techniques in DSPy\", your agentic workflows are already using them. Read the GEPA paper. I'll put the link here and you can scroll down and read it. https://github.com/stanfordnlp/dspy Your agentic loops are already doing these things."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49879489",
+    "author": "ramraj07",
+    "date": "2026-09-28",
+    "text": "DSPy never made full sense even back then in the somnet 3.5 era and it makes no sense today. Not a gut reaction but pure evals (we have had teams create the same agents using dspy, langgraph compete with pure agent loops and the agent loops come across as so much better by a wide mar"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49870388",
+    "author": "genxy",
+    "date": "2026-09-27",
+    "text": "Techniques in DSPy are still extremely valuable. Your comment is akin to saying, we don't need feedback because open loop control is so good now. It is until it isn't. I don't need a deep understanding of the underlying theory because my gut reaction is always right, until it isn't."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49870145",
+    "author": "dang",
+    "date": "2026-09-27",
+    "text": "Related. Others? If DSPy is so great, why isn't anyone using it? - https://news.ycombinator.com/item?id=47490365 - March 2026 (120 comments) DSPy \u2013 Programming\u2013not prompting\u2013LMs - https://news.ycombinator.com/item?id=42343692 - Dec 2024 (45 comments) Betting on DSPy for Systems of LLMs - https://news.yc"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49818501",
+    "author": "0123456789ABCDE",
+    "date": "2026-09-23",
+    "text": "this is such a trivial thing to do in DSPY, no one bothered to give it a name\u2026 here's 7 lines import os import dspy lm = dspy.LM(\"openrouter/z-ai/glm-5.3-flash\", api_key=os.environ[\"OPENROUTER_API_KEY\"]) jev = dspy.Predict('email:str -> choice:Literal[\"Legitimate\", \"Spam\", \"Phishing\"]') email = \"Payroll asks for your pas"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49783673",
+    "author": "samuel",
+    "date": "2026-09-21",
+    "text": "No to confuse with Ax, the DSPy inspired agent framework https://axllm.dev/ "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49781335",
+    "author": "lopatin",
+    "date": "2026-09-20",
+    "text": "This is bound to cause some confusion with the other tool called Ax for agentic development: https://axllm.dev/ (which is DSPy for other languages)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49722061",
+    "author": "snthpy",
+    "date": "2026-09-16",
+    "text": "DSPy seems like the right comparison and this is the first comment I've seen mentioning it. Thanks for putting this together. I'm surprised the cost saving is so little though. I expected much more based on the post."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49719285",
+    "author": "zenlikethat",
+    "date": "2026-09-15",
+    "text": "It's a bit hastily put together, but I made a dspy fork where you can add a decorator to automatically use TypeSafe where possible on Signatures. It shows a fair bit of what actual, hands on usage looks like. https://github.com/typesafeainate/dspy-typesafeify "
+   }
+  ]
+ },
+ {
+  "name": "OpenAI Agents SDK",
+  "url": "https://openai.github.io/openai-agents-python/",
+  "score": 50.6,
+  "github_stars": 30547,
+  "top_hn_story": {
+   "title": "OpenAI adds MCP support to Agents SDK",
+   "points": 807,
+   "id": "43485566",
+   "url": "https://openai.github.io/openai-agents-python/mcp/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50367744,
+    "author": "tinyhouse",
+    "text": " as a backup although I don't really need it. I also use cloud agents to setup reoccurring jobs. For expensive agent runs, like visit 5000 websites and extract something from each, I would set up something cheap with an agents sdk and for the model use either Muse, Deepseek, or GPT-6-luna using their batch API. I maintain all my dotfiles and agent files / context in a github repo so that I can switch easily between harnesses and providers."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50343317",
+    "author": "levm38",
+    "date": "2026-11-02",
+    "text": "ce personal AI agent platform. 20+ tool integrations, MCP client, human-in-the-loop approval, voice streaming, native iOS app. 243 tests. At element61 I defined technical direction for 8 enterprise AI platforms \u2014 multi-agent orchestrators (OpenAI Agents SDK, Copilot Studio + MCP, Azure AI Foundry Agents), RAG chatbots, document intelligence pipelines, and event-driven quality systems. Reduced API costs by 30% through granular caching. Production observability with OpenTelemetry and KQL log forensics. I also write about harness engi"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50340167",
+    "author": "govindgupta",
+    "date": "2026-11-02",
+    "text": "Location: India (IST, UTC+5:30) Remote: Yes (flexible with US/EU overlap) Willing to relocate: No Technologies: Claude API, Claude Code, Cursor, MCP servers, LangGraph, CrewAI, OpenAI Agents SDK, AutoGen, LangChain, LlamaIndex, RAG pipelines, multi-agent orchestration, LLM integration, Python, FastAPI, Django, Node.js, PostgreSQL, pgvector, Next.js, React, TypeScript, Supabase, Stripe, AWS, Docker, Vercel, CI/CD R\u00e9sum\u00e9/CV: https://govindgupta.com Email: govind@govindgup"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50087964",
+    "author": "akshit_29",
+    "date": "2026-10-14",
+    "text": "(IST, UTC+5:30) Remote: Yes, remote only. 4-6h daily overlap with US Eastern, full overlap with EU. Contractor or EOR. Willing to relocate: No Technologies: Python, Django/DRF, FastAPI, Celery, Kafka, PostgreSQL, Redis, Next.js, LangGraph, OpenAI Agents SDK, MCP, pgvector, Pipecat, AWS, Azure, Kubernetes Resume/CV: https://akshit.wtf Email: ahujaakshit20@gmail.com Backend engineer, around 4 years, now building production AI systems. I learned the boring parts first. At Spinny (Indian used-car unicorn): scaled a connected-cars backe"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49924151",
+    "author": "govindgupta",
+    "date": "2026-10-01",
+    "text": "Location: India (IST, UTC+5:30) Remote: Yes (flexible with US/EU overlap) Willing to relocate: No Technologies: Claude API, Claude Code, Cursor, MCP servers, LangGraph, CrewAI, OpenAI Agents SDK, AutoGen, LangChain, LlamaIndex, RAG pipelines, multi-agent orchestration, LLM integration, Python, FastAPI, Django, Node.js, PostgreSQL, pgvector, Next.js, React, TypeScript, Supabase, Stripe, AWS, Docker, Vercel, CI/CD R\u00e9sum\u00e9/CV: https://govindgupta.com Email: govind@govindgup"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49817814",
+    "author": "agentdev001",
+    "date": "2026-09-23",
+    "text": "ow this statement into agent of your choice- and ask what native integrations exist to cover this use: OAI and Anthropic both have a handful of options here. Claude Agent SDK, Claude managed agents, Codex exec, Codex sdk, Codex app server, openai agents sdk, openai agents api."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49653842",
+    "author": "baalimago",
+    "date": "2026-09-11",
+    "text": "I've had great success with the OpenAI agents SDK [0]. This way I've been able to build the sandbox + slack + knowledge-bank integrations independently and be very strict with what I expose to OpenAI. Looking at the Agents API, it seems like it offers similar capabilities, but reduces the need for hosting? So I get it from a bu"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49524988",
+    "author": "govindgupta",
+    "date": "2026-09-01",
+    "text": "Location: India (IST, UTC+5:30) Remote: Yes (flexible with US/EU overlap) Willing to relocate: No Technologies: Claude API, Claude Code, Cursor, MCP servers, LangGraph, CrewAI, OpenAI Agents SDK, AutoGen, LangChain, LlamaIndex, RAG pipelines, multi-agent orchestration, LLM integration, Python, FastAPI, Django, Node.js, PostgreSQL, pgvector, Next.js, React, TypeScript, Supabase, Stripe, AWS, Docker, Vercel, CI/CD R\u00e9sum\u00e9/CV: https://govindgupta.com Email: govind@govindgup"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49163206",
+    "author": "gersonazgo",
+    "date": "2026-08-04",
+    "text": "Location: Porto Alegre, Brazil (GMT-3) Remote: Yes Willing to relocate: Yes Technologies: Python, Ruby on Rails, OpenAI Agents SDK, agentic/multi-agent systems, RAG/Agentic RAG, evals (LLM-as-judge + code-based), Anthropic/OpenAI/Etc APIs, LiteLLM, PostgreSQL + pgvector, Redis, Sidekiq, React/Next.js, TypeScript, Node.js, AWS, Docker R\u00e9sum\u00e9/CV: https://gerson.is Email: gersonazgo@gmail.com AI Engineer and t"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49160727",
+    "author": "asdev",
+    "date": "2026-08-03",
+    "text": "Building from ground up using OpenAI Agents SDK. We already have custom in house Cloud Development Environment, so the effort is just to \"agent-ize\" though which is not small. That's why I feel any team with any sort of infra support likely won't buy your product, since they already have the tribal knowledge to set this up. N"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49158257",
+    "author": "govindgupta",
+    "date": "2026-08-03",
+    "text": "Location: India (IST, UTC+5:30) Remote: Yes (flexible with US/EU overlap) Willing to relocate: No Technologies: Claude API, Claude Code, Cursor, MCP servers, LangGraph, CrewAI, OpenAI Agents SDK, AutoGen, LangChain, LlamaIndex, RAG pipelines, multi-agent orchestration, LLM integration, Python, FastAPI, Django, Node.js, PostgreSQL, pgvector, Next.js, React, TypeScript, Supabase, Stripe, AWS, Docker, Vercel, CI/CD R\u00e9sum\u00e9/CV: https://govindgupta.com Email: govind@govindgup"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48919568",
+    "author": "fitz2882",
+    "date": "2026-07-15",
+    "text": "And savings depend on workload: failure-heavy loops save ~78\u201384%, not 92.8%. There's a writeup on designing verifiers strong enough to trust on the blog. Apache-2.0, pip install loopgain. Adapters for LangGraph, CrewAI, AutoGen, LangChain, OpenAI Agents SDK, and the Claude Agent SDK; the raw API works for anything with a measurable error. What I'd really love from HN: if you run production agent loops, I'm interested in whether the stop decisions match what you see empirically \u2014 and what your loops' error signals actually look like"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48748561",
+    "author": "govindgupta",
+    "date": "2026-07-01",
+    "text": "SEEKING WORK | Remote | India (IST, UTC+5:30) | Flexible with US/EU hours Remote: Yes (flexible with US/EU overlap) Willing to relocate: No Technologies: Claude API, LangGraph, CrewAI, OpenAI Agents SDK, AutoGen, RAG pipelines, multi-agent orchestration, Python, FastAPI, Django, Node.js, PostgreSQL, pgvector, Next.js, React, TypeScript, Supabase, Stripe, AWS Website: https://govindgupta.com Email: govind@govindgupta.com 15 years as a full-stack AI engineer, including onsite eng"
+   }
+  ]
+ },
+ {
+  "name": "Google ADK",
+  "url": "https://google.github.io/adk-docs/",
+  "score": 43.8,
+  "github_stars": 22135,
+  "top_hn_story": {
+   "title": "Agent Development Kit (ADK) from Google",
+   "points": 6,
+   "id": "43632824",
+   "url": "https://github.com/google/adk-python"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 46261720,
+    "author": "verdverm",
+    "text": "if they aren't already, they will be multi-agent / llm systems, more and llm being asked to loop for example, in ADK you can set up a sequential agent with [planner, loop(coder, validator), finalizer] with the inner loop, such that another agent is the one checking and deciding if the task is complete or not, but we are also creating higher level enforced constructs of seq "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50361295",
+    "author": "Shrey_07",
+    "date": "2026-11-04",
+    "text": "Location: India (Moradabad / Delhi NCR) Remote: Yes Willing to relocate: Yes, anywhere Technologies: Python, SQL, FastAPI, PostgreSQL, Redis, Docker, AWS, Cloudflare Workers, pytest, CI/CD, LLM agents, RAG, PyTorch, Hugging Face, google adk R\u00e9sum\u00e9/CV: https://drive.google.com/file/d/1Vz6ZgW-UPrPOnwAgLJ21AIm6Uyl... Email: shrey7shrey@gmail.com 2026 CS grad building backend systems and AI agents. Recent work: Kario:a job search engine for freshers that pulls live roles from 200+ companies, works out real experience a"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50349254",
+    "author": "naman_411",
+    "date": "2026-11-03",
+    "text": "Location: Bhopal, India (IST, UTC+5:30) Remote: Yes. Can overlap 4+ hours with EU or US East. Willing to relocate: Yes, within India (Bengaluru, Hyderabad, Mumbai) Technologies: Python, TypeScript, FastAPI, LangGraph, LangChain, Google ADK, MCP, Qdrant, pgvector, Postgres, Redis, Docker, Next.js R\u00e9sum\u00e9/CV: https://namangupta.dev/?ref=hn-nov26 Email: naman@namangupta.dev GitHub: https://github.com/namanxdev Applied AI engineer, 1+ year at early-stage startups. I build agents and retrieval systems, then measure whet"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50349129",
+    "author": "Bat-elN",
+    "date": "2026-11-03",
+    "text": " GCP Vertex AI. Direct client contact. We're looking for a hands-on engineer (not a research or prompt-only role) who has built and shipped LLM agents to production, with frameworks like Strands Agents, LangChain, Agno, Deep Agents, Google ADK or Claude Agent SDK. Just as important: we hire good people. Communicative, collaborative, eager to learn and happy to take ownership. That's what makes people succeed here, with clients and with the team. Process: intro call -> take-home assignment -> technical interview -> off"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50283128",
+    "author": "kami23",
+    "date": "2026-10-29",
+    "text": "Our running joke last year was that anything we were learning or implementing in regards to AI was going to be outdated in two weeks. Every week we'd build a new thing in our agent workflow and then Google's ADK the following week would have support for something we could have used instead of rolling our own. Reading this release makes me wonder what makes it special, nothing sticks out from the press release. But I agree, the churn is real, people are starting to throw around the term "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50274390",
+    "author": "Raed667",
+    "date": "2026-10-28",
+    "text": "And Google has ADK (Agent Development Kit)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50193260",
+    "author": "valgaze",
+    "date": "2026-10-22",
+    "text": "Google's ADK (agent development kit) uses LiteLLM extensively: https://adk.dev/agents/models/litellm/ Their docs list LiteLLM's vulnerability from March... https://i.imgur.com/TPVrVyW.png "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50182168",
+    "author": "rcleveng",
+    "date": "2026-10-21",
+    "text": "Seriously again for litellm? I really with that things like Google ADK didn't add this to my deps."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50049389",
+    "author": "cagster",
+    "date": "2026-10-11",
+    "text": "x with docker, the same example at the kernel tier: sudo ./docker/install-gvisor.sh && make docker-images SANDBOX_PROVIDER=docker SANDBOX_DOCKER_RUNTIME=runsc go run ./examples/minimal Clients: Go, Python (tools for Agno, CrewAI and Google ADK) and TypeScript (Vercel AI SDK, Trigger.dev, Mastra). What it isn't yet: pre-1.0, no other users, no outside security audit, and it's just me: the bus factor is one, and I'm careful around buses. gVisor is Linux only, so a Mac gets the container tier. The tier is configuration p"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49943331",
+    "author": "Shrey_07",
+    "date": "2026-10-03",
+    "text": "Location: India Remote: Yes Willing to relocate: Yes \u2014 anywhere. India, EU, US, UK. Technologies: Python, PyTorch, Redis LLM inference, LLM fine-tuning (Qlora, peft), Google ADK, Agentic systems, FastAPI, Playwright, Docker, SQL, AWS, Tensorflow, MLflow, MCP, RAG, Neo4j, Git/Github, CI/CD, Typescript, API, scikit-learn, Vector Databases, HuggingFace. Resume - https://drive.google.com/file/d/1qUxHkYu8dx866aGJy4-GLejJui7... Email: shrey7shrey@gmail.com --"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49930302",
+    "author": "namelessking786",
+    "date": "2026-10-02",
+    "text": "ing Boot, Apache Camel, FastAPI, React.js, Next.js, GCP (GCE,GKE,GCS,GCF,App Engine,IAM,VertexAI,Gemini), Docker, Kubernetes, Github Actions, Jenkins, Terraform, Distributed systems, event driven architectures, LLMs, Github Copilot, Google ADK, Agentic AI, RAG, embeddings. R\u00e9sum\u00e9/CV: https://drive.google.com/file/d/1FkrVyckbETfQBD8E1c5hMmNgVNc... Email: jaiswalaman97@gmail.com Website: https://www.aizwal9.dev/ Certification : https://www.credly.com/badges/ec8ae979-06c6-4408-9133-94db41 ... Summary: Software Engineer c"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49781958",
+    "author": "briga",
+    "date": "2026-09-21",
+    "text": " on. The agentic ecosystem is continuing to multiply on a daily basis and everyone and their grandma has written a new agent framework--people are stepping over each other to get these new projects out the door. That said, I think Google's ADK ecosystem and this new AX platform is promising--I would expect Google to maintain this and other tooling around this for years to come. To the Googlers out there: is Google using this at any capacity for internal projects?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49739952",
+    "author": "Anis_FA",
+    "date": "2026-09-17",
+    "text": "Hi HN, I'm Anis, founder of thaink\u00b2. ApowerB is an open source ApowerB is an open source agentic platform \u2014 FastAPI backend, agents materialized dynamically from DB definitions, execution via Google ADK, model-agnostic via LiteLLM. We built ApowerB because everyone is trying to build their own software today with AI tools like Claude. Even non-technical people who used to open a ticket and wait for IT, even industrial companies that were used to going through external providers"
+   }
+  ]
+ },
+ {
+  "name": "CrewAI",
+  "url": "https://www.crewai.com",
+  "score": 41.5,
+  "github_stars": 60609,
+  "top_hn_story": {
+   "title": "Show HN: I built AI agents with CrewAI to automate my entire Gmail workflow",
+   "points": 26,
+   "id": "43354219",
+   "url": "https://github.com/tonykipkemboi/crewai-gmail-automation"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50351320",
+    "author": "Anon84",
+    "date": "2026-11-03",
+    "text": " Location: NYC Remote: Yes Willing to relocate: No Technologies: Machine Learning, Python, LLMs, LangChain, CrewAI R\u00e9sum\u00e9/CV: By request Website: https://www.data4sci.com GitHub: https://github.com/DataForScience/ Substack: http://data4sci.substack.com/ Email: bgoncalves@data4sci.com "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50342930",
+    "author": "shaikihsan38",
+    "date": "2026-11-02",
+    "text": "if in Hyderabad Willing to relocate: open for discussions Technologies: Python, C, SQL, OpenCV, LangChain, LangGraph, LangSmith, DeepEval, MCP (Model Context Protocol), AI Agents, Agentic AI, LoRA/QLoRA, Langfuse, Docling, AutoGen, Ollama, CrewAI, vLLM, TGI, Unsloth, LLMs, VLMs, Fine-tuning, Prompt Engineering, Context Engineering, RAG, Multi-Agent Orchestration, OCR, NLP, A2A (Agent-to-Agent Protocol), Vector Search, Model Deployment, Model Hosting, Kubernetes, CI/CD (GitHub Actions), FastAPI, Docker, Linux, Git, GitHub"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50340167",
+    "author": "govindgupta",
+    "date": "2026-11-02",
+    "text": "Location: India (IST, UTC+5:30) Remote: Yes (flexible with US/EU overlap) Willing to relocate: No Technologies: Claude API, Claude Code, Cursor, MCP servers, LangGraph, CrewAI, OpenAI Agents SDK, AutoGen, LangChain, LlamaIndex, RAG pipelines, multi-agent orchestration, LLM integration, Python, FastAPI, Django, Node.js, PostgreSQL, pgvector, Next.js, React, TypeScript, Supabase, Stripe, AWS, Docker, Vercel, CI/CD R\u00e9sum\u00e9/CV: https://govindgupta.com Emai"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50049389",
+    "author": "cagster",
+    "date": "2026-10-11",
+    "text": "es/minimal On Linux with docker, the same example at the kernel tier: sudo ./docker/install-gvisor.sh && make docker-images SANDBOX_PROVIDER=docker SANDBOX_DOCKER_RUNTIME=runsc go run ./examples/minimal Clients: Go, Python (tools for Agno, CrewAI and Google ADK) and TypeScript (Vercel AI SDK, Trigger.dev, Mastra). What it isn't yet: pre-1.0, no other users, no outside security audit, and it's just me: the bus factor is one, and I'm careful around buses. gVisor is Linux only, so a Mac gets the container tier. The tier is "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49973210",
+    "author": "toddfreeman513",
+    "date": "2026-10-06",
+    "text": "Location: 1144 Sutton PI, Texas Remote: Yes Willing to relocate: Yes Technologies: Agentic AI, CrewAI, MCP, Langchain/Langgraph/LangSmith, Evaluation, Pinecone, PgVector, Next.js, Nestjs, FastAPI, Docker, Kubernetes, Terraform, CI/CD, AWS, GCP, Azure, Temporal, EntraID, Microservice Architecture, ETL/ELT, SnowFlask, Databrick, Rabbitmq, Kafka Resume: https://www.toddfreeman.onli"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49963332",
+    "author": "dorottyag",
+    "date": "2026-10-05",
+    "text": "y, with a human in the loop only where risk demands it. Not research: you consume LLMs via API and build the judgment, guardrails, and monitoring around them, end to end, and own what you ship. Stack: Python, LangChain/LangGraph/LlamaIndex/CrewAI (your choice), LLM APIs, cloud infra, CI/CD. No visa sponsorship/relocation. Apply: https://axmed.teamtailor.com/jobs/8175859-ai-engineer "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49962697",
+    "author": "Ayaz_Saifi",
+    "date": "2026-10-05",
+    "text": "Location : India, Delhi/NCR Remote : Globally , India Willing to relocate : yes Globally Technologies : Python | Java | JavaScript | SQL | Generative AI | Agentic AI | LLMs | RAG | AI Agents | LangChain | LangGraph | CrewAI | AutoGen | FastAPI | Flask | Spring Boot | REST APIs | Microservices | Vector Databases | ChromaDB | PostgreSQL | MongoDB | PyTorch | TensorFlow | Docker | Kubernetes | AWS | Azure | GCP | Git | GitHub Resume/CV : https://drive.google.com/file/d/1vcxw1A6UNv5f3C3n3SQ7YYF9Hti... "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49924151",
+    "author": "govindgupta",
+    "date": "2026-10-01",
+    "text": "Location: India (IST, UTC+5:30) Remote: Yes (flexible with US/EU overlap) Willing to relocate: No Technologies: Claude API, Claude Code, Cursor, MCP servers, LangGraph, CrewAI, OpenAI Agents SDK, AutoGen, LangChain, LlamaIndex, RAG pipelines, multi-agent orchestration, LLM integration, Python, FastAPI, Django, Node.js, PostgreSQL, pgvector, Next.js, React, TypeScript, Supabase, Stripe, AWS, Docker, Vercel, CI/CD R\u00e9sum\u00e9/CV: https://govindgupta.com Emai"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49922586",
+    "author": "dvvalia",
+    "date": "2026-10-01",
+    "text": " Location: Mumbai, India Remote: Preferred Willing to relocate: No Technologies: - Python/Pandas - Java/Spring Boot - Data Engineering (ETL/ELT, data pipelines) - Product Development - AI/LLM based development (MCP, agents, ADK, CrewAI, etc) - Other (SQL, Redis, Docker, AWS, GCP, Azure, DBT) R\u00e9sum\u00e9/CV/Email: https://dvalia.in Data/Backend/Agentic AI engineer for the past decade (Python, Java, SQL). Experience building data platforms (from scratch!) and ELT pipelines for financial data. Currently working on age"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49695071",
+    "author": "druhinbala",
+    "date": "2026-09-14",
+    "text": " allowed to perform an operation, what's already been done, and how to safely recover when the agent crashes or disappears mid-execution. It is a runtime that sits underneath your existing agent framework, so you can use it with LangGraph, CrewAI, AutoGen, or your own agent code without migrating the agent itself. Still early. I'd like to talk to anyone running agents in production who's hit duplicate tool calls, duplicate side effects, or a workflow that quietly never finished."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49625124",
+    "author": "windexh8er",
+    "date": "2026-09-09",
+    "text": "I really didn't get the article. The author seemed to think that agent coordination/collaboration was some novel idea. I think I first saw it being used in CrewAI [0] almost 2 years ago, now. From what I've experienced when you just let the agents figure it out, to your point, they collaborate awkwardly. If you define how/where in your initial spec of what's being built that seems to go a long way in resolving this. However, agents still "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49548485",
+    "author": "Ayaz_Saifi",
+    "date": "2026-09-03",
+    "text": "Location : India Remote : Yes Willing to relocate : yes Technologies : Python | Generative AI | Agentic AI | LLMs | RAG | AI Agents | Multi-Agent Systems | LangChain | LangGraph | CrewAI | AutoGen | ReAct | HITL | AI Guardrails | Tool Calling | Embeddings | Semantic Search | ChromaDB | Vector Databases | FastAPI | REST APIs | PostgreSQL | MongoDB | Docker | Kubernetes | AWS | GCP | Azure | PyTorch | TensorFlow | Computer Vision | Git | GitHub Resume / CV : https"
+   }
+  ]
+ },
+ {
+  "name": "Pydantic AI",
+  "url": "https://ai.pydantic.dev",
+  "score": 39.4,
+  "github_stars": 21077,
+  "top_hn_story": {
+   "title": "Building your own CLI coding agent with Pydantic-AI",
+   "points": 197,
+   "id": "45055439",
+   "url": "https://martinfowler.com/articles/build-own-coding-agent.html"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50349899",
+    "author": "sheavedsurface",
+    "date": "2026-11-03",
+    "text": "Location: Brazil (UTC-3) Remote: Yes (remote only) Willing to relocate: No Languages/Tech: Python, Java, Linux, pydantic-ai, FastAPI, pydantic, AST-manipulating libraries (libcst, tree-sitter, JavaParser, jscodeshift, Roslyn, etc.), SAST/DAST tools and algorithms, AppSec general work ,etc. R\u00e9sum\u00e9/CV: https://andrecsilva.github.io/static/andre_cv.pdf Email: see CV Proven solid problem solving, researc"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50339429",
+    "author": "qaisermehdi",
+    "date": "2026-11-02",
+    "text": "er. https://github.com/qaisermehdi3-coder/qvunex/tree/main/bench... Try it: which measured GPU is cheapest at your answer time, one file, standard library: https://github.com/qaisermehdi3-coder/qvunex/tree/main/bench... Recent public work: pydantic-ai fixed a $0-cost bug I reported (#9491); AgentMeasure runs my self-hosted evidence case in their CI; sent fixes for Kedify's vLLM autoscaling examples (one approved); measured two vLLM servers on one GPU for vLLM #60599. Free first step: send your model, vLLM flags and typical pr"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50339243",
+    "author": "quentinmitchell",
+    "date": "2026-11-02",
+    "text": "Location: Burlington, Ontario, Canada (Toronto/GTA) Remote: Yes Willing to relocate: No Technologies: TypeScript, Python, SvelteKit, React, Node, Bun, FastAPI, Postgres, Redis/BullMQ, MCP, Vercel AI SDK, pydantic-ai, Claude Code, Codex, Twilio, Docker, AWS, Railway, Cloudflare Workers, Playwright R\u00e9sum\u00e9/CV: https://quentin-mitchell.vercel.app Email: 1quentin.mitchell@gmail.com I build production software by orchestrating swarms of AI coding agents across Claude Code, Codex, and Cursor, with"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50183654",
+    "author": "connorbrinton",
+    "date": "2026-10-21",
+    "text": "Pydantic AI has a great set of abstractions over LLM providers. The documentation tends to focus on its agent loop more, but I find the LLM abstractions quite nice even on their own"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49977761",
+    "author": "dave8172",
+    "date": "2026-10-06",
+    "text": "Applied AI Engineer Location: India Remote: Yes Willing to relocate: No Technologies:Python, Postgresql, FastAPI, MCP, Pydantic AI R\u00e9sum\u00e9/CV: https://quirkyagents.com/wizard/ Email: hello@quirkyagents.com."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49975844",
+    "author": "amanbirs",
+    "date": "2026-10-06",
+    "text": "Location: Delhi, India Remote: Yes (UK/EU hours; US East and Pacific mornings) Willing to relocate: No Technologies: Python, Django, React/Next.js, Postgres, LiveKit, Pydantic AI, Langfuse, Kubernetes, Terraform, Azure/AWS/GCP R\u00e9sum\u00e9/CV: linkedin.com/in/amanbirs Email: amanbir.s@gmail.com Open to contract and freelance work. AI engineer and startup CTO. I take AI prototypes to production: evals, security, tests and CI. I also work on real-time voice agen"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49931789",
+    "author": "sheavedsurface",
+    "date": "2026-10-02",
+    "text": "Location: Brazil Remote: Yes (remote only) Willing to relocate: No Languages/Tech: Python, Java, Linux, pydantic-ai, FastAPI, pydantic, AST-manipulating libraries (libcst, tree-sitter, JavaParser, jscodeshift, Roslyn, etc.), SAST Algorithms, etc. R\u00e9sum\u00e9/CV: https://andrecsilva.github.io/static/andre_cv.pdf Email: see CV Proven solid problem solving, research, and mathematical skills (Computer"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49930545",
+    "author": "sn0wr8ven",
+    "date": "2026-10-02",
+    "text": " Yes Willing to relocate: Yes Technologies: PyTorch, Azure DevOps (Pipelines), Artifactory, Terraform, Compose, K8S, SQL, Linux, Bash, Git, CUDA, Java, AWS (Lambda, ECR, SSM, and related IAM), GCP (Firebase and related IAM), Grafana, LLMs (Pydantic AI, RAG, MCP) Resume/CV: https://zihanding579.github.io/cv/ Email: zihand579@gmail.com"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49820007",
+    "author": "persedes",
+    "date": "2026-09-23",
+    "text": "ngchain_v2: elif langchain_v3: else ....\" ... breaking changes are ok! I feel like at this point they're hopelessly spaghettied and need a more opinionated approach to clean up a lot of the mess. Since others are asking: My current goto is pydantic ai and it's been doing pretty well for my use cases."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49738313",
+    "author": "anon373839",
+    "date": "2026-09-17",
+    "text": "> Personally, I\u2019ve replaced OpenCode with a thin wrapper around Pydantic-AI as the pythonic analogue to Pi-Agent for headless use via Hermes That's really interesting. I like Pydantic AI a lot and wondered why all of the harnesses seem to be written in Javascript instead of it. What do you use it for headless, though? I haven't tried Hermes or similar y"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49735592",
+    "author": "corv",
+    "date": "2026-09-17",
+    "text": "My own findings are in line with this research: Having a coding harness is critical but the differences between them are overstated. Personally, I\u2019ve replaced OpenCode with a thin wrapper around Pydantic-AI as the pythonic analogue to Pi-Agent for headless use via Hermes They\u2019d all do the job - I just prefer to compartmentalize for access control. Keeping the harness\u2019 surface area tiny had the added benefit of preserving my understanding and being able to adapt it to my preferred w"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49534217",
+    "author": "sheavedsurface",
+    "date": "2026-09-02",
+    "text": "Location: Brazil Remote: Yes (remote only) Willing to relocate: No Languages/Tech: Python, Java, Linux, pydantic-ai, FastAPI, pydantic, AST-manipulating libraries (libcst, tree-sitter, JavaParser, jscodeshift, Roslyn, etc.), SAST Algorithms, etc. R\u00e9sum\u00e9/CV: https://andrecsilva.github.io/static/andre_cv.pdf Email: see CV Proven solid problem solving, research, and mathematical skills (Computer"
+   }
+  ]
+ },
+ {
+  "name": "MCP SDKs",
+  "url": "https://modelcontextprotocol.io",
+  "score": 39.3,
+  "github_stars": 24793,
+  "top_hn_story": {
+   "title": "Welcome to FastMCP",
+   "points": 80,
+   "id": "47508149",
+   "url": "https://gofastmcp.com/getting-started/welcome"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50380617",
+    "author": "enjoyyourlife",
+    "date": "2026-11-05",
+    "text": "For me it's just: from mcp.server.fastmcp import FastMCP"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50059102",
+    "author": "vibheksoni",
+    "date": "2026-10-12",
+    "text": "Location: New York City Remote: Yes and open to hybrid in NYC Technologies: Python, FastMCP, nodriver, Chrome DevTools Protocol, MCP, PostgreSQL, Redis, Docker R\u00e9sum\u00e9/CV: https://vibheksoni.com Email: vibheksoni@engineer.com Backend engineer. I built and run FreeTheAI which is an OpenAI compatible AI API that has served over 190 billion tokens and I made stealth-browse"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49935672",
+    "author": "whosgotch",
+    "date": "2026-10-02",
+    "text": "Location: Kyiv, Ukraine Remote: Yes Willing to relocate: Yes Technologies: Python, Go, JavaScript, TypeScript, Lua, C, SQL, PostgreSQL, MySQL, MariaDB, MongoDB, Django, FastAPI, Flask, Odoo, Redis, Elasticsearch, FastMCP, Kafka, Docker, Grafana Resume/CV: Software engineer with 5 years of experience, split between backend systems and AI tooling. At GlobalLogic I built the internal AI coding platform now used as the standard across the org by 120+ engineers - an OpenCode fork with a custom model "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49933671",
+    "author": "Trakshan",
+    "date": "2026-10-02",
+    "text": "acted three of my own earlier claims. Open source, every fix with tests: merged in Comet Opik (streaming wrappers were swallowing exceptions) and facebook/astryx (focus-trap bug). In review: apache/superset (approved), kubeflow/mcp-server (FastMCP 4 upgrade), bitcoindevkit/bdk_wallet (Rust, relative locktimes), and a Java/ClickHouse change in Opik. I also review PostgreSQL patches on CommitFest. Before that: React front ends on Django REST and FastAPI back ends over PostgreSQL (cut API response times 35%), and FastAPI mod"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49783251",
+    "author": "what-the-grump",
+    "date": "2026-09-21",
+    "text": "Pretty much, MCP is still a bad idea. LLMs perform significantly better and faster when you strap them to plain old apis/and an open api spec with a search tool. My current MCP design is\u2026 grab a fastapi spec shove it into fastmcp, shallow wrapper, search tool for the full schema. Oh boy so exciting I just wrapped an api spec for no reason and have to host infra for the translation layer. If only we invented api gateways. But I am Mr. AI now."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48885712",
+    "author": "shitloadofbooks",
+    "date": "2026-07-12",
+    "text": "I couldn't find anything else to do exactly what I wanted (or wasn't just a blatent rugpull towards \"enterprise pricing\" waiting to happen) so I slopped together an MCP Proxy that uses FastMCP to proxy a list of upstream MCPs behind Entra oauth, with CEL-expressions for per-tool RBAC. The peace of mind it brought not trusting other people's slopped out MCPs to do the right thing with authentication is immense. It's internal only, but it was a Fable 5 one-shot (3 shot "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48782223",
+    "author": "goodroot",
+    "date": "2026-07-04",
+    "text": "ster above mentioned, my setup with Sear is the following, all through `llama.cpp`, which has a built-in webui with an MCP client: * SearXNG in Docker \u2014 enable the JSON API (`search.formats: [html, json]`; off by default). * `searxng-mcp` (FastMCP, native streamable-HTTP): `TRANSPORT=streamable-http HOST=127.0.0.1 PORT=8100` `SEARXNG_URL=http://localhost:8888 uvx --from searxng-mcp --with fastmcp searxng-mcp` * `llama-server` with `--webui-mcp-proxy`, then add the server in the webui. Some gotchas: * `searxng-mcp` forgets"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48222996",
+    "author": "jspann",
+    "date": "2026-05-21",
+    "text": "-My spreadsheet is in Google Sheets -The hosting is in AWS -The server itself uses the FastMCP library, in python"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48041927",
+    "author": "xkoda",
+    "date": "2026-05-06",
+    "text": "ired per proposal. To play, point your agent at the MCP endpoint. It explains the rules and how to participate. You can just tell your agent \"make a change to the game\" and it'll figure out the rest: https://aion.quest/mcp Stack: FastAPI + FastMCP, AssemblyScript \u2192 WASM, vanilla JS frontend, Web Worker with a watchdog to kill runaway WASM, Ed25519 agent identity. Source (full game history): git clone https://aion.quest/git "
+   },
+   {
+    "src": "hn_comment",
+    "id": "47811160",
+    "author": "AmmarSaleh50",
+    "date": "2026-04-17",
+    "text": "hments when it pulls them through an MCP server. so i tested by asking Claude to describe stuff you can only get by actually looking at the slide and it works. stuff broke along the way \u2014 Vercel's Python runtime doesn't fire ASGI lifespan (FastMCP's task group never starts), FastMCP has a DNS rebinding protection default that's localhost-only, Supabase Storage doesn't like German umlauts in filenames, iOS Safari won't scroll PDFs inside iframes. Claude hit every one of those, figured it out, fixed it. i never had to say \""
+   },
+   {
+    "src": "hn_comment",
+    "id": "47601919",
+    "author": "sameeep",
+    "date": "2026-04-01",
+    "text": "E/ACM CHASE 2025: https://dl.acm.org/doi/10.1145/3721201.3725519 ). Built RAG application achieving 95% accuracy on healthcare automation. Recent projects: - Automated course scheduler using AI tool calling+ Google OR-Tools (React, SQLite, FastMCP, FastAPI) for econ department - Sidequest: iOS app (React Native + Swift) with on-device OCR + LLM parsing using Vision Framework for receipts Resum\u00e9/CV: https://sameepshah.com/resume.pdf "
+   },
+   {
+    "src": "hn_comment",
+    "id": "47598010",
+    "author": "kiloloco",
+    "date": "2026-04-01",
+    "text": "/github.com/kuberwastaken/claude-code and forked it. Had my clawdbot agent clone it and start the investigation. Little back and forth until I found their Buddy system. Told the agent to port it to Python so we could spin something up with FastMCP. I proceeded to dictate to the agent from my phone to go through and test the code because there were no tests for it in the source code. Had a subagent blindly follow the README.md until it was confident it would be an easy setup. I followed the docs live for the first time in "
+   }
+  ]
+ },
+ {
+  "name": "Vercel AI SDK",
+  "url": "https://ai-sdk.dev",
+  "score": 38.9,
+  "github_stars": 27801,
+  "top_hn_story": {
+   "title": "Show HN: XsAI \u2013 A < 6KB Vercel AI SDK Alternative",
+   "points": 7,
+   "id": "43243426",
+   "url": "https://blog.moeru.ai/introducing-xsai/"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50390210",
+    "author": "haxzie",
+    "date": "2026-11-06",
+    "text": ".js, Node.js, MCP, ClickHouse, Three.js R\u00e9sum\u00e9/CV: [resume.haxzie.com]( https://resume.haxzie.com ) Email: musthaq.gm@gmail.com At Composio, I built the TypeScript/Python SDKs (`@composio/core`, 1M+ weekly downloads), provider packages for Vercel AI SDK, LangChain and Claude Code, an agent CLI that cut token usage 60\u201370%, and authentication across 1000+ apps. Previously a founding engineer at Locale for six years, building React interfaces, a metrics DSL on ClickHouse and geospatial tools. Now building Sequel, GenMotion and Pre"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50348565",
+    "author": "wynnnguyendev",
+    "date": "2026-11-03",
+    "text": ": Ho Chi Minh City, Vietnam Remote: Yes Willing to relocate: US, Australia, Singapore Technologies: TypeScript, Node.js, Hono.js, Next.js, React, Java (Spring Boot/Cloud), PostgreSQL (pgvector), MongoDB, Docker, GitHub Actions, Azure. LLM: Vercel AI SDK, Google Gemini API, tool calling, RAG. R\u00e9sum\u00e9/CV: https://rx.cv/wynn-nguyen-dev/wynn-resume Hi all, I am Nguy\u00ean (Wynn in English). A Software Engineer, 3 years of experience across Backend and full-stack, focused on building LLM-powered apps and product apps. At a startup I buil"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50342199",
+    "author": "ludwigvan",
+    "date": "2026-11-02",
+    "text": "Location: Istanbul, Turkey (UTC+3) Remote: Yes Willing to relocate: No Technologies: Python/Django, Go, TypeScript/Node.js, React/Next.js, GraphQL, PostgreSQL, AWS, Terraform, Kubernetes, Vercel AI SDK, LangGraph R\u00e9sum\u00e9/CV: https://ustunozgur.com/Ustun_Ozgur_CV_Eng.pdf Email: ustun@ustunozgur.com GitHub: https://github.com/ustun I'm \u00dcst\u00fcn, a hands-on engineer with 15+ years building products and infrastructure for US startups. Looking for a remote Senior / Staff / Principal ro"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50339243",
+    "author": "quentinmitchell",
+    "date": "2026-11-02",
+    "text": "Location: Burlington, Ontario, Canada (Toronto/GTA) Remote: Yes Willing to relocate: No Technologies: TypeScript, Python, SvelteKit, React, Node, Bun, FastAPI, Postgres, Redis/BullMQ, MCP, Vercel AI SDK, pydantic-ai, Claude Code, Codex, Twilio, Docker, AWS, Railway, Cloudflare Workers, Playwright R\u00e9sum\u00e9/CV: https://quentin-mitchell.vercel.app Email: 1quentin.mitchell@gmail.com I build production software by orchestrating swarms of AI coding agents across Claude Code, Codex, and"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50274268",
+    "author": "scosman",
+    "date": "2026-10-28",
+    "text": "Open AI and Anthropic already have \"Agent SDK\" brands. Vercel is \"AI SDK\". I wish folks would come up with some good names for new projects."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50049389",
+    "author": "cagster",
+    "date": "2026-10-11",
+    "text": "me example at the kernel tier: sudo ./docker/install-gvisor.sh && make docker-images SANDBOX_PROVIDER=docker SANDBOX_DOCKER_RUNTIME=runsc go run ./examples/minimal Clients: Go, Python (tools for Agno, CrewAI and Google ADK) and TypeScript (Vercel AI SDK, Trigger.dev, Mastra). What it isn't yet: pre-1.0, no other users, no outside security audit, and it's just me: the bus factor is one, and I'm careful around buses. gVisor is Linux only, so a Mac gets the container tier. The tier is configuration plus startup smoke tests, not at"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50034596",
+    "author": "haxzie",
+    "date": "2026-10-10",
+    "text": "Location: US/Canada/India Remote: Yes Willing to relocate: Yes, US or Canada Technologies: TypeScript, Node.js, Bun, React, Next.js, Vue, Nuxt, Hono, Postgres, Cloudflare Workers, AWS, SDK architecture and packaging, Vercel AI SDK, Mastra, LangChain, Claude Code SDK, MCP, agent tooling, UI/UX design R\u00e9sum\u00e9/CV: https://resume.haxzie.com Email: musthaq.gm@gmail.com GitHub: https://github.com/haxzie I am a product engineer with a frontend lean, about seven years in, mostly on developer tools. Most recently I"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49927194",
+    "author": "ludwigvan",
+    "date": "2026-10-01",
+    "text": ": Istanbul, Turkey (UTC+3) Remote: Yes; European working hours or US Eastern morning overlap Willing to relocate: No Technologies: Python/Django, Go, TypeScript/Node.js, React/Next.js, AWS, Terraform, Docker, Kubernetes, PostgreSQL, Redis, Vercel AI SDK, LangGraph R\u00e9sum\u00e9/CV: https://ustunozgur.com/Ustun_Ozgur_CV_Eng.pdf Email: ustun@ustunozgur.com GitHub: https://github.com/ustun I'm looking for a hands-on Staff/Principal or founding engineer role in backend, platform or applied AI. I've spent 15+ years building products and in"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49924702",
+    "author": "oswaldbdev",
+    "date": "2026-10-01",
+    "text": "Location: Paris, France / US Remote: Yes (happy to work US East or West Coast hours) Willing to relocate: Yes Technologies: TypeScript, Next.js, Node.js, PostgreSQL, Vercel AI SDK, OpenRouter, Langfuse; LLM agents, RAG, document extraction, evals R\u00e9sum\u00e9/CV: https://oswaldb22.com/cv.pdf Email: oswaldblassou@gmail.com AI engineer, full-stack TypeScript. Contract or freelance, full-time availability. I ship LLM features that hold up in production: agents, RA"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49746988",
+    "author": "leo4242",
+    "date": "2026-09-17",
+    "text": "/jev-chess-master.vercel.app/ where you play against Jev AI as chess player. You play White, and Jev plays Black. Rather than asking an LLM to generate move strings or JSON, the backend feeds all server-validated legal candidate moves into Vercel AI SDK's experimental_evaluate(). Jev picks Black's move and outputs its probability distribution across all legal candidates in a single forward pass (~300ms, ~$0.00004/move). Github link: https://github.com/qibinlou/jev-chess Give a try and let me know your thoughts! I am having lots"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49746967",
+    "author": "leo4242",
+    "date": "2026-09-17",
+    "text": "/jev-chess-master.vercel.app/ where you play against Jev AI as chess player. You play White, and Jev plays Black. Rather than asking an LLM to generate move strings or JSON, the backend feeds all server-validated legal candidate moves into Vercel AI SDK's experimental_evaluate(). Jev picks Black's move and outputs its probability distribution across all legal candidates in a single forward pass (~300ms, ~$0.00004/move). Github link: https://github.com/qibinlou/jev-chess Hope this helps!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49540064",
+    "author": "entaroadun123",
+    "date": "2026-09-02",
+    "text": "ng explorer, roughly what Loom is for Java. Stateless DFS with replay, vector clock race detection, delta debugging. Also: https://demo.levelbrook.com (Rails 8 + Turbo 8 morphing, SSE LLM streaming), ai_stream on RubyGems (Ruby impl of the Vercel AI SDK stream protocol), https://lingua.levelbrook.com . Rails is where I am fastest but I have shipped Python and JS for years and I am not precious about the stack. Backlog nobody has time for, a migration that keeps slipping, a pipeline that needs an owner: email me."
+   }
+  ]
+ },
+ {
+  "name": "Strands Agents",
+  "url": "https://strandsagents.com",
+  "score": 38.5,
+  "github_stars": 9069,
+  "top_hn_story": {
+   "title": "Show HN: BillAI Bass, an AI-Powered Big Mouth Billy Bass Using Strands Agents",
+   "points": 72,
+   "id": "48896599",
+   "url": "https://github.com/morganwilliscloud/billai-bass"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50349129",
+    "author": "Bat-elN",
+    "date": "2026-11-03",
+    "text": "tems, tool use and RAG, in Python, on AWS Bedrock and GCP Vertex AI. Direct client contact. We're looking for a hands-on engineer (not a research or prompt-only role) who has built and shipped LLM agents to production, with frameworks like Strands Agents, LangChain, Agno, Deep Agents, Google ADK or Claude Agent SDK. Just as important: we hire good people. Communicative, collaborative, eager to learn and happy to take ownership. That's what makes people succeed here, with clients and with the team. Process: intro call -> t"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49820062",
+    "author": "sroerick",
+    "date": "2026-09-23",
+    "text": "n't know if this is a harness, an orchestrator, an agent framework, or all of the above. I think it's hard. People get so caught up in making their own thing - they lose track of the state of the art. I have no idea what the value prop for Strands Harness is. But maybe I'm not the target audience. Also, I don't really care about 30% token efficiency gains. Maybe I should. But this is not my experience. Don't get me wrong, I'm conservative with tokens. But I also have a LOT of convenience / essentials which bloat up contex"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48896612",
+    "author": "mtw14",
+    "date": "2026-07-13",
+    "text": "I built BillAI Bass just because I could. It\u2019s powered by a Raspberry Pi and Strands Agents with bidirectional streaming, and the repo includes the code and hardware setup. Happy to answer questions about the implementation!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48764956",
+    "author": "iamq",
+    "date": "2026-07-02",
+    "text": "tems; Strong Python and TypeScript/JavaScript programming knowledge; Cloud experience (AWS/GCP/Azure). Note: Due to company policy Cambium Assessment cannot provide visa sponsorship for this role. Nice to have: Experience with AWS Bedrock, Strands Agents, AI eval frameworks, or an EdTech background. Apply: https://jobs.cambiumlearning.com/jobs/product-engineering/re... "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48658839",
+    "author": "throwaw12",
+    "date": "2026-06-24",
+    "text": "oes anyone have holistic view or opinions about their differences and where they shine? For example, * there is LangChain and LangGraph - used a lot, but framework bloat is hated as well * mastra - for typescript projects * pydantic, agno, strands, openai agents sdk, claude agents sdk, and so on and on and on"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48481954",
+    "author": "otterley",
+    "date": "2026-06-10",
+    "text": "How does it compare to the Strands Agents SDK? https://strandsagents.com "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48383209",
+    "author": "lanycrost",
+    "date": "2026-06-03",
+    "text": "Had you tried strands agents? What is the reason to create something new?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47961558",
+    "author": "nijave",
+    "date": "2026-04-30",
+    "text": "ite tokens. The agent run summary is: usage { cache_read_input_tokens 244586 cache_write_input_tokens 38399 completion_tokens 8131 input_tokens 1172 output_tokens 8131 prompt_tokens 1172 total_tokens 292288 } I do see a recent issue in the Strands Agent issue tracker about 1hr TTL getting ignored and defaulting to 5m TTL. I haven't validated cache TTL but these agent runs take ~2-3m so a 5m TTL is sufficient. I also checked the AWS bill and see separate Usage SKUs USE1-MP:USE1_CacheWriteInputTokenCount-Units $0.34 USE1-MP"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47955128",
+    "author": "nijave",
+    "date": "2026-04-29",
+    "text": "come with claims that it matches or exceeds Sonnet. I've been trying a lot of them and I have yet to see it in practice, even when the benchmarks show a clear lead. This has been my experience as well. I've been testing an agent built with Strands Agents which receives a load balancer latency alert and is expected to query logs with AWS Athena (Trino) then drill down with Datadog spans/traces to find the root cause. Admittedly, \"devops\" domain knowledge is important here My notes so far: \"us.anthropic.claude-sonnet-4-6\" #"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47921383",
+    "author": "walmsles",
+    "date": "2026-04-27",
+    "text": "the self-extending loop against five local models \u2014 Qwen3-8B, Gemma 4, Mistral Small 3.1, Devstral Small 2, Salesforce xLAM-2. None passed. The failure modes were distinct enough to be worth writing up separately: https://serverlessdna.com/strands/ai-agents/agents-know-what... Stack: AWS Strands TypeScript SDK, Bedrock (Claude Sonnet), Deno sandbox, Tauri + React desktop shell."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47139402",
+    "author": "ryancoleman",
+    "date": "2026-02-24",
+    "text": "The initial version on GitHub does not implement caching or memorization but it's possible and where the project will likely head. (FYI I'm on the Strands Agents team)."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47139388",
+    "author": "ryancoleman",
+    "date": "2026-02-24",
+    "text": "h post-conditions (another Python function the dev write) which define what successful outcomes look like. Morgan wrote about the receipt parser scenario here: https://dev.to/morganwilliscloud/the-python-function-that-im... (FYI I'm on the Strands Agents team)"
+   }
+  ]
+ }
+]

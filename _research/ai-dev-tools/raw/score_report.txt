@@ -1,0 +1,215 @@
+
+## terminal
+ 1.  99.4  Claude Code                    ask=244/219 cm=32941 ti=78331 lob=231 dev=5960 ★=154893 dl=47376016
+ 2.  86.5  Codex CLI                      ask=204/73 cm=15265 ti=26411 lob=0 dev=708 ★=133573 dl=95594449
+ 3.  81.7  OpenCode                       ask=121/15 cm=5264 ti=6953 lob=14 dev=425 ★=225234 dl=14195259
+ 4.  63.1  Pi                             ask=66/1 cm=375 ti=166 lob=0 dev=86 ★=120619 dl=1509211
+ 5.  58.5  Gemini CLI                     ask=7/7 cm=1953 ti=4160 lob=0 dev=561 ★=108766 dl=1627950
+ 6.  56.9  Aider                          ask=7/57 cm=324 ti=512 lob=0 dev=3 ★=50007 dl=260509
+ 7.  55.9  DeepSeek Harness               ask=10/0 cm=499 ti=1265 lob=5 dev=17 ★=275634 dl=0
+ 8.  51.3  Goose                          ask=8/2 cm=59 ti=485 lob=22 dev=239 ★=56330 dl=0
+ 9.  46.5  Copilot CLI                    ask=3/2 cm=657 ti=316 lob=0 dev=279 ★=11375 dl=6685193
+10.  36.7  Qwen Code                      ask=0/3 cm=675 ti=23 lob=0 dev=11 ★=29072 dl=385446
+11.  33.9  Muse Code                      ask=4/0 cm=66 ti=365 lob=6 dev=2 ★=0 dl=0
+12.  32.8  Mistral Vibe                   ask=1/1 cm=83 ti=779 lob=0 dev=0 ★=5331 dl=0
+13.  32.0  Kimi CLI                       ask=3/0 cm=73 ti=8 lob=0 dev=0 ★=11420 dl=0
+14.  27.4  Zerostack                      ask=1/0 cm=26 ti=624 lob=0 dev=0 ★=1745 dl=0
+15.  23.4  Codewhale                      ask=1/0 cm=13 ti=0 lob=0 dev=0 ★=41161 dl=0
+16.  22.6  Amp                            ask=2/3 cm=43 ti=3 lob=0 dev=0 ★=0 dl=0
+17.  21.0  jcode                          ask=0/0 cm=17 ti=12 lob=0 dev=0 ★=21591 dl=0
+18.  19.6  Plandex                        ask=0/0 cm=1 ti=261 lob=0 dev=0 ★=15899 dl=0
+19.  17.7  Droid                          ask=0/1 cm=20 ti=2 lob=23 dev=5 ★=0 dl=0
+20.  17.1  Crush                          ask=0/0 cm=7 ti=0 lob=0 dev=0 ★=28989 dl=0
+21.  15.6  Open Interpreter               ask=0/0 cm=1 ti=0 lob=0 dev=0 ★=68825 dl=0
+22.  13.8  Kiro CLI                       ask=0/0 cm=18 ti=27 lob=0 dev=62 ★=0 dl=0
+
+## editors
+ 1.  99.6  Cursor                         ask=48/196 cm=7647 ti=25602 lob=65 dev=993 ★=0 dl=0
+ 2.  89.2  VS Code + Copilot              ask=41/89 cm=1923 ti=5969 lob=72 dev=1250 ★=0 dl=0
+ 3.  81.8  Zed                            ask=28/42 cm=2405 ti=11616 lob=14 dev=8 ★=94166 dl=0
+ 4.  67.6  Antigravity                    ask=16/13 cm=1584 ti=5200 lob=0 dev=1079 ★=0 dl=0
+ 5.  64.8  Windsurf                       ask=1/61 cm=379 ti=5115 lob=0 dev=85 ★=0 dl=0
+ 6.  63.2  Cline                          ask=7/28 cm=325 ti=879 lob=0 dev=13 ★=71447 dl=0
+ 7.  55.7  Kiro                           ask=9/4 cm=433 ti=1797 lob=0 dev=553 ★=0 dl=0
+ 8.  53.8  Neovim (CodeCompanion / avante) ask=24/14 cm=12 ti=1 lob=10 dev=100 ★=6927 dl=0
+ 9.  46.0  Roo Code                       ask=1/12 cm=72 ti=76 lob=0 dev=1 ★=24240 dl=0
+10.  44.2  Kilo Code                      ask=4/2 cm=69 ti=169 lob=0 dev=0 ★=27898 dl=0
+11.  41.9  JetBrains Junie                ask=1/11 cm=65 ti=101 lob=12 dev=0 ★=0 dl=0
+12.  38.5  Continue                       ask=1/9 cm=27 ti=0 lob=0 dev=6 ★=36427 dl=0
+13.  37.7  Emacs gptel                    ask=3/3 cm=57 ti=19 lob=0 dev=0 ★=3563 dl=0
+14.  24.8  Whiteboard                     ask=0/0 cm=6 ti=452 lob=0 dev=13 ★=3463 dl=0
+15.  21.7  Void                           ask=0/1 cm=0 ti=32 lob=0 dev=0 ★=28713 dl=0
+
+## orchestration
+ 1.  81.1  Herdr                          ask=41/0 cm=552 ti=1346 lob=0 dev=17 ★=49030 dl=0
+ 2.  70.4  tmux + git worktrees           ask=94/15 cm=10 ti=0 lob=33 dev=281 ★=0 dl=0
+ 3.  64.9  Gas Town                       ask=6/5 cm=609 ti=1532 lob=0 dev=0 ★=18725 dl=0
+ 4.  62.6  Paseo                          ask=11/0 cm=175 ti=127 lob=0 dev=42 ★=23394 dl=0
+ 5.  62.4  Beads                          ask=3/7 cm=459 ti=338 lob=0 dev=12 ★=28572 dl=0
+ 6.  56.6  T3 Code                        ask=10/0 cm=64 ti=32 lob=0 dev=12 ★=50869 dl=0
+ 7.  52.1  Conductor                      ask=11/3 cm=42 ti=5 lob=33 dev=0 ★=0 dl=0
+ 8.  48.1  Orca                           ask=12/0 cm=9 ti=0 lob=0 dev=21 ★=118432 dl=0
+ 9.  42.6  Juggler                        ask=2/0 cm=98 ti=330 lob=0 dev=0 ★=853 dl=0
+10.  38.8  Ralph loop                     ask=1/2 cm=51 ti=72 lob=0 dev=71 ★=0 dl=0
+11.  35.6  Sculptor                       ask=1/0 cm=99 ti=341 lob=0 dev=0 ★=0 dl=0
+12.  35.3  Vibe Kanban                    ask=0/0 cm=29 ti=199 lob=0 dev=0 ★=28613 dl=14853
+13.  33.7  Omnara                         ask=0/0 cm=49 ti=571 lob=0 dev=0 ★=3365 dl=0
+14.  30.7  Munder Difflin                 ask=2/0 cm=8 ti=313 lob=0 dev=0 ★=0 dl=0
+15.  30.0  workmux                        ask=1/0 cm=16 ti=12 lob=0 dev=0 ★=3017 dl=0
+16.  28.9  qm                             ask=0/0 cm=4 ti=684 lob=0 dev=0 ★=15650 dl=0
+17.  25.0  Ruflo                          ask=0/0 cm=6 ti=7 lob=0 dev=0 ★=81151 dl=0
+18.  22.6  Superset                       ask=0/0 cm=19 ti=0 lob=0 dev=0 ★=16066 dl=0
+19.  21.8  Claude Squad                   ask=0/0 cm=5 ti=9 lob=0 dev=0 ★=8745 dl=0
+20.  19.8  oh-my-claudecode               ask=0/0 cm=2 ti=2 lob=0 dev=0 ★=40664 dl=0
+21.  11.0  Crystal                        ask=0/0 cm=0 ti=0 lob=0 dev=0 ★=3129 dl=0
+22.   2.6  AX (Agent Executor)            ask=0/0 cm=1 ti=0 lob=0 dev=0 ★=0 dl=0
+
+## review
+ 1.  78.2  Claude Code review             ask=9/4 cm=552 ti=29 lob=0 dev=18 ★=9827 dl=0
+ 2.  55.9  Copilot code review            ask=2/1 cm=75 ti=353 lob=0 dev=164 ★=0 dl=0
+ 3.  53.8  Graphite                       ask=1/1 cm=359 ti=981 lob=0 dev=3 ★=0 dl=0
+ 4.  46.4  CodeRabbit                     ask=1/0 cm=149 ti=773 lob=0 dev=4 ★=0 dl=0
+ 5.  41.3  Codex code review              ask=1/0 cm=560 ti=14 lob=0 dev=0 ★=0 dl=0
+ 6.  39.8  Cursor Bugbot                  ask=1/3 cm=25 ti=3 lob=0 dev=14 ★=0 dl=0
+ 7.  35.6  Codex Security                 ask=0/0 cm=112 ti=662 lob=6 dev=0 ★=0 dl=0
+ 8.  32.1  Qodo                           ask=0/0 cm=14 ti=204 lob=0 dev=0 ★=15406 dl=0
+ 9.  25.1  Greptile                       ask=0/0 cm=64 ti=90 lob=0 dev=0 ★=0 dl=0
+10.  23.3  Open Code Review (Alibaba)     ask=0/0 cm=9 ti=0 lob=0 dev=0 ★=49613 dl=0
+11.  22.4  Sourcery                       ask=0/1 cm=15 ti=10 lob=0 dev=0 ★=0 dl=0
+12.  11.5  Sphinx                         ask=0/0 cm=0 ti=253 lob=0 dev=0 ★=0 dl=0
+
+## context
+ 1.  91.6  AGENTS.md                      ask=23/67 cm=2004 ti=4010 lob=0 dev=468 ★=0 dl=0
+ 2.  81.2  Agent Skills                   ask=17/9 cm=1741 ti=233 lob=13 dev=529 ★=0 dl=0
+ 3.  76.3  Superpowers                    ask=5/5 cm=909 ti=1746 lob=32 dev=122 ★=313991 dl=0
+ 4.  54.9  Semble                         ask=7/2 cm=58 ti=464 lob=0 dev=23 ★=6377 dl=0
+ 5.  52.8  Spec Kit                       ask=2/2 cm=138 ti=209 lob=0 dev=69 ★=148358 dl=0
+ 6.  48.0  Context7                       ask=0/6 cm=92 ti=28 lob=0 dev=6 ★=64316 dl=3176334
+ 7.  46.5  Impeccable                     ask=1/0 cm=190 ti=455 lob=0 dev=19 ★=105331 dl=0
+ 8.  45.2  GitHub MCP server              ask=3/0 cm=56 ti=28 lob=0 dev=34 ★=34301 dl=0
+ 9.  36.5  rtk                            ask=0/0 cm=64 ti=339 lob=0 dev=30 ★=85816 dl=0
+10.  34.7  Graphify                       ask=0/0 cm=31 ti=134 lob=0 dev=75 ★=143885 dl=0
+11.  33.2  Figma MCP                      ask=1/1 cm=49 ti=26 lob=0 dev=111 ★=0 dl=0
+12.  32.8  context-mode                   ask=0/0 cm=106 ti=104 lob=0 dev=1 ★=33644 dl=0
+13.  31.7  Serena                         ask=0/1 cm=53 ti=11 lob=0 dev=1 ★=31180 dl=147731
+14.  31.4  Repomix                        ask=0/2 cm=16 ti=9 lob=0 dev=0 ★=29177 dl=401454
+15.  29.4  claude-mem                     ask=0/0 cm=22 ti=10 lob=0 dev=40 ★=114348 dl=0
+16.  29.0  Linear MCP                     ask=3/1 cm=13 ti=5 lob=0 dev=0 ★=0 dl=0
+17.  23.0  Sentry MCP                     ask=1/0 cm=5 ti=6 lob=0 dev=0 ★=958 dl=0
+18.  22.6  codebase-memory-mcp            ask=0/0 cm=11 ti=0 lob=0 dev=19 ★=48287 dl=0
+19.  22.6  headroom                       ask=0/0 cm=4 ti=16 lob=0 dev=0 ★=79068 dl=0
+
+## browser
+ 1.  89.4  Playwright MCP                 ask=7/6 cm=270 ti=495 lob=6 dev=483 ★=39303 dl=30936316
+ 2.  55.0  Chrome DevTools MCP            ask=1/1 cm=44 ti=659 lob=0 dev=23 ★=54930 dl=8604227
+ 3.  52.1  Browser MCP                    ask=1/0 cm=130 ti=691 lob=0 dev=15 ★=7307 dl=0
+ 4.  50.4  agent-browser                  ask=1/0 cm=94 ti=99 lob=0 dev=10 ★=46631 dl=8262982
+ 5.  47.2  browser-use                    ask=0/0 cm=337 ti=413 lob=0 dev=4 ★=120256 dl=8061974
+ 6.  40.2  Lightpanda                     ask=0/0 cm=48 ti=957 lob=0 dev=2 ★=41556 dl=0
+ 7.  39.5  Firecrawl                      ask=0/0 cm=73 ti=53 lob=0 dev=8 ★=199456 dl=0
+ 8.  38.1  Stagehand                      ask=0/0 cm=44 ti=342 lob=0 dev=0 ★=25978 dl=8473095
+ 9.  34.7  Vibium                         ask=0/0 cm=50 ti=448 lob=0 dev=0 ★=2955 dl=0
+10.  32.7  Claude in Chrome               ask=0/0 cm=112 ti=322 lob=0 dev=3 ★=0 dl=0
+11.  23.0  Scrapling                      ask=0/0 cm=6 ti=1 lob=0 dev=0 ★=99200 dl=919855
+12.  22.7  Browserbase                    ask=0/0 cm=37 ti=43 lob=0 dev=0 ★=0 dl=0
+13.  21.8  Jina Reader                    ask=1/0 cm=4 ti=4 lob=0 dev=0 ★=0 dl=0
+
+## sandbox
+ 1.  79.1  Docker Sandboxes               ask=6/0 cm=430 ti=1084 lob=6 dev=21 ★=0 dl=0
+ 2.  73.7  bubblewrap                     ask=7/0 cm=372 ti=326 lob=0 dev=3 ★=9405 dl=0
+ 3.  57.5  OpenShell                      ask=2/0 cm=64 ti=585 lob=0 dev=20 ★=21245 dl=0
+ 4.  52.8  Apple container                ask=0/1 cm=195 ti=1275 lob=0 dev=7 ★=51090 dl=0
+ 5.  47.6  Dev containers                 ask=5/1 cm=27 ti=0 lob=0 dev=7 ★=0 dl=0
+ 6.  46.6  E2B                            ask=1/0 cm=60 ti=12 lob=0 dev=169 ★=14761 dl=0
+ 7.  45.7  nono                           ask=3/0 cm=9 ti=8 lob=0 dev=9 ★=4886 dl=0
+ 8.  43.4  smolvm                         ask=1/0 cm=141 ti=13 lob=0 dev=0 ★=7020 dl=0
+ 9.  39.6  yoloai                         ask=2/0 cm=72 ti=2 lob=0 dev=0 ★=227 dl=0
+10.  37.3  Daytona                        ask=0/0 cm=75 ti=63 lob=0 dev=0 ★=71358 dl=0
+11.  35.9  Ardent                         ask=0/1 cm=140 ti=116 lob=0 dev=0 ★=0 dl=0
+12.  35.2  Lume                           ask=0/0 cm=16 ti=468 lob=0 dev=1 ★=31942 dl=0
+13.  30.5  container-use                  ask=0/0 cm=27 ti=91 lob=0 dev=0 ★=4087 dl=0
+14.  27.8  Agent Safehouse                ask=0/0 cm=38 ti=823 lob=0 dev=0 ★=0 dl=0
+15.  16.7  Sprites (Fly.io)               ask=0/0 cm=27 ti=5 lob=0 dev=0 ★=0 dl=0
+16.  15.9  Modal Sandboxes                ask=0/0 cm=16 ti=10 lob=0 dev=0 ★=0 dl=0
+17.   9.9  Vercel Sandbox                 ask=0/0 cm=2 ti=15 lob=0 dev=0 ★=0 dl=0
+
+## local
+ 1.  97.2  Ollama                         ask=18/43 cm=1987 ti=8641 lob=9 dev=742 ★=186256 dl=0
+ 2.  86.2  llama.cpp                      ask=10/17 cm=2075 ti=3159 lob=12 dev=55 ★=133652 dl=0
+ 3.  71.5  MLX                            ask=4/6 cm=715 ti=2846 lob=12 dev=19 ★=29089 dl=544885
+ 4.  67.0  vLLM                           ask=0/5 cm=924 ti=2272 lob=30 dev=82 ★=96519 dl=1857414
+ 5.  66.5  Open WebUI                     ask=7/11 cm=118 ti=261 lob=0 dev=34 ★=158019 dl=0
+ 6.  66.4  LM Studio                      ask=2/16 cm=596 ti=1405 lob=0 dev=106 ★=0 dl=0
+ 7.  56.0  Unsloth                        ask=1/3 cm=822 ti=1331 lob=0 dev=1 ★=79152 dl=885608
+ 8.  44.9  Lemonade                       ask=2/1 cm=35 ti=617 lob=0 dev=13 ★=6140 dl=0
+ 9.  42.2  SGLang                         ask=0/1 cm=167 ti=208 lob=0 dev=5 ★=38559 dl=2984581
+10.  33.3  llama-swap                     ask=0/3 cm=53 ti=2 lob=0 dev=0 ★=6205 dl=0
+11.  30.5  Apfel                          ask=0/0 cm=46 ti=757 lob=0 dev=0 ★=6592 dl=0
+12.  22.9  KoboldCpp                      ask=0/0 cm=21 ti=5 lob=0 dev=0 ★=12189 dl=0
+13.  22.5  Jan                            ask=0/0 cm=16 ti=1 lob=0 dev=0 ★=45561 dl=0
+
+## gateways
+ 1.  94.8  OpenRouter                     ask=71/9 cm=3866 ti=6626 lob=7 dev=99 ★=0 dl=0
+ 2.  56.4  LiteLLM                        ask=1/2 cm=431 ti=3453 lob=0 dev=249 ★=62870 dl=92239101
+ 3.  56.2  AWS Bedrock                    ask=6/0 cm=461 ti=976 lob=0 dev=487 ★=0 dl=0
+ 4.  50.4  OpenCode Go / Zen              ask=32/0 cm=35 ti=0 lob=0 dev=5 ★=0 dl=0
+ 5.  40.7  llm (Simon Willison)           ask=4/5 cm=10 ti=0 lob=0 dev=92 ★=12719 dl=487919
+ 6.  31.4  Claude Code Router             ask=0/0 cm=33 ti=163 lob=0 dev=8 ★=38033 dl=0
+ 7.  27.3  Vercel AI Gateway              ask=1/0 cm=25 ti=21 lob=0 dev=230 ★=0 dl=0
+ 8.  25.0  cc-switch                      ask=0/1 cm=3 ti=3 lob=0 dev=0 ★=152579 dl=0
+ 9.  23.0  Chutes                         ask=1/1 cm=32 ti=5 lob=0 dev=0 ★=0 dl=0
+10.  21.3  Portkey                        ask=0/0 cm=5 ti=11 lob=0 dev=2 ★=13339 dl=0
+11.  19.9  OmniRoute                      ask=0/0 cm=1 ti=0 lob=0 dev=40 ★=85385 dl=0
+12.  18.1  Cloudflare AI Gateway          ask=0/1 cm=13 ti=7 lob=0 dev=15 ★=0 dl=0
+13.  14.1  Synthetic                      ask=0/0 cm=28 ti=14 lob=0 dev=0 ★=0 dl=0
+
+## frameworks
+ 1.  74.2  LangChain                      ask=1/3 cm=816 ti=719 lob=8 dev=342 ★=149163 dl=170457766
+ 2.  58.8  Microsoft Agent Framework      ask=3/0 cm=19 ti=106 lob=8 dev=468 ★=14577 dl=0
+ 3.  57.8  Claude Agent SDK               ask=1/1 cm=395 ti=164 lob=0 dev=51 ★=0 dl=58450543
+ 4.  56.3  Mastra                         ask=1/1 cm=118 ti=708 lob=0 dev=109 ★=29396 dl=10391822
+ 5.  54.2  LangGraph                      ask=0/1 cm=465 ti=562 lob=0 dev=305 ★=44618 dl=44769952
+ 6.  51.5  DSPy                           ask=0/2 cm=130 ti=474 lob=0 dev=12 ★=38967 dl=5312050
+ 7.  50.6  OpenAI Agents SDK              ask=1/0 cm=55 ti=964 lob=0 dev=33 ★=30547 dl=12449784
+ 8.  43.8  Google ADK                     ask=0/1 cm=71 ti=46 lob=0 dev=699 ★=22135 dl=10109331
+ 9.  41.5  CrewAI                         ask=0/0 cm=156 ti=86 lob=0 dev=150 ★=60609 dl=2442764
+10.  39.4  Pydantic AI                    ask=0/0 cm=110 ti=298 lob=0 dev=13 ★=21077 dl=5383780
+11.  39.3  MCP SDKs                       ask=0/0 cm=41 ti=201 lob=0 dev=44 ★=24793 dl=235193557
+12.  38.9  Vercel AI SDK                  ask=0/0 cm=112 ti=40 lob=0 dev=35 ★=27801 dl=145134192
+13.  38.5  Strands Agents                 ask=0/0 cm=38 ti=137 lob=0 dev=366 ★=9069 dl=37112498
+14.  33.1  smolagents                     ask=0/0 cm=33 ti=28 lob=0 dev=41 ★=30253 dl=425605
+15.  30.2  Jido                           ask=0/0 cm=26 ti=354 lob=0 dev=0 ★=1905 dl=0
+16.  28.8  BAML                           ask=0/0 cm=35 ti=27 lob=0 dev=0 ★=9492 dl=0
+17.  19.9  Pi agent toolkit               ask=1/0 cm=7 ti=0 lob=0 dev=1 ★=0 dl=0
+
+## evals
+ 1.  65.5  Arize Phoenix                  ask=11/19 cm=5 ti=1 lob=0 dev=47 ★=12191 dl=626210
+ 2.  61.0  OpenTelemetry GenAI            ask=2/1 cm=49 ti=170 lob=41 dev=202 ★=0 dl=0
+ 3.  46.2  Langfuse                       ask=0/0 cm=125 ti=272 lob=0 dev=30 ★=37128 dl=23563200
+ 4.  45.8  promptfoo                      ask=1/0 cm=48 ti=70 lob=0 dev=0 ★=26936 dl=4010231
+ 5.  37.0  MLflow                         ask=0/0 cm=55 ti=23 lob=0 dev=3 ★=28717 dl=19887934
+ 6.  31.7  Logfire                        ask=0/0 cm=14 ti=43 lob=0 dev=0 ★=4537 dl=13028487
+ 7.  30.5  Braintrust                     ask=0/0 cm=32 ti=6 lob=0 dev=0 ★=0 dl=6574708
+ 8.  28.6  Helicone                       ask=0/0 cm=10 ti=47 lob=0 dev=0 ★=6273 dl=0
+ 9.  27.7  LangSmith                      ask=0/0 cm=67 ti=21 lob=0 dev=21 ★=0 dl=0
+10.  27.0  Opik                           ask=0/0 cm=5 ti=13 lob=0 dev=1 ★=23246 dl=1741711
+11.  26.5  DeepEval                       ask=0/0 cm=12 ti=3 lob=0 dev=0 ★=19352 dl=2584198
+12.  25.5  Inspect AI                     ask=0/0 cm=12 ti=3 lob=0 dev=0 ★=3198 dl=2896739
+13.  22.7  garak                          ask=0/0 cm=11 ti=0 lob=0 dev=0 ★=9918 dl=39200
+14.  12.8  Weights & Biases Weave         ask=0/0 cm=0 ti=0 lob=0 dev=0 ★=0 dl=817064
+15.  12.4  Laminar                        ask=0/0 cm=0 ti=0 lob=0 dev=0 ★=3477 dl=0
+
+## assistants
+ 1.  95.8  OpenClaw                       ask=40/32 cm=5090 ti=11707 lob=5 dev=1691 ★=394125 dl=0
+ 2.  81.9  Hermes Agent                   ask=54/0 cm=507 ti=309 lob=0 dev=1359 ★=261431 dl=0
+ 3.  75.7  Claude Cowork                  ask=15/25 cm=937 ti=3681 lob=0 dev=320 ★=0 dl=0
+ 4.  69.8  Muse                           ask=21/0 cm=86 ti=1326 lob=82 dev=7 ★=0 dl=0
+ 5.  60.4  n8n                            ask=3/1 cm=429 ti=1496 lob=5 dev=310 ★=209761 dl=0
+ 6.  51.8  Home Assistant + LLM           ask=12/1 cm=93 ti=2 lob=16 dev=5 ★=0 dl=0
+ 7.  49.0  NanoClaw                       ask=2/1 cm=200 ti=1486 lob=0 dev=17 ★=31091 dl=0
+ 8.  38.4  Claude Duet                    ask=3/0 cm=32 ti=792 lob=0 dev=13 ★=0 dl=0
+ 9.  33.1  nanobot                        ask=0/0 cm=106 ti=308 lob=0 dev=7 ★=49903 dl=0
+10.  24.2  Eigent                         ask=0/0 cm=20 ti=51 lob=0 dev=0 ★=15762 dl=0
+11.  21.5  Dots                           ask=1/0 cm=24 ti=16 lob=0 dev=0 ★=0 dl=0
+12.  19.7  Paperclip                      ask=0/0 cm=3 ti=4 lob=0 dev=0 ★=111950 dl=0
+13.  19.5  Claude Code Routines           ask=0/0 cm=15 ti=729 lob=0 dev=7 ★=0 dl=0

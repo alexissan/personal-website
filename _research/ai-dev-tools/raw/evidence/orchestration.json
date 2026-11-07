@@ -1,0 +1,1867 @@
+[
+ {
+  "name": "Herdr",
+  "url": "https://herdr.dev",
+  "score": 81.1,
+  "github_stars": 49030,
+  "top_hn_story": {
+   "title": "Herdr: One terminal to rule them all",
+   "points": 404,
+   "id": "48756578",
+   "url": "https://herdr.dev/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50367338,
+    "author": "jherdman",
+    "text": "Herdr, Pi, OpenRouter. I haven't found that I've needed much more than this for quite some time now."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50367484,
+    "author": "sparklingmango",
+    "text": "Right now, it's Claude Code on Opus 5.5 w/ herdr to manage multiple sessions at a time."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50367523,
+    "author": "brightball",
+    "text": "Tried just about everything over the last couple of years. Settled on the unified Cursor, Grok, Grok Bot plan for about $200 / month. Doing everything within herdr for programming and Grok Bot for all non-programming related AI life stuff. It's a solid groove. Grok Bot helped me get so much stuff off of my plate."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50368640,
+    "author": "robgough",
+    "text": "ptop I take with me (nothing worse than waiting around for an agent to finish before you can leave a caf\u00e9). To make it a little easier to visualise across those sessions I built https://belfry.robgough.net which is like herdr in some ways, but just uses standard tmux. I also gave in after seeing my co-founder use it, and gave GrokBot a go. I use this for everything that's not coding or design... so marketing, email reading, right now it's currently inputting my meter readings to m"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50370716,
+    "author": "slipwalker",
+    "text": "1) GPT plus, z.ai GLM Coding Lite-Monthly Plan ( legacy ), Opencode Go 2) personally, no. At work there is a Gemini Enterprise and Kiro Pro+ subscriptions 3) pi.dev inside herdr; both at home and work. I just pile the APIkeys and stick to same harness. 4) mostly, pi-subagents has an orchestration mode 5) no."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373485,
+    "author": "tamimio",
+    "text": "ded anything - different harnesses depending on the task, maki is great one, but I use others - I also have other stuff but I won\u2019t mention it here regarding the tokens for obvious reasons I tried most of the tools like herdr or paseo or desktop clients but they never clicked with me"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373697,
+    "author": "pmarreck",
+    "text": "herdr, opus 5.5 (max), codex (max), and I am still refining how they all communicate, currently codex became unwakable at some point while claude can be woken with a message just fine."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373740,
+    "author": "shepherdjerred",
+    "text": " credits, and OpenAI already gives free tokens, so I don't usually pay for this usage. 3. I always use the provider's preferred CLI: Claude Code, Codex CLI, Grok CLI, Kimi CLI, Antigravity CLI, Muse CLI. I use this with herdr to manage everything, and then a small custom app to keep track of my usages since I hit limits quite often. 4. No. Just the CLIs. For very large projects I've found Claude Code to be the best -- it can very easily manage many subagents. 5. I've tried OpenCla"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373956,
+    "author": "paustint",
+    "text": "I was using VSCode with Claude Code extension, multiple tabs at once, multiple instances per worktree.... then I listened to the Lex Fridman episode with DHH [1] and they mentioned Herdr [2] and I tried it out - NEVER LOOKED BACK! It has been an extremely long time since I completely abandoned and changed my setup - surprised myself. Herdr is awesome - it pings me when an agent is done or needs my attention and shows me all my terminal panes "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373985,
+    "author": "Arubis",
+    "text": "es under the hood but I don\u2019t interact with the latter directly. I still mostly just use tmux directly and tell running sessions about each other, sending messages to each other via text files or send-keys/capture-pane. Herdr is installed but mostly unused. The GUI clients aren\u2019t my thing; I\u2019m a born console junkie. What I really want to change next is pulling this all back into emacs."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50374135,
+    "author": "strangelove026",
+    "text": "\u2019s an excalidraw in the reader My manager described this as incomprehensible lol but it\u2019s modeled on conductor but uses Claude code terminal and mods and glues a bunch of open source stuff with a cli I had Claude write. Herdr for sessions, nvim for code review / searching, cli invoked by /slash commands. Beads cli for task tracking. With multi repo support since I end up doing a lot at work across repos at work for a \u201cfeature\u201d which is how I delineate chats now. And I\u2019ve got a nic"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50374449,
+    "author": "Zambyte",
+    "text": "nd decision models), and I was having a hard time getting 100k context with any reasonably useful model. The default prompts of Codex ate into that a lot, and Pi was a much better match for the resources I had. 4) I use Herdr (tui)[3] to manage Pi agents. All agent to agent interactions that I do are ad hoc. I'll do things like tell an agent to spin up work in several other Herdr panes that I have opened with Pi in them, or I will do things like tell an agent to inspect the work o"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50374498,
+    "author": "amterp",
+    "text": "1) One 5x Claude sub, one pro lite codex sub 2) Not really, the value proposition on the subs are just so much greater. 3) I'm using Claude Code and Codex, crucially thru Muster[0] which I've been working on. It's a herdr inspired Libghostty-powered terminal which understands agents you're running, helps you manage them, supports remote devenvs, and it provides a CLI for agents to spawn, work, and message each other, no matter the harness and across machines. 4) I'm working on"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50375407,
+    "author": "dgunay",
+    "text": " I had it write a small collection of skills and scripts to grease the wheels and make repetitive actions more reliable. Since Remuda supports several terminal multiplexers, I've swapped out the backend 3 times: tmux -> herdr-tui -> herdr-core. There's experimental support for Rex but I'm waiting for it to mature a bit before I try and daily drive it. It's not nearly as polished as some of the software factory setups and fancy GUI orchestrators I'm seeing, but it's light, hackable"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50406345",
+    "author": "cellu",
+    "date": "2026-11-07",
+    "text": "how have you replaced herdr's worktree management with rex?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50402878",
+    "author": "boldi",
+    "date": "2026-11-07",
+    "text": "Hadn't heard about herdr before! Downloading it now"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50402780",
+    "author": "gb2d_hn",
+    "date": "2026-11-07",
+    "text": "I think herdr does this out of the box"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50402234",
+    "author": "aroman",
+    "date": "2026-11-07",
+    "text": "No, he does, and it's extremely good. It's completely replaced herdr for me and I run it on Linux (server), macOS, and my iPhone. I've yet to run into a bug. Access is being controlled via Discord and TestFlight - you can find the link to apply on their site."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50402223",
+    "author": "jdorfman",
+    "date": "2026-11-07",
+    "text": "I\u2019m using the beta. So far so good. I\u2019m swapping between that and Herdr. Anyone who writes macOS apps take notes on Rex\u2019s onboarding. It was so easy to enable/grant permissions."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50402116",
+    "author": "_blk",
+    "date": "2026-11-07",
+    "text": "Cool thanks, will give it a shot. Does anyone know how this compares to herdr? I've been curious to try that I've too."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50401845",
+    "author": "rvz",
+    "date": "2026-11-07",
+    "text": "ce and supported via a non-profit (signal, ghostty) 4) A for-profit company that has dedicated full-time employees that have full support and own the direction of the open source project (go, swift, java) 5) VC funded open source projects (Herdr, Bun, Deno, Burno, Atuin) All other options such as low donations like \"buy me a coffee\", ko-fi, are completely unsustainable , now that AI agents exist."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50401480",
+    "author": "jdorfman",
+    "date": "2026-11-07",
+    "text": "> \u201cAnd a whole wave of new terminals and \"agentic\" coding tools, such as herdr and cmux, have been built on it rather than writing yet another emulator.\u201d Mitchell could have easily snuck his competing product Rex in there but resisted. Respect."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50391245",
+    "author": "skwee357",
+    "date": "2026-11-06",
+    "text": "I don't have anything fancy. I run EVERYTHING inside MicroVMs with LimaVM. Employer pays for Claude Code, which I run inside lima with herdr (because I often work on 5-7 different worktrees). I also pay for my own Claude Code subscription, and run each project in a dedicated limavm with plain `claude --dangerously-skip-permissions`. All this inside `tmux`. For secrets protection I run `agent-vault`[1] so claude does "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50390538",
+    "author": "testycool",
+    "date": "2026-11-06",
+    "text": "I remembered to check your reply just now, as I was considering Dagu vs scripting Herdr. Thanks!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50387527",
+    "author": "mjrbrennan",
+    "date": "2026-11-06",
+    "text": "e way it talks really annoys the hell out of me, Codex App & models are far nicer IME. 2) No 3) I'm happy with the Codex/ChatGPT desktop app, works super well. Also use the Codex VSCode plugin a bit, and started recently experimenting with herdr. Used to use Cursor but I switched when Musk bought it. Very very occasionally I use some other thing like opencode or pi for targeted situations, or Codex in the CLI 4) No 5) No I don't have the bizarre need to have dozens of agents going at once in my work or personal time, al"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50385740",
+    "author": "fidelramos",
+    "date": "2026-11-05",
+    "text": " For tasks that don't involve my personal information I might use Opus 5.5 and GPT Sol 6.1. Now that Kimi 3.1 Pro is out (and also private in Venice) I'm taking it for a spin. 3) Opencode (latest version) 4) No orchestration. Started using herdr, but it's an older version without orchestration. 5) Not yet, planning on Hermes running on my homelab but not deployed yet."
+   }
+  ]
+ },
+ {
+  "name": "tmux + git worktrees",
+  "url": "https://git-scm.com/docs/git-worktree",
+  "score": 70.4,
+  "github_stars": null,
+  "top_hn_story": null,
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50378336,
+    "author": "parkersweb",
+    "text": "I wasn\u2019t really using skills but then our project management tool added an MCP so I made a skill for grabbing tickets from the backlog, creating worktrees with the right naming convention, and moving ticket states for me automatically. At the same time when I\u2019m exploring new feature requests I now use the skill to write up the requirements and estimates into as many tickets as needed. Massively changed my work"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50367546,
+    "author": "dewey",
+    "text": "I'm currently using https://www.conductor.build/ for working on multiple projects at the same time with git worktrees and my Claude subscription. The annoying part is that if I have a frontend repository and a backend repository I have to tell each session \"talk to this workspace to adapt the backend\" if I'm working on the frontend. I wish they had better support for multip"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50375873,
+    "author": "peepee1982",
+    "text": "esponding to long responses incredibly joyful instead of disorienting). I like it so much that I added the same mechanism to my own personal assistant/agent that I host on my VPS. - Great diffing view where you can pick worktree diffs, or any diff from a specific turn in the current thread - Has it's own subagent orchestration that's very pleasant to use - Many more little things that remove a lot of friction and just feel right for me. It's just baffling to me how it is better in ev"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50380990,
+    "author": "djeastm",
+    "text": "of the week without using my limit), it will take a look at the projects I've pointed it to and ask Opus 5.5. to look at the projects and suggest improvements. Then, if there's capacity, it will build them on a separate worktree and be there for me to review or decline. I've got some other features like a dashboard that shows the limits and logs its activities and a way to ask it to \"refine\" random ideas I give it, then I can Approve/Deny them and they'll get queued to get built with"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50367676,
+    "author": "drbscl",
+    "text": "I use Orca as an \u201cADE\u201d (mostly for the multi-worktree interface and mobile app). In my day job I use Claude Code & Codex subscriptions (Codex is mostly for review, second opinion, and as a backup). Personally I use both oh-my-pi and Hermes with a Codex subscription. I tend to use OMP more now though, since I fin"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50368640,
+    "author": "robgough",
+    "text": "I'm using Claude Code (Ultra) across a multitude of tmux sessions, over two or three laptops \u2013 largely so long running actions don't happen on the actual laptop I take with me (nothing worse than waiting around for an agent to finish before you can leave a caf\u00e9). To make it a little easier to visualise across those"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50370886,
+    "author": "sadilek",
+    "text": "work. I switched from Claude CLI to a custom-built harness because I got overwhelmed by walls of text in parallel sessions. Now I have a canvas per project where I spatially lay out cards. Each card spawns an agent in a worktree. The chat with it is condensed to WhatsApp style chat bubbles with all the thinking and tool calls folded away. The result of a card is a demo, usually a narrated video that I can comment on to trigger another iteration. Everything voice first, I mostly speak"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373684,
+    "author": "tcdent",
+    "text": "tly to get enough Fable usage. 2. Early in experiments with locally hosted GLM Next, not writing code with it beyond experiments. 3. Claude Code, system prompt, minimal skills; mostly bash scripts for common actions. 4. tmux send-keys for messaging between panes. 5. No. Claude Code does that, too."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373956,
+    "author": "paustint",
+    "text": "I was using VSCode with Claude Code extension, multiple tabs at once, multiple instances per worktree.... then I listened to the Lex Fridman episode with DHH [1] and they mentioned Herdr [2] and I tried it out - NEVER LOOKED BACK! It has been an extremely long time since I completely abandoned and changed my setup - surprised myself. Herdr is awesome - it pin"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373985,
+    "author": "Arubis",
+    "text": "sks and trying to mitigate my ADHD: energy level check-ins, redirects to use attention for things that matter. It orchestrates Hermes under the hood but I don\u2019t interact with the latter directly. I still mostly just use tmux directly and tell running sessions about each other, sending messages to each other via text files or send-keys/capture-pane. Herdr is installed but mostly unused. The GUI clients aren\u2019t my thing; I\u2019m a born console junkie. What I really want to change next i"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50386447,
+    "author": "MITSardine",
+    "text": "I've also gone this route. A little board in tmux I pull up with a key combination, some indicators of activity / needs me to take a look at it and some background machinery / limitations as my work is systematically: open a worktree, define separate correctness and performance tests, run the latter on a cho"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50375619,
+    "author": "ehostunreach",
+    "text": "> Try to keep context shoved in a conversation thread under a token limit to save tokens. For big tasks/features, I'm always creating a new git worktree and I'm using a \"status repo\" skill that creates a sibling status git repository where everything is recorded. It works quite well whenever I have to revisit something. It's quite token hungry but I have the full trace of what happened in the past. https://gi"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50375265,
+    "author": "drgoodvibe",
+    "text": "vable clone which I\u2019ve used now to deploy a tradingview clone, a risk rating rules engine clone, and an agent terminal that is a stripped down clone of Iterm2 but built with a middle layer so I can connect to long lived tmux sessions. 3x Claude ultra, codex pro, + local Qwen 27b fp8 on Radiance engine on 2xRS700 and ComfyUi on a separate machine with a rtx 4090. It\u2019s been super fun building everything. I\u2019ve averaged around ~40B tokens per month.."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50375407,
+    "author": "dgunay",
+    "text": "workflow I had it write a small collection of skills and scripts to grease the wheels and make repetitive actions more reliable. Since Remuda supports several terminal multiplexers, I've swapped out the backend 3 times: tmux -> herdr-tui -> herdr-core. There's experimental support for Rex but I'm waiting for it to mature a bit before I try and daily drive it. It's not nearly as polished as some of the software factory setups and fancy GUI orchestrators I'm seeing, but it's light,"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46719396",
+    "author": "acron0",
+    "date": "2026-01-22",
+    "text": "Wow, I wrote a system very similar to the author that seems to becoming the defacto for ground-up multi-agent terminal workflows. git worktrees + tmux + claude hooks"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48781102",
+    "author": "gozucito",
+    "date": "2026-07-03",
+    "text": "2 to 5 tabs in warp. Kinda want to figure out how to properly use iterm+tmux to have the boris cherny experience. already used both but there were issues with tmux with either scroll back, or copy paste or other similar things that get broken, even after mesing with settings. i use git worktrees in different tabs as needed. i have git push hooks that aud"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46520735",
+    "author": "shepherdjerred",
+    "date": "2026-01-07",
+    "text": "I've been working on something similar: https://github.com/shepherdjerred/monorepo/tree/main/package... Essentially you run a server on some machine. Sessions are created in Docker containers, K8s pods, or via Zellij (an app similar to tmux). You can: - Directly attach to sessions via Docker attach (built-in via a TUI). You get a normal Claude Code experience, but multiplexed. The switcher/UI shows you the status of Claude and the PR (pushed, merge conflicts, CI status, review status, etc.) - Manage sessions via a "
+   },
+   {
+    "src": "hn_comment",
+    "id": "46493529",
+    "author": "shepherdjerred",
+    "date": "2026-01-04",
+    "text": "I've been working on something similar: https://github.com/shepherdjerred/monorepo/tree/main/package... Essentially you run a server on some machine. Sessions are created in Docker containers, K8s pods, or via Zellij (an app similar to tmux). You can: - Directly attach to sessions via Docker attach (built-in via a TUI). You get a normal Claude Code experience, but multiplexed. The switcher/UI shows you the status of Claude and the PR (pushed, merge conflicts, CI status, review status, etc.) - Manage sessions via a "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50236377",
+    "author": "sigotirandolas",
+    "date": "2026-10-25",
+    "text": "My take: I don't see the point of those new-IDEs. They are mostly just worktrees+sandbox+tabs+prompts, which is just git+docker+tmux+thinking, but if you actually learn to use those tools instead of handcuffing your agents to whatever take the IDE has, you're going to be much happier and effective. (That's also why there are so many of them: It just isn't t"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46865000",
+    "author": "fb03",
+    "date": "2026-02-03",
+    "text": " Show HN: forestui \u2013 TUI for git worktrees with Claude Code + GitHub integration I built forestui to manage the chaos of working on multiple features/branches simultaneously. It's a tmux-powered TUI that orchestrates your worktrees, editors, terminals, and Claude Code sessions across organized tmux windows (edit:repo:br"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48853408",
+    "author": "aroman",
+    "date": "2026-07-09",
+    "text": "No. I used to use Cursor, but now my workflow is that I use an inhouse CLI tool I wrote called \"bud\" that wraps/seeds the harnesses per-worktree, and boots a full copy of the game so each worktree can work independently. If git worktrees solve the problem of code isolation, bud solves the problem of isolating everything else. It's about 15K lines of rust, and I use it 100 times a day or so. It's sort of a layer on top of"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47082958",
+    "author": "gavmor",
+    "date": "2026-02-20",
+    "text": "Hm... any idea how I might script `git worktree` into the new-pane action? Currently experimenting with agent-of-empires for tmux+worktrees to parallelize code changes."
+   },
+   {
+    "src": "hn_comment",
+    "id": "46968742",
+    "author": "prradox",
+    "date": "2026-02-10",
+    "text": "I run several Claude Code and OpenCode sessions at once, often across 2+ devboxes and my local machine. I wanted a way to talk to my Claude Code session without having to be in the window/terminal. I wanted a way to see all my tmux sessions across machines from a single interface. So, I built agentwire-dev. AgentWire is a self-hosted web portal and CLI that sits on top of tmux. It gives you a single dashboard where you can see, manage, and talk to all your coding agent sessions \u2014 local or remote. You push-"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46292940",
+    "author": "waleedk",
+    "date": "2025-12-16",
+    "text": "e, GPT). It notifies you, and you merge. Meanwhile, you're not blocked. You can spawn more builders, design the next feature, or review what's already done. How it's built: Agent Farm runs in your browser, built on common infrastructure: - tmux \u2013 each agent gets its own terminal session - ttyd \u2013 exposes terminals to the browser (no Electron) - git worktrees \u2013 each builder gets an isolated worktree on its own branch ~20K lines of TypeScript + HTML. VSCode is 2.7 million. The workflow: Codev structures the work: `codev i"
+   }
+  ]
+ },
+ {
+  "name": "Gas Town",
+  "url": "https://github.com/gastownhall/gastown",
+  "score": 64.9,
+  "github_stars": 18725,
+  "top_hn_story": {
+   "title": "Gas Town's agent patterns, design bottlenecks, and vibecoding at scale",
+   "points": 403,
+   "id": "46734302",
+   "url": "https://maggieappleton.com/gastown"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50375134,
+    "author": "surajtripathi79",
+    "text": "na, claude. But prefer claude code, because (dunno if others feel it) opencode feels clunkier, and slow. I suspect that's because of the llm routing through my companies infra. 4. Have not made anything work, have tried GasTown, its horrible imo. Also, I think I am not able to trust the setup, and worry about token wastage (which cheaper models do more off when left unsupervised) 5. Open law - connecting with my personal calender, gmail, whatsapp, side gig infra - first responder fo"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50379514,
+    "author": "SOLAR_FIELDS",
+    "text": "All of these gas towns and no one running evals to compare to the vanilla harness. AI is very good at making one feel like they are being productive"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50379944,
+    "author": "dcferreira",
+    "text": "while I don't yet have it setup as I'd want, it's slightly better than me previous pure tmux setup to manage multiple agents. I also always turn on remote control on claude so I can control it via the app. I suspect the gas towns and similar are no longer a necessity: I think as the models get better, the organization structures need less attention. I've been doing fine with, for each project, spinning up just one manager to manage all the relevant sessions and ping me when I'm neede"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50381382,
+    "author": "catketch",
+    "text": "nners I like the direction in particular Amp is taking -- it was a tougher sell 6-8 months ago because you couldn't bring your own subs, but that is now longer a barrier I toyed with a bunch of other things... openclaw, gas town, munder difflin etc, but mostly for toy experiments and tyring to keep ahead on what techniques/approaches might start breaking through."
+   },
+   {
+    "src": "ask_hn",
+    "id": 48417329,
+    "author": "igorhvr",
+    "text": "top of PI+deepseek). Where it comes from: until recently I used https://steve-yegge.medium.com/welcome-to-gas-town-4f25ee16d... for automatic software building but while planning an AI bootcamp I concluded that teaching Gas Town along with everything else would be impossible (too hard/complex), and decided to teach https://github.com/snarktank/antfarm instead but did not want to add OpenClaw as one more dependency - so I built Tamandua ( https://github.com/igorhvr/tamandua ) and I en"
+   },
+   {
+    "src": "ask_hn",
+    "id": 47393437,
+    "author": "spondyl",
+    "text": "an product work. Actually, I should probably rephase that a little: I'm mostly positive on pure inference while mostly negative on training costs and other societal impacts. I don't believe we'll get to everyone running Gas Town/The Wasteland nor do I think we should aspire to. I like iterating with an agent back and forth locally and I think just heavily automating stuff with no oversight is bound to fail, in the same way that large corporations get bloated and collapse under their "
+   },
+   {
+    "src": "ask_hn",
+    "id": 46695873,
+    "author": "crq-yml",
+    "text": "rontend to ffmpeg you can get a ton of value out of LLMs. As soon as things go open-ended and design-centric, brace yourself. I get the sense that the application of armies of agents is actually a scaled-up Lisp curse - Gas Town's entire premise is coding wizardry, the emphasis on abstract goals and values, complete with cute, impenetrable naming schemes. There's some corollary with \"programs are for humans to read and computers to incidentally execute\" here. Ultimately the program h"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46718365,
+    "author": "CjHuber",
+    "text": "yeah that does make sense that these choices are related to it being a big part of gastown, still I feel it would be much more sensible to make a different abstraction separating beads core features from the coordination layer"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46710670,
+    "author": "bravura",
+    "text": "c tests. I wrote beads-skills for Claude that I'll release soon to enforce this process. 2026 will be the year of agent orchestration for those of us who are frustrated having 10 different agents to check on constantly. gastown is cool but too opinionated. I'm excited about this promising new project: https://github.com/jzila/canopy We're writing an internal tool to help with planning, which most people don't think is a problem but I think is a serious problem. Most plans are either"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46846892,
+    "author": "someguyiguess",
+    "text": "Gastown also had a supervisor \u201cmayor\u201d. How is this one different?"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50159288,
+    "author": "nunez",
+    "text": "Wasn't this supposed to be what Gas Town was meant to solve?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50381382",
+    "author": "catketch",
+    "date": "2026-11-05",
+    "text": "bs (vm) and local runners I like the direction in particular Amp is taking -- it was a tougher sell 6-8 months ago because you couldn't bring your own subs, but that is now longer a barrier I toyed with a bunch of other things... openclaw, gas town, munder difflin etc, but mostly for toy experiments and tyring to keep ahead on what techniques/approaches might start breaking through."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50379944",
+    "author": "dcferreira",
+    "date": "2026-11-05",
+    "text": "ing Herdr also, and while I don't yet have it setup as I'd want, it's slightly better than me previous pure tmux setup to manage multiple agents. I also always turn on remote control on claude so I can control it via the app. I suspect the gas towns and similar are no longer a necessity: I think as the models get better, the organization structures need less attention. I've been doing fine with, for each project, spinning up just one manager to manage all the relevant sessions and ping me when I'm needed. Or if I want to b"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50379819",
+    "author": "prologic",
+    "date": "2026-11-05",
+    "text": "ls, Commands and my own MCP servers. - What made you switch harnesses (if you switched)? > Tried Codex initially. Then Claude. Never looked back. 4) Are you using any agent orchestration or swarm tools? > No. - For example, Munder Difflin, Gas Town, Ruflo, or something custom. > I'm building my own specialized \"bots\" and \"agents\". 5) Are you using broader agent platforms like OpenClaw / Hermes Agent / Grok bot / Dots / Muse? > No. Not interested."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50379514",
+    "author": "SOLAR_FIELDS",
+    "date": "2026-11-05",
+    "text": "All of these gas towns and no one running evals to compare to the vanilla harness. AI is very good at making one feel like they are being productive"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50373961",
+    "author": "anonymous908213",
+    "date": "2026-11-05",
+    "text": "it up to be. > But GPT also offers a $100 plan with five times the usage limits. And how long would that last me? Sol usage is basically unlimited on the $100 plan if you're human-in-the-loop, reviewing the code, and not doing some useless Gas Town crime against humanity."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50325375",
+    "author": "eterm",
+    "date": "2026-11-01",
+    "text": "Gas Town was never \"the hype\", it was always a bit of a joke, in fact the original post was hard to separate from satire. Linking to the HN comments here would show that."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50324848",
+    "author": "laserlight",
+    "date": "2026-11-01",
+    "text": "Dan Luu's recent blog post [0] reminded me of Gas Town. Gas Town was all the hype when it debuted. Us, mere mortals, had a few days left in the business of software. Now, only the crickets remain in the Gas Town. Not even its creator is there [1]. [0] We should be more ambitious with the software we build. https://news.ycombinator.c"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50300516",
+    "author": "bob1029",
+    "date": "2026-10-30",
+    "text": "Coordination is a tax. You don't want to chase this. Everyone who is doing community of models via message passing is losing the game right now. Every single case of gas town I've seen could be refactored into a single agent loop with a well curated set of tools. I think designing the tools is the hardest part in doing this AI harness/agent thing correctly. If you feel inclined to create an entirely new role in the system, it's likely you couldn't fi"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50159288",
+    "author": "nunez",
+    "date": "2026-10-19",
+    "text": "Wasn't this supposed to be what Gas Town was meant to solve?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50064801",
+    "author": "3eb7988a1663",
+    "date": "2026-10-13",
+    "text": "If anyone needs to see what 62 tokens/second looks like: https://token.qusai.pro/?speed=62 Which seems sufficient for mortals who are not running gas town, but want a local model."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50039751",
+    "author": "anonymous908213",
+    "date": "2026-10-11",
+    "text": "I can think of nothing I'd like to use less than a database or filesystem vibecoded by Gas Town-flavored psychosis. Roleplaying with LLMs is not the secret to producing amazing code."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50001737",
+    "author": "jredwards",
+    "date": "2026-10-08",
+    "text": "Gas Town did the same thing back in January. It's probably got three more layers of abstraction on top of it by now. https://yegge.ai/gastown "
+   }
+  ]
+ },
+ {
+  "name": "Paseo",
+  "url": "https://github.com/getpaseo/paseo",
+  "score": 62.6,
+  "github_stars": 23394,
+  "top_hn_story": {
+   "title": "Show HN: Paseo \u2013 Beautiful open-source coding agent interface",
+   "points": 92,
+   "id": "48377250",
+   "url": "https://github.com/getpaseo/paseo"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50367326,
+    "author": "ctolsen",
+    "text": "anscription (MAI-Transcribe 2) being something I use often enough. Also using it just to test random models. Not much local anymore except classifiers / decision models that I've played with. 3) Pi all the way. 4) I use Paseo to orchestrate agents, I have a couple plugins I've written for it that manages pipelines and such. I generally start a workflow with a simple skill and if it proves useful I like to make it deterministic if possible. Models be dumb sometimes. 6) No but I hav"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373485,
+    "author": "tamimio",
+    "text": "ing - different harnesses depending on the task, maki is great one, but I use others - I also have other stuff but I won\u2019t mention it here regarding the tokens for obvious reasons I tried most of the tools like herdr or paseo or desktop clients but they never clicked with me"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50374298,
+    "author": "dofm",
+    "text": "t 74B-9B, enjoying the really super Gemma 4 12B QAT when working on creative photography research or non-code planning). No openrouter (yet) but that will definitely happen. 3) Currently focusing my attentions on Pi via Paseo (and trying Pendant). Pi is just much better in smaller context sizes, and it is the right fit if you are keen to learn from first principles. I tried OpenCode first. I couldn\u2019t quite get on with it and what ultimately made me switch was trying to understand "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50376087,
+    "author": "haizhung",
+    "text": "I use pi as a harness, and Paseo as a Mac UI (because I need a Ui). I tried a bunch of models, but so far deepseek flash from October is just dirt cheap; and roughly on par with the frontier open weight models. It\u2019s still somewhat behind closed weight models (I only know Gemini Argon) in tha"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50376167,
+    "author": "boudra",
+    "text": "I use Paseo for mobile / desktop UI, and as an agent runtime for some automation in a dedicated Hetzner box. I try to keep the harness setup simple and portable, I use Claude Code or Codex with their subscriptions, I invest a lot of time in my skills which are shared bet"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50376632,
+    "author": "ultrasandwich",
+    "text": "1. Claude (max) + Opencode Zen. 2. Tried some other models via OpenRouter but the pricing just doesn't justify usage sometimes. 3. Claude + OpenCode harness. Using Paseo sometimes to coordinate parallel tasks although I quickly run out of memory or grind to a halt doing this. Mentally I can't coordinate more than 3 or so coding tasks at once, and physically my Macbook pro suffers when going more than this. Convenient. 4. Forg"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50377512,
+    "author": "geonic",
+    "text": "Went from using Codex and Claude via ACP in zed to Codex app, then harness aggregators like Paseo, Orca and Superset to Claude Projects. Claude Projects is pretty nice and integrates with Claude Artifacts for design tasks. Projects remembers context, repositories and working directories so I can always pick up work in the main orchestrator chat and Projec"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50379808,
+    "author": "KronisLV",
+    "text": " Codex and Claude Code, for a while had a custom launcher for Claude Code (ccode) for 3rd party providers, also tried out OpenCode (really nice CLI, but barebones web UI/desktop versions), alongside additional ADEs like Paseo (really pleasant, but sub-agent status updates hanged sometimes) and Kepler (cool ticketing system integration, but the UI wasn't very pleasant), before just going back to the two in the end. Same as with MCPs and other stuff, realized I just don't need most "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50380583,
+    "author": "RamblingCTO",
+    "text": "Claude desktop, chatgpt desktop, pi, claude code, also coop vm + pi setup for more juicy stuff. Also just setup paseo via tailscale to have something like amp. imho all the fancy setup and the skills make the agents more retarded. they access tools and skills way too broadly and it poisons the context. also killed my hermes web setup (also via talescale) for security reasons"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50384963,
+    "author": "egrm",
+    "text": "uto alternate between them. This is because cheapest subscription gives most weekly usage per $. 2)no, you dont need an API key if you know how to use your subscription to replace it 3)I tried many; from opencode, warp, paseo, orca to openclaw, hermes, etc. I always end up returning to the default claude and codex. 4) kinda an orchestration tool, i have one to oversee my entire business (Varyz AI), it constantly makes content, fixes bugs based on feedback and etc (spawning agents "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50389805,
+    "author": "zexias",
+    "text": "I use Paseo with Claude + Codex and Opencode Go. I have a jev classifier on top that select models for some implementations that are more flexible about quality. Created a couple of skills that match what I expect. Paseo helps keeping everything organized and one place, "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50404550",
+    "author": "spapas82",
+    "date": "2026-11-07",
+    "text": "hat happened to the desktop development. Hiwever, I'd like to hijack this front page article to for a related concern/question I've got. It seems that all (popular) opensource LLM harnesses are either in JS or python (pi, hermes, opencode, paseo). The same seems to be true for closed source harnesses that I have used (deepseek, chatgpt). I'd really like to ask why? I mean why somebody would use technologies like JS or python to implement a harness application instead of golang or rust or even C? I understand that before"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50397677",
+    "author": "dofm",
+    "date": "2026-11-06",
+    "text": "Would you talk to me a mo about Kilo compared to Pi? I am digging in on Pi (in lovely Paseo and exploring Pendant when in VS Code). What would I find better or worse in Kilo?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50389805",
+    "author": "zexias",
+    "date": "2026-11-06",
+    "text": "I use Paseo with Claude + Codex and Opencode Go. I have a jev classifier on top that select models for some implementations that are more flexible about quality. Created a couple of skills that match what I expect. Paseo helps keeping everything organized and one place, which is easy to rev"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50384963",
+    "author": "egrm",
+    "date": "2026-11-05",
+    "text": "then have a script auto alternate between them. This is because cheapest subscription gives most weekly usage per $. 2)no, you dont need an API key if you know how to use your subscription to replace it 3)I tried many; from opencode, warp, paseo, orca to openclaw, hermes, etc. I always end up returning to the default claude and codex. 4) kinda an orchestration tool, i have one to oversee my entire business (Varyz AI), it constantly makes content, fixes bugs based on feedback and etc (spawning agents to do so)."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50380583",
+    "author": "RamblingCTO",
+    "date": "2026-11-05",
+    "text": "Claude desktop, chatgpt desktop, pi, claude code, also coop vm + pi setup for more juicy stuff. Also just setup paseo via tailscale to have something like amp. imho all the fancy setup and the skills make the agents more retarded. they access tools and skills way too broadly and it poisons the context. also killed my hermes web setup (also via talescale) for security reasons. not interested in "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50379808",
+    "author": "KronisLV",
+    "date": "2026-11-05",
+    "text": "ionally pulling). 3. Codex and Claude Code, for a while had a custom launcher for Claude Code (ccode) for 3rd party providers, also tried out OpenCode (really nice CLI, but barebones web UI/desktop versions), alongside additional ADEs like Paseo (really pleasant, but sub-agent status updates hanged sometimes) and Kepler (cool ticketing system integration, but the UI wasn't very pleasant), before just going back to the two in the end. Same as with MCPs and other stuff, realized I just don't need most of them, near-SOTA m"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50377647",
+    "author": "pkilgore",
+    "date": "2026-11-05",
+    "text": "I moved to Paseo. Open source and let's you drive from your phone."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50377512",
+    "author": "geonic",
+    "date": "2026-11-05",
+    "text": "Went from using Codex and Claude via ACP in zed to Codex app, then harness aggregators like Paseo, Orca and Superset to Claude Projects. Claude Projects is pretty nice and integrates with Claude Artifacts for design tasks. Projects remembers context, repositories and working directories so I can always pick up work in the main orchestrator chat and Projects branches in diffe"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50376632",
+    "author": "ultrasandwich",
+    "date": "2026-11-05",
+    "text": "1. Claude (max) + Opencode Zen. 2. Tried some other models via OpenRouter but the pricing just doesn't justify usage sometimes. 3. Claude + OpenCode harness. Using Paseo sometimes to coordinate parallel tasks although I quickly run out of memory or grind to a halt doing this. Mentally I can't coordinate more than 3 or so coding tasks at once, and physically my Macbook pro suffers when going more than this. Convenient. 4. Forget swarms, I can't e"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50376205",
+    "author": "crystaln",
+    "date": "2026-11-05",
+    "text": "Great exit in a crowded space. I switched to Paseo long ago because of its full featured mobile app, local client server architecture, and open sourcedness. Conductor began to feel stale, pricey, and understandably but annoying for me moving toward enterprise."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50376167",
+    "author": "boudra",
+    "date": "2026-11-05",
+    "text": "I use Paseo for mobile / desktop UI, and as an agent runtime for some automation in a dedicated Hetzner box. I try to keep the harness setup simple and portable, I use Claude Code or Codex with their subscriptions, I invest a lot of time in my skills which are shared between them. Disclaime"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50376087",
+    "author": "haizhung",
+    "date": "2026-11-05",
+    "text": "I use pi as a harness, and Paseo as a Mac UI (because I need a Ui). I tried a bunch of models, but so far deepseek flash from October is just dirt cheap; and roughly on par with the frontier open weight models. It\u2019s still somewhat behind closed weight models (I only know Gemini Argon) in that it produces lots o"
+   }
+  ]
+ },
+ {
+  "name": "Beads",
+  "url": "https://github.com/steveyegge/beads",
+  "score": 62.4,
+  "github_stars": 28572,
+  "top_hn_story": {
+   "title": "Beads \u2013 A memory upgrade for your coding agent",
+   "points": 111,
+   "id": "46075616",
+   "url": "https://github.com/steveyegge/beads"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50374135,
+    "author": "strangelove026",
+    "text": "t\u2019s modeled on conductor but uses Claude code terminal and mods and glues a bunch of open source stuff with a cli I had Claude write. Herdr for sessions, nvim for code review / searching, cli invoked by /slash commands. Beads cli for task tracking. With multi repo support since I end up doing a lot at work across repos at work for a \u201cfeature\u201d which is how I delineate chats now. And I\u2019ve got a nice picker for swapping sessions so screen real estate isn\u2019t wasted. Many incremental im"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50375407,
+    "author": "dgunay",
+    "text": " Code, but most of my async workers are on Codex. The orchestration part is custom. I talk to a \"chief of staff\" Opus instance to ingest various workstreams (Jira tickets, alerts, personal ideas, etc) and turn them into beads. It launches workers to tackle individual beads using Remuda, an agent launcher I wrote at work in 2025 and open sourced earlier this year: https://github.com/yendo-eng/remuda . I configure profiles in Remuda that launch containerized agents using my preferre"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48416641,
+    "author": "0xbadcafebee",
+    "text": "plex work, DeepSeek V4 Pro for simpler planning or less complex work, DeepSeek V4 Flash for implementing plans or doing simple tasks. 3) Some kind of 'ticketing' system for the AI. At work we use Linear, at home I tried Beads but I didn't like how bloated it got, so I made my own ( https://codeberg.org/mutablecc/dingles ). Important to have a way to plan work, persist the plan, and work on each item til they're done. In general you're going to use your AI coding agent's Plan Mode "
+   },
+   {
+    "src": "ask_hn",
+    "id": 46692673,
+    "author": "antonvs",
+    "text": " users can be very useful - \"great\" - in building large and complex apps. It's just that it has to be guided and reviewed by the human expert. As for agentic coding, it may depend on the app. For example, Steve Yegge's \"beads\" system is over a quarter million lines of allegedly vibe-coded Go code. But developing a CLI like that may be a sweet spot for LLMs, it doesn't have all the messiness of typical business system requirements."
+   },
+   {
+    "src": "ask_hn",
+    "id": 46693398,
+    "author": "znsksjjs",
+    "text": "> For example, Steve Yegge's \"beads\" system is over a quarter million lines of allegedly vibe-coded Go code. But developing a CLI like that may be a sweet spot Is that really a success? I was just reading an article talking about how sloppy and poorly implemented it is: https://lucumr.pocoo.org"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46692620,
+    "author": "vessenes",
+    "text": " Claude is in my opinion the best coding agent out there. With Claude code, the best harnesses are starting to automate the review / PR process a bit, but the hand holding around bugs is real. I also really like Yegge\u2019s beads for LLMs keeping state and track of what they\u2019re doing \u2014 upshot, I suggest you install beads, load Claude, run \u2018!bd prime\u2019 and say \u201cGive me a full, thorough code review for all sorts of bugs, architecture, incorrect tests, specification, usability, code bugs,"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46692731,
+    "author": "CjHuber",
+    "text": "I still don't get what beads needs a daemon for, or a db. After a while of using 'bd --no-daemon --no-db' I was sick of it and switched to beans and my agents seem to be able to make use of it much better, on the one hand its directly editable by them as its just markdown, on the other h"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46715850,
+    "author": "vessenes",
+    "text": "Steve runs beads across like 100 coding environments simultaneously. So, you need some sort of coordination, whether that's your db or a daemon. Realistically with 100 simultaneous connections, I would probably reach for both myself. I haven't tried beans, thanks for the refe"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46718365,
+    "author": "CjHuber",
+    "text": "yeah that does make sense that these choices are related to it being a big part of gastown, still I feel it would be much more sensible to make a different abstraction separating beads core features from the coordination layer"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46710670,
+    "author": "bravura",
+    "text": "We use beads for everything. We label them as \"human-spec\" needed if they are not ready to implement. We label them as \"qa-needed\" if they cannot be verified through automatic tests. I wrote beads-skills for Claude that I'll release soon to enforce this process. 2026 will"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46839635,
+    "author": "bobjordan",
+    "text": "I spec out everything in excruciating detail with spec docs. Then I actually read them. Finally, we create granular tasks called \"beads\" (see https://github.com/steveyegge/beads ). The beads allows us to create epics/tasks/subtasks and associated dependency structure down to a granular bead, and then the agents pull a \"bead\" to implement. So, mostly we're either creating spec docs and creatin"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46840139,
+    "author": "Dzugaru",
+    "text": "el code\". Speccing in detail requires deep thought, whiteboard, experimentation etc. All of this cannot be done in Disneyland, and no AI can do this at good level (that's why you \"spec out everything in detail\", create \"beads\" and so on?)"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46840194,
+    "author": "bobjordan",
+    "text": "Yes, I normally draft spec docs in the office at my desk, this is true. However, when I have the spec ready for implementation with clear \"beads\", I can reasonably plan to leave my office and work from my phone. Its not at a point where I can just work 100% remote from my phone (I probably could but this is all still new to me too). But it does give me the option to be vastly more productive, away fro"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50400078",
+    "author": "lee_polla",
+    "date": "2026-11-06",
+    "text": ".. Linkedin: https://www.linkedin.com/in/lee-polla/ Email: leepolla@gmail.com Data scientist and full stack engineer with 7+ years of experience delivering production solutions to laboratory scientists. I've been using Claude, OpenSpec and Beads to automate development tasks for over a year. Looking for new data scientist and full stack engineer roles."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50375407",
+    "author": "dgunay",
+    "date": "2026-11-05",
+    "text": "rimarily with Claude Code, but most of my async workers are on Codex. The orchestration part is custom. I talk to a \"chief of staff\" Opus instance to ingest various workstreams (Jira tickets, alerts, personal ideas, etc) and turn them into beads. It launches workers to tackle individual beads using Remuda, an agent launcher I wrote at work in 2025 and open sourced earlier this year: https://github.com/yendo-eng/remuda . I configure profiles in Remuda that launch containerized agents using my preferred harness and model."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50374135",
+    "author": "strangelove026",
+    "date": "2026-11-05",
+    "text": "rehensible lol but it\u2019s modeled on conductor but uses Claude code terminal and mods and glues a bunch of open source stuff with a cli I had Claude write. Herdr for sessions, nvim for code review / searching, cli invoked by /slash commands. Beads cli for task tracking. With multi repo support since I end up doing a lot at work across repos at work for a \u201cfeature\u201d which is how I delineate chats now. And I\u2019ve got a nice picker for swapping sessions so screen real estate isn\u2019t wasted. Many incremental improvements the sum o"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50295837",
+    "author": "_aavaa_",
+    "date": "2026-10-29",
+    "text": "What is the product here? Everything expect getting a teammate to review is a 3 simple prompts + beads."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50244108",
+    "author": "sroerick",
+    "date": "2026-10-26",
+    "text": "u do need to manage blockers so tasks should largely be a dependent graph. There's also a third thing which emerges - which is \"design decisions along the way\". I do actually keep this in the repo as well, but I'm not sure this is correct. Beads combines all three, which I'm not sure is correct, but seems quite brilliant."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50243995",
+    "author": "sroerick",
+    "date": "2026-10-26",
+    "text": "I'm not a beads user - but it rather brilliantly solves a lot of problems in this space"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50243560",
+    "author": "gosugdr",
+    "date": "2026-10-26",
+    "text": "ory should tell me what each change did, and the commit message alone should be enough to understand what actually changed. If you mix tasks with code changes, you will just confuse your future self. Moreover, you can set up something like beads to handle task delegation and status updates for your agents. https://github.com/gastownhall/beads "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50243394",
+    "author": "rich_sasha",
+    "date": "2026-10-26",
+    "text": "ven have any value? If some AI company rebuilds the economy from scratch, and control everything from accounting to shoe making, why would they respect the value of some fiat tokens? It\u2019d be like the conquistadors respecting the shells and beads of their new Aztec subjects. Of course, perhaps none of this happens, but then the question is, how good an investment all of this even is."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50218932",
+    "author": "abc42",
+    "date": "2026-10-24",
+    "text": "e features that force AI agents into a style, so the linter is included as part of the checker and every linter complaint is an error. The implementation is currently 300K+ lines of Rust, about 60Kloc of Hanki. I still have about a hundred beads tickets to go through before I'm happy enough about this that I dare to publish it. And seems like every solved task gets 2 follow-ups :)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50144724",
+    "author": "Syzygies",
+    "date": "2026-10-18",
+    "text": "n icon language with the viewer. The abacus is the T-shirt for this idea. Like a musical instrument, one can imagine operating an abacus without holding one, and some shopkeepers were able to leave theirs in a drawer after enough practice. Beads, like balls, leverage our brains' ability to manipulate physical reality, but the idea of counting became more vivid as the abacus design grew more streamlined. It not only became easier to build and operate, but it became a more effective \"thought worm\" implant into our minds. "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50108277",
+    "author": "dsign",
+    "date": "2026-10-15",
+    "text": " far in memory, when the value of being human wasn't about our intellectual prowess[^1]. We were creative with the human worth thing: being there in the time of need, faith, nobility or being a well-dreaded, literally-bloody viking full of beads in your beard. Yes, I fear we will stop being the top of the food chain[^2]. But by god weren't we getting bored? Maybe getting off our high horses and going into the weeds won't be such a bad thing. [^1] And even today, if you go to parties and keep bouncing into people that ha"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50105410",
+    "author": "tosapple",
+    "date": "2026-10-15",
+    "text": "s the classification system to sort out. gentrification works, but we chose forcible displacement now we have to live with the forever consequences. would you give guns and bombs to the displaced native americans who taste blood over their beads and trinkets? we've been inside the event horizon of the singularity for years, the tax bill will only get worse unless we recognize it for the tick that it is."
+   }
+  ]
+ },
+ {
+  "name": "T3 Code",
+  "url": "https://t3.codes",
+  "score": 56.6,
+  "github_stars": 50869,
+  "top_hn_story": {
+   "title": "T3 Code now synced between GitHub and GitCafe",
+   "points": 8,
+   "id": "50175075",
+   "url": "https://git.cafe/pingdotgg/t3code"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50385453,
+    "author": "thefourthchime",
+    "text": "I tried a T3 code for a hot second, but found it too buggy and missing features I missed from Claude Code Desktop. I do desperately need to figure out some way to get stuff off my laptop."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50378013,
+    "author": "senordevnyc",
+    "text": "I switched from Cursor to Claude Code (via T3.codes) because I was running out of usage on Grok 4.7. I regret not making the switch sooner, Opus 5.5 is much better than Grok, and Grok is decent!"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50367589,
+    "author": "peepee1982",
+    "text": "I use T3 Code as my front-end for all my coding agents on all my personal computers and my VPS. For the actual agents I use Claude Code for my Claude subscription, Codex for my OpenAI subscription (I usually only keep one of those at a time), and pi for my OpenCode Go subs"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50368179,
+    "author": "x3haloed",
+    "text": "Where do you find that T3 Code is strongest and where it is weakest?"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50375041,
+    "author": "Dibes",
+    "text": "I just recently started using T3 Code and it's strongest points are having a really good workflow, interconnecting all agent harnesses so you can easily orchestrate across them and they can easily communicate, and truly phenomenal remote sessions. All while having a singular UI/UX experience whic"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50375873,
+    "author": "peepee1982",
+    "text": "It has no weak points in my experience (compared to other harnesses). It is so good that I just can't use anything else anymore without feeling frustrated. Theo of T3 Code has made a recent video about its features. A few examples of why I like it: - Not having to use multiple agents (you can switch them mid-conversation with automatic handoff if you want) - The way it handles environments (I can start a new session on any envi"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50380990,
+    "author": "djeastm",
+    "text": "I'm using T3 Code as well. I like that it's completely open source and Theo is beyond transparent about how it works, imo. And he clearly uses it himself. Then I used Claude to build an app called \"Superintendent\" that controls T3 Code through its API in a way that maximizes w"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50367701,
+    "author": "puszczyk",
+    "text": "1) anthropic ultra; single sub 2) payg on opencode 3) standard claude code and opencode driven by t3 code 4) nope 5) grok bot - at work, to manage my tasks, and to highlight what happened on slack when i was off; random one offs there"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50376652,
+    "author": "gogoro",
+    "text": "t3code on my mac and omarchy, connected to my VMs with tailscale, that runs inside my own proxmox cluster. I get to separate my work, have a lot of compute, manage it from anywhere, and also have my agents go bananas in their VMs. I also run 1x Claude Ultra, 1x Clau"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50376683,
+    "author": "theLiminator",
+    "text": "What about t3code makes it better than herdr or something else? Is it the cross agent messaging ability?"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50377597,
+    "author": "hridyaagrawal",
+    "text": "1) Claude Ultra 2x + Chatgpt Plus 2x 2) none 3) defaults 4) T3 code -> really great for multi-machine orchestration + multi-harness work 5) Made a OpenBot fork mainly as \"captains\" to control my t3 threads across projects better"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50402466",
+    "author": "treyp",
+    "date": "2026-11-07",
+    "text": "Use a layer on top of it like T3 Code that can handle this for you"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50396429",
+    "author": "hhhkm",
+    "date": "2026-11-06",
+    "text": "Yea I've been using a fork of T3 Code https://t3.codes/ Its just an ADE and one of the internal tools is a visualize feature. Just basically renders HTML and puts it in the chat for you. Its good for quick visualization when mocking up a ui"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50395494",
+    "author": "geoah",
+    "date": "2026-11-06",
+    "text": "ing, especially the headless part. Been building various apps lately for ios/ipados/macos for personal use and I would love something like this that would be truly cross platform. Xcode with agent use has been really nice to work with, and t3.code support for emulators has been amazing to use."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50394529",
+    "author": "theturtletalks",
+    "date": "2026-11-06",
+    "text": "Are you sure about Argon? My experience has been it seems to understand code but it completely destroyed a couple of projects I was working on. Others like Theo used it to work on T3 Code and said it benchmaxxed and was atrocious."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50385453",
+    "author": "thefourthchime",
+    "date": "2026-11-05",
+    "text": "I tried a T3 code for a hot second, but found it too buggy and missing features I missed from Claude Code Desktop. I do desperately need to figure out some way to get stuff off my laptop."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50380990",
+    "author": "djeastm",
+    "date": "2026-11-05",
+    "text": "I'm using T3 Code as well. I like that it's completely open source and Theo is beyond transparent about how it works, imo. And he clearly uses it himself. Then I used Claude to build an app called \"Superintendent\" that controls T3 Code through its API in a way that maximizes what I get out of my "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50378205",
+    "author": "skorobogatko",
+    "date": "2026-11-05",
+    "text": "ive to Conductor, as it\u2019s geared less toward developers and more toward a \"simpler\" way of working with code - but it might still be of interest to some. I use it myself every single day. As for other options, as far as I\u2019m aware, Orca and T3 Code are quite popular."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50378013",
+    "author": "senordevnyc",
+    "date": "2026-11-05",
+    "text": "I switched from Cursor to Claude Code (via T3.codes) because I was running out of usage on Grok 4.7. I regret not making the switch sooner, Opus 5.5 is much better than Grok, and Grok is decent!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50377597",
+    "author": "hridyaagrawal",
+    "date": "2026-11-05",
+    "text": "1) Claude Ultra 2x + Chatgpt Plus 2x 2) none 3) defaults 4) T3 code -> really great for multi-machine orchestration + multi-harness work 5) Made a OpenBot fork mainly as \"captains\" to control my t3 threads across projects better"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50375873",
+    "author": "peepee1982",
+    "date": "2026-11-05",
+    "text": "It has no weak points in my experience (compared to other harnesses). It is so good that I just can't use anything else anymore without feeling frustrated. Theo of T3 Code has made a recent video about its features. A few examples of why I like it: - Not having to use multiple agents (you can switch them mid-conversation with automatic handoff if you want) - The way it handles environments (I can start a new session on any environment (machine) wi"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50375041",
+    "author": "Dibes",
+    "date": "2026-11-05",
+    "text": "I just recently started using T3 Code and it's strongest points are having a really good workflow, interconnecting all agent harnesses so you can easily orchestrate across them and they can easily communicate, and truly phenomenal remote sessions. All while having a singular UI/UX experience which I actually really "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50372245",
+    "author": "frde_me",
+    "date": "2026-11-04",
+    "text": "As annoying as he can be, t3 code really speaks for itself, especially with the later updates"
+   }
+  ]
+ },
+ {
+  "name": "Conductor",
+  "url": "https://conductor.build",
+  "score": 52.1,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Suggest Alternatives for Conductor.build",
+   "points": 5,
+   "id": "50377058",
+   "url": null
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50367546,
+    "author": "dewey",
+    "text": "I'm currently using https://www.conductor.build/ for working on multiple projects at the same time with git worktrees and my Claude subscription. The annoying part is that if I have a frontend repository and a backend repository I have to tell each session \"talk to this workspace to adapt the backend"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50374135,
+    "author": "strangelove026",
+    "text": " https://github.com/seanturner026/f There\u2019s an excalidraw in the reader My manager described this as incomprehensible lol but it\u2019s modeled on conductor but uses Claude code terminal and mods and glues a bunch of open source stuff with a cli I had Claude write. Herdr for sessions, nvim for code review / searching, cli invoked by /slash commands. Beads cli for task tracking. With multi repo support since I end"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50379292,
+    "author": "jkkorn",
+    "text": "Models: Claude and ChatGPT Workspace orchestration: Conductor.build (RIP) Looking for a substitute, recommendations welcome. Skill management: Skillstore I alternate a lot between models and harnesses, but mostly use them as adversarial to each other. (Ex: Astra Plans, Opus 5.5 executes, Sol revises, sonnet writes about"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50390611,
+    "author": "Darmani",
+    "text": "I'm the founder of Command Center ( https://cc.dev ), so that's what I'd swap in. You can run Claude Code, Codex, Gemini and OpenCode side by side, each in its own worktree. Where it goes past Conductor is the step after: walkthroughs to actually understand each diff and refactorings to clean it up, so the output gets to production quality a lot faster. We're doing large discounts for anyone coming off Conductor -- just ask."
+   },
+   {
+    "src": "ask_hn",
+    "id": 48414354,
+    "author": "solumos",
+    "text": "ironment infra deploy scripts that leverage terraform + AWS SSO I've found that converting stuff that's previously been very ops-cli heavy into very detailed skills has worked really really well. I use Claude Opus 4.8 + Conductor as my daily driver"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48415462,
+    "author": "AndreVitorio",
+    "text": "If you are teaching newbies, just get them into the Claude Code or Codex desktop apps. For devs: Claude, Codex and Cursor. All on the $20 subscription. Then use Conductor for worktrees w/ Claude/Codex for mid-size tasks and code review. Cursor for manual or small changes w/ Composer 2.5."
+   },
+   {
+    "src": "ask_hn",
+    "id": 48416150,
+    "author": "Charlieholtz",
+    "text": "I'm biased (I'm the creator) but I use Conductor every day. I've recently switched to Opus 4.8 (fast mode always on) as my default model but swap in GPT-5.5 quite a bit for reviewing Opus's work. My flow is something like: - Create a new workspace for a specific bug/feature - Ramble into the input box. I us"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48418811,
+    "author": "phildenhoff",
+    "text": "Hey -- we've loved using Conductor here at Digits. I've been using it since February and only recently swapped to using Orca for Remote SSH and perf improvements. Looking forward to your general release of Conductor Cloud! I've been wondering, since you're building desktop software, how do you"
+   },
+   {
+    "src": "ask_hn",
+    "id": 47391947,
+    "author": "nzoschke",
+    "text": "S, Postgres, SQLite, GCP and exe.dev. Claude code and other coding harnesses fully replaced typing code in an IDE over the past year for me. I\u2019ve tried so many tools. Cursor, Claude and Codex, open source coding agents, Conductor, building my own CLIs and online dev environments. Tool churn is a challenge but it pays dividends to keep trying things as there have been major step functions in productivity and multi tasking. I value the HN community for helping me discover and cut throug"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46331170,
+    "author": "sergeyk",
+    "text": "e migrations, and let me manually poke at the system. We approximate this with GitHub Actions, but that doesn\u2019t help with manual verification or DB work. I think this is almost exactly what we've built with https://superconductor.dev - set up a project with one or more repos - set up your environment any way you want, including using docker containers - run any number of Claude Code, Codex, Gemini, Amp, or OpenCode agents on a prompt, or \"ticket\" (we can add Cursor CLI also) - each ti"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46332013,
+    "author": "nphardon",
+    "text": "This seems wild to me; would lovvvvve to peak at your codebase. I'm in old school tech in the semiconductor industry. I do a heavy hybrid of pair-coding / vibe coding with my LLM in VsCode, 8 hours a day, across a wide spectrum of tasks. I am always working in C, alternating between implementing a new algorithm, testing, correcting, and analyzing some new technical"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48454409,
+    "author": "bakedbean",
+    "text": "I wrote a terminal based version of Conductor, heavily based on my own preferred workflows: https://github.com/bakedbean/workspacex "
+   },
+   {
+    "src": "ask_hn",
+    "id": 48456980,
+    "author": "hboon",
+    "text": " have little scripts to help me manage the workflow so this tool lets me encode my workflows and preferences. eg. I prefer to run sessions for the same project serially, working on main, rather than in parallel like how Conductor does with the help of worktrees."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50160418,
+    "author": "Scene_Cast2",
+    "text": "A quality ECE program will have you working lower level still - all the way from ALUs down to the electrons & holes in semiconductors."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50379292",
+    "author": "jkkorn",
+    "date": "2026-11-05",
+    "text": "Models: Claude and ChatGPT Workspace orchestration: Conductor.build (RIP) Looking for a substitute, recommendations welcome. Skill management: Skillstore I alternate a lot between models and harnesses, but mostly use them as adversarial to each other. (Ex: Astra Plans, Opus 5.5 executes, Sol revises, sonnet writes about it)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50369878",
+    "author": "markerz",
+    "date": "2026-11-04",
+    "text": "Things will shut down over the next few months. https://www.conductor.build/announcement : Wednesday, Nov 4 New users can no longer sign up for Conductor or download the app. Friday, Nov 13 Conductor Cloud goes read-only Local Conductor will continue working as normal for now. It will start winding down in early 2027. Flashback to Cloudflare acqui"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50367546",
+    "author": "dewey",
+    "date": "2026-11-04",
+    "text": "I'm currently using https://www.conductor.build/ for working on multiple projects at the same time with git worktrees and my Claude subscription. The annoying part is that if I have a frontend repository and a backend repository I have to tell each session \"talk to this workspace to adapt the backend\" if I'm working on "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49945423",
+    "author": "KronisLV",
+    "date": "2026-10-03",
+    "text": "Add these to the list: [3] https://orchestrator.inc/ [4] https://gitkraken.com/kepler [5] https://emdash.com/ [6] https://superset.sh/ [7] https://www.conductor.build/ [8] https://nimbalyst.com/ [9] https://parallelcode.app/ [10] https://www.jetbrains.com/air/ There's also sometimes options that try to have a tighter integration with a single harness, which honestly seems to be better cause ACP is fairly bare: [11] https://openchamber.d"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49926523",
+    "author": "ninininino",
+    "date": "2026-10-01",
+    "text": "t3.codes cursor.com conductor.build code.visualstudio.com w/ Claude Plugin or equivalent plugin zed.dev there are dozens tbh"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49746586",
+    "author": "jahala",
+    "date": "2026-09-17",
+    "text": "rompte\" vs goals / loops / evals - how to utilize models in the best way is changing rapidly (exemplify with karpathy's autoresearch) 2. agent harness - which harness fits best to the kind of work you are trying to do. pi vs claude code vs conductor.build etc. 3. repo harness - how do you set up your repo for agents to (hypothetically) work consistently across vendors/models (claude.md, architecture.md, engineering.md - git hooks, agent hooks, etc) 4. privacy - ensure using the correct settings to (at least hypothetically) "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49524252",
+    "author": "jacksondc",
+    "date": "2026-09-01",
+    "text": "Conductor | San Francisco, ONSITE | Full-time Conductor lets builders run teams of coding agents. We're a small team, we recently announced our $22m Series A, and we're looking for exceptional software engineers and designers to join us. https://www.conductor.build/join-us "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49391677",
+    "author": "nzoschke",
+    "date": "2026-08-21",
+    "text": " agent tools / harnesses? Every awesome list I've found so far seems very incomplete, but I'm sure its impossible to keep up. My daily drivers are still: - exe.dev + Shelley + terminal multiplexer ( https://zmx.sh/ or tmux) + `codex` CLI - Conductor.build I would love an open source solution with nice desktop / web / mobile / remote options and notifications, but seems like it could be a while before things settle down and the \"winners\" emerge?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49237141",
+    "author": "robertn702",
+    "date": "2026-08-09",
+    "text": "+1 for Paseo. Switched over to it a few weeks ago from conductor.build then superset.sh. The mobile app plus Hetzner VPS has been really enjoyable in terms of just firing off random tasks and not being stuck at my desk."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48749271",
+    "author": "jacksondc",
+    "date": "2026-07-01",
+    "text": "Conductor | San Francisco, ONSITE | Full-time Conductor lets builders run teams of coding agents. We're a small team, we recently announced our $22m Series A, and we're looking for exceptional software engineers and designers to join us. https://www.conductor.build/join-us "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48729385",
+    "author": "sharts",
+    "date": "2026-06-30",
+    "text": "Looks almost like conductor.build, but not quite the same."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48716605",
+    "author": "Quarrel",
+    "date": "2026-06-29",
+    "text": "conductor.build is Mac only .."
+   }
+  ]
+ },
+ {
+  "name": "Orca",
+  "url": "https://github.com/stablyai/orca",
+  "score": 48.1,
+  "github_stars": 118432,
+  "top_hn_story": null,
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50367676,
+    "author": "drbscl",
+    "text": "I use Orca as an \u201cADE\u201d (mostly for the multi-worktree interface and mobile app). In my day job I use Claude Code & Codex subscriptions (Codex is mostly for review, second opinion, and as a backup). Personally I use both oh-my-pi and Hermes with a Codex subscription. I t"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50367744,
+    "author": "tinyhouse",
+    "text": "For personal work. I use Orca. 1. Claude Code with $20 Claude subscription. This used to be a terrible value but now it's a great value, probably because of the IPO. I do a lot of coding and other things and I rarely get close to my weekly limit. I mostly use Opus 5.5 medium. Codex with g"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373433,
+    "author": "foopod",
+    "text": "1) the cheapest Claude sub, $20usd I think. 2) pretty much just opus 3) claude code - but with Orca + app (being able to dev remotely via the app has been great for personal projects) Work has me stuck with Cursor, which I don't find as good, even when using claude models."
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373447,
+    "author": "mazone",
+    "text": "1. Z.ai coding pro plan that i got last christmas for $14 a month. Will not renew in jan. 2. Locally hosted qwen 3.8 flash next on a wake on lan machine rtx5090 3. Currently orca as front end orchestrator to a mini pc with pi for coding and hermes for general purpose"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50373974,
+    "author": "browningstreet",
+    "text": " $0-100 on Deepseek API 2 - No 3 - I use a lot of Opencode + Deepseek, strategize some of that work with Claude Opus, and some gtm, research, and project stuff in Hermes with its coding agent. When I guide by hand I use Orca Dev, which is lovely. 4 - Claude drops GitHub issues that Opencode picks up on a schedule. It\u2019s simple and resilient enough for me. Hermes has a lot of scheduled tasks to move things forward.. it has gtm and research and dev loops (the latter builds autonomou"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50377512,
+    "author": "geonic",
+    "text": "Went from using Codex and Claude via ACP in zed to Codex app, then harness aggregators like Paseo, Orca and Superset to Claude Projects. Claude Projects is pretty nice and integrates with Claude Artifacts for design tasks. Projects remembers context, repositories and working directories so I can always pick up work in the main orchestrator chat and Projects bra"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50379176,
+    "author": "gitgud",
+    "text": "I use - opencode 2 as the harness it works well for pretty much any specific task - openrouter to use deepseek flash 4.1 \u2026 insanely cheap, works amazingly well and fast - orca as the orchestrator to manage all the work (self hosted). There\u2019s a mobile app to orchestrate afk too And yep, vscode to browse repos etc"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50379643,
+    "author": "jlgarhdez",
+    "text": "IDK how shareable it is but what I've got now is: I manage everything from claude's native app. I have a self built app in my mac, called Karajan, that knows Orca (onorca.dev) state of all my running agents, and is connected to GH and Jira too. Karajan exposes an MCP for claude native app to start, stop, and review other agents. Karajan also exposes a kanban like interface for me to know what's going on. Under karajan "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50380310,
+    "author": "Bayart",
+    "text": "- Wrapper : Orca - Harness : oh-my-pie - Models : OpenAI $20 sub (mostly using Sol/Luna) + Deepseek + JEV - Skills : Mostly Osmani's agent skills, ub-mode, agency skills for personas + custom stuff I'm kinda reworking everything as the moment, I'm having issues with other peo"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50384963,
+    "author": "egrm",
+    "text": "ernate between them. This is because cheapest subscription gives most weekly usage per $. 2)no, you dont need an API key if you know how to use your subscription to replace it 3)I tried many; from opencode, warp, paseo, orca to openclaw, hermes, etc. I always end up returning to the default claude and codex. 4) kinda an orchestration tool, i have one to oversee my entire business (Varyz AI), it constantly makes content, fixes bugs based on feedback and etc (spawning agents to do "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50389282,
+    "author": "Reebz",
+    "text": "Little Linux server with: Orca IDE + Tailscale + 3x Claude code (builds) + Codex (reviews). I run the Compound Engineering plugin as the primary work loop for both. Orca is great, I can work anywhere."
+   },
+   {
+    "src": "ask_hn",
+    "id": 48418811,
+    "author": "phildenhoff",
+    "text": "Hey -- we've loved using Conductor here at Digits. I've been using it since February and only recently swapped to using Orca for Remote SSH and perf improvements. Looking forward to your general release of Conductor Cloud! I've been wondering, since you're building desktop software, how do you get AI to test your changes? Boot the whole app? Run the frontend/UI with a mock backend?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50326619",
+    "author": "arach",
+    "date": "2026-11-01",
+    "text": "ht enjoy learning more about this https://zed.dev/acp in case it sparks new ideas ACP helps with agent interoperability and helps a lot of IDEs and ADEs integrate all the major harnesses seamlessly zed https://github.com/zed-industries/zed orca https://github.com/stablyai/orca/tree/main/src/main I haven't looked at the cli implementation but you can get very far with integrating a harness while not invoking the model directly via API"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50007033",
+    "author": "smb06",
+    "date": "2026-10-08",
+    "text": "ce little milestone we crossed at CodeRabbit. In the month of Sep '26, CodeRabbit delivered over 1million code reviews in open-source repos! Some interesting trends we noticed: - The top repos by volume are newer AI/agent tooling: stablyai/orca (5.6k reviews), pingdotgg/t3code (3.9k), manaflow-ai/cmux (3.5k). - Some established projects show up in the top 10 too: bun, vllm, pnpm, mise. - Installed on 300k+ public repos. It's free for anyone working on public repos. On the money side: in August we committed $10M+ (in ca"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49606598",
+    "author": "Fuzzwah",
+    "date": "2026-09-08",
+    "text": "I've been impressed with orca https://github.com/stablyai/orca I did have some issues getting it installed on a headless server. I sort of gave up and installed the instance that I use as the remote server on a Debian + xfce machine I had laying around."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49216491",
+    "author": "jvican",
+    "date": "2026-08-07",
+    "text": "Omnigent seems to compete more against Orca https://github.com/stablyai/orca They both went to be the Agent IDE layer, where you come with your tasks and everything is taken care of. I've been using Orca for a handful of tasks and have been largely enjoying it. My default barebones workflow is ghostty + zmx on ssh connect"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49121360",
+    "author": "massimodeluisa",
+    "date": "2026-07-31",
+    "text": "This seems like a mix of several projects I recently encountered, such as https://pi-web.dev , https://github.com/kunchenguid/firstmate , https://github.com/stablyai/orca , and https://herdr.dev . Very interesting idea! I would be glad to collaborate on it. Here's my contacts and GH https://massimo.deluisa.bio (or https://xn--obk691h.com my poor website). Anyway, I wish you @mitchellh the best of luck with this new adventure!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49101564",
+    "author": "simplism",
+    "date": "2026-07-29",
+    "text": "While not terminal-only, I've been using Orca ( https://github.com/stablyai/orca ) for the past week and it's been a great experience"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49099919",
+    "author": "jvican",
+    "date": "2026-07-29",
+    "text": "I expect the product from this company to resemble a combination of Orca + zmx [0]: https://github.com/stablyai/orca [1]: https://github.com/neurosnap/zmx "
+   },
+   {
+    "src": "hn_comment",
+    "id": "47771238",
+    "author": "nwparker",
+    "date": "2026-04-14",
+    "text": "FWIW this is why we built Orca ( https://github.com/stablyai/orca ), we beleive in the TUI world but just want a GUI wrapper to help bridge the chaos"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49248841",
+    "author": "Fe2O3",
+    "date": "2026-08-10",
+    "text": "I didn't make this, the Orca team did, but I thought it was really cool. They did one-shot it with Fable. Repo: https://github.com/stablyai/stockcoaster "
+   }
+  ]
+ },
+ {
+  "name": "Juggler",
+  "url": "https://github.com/juggler-ai/juggler",
+  "score": 42.6,
+  "github_stars": 853,
+  "top_hn_story": {
+   "title": "Show HN: Juggler \u2013 an open-source GUI coding agent, by the creator of JUCE",
+   "points": 280,
+   "id": "48883305",
+   "url": "https://github.com/juggler-ai/juggler"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50376056,
+    "author": "hypfer",
+    "text": " which runs Qwen3.8-27b q4 fine with 180k ctx at q8. The model is capable enough to do things, but dumb enough to not be able to build elaborate nonsense like the bigger models love to do 3) I'm using https://github.com/juggler-ai/juggler which is alright. It could be a bit less vibecoded (and the readme and docs and all would benefit from less LLM writing), but, generally, the opinions shaping it seem decent, and I like just how much control over and insight into what happens it gi"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50379165,
+    "author": "julesrms",
+    "text": " on a Claude and a GPT plan, with occasional Deepseek, GLM and other models for testing. I work on cross-platform apps, so need to run things on a PC as well as my Mac. To make it less faff to switch between them, I run Juggler ( https://github.com/juggler-ai/juggler ) on both. Juggler treats local and remote sessions the same way, so I have both machines set up with the same two windows, one for the PC and one for the Mac. That means I can move seats between them and have the exact"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50379165",
+    "author": "julesrms",
+    "date": "2026-11-05",
+    "text": "I'm on a Claude and a GPT plan, with occasional Deepseek, GLM and other models for testing. I work on cross-platform apps, so need to run things on a PC as well as my Mac. To make it less faff to switch between them, I run Juggler ( https://github.com/juggler-ai/juggler ) on both. Juggler treats local and remote sessions the same way, so I have both machines set up with the same two windows, one for the PC and one for the Mac. That means I can move seats between them and have the exact same two windows co"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50377938",
+    "author": "julesrms",
+    "date": "2026-11-05",
+    "text": "Well, if any of the disgruntled people on this thread fancy moving to an agent with a similarly-themed name and vibe, Juggler ( https://github.com/juggler-ai/juggler ) is available. No sign-up required - the angle I'm taking is that juggler is a client-server architecture, and if you want cloud VM sessions, you just spin up your own server and run a juggler server process on there. Its GUI is identical"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50376056",
+    "author": "hypfer",
+    "date": "2026-11-05",
+    "text": "eh. 2) I have a 4090 which runs Qwen3.8-27b q4 fine with 180k ctx at q8. The model is capable enough to do things, but dumb enough to not be able to build elaborate nonsense like the bigger models love to do 3) I'm using https://github.com/juggler-ai/juggler which is alright. It could be a bit less vibecoded (and the readme and docs and all would benefit from less LLM writing), but, generally, the opinions shaping it seem decent, and I like just how much control over and insight into what happens it gives you. I initially"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50359956",
+    "author": "RodgerTheGreat",
+    "date": "2026-11-04",
+    "text": "This account describes the original raytracing and compression as taking place on an Amiga: http://www.etwright.org/cghist/juggler.html "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50359181",
+    "author": "ForOldHack",
+    "date": "2026-11-03",
+    "text": "Ah, just like the Amiga Juggler, was compressed on a VAX for playback on the Amiga. Full ray tracing, but the tracing and compression was Mini-computer."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50358014",
+    "author": "bityard",
+    "date": "2026-11-03",
+    "text": "> You then need to basically write custom harnesses. Why? Most existing harnesses let you point them at whatever API you want. I'm currently have a great time with Juggler."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50323851",
+    "author": "julesrms",
+    "date": "2026-11-01",
+    "text": ", but really interesting to hear that you found it stressful! I'll definitely go away and have a think about that. I did add a feature a few weeks ago which lets you toggle whether it folds groups of commands into a single summary item (in juggler style the column view works really well here because you can still browse into those groups and see the tool calls if you want). I've found myself not using that mode because I like to see all the detail, but your comment makes me wonder if that should be the default, and if may"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50320790",
+    "author": "atombender",
+    "date": "2026-10-31",
+    "text": "Hi, I tried Juggler a few months back, and while it's technically impressive as a one-person product, I found it super stressful to use. It emits so much output and activity, in various nested forms. Where Claude Code and Codex have made progress recently, I feel, is with sharpening the interactivi"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50318025",
+    "author": "ia",
+    "date": "2026-10-31",
+    "text": "This thread caused me to check out juggler. A couple hours later, I'm playing with it. This is awesome, really great work."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50316753",
+    "author": "julesrms",
+    "date": "2026-10-31",
+    "text": "Great to see what you're doing there, but speaking as a 30-year hardcore C++ veteran (to the extent of creating my own C++ GUI framework: https://juce.com )... When I was writing a code agent ( https://github.com/juggler-ai/juggler ), there's no way I'd have used C++ for an agent GUI! Agent UIs are all markdown, HTML, big scrolling lists, text flow, unicode chars, and all the other stuff that C++ frameworks are terrible at, but which is a doddle in HTML/CSS/JS.. You are a brave man!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50316687",
+    "author": "julesrms",
+    "date": "2026-10-31",
+    "text": "You're not alone - I also revolted against the TUI crowd and created my own GUI-centric harness juggler ( https://github.com/juggler-ai/juggler ). Might be up your street. If you're not too involved in your own project, maybe help out on mine :) Honestly, I just don't get the TUI obsession, other than the fact that people are multiplexing many remote sessions over ssh. So my aim w"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50294875",
+    "author": "munificent",
+    "date": "2026-10-29",
+    "text": "uch of that desire comes from purely internal accomplishment versus wanting to be seen as a person who can do that hard thing? And what happens to that drive when no one around you cares? Anthony Gatto was arguably the world's best numbers juggler for many years. Now he runs a concrete company, because it turns out most people just don't really give a shit about juggling. It's not enough for a task to be hard, it needs to be esteemed too. > Perhaps we will value eachother on an even more* human level, based on how kind an"
+   }
+  ]
+ },
+ {
+  "name": "Ralph loop",
+  "url": "https://ghuntley.com/ralph/",
+  "score": 38.8,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "What Ralph Wiggum loops are missing",
+   "points": 25,
+   "id": "46750937",
+   "url": "https://xr0am.substack.com/p/what-ralph-wiggum-loops-are-missing"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 47391517,
+    "author": "ramraj07",
+    "text": "ative\" whatever that means, add the right tooling and still demand all engineers take full responsibility for their output, this system is a true multiplier. I also have Copilot and Cursor bugbot reviews and run it on a Ralph wiggum loop with claude code. A few rounds overnight and the PR is perfect and ready for a final review before merging. I do run 4 CC sessions in parallel though, but thats just one day a week. The rest of the week is spent figuring out the next set of featur"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46699271,
+    "author": "8note",
+    "text": "a ralph loop can make claude go til the end, or to a rate limit at least. opus closes the task and ralph opens it right back up again. i imagine there's something to the harness for that, too"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48772247,
+    "author": "SwellJoe",
+    "text": "elt bad. This allows them to keep all sensitive stuff locally and still get help troubleshooting directly on the device. I happen to find it useful, sometimes, too. https://github.com/swelljoe/nelson - Nelson is a fancy Ralph loop for security bug hunting that I built to help audit my own software. It's also grown to include a benchmark suite I'm using to figure out which models are worth using for security work. I've published some of those benchmark results, and have a few hundr"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50031871",
+    "author": "cyanydeez",
+    "date": "2026-10-10",
+    "text": "; is it remembering the correct main? or any of the number of same variables? You can see an LLM is powerful but it's not ominipotent. It'll suffer very much when it starts hallucinations and context poisoning. So, sure you can try a super ralph wiggum loop with memory, fallback safeties, etc, but you basically then need another turtle that does the same thing, and at that point, you're positing a infinite jest of ralph wiggum loops tracking each other, recursively, forever."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48922211",
+    "author": "gwerbin",
+    "date": "2026-07-15",
+    "text": "kind of meta-meta-loop architecture. Supposedly Claude Code itself is entirely AI generated code, but it's not a `while` loop, it still has a team of designers and developers. (Also this meta-loop stuff is different from the tactical-level Ralph Wiggum loop stuff. That's a strategy to make smaller/weaker LLMs perform like better LLMs, using say 5x more tokens but at 1/10 the cost per token so that the cost-benefit math works out.)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48709939",
+    "author": "throwaway89201",
+    "date": "2026-06-28",
+    "text": " but until it's 'done', where the LLM itself is the judge on if the is the case according to the given criteria (often just an updated todo-list). One of those extremely simple 'harnesses' (if you can even call it that) was even named the 'Ralph Wiggum Loop' [1] to allude to the braindead-but-persistent tokenmaxxing it results in. [1] https://awesomeclaude.ai/ralph-wiggum "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48649901",
+    "author": "fantasizr",
+    "date": "2026-06-23",
+    "text": "h blogs used to read like actionable readme guides. I couldn't finish it without thinking: what am I supposed to do with this information? The shelf life of the latest and greatest is about 2 weeks in the AI space. I never caught up to the ralph wiggum loop and now I'm glad I never tried. https://news.ycombinator.com/item?id=46682325 "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48553754",
+    "author": "cadamsdotcom",
+    "date": "2026-06-16",
+    "text": "take for me in its self-review. If it finds uncovered code it makes a plan which includes the delete-reimplement trick. Now all I do is approve that plan - no hunting needed, no explaining, no repeating myself. You could even put this in a Ralph Wiggum loop and give yourself super high quality tests by going file by file."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48495876",
+    "author": "ELRayano",
+    "date": "2026-06-11",
+    "text": "a basic principle of work segmentation and accuracy with some traceability. You are better when you can divide your work into chunks that can be followed individually rather than with a huge block of work. That can also be used within the \"ralph wiggum\" loop pattern that might help the llm to get a goal and thus iterate until goal completion. There are few articles explaining the concept if that interests you Hope it helps a bit !"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48490761",
+    "author": "bluelightning2k",
+    "date": "2026-06-11",
+    "text": "No. It makes you faster. You can prove it by looking at the lines of code. Source: Gary Tan, who can write more code than Jeff Dean and John Carmack. If you want to go really fast, you put a Ralph Wiggum dungeon. It's where you orchestrate a team of Ralph Wiggum loops together using subagents to win the economic Darwin Award which companies are handing out for who can burn the most tokens."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48431018",
+    "author": "andai",
+    "date": "2026-06-07",
+    "text": " to review its own changes locally, request additional specific agent reviews both locally and in the cloud, respond to any human or agent given feedback, and iterate in a loop until all agent reviewers are satisfied (effectively this is a Ralph Wiggum Loop ). https://ghuntley.com/loop/ "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48318059",
+    "author": "zamalek",
+    "date": "2026-05-29",
+    "text": "There's also things that have since been discovered: * Ralph Wiggum loops * Simply not allowing an agent to stop its turn until all tasks are marked as done * Sub agents over worktrees * Context compression"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48276995",
+    "author": "another-dave",
+    "date": "2026-05-26",
+    "text": "c. These are all clearly signposted in the project, the AGENTS and CLAUDE files are set to run them. Still though, I'll get it saying \"All done\" and then it'll fail something basic like formatting when I go to push. Or I've come back to a 'ralph wiggum' loop before and found it saying \"tests are broken, but that's not part of this commit, so ignoring\""
+   },
+   {
+    "src": "hn_comment",
+    "id": "48166509",
+    "author": "gidellav",
+    "date": "2026-05-17",
+    "text": "Some interesting features I add on top of being lightweight are the prompts library, Git worktrees integration and Ralph Wiggum loops integrations."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48165044",
+    "author": "inciampati",
+    "date": "2026-05-17",
+    "text": "> Integrated Ralph Wiggum loops: looping capabilities for long-horizon tasks Imo, this shouldn't be embedded in the executor layer. Orchestration should handle this."
+   }
+  ]
+ },
+ {
+  "name": "Sculptor",
+  "url": "https://imbue.com/sculptor/",
+  "score": 35.6,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Show HN: Sculptor \u2013 A UI for Claude Code",
+   "points": 176,
+   "id": "45427697",
+   "url": "https://imbue.com/sculptor/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 48453560,
+    "author": "good-idea",
+    "text": "Best comment on the thread. Fellow potter & sculptor here, is your work online anywhere?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50372793",
+    "author": "ball_of_lint",
+    "date": "2026-11-04",
+    "text": " https://imbue.com/product/sculptor "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50352879",
+    "author": "diego_moita",
+    "date": "2026-11-03",
+    "text": "respiratory diseases. Add to this the fact that in Southern Brazil no one knows how to build with proper insulation against cold and you get what many Brazilian architects say in secret about Niemeyer: \"as an architect, he was an excellent sculptor\"."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50278170",
+    "author": "drummojg",
+    "date": "2026-10-28",
+    "text": "For example, Rodin had it figured out. He just hired more sculptors!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50275842",
+    "author": "wolframhempel",
+    "date": "2026-10-28",
+    "text": "Before anyone complains that this removes the human aspect of art, it's worth stressing that sculptors have always looked for ways to automate work and save time (as the website itself points out). As far back as ancient Egypt, grids and measuring tools were used to reproduce figures at different scales. Roman workshops churned out copies of Greek statues in marble and bronze, u"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50245527",
+    "author": "seemaze",
+    "date": "2026-10-26",
+    "text": "I think it's unfair to call the workers unskilled - but accurate that professional sculptors were not retained to execute the works. It is an incredible place. We visited by chance with a spare day in Krakow and had no idea what to expect. It is both historically fascinating and visually stunning to experience!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50199628",
+    "author": "theSherwood",
+    "date": "2026-10-22",
+    "text": "It's not just about malleability. It's about specificity. A prototype has to specify certain details to run at all. This is not really true of sculpting in clay (former sculptor here). What the article describes of a sculptor working from big forms to smaller forms and so forth is in contrast to what it feels like to code by hand, which always requires some thought for the details even if the details are going to change dramatically as the program goes "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50192250",
+    "author": "ianjbutler",
+    "date": "2026-10-22",
+    "text": "ore LLMs you did this with test suites techniques maybe, and a few automated refactoring tools, CSTs and AST work, sometimes macros and other metaprogramming. Yeah it happened but fair to say it was rare and difficult. Everyone is/can be a sculptor now"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50126547",
+    "author": "badsectoracula",
+    "date": "2026-10-17",
+    "text": "It isn't just the ancient sculptors and artists (unless 20 years ago is ancient :-P), when i went to an art school there were nude drawing lessons there too."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50126418",
+    "author": "swyx",
+    "date": "2026-10-17",
+    "text": "i think its instructive how the ancient sculptors and artists used to have to draw nudes in order to understand the human body. perhaps our image models need this"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50120395",
+    "author": "elevation",
+    "date": "2026-10-16",
+    "text": "I couldn't find a link, but there's a Bizzaro strip that shows a sculptor putting the finishing touches on his latest work: an elderly mannequin made of peanut butter and bird seed, dressed and seated in a wheel chair. The artist smiles as he imagines the reaction he'll get when he wheels the sculpture through a park full of pigeons."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50079062",
+    "author": "hdgvhicv",
+    "date": "2026-10-13",
+    "text": "Apersonally I can\u2019t see doing the same thing for more than 40 years. Maybe I\u2019d be an actor, then have a statically, then next time be a sculptor, Or maybe dig into physics. What has capitalism got to do with anything?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50063678",
+    "author": "troupo",
+    "date": "2026-10-12",
+    "text": "ration. Yes, and the compiler produces the same output for the same input all the time. And when it doesn't, it's a bug or a specified behaviour [1] > Picking up a saw does not guarantee a straight cut. Holding a chisel does not make you a sculptor. Yes, but you can learn the actual techniques that let you make a straight cut 100% of the time. And make you a sculptor. --- The rest of the small article doesn't even begin to approach the premise of the title. [1] Yes, I know it's not strictly true. But compilers are 100% pre"
+   }
+  ]
+ },
+ {
+  "name": "Vibe Kanban",
+  "url": "https://www.vibekanban.com",
+  "score": 35.3,
+  "github_stars": 28613,
+  "top_hn_story": {
+   "title": "Show HN: Vibe Kanban \u2013 Kanban board to manage your AI coding agents",
+   "points": 195,
+   "id": "44533004",
+   "url": "https://github.com/BloopAI/vibe-kanban"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "49282565",
+    "author": "TeMPOraL",
+    "date": "2026-08-13",
+    "text": "Vibe Kanban was fun when it was only about one humans PMing many agents. But then it IIRC went in some weird directions. Haven't thought about it since, does it still exist?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49281964",
+    "author": "2001zhaozhao",
+    "date": "2026-08-13",
+    "text": "Early in 2026, Vibe Kanban tried to do a multiplayer kanban board to code on a project collaboratively where each individual task is still managed by one developer and their agent. I find that to be a much more promising route than Delta's straight-up multiplayer development on the same task. (Vibe-kanban"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49159341",
+    "author": "2001zhaozhao",
+    "date": "2026-08-03",
+    "text": "Agreed, i forked a devtool (vibe-kanban) months ago for my own use but keeping up with upstream was a significant burden even with LLMs. The benefit of a well designed plugin system in the devtool is not only to allow sharing of customizations, but also to make users' private customizations cheaper to maintain."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48713902",
+    "author": "danielzhao987",
+    "date": "2026-06-29",
+    "text": "Thanks for sharing! What's the difference between this fredrin and https://github.com/BloopAI/vibe-kanban ?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48283104",
+    "author": "croes",
+    "date": "2026-05-26",
+    "text": "Can\u2018t you use Vibe Kanban to vibe code fixes?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48245730",
+    "author": "arikrahman",
+    "date": "2026-05-23",
+    "text": "How does this compare with https://github.com/BloopAI/vibe-kanban ?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48242197",
+    "author": "tquinn35",
+    "date": "2026-05-22",
+    "text": "Isn\u2019t this just vibe kanban? https://github.com/BloopAI/vibe-kanban "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48241963",
+    "author": "2001zhaozhao",
+    "date": "2026-05-22",
+    "text": "Vibe Kanban is indeed a treasure trove in terms of useful features. I've been working for the last week or two on getting my new tool up to parity with VK with additional improvements. I've been posting some screenshots into the Vibe Kanban discord as well. Hopefully it'll be a great fit fo"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48241393",
+    "author": "KerrickStaley",
+    "date": "2026-05-22",
+    "text": "This reminds me of Vibe Kanban ( https://vibekanban.com/ ) which I use to manage coding agents on most of my projects. The Vibe Kanban developers unfortunately decided that they didn't see a path to profitability and have stopped investing in the project. It's open source and so you can run it locally / fork "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48192342",
+    "author": "Glohrischi",
+    "date": "2026-05-19",
+    "text": "I wrote coding job. And its true for coding jobs. Your Product Manager is not a coding job. Your Product Owner is not a coding job. vibe-kanban exists you could already do a proper experiment letting your PO maintain a vibe-kanban board with proper requirements and see how an agent progresses. But 5% is often enough wwhat breaks it. Doesn't help much when your PM, PO or CEO or CTO have no clue about coding harnesses, co"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48185316",
+    "author": "2001zhaozhao",
+    "date": "2026-05-18",
+    "text": "Personally i've just been using Claude Code with a coding agent UI (vibe-kanban) that has wrapped over \"claude -p\" for more than half a year without problems. I'd only been coding interactively and well within the terms of their subscription plan. I'm not even that much of a heavy user, I'm only hitting 10-40% of my weekly quota on a given week, and I basic"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47601048",
+    "author": "saberience",
+    "date": "2026-04-01",
+    "text": "Nice work! Congrats on the release, did you check out Vibe-Kanban or Emdash which are both building in this space? https://www.emdash.sh/ https://vibekanban.com/ What is your secret sauce, so to speak? I personally built my own local tools and system for this, I tried vibekanban but didn't feel like it added much to my productivity, haven't tr"
+   }
+  ]
+ },
+ {
+  "name": "Omnara",
+  "url": "https://github.com/omnara-ai/omnara",
+  "score": 33.7,
+  "github_stars": 3365,
+  "top_hn_story": {
+   "title": "Show HN: Omnara \u2013 Run Claude Code from anywhere",
+   "points": 310,
+   "id": "44878650",
+   "url": "https://github.com/omnara-ai/omnara"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50192066",
+    "author": "kmansm27",
+    "date": "2026-10-22",
+    "text": "Nothing special with caching in Omnara, works pretty much the same way as any other harness (we do pretty much what pi/opencode/goose do) since the cache lives on the provider's side. We rebuild the model request by reading from postgres instead of jsonl or sqlite, and the rest is the same as any other harness."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50192022",
+    "author": "kmansm27",
+    "date": "2026-10-22",
+    "text": "Yeah, even as someone building in the space, I sometimes get confused on what and who I'm actually building for. What we've settled on is that Omnara is a tool for building agents. It's for people putting agents into their own products or workflows using the API. If you're not going to use the API, you probably don't need Omnara. Think of it like Supabase, Supabase gives you a Postgres database behind an API, and the dashboar"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50191792",
+    "author": "kmansm27",
+    "date": "2026-10-22",
+    "text": "not sure I fully understand the question, but in Omnara, the agent isn't always \"running\". When it's idle (e.g. waiting for user input, or tool results), the agent is just rows in postgres with nothing happening to them. When a tool result returns or a new input comes in through the API, then a worker is allocated to the agent and st"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50191763",
+    "author": "kmansm27",
+    "date": "2026-10-22",
+    "text": "Most harnesses run the loop on the same machine as the shell tools, so every agent needs its own VM for its entire life, even though it spends most of that time waiting on the model or tools or external inputs. Because they're decoupled in Omnara, an agent can use 0, 1, or n machines. Agents whose workloads don't need a machine can go without one entirely, and an agent's machine can sleep or go offline without stopping the agent. Anthropic has a good post on this architecture: https://www.anthropic.com/research/managed-a"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50189857",
+    "author": "isehgal",
+    "date": "2026-10-22",
+    "text": "nice, this is close to something we run ourselves. we put up examples of sm agents that scan socials daily for keywords and DMs us (docs here https://docs.omnara.com/examples/x-signal-agent ). probably the fastest starting point is to point your agent to it and ask it to swap in your keywords"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49965012",
+    "author": "luxor_recru_it",
+    "date": "2026-10-05",
+    "text": "gents, and isolated sandboxes where agents run code. Next up: agent workflows and CPU/GPU compute. Tenki was built by the founding team behind Luxor Technology, a leading provider of Bitcoin mining and AI infrastructure. Teams like Anchor, Omnara, and Naive already rely on it, and MAU has grown ~3.5x since April. We're building the infrastructure layer for the next generation of AI companies, and we want Tenki to be the go-to platform for AI teams worldwide. Now we need someone to sell it. You've sold technical products "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49651604",
+    "author": "kmansm27",
+    "date": "2026-09-10",
+    "text": "Agree, as long as models are interchangeable, it doesn't make sense to be locked into a single lab's managed agent platform. You probably want to swap between models and own the agent state. https://github.com/omnara-ai/omnara - this is a self hostable agent API that I'm working on. It stores the state of all agents in a postgres db you can easily query, rather than a local json file or sqlite file per agent."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48143779",
+    "author": "haint_",
+    "date": "2026-05-15",
+    "text": " can\u2019t start a new session directly from the app (have to SSH into the host manually to do that) Other than those limitations, the connection has been very stable for me, definitely more reliable than alternatives like happy.engineering or Omnara. What\u2019s been buggy for you specifically?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48142849",
+    "author": "miohtama",
+    "date": "2026-05-15",
+    "text": "I have been using Omnara now some months, on desktop and mobile. It's web/mobile remote for Claude and Codex. I can do some tasks on mobile, especially if they are follow up and steering only, greatly increasing productivity as you can keep working whilst in transit, etc."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47353776",
+    "author": "synchronizing",
+    "date": "2026-03-12",
+    "text": "Very nice - a few others have popped that are similar; [1] https://t3.codes [2] https://www.conductor.build [3] https://github.com/imbue-ai/sculptor [4] https://www.omnara.com "
+   },
+   {
+    "src": "hn_comment",
+    "id": "47159063",
+    "author": "isehgal",
+    "date": "2026-02-25",
+    "text": "Omnara founder here. We\u2019ve been building in this space for a while, and the issues listed here are exactly the hard parts: session connectivity, reconnection logic, multi-session UX, and keeping state in-sync across devices. Especially when it comes to long running tasks and the edge c"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47154832",
+    "author": "fluidcruft",
+    "date": "2026-02-25",
+    "text": "I've used similar things (omnara/happy) while taking walks. Sometimes I'll get an idea about the problem I'm working on and I can just dictate it into my phone and check in 15min later. I stopped being able to do that when claude added those nice interview panes to clarify things because it didn't work back the"
+   }
+  ]
+ }
+]

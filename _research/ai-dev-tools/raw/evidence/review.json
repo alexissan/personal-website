@@ -1,0 +1,1217 @@
+[
+ {
+  "name": "Claude Code review",
+  "url": "https://code.claude.com/docs/en/code-review",
+  "score": 78.2,
+  "github_stars": 9827,
+  "top_hn_story": {
+   "title": "Show HN: Compare Codex and Claude Code reviews side by side",
+   "points": 4,
+   "id": "47667324",
+   "url": "https://twitter.com/plannotator/status/2041264274228781520"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50378776,
+    "author": "Xonzo",
+    "text": "lt (Local) + OpenRouter for DeepSeek V4.1 Flash 3) I primarily use Pi with many custom extensions. Occasionally I will use Codex. 4) I use Pi Subagents and Herdr. With QFN being the worker, and Sol 6.1 xHigh for planning/review. 5) Hermes Agent via Telegram. I use this to follow-up, check status and work on projects while away from the house."
+   },
+   {
+    "src": "ask_hn",
+    "id": 48423575,
+    "author": "madarco",
+    "text": " doing subtasks (and subagent don't have plan mode). So I've built Agentbox to be able to launch from claude/codex multiple VMs with claude/codex (can also mix). The parent agent watch for prompts and questions, enforce /review, /simplify, that the sub agents file a PR and wait for bugbot comments etc. This way the parent agent running in a /goal don't loose context, enforce a good workflow, manage the backlog and parallelize/merge back the work on the main repo https://github.com/m"
+   },
+   {
+    "src": "ask_hn",
+    "id": 47392835,
+    "author": "ceejayoz",
+    "text": "I had Claude review one. It was... not complimentary. Seemed to help a bit."
+   },
+   {
+    "src": "ask_hn",
+    "id": 46717483,
+    "author": "disgruntledphd2",
+    "text": " study I suggested internally. If you were really interested in how this works for professional development, then you could randomise at the level of interviewee and track those that made it through and compare to output/reviews approx 1 year later. But no, there's no quick and easy way to do this because the variance is way too high. > Do you think trashb who made the initial question above would take the results of such evaluation and say \"Yeah, that's good enough and answers my q"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48772049,
+    "author": "magicmadrid00",
+    "text": "ng, completing some text) - Coding like the old days. (AI part: search, understanding, code examples) - Okay, now I have a good idea of how my feature is going to work - Look for fluff code and delegate it to AI to write/review it. - Focus on the part of the code I want to have fun doing. - Review. - Repeat. It\u2019s slower than the approach of doing specs and letting AI do the rest, while focusing your role only on code review. However, I\u2019m more in control of what I build, I can explai"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48772247,
+    "author": "SwellJoe",
+    "text": "e). The sandbox feature found in most agents is porous and can be expanded by the agent harness itself. Similarly, if the agent introduces a supply chain attack into your code and runs it before you get a chance to audit/review it in a PR or run it through an SBOM dependency checker, the blast radius is exactly the project directory and the credentials/history of the one agent. (Whereas, without flar, the blast radius is your whole .ssh, github creds, all agent creds, your keyring, "
+   },
+   {
+    "src": "ask_hn",
+    "id": 48813788,
+    "author": "mohit17mor",
+    "text": " get free. Also, trying to extend it to chaining the agents so that it can create an end to end workflow. For coding it might look something like this: User creates a task -> coder picks it up -> reviewer agent -> (coder/reviewer back and forth upto 4-5 turns) -> tester agent -> finally wait for user to merge the code or not. This has nothing to do with agent harness as such, its more like treating agents as instantiable objects and adding control plane on top of them to get the wor"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46330999,
+    "author": "weeksie",
+    "text": " lately. (editor-wise, most of us are nvim users) Lots of iteration. Feature files (checked into the repo). Graphite stacks are amazing for unblocking the biggest bottleneck in ai assisted development which is validation/reviews. Solving the conflict hell of stacked branches has made things go much, much faster and it's acted as downward pressure on the ever increasing size of PRs."
+   },
+   {
+    "src": "ask_hn",
+    "id": 48455918,
+    "author": "jasonidol",
+    "text": " for tmux or screen anymore: https://github.com/jasonwoodland/nvs A NeXTSTEP-inspired menu for macos called NeXTMenus: https://github.com/jasonwoodland/NeXTMenus A custom harness for pi agent which implements strict plan/review/implement iterative cycles and approval gating A dynamic wallpaper utility for macOS changes the wallpaper when switching between light and dark mode \u2014 also useful for setting tiled bitmap backgrounds: https://github.com/jasonwoodland/macos-dynamic-wallpaper "
+   },
+   {
+    "src": "ask_hn",
+    "id": 48860388,
+    "author": "hsaliak",
+    "text": "ically a few commands open. up my $EDITOR which is vim. 1. /edit => opens in editor 2. /feedback => opens the last llm message in an editor so i can inline feedback. Think inline responses in email vs bottom posting. 3. /review => same as /feedback but opens up the diff so i do an inline review. Yes I still read the code it ships. So basically in this flow vim becomes integral to doing anything involved."
+   },
+   {
+    "src": "ask_hn",
+    "id": 44096273,
+    "author": "joshstrange",
+    "text": "rations/prompts. It gets stuck in loops (removing and adding the same code/concept), it gets hung up on simple errors, etc. For greenfield it\u2019s amazing, no doubt, but unless you are watching it very closely and approving/reviewing the code along the way it will go off the rails. At a certain point it\u2019s easier to add the new feature or make the modification yourself. Even if the LLM could do it, it would burn tons of money and time. I expect things to get better, this will not always"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50162990,
+    "author": "pftburger",
+    "text": "y head faster. No its not an app (it could be but meh) Its a skill that helps the LLM make a voice narrated walkthrough of the complexity so you retain context Check a demo here if you want https://theronburger.github.io/review-story/ "
+   },
+   {
+    "src": "ask_hn",
+    "id": 50179461,
+    "author": "abhinavsoni",
+    "text": "Was just letting claude review rip on the end output, but eventually realised it is hunting for bugs, and claude rewrote a core functionality twice, wasted a week and tokens on just fixing it. Spent some timing building sonah.dev, It can help review your agent session, and highlight the de"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50225821",
+    "author": "genghisjahn",
+    "date": "2026-10-24",
+    "text": "I worry about this. Dumping data and getting a report on which actions are based prolly isn\u2019t giving real data. I say that because I have Claude review code and then review the review and it will point out all the things it got wrong the first time. And I end up having to review it myself. Don\u2019t get me wrong, I\u2019m burning tokens all day and love the legit productivity gains but I don\u2019t see how this replaces everybody in tech for"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50124129",
+    "author": "warkdarrior",
+    "date": "2026-10-16",
+    "text": "> the claude code review product originally mentioned it cost \"$15-25 per review\" (which is absurd) If an engineer paid $150,000 a year reviews some code manually for about 30 minutes, the cost of their time is about $36."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50123907",
+    "author": "rileymichael",
+    "date": "2026-10-16",
+    "text": "what are people using for automated code review these days? the claude code review product originally mentioned it cost \"$15-25 per review\" (which is absurd), but it seems like they've removed that from their docs with the launch yesterday. we've looked at various products in the space (coderabbit, greptile, etc.) but have gripes with each. honestly i'm thinki"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49943630",
+    "author": "saluki",
+    "date": "2026-10-03",
+    "text": " similar to my favorite engineer I worked with as far as collaboration and even banter. It's nice. Using claude code in the terminal btw, md files go in repo so all team, devs, consoles can see context across front and backend. Use PRs run claude code review, I created a Minority Report style review skill as well, code quality, security, performance with anderton as the judge/orch Then we have a human review PR as well This process we are getting good code and faster velocity for sure, vs traditional SDLC for solo and with team As f"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48476667",
+    "author": "amluto",
+    "date": "2026-06-10",
+    "text": "It\u2019s worth noting that Anthropic has made some very odd moves in the last few months in which Claude Code reviews your usage of it and penalizes you for mentions of some short strings that don\u2019t even indicate TOS violations. And if they\u2019re going to insist on retaining all data for 30 days for nebulously defined \u201csafety\u201d, then I\u2019m not particularly interested in doing business with them. Ima"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48407573",
+    "author": "eranation",
+    "date": "2026-06-05",
+    "text": " very easy to build a basic code review tool. It's hard to build one that developers won't ask you to turn off because of false positives (or one that will miss your next escaped bug) I think if all the tool does is run a claude code level /review skill (which all developers should definitely run before they even open a PR) then isn't this a bit of a review theater? Just a guardrail to those developers who don't run a /review-triage-fix skill in /loop before they take the PR out of draft? I wonder how many PRs in the worl"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48323380",
+    "author": "criley2",
+    "date": "2026-05-29",
+    "text": "e same thing as cloudflare except as a skill you run in your local harness. If you're going through the motions with PRs and are familiar with actions, you can have it run in a github action instead. But this is basically just a skill. The Claude code review skill is a simple version of exactly this."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47978134",
+    "author": "linkregister",
+    "date": "2026-05-01",
+    "text": "I wonder how much of this AI budget was spent on their LLM-heavy CI/CD pipeline: https://www.uber.com/us/en/blog/ureview/ I'm considering rolling out something similar but am not sure if it would exceed the expenses of Claude Code Review at an estimated $20 per PR."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47795891",
+    "author": "linkregister",
+    "date": "2026-04-16",
+    "text": "rompts to capture a more holistic approach. There are of course plenty of legacy scanners that still focus on OS package versions and static configs, but the parts of the industry leaning into LLMs have genuine value to add. I don't expect Claude Code Review to be a replacement for a good vendor's solution."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47794613",
+    "author": "woadwarrior01",
+    "date": "2026-04-16",
+    "text": "It cuts both ways. What I usually do these days is to let codex write code, then use claude code /simplify, have both codex and claude code review the PR, then finally manually review and fixup things myself. It's still ~2x faster than doing everything by myself."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47643811",
+    "author": "1a527dd5",
+    "date": "2026-04-04",
+    "text": "hat is their branding/naming. Copilot is _amazing_. Everyone is hyping about Claude, but I'm way more productive with the copilot cli. The copilot cloud agent is great, and copilot code review is great (we also tried the new very expensive claude code review - it was slow and expensive). Forget that it's Microsoft, forget that everything is Copilot and go and give it a shot."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47326666",
+    "author": "0x500x79",
+    "date": "2026-03-10",
+    "text": "Sell the solution. The Claude code review system is 15-25 dollars per-review!"
+   }
+  ]
+ },
+ {
+  "name": "Copilot code review",
+  "url": "https://docs.github.com/en/copilot/concepts/agents/code-review",
+  "score": 55.9,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "GitHub Copilot code review will start consuming GitHub Actions minutes",
+   "points": 312,
+   "id": "47932028",
+   "url": "https://github.blog/changelog/2026-04-27-github-copilot-code-review-will-start-consuming-github-actions-minutes-on-june-1-2026/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50371770,
+    "author": "gwbas1c",
+    "text": "t everyday, but when I use it, I really like it. I no longer use ChatGPT or Claude's general-purpose chat bots. 3) What coding harnesses and interfaces are you using?  [question]  IDE integration with Visual Studio, and Copilot code reviews on Github. I mostly use agent mode; sometimes I use ask mode, and sometimes I use plan mode. (One very important thing is to instruct copilot, in .github\\copilot-instructions.md, to only use its edit tool and not use Powershell to edit files. Otherwise you ne"
+   },
+   {
+    "src": "ask_hn",
+    "id": 50379466,
+    "author": "laxjester",
+    "text": "on the phone (great app for remotely controlling any harness) Which connects to my tiny home server: Ubuntu + Docker containers that sandbox a repo, T3->Opencode->Openrouter Cloudflare tunnels for streaming expo builds. Copilot reviewer catches some things in my PRs that openrouter on cheap misses."
+   },
+   {
+    "src": "ask_hn",
+    "id": 47392370,
+    "author": "eleventhborn",
+    "text": "c. I can see how having subagents/skills/hooks/memory can reduce the manual effort further. Challenges: 1) AI first documentation: Stories have to be written with greater detail and acceptance criteria. 2) Code reviews: copilot reviews on Github are surprisingly insightful, but waiting on human reviews is still a bottleneck. 3) AI first thinking: Some of the lead devs are still hung up on certain best practices that are not relevant in a world where the machine generates most of the code. T"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50371770",
+    "author": "gwbas1c",
+    "date": "2026-11-04",
+    "text": ") What coding harnesses and interfaces are you using? Are you sticking with the default CLIs or IDE integrations, or using alternatives like OpenCode, Pi, Aider, Muse Code, or custom-built harnesses? IDE integration with Visual Studio, and Copilot code reviews on Github. I mostly use agent mode; sometimes I use ask mode, and sometimes I use plan mode. (One very important thing is to instruct copilot, in .github\\copilot-instructions.md, to only use its edit tool and not use Powershell to edit files. Otherwise you need to babysit it and"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49703353",
+    "author": "SwellJoe",
+    "date": "2026-09-14",
+    "text": "I was using Copilot Code Review pretty religiously for a while, as I get access for free (the $10 plan) due to my Open Source work, but it recently introduced a monster of a misfeature that caused a massive increase in complexity over time, while I wasn't paying close enough attention to it. Every subsequent m"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49552930",
+    "author": "nevir",
+    "date": "2026-09-03",
+    "text": "e are a ton of tools out there that will automatically fall back in case of outage E.g. say you chose Sol as your default in Cursor, but Opus is your 2nd choice, it's going to give up on Sol after a few tries and switch to Opus Or you have copilot code reviews set up, and it falls back Etc"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48378020",
+    "author": "NixMaldonado",
+    "date": "2026-06-03",
+    "text": "I find the Copilot code reviews to be a bit maniacal."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48045762",
+    "author": "paulannesley",
+    "date": "2026-05-07",
+    "text": "Ah yeah, a colleague found these: CCR Copilot Code Review: https://github.blog/changelog/2026-04-06-copilot-usage-metri... CCA Copilot Cloud Agent: https://github.blog/changelog/2026-04-15-enable-copilot-clou... "
+   },
+   {
+    "src": "hn_comment",
+    "id": "47938018",
+    "author": "vjerancrnjak",
+    "date": "2026-04-28",
+    "text": "ll software running in actions, and now the world is running throw-as-much-LLM-crap-on-the-wall computation, as unstoppable as the pre-LLM era. Turning compute into excrement as fast as the planet is filled with it. Excrement being \"Github Copilot code review\" in compute world, and no need to draw what it is in our real world. Weird that Anthropic decided to build a Claude Code Routines toilet."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47936213",
+    "author": "WorldMaker",
+    "date": "2026-04-28",
+    "text": "Copilot Code Reviews are Actions workflows. Just privileged ones you can't edit the YAML for. They even litter your Actions tab list and Deployment environments."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47935951",
+    "author": "nickjj",
+    "date": "2026-04-28",
+    "text": "They should also remove Copilot code reviews from being counted as metrics in a PR. I've seen some projects that use it and you open the PR page to be greeted by every PR having 3-20 comments but when you goto the actual PR, there's no one except the contributor with a bunch of Copilot feedback. It gives a false message th"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47934820",
+    "author": "swiftcoder",
+    "date": "2026-04-28",
+    "text": "accounts already have budget assigned to github actions, and this allows them to start billing right away without having to actually get (or allow) businesses to evaluate the return of having copilot do code reviews Hang on, I read this as copilot reviews with bill both actions minutes and AI credits. Did I miss something?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47934814",
+    "author": "semiquaver",
+    "date": "2026-04-28",
+    "text": " > Last month, we shared how GitHub Copilot code review runs on [\u2026] GitHub Actions using GitHub-hosted runners. They say that they\u2019re now billing against their actual costs"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47934738",
+    "author": "horsawlarway",
+    "date": "2026-04-28",
+    "text": "My guess is that they're moving to a spot where they can pitch an LLM \"doing something\" as an action, and copilot is their first move. I don't see it as crazy to think of a \"copilot code review\" in a similar way to other build actions. But also - enterprise accounts already have budget assigned to github actions, and this allows them to start billing right away without having to actually get (or allow) businesses to evaluate the return of having copilot do code reviews"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47929166",
+    "author": "benoau",
+    "date": "2026-04-28",
+    "text": "> Code completions and Next Edit suggestions remain included in all plans and do not consume AI Credits. This is the VSCode autocomplete stuff right? Really enjoy this. > Copilot code review will also consume GitHub Actions minutes, in addition to GitHub AI Credits. These minutes are billed at the same per-minute rates as other GitHub Actions workflows. That sucks."
+   }
+  ]
+ },
+ {
+  "name": "Graphite",
+  "url": "https://graphite.com",
+  "score": 53.8,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Graphite is joining Cursor",
+   "points": 276,
+   "id": "46327206",
+   "url": "https://cursor.com/blog/graphite"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 46330999,
+    "author": "weeksie",
+    "text": "aude Code + worktrees (manual via small shell script) - A root guardrails directory with a README to direct the agent where to look for applicable rule files (we have a monorepo of python etls and elixir applications) - Graphite for stacked prs <3 - PR Reviews: Sourcery + Graphite's agent + Codex + Claude just sorta crank 'em, sourcery is chatty but it's gotten a lot better lately. (editor-wise, most of us are nvim users) Lots of iteration. Feature files (checked into the repo). Grap"
+   },
+   {
+    "src": "ask_hn",
+    "id": 48474920,
+    "author": "elar_verole",
+    "text": "Several things: https://github.com/openclaw/wacli for WhatsApp, https://github.com/diamondburned/arikawa for discord, and https://github.com/mautrix/meta for messenger. There was a bit of initial setup extracting tokens for messenger and discord I believe, but now it's smooth sailing. Some issues sometimes correctly mapping ids to usernames / convo"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50403399",
+    "author": "bbor",
+    "date": "2026-11-07",
+    "text": "ic engineering; investing the emotional energy to share my work is a lot harder to justify when I could orchestrate more+better engineering work in those same few hours than I could've accomplished in a few days two years ago. [4]: https://graphite.io/research/ai-now-writes-as-many-online-ar... [5]: Wow, I was more right than I thought! Claude just found a preprint showing that \"pejorative accusations\" more than doubled in the final third of 2024 --jumping from 7.9% in August to 17.9% in December-- despite poor accuracy: h"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50348442",
+    "author": "danielmeskin",
+    "date": "2026-11-03",
+    "text": "Glad I read the article, this is fascinating: > In 2012, a LightScribe optical drive was successfully used by Maher El-Kady, a graduate of UCLA, to turn a specially prepared graphite oxide layer coated onto a DVD into graphene.[10] El-Kady and Richard Kaner, his lab professor, used an unmodified LightScribe drive. The disc was prepared by coating the disc with an aqueous solution of graphite oxide and allowing it to dry. Areas of the coating illuminated by t"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50346184",
+    "author": "polansky",
+    "date": "2026-11-03",
+    "text": "engineering team. We're hiring a Staff Backend Engineer to own the backend behind our mobile apps and IoT devices: Java/Spring Boot and Python REST APIs, AWS IoT and Lambda, MySQL, plus the monitoring and automation (Ansible, Jenkins, ELK, Graphite, Docker) that keep millions of devices running in real homes. It's an end-to-end role, with cloud APIs on one side and physical devices on the other, and you'll work directly with the Mobile, Embedded, and Product teams. We're looking for 8+ years of backend experience, deep Jav"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50325467",
+    "author": "siddhant_d777",
+    "date": "2026-11-01",
+    "text": "Some context on why Google might be tightening up: Graphite's Common Crawl sample put new articles that are mostly AI-written at about 5% when ChatGPT launched (Nov 2022) and about 50% from late 2024 through May 2026. Any filter aimed at that half of the web is going to catch some real sites too, which sounds like what happened to you. I"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50301156",
+    "author": "beloch",
+    "date": "2026-10-30",
+    "text": "\"In order to make one of these things work with natural (unenriched) uranium, which was all that they had to work with at the time, they had to get a lot of it situated close together but interspersed with neutron moderators such as pure graphite or heavy water. The Germans just didn\u2019t have enough to make a go of it.\" ------------------------ The Germans tried graphite, but of insufficient purity[1], and concluded heavy water was the only way to go. They \"didn't have enough of\" that because of allied sabotage efforts[2]."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50261419",
+    "author": "nticompass",
+    "date": "2026-10-27",
+    "text": "s driving from (Western) NY to Burlington, VT and drove past Fort Ticonderoga. All I thought of was Ticonderoga pencils. Later, I looked it up thinking it was a coincidence, but nope the pencils were named after the fort (because there was graphite found there). Also, there is in fact a #3 pencil, not just the #2 we all are probably used to."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50257523",
+    "author": "pjc50",
+    "date": "2026-10-27",
+    "text": "he PWR, the pressurized water reactor everyone has converged on). Or you go for a gas. But then you're not able to use water as a moderator, so it either has to be a \"fast neutron\" design (which the few liquid sodium reactors are) or use a graphite moderator (flammable, lifespan issues with neutron cracking). The unexplored corner is https://en.wikipedia.org/wiki/Gas-cooled_fast_reactor : plumbing is \"safe\" apart from being incredibly hot, but you still have to deal with fast neutrons smashing up the reactor from the insid"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50191983",
+    "author": "pbmonster",
+    "date": "2026-10-22",
+    "text": "As long as you have well suited oil/gas wells to put compressed CO2 into, you'd much rather do that. DAC of a ton of CO2 costs around ~2 MWh. Compressing it into a well costs ~0.5 MWh, but low temperature reduction to solid graphite costs ~10 MWh. Solid storage in soil is much more interesting in bio char applications, because the char is full of nutrients and a good water absorber."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50189915",
+    "author": "tzs",
+    "date": "2026-10-22",
+    "text": "You store it as graphite. DAC isn't useful for short term, but could be useful as a very long term cleanup project. Assuming world wide solar panel production continues to rapidly grow, wait until it reaches a point where we could set aside a number of solar panels for DAC each year equal to the current"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50149334",
+    "author": "namibj",
+    "date": "2026-10-19",
+    "text": "of R&D into figuring out how best to orient things and whether I may want that to rely on AppliedScience's diy vacuum preloaded spherical air bearings that could probably take care of the necessary pre-loading of the mechanism; machining a graphite block into a hexapod movement stage side \"platform triangle\" (the floating part that moves) doesn't really need force after all, just sufficient control over where the milling tool/drill is, and obligatory effective dust collection lest the workshop gets a strong dusting of grap"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50144090",
+    "author": "mauvehaus",
+    "date": "2026-10-18",
+    "text": "built, and Nick Offerman did a video on building one. And yeah, modern Kevlar boats are ridiculously light. The canonical Boundary Waters touring canoe is the Wenonah Minnesota II, and the lightest version is 43 pounds in Kevlar. I believe graphite is the same weight but stiffer. Fiberglass construction is basically comparable, but heavier, as are some of the Royalex-equivalent materials."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50116754",
+    "author": "raddan",
+    "date": "2026-10-16",
+    "text": "This is also why I stopped using Gentoo. I used it regularly from 2004-2005 (which I admit was a very long time ago now) on my graphite G4, because support was very good for PowerPC. But then one day emerge suggested I update glibc. I don\u2019t know if I botched the update or if it really was suggested in error, but I was just starting my studies in CS so I did not know what that particular \u201clibrary\u201d did and said ye"
+   }
+  ]
+ },
+ {
+  "name": "CodeRabbit",
+  "url": "https://coderabbit.ai",
+  "score": 46.4,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "How we exploited CodeRabbit: From simple PR to RCE and write access on 1M repos",
+   "points": 687,
+   "id": "44953032",
+   "url": "https://research.kudelskisecurity.com/2025/08/19/how-we-exploited-coderabbit-from-a-simple-pr-to-rce-and-write-access-on-1m-repositories/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50374626,
+    "author": "tharkun__",
+    "text": "implementation plans and reviews between GPT and Anthropic models but then just stuck with Anthropic for some reason. 4) Nope. 5) Nope. But we do have our own in-house review agent and software factory agent. Like think CodeRabbit et. al."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50374626",
+    "author": "tharkun__",
+    "date": "2026-11-05",
+    "text": "so ago to ping pong implementation plans and reviews between GPT and Anthropic models but then just stuck with Anthropic for some reason. 4) Nope. 5) Nope. But we do have our own in-house review agent and software factory agent. Like think CodeRabbit et. al."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50373247",
+    "author": "cebert",
+    "date": "2026-11-05",
+    "text": "CodeRabbit isn\u2019t new. Is there any particular reason why this was posted?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50333637",
+    "author": "hxugufjfjf",
+    "date": "2026-11-02",
+    "text": "Isn\u2019t that what everyone is doing with CodeRabbit?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50295129",
+    "author": "replygirl",
+    "date": "2026-10-29",
+    "text": "this is common practice, works pretty well in my experience both to improve quality and reduce cost, and afaik is a naive version of what tools like coderabbit and greptile do internally"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50263610",
+    "author": "smb06",
+    "date": "2026-10-27",
+    "text": "TL;DR - CodeRabbit Secure launched several new features including runtime security validation, multi-repo security deep scans, and enforceable merge gates. We help you identify and fix hidden loopholes that could otherwise be exploited by bad-faith attackers looking for auth bypass, broken access "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50250980",
+    "author": "verdverm",
+    "date": "2026-10-26",
+    "text": "atively, build your own and don't pay a rent seeking, middleman tax we did this and got better reviews without per-user pricing gates for the review features we need, this is the kind of company that is facing the Saaspocolypse https://www.coderabbit.ai/pricing "
+   },
+   {
+    "src": "hn_comment",
+    "id": "50250591",
+    "author": "smb06",
+    "date": "2026-10-26",
+    "text": "TL;DR - use CodeRabbit's defensive AI agents to run a deep-scan of your repo, identify and fix vulnerabilities for free until Nov 8th."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50223592",
+    "author": "smb06",
+    "date": "2026-10-24",
+    "text": "Hey folks - this is Sahil from the CodeRabbit team here. For anyone unfamiliar, CodeRabbit helps you with various aspects of an agentic SDLC including code review and security deep scans. For the next two weeks we are offering free security deep scans of your repositories. All existing and new users of CodeRabbit are welcom"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50189986",
+    "author": "juanpflores",
+    "date": "2026-10-22",
+    "text": "Would recommend checking out coderabbit change stack. it essentially does exactly what you're looking for"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50145283",
+    "author": "bbor",
+    "date": "2026-10-18",
+    "text": "rojects without friction, longterm decoherence, token wastage, or bottlenecks: 1. Code review. This is the big one and far trickier than it seems (trust me!), so often tried then abandoned. There's a huge startup just for this: https://www.coderabbit.ai 2. Cross-harness syncing of settings, hooks, and/or various flavours of very important markdown -- AGENTS.md files, skills, and subagents personas being the big ones. 3. Cross-agent, harness-agnostic coordination and communication. This just recently reached both the main har"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50131519",
+    "author": "bemeeker",
+    "date": "2026-10-17",
+    "text": "are some ways to ensure the code isn\u2019t slop? Currently, I\u2019m doing standard unit tests (but no mutation tests, so these could be bad tests), duplication testing, CodeQL scanning, integration and smoke tests, and I\u2019m also using SonarQube and CodeRabbit. This has slowed down PR velocity tremendously, but I\u2019m ok with that if my quality and peace of mind is increasing. I could build Pando closed source and put out a bunch of slop, and no one would be the wiser until stuff started breaking, but that\u2019s not the point of the project."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50123907",
+    "author": "rileymichael",
+    "date": "2026-10-16",
+    "text": "these days? the claude code review product originally mentioned it cost \"$15-25 per review\" (which is absurd), but it seems like they've removed that from their docs with the launch yesterday. we've looked at various products in the space (coderabbit, greptile, etc.) but have gripes with each. honestly i'm thinking it might be easier (and cheaper) to launch our own agent from GH webhooks and trigger `/code-review`.."
+   }
+  ]
+ },
+ {
+  "name": "Codex code review",
+  "url": "https://developers.openai.com/codex/integrations/github",
+  "score": 41.3,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Have Codex review Claude's work",
+   "points": 5,
+   "id": "47697603",
+   "url": "https://gist.github.com/anchpop/56688d3526e1d4019db7c4fc1bcb2b2c"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 50373463,
+    "author": "navels",
+    "text": "ription\" setup that uses Silero VAD, Qwen3-ASR-1.7B, Qwen3-4B-Instruct, and pyannote speaker-diarization-community-1. 3) Claude Code in the Desktop UI using remote control environments. 4) Custom orchestrator for having Codex review Claude or vice-versa: https://github.com/navels/neal 5) I have built over time a personal assistant using Claude remote control running on a mac mini, this is likely similar to Dots?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50373463",
+    "author": "navels",
+    "date": "2026-11-05",
+    "text": "om call audio transcription\" setup that uses Silero VAD, Qwen3-ASR-1.7B, Qwen3-4B-Instruct, and pyannote speaker-diarization-community-1. 3) Claude Code in the Desktop UI using remote control environments. 4) Custom orchestrator for having Codex review Claude or vice-versa: https://github.com/navels/neal 5) I have built over time a personal assistant using Claude remote control running on a mac mini, this is likely similar to Dots?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50315608",
+    "author": "runwithdata",
+    "date": "2026-10-31",
+    "text": "Makes a lot of sense to have the small improvements coming. So running /codex review again on the fixes is acting as a judge, correct? Wouldn\u2019t it be worth considering flipping the reviewer again, so the fixes get an adversarial review again?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50136955",
+    "author": "a3nz3g",
+    "date": "2026-10-18",
+    "text": "What works for me: I write the spec first, then have a fresh Claude Code session and Codex review the diff separately, looking for bugs, cut corners and code style."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50135030",
+    "author": "abalgir",
+    "date": "2026-10-17",
+    "text": "I agree with you. A code reviewer from the same company, even with different models or efforts, shares the same blind spots. To review my code, I use a different company; if I code with Claude (usually Sonnet 5.5-medium), Codex reviews it, and vice versa. I get much better code this way. But more importantly, I always tell the reviewer to build its own test-scenario ledger and refute the coder's claim that it is done. And the verdict is shared with the coder, but the coder cannot reject it."
+   },
+   {
+    "src": "hn_comment",
+    "id": "50004839",
+    "author": "ModernMech",
+    "date": "2026-10-08",
+    "text": "For a company with Open in the name, OpenAI is very opaque about things, there are all kinds of limits and quotas that randomly come and go, but they only show you the meters for a couple. E.g. codex reviews come from codex quota but also has its separate quota they don\u2019t tell you about. Same with security reviews which has another quota still. So the chat messages can be sent at several effort levels and from various models including 5.6 and 6 pro. The 6 pro messages are limited a"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49752398",
+    "author": "chaosinc604",
+    "date": "2026-09-18",
+    "text": "reviews before claiming it's common. On the second part I think we're talking about different tools. Claude Code working in your checkout has the whole tree and greps; ask it to fix X and it'll usually find all five. I mean PR review bots (Codex review, CodeRabbit, Gemini Code Assist) that comment on diff hunks. They anchor each finding to the line they looked at and don't claim to enumerate, so what comes back is a sample. gh-review-loop runs inside Claude Code or Codex and uses exactly the ability you're describing, keyed to"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49680938",
+    "author": "Razengan",
+    "date": "2026-09-13",
+    "text": "f my personal projects is a sort of \"middleware\" for Godot, and it needs to be lean, precise and match certain rules, because it's meant to be used by many games, so I can't blindly trust AI to generate code for it, it'd be too sloppy, BUT Codex reviews have been a great help in finding bugs that would have taken me ages to even notice on my own. Some of those AI findings helped me overhaul entire subsystems, still manually coded."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49541723",
+    "author": "nickthegreek",
+    "date": "2026-09-02",
+    "text": "h, I can only dedupe across a single user library. I used codex to find grid based images that I needed to convert into animated images from back in my iphone 4 days. It located the images, wrote software to convert to webp and handled it. Codex reviewed my immich setup and recommended I change things the clip model, came up with a better backup strat and found holes in my system. My codex will ADB into my NVIDIA Shield and proxmox and setup accounts, install packages, create Home Assistant integrations to tie it all together."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49342637",
+    "author": "andreygubarev",
+    "date": "2026-08-18",
+    "text": "i (where I run Sol) so that CC can delegate via background tasks, automatically wait for completion, and do what was one of the most effective parts - steer Sol toward simplicity, getting Sol out of code-review infinite loops (Pi calls for Codex review to ship better, but generally gets stuck on P2 and results in vastly overengineered work). One of the worst experiments was enforcing coverage at 100%. Only Sol, with an enormous amount of code and significant pushback (on architecture decisions) to Fable, was able to reach it. "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49338140",
+    "author": "carbonguy",
+    "date": "2026-08-17",
+    "text": "Slate Star Codex reviewed Jaynes' book as well, which is how I first heard about it: https://slatestarcodex.com/2020/06/01/book-review-origin-of-... To your point: > Isn't this a testable hypothesis? If consciousness spread virally and isn't a natural outgrowth of the physical structure of the brain, t"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49166543",
+    "author": "mil22",
+    "date": "2026-08-04",
+    "text": "From the original paper abstract: \u201cClaude review raises Codex drafts from 71.6% to 89.7%; Codex self review raises them to 84.5%. The reverse direction does not pay off: Codex reviewing Claude drafts drops the pass rate from 91.4% to 82.8%, and Claude self review leaves the 91.4% baseline unchanged.\u201d The highest pass rate was to use just Claude, at 91.4%. Claude reviewing Claude did not improve the pass rate."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49134039",
+    "author": "ModernMech",
+    "date": "2026-08-01",
+    "text": "It's like a variant of the halting problem though: given N agents in a review loop reviewing a codebase, will it ever terminate and say the thing is done and bug free? It seems to me just from @codex review, given a codebase of any appreciable size, if you ask the agent to find things to fix, it'll find things to fix. And despite N agents agreeing that some code is ready to ship, I've still sat down to try it and nothing actually works as advertised. So the need for better verifica"
+   }
+  ]
+ },
+ {
+  "name": "Cursor Bugbot",
+  "url": "https://cursor.com/bugbot",
+  "score": 39.8,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Cursor BugBot vs. Entelligence",
+   "points": 2,
+   "id": "44301962",
+   "url": "https://www.entelligence.ai/blogs/Cursor-BugBot-vs-Entelligence"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 48423575,
+    "author": "madarco",
+    "text": "ilt Agentbox to be able to launch from claude/codex multiple VMs with claude/codex (can also mix). The parent agent watch for prompts and questions, enforce /review, /simplify, that the sub agents file a PR and wait for bugbot comments etc. This way the parent agent running in a /goal don't loose context, enforce a good workflow, manage the backlog and parallelize/merge back the work on the main repo https://github.com/madarco/agentbox MIT license"
+   },
+   {
+    "src": "ask_hn",
+    "id": 47391517,
+    "author": "ramraj07",
+    "text": "rt molding the repo to be \"AI native\" whatever that means, add the right tooling and still demand all engineers take full responsibility for their output, this system is a true multiplier. I also have Copilot and Cursor bugbot reviews and run it on a Ralph wiggum loop with claude code. A few rounds overnight and the PR is perfect and ready for a final review before merging. I do run 4 CC sessions in parallel though, but thats just one day a week. The rest of the week is spent figur"
+   },
+   {
+    "src": "ask_hn",
+    "id": 47393756,
+    "author": "fizzyfizz",
+    "text": ". I can even do analyses I never could otherwise. On Friday I converted my extensive unit test suite into a textual simulation of what messages it would show in many situations and caught some UX bugs that way. Cursor\u2019s Bugbot is genuinely helpful, though it can be irritatingly inconsistent. Sometimes on round 3 with Bugbot it suddenly notices something that was there all along. Or because I touch a few lines of a library suddenly all edge cases in that library are my fault. NOT GO"
+   },
+   {
+    "src": "ask_hn",
+    "id": 46331768,
+    "author": "rparet",
+    "text": "(I work for the OP company) We use Cursor's bugbot to achieve the same thing. Agree that it seems better than Copilot for now."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49575552",
+    "author": "ZephyrBlu",
+    "date": "2026-09-05",
+    "text": "vious knowledge of the changes. That is why it's powerful, because you get the agent to interrogate the code without any preconception about the changes. I found the Devin reviewer to be very good, and have heard good things about Cursor's Bugbot. I've also found asking an agent with fresh context or subagent to adversarially review locally is good."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48559411",
+    "author": "pants2",
+    "date": "2026-06-16",
+    "text": "Yeah, I've tried many scanners and Cursor Bugbot is easily the best"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48557973",
+    "author": "rcleveng",
+    "date": "2026-06-16",
+    "text": "ess than I would otherwise. Good: - Composer 2.5 is pretty decent for the quality / price ratio. - Easy to assign an issue to it in Linear (I know Linear just added this natively for linear agent, but it seems rubbish compared to Cursor) - Bugbot actually finds some useful issues (things Claude and Codex will miss) - Using @cursor in github usually works well, and better than @copilot. - Working with Python Monorepos with UV in their IDE. VSCode and Cursor work well here (Antigravity managed to screw it up somehow). The "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48407110",
+    "author": "causal",
+    "date": "2026-06-05",
+    "text": "I recently moved off Cursor's BugBot because it's no longer a flat $40, and I feel a little lost trying to find a viable alternative because there are so many and the pricing kind of sucks for all of them. Curious if anyone has a recommendation."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48407100",
+    "author": "causal",
+    "date": "2026-06-05",
+    "text": "Is it actually flat fee? I loved Cursor bugbot which was flat fee but they moved to per-run and that killed it for me, but a lot of others are doing the same."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48201112",
+    "author": "axledbetter01",
+    "date": "2026-05-19",
+    "text": "claude-autopilot is an MIT-licensed npm package that runs Claude Code through an autonomous pipeline: brainstorm, spec, plan, implement, migrate, validate, PR, review, bugbot. Point it at an idea, walk away, come back to a PR that's review-ready. Merge stays human-gated by default. Try it in 30 seconds: npm install -g @delegance/claude-autopilot claude-autopilot examples # list 5 starter stacks claude-autopilot examples node > spec.md claude-autopilo"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47393756",
+    "author": "fizzyfizz",
+    "date": "2026-03-16",
+    "text": "gue ideas to shipped. I can even do analyses I never could otherwise. On Friday I converted my extensive unit test suite into a textual simulation of what messages it would show in many situations and caught some UX bugs that way. Cursor\u2019s Bugbot is genuinely helpful, though it can be irritatingly inconsistent. Sometimes on round 3 with Bugbot it suddenly notices something that was there all along. Or because I touch a few lines of a library suddenly all edge cases in that library are my fault. NOT GOOD: The effect on my"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47391517",
+    "author": "ramraj07",
+    "date": "2026-03-15",
+    "text": " findings: if we start molding the repo to be \"AI native\" whatever that means, add the right tooling and still demand all engineers take full responsibility for their output, this system is a true multiplier. I also have Copilot and Cursor bugbot reviews and run it on a Ralph wiggum loop with claude code. A few rounds overnight and the PR is perfect and ready for a final review before merging. I do run 4 CC sessions in parallel though, but thats just one day a week. The rest of the week is spent figuring out the next set"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47207927",
+    "author": "braebo",
+    "date": "2026-03-01",
+    "text": "Cursor Bugbot is a game changer \u2014 runs on PR and finds the most subtle of bugs in enormous PRs."
+   },
+   {
+    "src": "hn_comment",
+    "id": "46892883",
+    "author": "mdeeks",
+    "date": "2026-02-04",
+    "text": "I feel like pricing needs to be included here. I kind of don't care about 10 percentage points if the cost is dramatically higher. Cursor Bugbot is about the same cost but gives 10x the monthly quota of Qodo. I know this is focused solely on performance, but cost is a major factor here."
+   },
+   {
+    "src": "hn_comment",
+    "id": "46769892",
+    "author": "ahmadyan",
+    "date": "2026-01-26",
+    "text": "> 2. What on earth is this defense of their product? i think the distribution channel is the only defensive moat in low-to-mid-complexity fast-to-implement features like code-review agents. So in case of linear and cursor-bugbot it make a lot of sense. I wonder when Github/Gitlab/Atlassian or Xcode will release their own review agent."
+   },
+   {
+    "src": "hn_comment",
+    "id": "46644331",
+    "author": "makingstuffs",
+    "date": "2026-01-16",
+    "text": "at makes a lot of sense and they can quickly catch silly human errors like misspelled variables and whatnot. On the other hand the amount of flip flopping they go through is unreal. I\u2019ve witnessed numerous instances where either the cursor bugbot or Claude has found a bug and recommended a reasonable fix. The fix has been implemented and then the LLM has argued the case against the fix and requested the code be reverted. Out of curiosity to see what happens I\u2019ve reverted the code just to be told the exact same recommenda"
+   }
+  ]
+ },
+ {
+  "name": "Codex Security",
+  "url": "https://openai.com/index/codex-security/",
+  "score": 35.6,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Codex Security",
+   "points": 598,
+   "id": "49089755",
+   "url": "https://github.com/openai/codex-security"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "49815807",
+    "author": "xandrius",
+    "date": "2026-09-23",
+    "text": "Don't you run bizantine ralph loops on remote environments with codex security checks, coupled with jev, grok, open router and a fully independent openclaw (on a maxed out mac mini inside a caveau in an undisclosed location, with open telegram) to change constants? You're going to be left behind."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49298706",
+    "author": "GustavHartz",
+    "date": "2026-08-14",
+    "text": "use in our own products and put it in the PI harness. We will release data on DeepSeek v4 and GLM-5.3 performance soon, but so far it's probably the best open-source vulnerability detection tool out there right now. The idea is the same as Codex Security. 1. Build a threat model 2. Launch a lot of probing agents looking into the security based on the threat model 3. Deduplication 4. Validation 5. Severity and likelihood calibration We did a deep dive article here on it as well https://x.com/GustavHartz/status/2084926544800035266"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49180511",
+    "author": "kevinsimper",
+    "date": "2026-08-05",
+    "text": "Interesting to read how Codex Security actually works, the readme of the project does not really explain the mechanics behind it. I learnt some."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49095392",
+    "author": "tomaskafka",
+    "date": "2026-07-29",
+    "text": "On metrics this either shows as \u201ccodex security makes people use us more\u201d or \u201cpeople are buying extra plans, yay!\u201d Promotions all around."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49095130",
+    "author": "chrisbra80",
+    "date": "2026-07-29",
+    "text": "> If you're an open-source maintainer, you can apply for conditional Codex Security access here: > https://openai.com/form/codex-for-oss/ Hey, Lead maintainer of vim here. Applied twice already never heard anything back. This is a frustrating experience!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49095084",
+    "author": "vsl",
+    "date": "2026-07-29",
+    "text": "Thing is, you WILL encounter refusals with Sol doing anything remotely adjacent to security work. Which for Codex Security is kinda... problematic. Just a few days back, I was reviewing some small bit of legacy DSA signature verification code, to get a sense of how safe it is to reuse - purely defensive, precautionary work and the context of it was there. But I simply wasn't able to use Codex Securi"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49093494",
+    "author": "punnerud",
+    "date": "2026-07-29",
+    "text": "Not often I see companies referring to HN, thanks \u201c We quietly released the open-source Codex Security CLI, but Hacker News found it before we had a chance to share it here\u2026\u201d https://x.com/openai/status/2082263717916586117?s=46&t=mnfnj... "
+   },
+   {
+    "src": "hn_comment",
+    "id": "49092009",
+    "author": "dangelosaurus",
+    "date": "2026-07-29",
+    "text": "can adapt them to their own workflows. We run A LOT of evals as the Promptfoo team and we've spent billions of tokens fine-tuning them. You can expect more skills as we branch out to other security workflows and further improvements to the codex security prompts."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49092005",
+    "author": "lawgimenez",
+    "date": "2026-07-29",
+    "text": "Is this the same plugin found in Codex? @codex Security?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49091831",
+    "author": "dangelosaurus",
+    "date": "2026-07-29",
+    "text": "Thank you, that means a lot. Being able to keep building practical, open-source security tooling was important to us. Really glad we got to ship this, and there's still a lot we want to improve in Codex Security and in Promptfoo!"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49091644",
+    "author": "dangelosaurus",
+    "date": "2026-07-29",
+    "text": " Trusted Access for Cyber (TAC1/Daybreak) can reduce refusals depending on the model and the account or organization where access is provisioned. It isn't a blanket bypass. If you're an open-source maintainer, you can apply for conditional Codex Security access here: https://openai.com/form/codex-for-oss/ For enterprise teams, the public Daybreak onboarding guide is here: https://help.openai.com/en/articles/20001261-enterprise-dayb... If you have an example of \"found a vulnerability but won't tell me what it is,\" I'd love to tak"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49091620",
+    "author": "dangelosaurus",
+    "date": "2026-07-28",
+    "text": "usals come from model guardrails, which can be overly cautious. Trusted Access for Cyber (TAC1/Daybreak) is a separate, approved access path that can reduce those refusals. If you're an open-source maintainer, you can apply for conditional Codex Security access here: https://openai.com/form/codex-for-oss/ For enterprise teams, the Daybreak onboarding process is explained here: https://help.openai.com/en/articles/20001261-enterprise-dayb... If you have a specific repro, I'd be happy to look into it."
+   }
+  ]
+ },
+ {
+  "name": "Qodo",
+  "url": "https://www.qodo.ai",
+  "score": 32.1,
+  "github_stars": 15406,
+  "top_hn_story": {
+   "title": "Qodo CLI agent scores 71.2% on SWE-bench Verified",
+   "points": 139,
+   "id": "44874736",
+   "url": "https://www.qodo.ai/blog/qodo-command-swe-bench-verified/"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "49621594",
+    "author": "oscarestudillom",
+    "date": "2026-09-09",
+    "text": "At my team we added AI review because seniors were tired of always commenting on the same things, mostly because not everyone uses AI properly to produce production ready code. We tried coderabbit, qodo, and they all produce an amount of noise that end up being useless. A colleague and I then decided to create an internal solution that we ended up publishing under Revix AI. We have multiple control systems to avoid noise and only comment real issues, and we prioritize standards"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49164863",
+    "author": "mt_owl",
+    "date": "2026-08-04",
+    "text": " ran a smaller benchmark, not definitive by any means, four open source reviewers on 20 pinned PRs/MRs. Bubo 20/20 7/8 27 findings 0% noise ai-codereviewer 19/20 6/8 118 findings 20% noise ChatGPT-CodeReview 20/20 5/8 75 findings 11% noise Qodo/PR-Agent 19/20 2/8 7 findings not scored Alibaba open-code-review \u2014 partial run, 4/20 All on GPT-5.5 except Qodo was on 40 (didn't support 5.5). Take it as directional results. I'll be doing more comps in coming days and upload benchmark to the repo. I went with polling (zero st"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48407475",
+    "author": "eranation",
+    "date": "2026-06-05",
+    "text": "Not sure why you got downvoted, and I have nothing against CodeRabbit, but this comment feels a bit like a paid ad :) How do you see CodeRabbit against other AI code review solutions? E.g. cubic.dev, Qodo, Graphite, Greptile, Baz, Augment Code... An alternative UI to GitHub is well overdue. But once someone will get it right, everyone will copy them..."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48407230",
+    "author": "lukeasrodgers",
+    "date": "2026-06-05",
+    "text": "My team tried coderabbit and qodo and they are both trash compared to a tool we quickly built in-house that is more or less a thin wrapper around claude/codex, along with per-repo skills. PR review is triggered by webhooks from github to the review tool's web app. The tool shared by OP from alibaba certainly doe"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48169422",
+    "author": "simonreiff",
+    "date": "2026-05-17",
+    "text": "o matter now, more than ever. New tools and processes also must be built to make human review, the single biggest bottleneck in software development today, more simplified and streamlined, and less taxing. I think tools like CodeRabbit and Qodo can help automate and expedite the code-review and approval processes, but they would be even better if they were working off more surgical and tiny edits. Bloated, verbose AI-generated code edits are the core problem here. Process management techniques to mitigate the problem o"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47768312",
+    "author": "samiahmadkhan",
+    "date": "2026-04-14",
+    "text": "Qodo reviews individual PRs. VibeDrift compares files against each other across your whole codebase. Qodo won\u2019t tell you that the file you\u2019re adding uses raw SQL while 7 sibling files use a repository pattern, it\u2019s looking at the PR in isolation, not the project. If that makes sense."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47766505",
+    "author": "stealthy_",
+    "date": "2026-04-14",
+    "text": "How is this different from qodo?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46894545",
+    "author": "mohsen1",
+    "date": "2026-02-05",
+    "text": "> Qodo takes a different approach by starting with real, merged PRs Merged PRs being considered good code?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46893123",
+    "author": "esafak",
+    "date": "2026-02-04",
+    "text": "I'm not as cynical as the others here; if there are no popular code review benchmarks why should they not design one? Apparently this is in support of their 2.0 release: https://www.qodo.ai/blog/introducing-qodo-2-0-agentic-code-r... > We believe that code review is not a narrow task; it encompasses many distinct responsibilities that happen at once. [...] > Qodo 2.0 addresses this with a multi-agent expert review architecture. Instead of treating code review as"
+   },
+   {
+    "src": "hn_comment",
+    "id": "46892883",
+    "author": "mdeeks",
+    "date": "2026-02-04",
+    "text": "I feel like pricing needs to be included here. I kind of don't care about 10 percentage points if the cost is dramatically higher. Cursor Bugbot is about the same cost but gives 10x the monthly quota of Qodo. I know this is focused solely on performance, but cost is a major factor here."
+   },
+   {
+    "src": "hn_comment",
+    "id": "46712069",
+    "author": "joshgachnang",
+    "date": "2026-01-21",
+    "text": "your project helps a ton. I was literally just working on a system, using Devin to do the review no less, to add a bunch of the rules we have that are outside of linting's capability to tackle the same kind of thing. Tools like Copilot and Qodo have very high noise ratios, but do occasionally catch legit bugs. Devin Review could be a great complement, and hopefully they'll make it so we can add our own rules soon."
+   },
+   {
+    "src": "hn_comment",
+    "id": "46334186",
+    "author": "outofdistro",
+    "date": "2025-12-20",
+    "text": "How does Graphite compare with other AI code review tools like Qodo? My team has been using Qodo for a while now and i've found it to be pretty helpful. EVery once in a while it finds a serious issue, but the most useful part from my experience are the features that are geared towards speeding up my review rather than replacing it. Things like e"
+   }
+  ]
+ },
+ {
+  "name": "Greptile",
+  "url": "https://greptile.com",
+  "score": 25.1,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Why Greptile just does code reviews and doesn't also generate code",
+   "points": 54,
+   "id": "44786514",
+   "url": "https://www.greptile.com/blog/auditor"
+  },
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "50358399",
+    "author": "luis_valerio",
+    "date": "2026-11-03",
+    "text": "Anyone with real experience with greptile vs GitHub copilot?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50295129",
+    "author": "replygirl",
+    "date": "2026-10-29",
+    "text": "this is common practice, works pretty well in my experience both to improve quality and reduce cost, and afaik is a naive version of what tools like coderabbit and greptile do internally"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50256775",
+    "author": "GL26",
+    "date": "2026-10-27",
+    "text": "the bottleneck is now how fast can you plan requirements, how fast can you check those requirements were met. Stack : Greptile + TesterArmy"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50219719",
+    "author": "sadilek",
+    "date": "2026-10-24",
+    "text": " on the side of the model creators, well, that's another story. FWIW, in a commercial project, where I also work at the \"engineering director level\" since Opus 5.5, all non-trivial changes go through reviews by Codex and Grok (locally) and Greptile (on the PR), so there would have to be some serious level of collusion by the labs to produce your example ;)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "50123907",
+    "author": "rileymichael",
+    "date": "2026-10-16",
+    "text": "the claude code review product originally mentioned it cost \"$15-25 per review\" (which is absurd), but it seems like they've removed that from their docs with the launch yesterday. we've looked at various products in the space (coderabbit, greptile, etc.) but have gripes with each. honestly i'm thinking it might be easier (and cheaper) to launch our own agent from GH webhooks and trigger `/code-review`.."
+   },
+   {
+    "src": "hn_comment",
+    "id": "49946872",
+    "author": "nnorbert",
+    "date": "2026-10-03",
+    "text": "With 3 of my SE friends, we've recently launched our AI code review tool, Vetoo. All of us had experience with most trendy tools like CodeRabbit, Greptile, Copilot, Bugbot because of our jobs and we have mixed opinions. Vetoo is basically the result of our FDD (frustration driven development). It fills the gaps that the current tools have wide open: too much noise, configuration issues, unpredictable pricing and platform burden. W"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49540064",
+    "author": "entaroadun123",
+    "date": "2026-09-02",
+    "text": "n MCP server so support could run data entry through Claude as a review queue, approving or rejecting proposed changes the way an engineer reviews a pull request. * Tripled my year over year PR output with agentic development: Claude Code, Greptile, GitHub Actions, Playwright. On a large real codebase, not a toy. Pushing deliberately into Go and Python. I was at GopherCon this year and published two original Go tools: * tether ( https://github.com/tachyurgy/tether ), static goroutine leak analyzer on x/tools/go/analysis. B"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49340049",
+    "author": "dmix",
+    "date": "2026-08-18",
+    "text": "If you read the status page: > This incident affected: Automations, Review Agents, Cloud Agents, and Origin. Cursor has built a code review bot ( https://cursor.com/bugbot ) which integrates with Github similar to Greptile/Coderabbit. Origin has a feature which imports existing github repos to onboard new users. Automation and cloud agents is self explanatory."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48848915",
+    "author": "wackget",
+    "date": "2026-07-09",
+    "text": "workspace.toml docker-compose.base.yml docker-compose.dev-full.yml docker-compose.dev.yml docker-compose.hobby.yml docker-compose.multinode-clickhouse.yml docker-compose.playwright.yml docker-compose.profiles.yml docker-compose.sandbox.yml greptile.json hogli.yaml manage.py otel-collector-config.dev.yaml package.json pnpm-lock.yaml pnpm-workspace.yaml postcss.config.js posthog.json pyproject.toml pytest.ini tach.toml tsconfig.dev.json tsconfig.json tsconfig.kea-typegen.json turbo.json unit.json.tpl uv.lock What percentage "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48746696",
+    "author": "johnsillings",
+    "date": "2026-07-01",
+    "text": "Cool project. How is this different from Greptile, Cubic, etc?"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48576552",
+    "author": "dakshgupta",
+    "date": "2026-06-17",
+    "text": "Not yet - but we want to do this. Similarly true for the ephemeral unit tests that greptile writes."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48550125",
+    "author": "m463",
+    "date": "2026-06-16",
+    "text": "I got to see greptile and it had a pretty decent code review, somewhat like a static analysis tool without a lot of time wasting nonsense/false positives. When I've used static analysis tools, the first run is usually helpful as you cherry pick the things that need to be fixed, but then subsequent ru"
+   }
+  ]
+ },
+ {
+  "name": "Open Code Review (Alibaba)",
+  "url": "https://github.com/alibaba/open-code-review",
+  "score": 23.3,
+  "github_stars": 49613,
+  "top_hn_story": null,
+  "evidence": [
+   {
+    "src": "hn_comment",
+    "id": "49164863",
+    "author": "mt_owl",
+    "date": "2026-08-04",
+    "text": " four open source reviewers on 20 pinned PRs/MRs. Bubo 20/20 7/8 27 findings 0% noise ai-codereviewer 19/20 6/8 118 findings 20% noise ChatGPT-CodeReview 20/20 5/8 75 findings 11% noise Qodo/PR-Agent 19/20 2/8 7 findings not scored Alibaba open-code-review \u2014 partial run, 4/20 All on GPT-5.5 except Qodo was on 40 (didn't support 5.5). Take it as directional results. I'll be doing more comps in coming days and upload benchmark to the repo. I went with polling (zero steup on repo side) - wasn't trying to change the repo CI/CD's rathe"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49090142",
+    "author": "moehm",
+    "date": "2026-07-28",
+    "text": "Alibaba just open sourced their version of a CLI code review tool too. https://github.com/alibaba/open-code-review "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48861109",
+    "author": "wismwasm",
+    "date": "2026-07-10",
+    "text": "I have good experience with using open-code-review: * https://github.com/alibaba/open-code-review ** https://layandreas.github.io/personal-blog/posts/beyond-vide... "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48440211",
+    "author": "ignoramous",
+    "date": "2026-06-08",
+    "text": "The project lead has since mainlined the translation: https://github.com/alibaba/open-code-review/commit/8c4463f65... I wonder what it means for prompts to go from Mandarin / Cantonese to English..."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48410310",
+    "author": "pramodbiligiri",
+    "date": "2026-06-05",
+    "text": "A repo with the English translation of each of the rules files, using Google Translate: https://github.com/pramodbiligiri/open-code-review-rules . The original rules files (in Chinese): https://github.com/alibaba/open-code-review/tree/main/intern... "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48410013",
+    "author": "pramodbiligiri",
+    "date": "2026-06-05",
+    "text": "Mechanics of running their command aside, I think the main value add is all the rules: https://github.com/alibaba/open-code-review/tree/main/intern... Like with \"SKILL\" files in general, it's got to do with Prompt Engineering: https://en.wikipedia.org/wiki/Prompt_engineering#Rationale "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48409509",
+    "author": "pramodbiligiri",
+    "date": "2026-06-05",
+    "text": "An English rendering of the Java.md (Google Translate): https://github-com.translate.goog/alibaba/open-code-review/b... "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48409276",
+    "author": "hrpnk",
+    "date": "2026-06-05",
+    "text": "Rule files are in https://github.com/alibaba/open-code-review/tree/main/intern... (in Chinese)"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48407978",
+    "author": "lizhengfeng101",
+    "date": "2026-06-05",
+    "text": "Thank you all for the interest in Open Code Review! This project was incubated from an AI code review tool that has been widely used by developers inside Alibaba at scale. The reason we decided to open-source it is simple \u2014 we noticed that many developers in the community are either paying for similar tools or using skills to pe"
+   }
+  ]
+ },
+ {
+  "name": "Sourcery",
+  "url": "https://sourcery.ai",
+  "score": 22.4,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Show HN: Sourcery \u2013 Benchmark for search APIs on the sources they return",
+   "points": 4,
+   "id": "49379725",
+   "url": "https://sameerhimati.com/sourcery/"
+  },
+  "evidence": [
+   {
+    "src": "ask_hn",
+    "id": 46330999,
+    "author": "weeksie",
+    "text": "ell script) - A root guardrails directory with a README to direct the agent where to look for applicable rule files (we have a monorepo of python etls and elixir applications) - Graphite for stacked prs <3 - PR Reviews: Sourcery + Graphite's agent + Codex + Claude just sorta crank 'em, sourcery is chatty but it's gotten a lot better lately. (editor-wise, most of us are nvim users) Lots of iteration. Feature files (checked into the repo). Graphite stacks are amazing for unblocking the"
+   },
+   {
+    "src": "hn_comment",
+    "id": "49759128",
+    "author": "iamflimflam1",
+    "date": "2026-09-18",
+    "text": "This reminds me of Terry Pratchett\u2019s Sourcery. The wizards don\u2019t become sourcerers themselves - they become enthusiastic users of someone else\u2019s sourcery. Their years of learning don\u2019t protect them from mistaking access to power for mastery of it."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48781422",
+    "author": "ctrloverride",
+    "date": "2026-07-03",
+    "text": " is no add-ons, apps or downloads to worry about. The website runs from a custom made web server built in C/C++ hosted on a personal home computer. Development of website was done using a custom developed editor and language called English Sourcery. The editor compiles and shows a preview in real time as the programmer types, which flags bugs and mistakes instantly, reducing debugging time. This editor that was used to build the site will eventually be a feature built into the site itself, making Ctrl Override a hub for pr"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48293942",
+    "author": "Michelangelo11",
+    "date": "2026-05-27",
+    "text": "Yeah, I think that's a good one, as would be e.g. Guards! Guards! No idea why the recommendation in that link is Sourcery -- it's not bad , but it has that early Discworld flavor that's really just an extended riff on late '80s / early '90s fantasy and probably wouldn't land with a modern audience."
+   },
+   {
+    "src": "hn_comment",
+    "id": "48251160",
+    "author": "freakynit",
+    "date": "2026-05-23",
+    "text": "The Coming \u2018Power Wars\u2019 Between Humans and Datacenters https://sourceryintel.com/reports/humans-vs-datacenters "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48210630",
+    "author": "freakynit",
+    "date": "2026-05-20",
+    "text": "ayment rails\" that are coming up in many countries worldwide, mostly, developing ones. Among many others, the report covers two of the biggest ones: UPI of India, and PIX of Brazil, and why it threatens the mastercard/visa duopoly. https://sourceryintel.com/reports/the-instant-payments-race "
+   },
+   {
+    "src": "hn_comment",
+    "id": "48090581",
+    "author": "freakynit",
+    "date": "2026-05-11",
+    "text": "1. Prepping to release the tool behind https://sourceryintel.com as open-source. The insane levels of breadth and depth in the research reports this tool is generating has blown me away completely. 2. Released \"Postlet\" ( https://github.com/freakynit/Postlet ), a tiny markdown-based static blog generator with a plugin pipeline, markd"
+   },
+   {
+    "src": "hn_comment",
+    "id": "48066651",
+    "author": "alentodorov",
+    "date": "2026-05-08",
+    "text": "i remember mailing webmaster@cartoonnetwork.co.uk asking them what \u201csourcery\u201d have they used to allow for zoom-in on a website."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47999333",
+    "author": "pierrekin",
+    "date": "2026-05-03",
+    "text": "Yes, it was created by a cool called Sourcery. Sourcery Show HN: https://news.ycombinator.com/item?id=47996426 The project is currently private, I'd love to have access to its source."
+   },
+   {
+    "src": "hn_comment",
+    "id": "47501214",
+    "author": "dominotw",
+    "date": "2026-03-24",
+    "text": "sisted code audits \u2022 Agent-based feedback loops (e.g., reading .feature files pre-build) \u2022 Agent-driven reasoning optimization (code clarity for AI) \u2022 Continuous automated review cycles \u2e3b Code Review & Static Analysis \u2022 Code review bots: \u2022 Sourcery \u2022 CodeRabbit \u2022 CodeScene \u2022 Automated detection of: \u2022 Anti-patterns \u2022 Contract violations \u2022 UX concerns \u2022 Architectural flaws \u2e3b Linting & Code Quality Enforcement \u2022 Strict linting rules \u2022 Custom lint rules \u2022 Enforcement of lint compliance via bots \u2022 Detection of lint rule subvers"
+   },
+   {
+    "src": "hn_comment",
+    "id": "47496198",
+    "author": "Leynos",
+    "date": "2026-03-23",
+    "text": "nsibility, cqrs, domain segregation, etc. Make the code as easy for you to reason about as possible. Enforce domain naming and function / variable naming conventions to make the code as easy to talk about as possible. Use code review bots (Sourcery, CodeRabbit, and Codescene). They catch the small things (violations of contract, antipatterns, etc.) and the large (ux concerns, architectural flaws, etc.). Go all in on linting. Make the rules as strict as possible, and tell the review bots to call out rule subversions. Write "
+   },
+   {
+    "src": "hn_comment",
+    "id": "47048691",
+    "author": "Leynos",
+    "date": "2026-02-17",
+    "text": "loop set up, e.g., using OpenClaw or a Ralph loop, you can stretch that out further. I would suggest that when you get to that point really, you want some kind of adversarial system set up with code reviews (e.g., provided by CodeRabbit or Sourcery) and automation to feed that back into the coding agent."
+   },
+   {
+    "src": "hn_comment",
+    "id": "46767158",
+    "author": "Leynos",
+    "date": "2026-01-26",
+    "text": "Take a look at CodeRabbit and Sourcery if you want to give that a go."
+   }
+  ]
+ },
+ {
+  "name": "Sphinx",
+  "url": "https://sphinx-six-theta.vercel.app/",
+  "score": 11.5,
+  "github_stars": null,
+  "top_hn_story": {
+   "title": "Show HN: Sphinx \u2013 A hook that quizzes you on your AI's code before shipping",
+   "points": 253,
+   "id": "50137950",
+   "url": "https://sphinx-six-theta.vercel.app/"
+  },
+  "evidence": []
+ }
+]
