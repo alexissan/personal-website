@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://alexissantos.dev/</loc></url>
-  <url><loc>https://alexissantos.dev/en/</loc></url>
+  <url><loc>https://alexissantos.dev/es/</loc></url>
+  <url><loc>https://alexissantos.dev/ai-dev-tools/</loc></url>
   <url><loc>https://alexissantos.dev/grow/</loc></url>
   <url><loc>https://alexissantos.dev/showcase/</loc></url>
-  <url><loc>https://alexissantos.dev/en/showcase/</loc></url>
-  <url><loc>https://alexissantos.dev/showcase/nexo-mantenimiento/</loc></url>
-  <url><loc>https://alexissantos.dev/en/showcase/nexo-maintenance/</loc></url>
+  <url><loc>https://alexissantos.dev/es/showcase/</loc></url>
+  <url><loc>https://alexissantos.dev/showcase/nexo-maintenance/</loc></url>
+  <url><loc>https://alexissantos.dev/es/showcase/nexo-mantenimiento/</loc></url>
   <url><loc>https://alexissantos.dev/showcase/mesa-clara/</loc></url>
-  <url><loc>https://alexissantos.dev/en/showcase/mesa-clara/</loc></url>
+  <url><loc>https://alexissantos.dev/es/showcase/mesa-clara/</loc></url>
   <url><loc>https://alexissantos.dev/showcase/ladera-norte/</loc></url>
-  <url><loc>https://alexissantos.dev/en/showcase/ladera-norte/</loc></url>
+  <url><loc>https://alexissantos.dev/es/showcase/ladera-norte/</loc></url>
   <url><loc>https://alexissantos.dev/showcase/cerrajeria-faro/</loc></url>
-  <url><loc>https://alexissantos.dev/en/showcase/cerrajeria-faro/</loc></url>
-  <url><loc>https://alexissantos.dev/ai-dev-tools/</loc></url>
+  <url><loc>https://alexissantos.dev/es/showcase/cerrajeria-faro/</loc></url>
   <url><loc>https://alexissantos.dev/articles/</loc></url>
-  <url><loc>https://alexissantos.dev/en/articles/</loc></url>
+  <url><loc>https://alexissantos.dev/es/articles/</loc></url>
   <url><loc>https://alexissantos.dev/articles/ios-claude-skills-open-source/</loc></url>
   <url><loc>https://alexissantos.dev/articles/building-is-the-easy-part/</loc></url>
   <url><loc>https://alexissantos.dev/articles/6-apps-3-months-solo-dev/</loc></url>

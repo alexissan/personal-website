@@ -43,9 +43,33 @@ export default {
       return response;
     }
 
+    const redirect = legacyRedirect(url);
+    if (redirect) {
+      return Response.redirect(redirect, 301);
+    }
+
     return route(request, url, env);
   },
 };
+
+// English moved from /en/ to the root and Spanish from the root to /es/.
+// Old links keep working: /en/... drops the prefix, and the one Spanish-only
+// slug that used to live at the root moves under /es/.
+const SPANISH_ONLY_ROOT_PATHS = {
+  '/showcase/nexo-mantenimiento': '/es/showcase/nexo-mantenimiento/',
+};
+
+function legacyRedirect(url) {
+  const { pathname, search } = url;
+  if (pathname === '/en' || pathname.startsWith('/en/')) {
+    return `${url.origin}${pathname.slice(3) || '/'}${search}`;
+  }
+  const spanish = SPANISH_ONLY_ROOT_PATHS[pathname.replace(/\/$/, '')];
+  if (spanish) {
+    return `${url.origin}${spanish}${search}`;
+  }
+  return null;
+}
 
 function isProtected(pathname) {
   return PROTECTED_PREFIXES.some(

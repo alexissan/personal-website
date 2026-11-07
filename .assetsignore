@@ -22,3 +22,6 @@ brand
 .gitattributes
 
 _research
+
+# Article originals: inputs to scripts/build-studio.py, not pages
+source.html

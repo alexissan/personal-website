@@ -262,7 +262,7 @@ CONTRACTOR = {
 
 
 def shared_head(lang, title, description, canonical, alternate, image='/assets/showcase/nexo/field-service.webp'):
-    return f'''<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{escape(title)} — AlexisSantos.dev</title><meta name="description" content="{escape(description, quote=True)}"><link rel="canonical" href="https://alexissantos.dev{canonical}"><link rel="alternate" hreflang="es" href="https://alexissantos.dev{canonical if lang == 'es' else alternate}"><link rel="alternate" hreflang="en" href="https://alexissantos.dev{alternate if lang == 'es' else canonical}"><link rel="alternate" hreflang="x-default" href="https://alexissantos.dev{canonical if lang == 'es' else alternate}"><meta property="og:site_name" content="AlexisSantos.dev"><meta property="og:locale" content="{'es_ES' if lang == 'es' else 'en_GB'}"><meta property="og:title" content="{escape(title, quote=True)}"><meta property="og:description" content="{escape(description, quote=True)}"><meta property="og:type" content="website"><meta property="og:url" content="https://alexissantos.dev{canonical}"><meta property="og:image" content="https://alexissantos.dev{image}"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#f5f6f8"><link rel="icon" href="/assets/studio/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/studio/studio.css"><link rel="stylesheet" href="/assets/showcase/showcase.css"><script src="/assets/studio/studio.js" defer></script><script src="/assets/showcase/showcase.js" defer></script></head>'''
+    return f'''<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{escape(title)} — AlexisSantos.dev</title><meta name="description" content="{escape(description, quote=True)}"><link rel="canonical" href="https://alexissantos.dev{canonical}"><link rel="alternate" hreflang="es" href="https://alexissantos.dev{canonical if lang == 'es' else alternate}"><link rel="alternate" hreflang="en" href="https://alexissantos.dev{alternate if lang == 'es' else canonical}"><link rel="alternate" hreflang="x-default" href="https://alexissantos.dev{alternate if lang == 'es' else canonical}"><meta property="og:site_name" content="AlexisSantos.dev"><meta property="og:locale" content="{'es_ES' if lang == 'es' else 'en_GB'}"><meta property="og:title" content="{escape(title, quote=True)}"><meta property="og:description" content="{escape(description, quote=True)}"><meta property="og:type" content="website"><meta property="og:url" content="https://alexissantos.dev{canonical}"><meta property="og:image" content="https://alexissantos.dev{image}"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#f5f6f8"><link rel="icon" href="/assets/studio/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/studio/studio.css"><link rel="stylesheet" href="/assets/showcase/showcase.css"><script src="/assets/studio/studio.js" defer></script><script src="/assets/showcase/showcase.js" defer></script></head>'''
 
 
 def interface_layers(lang):
@@ -359,8 +359,8 @@ def contractor_product_mockup(lang):
 
 
 def showcase_shell_parts(lang, es_href, en_href):
-    home_path = 'index.html' if lang == 'es' else 'en/index.html'
-    home_url = '/' if lang == 'es' else '/en/'
+    home_path = 'es/index.html' if lang == 'es' else 'index.html'
+    home_url = '/es/' if lang == 'es' else '/'
     home = (ROOT / home_path).read_text()
     import re
     header = re.search(r'<header class="header wrap">.*?</header>', home, re.S).group(0).replace('href="#', f'href="{home_url}#')
@@ -372,16 +372,16 @@ def showcase_shell_parts(lang, es_href, en_href):
 def build_showcase_page(lang):
     s = SHOWCASE[lang]
     es = lang == 'es'
-    canonical = '/showcase/' if es else '/en/showcase/'
-    alternate = '/en/showcase/' if es else '/showcase/'
-    case_url = '/showcase/nexo-mantenimiento/' if es else '/en/showcase/nexo-maintenance/'
-    restaurant_url = '/showcase/mesa-clara/' if es else '/en/showcase/mesa-clara/'
-    invoice_url = '/showcase/ladera-norte/' if es else '/en/showcase/ladera-norte/'
-    contractor_url = '/showcase/cerrajeria-faro/' if es else '/en/showcase/cerrajeria-faro/'
+    canonical = '/es/showcase/' if es else '/showcase/'
+    alternate = '/showcase/' if es else '/es/showcase/'
+    case_url = '/es/showcase/nexo-mantenimiento/' if es else '/showcase/nexo-maintenance/'
+    restaurant_url = '/es/showcase/mesa-clara/' if es else '/showcase/mesa-clara/'
+    invoice_url = '/es/showcase/ladera-norte/' if es else '/showcase/ladera-norte/'
+    contractor_url = '/es/showcase/cerrajeria-faro/' if es else '/showcase/cerrajeria-faro/'
     restaurant = RESTAURANT[lang]
     invoice = INVOICES[lang]
     contractor = CONTRACTOR[lang]
-    header, footer = showcase_shell_parts(lang, '/showcase/', '/en/showcase/')
+    header, footer = showcase_shell_parts(lang, '/es/showcase/', '/showcase/')
     head = shared_head(lang, s['index_title'], s['index_intro'], canonical, alternate)
     return f'''{head}<body id="top"><a class="skip" href="#main">{COPY[lang]['skip']}</a>{header}<main id="main" class="showcase-page"><section class="showcase-index-hero wrap"><span class="showcase-kicker">AlexisSantos.dev / {s['nav']}</span><h1>{s['index_title']}.</h1><div><p>{s['index_intro']}</p><small>{s['index_note']}</small></div></section><section class="wrap showcase-feature"><div class="showcase-feature-head"><div><span class="fictional-label">{s['label']}</span><span>{s['eyebrow']}</span></div><h2>{s['case_name']}</h2><p>{s['case_short']}</p><a class="text-link" href="{case_url}">{s['explore']} {ARROW}</a></div>{showcase_mosaic(lang, 'index')}</section><section class="wrap showcase-feature restaurant-feature"><div class="showcase-feature-head"><div><span class="fictional-label">{restaurant['label']}</span><span>{restaurant['eyebrow']}</span></div><h2>{restaurant['name']}</h2><p>{restaurant['short']}</p><a class="text-link" href="{restaurant_url}">{restaurant['explore']} {ARROW}</a></div>{restaurant_mosaic(lang, 'index')}</section><section class="wrap showcase-feature invoice-feature"><div class="showcase-feature-head"><div><span class="fictional-label">{invoice['label']}</span><span>{invoice['eyebrow']}</span></div><h2>{invoice['name']}</h2><p>{invoice['short']}</p><a class="text-link" href="{invoice_url}">{invoice['explore']} {ARROW}</a></div>{invoice_mosaic(lang, 'index')}</section><section class="wrap showcase-feature contractor-feature"><div class="showcase-feature-head"><div><span class="fictional-label">{contractor['label']}</span><span>{contractor['eyebrow']}</span></div><h2>{contractor['name']}</h2><p>{contractor['short']}</p><a class="text-link" href="{contractor_url}">{contractor['explore']} {ARROW}</a></div>{contractor_mosaic(lang, 'index')}</section></main>{footer}</body></html>'''
 
@@ -389,11 +389,11 @@ def build_showcase_page(lang):
 def build_nexo_page(lang):
     s = SHOWCASE[lang]
     es = lang == 'es'
-    canonical = '/showcase/nexo-mantenimiento/' if es else '/en/showcase/nexo-maintenance/'
-    alternate = '/en/showcase/nexo-maintenance/' if es else '/showcase/nexo-mantenimiento/'
-    index_url = '/showcase/' if es else '/en/showcase/'
-    contact_url = '/#contact' if es else '/en/#contact'
-    header, footer = showcase_shell_parts(lang, '/showcase/nexo-mantenimiento/', '/en/showcase/nexo-maintenance/')
+    canonical = '/es/showcase/nexo-mantenimiento/' if es else '/showcase/nexo-maintenance/'
+    alternate = '/showcase/nexo-maintenance/' if es else '/es/showcase/nexo-mantenimiento/'
+    index_url = '/es/showcase/' if es else '/showcase/'
+    contact_url = '/es/#contact' if es else '/#contact'
+    header, footer = showcase_shell_parts(lang, '/es/showcase/nexo-mantenimiento/', '/showcase/nexo-maintenance/')
     head = shared_head(lang, s['case_name'], s['case_intro'], canonical, alternate)
     results = ''.join(f'<li><span>0{i}</span>{item}</li>' for i, item in enumerate(s['result_items'], 1))
     return f'''{head}<body id="top"><a class="skip" href="#main">{COPY[lang]['skip']}</a>{header}<main id="main" class="showcase-page"><section class="case-hero wrap"><a class="case-back" href="{index_url}">← {s['back']}</a><div class="case-heading"><div><span class="fictional-label">{s['label']}</span><span>{s['eyebrow']}</span></div><h1>{s['case_name']}</h1><p>{s['case_title']} {s['case_intro']}</p></div></section><section class="wrap case-demo">{showcase_mosaic(lang, 'case')}</section><section class="case-explainer wrap"><div><span class="showcase-kicker">{'EL FLUJO' if es else 'THE WORKFLOW'}</span><h2>{s['how']}</h2></div><p>{s['how_intro']}</p></section>{product_mockup(lang)}<section class="before-after wrap"><article><span>01 / {s['before'].upper()}</span><h3>{s['before']}</h3><p>{s['before_text']}</p></article><article><span>02 / {s['after'].upper()}</span><h3>{s['after']}</h3><p>{s['after_text']}</p></article></section><section class="case-results"><div class="wrap"><div><span class="showcase-kicker">{'RESULTADO' if es else 'OUTCOME'}</span><h2>{s['result']}.</h2></div><ol>{results}</ol></div></section><section class="case-cta wrap"><h2>{s['cta_title']}</h2><div><p>{s['cta_text']}</p><a class="button" href="{contact_url}">{s['cta']} {ARROW}</a></div></section></main>{footer}</body></html>'''
@@ -402,11 +402,11 @@ def build_nexo_page(lang):
 def build_restaurant_page(lang):
     s = RESTAURANT[lang]
     es = lang == 'es'
-    canonical = '/showcase/mesa-clara/' if es else '/en/showcase/mesa-clara/'
-    alternate = '/en/showcase/mesa-clara/' if es else '/showcase/mesa-clara/'
-    index_url = '/showcase/' if es else '/en/showcase/'
-    contact_url = '/#contact' if es else '/en/#contact'
-    header, footer = showcase_shell_parts(lang, '/showcase/mesa-clara/', '/en/showcase/mesa-clara/')
+    canonical = '/es/showcase/mesa-clara/' if es else '/showcase/mesa-clara/'
+    alternate = '/showcase/mesa-clara/' if es else '/es/showcase/mesa-clara/'
+    index_url = '/es/showcase/' if es else '/showcase/'
+    contact_url = '/es/#contact' if es else '/#contact'
+    header, footer = showcase_shell_parts(lang, '/es/showcase/mesa-clara/', '/showcase/mesa-clara/')
     head = shared_head(lang, s['name'], s['intro'], canonical, alternate, '/assets/showcase/mesa-clara/restaurant.webp')
     results = ''.join(f'<li><span>0{i}</span>{item}</li>' for i, item in enumerate(s['result_items'], 1))
     return f'''{head}<body id="top"><a class="skip" href="#main">{COPY[lang]['skip']}</a>{header}<main id="main" class="showcase-page restaurant-case"><section class="case-hero wrap"><a class="case-back" href="{index_url}">← {'Todas las demostraciones' if es else 'All showcase cases'}</a><div class="case-heading"><div><span class="fictional-label">{s['label']}</span><span>{s['eyebrow']}</span></div><h1>{s['name']}</h1><p>{s['title']} {s['intro']}</p></div></section><section class="wrap case-demo">{restaurant_mosaic(lang, 'case')}</section><section class="case-explainer wrap"><div><span class="showcase-kicker">{'EL FLUJO' if es else 'THE WORKFLOW'}</span><h2>{s['how']}</h2></div><p>{s['how_intro']}</p></section>{restaurant_product_mockup(lang)}<section class="before-after wrap"><article><span>01 / {s['before'].upper()}</span><h3>{s['before']}</h3><p>{s['before_text']}</p></article><article><span>02 / {s['after'].upper()}</span><h3>{s['after']}</h3><p>{s['after_text']}</p></article></section><section class="case-results"><div class="wrap"><div><span class="showcase-kicker">{'RESULTADO' if es else 'OUTCOME'}</span><h2>{'Lo que cambia' if es else 'What changes'}.</h2></div><ol>{results}</ol></div></section><section class="case-cta wrap"><h2>{'¿Tu equipo pierde tiempo gestionando reservas?' if es else 'Does your team lose time managing bookings?'}</h2><div><p>{'Diseño el flujo alrededor de tu sala, horarios y forma de atender al cliente.' if es else 'I design the workflow around your room, opening hours and the way you serve guests.'}</p><a class="button" href="{contact_url}">{'Cuéntame cómo trabajas' if es else 'Tell me how you work'} {ARROW}</a></div></section></main>{footer}</body></html>'''
@@ -415,11 +415,11 @@ def build_restaurant_page(lang):
 def build_invoice_page(lang):
     s = INVOICES[lang]
     es = lang == 'es'
-    canonical = '/showcase/ladera-norte/' if es else '/en/showcase/ladera-norte/'
-    alternate = '/en/showcase/ladera-norte/' if es else '/showcase/ladera-norte/'
-    index_url = '/showcase/' if es else '/en/showcase/'
-    contact_url = '/#contact' if es else '/en/#contact'
-    header, footer = showcase_shell_parts(lang, '/showcase/ladera-norte/', '/en/showcase/ladera-norte/')
+    canonical = '/es/showcase/ladera-norte/' if es else '/showcase/ladera-norte/'
+    alternate = '/showcase/ladera-norte/' if es else '/es/showcase/ladera-norte/'
+    index_url = '/es/showcase/' if es else '/showcase/'
+    contact_url = '/es/#contact' if es else '/#contact'
+    header, footer = showcase_shell_parts(lang, '/es/showcase/ladera-norte/', '/showcase/ladera-norte/')
     head = shared_head(lang, s['name'], s['intro'], canonical, alternate, '/assets/showcase/ladera-norte/finance-desk.webp')
     results = ''.join(f'<li><span>0{i}</span>{item}</li>' for i, item in enumerate(s['result_items'], 1))
     return f'''{head}<body id="top"><a class="skip" href="#main">{COPY[lang]['skip']}</a>{header}<main id="main" class="showcase-page invoice-case"><section class="case-hero wrap"><a class="case-back" href="{index_url}">← {'Todas las demostraciones' if es else 'All showcase cases'}</a><div class="case-heading"><div><span class="fictional-label">{s['label']}</span><span>{s['eyebrow']}</span></div><h1>{s['name']}</h1><p>{s['title']} {s['intro']}</p></div></section><section class="wrap case-demo">{invoice_mosaic(lang, 'case')}</section><section class="case-explainer wrap"><div><span class="showcase-kicker">{'EL FLUJO' if es else 'THE WORKFLOW'}</span><h2>{s['how']}</h2></div><p>{s['how_intro']}</p></section>{invoice_product_mockup(lang)}<section class="before-after wrap"><article><span>01 / {s['before'].upper()}</span><h3>{s['before']}</h3><p>{s['before_text']}</p></article><article><span>02 / {s['after'].upper()}</span><h3>{s['after']}</h3><p>{s['after_text']}</p></article></section><section class="case-results"><div class="wrap"><div><span class="showcase-kicker">{'RESULTADO' if es else 'OUTCOME'}</span><h2>{'Lo que cambia' if es else 'What changes'}.</h2></div><ol>{results}</ol></div></section><section class="case-cta wrap"><h2>{'¿Las facturas todavía pasan por demasiadas manos?' if es else 'Do invoices still pass through too many hands?'}</h2><div><p>{'Adapto el flujo a tus proveedores, reglas, aprobaciones y programa de contabilidad.' if es else 'I adapt the workflow to your suppliers, rules, approvals and accounting software.'}</p><a class="button" href="{contact_url}">{'Cuéntame cómo las gestionas' if es else 'Tell me how you handle them'} {ARROW}</a></div></section></main>{footer}</body></html>'''
@@ -427,20 +427,20 @@ def build_invoice_page(lang):
 
 def build_contractor_page(lang):
     s = CONTRACTOR[lang]; es = lang == 'es'
-    canonical = '/showcase/cerrajeria-faro/' if es else '/en/showcase/cerrajeria-faro/'
-    alternate = '/en/showcase/cerrajeria-faro/' if es else '/showcase/cerrajeria-faro/'
-    index_url = '/showcase/' if es else '/en/showcase/'; contact_url = '/#contact' if es else '/en/#contact'
-    header, footer = showcase_shell_parts(lang, '/showcase/cerrajeria-faro/', '/en/showcase/cerrajeria-faro/')
+    canonical = '/es/showcase/cerrajeria-faro/' if es else '/showcase/cerrajeria-faro/'
+    alternate = '/showcase/cerrajeria-faro/' if es else '/es/showcase/cerrajeria-faro/'
+    index_url = '/es/showcase/' if es else '/showcase/'; contact_url = '/es/#contact' if es else '/#contact'
+    header, footer = showcase_shell_parts(lang, '/es/showcase/cerrajeria-faro/', '/showcase/cerrajeria-faro/')
     head = shared_head(lang, s['name'], s['intro'], canonical, alternate, '/assets/showcase/cerrajeria-faro/door-assessment.webp')
     results = ''.join(f'<li><span>0{i}</span>{item}</li>' for i, item in enumerate(s['result_items'], 1))
     return f'''{head}<body id="top"><a class="skip" href="#main">{COPY[lang]['skip']}</a>{header}<main id="main" class="showcase-page contractor-case"><section class="case-hero wrap"><a class="case-back" href="{index_url}">← {'Todas las demostraciones' if es else 'All showcase cases'}</a><div class="case-heading"><div><span class="fictional-label">{s['label']}</span><span>{s['eyebrow']}</span></div><h1>{s['name']}</h1><p>{s['title']} {s['intro']}</p></div></section><section class="wrap case-demo">{contractor_mosaic(lang, 'case')}</section><section class="case-explainer wrap"><div><span class="showcase-kicker">{'EL FLUJO' if es else 'THE WORKFLOW'}</span><h2>{s['how']}</h2></div><p>{s['how_intro']}</p></section>{contractor_product_mockup(lang)}<section class="before-after wrap"><article><span>01 / {s['before'].upper()}</span><h3>{s['before']}</h3><p>{s['before_text']}</p></article><article><span>02 / {s['after'].upper()}</span><h3>{s['after']}</h3><p>{s['after_text']}</p></article></section><section class="case-results"><div class="wrap"><div><span class="showcase-kicker">{'RESULTADO' if es else 'OUTCOME'}</span><h2>{'Lo que cambia' if es else 'What changes'}.</h2></div><ol>{results}</ol></div></section><section class="case-cta wrap"><h2>{'¿Preparar presupuestos te roba las tardes?' if es else 'Do quotes consume your evenings?'}</h2><div><p>{'Conecto la visita, tu catálogo y tus reglas de precio sin quitarte la decisión final.' if es else 'I connect the site visit, your catalogue and pricing rules while keeping the final decision with you.'}</p><a class="button" href="{contact_url}">{'Cuéntame cómo presupuestas' if es else 'Tell me how you quote'} {ARROW}</a></div></section></main>{footer}</body></html>'''
 for lang,t in COPY.items():
- url='/' if lang=='es' else '/en/'
+ url='/es/' if lang=='es' else '/'
  locale,alt_locale=('es_ES','en_GB') if lang=='es' else ('en_GB','es_ES')
  share=f'https://alexissantos.dev/assets/studio/og-{lang}.jpg'
- nav=f'<a href="#solutions">{t["nav"][0]}</a><a href="{'/showcase/' if lang=='es' else '/en/showcase/'}">{SHOWCASE[lang]['nav']}</a>'
+ nav=f'<a href="#solutions">{t["nav"][0]}</a><a href="{'/es/showcase/' if lang=='es' else '/showcase/'}">{SHOWCASE[lang]['nav']}</a>'
  nav+=f'<a href="#studio">{t["nav"][1]}</a>'
- nav+=f'<a href="{'/articles/' if lang=='es' else '/en/articles/'}">{'Artículos' if lang=='es' else 'Articles'}</a>'
+ nav+=f'<a href="{'/es/articles/' if lang=='es' else '/articles/'}">{'Artículos' if lang=='es' else 'Articles'}</a>'
  nav+=f'<a href="/grow/">{'Libro' if lang=='es' else 'Book'}</a>'
  services=''.join(f'<article><svg viewBox="0 0 24 24" aria-hidden="true">{ICONS[i]}</svg><h3>{name}</h3><p>{desc}</p><small>{tags}</small></article>' for i,(name,desc,tags) in enumerate(t['serviceitems']))
  steps=''.join(f'<li><span class="step-number">0{i+1}</span><h3>{name}</h3><p>{desc}</p></li>' for i,(name,desc) in enumerate(t['steps']))
@@ -450,32 +450,32 @@ for lang,t in COPY.items():
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{t['title']}</title><meta name="description" content="{t['description']}">
-<link rel="canonical" href="https://alexissantos.dev{url}"><link rel="alternate" hreflang="es" href="https://alexissantos.dev/"><link rel="alternate" hreflang="en" href="https://alexissantos.dev/en/"><link rel="alternate" hreflang="x-default" href="https://alexissantos.dev/">
+<link rel="canonical" href="https://alexissantos.dev{url}"><link rel="alternate" hreflang="en" href="https://alexissantos.dev/"><link rel="alternate" hreflang="es" href="https://alexissantos.dev/es/"><link rel="alternate" hreflang="x-default" href="https://alexissantos.dev/">
 <meta property="og:site_name" content="AlexisSantos.dev"><meta property="og:locale" content="{locale}"><meta property="og:locale:alternate" content="{alt_locale}"><meta property="og:title" content="{t['title']}"><meta property="og:description" content="{t['description']}"><meta property="og:type" content="website"><meta property="og:url" content="https://alexissantos.dev{url}"><meta property="og:image" content="{share}"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="AlexisSantos.dev — {t['footer']}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{t['title']}"><meta name="twitter:description" content="{t['description']}"><meta name="twitter:image" content="{share}"><meta name="twitter:image:alt" content="AlexisSantos.dev — {t['footer']}"><meta name="twitter:creator" content="@deepfirstsearch"><meta name="theme-color" content="#f5f6f8">
 <link rel="icon" href="/assets/studio/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/studio/studio.css"><link rel="stylesheet" href="/assets/showcase/showcase.css"><script src="/assets/studio/studio.js" defer></script><script src="/assets/showcase/showcase.js" defer></script>
 </head>
 <body id="top"><a class="skip" href="#main">{t['skip']}</a>
-<header class="header wrap"><a class="wordmark" href="{url}" aria-label="AlexisSantos.dev"><img src="/assets/studio/logo.svg" alt="AlexisSantos.dev" width="645" height="82"></a><nav class="desktop-nav" aria-label="{'Principal' if lang=='es' else 'Main'}">{nav}</nav><div class="header-actions"><div class="languages" aria-label="{'Idioma' if lang=='es' else 'Language'}"><a href="/" lang="es" aria-label="Español" {'aria-current="page"' if lang=='es' else ''}>ES</a><span>/</span><a href="/en/" lang="en" aria-label="English" {'aria-current="page"' if lang=='en' else ''}>EN</a></div><a class="button small header-cta" href="#contact">{t['nav'][2]}</a><button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav">{t['menu']} <span aria-hidden="true">＋</span></button></div><nav id="mobile-nav" hidden>{nav}<a href="#contact">{t['nav'][2]}</a></nav></header>
+<header class="header wrap"><a class="wordmark" href="{url}" aria-label="AlexisSantos.dev"><img src="/assets/studio/logo.svg" alt="AlexisSantos.dev" width="645" height="82"></a><nav class="desktop-nav" aria-label="{'Principal' if lang=='es' else 'Main'}">{nav}</nav><div class="header-actions"><div class="languages" aria-label="{'Idioma' if lang=='es' else 'Language'}"><a href="/es/" lang="es" aria-label="Español" {'aria-current="page"' if lang=='es' else ''}>ES</a><span>/</span><a href="/" lang="en" aria-label="English" {'aria-current="page"' if lang=='en' else ''}>EN</a></div><a class="button small header-cta" href="#contact">{t['nav'][2]}</a><button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav">{t['menu']} <span aria-hidden="true">＋</span></button></div><nav id="mobile-nav" hidden>{nav}<a href="#contact">{t['nav'][2]}</a></nav></header>
 <main id="main"><section class="hero"><div class="hero-inner wrap"><div class="hero-copy"><h1>{t['hero']}</h1><p>{t['intro']}</p><div class="hero-actions"><a class="button" href="#contact">{t['cta']} {ARROW}</a><a class="text-link" href="#solutions">{t['explore']} {ARROW}</a></div></div><img class="hero-art" src="/assets/studio/hero.jpg" alt="" width="1536" height="1024" fetchpriority="high"><p class="hero-foot">{t['location']}</p></div></section>
 <section id="solutions" class="section wrap services"><div class="section-head"><h2>{t['services']}</h2><p>{t['serviceintro']}</p></div><div class="service-grid">{services}</div></section>
 <section class="demo-section"><div class="wrap demo-inner"><div><span class="status-pill"><span></span>{t['soon']}</span><h2>{t['demo']}</h2><p>{t['demointro']}</p></div><div class="demo-note"><ol class="integration-flow">{flow}</ol><p>{t['democopy']}</p><a class="text-link" href="#contact">{t['cta']} {ARROW}</a></div></div></section>
 <section class="section wrap process"><h2>{t['process']}</h2><ol>{steps}</ol></section>
-<section id="showcase" class="section wrap home-showcase"><div class="section-head showcase-home-head"><div><span class="fictional-label">{SHOWCASE[lang]['label']}</span><h2>{SHOWCASE[lang]['home_title']}</h2></div><div><p>{SHOWCASE[lang]['home_intro']}</p><a class="text-link" href="{'/showcase/' if lang=='es' else '/en/showcase/'}">{'Ver todas las demos' if lang=='es' else 'View all cases'} {ARROW}</a></div></div>{showcase_mosaic(lang, 'home')}<a class="home-case-teaser" href="{'/showcase/mesa-clara/' if lang=='es' else '/en/showcase/mesa-clara/'}"><img src="/assets/showcase/mesa-clara/restaurant.webp" alt="" width="1536" height="1024" loading="lazy"><span class="fictional-label">{RESTAURANT[lang]['label']}</span><div><small>{RESTAURANT[lang]['eyebrow']}</small><h3>Mesa Clara</h3><p>{RESTAURANT[lang]['short']}</p><b>{RESTAURANT[lang]['explore']} {ARROW}</b></div></a><a class="home-case-teaser invoice-teaser" href="{'/showcase/ladera-norte/' if lang=='es' else '/en/showcase/ladera-norte/'}"><img src="/assets/showcase/ladera-norte/finance-desk.webp" alt="" width="1536" height="1024" loading="lazy"><span class="fictional-label">{INVOICES[lang]['label']}</span><div><small>{INVOICES[lang]['eyebrow']}</small><h3>Ladera Norte</h3><p>{INVOICES[lang]['short']}</p><b>{INVOICES[lang]['explore']} {ARROW}</b></div></a><a class="home-case-teaser contractor-teaser" href="{'/showcase/cerrajeria-faro/' if lang=='es' else '/en/showcase/cerrajeria-faro/'}"><img src="/assets/showcase/cerrajeria-faro/door-assessment.webp" alt="" width="1536" height="1024" loading="lazy"><span class="fictional-label">{CONTRACTOR[lang]['label']}</span><div><small>{CONTRACTOR[lang]['eyebrow']}</small><h3>Cerrajería Faro</h3><p>{CONTRACTOR[lang]['short']}</p><b>{CONTRACTOR[lang]['explore']} {ARROW}</b></div></a></section>
+<section id="showcase" class="section wrap home-showcase"><div class="section-head showcase-home-head"><div><span class="fictional-label">{SHOWCASE[lang]['label']}</span><h2>{SHOWCASE[lang]['home_title']}</h2></div><div><p>{SHOWCASE[lang]['home_intro']}</p><a class="text-link" href="{'/es/showcase/' if lang=='es' else '/showcase/'}">{'Ver todas las demos' if lang=='es' else 'View all cases'} {ARROW}</a></div></div>{showcase_mosaic(lang, 'home')}<a class="home-case-teaser" href="{'/es/showcase/mesa-clara/' if lang=='es' else '/showcase/mesa-clara/'}"><img src="/assets/showcase/mesa-clara/restaurant.webp" alt="" width="1536" height="1024" loading="lazy"><span class="fictional-label">{RESTAURANT[lang]['label']}</span><div><small>{RESTAURANT[lang]['eyebrow']}</small><h3>Mesa Clara</h3><p>{RESTAURANT[lang]['short']}</p><b>{RESTAURANT[lang]['explore']} {ARROW}</b></div></a><a class="home-case-teaser invoice-teaser" href="{'/es/showcase/ladera-norte/' if lang=='es' else '/showcase/ladera-norte/'}"><img src="/assets/showcase/ladera-norte/finance-desk.webp" alt="" width="1536" height="1024" loading="lazy"><span class="fictional-label">{INVOICES[lang]['label']}</span><div><small>{INVOICES[lang]['eyebrow']}</small><h3>Ladera Norte</h3><p>{INVOICES[lang]['short']}</p><b>{INVOICES[lang]['explore']} {ARROW}</b></div></a><a class="home-case-teaser contractor-teaser" href="{'/es/showcase/cerrajeria-faro/' if lang=='es' else '/showcase/cerrajeria-faro/'}"><img src="/assets/showcase/cerrajeria-faro/door-assessment.webp" alt="" width="1536" height="1024" loading="lazy"><span class="fictional-label">{CONTRACTOR[lang]['label']}</span><div><small>{CONTRACTOR[lang]['eyebrow']}</small><h3>Cerrajería Faro</h3><p>{CONTRACTOR[lang]['short']}</p><b>{CONTRACTOR[lang]['explore']} {ARROW}</b></div></a></section>
 <section id="studio" class="section wrap about"><div class="portrait"><img src="/photo.jpg" alt="Alexis Santos" loading="lazy" width="600" height="700"><span>{t['abouttag']}</span></div><div class="about-copy"><h2>{t['about']}</h2><p>{t['abouttext']}</p><p>{t['abouttext2']}</p><a class="about-book" href="/grow/"><small>{t['booklabel']}</small><strong>Build It. Then Grow It.</strong><span>{t['bookdesc']}</span><b>{t['bookcta']} {ARROW}</b></a><div class="social"><a href="https://www.linkedin.com/in/asantosp/">LinkedIn {ARROW}</a><a href="https://github.com/alexissan">GitHub {ARROW}</a><a href="https://x.com/deepfirstsearch">X {ARROW}</a></div></div></section>
 <section id="contact" class="contact-section"><div class="wrap contact-grid"><div><h2>{t['contact']}</h2><p class="contact-intro">{t['contactintro']}</p><div class="direct-email"><span>{t['direct']}</span><a href="mailto:alexis.santos.perez@gmail.com">alexis.santos.perez@gmail.com {ARROW}</a></div></div><form id="brief-form"><div class="form-row"><label>{t['name']}<input name="name" autocomplete="name" required maxlength="100"></label><label>{t['business']}<input name="business" autocomplete="organization" maxlength="150"></label></div><label>{t['need']}<textarea name="message" rows="4" required maxlength="3000" placeholder="{t['placeholder']}"></textarea></label><button class="button" type="submit">{t['send']} {ARROW}</button><p class="form-note">{t['emailnote']}</p><p class="privacy-note">{t['privacy']}</p><p id="form-status" role="status"></p><noscript><p>{t['direct']}: <a href="mailto:alexis.santos.perez@gmail.com">alexis.santos.perez@gmail.com</a></p></noscript></form></div></section>
-</main><footer class="wrap footer"><div><a class="wordmark" href="{url}"><img src="/assets/studio/logo.svg" alt="AlexisSantos.dev" width="645" height="82"></a><p>{t['footer']}</p></div><span>© 2026 Alexis Santos</span><nav class="footer-links" aria-label="{'Más información' if lang=='es' else 'More information'}"><a href="{'/showcase/' if lang=='es' else '/en/showcase/'}">{SHOWCASE[lang]['nav']}</a><a href="{'/articles/' if lang=='es' else '/en/articles/'}">{'Artículos' if lang=='es' else 'Articles'}</a><a href="#top">{t['back']} ↑</a></nav></footer>
+</main><footer class="wrap footer"><div><a class="wordmark" href="{url}"><img src="/assets/studio/logo.svg" alt="AlexisSantos.dev" width="645" height="82"></a><p>{t['footer']}</p></div><span>© 2026 Alexis Santos</span><nav class="footer-links" aria-label="{'Más información' if lang=='es' else 'More information'}"><a href="{'/es/showcase/' if lang=='es' else '/showcase/'}">{SHOWCASE[lang]['nav']}</a><a href="{'/es/articles/' if lang=='es' else '/articles/'}">{'Artículos' if lang=='es' else 'Articles'}</a><a href="#top">{t['back']} ↑</a></nav></footer>
 <script type="application/json" id="contact-copy">{json.dumps({k:t[k] for k in ['subject','emailbody','status']},ensure_ascii=False)}</script>
 </body></html>'''
- target=ROOT/('index.html' if lang=='es' else 'en/index.html')
+ target=ROOT/('es/index.html' if lang=='es' else 'index.html')
  target.parent.mkdir(parents=True, exist_ok=True)
  target.write_text(html)
 
 for lang in ['es', 'en']:
-    showcase_path = ROOT / ('showcase/index.html' if lang == 'es' else 'en/showcase/index.html')
-    case_path = ROOT / ('showcase/nexo-mantenimiento/index.html' if lang == 'es' else 'en/showcase/nexo-maintenance/index.html')
-    restaurant_path = ROOT / ('showcase/mesa-clara/index.html' if lang == 'es' else 'en/showcase/mesa-clara/index.html')
-    invoice_path = ROOT / ('showcase/ladera-norte/index.html' if lang == 'es' else 'en/showcase/ladera-norte/index.html')
-    contractor_path = ROOT / ('showcase/cerrajeria-faro/index.html' if lang == 'es' else 'en/showcase/cerrajeria-faro/index.html')
+    showcase_path = ROOT / ('es/showcase/index.html' if lang == 'es' else 'showcase/index.html')
+    case_path = ROOT / ('es/showcase/nexo-mantenimiento/index.html' if lang == 'es' else 'showcase/nexo-maintenance/index.html')
+    restaurant_path = ROOT / ('es/showcase/mesa-clara/index.html' if lang == 'es' else 'showcase/mesa-clara/index.html')
+    invoice_path = ROOT / ('es/showcase/ladera-norte/index.html' if lang == 'es' else 'showcase/ladera-norte/index.html')
+    contractor_path = ROOT / ('es/showcase/cerrajeria-faro/index.html' if lang == 'es' else 'showcase/cerrajeria-faro/index.html')
     showcase_path.parent.mkdir(parents=True, exist_ok=True)
     case_path.parent.mkdir(parents=True, exist_ok=True)
     restaurant_path.parent.mkdir(parents=True, exist_ok=True)
@@ -490,12 +490,12 @@ for lang in ['es', 'en']:
 import re
 from html import unescape
 
-english_home = (ROOT / 'en/index.html').read_text()
+english_home = (ROOT / 'index.html').read_text()
 english_header = re.search(r'<header class="header wrap">.*?</header>', english_home, re.S).group(0)
-english_header = english_header.replace('href="#', 'href="/en/#')
+english_header = english_header.replace('href="#', 'href="/#')
 english_footer = re.search(r'<footer class="wrap footer">.*?</footer>', english_home, re.S).group(0)
 entries = []
-for source in sorted((ROOT / 'articles').glob('*/index.html')):
+for source in sorted((ROOT / 'articles').glob('*/source.html')):
     original = source.read_text()
     slug = source.parent.name
     article = re.search(r'<article>(.*?)</article>', original, re.S).group(1)
@@ -503,13 +503,11 @@ for source in sorted((ROOT / 'articles').glob('*/index.html')):
     description_match = re.search(r'<meta name="description" content="([^"]+)"', original)
     description = unescape(description_match.group(1)) if description_match else title
     article = re.sub(r'src="(?!https?:|/)([^"]+)"', lambda m: f'src="/articles/{slug}/{m.group(1)}"', article)
-    article = re.sub(r'href="/articles([^\"]*)"', r'href="/en/articles\1"', article)
-    article = article.replace('href="/"', 'href="/en/"')
     cover = next(source.parent.glob('cover.*'))
     entries.append((slug, title, description, '/articles/' + slug + '/' + cover.name))
-    path = f'/en/articles/{slug}/'
+    path = f'/articles/{slug}/'
     head = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{escape(title)} — AlexisSantos.dev</title><meta name="description" content="{escape(description, quote=True)}"><link rel="canonical" href="https://alexissantos.dev/articles/{slug}/"><meta property="og:title" content="{escape(title, quote=True)}"><meta property="og:type" content="article"><meta property="og:image" content="https://alexissantos.dev/articles/{slug}/{cover.name}"><link rel="icon" href="/assets/studio/favicon.svg"><link rel="stylesheet" href="/assets/studio/studio.css"><script src="/assets/studio/studio.js" defer></script></head>'''
-    page = f'{head}<body id="top"><a class="skip" href="#main">Skip to content</a>{english_header}<main id="main" class="reading-page wrap"><a class="text-link" href="/en/articles/">← All articles</a><article class="reading-article">{article}</article><div class="reading-end"><a class="text-link" href="/en/articles/">Explore more articles ↗</a><a class="text-link" href="/en/#contact">Talk about your project ↗</a></div></main>{english_footer}</body></html>'
+    page = f'{head}<body id="top"><a class="skip" href="#main">Skip to content</a>{english_header}<main id="main" class="reading-page wrap"><a class="text-link" href="/articles/">← All articles</a><article class="reading-article">{article}</article><div class="reading-end"><a class="text-link" href="/articles/">Explore more articles ↗</a><a class="text-link" href="/#contact">Talk about your project ↗</a></div></main>{english_footer}</body></html>'
     destination = ROOT / path.strip('/') / 'index.html'
     destination.parent.mkdir(parents=True, exist_ok=True)
     destination.write_text(page)
@@ -518,19 +516,21 @@ order = ['ios-claude-skills-open-source', 'building-is-the-easy-part', '6-apps-3
 entries.sort(key=lambda item: order.index(item[0]))
 for lang in ['es', 'en']:
     is_es = lang == 'es'
-    home_url = '/' if is_es else '/en/'
-    archive_url = '/articles/' if is_es else '/en/articles/'
-    home = (ROOT / ('index.html' if is_es else 'en/index.html')).read_text()
+    home_url = '/es/' if is_es else '/'
+    archive_url = '/es/articles/' if is_es else '/articles/'
+    home = (ROOT / ('es/index.html' if is_es else 'index.html')).read_text()
     header = re.search(r'<header class="header wrap">.*?</header>', home, re.S).group(0).replace('href="#', f'href="{home_url}#')
-    header = header.replace('href="/" lang="es"', 'href="/articles/" lang="es"').replace('href="/en/" lang="en"', 'href="/en/articles/" lang="en"')
+    header = header.replace('href="/es/" lang="es"', 'href="/es/articles/" lang="es"').replace('href="/" lang="en"', 'href="/articles/" lang="en"')
     footer = re.search(r'<footer class="wrap footer">.*?</footer>', home, re.S).group(0)
-    cards = ''.join(f'<a class="article archive-card" href="{archive_url}{slug}/"><img src="{cover}" alt="" loading="lazy" width="600" height="338"><small>{"Artículo en inglés" if is_es else "Article"}</small><h2 lang="en">{escape(title)} ↗</h2></a>' for slug,title,description,cover in entries)
+    cards = ''.join(f'<a class="article archive-card" href="/articles/{slug}/"><img src="{cover}" alt="" loading="lazy" width="600" height="338"><small>{"Artículo en inglés" if is_es else "Article"}</small><h2 lang="en">{escape(title)} ↗</h2></a>' for slug,title,description,cover in entries)
     title = 'Artículos' if is_es else 'Articles'
     intro = COPY[lang]['articleintro']
     back = 'Volver' if is_es else 'Back'
-    archive = f'''<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title} — AlexisSantos.dev</title><meta name="description" content="{intro}"><link rel="canonical" href="https://alexissantos.dev{archive_url}"><link rel="alternate" hreflang="es" href="https://alexissantos.dev/articles/"><link rel="alternate" hreflang="en" href="https://alexissantos.dev/en/articles/"><link rel="icon" href="/assets/studio/favicon.svg"><link rel="stylesheet" href="/assets/studio/studio.css"><script src="/assets/studio/studio.js" defer></script></head><body id="top"><a class="skip" href="#main">{COPY[lang]['skip']}</a>{header}<main id="main" class="wrap archive-page"><div class="archive-intro"><a class="text-link" href="{home_url}">← {back}</a><h1>{title}.</h1><p>{intro}</p></div><div class="article-grid">{cards}</div></main>{footer}</body></html>'''
-    (ROOT / archive_url.strip('/') / 'index.html').write_text(archive)
+    archive = f'''<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title} — AlexisSantos.dev</title><meta name="description" content="{intro}"><link rel="canonical" href="https://alexissantos.dev{archive_url}"><link rel="alternate" hreflang="en" href="https://alexissantos.dev/articles/"><link rel="alternate" hreflang="es" href="https://alexissantos.dev/es/articles/"><link rel="alternate" hreflang="x-default" href="https://alexissantos.dev/articles/"><link rel="icon" href="/assets/studio/favicon.svg"><link rel="stylesheet" href="/assets/studio/studio.css"><script src="/assets/studio/studio.js" defer></script></head><body id="top"><a class="skip" href="#main">{COPY[lang]['skip']}</a>{header}<main id="main" class="wrap archive-page"><div class="archive-intro"><a class="text-link" href="{home_url}">← {back}</a><h1>{title}.</h1><p>{intro}</p></div><div class="article-grid">{cards}</div></main>{footer}</body></html>'''
+    archive_path = ROOT / archive_url.strip('/') / 'index.html'
+    archive_path.parent.mkdir(parents=True, exist_ok=True)
+    archive_path.write_text(archive)
 
-public_paths = ["/", "/en/", "/grow/", "/showcase/", "/en/showcase/", "/showcase/nexo-mantenimiento/", "/en/showcase/nexo-maintenance/", "/showcase/mesa-clara/", "/en/showcase/mesa-clara/", "/showcase/ladera-norte/", "/en/showcase/ladera-norte/", "/showcase/cerrajeria-faro/", "/en/showcase/cerrajeria-faro/", "/articles/", "/en/articles/"] + [f"/articles/{entry[0]}/" for entry in entries]
+public_paths = ["/", "/es/", "/ai-dev-tools/", "/grow/", "/showcase/", "/es/showcase/", "/showcase/nexo-maintenance/", "/es/showcase/nexo-mantenimiento/", "/showcase/mesa-clara/", "/es/showcase/mesa-clara/", "/showcase/ladera-norte/", "/es/showcase/ladera-norte/", "/showcase/cerrajeria-faro/", "/es/showcase/cerrajeria-faro/", "/articles/", "/es/articles/"] + [f"/articles/{entry[0]}/" for entry in entries]
 sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(f"  <url><loc>https://alexissantos.dev{path}</loc></url>" for path in public_paths) + "\n</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sitemap)
